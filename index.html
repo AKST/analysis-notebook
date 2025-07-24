@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analysis Sandbox</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="toolbar">
+    <h1>Analysis Sandbox</h1>
+    <div id="buttons"></div>
+  </div>
+  <div class="sidebar" id="sidebar"></div>
+  <div class="main-content">
+    <div id="loader">
+      <svg width="274" height="38" xmlns="http://www.w3.org/2000/svg" style="display: block; margin: 0 auto;">
+        <g>
+          <rect x="4" y="4" width="20" height="24" fill="#0000ff" opacity="0">
+            <animate attributeName="opacity" values="1;1;1;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0" dur="1.5s" repeatCount="indefinite"/>
+          </rect>
+          <rect x="28" y="4" width="20" height="24" fill="#0000ff" opacity="0">
+            <animate attributeName="opacity" values="0;1;1;1;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0" dur="1.5s" repeatCount="indefinite"/>
+          </rect>
+          <rect x="52" y="4" width="20" height="24" fill="#0000ff" opacity="0">
+            <animate attributeName="opacity" values="0;0;1;1;1;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0" dur="1.5s" repeatCount="indefinite"/>
+          </rect>
+          <rect x="76" y="4" width="20" height="24" fill="#0000ff" opacity="0">
+            <animate attributeName="opacity" values="0;0;0;1;1;1;1;1;0;0;0;0;0;0;0;0;0;0;0;0" dur="1.5s" repeatCount="indefinite"/>
+          </rect>
+          <rect x="100" y="4" width="20" height="24" fill="#0000ff" opacity="0">
+            <animate attributeName="opacity" values="0;0;0;0;1;1;1;1;1;0;0;0;0;0;0;0;0;0;0;0" dur="1.5s" repeatCount="indefinite"/>
+          </rect>
+          <rect x="124" y="4" width="20" height="24" fill="#0000ff" opacity="0">
+            <animate attributeName="opacity" values="0;0;0;0;0;1;1;1;1;1;0;0;0;0;0;0;0;0;0;0" dur="1.5s" repeatCount="indefinite"/>
+          </rect>
+          <rect x="148" y="4" width="20" height="24" fill="#0000ff" opacity="0">
+            <animate attributeName="opacity" values="0;0;0;0;0;0;1;1;1;1;1;0;0;0;0;0;0;0;0;0" dur="1.5s" repeatCount="indefinite"/>
+          </rect>
+          <rect x="172" y="4" width="20" height="24" fill="#0000ff" opacity="0">
+            <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;1;1;1;0;0;0;0;0;0;0;0" dur="1.5s" repeatCount="indefinite"/>
+          </rect>
+          <rect x="196" y="4" width="20" height="24" fill="#0000ff" opacity="0">
+            <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;1;1;1;1;1;0;0;0;0;0;0;0" dur="1.5s" repeatCount="indefinite"/>
+          </rect>
+          <rect x="220" y="4" width="20" height="24" fill="#0000ff" opacity="0">
+            <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;1;1;1;1;1;0;0;0;0;0;0" dur="1.5s" repeatCount="indefinite"/>
+          </rect>
+          <rect x="244" y="4" width="20" height="24" fill="#0000ff" opacity="0">
+            <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;1;1;1;1;1;0;0;0;0;0" dur="1.5s" repeatCount="indefinite"/>
+          </rect>
+        </g>
+      </svg>
+      <p>Loading</p>
+    </div>
+  </div>
+  <div class="config-container" id="config"></div>
+  <script type="module" src="./index.js"></script>
+</body>
+</html>

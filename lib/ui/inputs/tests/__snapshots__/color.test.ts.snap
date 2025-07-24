@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ColorInput > renders color input correctly 1`] = `
+"<style>:host {
+  display: block;
+}
+
+.color-input {
+  display: block;
+  width: 100%;
+  height: 24px;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 0;
+  padding: 0;
+  border: var(--border-outset-grey);
+  &::-webkit-color-swatch {
+    border: none;
+  }
+
+}
+
+</style><input style="background-color: rgb(255, 0, 0);" type="color" class="color-input" value="#ff0000">"
+`;

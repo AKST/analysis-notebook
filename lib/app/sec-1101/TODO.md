@@ -1,0 +1,31 @@
+# TODO
+
+- chapter 1
+  - [ ] Constrain plots
+  - [ ] Setup proper type checking
+- chapter 2
+  - [ ] Label Charts
+  - [ ] Constrain Charts
+- chapter 3
+- chapter 4
+  - [ ] Table that shows outcomes of curve shifts
+    - Like how an increase in demand increases Q&P
+  - Reserver Price
+    - [ ] Show Surplus From Reserve Price
+  - Summation
+    - [ ] Add knob to shift the curve inward or outward
+    - [ ] Add knob for shift from equilibrium and
+          show how surplus changes.
+  - [ ] Show Firm Curve
+    - With Equilibrium as the price in the firm curve
+    - Show behaviour in the long run
+- Chapter 5
+  - Taxes
+    - [ ] Have simple supply and demand curve with tax stuff
+    - [ ] calculated tax burden, based on deadweight lost post tax
+      - As well as show Tax revenue
+    - [ ] Show how it actually doesn't matter who bares the burden
+      - show both curves updated.
+  - Subsidise
+    - [ ] Show Producer and Consumer Surplus
+    - [ ] Show Cost to Government

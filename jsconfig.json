@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "checkJs": true,
+    "allowJs": true,
+    "noEmit": true,
+    "target": "ES2024",
+    "module": "ES2022",
+    "lib": ["ES2024", "DOM"],
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
+    "strict": true,
+    "typeRoots": ["./types", "./node_modules/@types"]
+  },
+  "include": [
+    "lib/app/**/*",
+    "lib/base/**/*",
+    "lib/2d/**/*",
+    "lib/ui/**/*",
+    "lib/canvas/**/*",
+    "lib/util/**/*",
+    "*.js",
+    "types/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "out"
+  ]
+}

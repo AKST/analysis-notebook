@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-black: #1a1a1a;
+  --bg-msgrey: #c6c6c6;
+  --bg-greygreen: rgb(112, 121, 110);
+  --border-inset-grey: 3px inset #c6c6c6;
+  --border-outset-grey: 3px outset #c6c6c6;
+}
+
+html, body {
+  background: #c0c0c0;
+}
+
+body {
+  margin: 0;
+  color: white;
+  font-family: monospace;
+  height: 100%;
+  max-height: 100dvh;
+  background: #c0c0c0;
+  padding: 4px;
+
+  display: grid;
+  grid-gap: 2px;
+}
+
+#loader {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  background: var(--bg-msgrey);
+  height: calc(100dvh - 20px - 24px - 2px);
+
+  & > svg { border: var(--border-inset-grey) }
+  & > p {
+    color: black;
+    text-shadow: white 2px 2px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
+
+.toolbar {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 20px;
+  align-items: center;
+  background: #0000ff;
+  padding: 8px 8px 8px 13px;
+
+  & > h1 {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1;
+  }
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 8px;
+  grid-auto-flow: column;
+
+  & > button {
+    padding: 2px 8px 2px;
+    border-radius: 0;
+    font-family: monospace;
+  }
+}
+
+.main-content {
+  display: grid;
+  background: #1a1a1a;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100%;
+  max-height: 100%;
+  overflow-y: scroll;
+}
+
+.sidebar, .config-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.config, .navigation {
+  height: 100%;
+}
+
+
+.layout-wide {
+  width: 100%;
+
+  .toolbar {
+    grid-column: span 3;
+  }
+
+  .main-content {
+    min-height: 0;
+  }
+
+  .sidebar, .config-container {
+    overflow-y: auto;
+  }
+
+  .config-container {
+    border-left: 1px solid #333;
+  }
+}
+
+.layout-narrow {
+  .main-content {
+    width: 100%;
+    order: 1;
+  }
+
+  .sidebar, .config-container {
+    display: none;
+    overflow-y: auto;
+    order: 2;
+    border-top: 1px solid #333;
+    height: 50dvh;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+  }
+}
+
+canvas {
+  display: block;
+  background: black;
+  max-width: 100%;
+  max-height: 100%;
+}
