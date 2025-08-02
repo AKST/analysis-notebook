@@ -1,3 +1,8 @@
+export type CoaseProblem = {
+  initator: { refrain: number, exercise: number },
+  bystander: { refrain: number, exercise: number },
+};
+
 export type Config = {
   readonly placeholder: number;
 };

@@ -12,14 +12,15 @@ export type ElAttributes = {
   style?: string;
   events?: EventSpec;
 
+  align?: 'top' | 'bottom' | 'left' | 'right';
   title?: string;
   alt?: string;
   src?: string;
   href?: string;
   display?: string;
   width?: string;
-  colSpan?: string;
-  rowSpan?: string;
+  colSpan?: number | string;
+  rowSpan?: number | string;
   height?: string,
   color?: string;
 };
