@@ -11,6 +11,7 @@ export type ElAttributes = {
   class?: never;
   style?: string;
   events?: EventSpec;
+  size?: string;
 
   align?: 'top' | 'bottom' | 'left' | 'right';
   title?: string;

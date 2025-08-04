@@ -50,3 +50,9 @@ these inputs
 
 All of the above is quite simple in isolation, but together it starts to
 get confusing. I need to figure out the structure and order of things.
+Here are some delimmas
+
+### Scenario were I am exporting
+
+-
+
