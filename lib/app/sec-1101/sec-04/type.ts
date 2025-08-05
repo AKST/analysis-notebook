@@ -35,7 +35,7 @@ export type Config = {
 
 export type DiscretePartipant = { reservationPrice: number, surplus: number };
 export type DiscretePartipantState = {
-  readonly curve: readonly Vec2[];
+  readonly curve: Econ.Curve.Discrete;
   readonly agents: readonly DiscretePartipant[];
 };
 
@@ -45,8 +45,9 @@ export type State = {
   readonly discrete: {
     readonly bounds: Vec2;
     readonly equilibrium: Vec2 | undefined;
-    readonly consumers: DiscretePartipantState;
-    readonly producers: DiscretePartipantState;
+    readonly consumers: Econ.Curve.Discrete;
+    readonly producers: Econ.Curve.Discrete;
+    readonly model: Econ.Model.Desc.T | undefined;
   },
   readonly summation: {
     readonly model: Econ.Model.Desc.T | undefined;

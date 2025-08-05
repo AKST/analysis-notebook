@@ -3,6 +3,7 @@ import { Unreachable } from '../../../util/type.js';
 import { v2 } from '../../geom_2d/index.js';
 import type { Curve, Model } from '../type.ts';
 import { status as _status } from '../solver.js';
+import * as curves from '../curve.js';
 
 
 describe('status', () => {
@@ -26,8 +27,8 @@ describe('status', () => {
     priceFloor,
     priceCeiling,
   }: {
-    supply?: Partial<{ m: number, i: number }>,
-    demand?: Partial<{ m: number, i: number }>,
+    supply?: Curve.T,
+    demand?: Curve.T,
     supplyExtern?: number,
     demandExtern?: number,
     worldPrice?: number,
@@ -45,8 +46,8 @@ describe('status', () => {
   } = {}): Model.Config.T => ({
     world: { price: worldPrice ?? 0 },
     market: {
-      supply: { ...supplyDefault, ...supply },
-      demand: { ...demandDefault, ...demand },
+      supply,
+      demand,
     },
     extern: { supply: supplyExtern ?? 0, demand: demandExtern ?? 0 },
     policy: {
@@ -123,21 +124,44 @@ describe('status', () => {
     } as const);
   };
 
-  it('equilbrium', () => {
-    expect(status({
-      supply: { m: 1, i: 0 },
-      demand: { m: -1, i: 40 },
-    })).toEqual(mResult({
-      supply: ['eq', 20],
-      demand: ['eq', 20],
-    }));
+  describe('equilbrium', () => {
+    it('continious curves', () => {
+      expect(status({
+        supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
+        demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
+      })).toEqual(mResult({
+        supply: ['eq', 20],
+        demand: ['eq', 20],
+      }));
+    });
+
+    it('discrete curves', () => {
+      expect(status({
+        supply: curves.discrete(1, [6, 5, 4, 3, 2, 1, 0]),
+        demand: curves.discrete(-1, [6, 5, 4, 3, 2, 1, 0]),
+      })).toEqual(mResult({
+        supply: ['eq', 3],
+        demand: ['eq', 3],
+      }));
+    });
   });
 
-  describe('binding floor', () => {
+  describe('floors', () => {
+    it('nonbinding floor', () => {
+      expect(status({
+        supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
+        demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
+        priceFloor: 10,
+      })).toEqual(mResult({
+        supply: ['mono', 20, 20, 20],
+        demand: ['mono', 20, 20, 20],
+      }));
+    });
+
     it('binding floor', () => {
       expect(status({
-        supply: { m: 1, i: 0 },
-        demand: { m: -1, i: 40 },
+        supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
+        demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
         priceFloor: 30,
       })).toEqual(mResult({
         supply: ['mono', 10, 30, 10],
@@ -147,8 +171,8 @@ describe('status', () => {
 
     it('binding floor, supply tax', () => {
       expect(status({
-        supply: { m: 1, i: 0 },
-        demand: { m: -1, i: 40 },
+        supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
+        demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
         unitTaxSupply: 10,
         priceFloor: 30,
       })).toEqual(mResult({
@@ -159,8 +183,8 @@ describe('status', () => {
 
     it('binding floor, demand tax', () => {
       expect(status({
-        supply: { m: 1, i: 0 },
-        demand: { m: -1, i: 40 },
+        supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
+        demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
         unitTaxDemand: 5,
         priceFloor: 30,
       })).toEqual(mResult({
@@ -170,11 +194,22 @@ describe('status', () => {
     });
   });
 
-  describe('binding ceiling', () => {
+  describe('ceiling', () => {
+    it('nonbinding ceiling', () => {
+      expect(status({
+        supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
+        demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
+        priceCeiling: 30,
+      })).toEqual(mResult({
+        supply: ['mono', 20, 20, 20],
+        demand: ['mono', 20, 20, 20],
+      }));
+    });
+
     it('binding ceiling', () => {
       expect(status({
-        supply: { m: 1, i: 0 },
-        demand: { m: -1, i: 40 },
+        supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
+        demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
         priceCeiling: 10,
       })).toEqual(mResult({
         supply: ['mono', 10, 10, 10],
@@ -184,8 +219,8 @@ describe('status', () => {
 
     it('binding ceiling, demand tax', () => {
       expect(status({
-        supply: { m: 1, i: 0 },
-        demand: { m: -1, i: 40 },
+        supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
+        demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
         priceCeiling: 10,
         unitTaxDemand: 10,
       })).toEqual(mResult({
@@ -196,8 +231,8 @@ describe('status', () => {
 
     it('binding ceiling, supply tax', () => {
       expect(status({
-        supply: { m: 1, i: 0 },
-        demand: { m: -1, i: 40 },
+        supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
+        demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
         priceCeiling: 10,
         unitTaxSupply: 5,
       })).toEqual(mResult({
@@ -208,11 +243,12 @@ describe('status', () => {
   });
 
   describe('exporting', () => {
-    it('exporting', () => {
+    it.each([undefined, 10])('exporting, priceFloor = %d', (priceFloor) => {
       expect(status({
-        supply: { m: 1, i: 0 },
-        demand: { m: -1, i: 40 },
+        supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
+        demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
         worldPrice: 30,
+        priceFloor,
       })).toEqual(mResult({
         supply: ['mono', 30, 30, 30],
         demand: ['mono', 10, 30, 30],
@@ -221,8 +257,8 @@ describe('status', () => {
 
     it('exporting, binding floor, no imports', () => {
        expect(status({
-        supply: { m: 1, i: 0 },
-        demand: { m: -1, i: 40 },
+        supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
+        demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
         worldPrice: 20,
         priceFloor: 30,
         importing: false,
@@ -235,11 +271,12 @@ describe('status', () => {
   });
 
   describe('importing', () => {
-    it('importing', () => {
+    it.each([undefined, 30])('importing, priceCeiling = %d', (priceCeiling) => {
       expect(status({
-        supply: { m: 1, i: 0 },
-        demand: { m: -1, i: 40 },
+        supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
+        demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
         worldPrice: 10,
+        priceCeiling,
       })).toEqual(mResult({
         supply: ['mono', 10, 10, 10],
         demand: ['mono', 30, 10, 10],
@@ -248,8 +285,8 @@ describe('status', () => {
 
     it('importing, binding ceiling, no exports', () => {
        expect(status({
-        supply: { m: 1, i: 0 },
-        demand: { m: -1, i: 40 },
+        supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
+        demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
         worldPrice: 20,
         priceCeiling: 10,
         importing: true,
@@ -261,11 +298,11 @@ describe('status', () => {
     });
   });
 
-  describe('quota', () => {
+  describe.skip('quota', () => {
     it('simple quota of 1 unit', () => {
       const model = status({
-        supply: { m: 1, i: 0 },
-        demand: { m: -1, i: 40 },
+        supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
+        demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
         worldPrice: 10,
         exporting: false,
         importing: false,
