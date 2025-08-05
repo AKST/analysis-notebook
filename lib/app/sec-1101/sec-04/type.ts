@@ -2,7 +2,7 @@ import {
   Vec2,
   RenderContextInit,
   MakeConfigKnobs,
-  Econ2 as Econ,
+  Econ,
 } from '../../prelude-type.ts';
 import {
   TextRenderer,

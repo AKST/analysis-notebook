@@ -160,6 +160,7 @@ export namespace Model {
       size: number,
       cost: number,
       rent: Geom.Space,
+      binding: boolean,
     };
 
     export type WorldStatus = {
