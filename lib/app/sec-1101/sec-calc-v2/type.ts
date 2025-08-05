@@ -59,13 +59,11 @@ export type Config = {
 export type Knobs = MakeConfigKnobs<Config>;
 
 export type State = {
-  readonly model: Econ.ModelOut.T | undefined;
-  readonly modelFreeLocal: Econ.ModelOut.T | undefined;
-  readonly modelFreeWorld: Econ.ModelOut.T | undefined;
-  readonly input: Econ.ModelState | undefined;
+  readonly model: Econ.Model.Desc.T | undefined;
+  readonly modelFreeLocal: Econ.Model.Desc.T | undefined;
+  readonly modelFreeWorld: Econ.Model.Desc.T | undefined;
+  readonly input: Econ.Model.Config.T | undefined;
   readonly bounds: Vec2;
-  readonly demand: Econ.Curve.T,
-  readonly supply: Econ.Curve.T,
 };
 
 export type Event =
