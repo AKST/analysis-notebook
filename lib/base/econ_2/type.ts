@@ -1,7 +1,5 @@
 import { VectorOf } from '../math/type.ts';
 
-export type Partipant = 'supply' | 'demand';
-
 export type DiscreteRateOfChange =
   | { kind: 'const', const: number }
   | { kind: 'curve', curve: { m: number, i: number } }
@@ -43,8 +41,41 @@ export namespace Curve {
   export type T = Discrete | Continious | Shifted;
 }
 
+export namespace Firm {
+  export type MarginalBehaviour = {
+    readonly costVar: number,
+    readonly costTotal: number,
+    readonly units: number,
+    readonly price: number,
+    readonly workers: number,
+    readonly revenue: number,
+    readonly profit: number,
+    readonly avgCostVar: number,
+    readonly avgCostTotal: number,
+    readonly marginalCost: number,
+    readonly marginalBenefit: number,
+    readonly marginalRevenue: number,
+  };
+
+  export type BehaviourTable = {
+    readonly costVar: readonly number[],
+    readonly costTotal: readonly number[],
+    readonly units: readonly number[],
+    readonly price: readonly number[],
+    readonly workers: readonly number[],
+    readonly revenue: readonly number[],
+    readonly profit: readonly number[],
+    readonly avgCostVar: readonly number[],
+    readonly avgCostTotal: readonly number[],
+    readonly marginalCost: readonly number[],
+    readonly marginalBenefit: readonly number[],
+    readonly marginalRevenue: readonly number[],
+  };
+}
+
 export namespace Model {
   export namespace Config {
+    export type QuotaPolicy = { unit: number };
     export type PricePolicy = { unit: number };
     export type MarketVariant<V> = { demand: V, supply: V };
 
@@ -63,7 +94,19 @@ export namespace Model {
             export: PricePolicy,
           }
         },
+        quota: {
+          /**
+           * Private License holders for quotas
+           */
+          licensed: QuotaPolicy,
+        },
         permit: {
+          /**
+           * When `true`, the consumers will ignore:
+           *
+           * - licensed importers
+           * - demostic producers if selling at a price floor
+           */
           importing: boolean,
           exporting: boolean,
         },
@@ -73,7 +116,7 @@ export namespace Model {
             ceiling?: number,
           },
         },
-      }
+      },
     };
   }
 
@@ -113,10 +156,22 @@ export namespace Model {
       equal: boolean;
     };
 
+    export type PriorityImporterStatus = {
+      size: number,
+      cost: number,
+      rent: Geom.Space,
+    };
+
     export type WorldStatus = {
-      price: number;
-      export: { price: number, binding: boolean };
-      import: { price: number, binding: boolean };
+      price: number,
+      export: { price: number, binding: boolean },
+      import: {
+        price: number,
+        binding: boolean,
+        quota: {
+          licensed: PriorityImporterStatus,
+        },
+      },
     };
 
     export type T = {

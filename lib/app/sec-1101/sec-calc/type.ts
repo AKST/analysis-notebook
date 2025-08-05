@@ -27,14 +27,8 @@ type MarketVariant<V> = {
 };
 
 export type Config = {
-  readonly market: {
-    readonly demand: [number, number];
-    readonly supply: [number, number];
-  };
-  readonly externality: {
-    readonly demand: number;
-    readonly supply: number;
-  };
+  readonly market: MarketVariant<[number, number]>;
+  readonly externality: MarketVariant<number>;
   readonly controls: {
     readonly priceFloor?: number;
     readonly priceCeiling?: number;
@@ -53,6 +47,7 @@ export type Config = {
       readonly exporting: boolean;
       readonly importing: boolean;
     };
+    readonly licenseeQuota: number;
   },
 };
 
