@@ -2,7 +2,7 @@ import {
   Vec2,
   RenderContextInit,
   MakeConfigKnobs,
-  Econ,
+  Econ2 as Econ,
 } from '../../prelude-type.ts';
 import {
   TextRenderer,
@@ -11,7 +11,7 @@ import {
   LineRenderer,
   PolygonRenderer,
 } from '../../prelude.js';
-import { ModelRenderer } from '../common/2d/model.js';
+import { ModelRenderer } from '../common/2d/model_2.js';
 
 export type RenderContext = RenderContextInit & {
   model: ModelRenderer,
@@ -39,8 +39,6 @@ export type DiscretePartipantState = {
   readonly agents: readonly DiscretePartipant[];
 };
 
-export type Agent = { name: string, i: number, m: number };
-
 export type Knobs = MakeConfigKnobs<Config>;
 
 export type State = {
@@ -51,15 +49,15 @@ export type State = {
     readonly producers: DiscretePartipantState;
   },
   readonly summation: {
-    readonly model: Econ.ModelSnapshot | undefined;
-    readonly modelEq: Econ.ModelSnapshot | undefined;
-    readonly modelState: Econ.ModelState  | undefined;
+    readonly model: Econ.Model.Desc.T | undefined;
+    readonly modelEq: Econ.Model.Desc.T | undefined;
+    readonly modelState: Econ.Model.Config.T  | undefined;
     readonly bounds: Vec2;
-    readonly consumers: readonly Agent[];
-    readonly producers: readonly Agent[];
+    readonly consumers: Record<string, Econ.Curve.T>;
+    readonly producers: Record<string, Econ.Curve.T>;
     readonly aggregate: {
-      readonly consumption: Agent,
-      readonly production: Agent,
+      readonly consumption: Econ.Curve.T,
+      readonly production: Econ.Curve.T,
     },
   },
 };
