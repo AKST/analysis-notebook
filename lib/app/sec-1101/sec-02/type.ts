@@ -2,7 +2,7 @@ import {
   RenderContextInit,
   Widget,
   MakeConfigKnobs,
-  EconDiscrete,
+  Econ,
 } from '../../prelude-type.ts';
 import {
   TextRenderer,
@@ -21,12 +21,12 @@ export type RenderContext = RenderContextInit & {
 export type Config = {
   readonly examples:{
     readonly a: {
-      fishColor: number;
-      fishPrice: number;
-      fishCost: readonly number[]
-      appleColor: number;
-      applePrice: number;
-      appleCost: readonly number[]
+      readonly fishColor: number;
+      readonly fishPrice: number;
+      readonly fishCost: readonly number[]
+      readonly appleColor: number;
+      readonly applePrice: number;
+      readonly appleCost: readonly number[]
     },
   },
   readonly firm: {
@@ -42,7 +42,7 @@ export type Knobs = MakeConfigKnobs<Config>
 export type Good = {
   readonly price: number;
   readonly color: number;
-  readonly table: EconDiscrete.FirmBehaviourTable,
+  readonly table: Econ.Firm.BehaviourTable,
 };
 
 export type State = {
@@ -50,7 +50,7 @@ export type State = {
     readonly fish: Good;
     readonly apple: Good;
   };
-  readonly firm?: EconDiscrete.FirmBehaviourTable;
+  readonly firm?: Econ.Firm.BehaviourTable;
 };
 
 export type Event =
