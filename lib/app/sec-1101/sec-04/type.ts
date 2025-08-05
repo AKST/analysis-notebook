@@ -11,7 +11,7 @@ import {
   LineRenderer,
   PolygonRenderer,
 } from '../../prelude.js';
-import { ModelRenderer } from '../common/2d/model_2.js';
+import { ModelRenderer } from '../common/2d/model.js';
 
 export type RenderContext = RenderContextInit & {
   model: ModelRenderer,
