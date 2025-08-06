@@ -11,6 +11,12 @@ describe('curve', () => {
   });
 
   describe('quote price', () => {
+    it('zero quota', () => {
+      const a = curve.continious(-1, 40, -1);
+      const b = curve.continious(1, 0, 1);
+      expect(curve.quotaPrice(a, b, 0)).toEqual({ ok: true, q: 20, p: 20 });
+    });
+
     it('simple example', () => {
       const a = curve.continious(-1, 100, -1);
       const b = curve.continious(1, 0, 3);

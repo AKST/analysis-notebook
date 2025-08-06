@@ -62,7 +62,9 @@ describe('status', () => {
         exporting: exporting == null ? worldPrice != null : exporting,
       },
       quota: {
-        licensed: { unit: unitQuotaLicensed },
+        import: {
+          licensed: { unit: unitQuotaLicensed },
+        },
       },
       transfer: {
         tax: {
@@ -329,11 +331,25 @@ describe('status', () => {
         exporting: false,
         importing: false,
         unitSubsidySupply: 2,
-        unitQuotaLicensed: 1,
+        unitQuotaLicensed: 2,
       });
 
       expect(model.demand.alloc).toEqual(allocShortHand(['mono', 21, 21, 21]));
       expect(model.supply.alloc).toEqual(allocShortHand(['mono', 21, 21, 21]));
+    });
+
+    it('quota beyond world price', () => {
+      const model = status({
+        supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
+        demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
+        worldPrice: 10,
+        exporting: false,
+        importing: false,
+        unitQuotaLicensed: 100,
+      });
+
+      expect(model.demand.alloc).toEqual(allocShortHand(['mono', 30, 10, 10]));
+      expect(model.supply.alloc).toEqual(allocShortHand(['mono', 10, 10, 10]));
     });
 
     it.skip('simple quota of 1 unit', () => {
@@ -343,9 +359,10 @@ describe('status', () => {
         worldPrice: 10,
         exporting: false,
         importing: false,
-        unitQuotaLicensed: 1,
+        unitQuotaLicensed: 2,
       });
 
+      console.log(model.rentier);
       expect(model.demand.alloc).toEqual(allocShortHand(['mono', 21, 19, 19]));
       expect(model.supply.alloc).toEqual(allocShortHand(['mono', 19, 19, 19]));
     });

@@ -82,6 +82,9 @@ export namespace Model {
     /**
      * - When consumer importing is permitted the quota is irrelevant.
      *
+     * - When the ceiling is below the import price, the economy
+     *   reverts to autarky.
+     *
      * - If permitted quantity is equal or greater to the number of
      *   units that would be imported at the world price, then we
      *   collapse into the `importing:world` case.
@@ -109,10 +112,12 @@ export namespace Model {
           }
         },
         quota: {
-          /**
-           * Private License holders for quotas
-           */
-          licensed: QuotaPolicy,
+          import: {
+            /**
+             * The number of import licenses issued.
+             */
+            licensed: QuotaPolicy,
+          }
         },
         permit: {
           /**
@@ -170,26 +175,27 @@ export namespace Model {
       equal: boolean;
     };
 
-    export type PriorityImporterStatus = {
-      size: number,
-      cost: number,
-      rent: Geom.Space,
-      binding: boolean,
-    };
+    /**
+     * Describes the status of rentiers primarily
+     * those with permits to import.
+     */
+    export type RentierStatus = {
+      importQuota: {
+        price: number,
+        units: number,
+        binding: boolean,
+        rent: Geom.Space,
+      },
+    }
 
     export type WorldStatus = {
       price: number,
       export: { price: number, binding: boolean },
-      import: {
-        price: number,
-        binding: boolean,
-        quota: {
-          licensed: PriorityImporterStatus,
-        },
-      },
+      import: { price: number, binding: boolean },
     };
 
     export type T = {
+      rentier: RentierStatus;
       supply: CurveDescription;
       demand: CurveDescription;
       world: WorldStatus;
