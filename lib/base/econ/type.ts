@@ -74,6 +74,20 @@ export namespace Firm {
 }
 
 export namespace Model {
+  export type Classification =
+    | { kind: 'autarky', bind: undefined | 'ceiling' | 'floor' }
+    | { kind: 'exporting', demand: 'floor' | 'world' }
+    | { kind: 'importing:world', supply: 'ceiling' | 'world' }
+
+    /**
+     * - When consumer importing is permitted the quota is irrelevant.
+     *
+     * - If permitted quantity is equal or greater to the number of
+     *   units that would be imported at the world price, then we
+     *   collapse into the `importing:world` case.
+     */
+    | { kind: 'importing:quota', supply: 'ceiling' | 'quota' };
+
   export namespace Config {
     export type QuotaPolicy = { unit: number };
     export type PricePolicy = { unit: number };

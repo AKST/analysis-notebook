@@ -19,8 +19,8 @@ describe('status', () => {
     exporting,
     unitTaxDemand = 0,
     unitTaxSupply = 0,
-    unitSubDemand = 0,
-    unitSubSupply = 0,
+    unitSubsidyDemand = 0,
+    unitSubsidySupply = 0,
     unitTariffImport = 0,
     unitTariffExport = 0,
     unitQuotaLicensed = 0,
@@ -36,8 +36,8 @@ describe('status', () => {
     exporting?: boolean,
     unitTaxDemand?: number,
     unitTaxSupply?: number,
-    unitSubDemand?: number,
-    unitSubSupply?: number,
+    unitSubsidyDemand?: number,
+    unitSubsidySupply?: number,
     unitTariffImport?: number,
     unitTariffExport?: number,
     unitQuotaLicensed?: number,
@@ -70,8 +70,8 @@ describe('status', () => {
           demand: { unit: unitTaxDemand },
         },
         subsidy: {
-          supply: { unit: unitSubSupply },
-          demand: { unit: unitSubDemand },
+          supply: { unit: unitSubsidySupply },
+          demand: { unit: unitSubsidyDemand },
         },
         tariff: {
           export: { unit: unitTariffExport },
@@ -124,8 +124,8 @@ describe('status', () => {
     } as const);
   };
 
-  describe('equilbrium', () => {
-    it('continious curves', () => {
+  describe('autarky', () => {
+    it('continious curves, free market', () => {
       expect(status({
         supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
         demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
@@ -135,7 +135,7 @@ describe('status', () => {
       }));
     });
 
-    it('discrete curves', () => {
+    it('discrete curves, free market', () => {
       expect(status({
         supply: curves.discrete(1, [6, 5, 4, 3, 2, 1, 0]),
         demand: curves.discrete(-1, [6, 5, 4, 3, 2, 1, 0]),
@@ -144,6 +144,28 @@ describe('status', () => {
         demand: ['eq', 3],
       }));
     });
+
+    it('supply tax', () => {
+      expect(status({
+        supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
+        demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
+        unitTaxSupply: 2,
+      })).toEqual(mResult({
+        supply: ['mono', 19, 21, 21],
+        demand: ['mono', 19, 21, 21],
+      }));
+    });
+
+    it('demand tax', () => {
+      expect(status({
+        supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
+        demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
+        unitTaxDemand: 2,
+      })).toEqual(mResult({
+        supply: ['mono', 19, 21, 21],
+        demand: ['mono', 19, 21, 21],
+      }));
+    })
   });
 
   describe('floors', () => {
@@ -298,8 +320,23 @@ describe('status', () => {
     });
   });
 
-  describe.skip('quota', () => {
-    it('simple quota of 1 unit', () => {
+  describe('quota', () => {
+    it('quota is ignored with equal subsidy', () => {
+      const model = status({
+        supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
+        demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
+        worldPrice: 19,
+        exporting: false,
+        importing: false,
+        unitSubsidySupply: 2,
+        unitQuotaLicensed: 1,
+      });
+
+      expect(model.demand.alloc).toEqual(allocShortHand(['mono', 21, 21, 21]));
+      expect(model.supply.alloc).toEqual(allocShortHand(['mono', 21, 21, 21]));
+    });
+
+    it.skip('simple quota of 1 unit', () => {
       const model = status({
         supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
         demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
