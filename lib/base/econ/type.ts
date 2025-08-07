@@ -194,12 +194,20 @@ export namespace Model {
       import: { price: number, binding: boolean },
     };
 
+    export type GovtStatus = {
+      demand: { revenue: Geom.Space },
+      supply: { revenue: Geom.Space },
+      import: { revenue: Geom.Space },
+      export: { revenue: Geom.Space },
+    };
+
     export type T = {
+      bounds: VectorOf<'r', 2>;
       rentier: RentierStatus;
       supply: CurveDescription;
       demand: CurveDescription;
       world: WorldStatus;
-      bounds: VectorOf<'r', 2>;
+      govt: GovtStatus;
     };
   }
 }
