@@ -23,7 +23,10 @@ export type RenderContext = RenderContextInit & {
 
 export type Config = {
   readonly summation: {
-    readonly priceCtrl: number;
+    readonly priceCtrl: (
+      | { kind: 'relative', value: number }
+      | { kind: 'absolute', value: number }
+    );
     readonly consumers: Record<string, [number, number]>;
     readonly producers: Record<string, [number, number]>;
   };
