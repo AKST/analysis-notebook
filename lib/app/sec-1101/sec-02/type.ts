@@ -3,6 +3,7 @@ import {
   Widget,
   MakeConfigKnobs,
   Econ,
+  Vec2,
 } from '../../prelude-type.ts';
 import {
   TextRenderer,
@@ -33,7 +34,10 @@ export type Config = {
     readonly price: number;
     readonly fixedCost: number;
     readonly quantity: number[];
-    readonly varCost: number;
+    readonly varCost: (
+      | { kind: 'scalar', value: number }
+      | { kind: 'cumulative', value: number[] }
+    );
   },
 };
 
@@ -51,6 +55,7 @@ export type State = {
     readonly apple: Good;
   };
   readonly firm?: Econ.Firm.BehaviourTable;
+  readonly firmScale: Vec2;
 };
 
 export type Event =

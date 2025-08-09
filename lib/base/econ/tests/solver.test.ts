@@ -241,6 +241,24 @@ describe('status', () => {
       }));
     });
 
+    /**
+     * This test exists as there was a bug in the
+     * classification logic.
+     */
+    it('binding ceiling, world price irrelevant', () => {
+      const model = status({
+        supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
+        demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
+        priceCeiling: 10,
+        worldPrice: 15,
+        exporting: false,
+        importing: false,
+      });
+
+      expect(model.supply.alloc).toEqual(allocShortHand(['mono', 10, 10, 10]));
+      expect(model.demand.alloc).toEqual(allocShortHand(['mono', 10, 10, 30]));
+    });
+
     it('binding ceiling, demand tax', () => {
       expect(status({
         supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
@@ -292,6 +310,20 @@ describe('status', () => {
         demand: ['mono', 10, 30, 30],
       }));
     });
+
+    it('ignores ceiling', () => {
+      const model  = status({
+        supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
+        demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
+        priceCeiling: 10,
+        worldPrice: 15,
+        exporting: true,
+        importing: true,
+      });
+
+      expect(model.supply.alloc).toEqual(allocShortHand(['mono', 15, 15, 15]));
+      expect(model.demand.alloc).toEqual(allocShortHand(['mono', 25, 15, 15]));
+    });
   });
 
   describe('importing', () => {
@@ -308,17 +340,34 @@ describe('status', () => {
     });
 
     it('importing, binding ceiling, no exports', () => {
-       expect(status({
+       const model = status({
         supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
         demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
         worldPrice: 20,
         priceCeiling: 10,
         importing: true,
         exporting: false,
-      })).toEqual(mResult({
-        supply: ['mono', 10, 10, 10],
-        demand: ['dual', [10, 10, 10],  [20, 20, 20]],
-      }));
+      });
+
+      expect(model.supply.alloc).toEqual(allocShortHand(['mono', 10, 10, 10]));
+      expect(model.demand.alloc).toEqual(allocShortHand(['dual', [10, 10, 10],  [20, 20, 20]]));
+      expect(model.govt.import.revenue).toEqual({ size: 0, geom: [] });
+    });
+
+    it('importing, binding ceiling, no exports, import tariff', () => {
+       const model = status({
+        supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
+        demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
+        worldPrice: 20,
+        priceCeiling: 10,
+        unitTariffImport: 2,
+        importing: true,
+        exporting: false,
+      });
+
+      expect(model.supply.alloc).toEqual(allocShortHand(['mono', 10, 10, 10]));
+      expect(model.demand.alloc).toEqual(allocShortHand(['dual', [10, 10, 10],  [18, 22, 22]]));
+      expect(model.govt.import.revenue).toEqual(expect.objectContaining({ size: 16 }));
     });
   });
 
@@ -350,6 +399,21 @@ describe('status', () => {
 
       expect(model.demand.alloc).toEqual(allocShortHand(['mono', 30, 10, 10]));
       expect(model.supply.alloc).toEqual(allocShortHand(['mono', 10, 10, 10]));
+    });
+
+    it('import price is above ceiling', () => {
+      const model = status({
+        supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
+        demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
+        worldPrice: 10,
+        priceCeiling: 9,
+        exporting: false,
+        importing: false,
+        unitQuotaLicensed: 1,
+      });
+
+      expect(model.supply.alloc).toEqual(allocShortHand(['mono', 9, 9, 9]));
+      expect(model.demand.alloc).toEqual(allocShortHand(['mono', 9, 9, 31]));
     });
 
     it('simple quota of 1 unit', () => {
