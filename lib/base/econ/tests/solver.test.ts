@@ -148,19 +148,19 @@ describe('status', () => {
     });
 
     const taxes = ['unitTaxSupply', 'unitTaxDemand'] as const;
-    it.each(taxes)('tax of $$10 %s', (field) => {
-      expect(status({
+    it.each(taxes)('tax of %s = 2', (field) => {
+      const model = status({
         supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
         demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
         [field]: 2,
-      })).toEqual(mResult({
-        supply: ['mono', 19, 21, 21],
-        demand: ['mono', 19, 21, 21],
-      }));
+      });
+      expect(model.demand.alloc).toEqual(allocShortHand(['mono', 19, 21, 21]));
+      expect(model.supply.alloc).toEqual(allocShortHand(['mono', 19, 21, 21]));
+      expect(model.govt.supply.revenue.size).toEqual(19 * 2);
     });
 
     const subsides = ['unitSubsidySupply', 'unitSubsidyDemand'] as const;
-    it.each(subsides)('tax of $$10 %s', (field) => {
+    it.each(subsides)('subsidy of %s = 2', (field) => {
       const model = status({
         supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
         demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
@@ -169,6 +169,7 @@ describe('status', () => {
 
       expect(model.demand.alloc).toEqual(allocShortHand(['mono', 21, 19, 19]));
       expect(model.supply.alloc).toEqual(allocShortHand(['mono', 21, 19, 19]));
+      expect(model.govt.supply.revenue.size).toEqual(21 * -2);
     });
   });
 
