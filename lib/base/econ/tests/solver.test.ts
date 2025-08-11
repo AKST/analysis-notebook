@@ -147,27 +147,29 @@ describe('status', () => {
       }));
     });
 
-    it('supply tax', () => {
+    const taxes = ['unitTaxSupply', 'unitTaxDemand'] as const;
+    it.each(taxes)('tax of $$10 %s', (field) => {
       expect(status({
         supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
         demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
-        unitTaxSupply: 2,
+        [field]: 2,
       })).toEqual(mResult({
         supply: ['mono', 19, 21, 21],
         demand: ['mono', 19, 21, 21],
       }));
     });
 
-    it('demand tax', () => {
-      expect(status({
+    const subsides = ['unitSubsidySupply', 'unitSubsidyDemand'] as const;
+    it.each(subsides)('tax of $$10 %s', (field) => {
+      const model = status({
         supply: { kind: 'continious', dir: 1, m: 1, i: 0 },
         demand: { kind: 'continious', dir: -1, m: -1, i: 40 },
-        unitTaxDemand: 2,
-      })).toEqual(mResult({
-        supply: ['mono', 19, 21, 21],
-        demand: ['mono', 19, 21, 21],
-      }));
-    })
+        [field]: 2,
+      });
+
+      expect(model.demand.alloc).toEqual(allocShortHand(['mono', 21, 19, 19]));
+      expect(model.supply.alloc).toEqual(allocShortHand(['mono', 21, 19, 19]));
+    });
   });
 
   describe('floors', () => {
@@ -383,8 +385,8 @@ describe('status', () => {
         unitQuotaLicensed: 2,
       });
 
-      expect(model.demand.alloc).toEqual(allocShortHand(['mono', 21, 21, 21]));
-      expect(model.supply.alloc).toEqual(allocShortHand(['mono', 21, 21, 21]));
+      expect(model.demand.alloc).toEqual(allocShortHand(['mono', 21, 19, 19]));
+      expect(model.supply.alloc).toEqual(allocShortHand(['mono', 21, 19, 19]));
     });
 
     it('quota beyond world price', () => {

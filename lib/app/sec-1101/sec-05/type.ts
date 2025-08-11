@@ -6,17 +6,23 @@ export type RenderContext = RenderContextInit & {
 }
 
 export type Config = {
+  readonly market: {
+    readonly demand: [number, number];
+    readonly supply: [number, number];
+  };
+  readonly policy: {
+    readonly floor: number;
+    readonly ceiling: number;
+    readonly tax: number;
+    readonly subsidy: number;
+  };
 };
 
 export type State = {
-  ceilingInput: Econ.Model.Config.T;
-  ceilingModel?: Econ.Model.Desc.T;
-  floorInput: Econ.Model.Config.T;
-  floorModel?: Econ.Model.Desc.T;
-  subsidyInput: Econ.Model.Config.T;
-  subsidyModel?: Econ.Model.Desc.T;
-  taxInput: Econ.Model.Config.T;
-  taxModel?: Econ.Model.Desc.T;
+  readonly ceiling?: [Econ.Model.Config.T,  Econ.Model.Desc.T];
+  readonly floor?: [Econ.Model.Config.T, Econ.Model.Desc.T];
+  readonly subsidy?: [Econ.Model.Config.T, Econ.Model.Desc.T];
+  readonly tax?: [Econ.Model.Config.T, Econ.Model.Desc.T];
 };
 
 export type Event =
