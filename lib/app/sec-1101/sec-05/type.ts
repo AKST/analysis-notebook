@@ -19,6 +19,9 @@ export type Config = {
 };
 
 export type State = {
+  readonly demand: Econ.Curve.Continious;
+  readonly supply: Econ.Curve.Continious;
+  readonly base?: Econ.Model.Desc.T;
   readonly ceiling?: [Econ.Model.Config.T,  Econ.Model.Desc.T];
   readonly floor?: [Econ.Model.Config.T, Econ.Model.Desc.T];
   readonly subsidy?: [Econ.Model.Config.T, Econ.Model.Desc.T];

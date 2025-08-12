@@ -57,11 +57,11 @@ export type State = {
     readonly modelEq: Econ.Model.Desc.T | undefined;
     readonly modelState: Econ.Model.Config.T  | undefined;
     readonly bounds: Vec2;
-    readonly consumers: Record<string, Econ.Curve.T>;
-    readonly producers: Record<string, Econ.Curve.T>;
+    readonly consumers: Record<string, Econ.Curve.Continious>;
+    readonly producers: Record<string, Econ.Curve.Continious>;
     readonly aggregate: {
-      readonly consumption: Econ.Curve.T,
-      readonly production: Econ.Curve.T,
+      readonly consumption: Econ.Curve.Continious,
+      readonly production: Econ.Curve.Continious,
     },
   },
 };

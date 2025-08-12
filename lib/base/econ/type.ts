@@ -39,6 +39,11 @@ export namespace Curve {
 
   export type Base = Discrete | Continious;
   export type T = Discrete | Continious | Shifted;
+
+  export type Summise<A, B> =
+    A extends Shifted ? Shifted :
+    B extends Shifted ? Shifted :
+    A extends B ? A : T;
 }
 
 export namespace Firm {
