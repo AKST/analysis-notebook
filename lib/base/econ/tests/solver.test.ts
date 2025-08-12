@@ -169,7 +169,7 @@ describe('status', () => {
 
       expect(model.demand.alloc).toEqual(allocShortHand(['mono', 21, 19, 19]));
       expect(model.supply.alloc).toEqual(allocShortHand(['mono', 21, 19, 19]));
-      expect(model.govt.supply.revenue.size).toEqual(21 * -2);
+      expect(model.govt.demand.revenue.size).toEqual(21 * -2);
     });
   });
 
