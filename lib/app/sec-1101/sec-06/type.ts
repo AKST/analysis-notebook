@@ -20,9 +20,16 @@ export type Config = {
 export type State = {
   readonly demand: Econ.Curve.Continious;
   readonly supply: Econ.Curve.Continious;
-  readonly base?: Econ.Model.Desc.T;
-  readonly tariff?: [Econ.Model.Config.T, Econ.Model.Desc.T];
-  readonly quota?: [Econ.Model.Config.T,  Econ.Model.Desc.T];
+  readonly examples: {
+    readonly exporting?: [Econ.Model.Config.T, Econ.Model.Desc.T];
+    readonly importing?: [Econ.Model.Config.T, Econ.Model.Desc.T];
+  };
+  readonly models: {
+    readonly base?: Econ.Model.Desc.T;
+    readonly freeTrade?: Econ.Model.Desc.T;
+    readonly tariff?: [Econ.Model.Config.T, Econ.Model.Desc.T];
+    readonly quota?: [Econ.Model.Config.T,  Econ.Model.Desc.T];
+  };
 };
 
 export type Event =
