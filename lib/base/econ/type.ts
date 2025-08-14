@@ -47,6 +47,10 @@ export namespace Curve {
 }
 
 export namespace Firm {
+  export type DiscreteFunction =
+    | { param: 'worker', rateOfChange: DiscreteRateOfChange }
+    | { param: 'units', rateOfChange: DiscreteRateOfChange }
+
   export type MarginalBehaviour = {
     readonly costVar: number,
     readonly costTotal: number,
