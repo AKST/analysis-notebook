@@ -20,15 +20,13 @@ export type RenderContext = RenderContextInit & {
 };
 
 export type Config = {
-  readonly examples:{
-    readonly a: {
-      readonly fishColor: number;
-      readonly fishPrice: number;
-      readonly fishCost: readonly number[]
-      readonly appleColor: number;
-      readonly applePrice: number;
-      readonly appleCost: readonly number[]
-    },
+  readonly examples: {
+    readonly fishColor: number;
+    readonly fishPrice: number;
+    readonly fishCost: readonly number[]
+    readonly appleColor: number;
+    readonly applePrice: number;
+    readonly appleCost: readonly number[]
   },
   readonly firm: {
     readonly price: number;
@@ -49,6 +47,19 @@ export type Good = {
   readonly table: Econ.Firm.BehaviourTable,
 };
 
+export type QuantityPlot = {
+  readonly bounds: Vec2;
+  readonly price: number;
+  readonly color: number;
+  readonly curve: readonly Vec2[];
+};
+
+export type ComparisionPlot = {
+  readonly bounds: Vec2;
+  readonly colors: [number, number];
+  readonly curves: [readonly Vec2[], readonly Vec2[]];
+};
+
 export type State = {
   readonly examples?: {
     readonly fish: Good;
@@ -56,6 +67,15 @@ export type State = {
   };
   readonly firm?: Econ.Firm.BehaviourTable;
   readonly firmScale: Vec2;
+  readonly quantityProducedPlots?: {
+    readonly fishOverApple: QuantityPlot;
+    readonly appleOverFish: QuantityPlot;
+
+    readonly marginalTime: ComparisionPlot;
+    readonly marginalProfit: ComparisionPlot;
+    readonly marginalBenefit: ComparisionPlot;
+    readonly marginalOC: ComparisionPlot;
+  };
 };
 
 export type Event =

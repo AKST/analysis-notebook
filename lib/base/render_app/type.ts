@@ -20,6 +20,7 @@ export type ElAttributes = {
   href?: string;
   display?: string;
   width?: string;
+  fontsize?: string;
   colSpan?: number | string;
   rowSpan?: number | string;
   height?: string,
