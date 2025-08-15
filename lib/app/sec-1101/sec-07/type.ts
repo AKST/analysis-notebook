@@ -20,40 +20,62 @@ export type RateOfChangeCfg =
   | { kind: 'scalar', value: number }
   | { kind: 'marginal', value: number[] };
 
+export type PriceSchedule =
+  | { kind: 'curve', value: { curve: [number, number] } }
+  | { kind: 'schedule', value: { prices: number[] } };
+
 export type Config = {
   readonly exampleA: {
     readonly fixedCost: number;
     readonly perworkerCost: RateOfChangeCfg;
     readonly perworkerQuantity: RateOfChangeCfg;
-    readonly price: [number, number];
+    readonly price: PriceSchedule;
     readonly maxWorkers: number;
-  };
-  readonly demand: {
-    readonly demandSchedule: number[];
   };
   readonly exampleB: {
     readonly supply: [number, number];
     readonly demand: [number, number];
+    readonly fixedCost: number;
+    readonly useAvgCostPrice: boolean;
   };
+  // readonly demand: {
+  //   readonly demandSchedule: number[];
+  // };
 };
 
 export type TablePlots = ReturnType<typeof econFirm.tablePlots>;
 
+export type MarketSurplusSummary = {
+  readonly demand: Econ.Model.Geom.Space;
+  readonly supply: Econ.Model.Geom.Space;
+  readonly dwl: Econ.Model.Geom.Space;
+};
+
 export type State = {
   readonly exampleA?: Econ.Firm.BehaviourTable;
   readonly exampleB?: {
+    readonly fixedCost: number;
     readonly marginalCost: Econ.Curve.Continious;
     readonly marginalRevenue: Econ.Curve.Continious;
     readonly demand: Econ.Curve.Continious;
     readonly bounds: Vec2;
-    readonly socialEq: Vec2;
-    readonly profitEq: Vec2;
+    readonly eq: {
+      readonly social: Vec2;
+      readonly profit: Vec2;
+      readonly atc: Vec2;
+    };
     readonly lines: {
       readonly demand: [Vec2, Vec2];
       readonly supply: [Vec2, Vec2];
+      readonly atc: readonly Vec2[];
       readonly revenue: [Vec2, Vec2];
     };
-    readonly deadWeightLoss: Econ.Model.Geom.Space;
+    readonly useAvgCostPrice: boolean;
+    readonly surpluses: {
+      readonly marginalRevenuePrice: MarketSurplusSummary;
+      readonly averageCostPrice: MarketSurplusSummary;
+      readonly marginalCost: MarketSurplusSummary;
+    };
   };
 };
 
