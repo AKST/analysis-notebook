@@ -36,11 +36,12 @@ export type Config = {
     readonly supply: [number, number];
     readonly demand: [number, number];
     readonly fixedCost: number;
-    readonly useAvgCostPrice: boolean;
   };
-  // readonly demand: {
-  //   readonly demandSchedule: number[];
-  // };
+  readonly exampleC: {
+    readonly perworkerCost: RateOfChangeCfg;
+    readonly perworkerQuantity: number;
+    readonly marketSegments: Record<string, PriceSchedule>;
+  };
 };
 
 export type TablePlots = ReturnType<typeof econFirm.tablePlots>;
@@ -70,12 +71,14 @@ export type State = {
       readonly atc: readonly Vec2[];
       readonly revenue: [Vec2, Vec2];
     };
-    readonly useAvgCostPrice: boolean;
     readonly surpluses: {
       readonly marginalRevenuePrice: MarketSurplusSummary;
       readonly averageCostPrice: MarketSurplusSummary;
       readonly marginalCost: MarketSurplusSummary;
     };
+  };
+  readonly exampleC?: {
+    readonly markets: Record<string, Econ.Firm.BehaviourTable>;
   };
 };
 

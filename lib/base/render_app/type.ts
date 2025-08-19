@@ -14,6 +14,8 @@ export type ElAttributes = {
   size?: string;
 
   align?: 'top' | 'bottom' | 'left' | 'right';
+  type?: string;
+  value?: string;
   title?: string;
   alt?: string;
   src?: string;
