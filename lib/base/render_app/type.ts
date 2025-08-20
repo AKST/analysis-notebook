@@ -13,20 +13,31 @@ export type ElAttributes = {
   events?: EventSpec;
   size?: string;
 
-  align?: 'top' | 'bottom' | 'left' | 'right';
-  type?: string;
-  value?: string;
-  title?: string;
   alt?: string;
-  src?: string;
-  href?: string;
-  display?: string;
-  width?: string;
-  fontsize?: string;
-  colSpan?: number | string;
-  rowSpan?: number | string;
-  height?: string,
+  align?: 'top' | 'bottom' | 'left' | 'right';
   color?: string;
+  colSpan?: number | string;
+  display?: string;
+  fontsize?: string;
+  height?: string | number;
+  href?: string;
+  name?: string;
+  open?: true | false;
+  rowSpan?: number | string;
+  src?: string;
+  type?: string;
+  title?: string;
+  value?: string;
+  width?: string | number;
+
+  fill?: string;
+  ['font-size']?: number;
+  stroke?: string;
+  ['stroke-width']?: string | number;
+  ['text-anchor']?: string;
+  viewBox?: string;
+  x?: string | number,
+  y?: string | number,
 };
 
 export type El =
