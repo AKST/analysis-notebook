@@ -1,5 +1,6 @@
-import { RenderWidgetMeta, RenderWidget, RenderContextInit } from './widget/canvas/type.ts';
 import { DocumentWidget } from './widget/document/type.js'
+import { IframeWidget } from './widget/iframe/type.js'
+import { RenderWidgetMeta, RenderWidget, RenderContextInit } from './widget/canvas/type.ts';
 import { E } from '../../base/render_app/type.js'
 
 export { RenderWidgetMeta, RenderContextInit }
@@ -50,9 +51,14 @@ export type SingleModule<Ctx, State, Config, Event> =
     Exclude<Module<Ctx, State, Config, Event>, { meta: { kind: 'multi' } }>;
 
 export type Module<Ctx, State, Config, Event> =
+  | IframeModule<Ctx, State, Config, Event>
   | DocumentModule<Ctx, State, Config, Event>
   | RenderModule<Ctx, State, Config, Event>
   | MultiModule<State, Config, Event>;
+
+export type IframeModule<Ctx, State, Config, Event> =
+  & IframeWidget<Ctx, State, Config>
+  & ModuleCommon<State, Config, Event>;
 
 export type RenderModule<Ctx, State, Config, Event> =
   & RenderWidget<Ctx, State, Config>
@@ -64,10 +70,9 @@ export type DocumentModule<Ctx, State, Config, Event> =
 
 
 
-
-
 export type WidgetChild<Ctx, State, Config> = (
   | Omit<DocumentChildWidget<Ctx, State, Config>, 'createStyle'>
+  | IframeWidget<Ctx, State, Config>
   | RenderChildWidget<Ctx, State, Config>
 ) & ({
   size?: WidgetSize,
@@ -78,6 +83,9 @@ export type RenderChildWidget<Ctx, State, Config> =
 
 export type DocumentChildWidget<Ctx, State, Config> =
   & DocumentWidget<Ctx, State, Config>;
+
+export type IframeChildWidget<Ctx, State, Config> =
+  & IframeWidget<Ctx, State, Config>;
 
 type GridColumnCfg = { default: number } & Record<string, number>;
 
