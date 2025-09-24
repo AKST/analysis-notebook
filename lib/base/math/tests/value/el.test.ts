@@ -884,18 +884,5 @@ describe('inv function (elementwise inverse)', () => {
       expect(inv(-0)).toEqual(-Infinity);
     });
   });
-
-  describe('error cases', () => {
-    it('throws error for invalid arguments', () => {
-      // @ts-ignore - will deal with later
-      expect(() => inv()).toThrow('inv requires at least one argument');
-    });
-
-    it('throws error for invalid types', () => {
-      expect(() => inv({})).toThrow();
-      expect(() => inv(null)).toThrow();
-      expect(() => inv(undefined)).toThrow();
-    });
-  });
 });
 

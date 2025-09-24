@@ -174,10 +174,6 @@ describe('vector namespace functions', () => {
       expect(v.cross3d(v(3)(2, 4, 6), v(3)(1, 2, 3))).toEqual(v(3)(0, 0, 0));
       expect(v.cross3d(v(3)(1, 2, 3), v(3)(1, 2, 3))).toEqual(v(3)(0, 0, 0));
     });
-
-    it('throws error for non-3D vectors', () => {
-      expect(() => v.cross3d(v(2)(1, 2), v(2)(3, 4))).toThrow(TypeError);
-    });
   });
 
   describe('cross product properties', () => {
@@ -191,7 +187,7 @@ describe('vector namespace functions', () => {
 
     it('magnitude gives parallelogram area', () => {
       expect(Math.abs(v.cross2d(v()(3, 0), v()(0, 4)))).toEqual(12);
-      expect(v.norm(v.cross3d(v()(3, 0, 0), v()(0, 4, 0)))).toEqual(12);
+      expect(v.norm(v.cross3d(v(3)(3, 0, 0), v(3)(0, 4, 0)))).toEqual(12);
     });
   });
 

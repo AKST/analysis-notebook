@@ -196,7 +196,7 @@ describe('Matrix namespace functions', () => {
 
     it('sets row from vector', () => {
       const matrix = m(2, 2)([1, 2], [3, 4]);
-      const newRow = unit.v()(9, 8);
+      const newRow = unit.v(2)(9, 8);
       const result = m.setRow(matrix, 1, newRow);
 
       expect(result.mat).toEqual([[1, 2], [9, 8]]);
@@ -219,7 +219,7 @@ describe('Matrix namespace functions', () => {
 
     it('sets column from vector', () => {
       const matrix = m(2, 2)([1, 2], [3, 4]);
-      const newCol = unit.v()(9, 8);
+      const newCol = unit.v(2)(9, 8);
       const result = m.setCol(matrix, 1, newCol);
 
       expect(result.mat).toEqual([[1, 9], [3, 8]]);

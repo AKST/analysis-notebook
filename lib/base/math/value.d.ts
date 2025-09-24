@@ -5,12 +5,15 @@
 import * as Natural from './natural.ts';
 import type {
   ElementKind,
+  ElementType,
   KindFromElementType,
   MatrixElements,
   Field,
   Complex,
   Vector,
+  VectorOf,
   Matrix,
+  MatrixOf,
 } from './type.js';
 
 // Promotion type with mathematical hierarchy: Matrix > Vector > Complex > number
@@ -32,7 +35,7 @@ type MatrixPromotion<N, M, A, B> =
   MatrixOf<KindFromElementType<Promotion<ElementType<A>, ElementType<B>>>, N, M>;
 
 // Generic binary operation type
-type MathValue = Field | VectorOf<number, ElementKind> | Matrix;
+type MathValue = Field | VectorOf<ElementKind, number> | Matrix;
 
 type UniaryMathOperation = {
   <A extends MathValue>(a: A): A;
@@ -53,22 +56,22 @@ type BinaryScalarOperation = {
   <N, M, R extends ElementKind, B extends Field>(
       a: MatrixOf<R, N, M>,
       b: B,
-  ): ScalarMatrixPromotion<N, M, R, A>;
+  ): ScalarMatrixPromotion<N, M, R, B>;
 
   <N, M, R extends ElementKind, B extends Field>(
       a: B,
       b: MatrixOf<R, N, M>,
-  ): ScalarMatrixPromotion<N, M, R, A>;
+  ): ScalarMatrixPromotion<N, M, R, B>;
 
   /**
    * Vector Elementwise operations
    */
-  <N, R extends ElementKind>(a: VectorOf<N, R>, b: VectorOf<N, R>): VectorOf<N, R>;
+  <N, R extends ElementKind>(a: VectorOf<R, N>, b: VectorOf<R, N>): VectorOf<R, N>;
   /**
    * Vector Scalar operations
    */
-  <A extends MathValue, N, R extends ElementKind>(a: A, b: VectorOf<N, R>): VectorOf<N, R>;
-  <A extends MathValue, N, R extends ElementKind>(b: VectorOf<N, R>, a: A): VectorOf<N, R>;
+  <A extends MathValue, N, R extends ElementKind>(a: A, b: VectorOf<R, N>): VectorOf<R, N>;
+  <A extends MathValue, N, R extends ElementKind>(b: VectorOf<R, N>, a: A): VectorOf<R, N>;
 
   <A extends MathValue, B extends MathValue>(a: A, b: B): Promotion<A, B>;
   <A extends MathValue>(a: A): <B extends MathValue>(b: B) => Promotion<A, B>;
@@ -79,7 +82,7 @@ type BinaryOp<A, B> =
   & ((a: A) => (b: B) => Promotion<A, B>);
 
 type BinaryMatrixOp = {
-  <A, B, N>(a: MatrixOf<A, N, N>, b: MatrixOf<B, N, N>): MatrixPromotion<N, N, A, B>;
+  <A extends ElementKind, B extends ElementKind, N>(a: MatrixOf<A, N, N>, b: MatrixOf<B, N, N>): MatrixPromotion<N, N, A, B>;
 };
 
 type BinaryNumberOp = {
@@ -131,20 +134,20 @@ export function vector<N extends number | undefined>(
   ...vec: T[],
 ) => VectorOf<
   KindFromElementType<T>,
-  N extends undefined ? number : N,
+  N extends undefined ? number : N
 >;
 
 export namespace vector {
-  export function zeros(length: number): Vector;
-  export function ones(length: number): Vector;
-  export function basis(length: number, index: number): Vector;
+  export function zeros<N extends number>(length: N): VectorOf<'r', N>;
+  export function ones<N extends number>(length: N): VectorOf<'r', N>;
+  export function basis<N extends number>(length: N, index: number): VectorOf<'r', N>;
   export function size(v: Vector): number;
-  export function norm(v: Vector): number;
-  export function unit(v: Vector): Vector;
-  export function cross2d(v: Vector, v: Vector): number;
-  export function cross3d(v: Vector, v: Vector): Vector;
+  export function norm<K, N>(v: VectorOf<K, N>): number;
+  export function unit<K, N extends number>(length: VectorOf<K, N>): VectorOf<'r', N>;
+  export function cross2d(a: Vector, b: Vector): number;
+  export function cross3d(a: VectorOf<'r', 3>, b: VectorOf<'r', 3>): VectorOf<'r', 3>;
   export function dot(a: Vector, b: Vector): number;
-  export function set(v: Vector, i: number, a: number | Complex): Vector;
+  export function set<K extends number | Complex, N>(v: Vector, i: number, a: K): VectorOf<KindFromElementType<K>, N>;
   export function get(v: Vector, i: number): number | Complex;
 }
 
