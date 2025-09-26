@@ -1,12 +1,18 @@
 import { E } from '../../../../base/render_app/type.js';
 
-export type IframeWidget<Ctx, State, Config> = {
+export type IframeWidget<Ctx, State, Config, Event> = {
   meta: { kind: 'iframe' },
   title: string,
   path: string,
   header?: E.Item | undefined;
-  normaliseMessage?(message: ParentToChildMessage<Config, State>): Generator<any>;
+  initialise?(): Generator<any>;
+  normaliseSend?(message: ParentToChildMessage<Config, State>): Generator<any>;
+  normaliseRecv?(message: any): Generator<NormalisedRecv<Event>>;
 };
+
+export type NormalisedRecv<E> =
+  | ['dispatch', E]
+  | ['reply', any];
 
 export type ParentToChildMessage<Cfg, St> =
   | { kind: 'push', config: Cfg, state: St }

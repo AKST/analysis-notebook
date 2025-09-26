@@ -3,7 +3,7 @@ import { IframeWidget } from './widget/iframe/type.js'
 import { RenderWidgetMeta, RenderWidget, RenderContextInit } from './widget/canvas/type.ts';
 import { E } from '../../base/render_app/type.js'
 
-export { RenderWidgetMeta, RenderContextInit }
+export { IframeWidget, RenderWidgetMeta, RenderContextInit }
 
 export type WidgetHud = {
   header?: E.Item
@@ -43,7 +43,7 @@ export type MultiModule<State, Config, Event> = {
     },
   };
   createStyle?(): Record<string, any>;
-  children: WidgetChild<any, State, Config>[];
+  children: WidgetChild<any, State, Config, Event>[];
 } & ModuleCommon<State, Config, Event>;
 
 
@@ -57,7 +57,7 @@ export type Module<Ctx, State, Config, Event> =
   | MultiModule<State, Config, Event>;
 
 export type IframeModule<Ctx, State, Config, Event> =
-  & IframeWidget<Ctx, State, Config>
+  & IframeWidget<Ctx, State, Config, Event>
   & ModuleCommon<State, Config, Event>;
 
 export type RenderModule<Ctx, State, Config, Event> =
@@ -70,9 +70,9 @@ export type DocumentModule<Ctx, State, Config, Event> =
 
 
 
-export type WidgetChild<Ctx, State, Config> = (
+export type WidgetChild<Ctx, State, Config, Event = any> = (
   | Omit<DocumentChildWidget<Ctx, State, Config>, 'createStyle'>
-  | IframeWidget<Ctx, State, Config>
+  | IframeWidget<Ctx, State, Config, Event>
   | RenderChildWidget<Ctx, State, Config>
 ) & ({
   size?: WidgetSize,
@@ -84,8 +84,8 @@ export type RenderChildWidget<Ctx, State, Config> =
 export type DocumentChildWidget<Ctx, State, Config> =
   & DocumentWidget<Ctx, State, Config>;
 
-export type IframeChildWidget<Ctx, State, Config> =
-  & IframeWidget<Ctx, State, Config>;
+export type IframeChildWidget<Ctx, State, Config, Event> =
+  & IframeWidget<Ctx, State, Config, Event>;
 
 type GridColumnCfg = { default: number } & Record<string, number>;
 
@@ -97,5 +97,5 @@ export type ChildWidgetParam = {
 };
 
 export type WidgetFactory = {
-  create<S, C, E>(module: WidgetChild<any, S, C>, config: ChildWidgetParam): WidgetRunner<S, C>;
+  create<S, C, E>(module: WidgetChild<any, S, C, E>, config: ChildWidgetParam): WidgetRunner<S, C>;
 }

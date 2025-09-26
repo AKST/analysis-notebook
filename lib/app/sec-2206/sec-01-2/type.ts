@@ -14,7 +14,8 @@ export type RenderContext = RenderContextInit & {
 };
 
 export type Event =
-  | { kind: 'config', config: Config };
+  | { kind: 'config', config: Config }
+  | { kind: 'set-crime-mean', mean: number };
 
 export type Config = {
   dummy: number;
@@ -22,5 +23,6 @@ export type Config = {
 
 
 export type State = {
+  crimeMean: number | undefined,
 };
 
