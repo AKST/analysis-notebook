@@ -1,14 +1,23 @@
 import { E } from '../../../../base/render_app/type.js';
 
-export type IframeWidget<Ctx, State, Config, Event> = {
-  meta: { kind: 'iframe' },
+export type RemoteWidget<Ctx, State, Config, Event> = {
+  meta: { kind: 'remote' },
   title: string,
-  path: string,
+  source: RemoteVariant,
   header?: E.Item | undefined;
   initialise?(): Generator<any>;
   normaliseSend?(message: ParentToChildMessage<Config, State>): Generator<any>;
   normaliseRecv?(message: any): Generator<NormalisedRecv<Event>>;
 };
+
+
+export type RemoteVariant =
+  | { kind: 'worker', src: string }
+  | { kind: 'iframe', src: string }
+
+export type RemoteConnection =
+  | { kind: 'worker', worker: Worker }
+  | { kind: 'iframe', iframe: HTMLIFrameElement }
 
 export type NormalisedRecv<E> =
   | ['dispatch', E]

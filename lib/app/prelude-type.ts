@@ -5,7 +5,7 @@ export {
 } from '../2d/type.js';
 export { E } from '../base/render_app/type.js';
 export {
-  IframeChildWidget as IframeWidget,
+  RemoteChildWidget as RemoteWidget,
   DocumentChildWidget as DocumentWidget,
   RenderContextInit,
   RenderChildWidget as RenderWidget,

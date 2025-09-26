@@ -1,9 +1,9 @@
 import { DocumentWidget } from './widget/document/type.js'
-import { IframeWidget } from './widget/iframe/type.js'
+import { RemoteWidget } from './widget/remote/type.js'
 import { RenderWidgetMeta, RenderWidget, RenderContextInit } from './widget/canvas/type.ts';
 import { E } from '../../base/render_app/type.js'
 
-export { IframeWidget, RenderWidgetMeta, RenderContextInit }
+export { RemoteWidget, RenderWidgetMeta, RenderContextInit }
 
 export type WidgetHud = {
   header?: E.Item
@@ -14,9 +14,9 @@ export type RenderStrategy = 'frame' | 'event';
 export type ScalingStrategy = 'fluid' | 'fixed';
 
 export interface WidgetRunner<State, Config> {
+  scalingStrategy: ScalingStrategy;
   constructor: {
     renderStrategy: RenderStrategy;
-    scalingStrategy: ScalingStrategy;
   };
   module: WidgetChild<unknown, State, Config>;
   initialize(onEvent: (event: unknown) => void): void;
@@ -51,13 +51,13 @@ export type SingleModule<Ctx, State, Config, Event> =
     Exclude<Module<Ctx, State, Config, Event>, { meta: { kind: 'multi' } }>;
 
 export type Module<Ctx, State, Config, Event> =
-  | IframeModule<Ctx, State, Config, Event>
+  | RemoteModule<Ctx, State, Config, Event>
   | DocumentModule<Ctx, State, Config, Event>
   | RenderModule<Ctx, State, Config, Event>
   | MultiModule<State, Config, Event>;
 
-export type IframeModule<Ctx, State, Config, Event> =
-  & IframeWidget<Ctx, State, Config, Event>
+export type RemoteModule<Ctx, State, Config, Event> =
+  & RemoteWidget<Ctx, State, Config, Event>
   & ModuleCommon<State, Config, Event>;
 
 export type RenderModule<Ctx, State, Config, Event> =
@@ -72,7 +72,7 @@ export type DocumentModule<Ctx, State, Config, Event> =
 
 export type WidgetChild<Ctx, State, Config, Event = any> = (
   | Omit<DocumentChildWidget<Ctx, State, Config>, 'createStyle'>
-  | IframeWidget<Ctx, State, Config, Event>
+  | RemoteWidget<Ctx, State, Config, Event>
   | RenderChildWidget<Ctx, State, Config>
 ) & ({
   size?: WidgetSize,
@@ -84,8 +84,8 @@ export type RenderChildWidget<Ctx, State, Config> =
 export type DocumentChildWidget<Ctx, State, Config> =
   & DocumentWidget<Ctx, State, Config>;
 
-export type IframeChildWidget<Ctx, State, Config, Event> =
-  & IframeWidget<Ctx, State, Config, Event>;
+export type RemoteChildWidget<Ctx, State, Config, Event> =
+  & RemoteWidget<Ctx, State, Config, Event>;
 
 type GridColumnCfg = { default: number } & Record<string, number>;
 

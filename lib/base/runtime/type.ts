@@ -1,8 +1,7 @@
 export {
   DocumentChildWidget as DocumentWidget,
   RenderContextInit,
-  IframeWidget,
-  IframeChildWidget as IFrameWidget,
+  RemoteChildWidget as RemoteWidget,
   RenderChildWidget as RenderWidget,
   RenderWidgetMeta,
   WidgetChild as Widget,
