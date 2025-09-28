@@ -14,13 +14,34 @@ export type RenderContext = RenderContextInit & {
 };
 
 export type Event =
-  | { kind: 'config', config: Config };
+  | { kind: 'init', config: Config }
+  | { kind: 'config', config: Config, source: string[] };
 
 export type Config = {
-  dummy: number;
+  exogenous: {
+    alpha: number,
+    labour: number;
+    technology: number;
+    capitalInit: number,
+    investmentFactor: number,
+    depreciationRate: number,
+  },
+  dynamics: {
+    periodMs: number,
+  },
 };
 
 
 export type State = {
+  capitalDynamics: {
+    start: number,
+    state: number,
+    steadyState: number,
+  },
+  chart: {
+    trajectory: Vec<'r', 2>[],
+    translate: Vec<'r', 2>,
+    bounds: Vec<'r', 2>,
+  },
 };
 
