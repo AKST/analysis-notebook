@@ -1,9 +1,21 @@
 import { DocumentWidget } from './widget/document/type.js'
 import { RemoteWidget } from './widget/remote/type.js'
 import { RenderWidgetMeta, RenderWidget, RenderContextInit } from './widget/canvas/type.ts';
+
+import { ConfigChangeEvent } from '../config/events.js';
 import { E } from '../../base/render_app/type.js'
 
 export { RemoteWidget, RenderWidgetMeta, RenderContextInit }
+
+export type ApplicationController = {
+  events: EventTarget,
+  container: HTMLElement,
+
+  loadApp(path: string): void;
+  onResize(): void;
+  onConfigUpdate(config: ConfigChangeEvent): void;
+};
+
 
 export type WidgetHud = {
   header?: E.Item
