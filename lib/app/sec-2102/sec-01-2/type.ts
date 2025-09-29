@@ -37,6 +37,7 @@ export type State = {
   capitalDynamics: {
     state: number,
     steadyState: number,
+    trajectory: Vec<'r', 2>[],
     start: {
       time: number,
       capital: number,
@@ -44,6 +45,7 @@ export type State = {
     chart: {
       period: number,
       trajectory: Vec<'r', 2>[],
+      trajectoryInit: undefined | Vec<'r', 2>[],
       translate: Vec<'r', 2>,
       bounds: Vec<'r', 2>,
     },
