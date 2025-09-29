@@ -37,19 +37,29 @@ export type TrajectoryMap = {
   output: Vec<'r', 2>[],
 };
 
+export type CameraTransform = {
+  translate: Vec<'r', 2>,
+  bounds: Vec<'r', 2>,
+  dest: Vec<'r', 2>,
+};
+
+export type CameraMap = {
+  capital: CameraTransform,
+  output: CameraTransform,
+  allAgg: CameraTransform,
+};
+
 export type State = {
   solowSwan: {
     trajectory: TrajectoryMap,
     model: Model,
     time: { branch: number, start: number, period: number },
     chart: {
+      camera: CameraMap,
       prerenderedTrajectory: {
         current: TrajectoryMap,
         initial: TrajectoryMap | undefined,
       }
-      translate: Vec<'r', 2>,
-      bounds: Vec<'r', 2>,
-      dst: Vec<'r', 2>,
     },
   },
 };
@@ -58,7 +68,6 @@ export type Config = {
   exogenous: ExogenousVariables,
   dynamics: {
     periodMs: number,
-    discrete: boolean,
   },
 };
 
