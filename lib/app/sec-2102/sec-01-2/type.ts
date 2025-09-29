@@ -34,6 +34,7 @@ export type Model = {
 
 export type TrajectoryMap = {
   capital: Vec<'r', 2>[],
+  output: Vec<'r', 2>[],
 };
 
 export type State = {
