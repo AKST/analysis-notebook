@@ -28,20 +28,25 @@ export type Config = {
   },
   dynamics: {
     periodMs: number,
+    discrete: boolean,
   },
 };
 
 
 export type State = {
   capitalDynamics: {
-    start: number,
     state: number,
     steadyState: number,
-  },
-  chart: {
-    trajectory: Vec<'r', 2>[],
-    translate: Vec<'r', 2>,
-    bounds: Vec<'r', 2>,
+    start: {
+      time: number,
+      capital: number,
+    },
+    chart: {
+      period: number,
+      trajectory: Vec<'r', 2>[],
+      translate: Vec<'r', 2>,
+      bounds: Vec<'r', 2>,
+    },
   },
 };
 
