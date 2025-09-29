@@ -17,15 +17,17 @@ export type Event =
   | { kind: 'init', config: Config }
   | { kind: 'config', config: Config, source: string[] };
 
+export type ExogenousVariables = {
+  alpha: number,
+  labour: number;
+  technology: number;
+  capitalInit: number,
+  investmentFactor: number,
+  depreciationRate: number,
+};
+
 export type Config = {
-  exogenous: {
-    alpha: number,
-    labour: number;
-    technology: number;
-    capitalInit: number,
-    investmentFactor: number,
-    depreciationRate: number,
-  },
+  exogenous: ExogenousVariables,
   dynamics: {
     periodMs: number,
     discrete: boolean,
@@ -35,11 +37,12 @@ export type Config = {
 
 export type State = {
   capitalDynamics: {
-    state: number,
     steadyState: number,
+    exogenous: ExogenousVariables,
     trajectory: Vec<'r', 2>[],
     start: {
-      time: number,
+      timeAnimation: number,
+      timeTrajectory: number,
       capital: number,
     },
     chart: {
@@ -48,6 +51,7 @@ export type State = {
       trajectoryInit: undefined | Vec<'r', 2>[],
       translate: Vec<'r', 2>,
       bounds: Vec<'r', 2>,
+      dst: Vec<'r', 2>,
     },
   },
 };
