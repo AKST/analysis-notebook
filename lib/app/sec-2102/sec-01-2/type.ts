@@ -32,15 +32,19 @@ export type Model = {
   capitalZero: number,
 };
 
+export type TrajectoryMap = {
+  capital: Vec<'r', 2>[],
+};
+
 export type State = {
   solowSwan: {
-    trajectory: Vec<'r', 2>[],
+    trajectory: TrajectoryMap,
     model: Model,
     time: { branch: number, start: number, period: number },
     chart: {
       prerenderedTrajectory: {
-        current: Vec<'r', 2>[],
-        initial: Vec<'r', 2>[] | undefined,
+        current: TrajectoryMap,
+        initial: TrajectoryMap | undefined,
       }
       translate: Vec<'r', 2>,
       bounds: Vec<'r', 2>,
