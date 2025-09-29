@@ -26,33 +26,34 @@ export type ExogenousVariables = {
   depreciationRate: number,
 };
 
+export type Model = {
+  inputs: ExogenousVariables,
+  steadyState: number,
+  capitalZero: number,
+};
+
+export type State = {
+  solowSwan: {
+    trajectory: Vec<'r', 2>[],
+    model: Model,
+    time: { branch: number, start: number, period: number },
+    chart: {
+      prerenderedTrajectory: {
+        current: Vec<'r', 2>[],
+        initial: Vec<'r', 2>[] | undefined,
+      }
+      translate: Vec<'r', 2>,
+      bounds: Vec<'r', 2>,
+      dst: Vec<'r', 2>,
+    },
+  },
+};
+
 export type Config = {
   exogenous: ExogenousVariables,
   dynamics: {
     periodMs: number,
     discrete: boolean,
-  },
-};
-
-
-export type State = {
-  capitalDynamics: {
-    steadyState: number,
-    exogenous: ExogenousVariables,
-    trajectory: Vec<'r', 2>[],
-    start: {
-      timeAnimation: number,
-      timeTrajectory: number,
-      capital: number,
-    },
-    chart: {
-      period: number,
-      trajectory: Vec<'r', 2>[],
-      trajectoryInit: undefined | Vec<'r', 2>[],
-      translate: Vec<'r', 2>,
-      bounds: Vec<'r', 2>,
-      dst: Vec<'r', 2>,
-    },
   },
 };
 
