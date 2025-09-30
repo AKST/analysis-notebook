@@ -4,10 +4,54 @@
 
 :root {
   --bg-black: #1a1a1a;
+  --bg-black-0f: #0f0f0f;
+  --bg-black-2a: #2a2a2a;
+  --bg-black-33: #333;
+  --bg-black-3a: #3a3a3a;
+  --bg-black-44: #444;
+  --bg-white: #ffffff;
+  --bg-blue: #0000ff;
+  --bg-red: #ff0000;
   --bg-msgrey: #c6c6c6;
+  --bg-msteal: teal;
   --bg-greygreen: rgb(112, 121, 110);
+
+  --fg-grey-aa: #aaa;
+  --fg-white: #fafafa;
+  --fg-white-cc: #ccc;
+  --fg-white-ee: #eee;
+  --fg-peach: #ffaaaa;
+
+  --txt-shadow-blue: 2px 2px #0000ff;
+
   --border-inset-grey: 3px inset #c6c6c6;
   --border-outset-grey: 3px outset #c6c6c6;
+  --border-solid-grey: 1px solid #333;
+  --border-solid-white: white 1px solid;
+  --border-white-dash: white 1px dashed;
+
+  @media (prefers-color-scheme: light) {
+    --bg-black: #fafafa;
+    --bg-black-0f: #e0e0e0;
+    --bg-black-2a: #c5c5c5;
+    --bg-black-33: #ccc;
+    --bg-black-3a: #b5b5b5;
+    --bg-black-44: #bbb;
+
+    --bg-blue: #00ffff;
+    --fg-red: #ffff00;
+
+    --fg-grey-aa: #555;
+    --fg-white: #0000ff;
+    --fg-white-cc: #333;
+    --fg-white-ee: #11a;
+
+    --txt-shadow-blue: 1px 1px #ff66ff;
+
+    --border-solid-grey: 1px solid #ccc;
+    --border-solid-white: 1px solid blue;
+    --border-white-dash: #0000ff 1px dashed;
+  }
 }
 
 html, body {
@@ -16,7 +60,7 @@ html, body {
 
 body {
   margin: 0;
-  color: white;
+  color: var(--fg-white);
   font-family: monospace;
   height: 100%;
   max-height: 100dvh;
@@ -50,7 +94,7 @@ body {
   grid-template-columns: 1fr auto;
   grid-template-rows: 20px;
   align-items: center;
-  background: #0000ff;
+  background: var(--bg-blue);
   padding: 8px 8px 8px 13px;
 
   & > h1 {
@@ -75,7 +119,7 @@ body {
 
 .main-content {
   display: grid;
-  background: #1a1a1a;
+  background: var(--bg-black);
   grid-template-columns: 1fr;
   grid-template-rows: 100%;
   max-height: 100%;
@@ -109,7 +153,8 @@ body {
   }
 
   .config-container {
-    border-left: 1px solid #333;
+    border-left: var(--border-solid-grey);
+    border-left-width: 1px;
   }
 }
 
@@ -123,7 +168,8 @@ body {
     display: none;
     overflow-y: auto;
     order: 2;
-    border-top: 1px solid #333;
+    border-top: var(--border-solid-grey);
+    border-top-width: 1px;
     height: 50dvh;
     position: absolute;
     bottom: 4px;
