@@ -18,6 +18,9 @@
 
   --fg-grey-aa: #aaa;
   --fg-white: #fafafa;
+  --fg-white-on-blue: #fafafa;
+  --fg-white-on-red: #fafafa;
+  --fg-white-on-grey: #fafafa;
   --fg-white-cc: #ccc;
   --fg-white-ee: #eee;
   --fg-peach: #ffaaaa;
@@ -38,11 +41,14 @@
     --bg-black-3a: #b5b5b5;
     --bg-black-44: #bbb;
 
-    --bg-blue: #00ffff;
-    --fg-red: #ffff00;
+    --bg-blue: teal;
+    --bg-red: #ffff00;
 
     --fg-grey-aa: #555;
     --fg-white: #0000ff;
+    --fg-white-on-blue: #fafafa;
+    --fg-white-on-red: #0000ff;
+    --fg-white-on-grey: #fafafa;
     --fg-white-cc: #333;
     --fg-white-ee: #11a;
 
@@ -95,6 +101,7 @@ body {
   grid-template-rows: 20px;
   align-items: center;
   background: var(--bg-blue);
+  color: var(--fg-white-on-blue);
   padding: 8px 8px 8px 13px;
 
   & > h1 {

@@ -37,6 +37,10 @@ export type TrajectoryMap = {
   output: Vec<'r', 2>[],
 };
 
+export type RenderedTrajectoryMap = TrajectoryMap & {
+  outputByK: Vec<'r', 2>[],
+};
+
 export type CameraTransform = {
   translate: Vec<'r', 2>,
   bounds: Vec<'r', 2>,
@@ -57,8 +61,8 @@ export type State = {
     chart: {
       camera: CameraMap,
       prerenderedTrajectory: {
-        current: TrajectoryMap,
-        initial: TrajectoryMap | undefined,
+        current: RenderedTrajectoryMap,
+        initial: RenderedTrajectoryMap | undefined,
       }
     },
   },
