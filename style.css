@@ -11,6 +11,7 @@
   --bg-black-44: #444;
   --bg-white: #ffffff;
   --bg-blue: #0000ff;
+  --bg-pink: #ff00DD;
   --bg-red: #ff0000;
   --bg-msgrey: #c6c6c6;
   --bg-msteal: teal;
@@ -23,6 +24,7 @@
   --fg-white-on-grey: #fafafa;
   --fg-white-cc: #ccc;
   --fg-white-ee: #eee;
+  --fg-black-on-pink: #000;
   --fg-peach: #ffaaaa;
 
   --txt-shadow-blue: 2px 2px #0000ff;
@@ -41,6 +43,7 @@
     --bg-black-3a: #b5b5b5;
     --bg-black-44: #bbb;
 
+    --bg-pink: #ffAAFF;
     --bg-blue: teal;
     --bg-red: #ffff00;
 
