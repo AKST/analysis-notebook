@@ -10,10 +10,11 @@ export type RemoteWidget<Ctx, State, Config, Event> = {
   normaliseRecv?(message: any): Generator<NormalisedRecv<Event>>;
 };
 
+export type IframeAttrs = Record<'scrolling', string>;
 
 export type RemoteVariant =
   | { kind: 'worker', src: string }
-  | { kind: 'iframe', src: string }
+  | { kind: 'iframe', src: string, attrs: IframeAttrs }
 
 export type RemoteConnection =
   | { kind: 'worker', worker: Worker }
