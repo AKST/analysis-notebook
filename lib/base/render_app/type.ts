@@ -38,6 +38,7 @@ export type ElAttributes = {
   viewBox?: string;
   x?: string | number,
   y?: string | number,
+  columnalign?: string,
 };
 
 export type El =
