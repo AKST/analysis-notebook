@@ -17,7 +17,6 @@ export type Event =
   | { kind: 'config', config: Config };
 
 export type Config = {
-  dummy: number;
 };
 
 

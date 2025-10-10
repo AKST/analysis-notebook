@@ -25,6 +25,7 @@ export type ElAttributes = {
   open?: true | false;
   rowSpan?: number | string;
   src?: string;
+  target?: string;
   type?: string;
   title?: string;
   value?: string;
