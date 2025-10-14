@@ -18,7 +18,7 @@ const mainContent = /** @type {HTMLElement} */
 const application = installApplication({
   config: cfgCtrl.config,
   container: mainContent,
-  initialApp: navCtrl.navigation.currentApp,
+  initialApp: navCtrl.currentApp,
   /** @ts-ignore - if theres no path theres a runtime error */
   loadModule: path => import(path),
 });
