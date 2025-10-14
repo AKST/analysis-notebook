@@ -11,7 +11,7 @@ export {
   RenderChildWidget as RenderWidget,
   RenderWidgetMeta,
   WidgetChild as Widget,
-} from '../ui/application/type.js';
+} from '../base/runtime/type.js';
 export {
   KnobConfig,
   MakeConfigKnobs,
