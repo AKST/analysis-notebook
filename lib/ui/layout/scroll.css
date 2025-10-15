@@ -1,0 +1,90 @@
+.ms-scroll {
+  &:focus { outline: none; }
+  &::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-image: var(--img-scroll-bg);
+    image-rendering: pixelated;
+
+    &:active {
+      background-image: var(--img-scroll-bg-active);
+    }
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border: var(--border-outset-grey);
+    border-width: 1px;
+    box-shadow: var(--boxshadow-ms-outset);
+
+    width: 16px;
+    height: 16px;
+    background-color: var(--bg-msgrey);
+    z-index: 1;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background-color: var(--bg-msgrey);
+  }
+
+  &::-webkit-resizer {
+    width: 16px;
+    height: 16px;
+    background-color: var(--bg-msgrey);
+    background-image: var(--img-scroll-resizer);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+  }
+
+  &::-webkit-scrollbar-button,
+  &::-webkit-scrollbar-button {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: var(--bg-msgrey);
+    box-shadow: var(--boxshadow-ms-outset);
+    border: var(--border-outset-grey);
+    border-width: 1px;
+    image-rendering: pixelated;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &:active {
+      background-position: 2px 2px;
+    }
+
+    &:active {
+      border: var(--border-inset-grey);
+      border-width: 1px;
+      box-shadow: none;
+    }
+  }
+
+  &::-webkit-scrollbar-button:horizontal:increment:start,
+  &::-webkit-scrollbar-button:horizontal:decrement:end,
+  &::-webkit-scrollbar-button:vertical:increment:start,
+  &::-webkit-scrollbar-button:vertical:decrement:end {
+    display: none;
+  }
+
+
+
+  &::-webkit-scrollbar-button:horizontal:decrement {
+    background-image: var(--img-scroll-left-arrow);
+  }
+
+  &::-webkit-scrollbar-button:horizontal:increment {
+    background-image: var(--img-scroll-right-arrow);
+  }
+
+  &::-webkit-scrollbar-button:vertical:decrement {
+    background-image: var(--img-scroll-up-arrow);
+  }
+
+  &::-webkit-scrollbar-button:vertical:increment {
+    background-image: var(--img-scroll-down-arrow);
+  }
+}

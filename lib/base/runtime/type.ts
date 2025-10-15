@@ -20,6 +20,12 @@ export type WidgetSize = { height?: number, gridColumn?: GridColumnCfg };
 export type RenderStrategy = 'frame' | 'event';
 export type ScalingStrategy = 'fluid' | 'fixed';
 
+export type WidgetAnchor = {
+  title: string,
+  titleId: string,
+  titleLevel: number,
+}
+
 export interface WidgetRunner<State, Config> {
   scalingStrategy: ScalingStrategy;
   constructor: {
@@ -32,6 +38,7 @@ export interface WidgetRunner<State, Config> {
   cleanup?(): void;
   setStyle(styles: Record<string, string | null>): void;
   getHUD(): WidgetHud
+  getAnchors(): WidgetAnchor[];
 }
 
 
