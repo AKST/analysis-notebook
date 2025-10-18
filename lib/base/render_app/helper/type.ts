@@ -11,7 +11,12 @@ type GeneralTemplateHelper<Attrs, Item> = {
     of: (...items: Item[]) => E.Item;
   };
   of: (...items: Item[]) => E.Item;
-}
+};
+
+type GeneralVoidHelper<Attrs> = {
+  (attr?: Attrs): E.Item;
+  attr: (attr: Attrs) => E.Item;
+};
 
 type GeneralHelper<Attrs, Items> = Items extends any[] ? {
   (...items: Items): E.Item;
@@ -25,6 +30,11 @@ export type TemplateHelper<O = undefined, Item = E.Item> =
   GeneralTemplateHelper<ElAttributes, Item> :
   GeneralTemplateHelper<O & ElAttributes, Item>;
 
+export type VoidHelper<O = undefined> =
+  O extends undefined ?
+  GeneralVoidHelper<ElAttributes> :
+  GeneralVoidHelper<O & ElAttributes>;
+
 export type Helper<O = undefined, Items = E.Item[]> =
   O extends undefined ?
   GeneralHelper<ElAttributes, Items> :
@@ -36,7 +46,12 @@ export type TemplateHelperFactory = {
   <Item = E.Item>(f: (attrs: ElAttributes, items: Item[]) => E.Item): TemplateHelper<undefined, Item>;
 }
 
+export type VoidHelperFactory = {
+  <O extends Object>(f: (attrs: O & ElAttributes) => E.Item, defaultArgs: O): VoidHelper<O>;
+  (f: (attrs: ElAttributes) => E.Item): VoidHelper<undefined>;
+}
+
 export type HelperFactory = {
-  <O extends Object, Items = E.Item[]>(f: (attrs: O & ElAttributes, items: Items) => E.Item, defaultArgs: O): Helper<O, Items>;
-  <Items = E.Item[]>(f: (attrs: ElAttributes, items: Items) => E.Item): Helper<undefined, Items>;
+  <O extends Object, Items extends any[] = E.Item[]>(f: (attrs: O & ElAttributes, items: Items) => E.Item, defaultArgs: O): Helper<O, Items>;
+  <Items extends any[] = E.Item[]>(f: (attrs: ElAttributes, items: Items) => E.Item): Helper<undefined, Items>;
 }
