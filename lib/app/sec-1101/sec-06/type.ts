@@ -1,5 +1,5 @@
 import { Econ, RenderContextInit } from '../../prelude-type.ts';
-import { ModelRenderer } from '../common/2d/model.js';
+import { ModelRenderer } from '../../../base/preludes/university/2d/model.js';
 
 export type RenderContext = RenderContextInit & {
   model: ModelRenderer,
