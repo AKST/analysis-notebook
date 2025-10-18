@@ -19,7 +19,6 @@ export type Event =
 
 export type Config = {};
 
-
 export type State = {
   crimeMean: number | undefined,
 };
