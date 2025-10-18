@@ -32,6 +32,7 @@
     - Move from base/render_app/helpers/mathml to base/render_app/helpers/mathml_2
     - processs
         - update to base/prelude/university/mathml_2
+            - SUGGESTION: replace one method at a time
             - replace all use of previous API with new API
             - delete old API
         - update to base/render_app/helpers/mathml_2
