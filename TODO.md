@@ -8,13 +8,34 @@
 - base/render_app/typography + base/prelude/uni/style
     - make the default font size smaller and switch all uses of `small`
       to uses of `p`.
+
 - base/runtime/engine/multi
     - use the MS scroll for the contents of the app
+
 - app
     - ECON-1101
         - move to the more general prelude
     - project structure changes
         - remove the type signature from LINK constants
+
 - navigator
     - preserve the Table of contents in the URL bar
     - drop any title not found in the document.
+
+- migrate to mathml_2 api
+    - BLOCKER make operator more configurable (accept attrs)
+    - See example in app/sec-2206/sec-01-2
+    - Things to keep in mind with the special characters
+        - delta is now Delta (merge with current Delta)
+        - delta2 is now delta
+    - Move from base/prelude/university/mathml to base/prelude/university/mathml_2
+    - Move from base/render_app/helpers/mathml to base/render_app/helpers/mathml_2
+    - processs
+        - update to base/prelude/university/mathml_2
+            - replace all use of previous API with new API
+            - delete old API
+        - update to base/render_app/helpers/mathml_2
+            - replace all use of previous API with new API
+            - delete old API
+
+
