@@ -73,7 +73,33 @@
   --boxshadow-ms-borderwell: -1px -1px 0 #868a8e, -1px 0 0 #868a8e, 0 -1px 0 0 #868a8e, 1px 0 0 white, 1px 1px 0 white, 0 1px 0 white;
   --boxshadow-ms-outset: inset 1px 1px 0 0 white, inset -1px -1px 0 0 #868a8e;
   --boxshadow-ms-inset: inset 1px 1px 0 0 #868a8e, 1px 1px 0 0 black, 1px 0 0 0 black, 0 1px 0 0 black;
+
+  --fontsize-body-m: 10.8px;
+  --fontsize-body-l: 13px;
+  --fontsize-h1: 26px;
+  --fontsize-h2: 19.5px;
+  --fontsize-h3: 15.21px;
+  --fontsize-h4: 13px;
+  --fontsize-h5: 10.79px;
+  --fontsize-h6: 9px;
+
+  --fontsize-dt: 13px;
+  --hr-margin-block: 6.5px;
 }
+
+summary { font-size: var(--fontsize-body-l); }
+h1 { font-size: var(--fontsize-h1); }
+h2 { font-size: var(--fontsize-h2); }
+h3 { font-size: var(--fontsize-h3); }
+h4 { font-size: var(--fontsize-h4); }
+h5 { font-size: var(--fontsize-h5); }
+h6 { font-size: var(--fontsize-h6); }
+
+hr {
+  margin-block: var(--hr-margin-block);
+}
+
+dt { font-size: var(--fontsize-dt); }
 
 html, body {
   background: #c0c0c0;
