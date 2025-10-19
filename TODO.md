@@ -28,7 +28,7 @@
 - migrate to mathml_2 api
     - prelude
         - [x] rows
-        - [/] sum
+        - [x] sum
         - [ ] parensA
         - [ ] multiscripts
         - [ ] table
@@ -43,10 +43,10 @@
         - [x] mtext
         - [x] mrow, math
         - [x] mover
-        - [/] mn
-        - [/] msub, msup, msubsup
-        - [/] msqrt
-        - [/] munder
+        - [x] mn
+        - [x] msub, msup, msubsup
+        - [x] msqrt
+        - [x] munder
         - [ ] mspace
         - [ ] mfrac
     - grouping changes together
