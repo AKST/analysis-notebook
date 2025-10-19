@@ -26,6 +26,34 @@
     - drop any title not found in the document.
 
 - migrate to mathml_2 api
+    - prelude
+        - [x] rows
+        - [ ] sum
+        - [ ] table
+        - [ ] matrix
+        - [ ] call
+        - [ ] multiscripts
+        - [ ] piecewise
+        - [ ] iv
+        - [ ] SPECIAL
+    - base
+        - [x] mo
+        - [x] mi
+        - [x] mtext
+        - [x] mrow, math
+        - [ ] mn
+        - [ ] msub, msup, msubsup
+        - [ ] msqrt
+        - [ ] mfrac
+        - [ ] mover
+            - emphasises the order or parameters changes.
+        - [ ] munder
+    - grouping changes together
+        - mtext, mi, mo
+        - mrow, math rows
+        - mover
+        - sum, mn, msub, msup, msubsup, msqrt, munder
+
     - BLOCKER make operator more configurable (accept attrs)
     - See example in app/sec-2206/sec-01-2
     - Things to keep in mind with the special characters

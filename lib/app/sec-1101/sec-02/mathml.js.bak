@@ -19,12 +19,12 @@ const {
 } = SPECIAL;
 
 export function vectorDefs() {
-  return mathml2.math(
+  return mathml([
     table([
       [mi`C`, mo`=`, over(
         mtext`Cumulative Cost Vector`,
-        mrow(set([0, 0, 2, 5, 10, 18, 28, 40].map(n)))
-      )],
+        row([set([0, 0, 2, 5, 10, 18, 28, 40].map(n))]
+      ))],
       [mi`D`, mo`=`, over(
         mtext`Difference Matrix`,
         matrix([
@@ -37,170 +37,170 @@ export function vectorDefs() {
       )],
       [
         mi`M`,
-        mo`=`, mrow(
-        mrow(mi`D`, mi`C`),
+        mo`=`, row([
+        row([mi`D`, mi`C`]),
           mo`=`, over(
             mtext`Marginal Cost Vector`,
-            mrow(set([2, 3, 5, 8, 10, 12].map(n))),
+            row([set([2, 3, 5, 8, 10, 12].map(n))]),
           ),
-        ),
+        ]),
       ],
     ], { className: 'mathtable' }),
-  );
+  ]);
 }
 
 
 export function marginalCost() {
-  return mathml2.math(
-    mi`y`, space(8), mo`=`, space(8), mrow(
+  return mathml([
+    mi`y`, space(8), mo`=`, space(8), row([
       sum(
-        mrow(abs(mi`x`), mo`-`, n(1)),
-        mrow(mi`i`, mo`=`, n(0)),
+        row([abs(mi`x`), mo`-`, n(1)]),
+        row([mi`i`, mo`=`, n(0)]),
       ),
-      mrow(idx(mi`M`, mi`i`)),
-    ),
-  );
+      row([idx(mi`M`, mi`i`)]),
+    ]),
+  ]);
 }
 
 export function timeToOutput() {
-  return mathml2.math(
+  return mathml([
     mi`x`, mo`=`,
-    mrow(
-      mrow(
+    row([
+      row([
         mi`max`,
         space(8),
-        mrow(mi`j`, SPECIAL.operation.exists, SPECIAL.sets.nat),
-      ),
+        row([mi`j`, SPECIAL.operation.exists, SPECIAL.sets.nat]),
+      ]),
       mo`:`,
-      mrow(
+      row([
         sum(
-          mrow(mi`j`, mo`-`, n(1)),
-          mrow(mi`i`, mo`=`, n(0)),
+          row([mi`j`, mo`-`, n(1)]),
+          row([mi`i`, mo`=`, n(0)]),
         ),
-        mrow(
+        row([
           idx(mi`C`, mi`i`),
           SPECIAL.constraint.lteq,
           mi`y`,
-        ),
-      ),
-    )
-  );
+        ]),
+      ]),
+    ])
+  ]);
 }
 
 export function costBenefitPrinciple() {
-  return mathml2.math(
-    mrow(
+  return mathml([
+    row([
       call('MB', mi`Price`),
       SPECIAL.constraint.lteq, mi`MC`,
       space(8), SPECIAL.arrow,
       space(8), mtext`do it!`,
-    ),
-  );
+    ]),
+  ]);
 }
 
 export function elasticity() {
-  return mathml2.math(
+  return mathml([
     table([
-      [mi`ε`, mo`=`, mrow(
+      [mi`ε`, mo`=`, row([
         frac([mi`P`], [mi`Q`]), mo`×`,
         frac([mi`ΔQ`], [mi`ΔP`])
-      )],
-      [mi`ε`, mo`=`, mrow(
+      ])],
+      [mi`ε`, mo`=`, row([
         frac([mi`P`], [mi`Q`]), mo`×`,
         frac([mi`1`], [mtext`slope`]),
-      )],
-      [SPECIAL.greek.eplison, mo`=`, mrow(
+      ])],
+      [SPECIAL.greek.eplison, mo`=`, row([
         mi`P`,
         space(4),
-        sup(mi`Q`, mrow(mo`-`, n(1))),
+        sup(mi`Q`, row([mo`-`, n(1)])),
         space(4),
-        sup(mtext`slope`, mrow(mo`-`, n(1))),
-      )],
+        sup(mtext`slope`, row([mo`-`, n(1)])),
+      ])],
     ]),
-  );
+  ]);
 }
 
 export function optimalNumberOfWorkers() {
-  return mathml2.math(mrow(
+  return mathml([row([
     sup(mi`w`, mi`*`),
     mo`=`,
     mtext`argmax`,
     space(8),
-    mrow(
+    row([
       mo`{`,
       space(8),
-      mrow(
+      row([
         mi`i`,
         SPECIAL.operation.exists,
         SPECIAL.sets.real,
-      ),
+      ]),
       mo`:`,
       space(8),
-      mrow(
+      row([
         sub(paren([mi`p`, mi`D`, iv('q')]), mi`i`),
         space(4),
         mo`–`,
         space(4),
         sub(paren([mi`p`, mi`D`, iv('c')]), mi`i`),
-      ),
+      ]),
       space(8),
       mo`}`,
-    ),
-  ));
+    ]),
+  ])]);
 }
 
-export const mcToAtcAndAvc = () => mathml2.math(
-  rows(
-    over(mtext`Marginal Cost`, mrow(
+export const mcToAtcAndAvc = () => mathml([
+  rows([
+    over(mtext`Marginal Cost`, row([
       mi`MC`, mo`=`, sub(mi`P`, mi`S`),
       mo`=`, alpha, mo`+`, beta, mi`Q`,
-    )),
+    ])),
     space(8),
-    over(mtext`Variable Cost`, rows(
-      mrow(
+    over(mtext`Variable Cost`, rows([
+      row([
         mi`VC`, mo`=`,
-        mrow(
+        row([
           op.integral,
-          mrow(alpha, mo`+`, beta, mi`Q`),
+          row([alpha, mo`+`, beta, mi`Q`]),
           space(4), mi`d`, mi`Q`
-        ),
-      ),
-      mrow(
+        ]),
+      ]),
+      row([
         mi`VC`, mo`=`,
-        mrow(
+        row([
           alpha, mi`Q`, mo`+`,
           frac([beta], [n(2)]), sup(mi`Q`, n(2)),
           mo`+`, mi`C`,
-        ),
-      ),
-    )),
+        ]),
+      ]),
+    ])),
     space(8),
-    over(mtext`Average {Total,Variable} Cost`, rows(
-      mrow(
-        mrow(
+    over(mtext`Average {Total,Variable} Cost`, rows([
+      row([
+        row([
           mi`ATC`, mo`=`,
           frac([mi`VC`, mo`+`, mi`FC`], [mi`Q`]),
-        ),
+        ]),
         space(16),
-        mrow(
+        row([
           mi`AVC`, mo`=`,
           frac([mi`VC`], [mi`Q`]),
-        ),
-      ),
-      mrow(
-        mi`ATC`, mo`=`, mrow(
+        ]),
+      ]),
+      row([
+        mi`ATC`, mo`=`, row([
           space(2), alpha, space(2), mo`+`,
           space(2), frac([beta], [n(2)]), mi`Q`, space(2), mo`+`,
           space(2), frac([mi`C`, mo`+`, mi`FC`], [mi`Q`]),
-        ),
-      ),
-      mrow(
-        mi`AVC`, mo`=`, mrow(
+        ]),
+      ]),
+      row([
+        mi`AVC`, mo`=`, row([
           space(2), alpha, space(2), mo`+`,
           space(2), frac([beta], [n(2)]), mi`Q`, space(2), mo`+`,
           space(2), frac([mi`C`], [mi`Q`]),
-        ),
-      ),
-    )),
-  ),
-);
+        ]),
+      ]),
+    ])),
+  ]),
+]);
