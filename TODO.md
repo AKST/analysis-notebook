@@ -28,11 +28,12 @@
 - migrate to mathml_2 api
     - prelude
         - [x] rows
-        - [ ] sum
+        - [/] sum
+        - [ ] parensA
+        - [ ] multiscripts
         - [ ] table
         - [ ] matrix
         - [ ] call
-        - [ ] multiscripts
         - [ ] piecewise
         - [ ] iv
         - [ ] SPECIAL
@@ -41,12 +42,13 @@
         - [x] mi
         - [x] mtext
         - [x] mrow, math
-        - [/] mover
-        - [ ] mn
-        - [ ] msub, msup, msubsup
-        - [ ] msqrt
+        - [x] mover
+        - [/] mn
+        - [/] msub, msup, msubsup
+        - [/] msqrt
+        - [/] munder
+        - [ ] mspace
         - [ ] mfrac
-        - [ ] munder
     - grouping changes together
         - mtext, mi, mo
         - mrow, math rows
