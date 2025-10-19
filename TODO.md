@@ -41,12 +41,11 @@
         - [x] mi
         - [x] mtext
         - [x] mrow, math
+        - [/] mover
         - [ ] mn
         - [ ] msub, msup, msubsup
         - [ ] msqrt
         - [ ] mfrac
-        - [ ] mover
-            - emphasises the order or parameters changes.
         - [ ] munder
     - grouping changes together
         - mtext, mi, mo
