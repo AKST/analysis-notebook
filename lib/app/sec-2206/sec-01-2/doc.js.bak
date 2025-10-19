@@ -299,14 +299,14 @@ export const ordinaryLeastSquaresEstimate = createDoc(() => dashbox(
       INFOBOX.betaOneIsARandomVariable,
     ),
     twoColumns(
-      doc._figure(mathml.betaOneEstimation.rearrangingAbove, doc.figcaption`
+      doc._figure(mathml.betaOneEstimation.rearrangingAbove, doc.figcaption(doc.p`
         Start by plugging β̂₀ into${['br']}
         the Sum of 1st Order Condition
-      `),
-      doc._figure(mathml.betaOneEstimation.alsoNotingThat, doc.figcaption`
+      `)),
+      doc._figure(mathml.betaOneEstimation.alsoNotingThat, doc.figcaption(doc.p`
         Before isolating for β̂₁ note${['br']}
         how these can be rearranged
-      `),
+      `)),
     ),
     doc.p`
       Given the sum of (x${['sub', 'i']}-x̄)² is greater than zero we
@@ -336,8 +336,8 @@ export const ordinaryLeastSquaresEstimate = createDoc(() => dashbox(
       from the error term or unobserved.
     `,
     responsiveGridAutoRow([
-      doc._figure(mathml.fittedValueOfYi, doc.figcaption`Fitted value of ŷᵢ`),
-      doc._figure(mathml.fittedValueResiduals, doc.figcaption`Computing residual ûᵢ`),
+      doc._figure(mathml.fittedValueOfYi, doc.figcaption`Fitted value of ŷᵢ'),
+      doc._figure(mathml.fittedValueResiduals, 'Computing residual ûᵢ'),
       doc._figure(mathml.sampleRegressionFunction, doc.figcaption`Sample Regression Function`),
     ], {
       columns: {
@@ -362,9 +362,9 @@ export const ordinaryLeastSquaresEstimate = createDoc(() => dashbox(
       have been defined down below:
     `,
     responsiveGridAutoRow([
-      doc._figure(mathml.sumOfSquares.sst, doc.figcaption`Total Sum of Squares`),
-      doc._figure(mathml.sumOfSquares.sse, doc.figcaption`Explained Sum of Squares`),
-      doc._figure(mathml.sumOfSquares.ssr, doc.figcaption`Residual Sum of Squares`),
+      doc._figure(mathml.sumOfSquares.sst, 'Total Sum of Squares'),
+      doc._figure(mathml.sumOfSquares.sse, 'Explained Sum of Squares'),
+      doc._figure(mathml.sumOfSquares.ssr, 'Residual Sum of Squares'),
     ], {
       columns: {
         desktop: 'auto auto auto',
@@ -377,14 +377,14 @@ export const ordinaryLeastSquaresEstimate = createDoc(() => dashbox(
       portion of variance captured by the model.
     `,
     responsiveGridAutoRow([
-      doc._figure(mathml.sumOfSquares.relation, doc.figcaption`Sum of Squares constraint`),
-      doc._figure(mathml.rSquared, doc.figcaption`R Squared`),
+      doc._figure(mathml.sumOfSquares.relation, 'Sum of Squares constraint'),
+      doc._figure(mathml.rSquared, 'R Squared'),
     ], {
       columns: {
         desktop: 'auto auto',
       },
     }),
-    doc._figure(mathml.rSquareFull, doc.figcaption`R Square Expanded`),
+    doc._figure(mathml.rSquareFull, 'R Square Expanded'),
   ),
   container(
     doc.h4`What is Ordinary Least Squares really?`,
@@ -396,7 +396,7 @@ export const ordinaryLeastSquaresEstimate = createDoc(() => dashbox(
     `,
     doc._figure(
       mathml.whatIsOrdinaryLeastSquares,
-      doc.figcaption`Minimisation constraint`,
+      'Minimisation constraint',
     ),
   )
 ));
@@ -457,12 +457,12 @@ export const assumptionsOfUnbiasednessInOLS = createDoc(() => dashbox(
     container(
       doc.h4`SLR 3 - Sample Variation`,
       doc.p`Within the sample, there is more than one value for a variable`,
-      doc._figure(mathml.slrAssumptions.slr3, doc.figcaption`SLR 3`),
+      doc._figure(mathml.slrAssumptions.slr3, 'SLR 3'),
     ),
     container(
       doc.h4`SLR 4 - Zero Conditional Mean`,
       doc.p`The error has an expected value of zero for any given explanatory variable`,
-      doc._figure(mathml.slrAssumptions.slr4, doc.figcaption`SLR 4`),
+      doc._figure(mathml.slrAssumptions.slr4, 'SLR 4'),
     ),
   ),
   container(
@@ -473,7 +473,7 @@ export const assumptionsOfUnbiasednessInOLS = createDoc(() => dashbox(
       the line of best fit variance is identical for the
       error rate.
     `,
-    doc._figure(mathml.slrAssumptions.slr5, doc.figcaption`SLR 5`),
+    doc._figure(mathml.slrAssumptions.slr5, 'SLR 5'),
   ),
   container(
     doc.h3`Theorum for unbiassness of the OLS`,
@@ -483,12 +483,12 @@ export const assumptionsOfUnbiasednessInOLS = createDoc(() => dashbox(
     doc.h3`Analysis of Simple Linear Regression`,
     todo({}, 'Explain how this is useful and important'),
     twoColumns(
-      doc._figure(mathml.simpleLinearRegressionAnalysis.varB1EstA, doc.figcaption`Constraint A, Sampling variance of estimators`),
-      doc._figure(mathml.simpleLinearRegressionAnalysis.varB1EstB, doc.figcaption`Constraint B, Sampling variance of estimators`),
+      doc._figure(mathml.simpleLinearRegressionAnalysis.varB1EstA, 'Constraint A, Sampling variance of estimators'),
+      doc._figure(mathml.simpleLinearRegressionAnalysis.varB1EstB, 'Constraint B, Sampling variance of estimators'),
     ),
     doc._figure(
       mathml.simpleLinearRegressionAnalysis.varB1EstC,
-      doc.figcaption`Given the above assumptions this should hold`,
+      'Given the above assumptions this should hold',
     ),
   ),
 ));
