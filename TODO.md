@@ -24,11 +24,5 @@
     - drop any title not found in the document.
 
 - migrate to mathml_2 api
-    - prelude
-        - [ ] SPECIAL
-        - [ ] operators
-    - BLOCKER make operator more configurable (accept attrs)
-    - Things to keep in mind with the special characters
-        - delta is now Delta (merge with current Delta)
-        - delta2 is now delta
+    - get rid of old helper in prelude
 
