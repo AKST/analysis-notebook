@@ -29,13 +29,17 @@
     - prelude
         - [x] rows
         - [x] sum
+        - [x] multiscripts
+        - [x] matrix
+        - [x] piecewise
+        - [x] iv
+        - [x] set
+        - [x] abs
+        - [x] idx
+        - [ ] inv
         - [ ] parensA
-        - [ ] multiscripts
         - [ ] table
-        - [ ] matrix
         - [ ] call
-        - [ ] piecewise
-        - [ ] iv
         - [ ] SPECIAL
     - base
         - [x] mo
@@ -47,7 +51,7 @@
         - [x] msub, msup, msubsup
         - [x] msqrt
         - [x] munder
-        - [ ] mspace
+        - [x] mspace
         - [ ] mfrac
     - grouping changes together
         - mtext, mi, mo
@@ -71,4 +75,8 @@
             - replace all use of previous API with new API
             - delete old API
 
+
+-------------
+Can I get you to replace usage of frac with mfrac. If you remove the export from base/render_app/helper/mathml.js for frac, typescript will tell you everwhere there's an issue. In each of those places can you use
+will get type errors
 
