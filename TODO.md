@@ -8,9 +8,6 @@
 
 - base/prelude/uni
     - move container into side of infobox
-- base/render_app/math
-    - provide a similar api to typography api, but slowly go through
-      and update things gradually.
 
 - base/runtime/engine/multi
     - use the MS scroll for the contents of the app
