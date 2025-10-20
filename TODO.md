@@ -1,6 +1,5 @@
 # Tasks for CLaude to do
 
-
 - base/render_app/render_app/typography
     - rename to base/render_app/helper/html
     - setup void selectors
@@ -19,7 +18,4 @@
 - navigator
     - preserve the Table of contents in the URL bar
     - drop any title not found in the document.
-
-- migrate to mathml_2 api
-    - get rid of old helper in prelude
 
