@@ -2,7 +2,7 @@ export {
   ProjectionConstraint,
   ViewportConstraints,
   Renderer,
-} from '../2d/type.js';
+} from '../base/canvas_2d/type.js';
 export { E } from '../base/dom_app/type.js';
 export {
   RemoteChildWidget as RemoteWidget,

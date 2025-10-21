@@ -1,6 +1,5 @@
 import { E } from '../../../../base/dom_app/type.js';
-import { ProjectionConstraint } from '../../../../2d/type.ts';
-import { Renderer } from '../../../../2d/type.ts';
+import { Renderer, ProjectionConstraint } from '../../../canvas_2d/type.ts';
 
 export type RenderContextInit = {
   renderer: Renderer;
