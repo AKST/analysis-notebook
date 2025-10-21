@@ -1,0 +1,17 @@
+{
+  "extends": "./jsconfig.base.json",
+  "compilerOptions": { "noEmit": true, "baseUrl": "." },
+  "exclude": [
+    "node_modules",
+    "lib/app",
+    "out",
+    "jest.config.js",
+    "jest.setup.mjs",
+    "vitest.setup.ts"
+  ],
+  "include": [
+    "**/*.js",
+    "**/*.ts",
+    "index.js"
+  ]
+}

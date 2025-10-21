@@ -1,0 +1,5 @@
+{
+  "extends": "../../jsconfig.base.json",
+  "compilerOptions": { "noEmit": true, "baseUrl": "." },
+  "include": ["**/*.js", "**/*.ts", "*.js", "*.ts"]
+}

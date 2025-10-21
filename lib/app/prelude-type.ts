@@ -17,7 +17,7 @@ export {
   MakeConfigKnobs,
   MakeVariantKnob
 } from '../ui/config/type.js';
-export * as Econ from '../base/econ/type.ts';
-export { VectorOf, Vector, Matrix, Complex } from '../base/math/type.ts';
-export { Vec2 } from '../base/geom_2d/type.ts';
+export * as Econ from '../base/econ/type';
+export { VectorOf, Vector, Matrix, Complex } from '../base/math/type';
+export { Vec2 } from '../base/geom_2d/type';
 

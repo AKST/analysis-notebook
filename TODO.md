@@ -1,5 +1,9 @@
 # Tasks for CLaude to do
 
+- setup import maps
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script/type/importmap
+
 - base/render_app/render_app/typography
     - rename to base/render_app/helper/html
     - setup void selectors

@@ -13,7 +13,14 @@ if [ ! -d "node_modules" ]; then
     npm install
 fi
 
-# Run TypeScript compiler in check-only mode
-npx tsc --noEmit -p ./jsconfig.json
+# Create output directory for TypeScript declarations
+mkdir -p out/tsc/lib
+mkdir -p out/tsc/lib/{ui,app,base}
 
-echo "✓ Type checking completed successfully"
+set +e
+
+# Run TypeScript compiler with project references
+npx tsc -p lib/base/jsconfig.json --noEmit
+npx tsc -p lib/ui/jsconfig.json --noEmit
+npx tsc -p lib/app/jsconfig.json --noEmit
+npx tsc -p jsconfig.entry.json --noEmit

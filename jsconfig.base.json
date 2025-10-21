@@ -10,20 +10,8 @@
     "allowSyntheticDefaultImports": true,
     "allowImportingTsExtensions": true,
     "strict": true,
-    "typeRoots": ["./types", "./node_modules/@types"]
-  },
-  "include": [
-    "lib/app/**/*",
-    "lib/base/**/*",
-    "lib/2d/**/*",
-    "lib/ui/**/*",
-    "lib/canvas/**/*",
-    "lib/util/**/*",
-    "*.js",
-    "types/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "out"
-  ]
+    "typeRoots": ["./node_modules/@types"],
+    "moduleDetection": "force",
+    "skipLibCheck": true
+  }
 }

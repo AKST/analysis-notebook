@@ -1,4 +1,4 @@
-import { VectorOf, RenderContextInit } from '../../prelude-type.ts';
+import { VectorOf, RenderContextInit } from '../../prelude-type';
 import {
   Grid,
   VectorRenderer,
