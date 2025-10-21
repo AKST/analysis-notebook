@@ -1,15 +1,16 @@
 #!/bin/bash
 set -e
 
-rm -rf out
-mkdir -p out
+rm -rf out/build
+mkdir -p out/build
 
-cp index.html out/.
-cp index.js out/.
-cp style.css out/.
-cp -r assets out/assets
-cp -r lib out/.
-pushd out
+cp index.html out/build/.
+cp index.js out/build/.
+cp style.css out/build/.
+cp -r assets out/build/assets
+cp -r lib out/build/.
+pushd out/build
 find . -name "*.ts" | xargs -n 1 rm
 find . -name "*.md" | xargs -n 1 rm
 find . -name "*.snap" | xargs -n 1 rm
+popd
