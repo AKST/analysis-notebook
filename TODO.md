@@ -5,9 +5,7 @@
 https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script/type/importmap
 
 - base/render_app/render_app/typography
-    - rename to base/render_app/helper/html
     - setup void selectors
-    - remove dl, replace with a helper.
 
 - base/prelude/uni
     - move container into side of infobox

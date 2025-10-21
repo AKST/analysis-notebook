@@ -18,10 +18,9 @@ mkdir -p out/tsc/lib
 mkdir -p out/tsc/lib/{ui,app,base}
 
 # Run TypeScript compiler with project references
-npx tsc \
-  -p lib/base/jsconfig.json --noEmit \
-  -p lib/ui/jsconfig.json --noEmit \
-  -p lib/app/jsconfig.json --noEmit \
-  -p jsconfig.entry.json --noEmit
+npx tsc -p lib/base/jsconfig.json --noEmit
+npx tsc -p lib/ui/jsconfig.json --noEmit
+npx tsc -p lib/app/jsconfig.json --noEmit
+npx tsc -p jsconfig.entry.json --noEmit
 
 echo '✅ type checking complete'
