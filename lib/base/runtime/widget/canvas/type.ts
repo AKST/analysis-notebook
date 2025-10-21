@@ -1,4 +1,4 @@
-import { E } from '../../../../base/render_app/type.js';
+import { E } from '../../../../base/dom_app/type.js';
 import { ProjectionConstraint } from '../../../../2d/type.ts';
 import { Renderer } from '../../../../2d/type.ts';
 

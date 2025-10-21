@@ -3,7 +3,7 @@ export {
   ViewportConstraints,
   Renderer,
 } from '../2d/type.js';
-export { E } from '../base/render_app/type.js';
+export { E } from '../base/dom_app/type.js';
 export {
   RemoteChildWidget as RemoteWidget,
   DocumentChildWidget as DocumentWidget,

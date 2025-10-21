@@ -1,7 +1,7 @@
 import { DocumentWidget } from './widget/document/type.js'
 import { RemoteWidget } from './widget/remote/type.js'
 import { RenderWidgetMeta, RenderWidget, RenderContextInit } from './widget/canvas/type.ts';
-import { E } from '../../base/render_app/type.js'
+import { E } from '../../base/dom_app/type.js'
 
 export {
   DocumentWidget,
