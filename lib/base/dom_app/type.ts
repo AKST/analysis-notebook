@@ -23,6 +23,7 @@ export type ElAttributes = {
   href?: string;
   name?: string;
   open?: true | false;
+  rel?: string;
   rowSpan?: number | string;
   src?: string;
   target?: string;
