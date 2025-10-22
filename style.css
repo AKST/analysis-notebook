@@ -46,6 +46,7 @@
     --bg-pink: #ffAAFF;
     --bg-blue: teal;
     --bg-red: #ffff00;
+    --bg-greygreen: #ffAAFF;
 
     --fg-grey-aa: #555;
     --fg-white: #0000ff;
@@ -76,6 +77,8 @@
 
   --fontsize-body-m: 10.8px;
   --fontsize-body-l: 13px;
+  --fontsize-math-s: 14px;
+  --fontsize-math-m: 16px;
   --fontsize-h1: 26px;
   --fontsize-h2: 19.5px;
   --fontsize-h3: 15.21px;
@@ -94,6 +97,7 @@ h3 { font-size: var(--fontsize-h3); }
 h4 { font-size: var(--fontsize-h4); }
 h5 { font-size: var(--fontsize-h5); }
 h6 { font-size: var(--fontsize-h6); }
+math { font-size: var(--fontsize-math-m); }
 
 hr {
   margin-block: var(--hr-margin-block);

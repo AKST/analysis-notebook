@@ -11,6 +11,9 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script/type
         - Formular Explorer
         - Definition Explorer
 
+- skeleton
+    - stop showing empty config on resize
+
 - base/prelude/uni
     - move container into side of infobox
 - base/runtime/widget/document
