@@ -4,12 +4,22 @@
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script/type/importmap
 
-- base/render_app/render_app/typography
-    - setup void selectors
+- navigator
+    - preserve the Table of contents in the URL bar
+    - drop any title not found in the document.
+    - new tabs
+        - Formular Explorer
+        - Definition Explorer
 
 - base/prelude/uni
     - move container into side of infobox
-
+- base/runtime/widget/document
+    - [ ] Replace `styles: string` with `styles: Record<string, string>`
+    - [ ] Implement events
+    - [ ] Element Attribute types dependent on Element
+- base/runtime/widget/svg
+    - Has an initialisation step
+    - Then takes state
 - base/runtime/engine/multi
     - use the MS scroll for the contents of the app
 
@@ -17,7 +27,4 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script/type
     - project structure changes
         - remove the type signature from LINK constants
 
-- navigator
-    - preserve the Table of contents in the URL bar
-    - drop any title not found in the document.
 
