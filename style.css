@@ -28,6 +28,7 @@
   --fg-peach: #ffaaaa;
 
   --txt-shadow-blue: 2px 2px #0000ff;
+  --txt-shadow-red: 2px 2px #ff0000;
 
   --border-inset-grey: 3px inset #c6c6c6;
   --border-outset-grey: 3px outset #c6c6c6;
@@ -57,6 +58,7 @@
     --fg-white-ee: #11a;
 
     --txt-shadow-blue: 1px 1px #ff66ff;
+    --txt-shadow-red: 1px 1px #ffff00;
 
     --border-solid-grey: 1px solid #ccc;
     --border-solid-white: 1px solid blue;
