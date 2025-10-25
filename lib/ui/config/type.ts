@@ -28,6 +28,7 @@ export type SequenceKnobConfig =
 
 export type NumberKnobConfig =
   & { kind: 'number', range?: [number, number] }
+  & { input?: 'range' | 'text' }
   & KnobCommon<number>;
 
 export type ColorKnobConfig =
