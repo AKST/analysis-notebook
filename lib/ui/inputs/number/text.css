@@ -8,19 +8,40 @@
 
 input {
   width: 100%;
-  padding: 4px 8px;
   border: var(--border-inset-grey);
+  outline: none;
   border-radius: 0;
   background: white;
   color: black;
   font-family: monospace;
-  font-size: 12px;
+  line-height: 1;
   box-sizing: border-box;
+
+  &.small {
+    padding: 4px 8px;
+    font-size: 10px;
+    border-width: 1.5px;
+
+    &.hide-border {
+      padding: 2px 2px;
+    }
+  }
+
+  &.medium {
+    padding: 4px 8px;
+    font-size: 12px;
+    border-width: 3px;
+  }
+
+  &.hide-border {
+    border: none;
+    color: inherit;
+    background: none;
+  }
 
   &:focus {
     outline: none;
     border-color: #0084ff;
-    box-shadow: 0 0 0 2px rgba(0, 132, 255, 0.2);
   }
 
   &:invalid {
