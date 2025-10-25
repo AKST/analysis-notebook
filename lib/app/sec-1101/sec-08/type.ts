@@ -1,5 +1,4 @@
 export type Config = {
-  readonly placeholder: number;
 };
 
 export type State = {

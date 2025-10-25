@@ -1,0 +1,26 @@
+:host {
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 4px 8px;
+  border: var(--border-inset-grey);
+  border-radius: 0;
+  background: white;
+  color: black;
+  font-family: monospace;
+  font-size: 12px;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+    border-color: #0084ff;
+    box-shadow: 0 0 0 2px rgba(0, 132, 255, 0.2);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
