@@ -1,5 +1,7 @@
 :host {
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
 }
 
 .container {
