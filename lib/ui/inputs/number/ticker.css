@@ -1,0 +1,65 @@
+div {
+  position: relative;
+  width: 100%;
+  height: var(--input-height);
+}
+
+input {
+  display: block;
+  box-sizing: border-box;
+  min-width: 0;
+  width: var(--width);
+  height: var(--input-height);
+  margin: 0;
+  padding: var(--input-padding);
+  border: var(--border-inset-grey);
+  border-width: var(--border-width);
+  font-family: inherit;
+}
+
+input.webkit-input::-webkit-inner-spin-button,
+input.webkit-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  border: var(--border-outset-grey);
+  background: var(--bg-msgrey);
+  opacity: 1;
+  height: var(--input-height);
+  top: 0;
+  bottom: 0;
+  border-width: var(--border-width);
+  box-sizing: border-box;
+  position: absolute;
+  width: var(--spin-width);
+  right: 0;
+}
+
+span {
+  opacity: var(--span-opacity);
+  margin: 0;
+  padding: 0;
+  background: var(--bg-msgrey);
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  right: 0;
+  height: calc(var(--input-height) / 2);
+  width: var(--spin-width);
+  border: var(--border-outset-grey);
+  border-width: var(--border-width);
+  pointer-events: none;
+  line-height: 0.7;
+  color: black;
+  font-size: 9px;
+  font-family: inherit;
+  text-align: center;
+}
+
+#a {
+  bottom: calc(var(--input-height) / 2);
+  border-top-color: transparent;
+}
+
+#b {
+  top: calc(var(--input-height) / 2);
+  border-bottom-color: transparent;
+}
