@@ -1,0 +1,44 @@
+.square-container {
+  position: relative;
+  aspect-ratio: 1;
+  background: #1a1a1a;
+  border: var(--border-inset-grey);
+  cursor: crosshair;
+}
+
+.square-handle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #007acc;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: grab;
+  z-index: 1;
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+.square-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.square-grid-line {
+  position: absolute;
+  background: #555;
+
+  &.horizontal {
+    width: 100%;
+    height: 1px;
+  }
+
+  &.vertical {
+    height: 100%;
+    width: 1px;
+  }
+}
