@@ -16,15 +16,26 @@ export type RenderContext = RenderContextInit & {
 export type Event =
   | { kind: 'config', config: Config };
 
-export type CobbDouglas = { labour: number, capital: number, ftp: number, alpha: number };
+export namespace LongRun {
+  export type T =
+    | { kind: 'exogenous', value: Exogenous }
+    | { kind: 'endogenous', value: CobbDouglas }
 
-export type Config = {
-  mpk: (
-    | { kind: 'exogenous', value: number }
-    | { kind: 'cobbDouglas', value: CobbDouglas }
-  ),
-  realInterest: number,
-  isCurve: {
+  export type CobbDouglas = {
+    labour: number,
+    capital: number,
+    tfp: number,
+    alpha: number,
+  };
+
+  export type Exogenous = {
+    mpk: number,
+    output: number,
+  };
+}
+
+export namespace ShortRun {
+  export type IsCurve = {
     aggregateConsumption: number;
     aggregateGovtSpend: number;
     aggregateImporting: number;
@@ -33,10 +44,30 @@ export type Config = {
       aggregate: number;
       rateSensitivity: number;
     };
-  },
-};
+  };
+}
 
+export type Config = {
+  longRun: LongRun.T,
+  realInterest: number,
+  isCurve: ShortRun.IsCurve,
+};
 
 export type State = {
+  isCurveChart?: Rendering.Equilibrium2d,
 };
+
+export namespace Rendering {
+  export type Equilibrium2d = {
+    bounds: Vec<'r', 2>,
+    points: readonly Vec<'r', 2>[],
+    tick: Vec<'r', 2> | number,
+    eq: Vec<'r', 2>,
+  };
+  export type Basic2d = {
+    bounds: Vec<'r', 2>,
+    points: readonly Vec<'r', 2>[],
+    tick: Vec<'r', 2> | number,
+  };
+}
 
