@@ -406,3 +406,72 @@ Only add docstrings when ambiguity could cause errors, not for every function.
 - ALWAYS prefer editing an existing file to creating a new one
 - NEVER proactively create documentation files (*.md) or README files unless explicitly requested
 - Respect the no-build philosophy - this project runs directly in browsers without bundling
+
+## Automations
+
+### Generating boilerplate from table of contents
+
+When provided with table of contents images for educational content (textbook chapters, lecture notes), generate structured boilerplate following this pattern:
+
+#### Structure for Numbered Sections
+
+For each numbered entry (e.g., "16.1 Section Title"), create an export in `doc.js`:
+
+```javascript
+export const sectionName = createDoc(() => container(
+  ref({ page: XXX }, doc.h2`Section Title`),
+  dashbox(
+    twoThree(
+      container(
+        note(),
+        // subsections here
+      ),
+      doc.dl(
+      ),
+    ),
+  ),
+));
+```
+
+#### Structure for Subsections
+
+For nested subsections under numbered entries, add them within the container:
+
+```javascript
+container(
+  note(),
+  ref({ page: XXX }, doc.h4`Subsection Title 1`),
+  note(),
+  ref({ page: XXX }, doc.h4`Subsection Title 2`),
+  note(),
+  // ... additional subsections
+)
+```
+
+#### Pattern Rules
+
+- **Numbered sections** (e.g., 16.1, 16.2) → `doc.h2` with export
+- **Unnumbered subsections** → `doc.h4` without separate export
+- **Page references**: Use `ref({ page: N }, ...)` for all headings
+- **Slide references**: Use `ref({ slide: N }, ...)` when available
+- **Note placeholders**: Add `note()` after each heading for future content
+- **Layout**: Use `twoThree()` with `container()` for content and `doc.dl()` for definitions
+
+#### Update index.js
+
+Add all numbered section exports to the `children` array in order:
+
+```javascript
+export const children = [
+  // existing content
+  doc.sectionName1,
+  doc.sectionName2,
+  doc.sectionName3,
+];
+```
+
+#### Naming Conventions
+
+- Use camelCase for export names
+- Abbreviate long titles meaningfully (e.g., "The Neoclassical Consumption Model" → `neoclassicalModel`)
+- Avoid overly generic names like `section1`, prefer descriptive names
