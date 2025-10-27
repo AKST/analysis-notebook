@@ -5,16 +5,7 @@ import {
   PolygonRenderer,
   LineRenderer,
 } from '../../prelude.js';
-
-export type RenderContext = RenderContextInit & {
-  readonly text: TextRenderer,
-  readonly grid: Grid,
-  readonly poly: PolygonRenderer,
-  readonly line: LineRenderer,
-};
-
-export type Event =
-  | { kind: 'config', config: Config };
+import { Rendering } from '../common/type.ts';
 
 export namespace LongRun {
   export type T =
@@ -34,18 +25,30 @@ export namespace LongRun {
   };
 }
 
+export namespace NationalAccounting {
+  export namespace Components {
+    export type Aggregate = { aggregate: number };
+    export type Sensitivity = { sensitivity: number };
+    export type Multiplier = { multiplier: number };
+  }
+
+  export type Agg = Components.Aggregate;
+  export type AggWSense = Components.Aggregate & Components.Sensitivity;
+  export type AggWMultiplier = Components.Aggregate & Components.Multiplier;
+};
+
 export namespace ShortRun {
   export type IsCurve = {
     aggregateConsumption: number;
     aggregateGovtSpend: number;
     aggregateImporting: number;
     aggregateExporting: number,
-    investment: {
-      aggregate: number;
-      rateSensitivity: number;
-    };
+    investment: NationalAccounting.AggWSense;
   };
 }
+
+export type Event =
+  | { kind: 'config', config: Config };
 
 export type Config = {
   longRun: LongRun.T,
@@ -56,18 +59,4 @@ export type Config = {
 export type State = {
   isCurveChart?: Rendering.Equilibrium2d,
 };
-
-export namespace Rendering {
-  export type Equilibrium2d = {
-    bounds: Vec<'r', 2>,
-    points: readonly Vec<'r', 2>[],
-    tick: Vec<'r', 2> | number,
-    eq: Vec<'r', 2>,
-  };
-  export type Basic2d = {
-    bounds: Vec<'r', 2>,
-    points: readonly Vec<'r', 2>[],
-    tick: Vec<'r', 2> | number,
-  };
-}
 
