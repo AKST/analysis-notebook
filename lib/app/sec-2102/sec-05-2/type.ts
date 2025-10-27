@@ -36,9 +36,15 @@ export namespace NationalAccounting {
   export type AggWSense = Components.Aggregate & Components.Sensitivity;
   export type AggWMultiplier = Components.Aggregate & Components.Multiplier;
 
-  export type ConsumerVariant =
+  export type ConsumerVariant = Extract<ExhaustiveVariant, (
+    | { kind: 'agg' }
+    | { kind: 'agg_mul' }
+  )>;
+
+  export type ExhaustiveVariant =
     | { kind: 'agg', value: Agg }
     | { kind: 'agg_mul', value: AggWMultiplier }
+    | { kind: 'agg_sen', value: AggWSense }
 };
 
 export namespace ShortRun {
