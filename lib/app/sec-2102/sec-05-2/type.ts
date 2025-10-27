@@ -35,11 +35,15 @@ export namespace NationalAccounting {
   export type Agg = Components.Aggregate;
   export type AggWSense = Components.Aggregate & Components.Sensitivity;
   export type AggWMultiplier = Components.Aggregate & Components.Multiplier;
+
+  export type ConsumerVariant =
+    | { kind: 'agg', value: Agg }
+    | { kind: 'agg_mul', value: AggWMultiplier }
 };
 
 export namespace ShortRun {
   export type IsCurve = {
-    aggregateConsumption: number;
+    consumption: NationalAccounting.ConsumerVariant;
     aggregateGovtSpend: number;
     aggregateImporting: number;
     aggregateExporting: number,
