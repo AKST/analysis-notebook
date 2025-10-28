@@ -227,6 +227,9 @@ echo -e "${GREEN}Created ${APP_DIR}/util.js${NC}"
 cat > "${APP_DIR}/type.ts" <<'EOF'
 import { RenderContextInit } from '../../prelude-type.ts';
 
+export type RenderContext = RenderContextInit & {
+};
+
 export type Config = {
   dummy: number;
 };
