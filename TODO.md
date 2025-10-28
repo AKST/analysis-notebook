@@ -14,8 +14,6 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script/type
 - skeleton
     - stop showing empty config on resize
 
-- base/prelude/uni
-    - move container into side of infobox
 - base/runtime/widget/document
     - [ ] Replace `styles: string` with `styles: Record<string, string>`
     - [ ] Implement events
@@ -25,9 +23,4 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script/type
     - Then takes state
 - base/runtime/engine/multi
     - use the MS scroll for the contents of the app
-
-- app
-    - project structure changes
-        - remove the type signature from LINK constants
-
 

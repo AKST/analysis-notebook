@@ -1,9 +1,11 @@
 import { TocItem } from './table_of_contents/type.ts';
-import { ToggleableMixin } from '../mixins/toggleable.js';
+import { NavigationMenu } from './element.js';
 
 export type NavigationController = {
-  menuElement: ToggleableMixin & HTMLElement,
+  menuElement: HTMLElement,
   navigationButton: HTMLElement,
+  menuOpen: boolean;
+  showMenu(state: boolean): void;
   currentApp: string;
   currentAppId: string;
   transition: EventTarget,
