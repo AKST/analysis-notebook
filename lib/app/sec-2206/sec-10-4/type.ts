@@ -1,5 +1,8 @@
 import { RenderContextInit } from '../../prelude-type.ts';
 
+export type RenderContext = RenderContextInit & {
+};
+
 export type Config = {
 };
 
