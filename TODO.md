@@ -11,9 +11,6 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script/type
         - Formular Explorer
         - Definition Explorer
 
-- skeleton
-    - stop showing empty config on resize
-
 - base/runtime/widget/document
     - [ ] Replace `styles: string` with `styles: Record<string, string>`
     - [ ] Implement events
