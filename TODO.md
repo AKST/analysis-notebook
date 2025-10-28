@@ -11,6 +11,9 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script/type
         - Formular Explorer
         - Definition Explorer
 
+- config
+    - add Windows95 style select drop down
+
 - base/runtime/widget/document
     - [ ] Replace `styles: string` with `styles: Record<string, string>`
     - [ ] Implement events
@@ -20,4 +23,9 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script/type
     - Then takes state
 - base/runtime/engine/multi
     - use the MS scroll for the contents of the app
+
+- base/runtime
+    - wrap user apps in shadow dom
+- base/runtime
+    - support vanilla style sheets
 
