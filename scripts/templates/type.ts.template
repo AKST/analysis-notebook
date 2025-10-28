@@ -1,0 +1,13 @@
+import { RenderContextInit } from '{{IMPORT_DEPTH}}prelude-type.ts';
+
+export type RenderContext = RenderContextInit & {
+};
+
+export type Config = {
+  dummy: number;
+};
+
+export type Event =
+  | { kind: 'config', config: Config };
+
+export type State = {};

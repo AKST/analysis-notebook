@@ -1,0 +1,20 @@
+/**
+ * @import { E, Widget } from '{{IMPORT_DEPTH}}prelude-type.ts';
+ * @import { Config, State } from './type.ts';
+ */
+
+import * as prelude from '{{SECTION_IMPORT_DEPTH}}prelude.js';
+import { doc } from '{{IMPORT_DEPTH}}prelude.js';
+import * as tables from './tables.js';
+import * as mathml from './mathml.js';
+
+const { readmore, dashbox, todo, infobox, defineTerm, text } = prelude.components;
+const { container, twoThree, twoColumns } = prelude.layout;
+const { createDoc } = prelude.util;
+
+export const intro = createDoc(() => container(
+  doc.h1`[TITLE]`,
+  text.p.l`
+    Content here...
+  `,
+));

@@ -1,0 +1,12 @@
+/**
+ * @import { E } from '{{IMPORT_DEPTH}}prelude-type.ts';
+ */
+
+import * as prelude from '{{SECTION_IMPORT_DEPTH}}prelude.js';
+import { mathml, doc } from '{{IMPORT_DEPTH}}prelude.js';
+
+const { mi, mo, mtext, mrow, mn, msup, msub, msubsup, msqrt, munder, mspace, mfrac } = mathml;
+const { parensB, SPECIAL, abs, annotationOver, rows, parensA, call, table, op } = prelude.mathmlHelper;
+const { eqId, eq, add, minus, div, mul } = op;
+
+// Export your MathML formulas here
