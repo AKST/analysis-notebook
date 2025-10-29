@@ -15,15 +15,13 @@ export namespace Rendering {
     readonly line: LineRenderer,
   };
 
-  export type Equilibrium2d = {
-    bounds: Vec<'r', 2>,
-    points: readonly Vec<'r', 2>[],
-    tick: Vec<'r', 2> | number,
-    eq: Vec<'r', 2>,
-  };
   export type Basic2d = {
     bounds: Vec<'r', 2>,
     points: readonly Vec<'r', 2>[],
-    tick: Vec<'r', 2> | number,
+  };
+
+  export type Equilibrium2d = Basic2d & {
+    eq: Vec<'r', 2>,
+    ticks: Vec<'r', 2>[],
   };
 }
