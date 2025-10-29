@@ -1,38 +1,56 @@
 " Local vim config for complex-geo project
+" Custom ALE linter using typecheck.sh for inline errors
 
-" Function to find the nearest jsconfig.json for tsserver
-function! s:GetTsserverRoot(buffer) abort
-  " Get the full path of the file in this buffer
-  let l:filepath = fnamemodify(bufname(a:buffer), ':p')
+" Custom callback to parse tsc output
+function! s:ParseTscOutput(buffer, lines) abort
+  let l:output = []
+  let l:pattern = '\v^(.+)\((\d+),(\d+)\): (error|warning) TS(\d+): (.*)$'
 
-  " Start from the file's directory
-  let l:dir = fnamemodify(l:filepath, ':h')
+  for l:line in a:lines
+    let l:match = matchlist(l:line, l:pattern)
+    if !empty(l:match)
+      call add(l:output, {
+      \   'filename': l:match[1],
+      \   'lnum': str2nr(l:match[2]),
+      \   'col': str2nr(l:match[3]),
+      \   'type': l:match[4] ==# 'error' ? 'E' : 'W',
+      \   'text': 'TS' . l:match[5] . ': ' . l:match[6],
+      \})
+    endif
+  endfor
 
-  " Walk up looking for jsconfig.json
-  let l:jsconfig = findfile('jsconfig.json', l:dir . ';')
-
-  if !empty(l:jsconfig)
-    " Return the directory containing jsconfig.json
-    let l:root = fnamemodify(l:jsconfig, ':p:h')
-    return l:root
-  endif
-
-  " Fallback: find project root by .git
-  let l:git = finddir('.git', l:dir . ';')
-  if !empty(l:git)
-    return fnamemodify(l:git, ':p:h:h')
-  endif
-
-  " Last resort: current working directory
-  return getcwd()
+  return l:output
 endfunction
 
-" Tell ALE to use our function for tsserver project root
-let g:ale_javascript_tsserver_project_root = function('s:GetTsserverRoot')
-let g:ale_typescript_tsserver_project_root = function('s:GetTsserverRoot')
+" Define custom linter for JavaScript
+call ale#linter#Define('javascript', {
+\   'name': 'tsc_project',
+\   'executable': 'bash',
+\   'command': './scripts/typecheck.sh %s',
+\   'callback': function('s:ParseTscOutput'),
+\   'output_stream': 'both',
+\})
 
-" Don't use global tsserver
-let g:ale_javascript_tsserver_use_global = 0
-let g:ale_typescript_tsserver_use_global = 0
+" Define custom linter for TypeScript
+call ale#linter#Define('typescript', {
+\   'name': 'tsc_project',
+\   'executable': 'bash',
+\   'command': './scripts/typecheck.sh %s',
+\   'callback': function('s:ParseTscOutput'),
+\   'output_stream': 'both',
+\})
 
-echo "Loaded project vim config (custom jsconfig resolution)"
+" Use only our custom linter
+let g:ale_linters = {
+\   'javascript': ['tsc_project'],
+\   'typescript': ['tsc_project'],
+\}
+
+" Also keep makeprg for manual checks
+augroup TypeCheckSetup
+  autocmd!
+  autocmd FileType javascript,typescript setlocal makeprg=./scripts/typecheck.sh\ %
+  autocmd FileType javascript,typescript setlocal errorformat=%f(%l\\,%c):\ error\ TS%n:\ %m,%f(%l\\,%c):\ warning\ TS%n:\ %m
+augroup END
+
+echo "Loaded project vim config (ALE + typecheck.sh)"
