@@ -1,0 +1,38 @@
+" Local vim config for complex-geo project
+
+" Function to find the nearest jsconfig.json for tsserver
+function! s:GetTsserverRoot(buffer) abort
+  " Get the full path of the file in this buffer
+  let l:filepath = fnamemodify(bufname(a:buffer), ':p')
+
+  " Start from the file's directory
+  let l:dir = fnamemodify(l:filepath, ':h')
+
+  " Walk up looking for jsconfig.json
+  let l:jsconfig = findfile('jsconfig.json', l:dir . ';')
+
+  if !empty(l:jsconfig)
+    " Return the directory containing jsconfig.json
+    let l:root = fnamemodify(l:jsconfig, ':p:h')
+    return l:root
+  endif
+
+  " Fallback: find project root by .git
+  let l:git = finddir('.git', l:dir . ';')
+  if !empty(l:git)
+    return fnamemodify(l:git, ':p:h:h')
+  endif
+
+  " Last resort: current working directory
+  return getcwd()
+endfunction
+
+" Tell ALE to use our function for tsserver project root
+let g:ale_javascript_tsserver_project_root = function('s:GetTsserverRoot')
+let g:ale_typescript_tsserver_project_root = function('s:GetTsserverRoot')
+
+" Don't use global tsserver
+let g:ale_javascript_tsserver_use_global = 0
+let g:ale_typescript_tsserver_use_global = 0
+
+echo "Loaded project vim config (custom jsconfig resolution)"
