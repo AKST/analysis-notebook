@@ -4,6 +4,7 @@
   "exclude": [
     "node_modules",
     "lib/app",
+    "lib/prelude",
     "out",
     "jest.config.js",
     "jest.setup.mjs",

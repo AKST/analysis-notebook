@@ -21,6 +21,8 @@ if [ $# -eq 1 ]; then
   # Determine which jsconfig to use based on file path
   if [[ "$FILE_PATH" == *"/lib/app/"* ]]; then
     CONFIG="lib/app/jsconfig.json"
+  elif [[ "$FILE_PATH" == *"/lib/prelude/"* ]]; then
+    CONFIG="lib/prelude/jsconfig.json"
   elif [[ "$FILE_PATH" == *"/lib/ui/"* ]]; then
     CONFIG="lib/ui/jsconfig.json"
   elif [[ "$FILE_PATH" == *"/lib/base/"* ]]; then
@@ -50,6 +52,7 @@ mkdir -p out/tsc/lib/{ui,app,base}
 # Run TypeScript compiler with project references
 npx tsc -p lib/base/jsconfig.json --noEmit
 npx tsc -p lib/ui/jsconfig.json --noEmit
+npx tsc -p lib/prelude/jsconfig.json --noEmit
 npx tsc -p lib/app/jsconfig.json --noEmit
 npx tsc -p jsconfig.entry.json --noEmit
 

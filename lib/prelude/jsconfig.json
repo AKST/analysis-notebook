@@ -3,11 +3,8 @@
   "compilerOptions": {
     "noEmit": true,
     "baseUrl": ".",
-    "allowJs": true,
     "paths": {
-      "@app/*": ["./*"],
-      "@base/*": ["../base/*"],
-      "@prelude-uni/*": ["../prelude/university/*"]
+      "@base/*": ["../base/*"]
     }
   },
   "include": ["**/*.js", "**/*.ts", "*.js", "*.ts"]

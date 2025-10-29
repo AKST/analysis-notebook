@@ -1,9 +1,5 @@
 # Tasks for CLaude to do
 
-- setup import maps
-
-https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script/type/importmap
-
 - navigator
     - preserve the Table of contents in the URL bar
     - drop any title not found in the document.
