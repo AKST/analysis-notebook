@@ -133,7 +133,11 @@ body {
   background: var(--bg-msgrey);
   height: calc(100dvh - 20px - 24px - 2px);
 
-  & > svg { border: var(--border-inset-grey) }
+  & > svg {
+    border: var(--border-inset-grey);
+    margin: 0 auto;
+    display: block;
+  }
   & > p {
     color: black;
     text-shadow: white 2px 2px;

@@ -5,13 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Analysis Sandbox</title>
   <link rel="stylesheet" href="./style.css">
-
   <script type="importmap">
     {
-      "imports": {
-        "@app/": "./lib/app/",
-        "@base/": "./lib/base/",
-        "@prelude-uni/": "./lib/prelude/university/"
+      "scopes": {
+        "./lib/app/": {
+          "@app/": "./lib/app/",
+          "@base/": "./lib/base/",
+          "@prelude-uni/": "./lib/prelude/university/"
+        },
+        "./lib/prelude/": {
+          "@base/": "./lib/base/"
+        }
       }
     }
   </script>
@@ -24,47 +28,36 @@
   <div class="sidebar" id="sidebar"></div>
   <main class="main-content">
     <div id="loader">
-      <svg width="274" height="38" xmlns="http://www.w3.org/2000/svg" style="display: block; margin: 0 auto;">
-        <g>
-          <rect x="4" y="4" width="20" height="24" fill="#0000ff" opacity="0">
-            <animate attributeName="opacity" values="1;1;1;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0" dur="1.5s" repeatCount="indefinite"/>
-          </rect>
-          <rect x="28" y="4" width="20" height="24" fill="#0000ff" opacity="0">
-            <animate attributeName="opacity" values="0;1;1;1;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0" dur="1.5s" repeatCount="indefinite"/>
-          </rect>
-          <rect x="52" y="4" width="20" height="24" fill="#0000ff" opacity="0">
-            <animate attributeName="opacity" values="0;0;1;1;1;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0" dur="1.5s" repeatCount="indefinite"/>
-          </rect>
-          <rect x="76" y="4" width="20" height="24" fill="#0000ff" opacity="0">
-            <animate attributeName="opacity" values="0;0;0;1;1;1;1;1;0;0;0;0;0;0;0;0;0;0;0;0" dur="1.5s" repeatCount="indefinite"/>
-          </rect>
-          <rect x="100" y="4" width="20" height="24" fill="#0000ff" opacity="0">
-            <animate attributeName="opacity" values="0;0;0;0;1;1;1;1;1;0;0;0;0;0;0;0;0;0;0;0" dur="1.5s" repeatCount="indefinite"/>
-          </rect>
-          <rect x="124" y="4" width="20" height="24" fill="#0000ff" opacity="0">
-            <animate attributeName="opacity" values="0;0;0;0;0;1;1;1;1;1;0;0;0;0;0;0;0;0;0;0" dur="1.5s" repeatCount="indefinite"/>
-          </rect>
-          <rect x="148" y="4" width="20" height="24" fill="#0000ff" opacity="0">
-            <animate attributeName="opacity" values="0;0;0;0;0;0;1;1;1;1;1;0;0;0;0;0;0;0;0;0" dur="1.5s" repeatCount="indefinite"/>
-          </rect>
-          <rect x="172" y="4" width="20" height="24" fill="#0000ff" opacity="0">
-            <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;1;1;1;0;0;0;0;0;0;0;0" dur="1.5s" repeatCount="indefinite"/>
-          </rect>
-          <rect x="196" y="4" width="20" height="24" fill="#0000ff" opacity="0">
-            <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;1;1;1;1;1;0;0;0;0;0;0;0" dur="1.5s" repeatCount="indefinite"/>
-          </rect>
-          <rect x="220" y="4" width="20" height="24" fill="#0000ff" opacity="0">
-            <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;1;1;1;1;1;0;0;0;0;0;0" dur="1.5s" repeatCount="indefinite"/>
-          </rect>
-          <rect x="244" y="4" width="20" height="24" fill="#0000ff" opacity="0">
-            <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;1;1;1;1;1;0;0;0;0;0" dur="1.5s" repeatCount="indefinite"/>
-          </rect>
-        </g>
+      <svg id="loader-svg" width="274" height="38">
+        <g/>
       </svg>
       <p>Loading</p>
     </div>
   </main>
   <div class="config-container" id="config"></div>
-  <script type="module" src="./index.js"></script>
+  <script type="module" src="./index.js" defer></script>
+  <script>
+    /**
+     * Generate loading animation.
+     */
+    const group = document.querySelector('#loader-svg > g');
+    const createSvg = (tagName, attrs = {}) => {
+      const elem = document.createElementNS('http://www.w3.org/2000/svg', tagName);
+      for (const [k, v] of Object.entries(attrs)) elem.setAttribute(k, v);
+      return elem;
+    }
+
+    const width = 20, height = 24, fill = '#0000ff', opacity = 0;
+    const attributeName = 'opacity', dur = '1.5s', repeatCount = 'indefinite';
+    for (let i = 0; i < 11; i++) {
+      const valuesArr = Array(20).fill(0);
+      for (let j = 0; j < 5; j++) valuesArr[i + j] = 1;
+      const values = valuesArr.join(';')
+      const rect = createSvg('rect', { x: 4 + i * 24, y: 4, width, height, fill, opacity });
+      const animate = createSvg('animate', { values, attributeName, dur, repeatCount });
+      rect.appendChild(animate);
+      group.appendChild(rect);
+    }
+  </script>
 </body>
 </html>

@@ -1,5 +1,11 @@
 # Tasks for CLaude to do
 
+- lib/apps
+    - make use of alias imports
+
+- ui/app
+    - fix the problem the loader disappearing
+
 - navigator
     - preserve the Table of contents in the URL bar
     - drop any title not found in the document.
