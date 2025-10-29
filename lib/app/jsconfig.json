@@ -1,5 +1,12 @@
 {
   "extends": "../../jsconfig.base.json",
-  "compilerOptions": { "noEmit": true, "baseUrl": "." },
+  "compilerOptions": {
+    "noEmit": true,
+    "baseUrl": ".",
+    "allowJs": true,
+    "paths": {
+      "@app/*": ["./*"]
+    }
+  },
   "include": ["**/*.js", "**/*.ts", "*.js", "*.ts"]
 }

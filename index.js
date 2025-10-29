@@ -6,8 +6,12 @@ import { installResponsiveSkeleton } from './lib/ui/skeleton/create.js';
 const urlQuery = new URLSearchParams(globalThis.location.search);
 
 const navCtrl = installNavigation({
-  debug: urlQuery.has('debug'),
-  onlyEcon: urlQuery.has('EE'),
+  apps: {
+    debug: urlQuery.has('debug'),
+    papers: urlQuery.has('papers'),
+    research: urlQuery.has('research'),
+    onlyEcon: urlQuery.has('EE'),
+  },
 });
 
 const cfgCtrl = installConfig();
