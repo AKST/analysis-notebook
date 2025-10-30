@@ -2,23 +2,6 @@
 
 This file provides guidance for maintaining the visualization framework infrastructure.
 
-## Architecture Overview
-
-Interactive visualization framework using Canvas2D and Document widgets with responsive layout. Apps define configurations that are evaluated to values and passed to render functions.
-
-### Core Systems
-
-- **Engines**: Coordinate app lifecycle (single/multi widget)
-- **Widgets**: Canvas2D (frame rendering) and Document (event rendering)
-- **Configuration**: Pure evaluation pipeline from knob specs to values
-- **Skeleton**: Responsive layout coordination between menus and app space
-- **Navigation**: URL routing and hierarchical menu system
-
-## Configuration vs State
-- **Config**: Direct values passed to render(), updates trigger re-render automatically
-- **State**: Optional derived calculations, `{ kind: 'config', config }` events bridge config to state
-- **Key Principle**: Config updates don't require events - events only for state that depends on config
-
 ## Widget Systems
 
 ### Configuration Independence
@@ -41,70 +24,6 @@ Config passed directly to `render(context, state, config)`. Events only needed f
 
 ## App Development Conventions
 
-### App Module Structure
-
-Each app must export a `meta` object identifying its type and the required functions for that type:
-
-#### Canvas2D Apps
-```javascript
-export const meta = {
-  kind: 'Canvas2d',
-  proj: { kind: 'transform', origin: [0, -2], scale: 2 } // Optional projection constraints
-};
-
-export function render(context, state, config) {
-  // Pure function: render current state
-  // Use context.renderer and context.viewport for drawing
-}
-```
-
-#### Document Apps
-```javascript
-export const meta = { kind: 'document' };
-
-export function render(context, state, config) {
-  // Return document specification using array format
-  return ['div', { className: 'container' }, [
-    ['h1', ['Interactive Counter']],
-    ['p', [`Count: ${state?.count || 0}`]],
-    ['button', {
-      events: { click: { kind: 'increment' } }
-    }, ['Click me']]
-  ]];
-}
-```
-
-#### Multi-Widget Apps
-```javascript
-export const meta = {
-  kind: 'multi',
-  layout: {
-    gridTemplateColumns: ['1fr', '1fr'],
-    breakpoints: { s: 620 }  // Container width breakpoints
-  }
-};
-
-
-export const children = [
-  {
-    meta: { kind: 'document' },
-    render(context, state) { /* ... */ }
-  },
-  {
-    size: {
-      height: 400,
-      gridColumn: {
-        default: 1,  // Spans remaining 1 column
-        s: 2         // Full width on small screens
-      }
-    },
-    meta: { kind: 'Canvas2d', proj: { kind: 'transform', origin: [0, -2], scale: 2 } },
-    header: ['h4', 'Hello world'],
-    render(context, state) { /* ... */ }
-  }
-];
-```
-
 ### Dependency Injection Pattern
 
 - **Renderer + Viewport**: All rendering classes take `(renderer, viewport)` as constructor parameters
@@ -118,17 +37,7 @@ export const children = [
 - Coordinate conversion handled by viewport: `viewport.toCanvas(complexNumber)`
 - High DPI support handled automatically by application layer
 
-### URL Routing
-
-- Apps identified by organized hierarchical IDs:
-  - Complex Analysis: `c.1.1`, `c.2.1`, etc.
-  - ECON1101: `1101.1`, etc.
-  - Debug: `d.1`, `d.2`, etc.
-- URLs use `?app=c.1.1` format
-- Navigation handles browser back/forward automatically
-- IDs map to corresponding directories and files within `lib/app/`
-
-### Responsive Layout System
+## Responsive Layout System
 
 #### Layout Detection
 - **Wide Layout**: Default for desktop/tablets (width ≥ 600px AND height ≤ 1.5 × width)
@@ -142,46 +51,6 @@ export const children = [
 - **Minimum Coverage**: Always shows at least 16×16 complex plane units
 - **Aspect Adaptation**: Expands bounds to fill canvas while keeping origin centered
 - **Dynamic Updates**: `ViewportConstraints.updateCanvasAndViewport()` handles resize without recreating objects
-
-## Configuration System (RFC 006)
-
-### Architecture
-The config system provides interactive knobs for app parameters via RFC 006. Uses constructor-based knobs with `setup()` lifecycle method and event delegation.
-
-### Type-Safe Configuration
-The config system uses a reverse-inference pattern where you define your desired config data type first, then generate knob specifications:
-
-```typescript
-// 1. Define the config data structure you want
-export type Config = {
-  readonly utility: {
-    readonly muffins: number[];
-    readonly muffinPrice: number;
-    readonly donuts: number[];
-    readonly dountPrice: number;
-  };
-};
-
-// 2. Generate knob specifications from the config type
-export type Knobs = MakeConfigKnobs<Config>;
-
-// 3. Return knobs from getConfig()
-/** @returns {Knobs} */
-export function getConfig() {
-  return {
-    utility: {
-      kind: 'group',
-      group: {
-        donuts: { kind: 'sequence', of: [0, 10, 20] },
-        dountPrice: { kind: 'number', range: [0.01, 20], of: 4 },
-        // ...
-      }
-    }
-  };
-}
-```
-
-Configuration system architecture and implementation details are documented in the TypeScript interfaces in `lib/ui/config/type.ts`.
 
 ## Development
 
@@ -231,25 +100,6 @@ The project uses:
 - `updateCanvasAndViewport()`: Efficient resize without object recreation
 - High DPI handling and bidirectional coordinate mapping
 - Per-widget constraints for different mathematical coverage
-
-## Responsive Layout (Skeleton)
-
-### Layout Coordination
-`installResponsiveSkeleton()` manages 3 breakpoints:
-- **Wide** (>900px): `"300px 1fr 300px"` - nav | app | config
-- **Medium** (600-900px): `"300px 1fr"` - nav | app
-- **Narrow** (<600px): `"1fr"` - app only (overlay menus)
-
-### Menu State Rules
-- Narrow/medium: exclusive menu visibility
-- Layout changes trigger automatic menu resets
-- Menu toggles recalculate grid and trigger `application.onResize()`
-
-### Event Integration
-- Navigation `loadApp` → config reset → app loading
-- Config `configChange` → engine updates
-- Window resize → layout recalculation
-
 ## Code Patterns
 
 - Complex numbers use immutable operations (methods return new instances)

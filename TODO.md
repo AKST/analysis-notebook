@@ -3,14 +3,19 @@
 - lib/apps
     - make use of alias imports
 
-- ui/application
+- lib/ui
+    - refactor using dependency injection
+        - On startup install all web components for th skeleton.
+            - Consider if it's possible to have async wrappers for knobs.
+
+- lib/ui/application
     - fix the problem the loader disappearing
     - Refacotry
         - Implement state as a proper state machine, with store and presenter
         - Implement as a web component to isolate styles
         - After getting parity address this above issue.
 
-- ui/config
+- lib/ui/config
     - [What if it was a popup](https://developer.mozilla.org/en-US/docs/Web/API/Window/open)
 
 - navigator

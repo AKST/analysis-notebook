@@ -113,7 +113,7 @@ export const meta = { kind: 'document' };
 export function createContext() { /* ... */ }
 export function createState() { /* ... */ }
 export function onUpdate(state, event) { /* ... */ }
-export function render(context, state) { 
+export function render(context, state) {
   return ['div', [['h1', ['Hello']], ['p', ['World']]]];
 }
 export function createStyle() { /* optional - see document/README.md */ }

@@ -2,6 +2,45 @@
 
 This directory implements the application configuration system with interactive knob controls, following RFC 006 patterns. The system provides a hierarchical, event-driven architecture for managing application settings through web components.
 
+
+## User land
+The config system provides interactive knobs for app parameters via RFC 006. Uses constructor-based knobs with `setup()` lifecycle method and event delegation.
+
+### Type-Safe Configuration
+The config system uses a reverse-inference pattern where you define your desired config data type first, then generate knob specifications:
+
+```typescript
+// 1. Define the config data structure you want
+export type Config = {
+  readonly utility: {
+    readonly muffins: number[];
+    readonly muffinPrice: number;
+    readonly donuts: number[];
+    readonly dountPrice: number;
+  };
+};
+
+// 2. Generate knob specifications from the config type
+export type Knobs = MakeConfigKnobs<Config>;
+
+// 3. Return knobs from getConfig()
+/** @returns {Knobs} */
+export function getConfig() {
+  return {
+    utility: {
+      kind: 'group',
+      group: {
+        donuts: { kind: 'sequence', of: [0, 10, 20] },
+        dountPrice: { kind: 'number', range: [0.01, 20], of: 4 },
+        // ...
+      }
+    }
+  };
+}
+```
+
+Configuration system architecture and implementation details are documented in the TypeScript interfaces in `lib/ui/config/type.ts`.
+
 ## Architecture Overview
 
 ### Core Components
@@ -51,7 +90,7 @@ Called after construction to initialize child components and inputs:
 setup() {
   // Create child inputs or knobs
   this.#input = new SomeInput(this.#value, ...config);
-  
+
   // For group knobs: create child knobs
   for (const [key, childConfig] of Object.entries(this.#config.group)) {
     const child = createKnob(childConfig, key);

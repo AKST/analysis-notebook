@@ -1,3 +1,5 @@
+@import './lib/ui/layout/scroll.css';
+
 .layout {
   width: 100%;
   display: grid;
