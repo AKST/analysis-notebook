@@ -3,8 +3,15 @@
 - lib/apps
     - make use of alias imports
 
-- ui/app
+- ui/application
     - fix the problem the loader disappearing
+    - Refacotry
+        - Implement state as a proper state machine, with store and presenter
+        - Implement as a web component to isolate styles
+        - After getting parity address this above issue.
+
+- ui/config
+    - [What if it was a popup](https://developer.mozilla.org/en-US/docs/Web/API/Window/open)
 
 - navigator
     - preserve the Table of contents in the URL bar
