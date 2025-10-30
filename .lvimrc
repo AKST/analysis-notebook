@@ -22,35 +22,37 @@ function! s:ParseTscOutput(buffer, lines) abort
   return l:output
 endfunction
 
-" Define custom linter for JavaScript
-call ale#linter#Define('javascript', {
-\   'name': 'tsc_project',
-\   'executable': 'bash',
-\   'command': './scripts/typecheck.sh %s',
-\   'callback': function('s:ParseTscOutput'),
-\   'output_stream': 'both',
-\})
+function! Disabled()
+  " Define custom linter for JavaScript
+  call ale#linter#Define('javascript', {
+  \   'name': 'tsc_project',
+  \   'executable': 'bash',
+  \   'command': './scripts/typecheck.sh %s',
+  \   'callback': function('s:ParseTscOutput'),
+  \   'output_stream': 'both',
+  \})
 
-" Define custom linter for TypeScript
-call ale#linter#Define('typescript', {
-\   'name': 'tsc_project',
-\   'executable': 'bash',
-\   'command': './scripts/typecheck.sh %s',
-\   'callback': function('s:ParseTscOutput'),
-\   'output_stream': 'both',
-\})
+  " Define custom linter for TypeScript
+  call ale#linter#Define('typescript', {
+  \   'name': 'tsc_project',
+  \   'executable': 'bash',
+  \   'command': './scripts/typecheck.sh %s',
+  \   'callback': function('s:ParseTscOutput'),
+  \   'output_stream': 'both',
+  \})
 
-" Use only our custom linter
-let g:ale_linters = {
-\   'javascript': ['tsc_project'],
-\   'typescript': ['tsc_project'],
-\}
+  " Use only our custom linter
+  let g:ale_linters = {
+  \   'javascript': ['tsc_project'],
+  \   'typescript': ['tsc_project'],
+  \}
 
-" Also keep makeprg for manual checks
-augroup TypeCheckSetup
-  autocmd!
-  autocmd FileType javascript,typescript setlocal makeprg=./scripts/typecheck.sh\ %
-  autocmd FileType javascript,typescript setlocal errorformat=%f(%l\\,%c):\ error\ TS%n:\ %m,%f(%l\\,%c):\ warning\ TS%n:\ %m
-augroup END
+  " Also keep makeprg for manual checks
+  augroup TypeCheckSetup
+    autocmd!
+    autocmd FileType javascript,typescript setlocal makeprg=./scripts/typecheck.sh\ %
+    autocmd FileType javascript,typescript setlocal errorformat=%f(%l\\,%c):\ error\ TS%n:\ %m,%f(%l\\,%c):\ warning\ TS%n:\ %m
+  augroup END
 
-echo "Loaded project vim config (ALE + typecheck.sh)"
+  echo "Loaded project vim config (ALE + typecheck.sh)"
+endfunction
