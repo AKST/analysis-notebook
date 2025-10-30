@@ -1,0 +1,46 @@
+h3 {
+  margin: 0 0 16px 0;
+  color: var(--fb-white);
+  font-family: monospace;
+}
+
+details {
+  margin-bottom: 8px;
+}
+
+summary {
+  cursor: pointer;
+  padding: 6px;
+  background: var(--bg-black-2a);
+  user-select: none;
+  font-weight: bold;
+}
+
+summary:hover {
+  background: var(--bg-black-3a);
+}
+
+details > :is(.menu-item, details) {
+  margin: 8px 0 8px 16px;
+}
+
+.menu-item {
+  padding: 4px 8px;
+  background: var(--bg-black);
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--fg-white);
+  text-decoration: none;
+  display: block;
+  font-family: monospace;
+}
+
+.menu-item:hover {
+  background: var(--bg-black-33);
+}
+
+.menu-item:target,
+.menu-item:active {
+  background: var(--bg-black-44);
+  color: var(--fg-white);
+}
