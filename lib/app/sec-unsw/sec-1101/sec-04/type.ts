@@ -1,4 +1,4 @@
-import { vis2dModel } from '../prelude.js';
+import { ModelRenderer } from '@prelude-uni/2d/model.js';
 import {
   Vec2,
   RenderContextInit,
@@ -14,7 +14,7 @@ import {
 } from '@app/prelude.js';
 
 export type RenderContext = RenderContextInit & {
-  model: vis2dModel.ModelRenderer,
+  model: ModelRenderer,
   text: TextRenderer,
   grid: Grid,
   line: LineRenderer,

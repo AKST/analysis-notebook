@@ -1,8 +1,8 @@
-import { vis2dModel } from '../prelude.js';
+import { ModelRenderer } from '@prelude-uni/2d/model.js';
 import { Econ, RenderContextInit } from '@app/prelude-type.ts';
 
 export type RenderContext = RenderContextInit & {
-  model: vis2dModel.ModelRenderer,
+  model: ModelRenderer,
 }
 
 export type Config = {
