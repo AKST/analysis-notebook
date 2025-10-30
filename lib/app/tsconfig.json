@@ -1,0 +1,21 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
+    "outDir": "../../out/tsc/lib/app",
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": ["./*"],
+      "@base/*": ["../base/*"],
+      "@prelude-uni/*": ["../prelude/university/*"]
+    }
+  },
+  "include": ["**/*.js", "**/*.ts", "*.js", "*.ts"],
+  "references": [
+    { "path": "../prelude" },
+    { "path": "../base" }
+  ]
+}

@@ -5,15 +5,6 @@
         - On startup install all web components for th skeleton.
             - Consider if it's possible to have async wrappers for knobs.
 
-- lib/ui/application
-    - refactor using dependency injection
-        - Implement state as a proper state machine, with store and presenter
-        - Implement as a web component to isolate styles
-        - After getting parity address this above issue.
-
-- lib/ui/config
-    - [What if it was a popup](https://developer.mozilla.org/en-US/docs/Web/API/Window/open)
-
 - navigator
     - preserve the Table of contents in the URL bar
     - drop any title not found in the document.
@@ -36,6 +27,8 @@
 
 - base/runtime
     - wrap user apps in shadow dom
-- base/runtime
     - support vanilla style sheets
+
+- lib/ui/config
+    - [What if it was a popup](https://developer.mozilla.org/en-US/docs/Web/API/Window/open)
 

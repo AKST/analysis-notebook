@@ -1,0 +1,29 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
+    "outDir": "./out/tsc",
+    "baseUrl": "."
+  },
+  "exclude": [
+    "node_modules",
+    "lib/app",
+    "lib/prelude",
+    "lib/ui",
+    "lib/base",
+    "out",
+    "jest.config.js",
+    "jest.setup.mjs",
+    "vitest.setup.ts"
+  ],
+  "include": [
+    "index.js"
+  ],
+  "references": [
+    { "path": "./lib/base" },
+    { "path": "./lib/ui" }
+  ]
+}

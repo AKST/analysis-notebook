@@ -1,5 +1,5 @@
+import { KnobConfigVariant } from '@base/runtime/config/type.ts';
 import { expect, describe, it } from 'vitest';
-import { KnobConfigVariant } from '../../type.ts';
 import { evaluateKnob } from '../types.js';
 
 describe('evaluateKnob', () => {

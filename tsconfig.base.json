@@ -2,7 +2,6 @@
   "compilerOptions": {
     "checkJs": true,
     "allowJs": true,
-    "noEmit": true,
     "target": "ES2024",
     "module": "ES2022",
     "lib": ["ES2024", "DOM"],
