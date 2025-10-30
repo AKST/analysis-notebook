@@ -1,4 +1,4 @@
-import { ComponentType } from '../../base/dom_ui/type.ts';
+import { ComponentType } from '@base/dom_ui/type.ts';
 import { TocItem } from './table_of_contents/type.ts';
 import { NavigationMenu } from './element.js';
 
