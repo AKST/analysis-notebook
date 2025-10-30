@@ -1,5 +1,4 @@
 
-
 export type ElNode<TagName extends string> =
   | [tagName: TagName,
      attrs: ElAttrs | null | undefined,
@@ -8,10 +7,19 @@ export type ElNode<TagName extends string> =
   | [tagName: TagName,
      attrs: ElAttrs | null | undefined];
 
+export type ElDispatch<T> =
+  | [el: T,
+     attrs: ElAttrs | null | undefined,
+     children: El[] | undefined]
+
+  | [el: T,
+     attrs: ElAttrs | null | undefined];
+
 export type El =
   | Node
+  | ElDispatch<HTMLElement>
   | ElTopLevel
-  | ElNode<string>
+  | ElNode<string>;
 
 export type ElTopLevel =
   | string
