@@ -27,7 +27,7 @@ function! Disabled()
   call ale#linter#Define('javascript', {
   \   'name': 'tsc_project',
   \   'executable': 'bash',
-  \   'command': './scripts/typecheck.sh %s',
+  \   'command': './scripts/typecheck.sh',
   \   'callback': function('s:ParseTscOutput'),
   \   'output_stream': 'both',
   \})
@@ -36,7 +36,7 @@ function! Disabled()
   call ale#linter#Define('typescript', {
   \   'name': 'tsc_project',
   \   'executable': 'bash',
-  \   'command': './scripts/typecheck.sh %s',
+  \   'command': './scripts/typecheck.sh',
   \   'callback': function('s:ParseTscOutput'),
   \   'output_stream': 'both',
   \})
@@ -56,3 +56,5 @@ function! Disabled()
 
   echo "Loaded project vim config (ALE + typecheck.sh)"
 endfunction
+
+echo Disabled()

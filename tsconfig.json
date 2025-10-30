@@ -10,10 +10,7 @@
   },
   "exclude": [
     "index.js",
-    "lib/app",
-    "lib/prelude",
-    "lib/ui",
-    "lib/base",
+    "lib",
     "node_modules",
     "out",
     "jest.config.js",

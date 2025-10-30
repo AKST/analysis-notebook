@@ -18,21 +18,21 @@ if [ $# -eq 1 ]; then
     FILE_PATH="$(cd "$(dirname "$FILE_PATH")" && pwd)/$(basename "$FILE_PATH")"
   fi
 
-  # Determine which jsconfig to use based on file path
+  # Determine which tsconfig.json to use based on file path
   if [[ "$FILE_PATH" == *"/lib/app/"* ]]; then
-    CONFIG="lib/app/jsconfig.json"
+    CONFIG="lib/app/tsconfig.json.json"
   elif [[ "$FILE_PATH" == *"/lib/prelude/"* ]]; then
-    CONFIG="lib/prelude/jsconfig.json"
+    CONFIG="lib/prelude/tsconfig.json.json"
   elif [[ "$FILE_PATH" == *"/lib/ui/"* ]]; then
-    CONFIG="lib/ui/jsconfig.json"
+    CONFIG="lib/ui/tsconfig.json.json"
   elif [[ "$FILE_PATH" == *"/lib/base/"* ]]; then
-    CONFIG="lib/base/jsconfig.json"
+    CONFIG="lib/base/tsconfig.json.json"
   else
-    CONFIG="jsconfig.entry.json"
+    CONFIG="tsconfig.json.entry.json"
   fi
 
   # Run tsc with the determined config
-  npx tsc -p "$CONFIG" --noEmit
+  npx tsc --build "$CONFIG"
   exit $?
 fi
 
