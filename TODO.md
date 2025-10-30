@@ -1,15 +1,12 @@
 # Tasks for CLaude to do
 
-- lib/apps
-    - make use of alias imports
-
 - lib/ui
     - refactor using dependency injection
         - On startup install all web components for th skeleton.
             - Consider if it's possible to have async wrappers for knobs.
 
 - lib/ui/application
-    - Refactor
+    - refactor using dependency injection
         - Implement state as a proper state machine, with store and presenter
         - Implement as a web component to isolate styles
         - After getting parity address this above issue.

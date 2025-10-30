@@ -30,25 +30,11 @@ OPTIONAL_FILES=(
   "remote.js"
 )
 
-# Function to generate import depth string based on nesting level
-# Args: $1 = depth (number of segments)
-# Returns: string like "../../" or "../../../"
-get_import_depth() {
-  local depth=$1
-  local result=""
-  for ((i=0; i<depth; i++)); do
-    result="${result}../"
-  done
-  echo "$result"
-}
-
-# Function to process template file and replace placeholders
-# Args: $1 = template file name, $2 = import depth string, $3 = section import depth string
-# Returns: processed template content
+# Function to read template file
+# Args: $1 = template file name
+# Returns: template content
 process_template() {
   local template_file="$1"
-  local import_depth="$2"
-  local section_import_depth="$3"
   local template_path="${TEMPLATE_DIR}/${template_file}"
 
   if [ ! -f "$template_path" ]; then
@@ -56,10 +42,7 @@ process_template() {
     exit 1
   fi
 
-  # Replace placeholders with the calculated import depths
-  sed -e "s|{{IMPORT_DEPTH}}|${import_depth}|g" \
-      -e "s|{{SECTION_IMPORT_DEPTH}}|${section_import_depth}|g" \
-      "$template_path"
+  cat "$template_path"
 }
 
 # Validate app ID segments for security
@@ -84,7 +67,7 @@ validate_segments() {
 
 # Parse app ID into components
 # Args: $1 = app ID string
-# Sets global variables: SEGMENTS, SECTION, SECTION_DIR, APP_DIR, DEPTH, IMPORT_DEPTH
+# Sets global variables: SEGMENTS, APP_DIR
 parse_app_id() {
   local app_id="$1"
 
@@ -101,30 +84,16 @@ parse_app_id() {
   # Validate segments
   validate_segments "${SEGMENTS[@]}"
 
-  # First segment is the section
-  SECTION="${SEGMENTS[0]}"
-  SECTION_DIR="lib/app/sec-${SECTION}"
-
   # Build the full path by prepending 'sec-' to each segment
   APP_DIR="lib/app"
   for segment in "${SEGMENTS[@]}"; do
     APP_DIR="${APP_DIR}/sec-${segment}"
   done
-
-  # Calculate nesting depth (for import paths)
-  DEPTH=${#SEGMENTS[@]}
-  IMPORT_DEPTH=$(get_import_depth "$DEPTH")
-  # Section imports are one level less (to reach section directory)
-  SECTION_IMPORT_DEPTH=$(get_import_depth $((DEPTH - 1)))
 }
 
 # Display what will be generated
-# Args: $1 = NEW_SECTION flag
 display_generation_plan() {
-  local new_section=$1
-
   echo -e "${BLUE}Creating app: ${APP_ID}${NC}"
-  echo "Section directory: ${SECTION_DIR}"
   echo "App directory: ${APP_DIR}"
   echo ""
 
@@ -139,13 +108,6 @@ display_generation_plan() {
   for file in "${OPTIONAL_FILES[@]}"; do
     echo "  - $file"
   done
-
-  if [ "$new_section" = true ]; then
-    echo ""
-    echo -e "${YELLOW}New section files:${NC}"
-    echo "  - prelude.js"
-    echo "  - README.md"
-  fi
   echo ""
 }
 
@@ -169,33 +131,17 @@ create_app_directory() {
   mkdir -p "$APP_DIR"
 }
 
-# Generate section-level files (prelude.js, README.md)
-# Args: none (uses global SECTION_DIR, IMPORT_DEPTH, SECTION_IMPORT_DEPTH)
-generate_section_files() {
-  if [ -f "${SECTION_DIR}/prelude.js" ]; then
-    echo -e "${YELLOW}Warning: ${SECTION_DIR}/prelude.js already exists, skipping${NC}"
-  else
-    process_template "prelude.js.template" "$IMPORT_DEPTH" "$SECTION_IMPORT_DEPTH" > "${SECTION_DIR}/prelude.js"
-    echo -e "${GREEN}Created ${SECTION_DIR}/prelude.js${NC}"
-  fi
-
-  if [ ! -f "${SECTION_DIR}/README.md" ]; then
-    touch "${SECTION_DIR}/README.md"
-    echo -e "${GREEN}Created ${SECTION_DIR}/README.md${NC}"
-  fi
-}
-
 # Generate required app files
-# Args: none (uses global APP_DIR, IMPORT_DEPTH, SECTION_IMPORT_DEPTH)
+# Args: none (uses global APP_DIR)
 generate_required_files() {
   for file in "${REQUIRED_FILES[@]}"; do
-    process_template "${file}.template" "$IMPORT_DEPTH" "$SECTION_IMPORT_DEPTH" > "${APP_DIR}/${file}"
+    process_template "${file}.template" > "${APP_DIR}/${file}"
     echo -e "${GREEN}Created ${APP_DIR}/${file}${NC}"
   done
 }
 
 # Prompt and generate optional files
-# Args: none (uses global APP_DIR, IMPORT_DEPTH, SECTION_IMPORT_DEPTH, OPTIONAL_FILES)
+# Args: none (uses global APP_DIR, OPTIONAL_FILES)
 generate_optional_files() {
   echo ""
   echo -e "${BLUE}Optional files:${NC}"
@@ -206,7 +152,7 @@ generate_optional_files() {
     if [[ $REPLY =~ ^[Yy]$ ]]; then
       case "$file" in
         "mathml.js"|"render.js"|"tables.js"|"remote.js")
-          process_template "${file}.template" "$IMPORT_DEPTH" "$SECTION_IMPORT_DEPTH" > "${APP_DIR}/${file}"
+          process_template "${file}.template" > "${APP_DIR}/${file}"
           ;;
       esac
       echo -e "${GREEN}Created ${APP_DIR}/${file}${NC}"
@@ -251,13 +197,6 @@ main() {
   # Parse and validate app ID
   parse_app_id "$APP_ID"
 
-  # Check if section directory exists
-  NEW_SECTION=false
-  if [ ! -d "$SECTION_DIR" ]; then
-    NEW_SECTION=true
-    echo -e "${YELLOW}New section directory will be created${NC}"
-  fi
-
   # Check if app directory already exists
   if [ -d "$APP_DIR" ]; then
     echo -e "${RED}Error: App directory already exists: ${APP_DIR}${NC}"
@@ -265,7 +204,7 @@ main() {
   fi
 
   # Display generation plan
-  display_generation_plan "$NEW_SECTION"
+  display_generation_plan
 
   # Get user confirmation
   if ! confirm_generation; then
@@ -274,11 +213,6 @@ main() {
 
   # Create directories
   create_app_directory
-
-  # Generate section files if new section
-  if [ "$NEW_SECTION" = true ]; then
-    generate_section_files
-  fi
 
   # Generate required files
   generate_required_files

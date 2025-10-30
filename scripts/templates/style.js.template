@@ -1,4 +1,4 @@
-import { styles } from '{{SECTION_IMPORT_DEPTH}}prelude.js';
+import * as styles from '@prelude-uni/styles.js';
 
 export function createStyle() {
   return {

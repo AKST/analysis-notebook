@@ -1,9 +1,8 @@
 /**
- * @import { E } from '{{IMPORT_DEPTH}}prelude-type.ts';
+ * @import { E } from '@app/prelude-type.ts';
  * @import { State, Config } from './type.ts';
  */
 
-import * as prelude from '{{SECTION_IMPORT_DEPTH}}prelude.js';
-import { doc } from '{{IMPORT_DEPTH}}prelude.js';
+import { doc, table } from '@app/prelude.js';
 
 // Export your table functions here
