@@ -1,4 +1,4 @@
-import { Vec2, RenderContextInit, Econ } from '../../../prelude-type.js';
+import { Vec2, RenderContextInit, Econ } from '@app/prelude-type.js';
 import {
   econFirm,
   TextRenderer,
@@ -6,7 +6,7 @@ import {
   PointRenderer,
   PolygonRenderer,
   LineRenderer,
-} from '../../../prelude.js';
+} from '@app/prelude.js';
 
 export type RenderContext = RenderContextInit & {
   text: TextRenderer,

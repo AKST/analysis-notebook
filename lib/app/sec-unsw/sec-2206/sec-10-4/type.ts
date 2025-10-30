@@ -1,4 +1,4 @@
-import { RenderContextInit } from '../../../prelude-type.ts';
+import { RenderContextInit } from '@app/prelude-type.ts';
 
 export type RenderContext = RenderContextInit & {
 };

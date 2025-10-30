@@ -1,10 +1,10 @@
-import { VectorOf as Vec, RenderContextInit } from '../../../prelude-type.ts';
+import { VectorOf as Vec, RenderContextInit } from '@app/prelude-type.ts';
 import {
   TextRenderer,
   Grid,
   PolygonRenderer,
   LineRenderer,
-} from '../../../prelude.js';
+} from '@app/prelude.js';
 import { Rendering } from '../common/type.ts';
 
 export namespace LongRun {

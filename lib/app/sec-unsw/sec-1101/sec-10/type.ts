@@ -1,10 +1,10 @@
-import { RenderContextInit, Econ, MakeConfigKnobs, Vec2 } from '../../../prelude-type.ts';
+import { RenderContextInit, Econ, MakeConfigKnobs, Vec2 } from '@app/prelude-type.ts';
 import {
   TextRenderer,
   Grid,
   PolygonRenderer,
   LineRenderer,
-} from '../../../prelude.js';
+} from '@app/prelude.js';
 
 export type Config = {
   readonly marginalCost: number;

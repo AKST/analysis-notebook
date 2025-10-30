@@ -1,9 +1,9 @@
-import { VectorOf, RenderContextInit } from '../../../prelude-type';
+import { VectorOf, RenderContextInit } from '@app/prelude-type';
 import {
   Grid,
   VectorRenderer,
   PointRenderer,
-} from '../../../prelude.js';
+} from '@app/prelude.js';
 
 type V2 = VectorOf<'r', 2>;
 

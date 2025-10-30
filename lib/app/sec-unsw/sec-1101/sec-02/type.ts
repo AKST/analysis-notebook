@@ -4,13 +4,13 @@ import {
   MakeConfigKnobs,
   Econ,
   Vec2,
-} from '../../../prelude-type.ts';
+} from '@app/prelude-type.ts';
 import {
   TextRenderer,
   Grid,
   PointRenderer,
   LineRenderer,
-} from '../../../prelude.js';
+} from '@app/prelude.js';
 
 export type RenderContext = RenderContextInit & {
   text: TextRenderer,

@@ -4,14 +4,14 @@ import {
   RenderContextInit,
   MakeConfigKnobs,
   Econ,
-} from '../../../prelude-type.ts';
+} from '@app/prelude-type.ts';
 import {
   TextRenderer,
   Grid,
   PointRenderer,
   LineRenderer,
   PolygonRenderer,
-} from '../../../prelude.js';
+} from '@app/prelude.js';
 
 export type RenderContext = RenderContextInit & {
   model: vis2dModel.ModelRenderer,

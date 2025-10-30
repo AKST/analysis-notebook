@@ -1,10 +1,10 @@
-import { RenderContextInit, MakeConfigKnobs } from '../../../prelude-type.ts';
+import { RenderContextInit, MakeConfigKnobs } from '@app/prelude-type.ts';
 import {
   TextRenderer,
   Grid,
   PointRenderer,
   LineRenderer,
-} from '../../../prelude.js';
+} from '@app/prelude.js';
 
 export type RenderContext = RenderContextInit & {
   text: TextRenderer,
