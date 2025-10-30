@@ -9,8 +9,7 @@
             - Consider if it's possible to have async wrappers for knobs.
 
 - lib/ui/application
-    - fix the problem the loader disappearing
-    - Refacotry
+    - Refactor
         - Implement state as a proper state machine, with store and presenter
         - Implement as a web component to isolate styles
         - After getting parity address this above issue.
