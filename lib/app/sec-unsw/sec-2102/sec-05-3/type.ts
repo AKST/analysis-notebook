@@ -24,9 +24,14 @@ export type Config = {
   mpCurve: {
     realInterest: Record<string, number>,
   },
-  inflationShock: {
-    size: number,
-    decay: number,
+  phillipsCurve: {
+    inflation: {
+      sensivity: number,
+      shock: {
+        size: number,
+        decay: number,
+      },
+    },
   },
 };
 
@@ -35,6 +40,11 @@ export type State = {
     bounds: Vec2,
     ticks: Vec2[],
     isCurve: Vec2[],
+    mpCurves: Vec2[],
+  },
+  philipsCurve?: {
+    bounds: Vec2,
+    curve: Vec2[],
     mpCurves: Vec2[],
   },
 };
