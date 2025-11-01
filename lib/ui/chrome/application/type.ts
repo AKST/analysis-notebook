@@ -1,5 +1,5 @@
 import { EngineRunner } from '@base/runtime/type.ts';
-import { ConfigChangeEvent } from '@ui/config/events.js';
+import { ConfigChangeEvent } from '../config/events.js';
 
 export type ApplicationController = {
   events: EventTarget,
