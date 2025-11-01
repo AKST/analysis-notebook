@@ -41,6 +41,14 @@ export interface WidgetRunner<State, Config> {
   getAnchors(): WidgetAnchor[];
 }
 
+export interface EngineRunner<C> {
+  start(): void;
+  stop(): void;
+  getAnchors(): readonly WidgetAnchor[];
+  resize(newWidth: number, newHeight?: number): void;
+  updateConfig(vaules: C, origin: string[]): void;
+  module: { getConfig?(): C };
+}
 
 export type ModuleCommon<State, Config, Event> = {
   getConfig?(): any;
@@ -113,4 +121,22 @@ export type ChildWidgetParam = {
 export type WidgetFactory = {
   create<S, C, E>(module: WidgetChild<any, S, C, E>, config: ChildWidgetParam): WidgetRunner<S, C>;
 }
+
+export type MultiEngineFactory = {
+  create<S, C, E>(module: MultiModule<S, C, E>, config: {
+    config: any,
+    mainContent: HTMLElement,
+    viewportWidth: number,
+    viewportHeight: number,
+  }): EngineRunner<C>;
+};
+
+export type SingleEngineFactory = {
+  create<S, C, E>(module: SingleModule<unknown, S, C, E>, config: {
+    config: any,
+    mainContent: HTMLElement,
+    viewportWidth: number,
+    viewportHeight: number,
+  }): EngineRunner<C>;
+};
 

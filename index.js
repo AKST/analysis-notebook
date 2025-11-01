@@ -23,7 +23,6 @@ const mainContent = /** @type {HTMLElement} */
   (document.querySelector('.main-content'));
 
 const application = installApplication({
-  config: cfgCtrl.config,
   container: mainContent,
   initialApp: navCtrl.currentApp,
   /** @ts-ignore - if theres no path theres a runtime error */

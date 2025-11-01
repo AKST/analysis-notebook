@@ -1,4 +1,5 @@
-import { ConfigChangeEvent } from '../config/events.js';
+import { EngineRunner } from '@base/runtime/type.ts';
+import { ConfigChangeEvent } from '@ui/config/events.js';
 
 export type ApplicationController = {
   events: EventTarget,
@@ -9,3 +10,7 @@ export type ApplicationController = {
   onConfigUpdate(config: ConfigChangeEvent): void;
 };
 
+export type ApplicationState =
+  | { kind: 'initial' }
+  | { kind: 'loading', path: string }
+  | { kind: 'running', app: EngineRunner<any> }
