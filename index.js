@@ -20,6 +20,7 @@ const navCtrl = installNavigation({
 const cfgCtrl = installConfig();
 
 const application = installApplication({
+  scrollSheet,
   replace: /** @type {HTMLElement} */ (
     document.querySelector('.main-content')
   ),

@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+summary { font-size: var(--fontsize-body-l); }
+h1 { font-size: var(--fontsize-h1); }
+h2 { font-size: var(--fontsize-h2); }
+h3 { font-size: var(--fontsize-h3); }
+h4 { font-size: var(--fontsize-h4); }
+h5 { font-size: var(--fontsize-h5); }
+h6 { font-size: var(--fontsize-h6); }
+math { font-size: var(--fontsize-math-m); }
+
+hr { margin-block: var(--hr-margin-block); }
+dt { font-size: var(--fontsize-dt); }
+canvas {
+  display: block;
+  background: black;
+  max-width: 100%;
+  max-height: 100%;
+}

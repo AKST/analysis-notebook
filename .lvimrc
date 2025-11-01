@@ -53,8 +53,6 @@ function! Disabled()
     autocmd FileType javascript,typescript setlocal makeprg=./scripts/typecheck.sh\ %
     autocmd FileType javascript,typescript setlocal errorformat=%f(%l\\,%c):\ error\ TS%n:\ %m,%f(%l\\,%c):\ warning\ TS%n:\ %m
   augroup END
-
-  echo "Loaded project vim config (ALE + typecheck.sh)"
 endfunction
 
 echo Disabled()
