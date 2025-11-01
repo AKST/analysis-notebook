@@ -18,6 +18,8 @@
     - [ ] Implement events
     - [ ] Element Attribute types dependent on Element
     - [ ] Make each widget exist in a web component.
+- base/runtime/widget
+    - [ ] Make each widget exist in a web component.
 - base/runtime/{multi-styles + widget/document/appStyleManager}
     - I need to have a more explict API for loading styles. I should
       also consider styles sheets as well. But for now I'd like to
