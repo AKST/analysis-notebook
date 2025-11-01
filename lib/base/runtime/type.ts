@@ -44,6 +44,7 @@ export interface WidgetRunner<State, Config> {
 export interface EngineRunner<C> {
   start(): void;
   stop(): void;
+  container: HTMLElement;
   getAnchors(): readonly WidgetAnchor[];
   resize(newWidth: number, newHeight?: number): void;
   updateConfig(vaules: C, origin: string[]): void;

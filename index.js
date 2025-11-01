@@ -19,11 +19,10 @@ const navCtrl = installNavigation({
 
 const cfgCtrl = installConfig();
 
-const mainContent = /** @type {HTMLElement} */
-  (document.querySelector('.main-content'));
-
 const application = installApplication({
-  container: mainContent,
+  replace: /** @type {HTMLElement} */ (
+    document.querySelector('.main-content')
+  ),
   initialApp: navCtrl.currentApp,
   /** @ts-ignore - if theres no path theres a runtime error */
   loadModule: path => import(path),

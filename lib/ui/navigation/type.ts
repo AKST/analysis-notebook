@@ -10,7 +10,6 @@ export type NavigationController = {
   currentApp: string;
   currentAppId: string;
   transition: EventTarget,
-
   setToc(items: readonly TocItem[]): void;
   jumpToTitle(): void;
 };
