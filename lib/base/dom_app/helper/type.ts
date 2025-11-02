@@ -20,8 +20,14 @@ type GeneralVoidHelper<Attrs> = {
 
 type GeneralHelper<Attrs, Items> = Items extends any[] ? {
   (...items: Items): E.Item;
-  (attr: Attrs): (...items: Items) => E.Item;
-  attr: (attr: Attrs) => (...items: Items) => E.Item;
+  (attr: Attrs): {
+    (...items: Items): E.Item;
+    of: (...items: Items) => E.Item;
+  };
+  attr(attr: Attrs): {
+    (...items: Items): E.Item;
+    of: (...items: Items) => E.Item;
+  };
   of: (...items: Items) => E.Item;
 } : never;
 
