@@ -1,3 +1,7 @@
+#menu {
+  transition: opacity 0.5s steps(5, end);
+}
+
 h3 {
   margin: 0 0 16px 0;
   color: var(--fb-white);

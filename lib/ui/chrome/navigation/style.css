@@ -1,3 +1,7 @@
+nav {
+  transition: var(--transition-rule-opacity);
+}
+
 .navigation {
   box-sizing: border-box;
   width: 100%;

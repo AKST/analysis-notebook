@@ -86,6 +86,10 @@
 
   --fontsize-dt: 13px;
   --hr-margin-block: 6.5px;
+
+  --transition-prop-time: 0.2s;
+  --transition-prop-ease: steps(5, end);
+  --transition-rule-opacity: opacity var(--transition-prop-time) var(--transition-prop-ease);
 }
 
 

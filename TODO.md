@@ -34,6 +34,14 @@
 - base/{dom_ui,dom_app}
     - unify these two APIs, have seperate renders if necessary.
 
-- lib/ui/config
+- prelude
+    - move econ here
+- prelude/math
+    - add `mtr` method to `op`s to have a method to return a table row
+
+- lib/ui/chrome
+    - Reusable loading state, possibly even clone the top level one.
+
+- lib/ui/chrome/config
     - [What if it was a popup](https://developer.mozilla.org/en-US/docs/Web/API/Window/open)
 
