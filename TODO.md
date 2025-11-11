@@ -13,6 +13,9 @@
     - add Windows95 style select drop down
     - load knobs asyncronously
 
+- base/runtime
+    - Can I get util to run in a webworker?
+
 - base/runtime/widget/document
     - [ ] Replace `styles: string` with `styles: Record<string, string>`
     - [ ] Implement events

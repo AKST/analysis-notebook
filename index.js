@@ -10,7 +10,7 @@ const urlQuery = new URLSearchParams(globalThis.location.search);
 const navCtrl = installNavigation({
   scrollSheet,
   apps: {
-    debug: !!(urlQuery.has('debug') ^ (location.hostname === 'localhost')),
+    debug: (urlQuery.has('debug') !== (location.hostname === 'localhost')),
     papers: urlQuery.has('papers'),
     research: urlQuery.has('research'),
     onlyEcon: urlQuery.has('EE'),
