@@ -5,6 +5,8 @@ export type Uniforms = {
   meshRender: UniformAdapter,
   meshGen: UniformAdapter,
   text: UniformAdapter,
+  gridGen: UniformAdapter,
+  gridRender: UniformAdapter,
 };
 
 export type Buffers = {
@@ -12,6 +14,7 @@ export type Buffers = {
   textVertices: GPUBuffer,
   textLabourInstance: GPUBuffer,
   textCapitalInstance: GPUBuffer,
+  gridVertices: GPUBuffer,
 };
 
 export type Textures = {
