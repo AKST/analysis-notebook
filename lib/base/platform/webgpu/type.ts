@@ -19,3 +19,10 @@ export type GpuTypeInCpu<Type> =
   Type extends `vec4<${'f32' | 'i32' | 'u32'}>` ? [number, number, number, number] :
   Type extends `mat4x4<${'f32' | 'i32' | 'u32'}>` ? DOMMatrix :
   never;
+
+export type GpuTextureMeta = {
+  text: string,
+  canvas: HTMLCanvasElement,
+  ctx: CanvasRenderingContext2D,
+  size: [number, number],
+};
