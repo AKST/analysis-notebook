@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../style.css">
+    <title>Cobb Douglas</title>
+    <script type="importmap">
+      { "imports": { "@base/": "../../../base/" } }
+    </script>
+    <style>
+      * { box-sizing: border-box; }
+      canvas { display: block; padding: 0 }
+      html, body { height: 100%; margin: 0; padding: 0; }
+    </style>
+  </head>
+  <body>
+    <script type="module">
+      import { main } from './index.js';
+
+      try { await main() } catch (e) {
+        console.error(e);
+      }
+    </script>
+  </body>
+</html>

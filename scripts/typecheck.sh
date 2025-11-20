@@ -20,15 +20,21 @@ if [ $# -eq 1 ]; then
 
   # Determine which tsconfig.json to use based on file path
   if [[ "$FILE_PATH" == *"/lib/app/"* ]]; then
-    CONFIG="lib/app/tsconfig.json.json"
+    CONFIG="lib/app/tsconfig.json"
   elif [[ "$FILE_PATH" == *"/lib/prelude/"* ]]; then
-    CONFIG="lib/prelude/tsconfig.json.json"
+    CONFIG="lib/prelude/tsconfig.json"
   elif [[ "$FILE_PATH" == *"/lib/ui/"* ]]; then
-    CONFIG="lib/ui/tsconfig.json.json"
+    CONFIG="lib/ui/tsconfig.json"
   elif [[ "$FILE_PATH" == *"/lib/base/"* ]]; then
-    CONFIG="lib/base/tsconfig.json.json"
+    CONFIG="lib/base/tsconfig.json"
+  elif [[ "$FILE_PATH" == *"/lib/embed/sec-2102/cobb-douglas/"* ]]; then
+    CONFIG="lib/embed/sec-2102/cobb-douglas/tsconfig.json"
+  elif [[ "$FILE_PATH" == *"/lib/embed/sec-2102/"* ]]; then
+    CONFIG="lib/embed/sec-2102/tsconfig.json"
+  elif [[ "$FILE_PATH" == *"/lib/embed/"* ]]; then
+    CONFIG="lib/embed/tsconfig.json"
   else
-    CONFIG="tsconfig.json.entry.json"
+    CONFIG="tsconfig.json"
   fi
 
   # Run tsc with the determined config
