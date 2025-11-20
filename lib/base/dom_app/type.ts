@@ -17,6 +17,7 @@ export type ElAttributes = {
   align?: 'top' | 'bottom' | 'left' | 'right';
   color?: string;
   colSpan?: number | string;
+  columnspan?: number | string;
   display?: string;
   fontsize?: string;
   height?: string | number;
