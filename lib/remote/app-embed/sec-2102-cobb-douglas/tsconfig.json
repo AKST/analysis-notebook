@@ -1,0 +1,18 @@
+{
+  "extends": "../../../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
+    "outDir": "../../../../out/tsc/lib/remote/app-embed/sec-2102-cobb-douglas",
+    "baseUrl": ".",
+    "paths": {
+      "@base/*": ["../../../base/*"]
+    }
+  },
+  "include": ["**/*.js", "**/*.ts", "*.js", "*.ts"],
+  "references": [
+    { "path": "../../../base" }
+  ]
+}
