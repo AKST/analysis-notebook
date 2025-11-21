@@ -22,7 +22,7 @@
     { "path": "./lib/prelude" },
     { "path": "./lib/base" },
     { "path": "./lib/ui" },
-    { "path": "./lib/embed" },
+    { "path": "./lib/remote" },
     { "path": "./tsconfig.entry.json" }
   ]
 }
