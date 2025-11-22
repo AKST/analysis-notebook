@@ -22,6 +22,8 @@ export type Config = {
     capital: number,
     labour: number,
     alpha: number,
+    rho: number,
+    xi: number,
   },
 };
 

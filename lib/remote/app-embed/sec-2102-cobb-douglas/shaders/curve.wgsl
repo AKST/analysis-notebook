@@ -54,14 +54,18 @@ fn ces_production_fn(
   let zeta = uCurveOut.zeta;
   let rho = uCurveOut.rho;
 
-  return technology * pow(capital, 1.0 - alpha) * pow(labour, alpha);
-  // if (rho == 0.0) {
-  //   return technology * pow(capital, 1.0 - alpha) * pow(labour, alpha);
-  // } else {
-  //   let k = pow((1.0 - alpha) * capital, rho);
-  //   let l = pow(alpha * capital, rho);
-  //   return technology * pow(k + l, zeta / rho);
-  // }
+  if (rho == 0.0) {
+    return technology * pow(capital, 1.0 - alpha) * pow(labour, alpha);
+  } else {
+    // Add epsilon to avoid pow(0, negative) which gives infinity/NaN
+    let eps = 1e-6;
+    let l = max(labour, eps);
+    let k = max(capital, eps);
+
+    let kTerm = (1.0 - alpha) * pow(k, rho);
+    let lTerm = alpha * pow(l, rho);
+    return technology * pow(kTerm + lTerm, zeta / rho);
+  }
 }
 
 struct CurveParam {
