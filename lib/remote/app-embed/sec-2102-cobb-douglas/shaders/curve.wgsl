@@ -1,6 +1,4 @@
-fn cobbDouglas(technology: f32, labour: f32, capital: f32, alpha: f32) -> f32 {
-  return technology * pow(capital, 1.0 - alpha) * pow(labour, alpha);
-}
+
 
 struct CurveInUnif {
   min: vec2<f32>,
@@ -37,14 +35,34 @@ fn generateMesh(@builtin(global_invocation_id) id: vec3<u32>) {
 struct CurveOutputUnif {
   world: mat4x4<f32>,
   viewProj: mat4x4<f32>,
+  offset: vec3<f32>,
+  productionMax: f32,
   alpha: f32,
   technology: f32,
-  productionMax: f32,
-  offset: vec3<f32>,
-  _padding: f32,
+  rho: f32,
+  zeta: f32,
 }
 
 @group(0) @binding(0) var<uniform> uCurveOut: CurveOutputUnif;
+
+fn ces_production_fn(
+  labour: f32,
+  capital: f32,
+) -> f32 {
+  let technology = uCurveOut.technology;
+  let alpha = uCurveOut.alpha;
+  let zeta = uCurveOut.zeta;
+  let rho = uCurveOut.rho;
+
+  return technology * pow(capital, 1.0 - alpha) * pow(labour, alpha);
+  // if (rho == 0.0) {
+  //   return technology * pow(capital, 1.0 - alpha) * pow(labour, alpha);
+  // } else {
+  //   let k = pow((1.0 - alpha) * capital, rho);
+  //   let l = pow(alpha * capital, rho);
+  //   return technology * pow(k + l, zeta / rho);
+  // }
+}
 
 struct CurveParam {
   @location(0) position: vec2<f32>,
@@ -58,7 +76,7 @@ struct CurveReturn {
 
 @vertex
 fn meshVertex(input: CurveParam) -> CurveReturn {
-  let y = cobbDouglas(uCurveOut.technology, input.position.x, input.position.y, uCurveOut.alpha);
+  let y = ces_production_fn(input.position.x, input.position.y);
   let p = vec4(input.position.x, y, input.position.y, 1.0);
   let worldPosition = uCurveOut.world * (p + vec4(uCurveOut.offset, 0.0));
 

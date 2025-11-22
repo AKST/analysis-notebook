@@ -18,7 +18,18 @@
     <script type="module">
       import { main } from './index.js';
 
-      try { await main() } catch (e) {
+      const functions = {
+        ces: { kind: 'CES', label: 'Constant Elasticity of Subsitution' },
+        cd: { kind: 'CD', label: 'Cobb Douglas' },
+      };
+
+      try {
+        const url = new URL(window.location);
+        const fun = functions[url.searchParams.get('fun')] ?? functions.cd;
+        await main({
+          production: fun,
+        })
+      } catch (e) {
         console.error(e);
       }
     </script>

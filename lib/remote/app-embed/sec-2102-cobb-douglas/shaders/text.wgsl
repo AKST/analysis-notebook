@@ -26,8 +26,8 @@ fn textVertex(input: TextVertexInput) -> TextVertexOutput {
   let rotatedX = scaledPos.x * cosR - scaledPos.y * sinR;
   let rotatedY = scaledPos.x * sinR + scaledPos.y * cosR;
 
-  let localPos = vec4<f32>(rotatedX, 0.0, rotatedY, 1.0);
-  let worldPosition = localPos + vec4<f32>(input.instancePosition, 0.0);
+  let localPos = vec4(rotatedX, 0.0, rotatedY, 1.0);
+  let worldPosition = localPos + vec4(input.instancePosition, 0.0);
 
   output.position = textUniforms.viewProjection * worldPosition;
   output.texcoord = input.position + 0.5;
