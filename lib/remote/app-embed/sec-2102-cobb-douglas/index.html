@@ -18,16 +18,19 @@
     <script type="module">
       import { main } from './index.js';
 
-      const functions = {
-        ces: { kind: 'CES', label: 'Constant Elasticity of Subsitution' },
-        cd: { kind: 'CD', label: 'Cobb Douglas' },
-      };
+      function numberParam(url, param, otherwise) {
+        const value = url.searchParams.get(param);
+        if (value == null || value === '') return otherwise;
+        return parseFloat(value);
+      }
 
       try {
         const url = new URL(window.location);
-        const fun = functions[url.searchParams.get('fun')] ?? functions.cd;
         await main({
-          production: fun,
+          params: {
+            rho: numberParam(url, 'rho', 0),
+            xi: numberParam(url, 'xi', 1),
+          },
         })
       } catch (e) {
         console.error(e);

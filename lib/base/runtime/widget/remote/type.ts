@@ -1,12 +1,16 @@
 import { E } from '../../../../base/dom_app/type.js';
 
+export type SendOrigin =
+  | { kind: 'unknown' }
+  | { kind: 'knob', source: string };
+
 export type RemoteWidget<Ctx, State, Config, Event> = {
   meta: { kind: 'remote' },
   title: string,
   source: RemoteVariant,
   header?: E.Item | undefined;
   initialise?(): Generator<any>;
-  normaliseSend?(message: ParentToChildMessage<Config, State>): Generator<any>;
+  normaliseSend?(message: ParentToChildMessage<Config, State>, origin: SendOrigin): Generator<any>;
   normaliseRecv?(message: any): Generator<NormalisedRecv<Event>>;
 };
 

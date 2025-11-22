@@ -31,28 +31,22 @@ fn generateMesh(@builtin(global_invocation_id) id: vec3<u32>) {
   vertices[quadIndex + 5u] = vec2(xNext, zNext);
 }
 
-
-struct CurveOutputUnif {
-  world: mat4x4<f32>,
-  viewProj: mat4x4<f32>,
-  offset: vec3<f32>,
-  productionMax: f32,
+struct AggregateProductionParams {
   alpha: f32,
   technology: f32,
   rho: f32,
   zeta: f32,
 }
 
-@group(0) @binding(0) var<uniform> uCurveOut: CurveOutputUnif;
-
 fn ces_production_fn(
   labour: f32,
   capital: f32,
+  params: AggregateProductionParams,
 ) -> f32 {
-  let technology = uCurveOut.technology;
-  let alpha = uCurveOut.alpha;
-  let zeta = uCurveOut.zeta;
-  let rho = uCurveOut.rho;
+  let technology = params.technology;
+  let alpha = params.alpha;
+  let zeta = params.zeta;
+  let rho = params.rho;
 
   if (rho == 0.0) {
     return technology * pow(capital, 1.0 - alpha) * pow(labour, alpha);
@@ -68,6 +62,18 @@ fn ces_production_fn(
   }
 }
 
+struct CurveOutputUnif {
+  world: mat4x4<f32>,
+  viewProj: mat4x4<f32>,
+  offset: vec3<f32>,
+  prod_max: f32,
+  prod_params: AggregateProductionParams,
+  prod_scale: f32,
+  _pad: f32,
+}
+
+@group(0) @binding(0) var<uniform> u_curve_out: CurveOutputUnif;
+
 struct CurveParam {
   @location(0) position: vec2<f32>,
 }
@@ -80,14 +86,17 @@ struct CurveReturn {
 
 @vertex
 fn meshVertex(input: CurveParam) -> CurveReturn {
-  let y = ces_production_fn(input.position.x, input.position.y);
-  let p = vec4(input.position.x, y, input.position.y, 1.0);
-  let worldPosition = uCurveOut.world * (p + vec4(uCurveOut.offset, 0.0));
+  let y = ces_production_fn(input.position.x, input.position.y, u_curve_out.prod_params);
+  let y_multi = u_curve_out.prod_scale/u_curve_out.prod_max;
+  let off = vec4(u_curve_out.offset.x, 0.0, u_curve_out.offset.z, 0.0);
+  let pos = vec4(input.position.x, y, input.position.y, 1.0);
+  let scaled = (off + pos) * vec4(1, y_multi, 1, 1);
+  let worldPosition = u_curve_out.world * scaled;
 
   var output: CurveReturn;
   output.worldPos = worldPosition.xyz;
   output.faceY = y;
-  output.position = uCurveOut.viewProj * worldPosition;
+  output.position = u_curve_out.viewProj * worldPosition;
   return output;
 }
 
@@ -102,7 +111,7 @@ fn meshFragment(input: CurveReturn) -> @location(0) vec4<f32> {
   let tilt = acos(clamp(dot(n, vec3(0.0, 1.0, 0.0)), -1.0, 1.0)) / (0.5 * PI);
   let shade = mix(tilt, tilt, tilt);
 
-  let t = clamp(input.faceY / uCurveOut.productionMax, 0.0, 1.0);
+  let t = clamp(input.faceY / u_curve_out.prod_max, 0.0, 1.0);
 
   let colorA = vec3(1.0, 0.5, 0.10);
   let colorB = vec3(1.0, 0.25, 0.25);

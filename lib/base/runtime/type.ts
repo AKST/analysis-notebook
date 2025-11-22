@@ -33,7 +33,7 @@ export interface WidgetRunner<State, Config> {
   };
   module: WidgetChild<unknown, State, Config>;
   initialize(onEvent: (event: unknown) => void): void;
-  render(config: Config, state: State): void;
+  render(config: Config, state: State, e: any): void;
   resize(newWidth: number, newHeight?: number): void;
   cleanup?(): void;
   setStyle(styles: Record<string, string | null>): void;

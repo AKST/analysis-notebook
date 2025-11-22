@@ -17,11 +17,13 @@ export type Event =
   | { kind: 'config', config: Config };
 
 export type Config = {
-  productivity: {
+  production: {
     technology: number,
     capital: number,
     labour: number,
     alpha: number,
+  },
+  ces: {
     rho: number,
     xi: number,
   },
