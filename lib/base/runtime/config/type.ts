@@ -86,7 +86,7 @@ export type MakeGroupKnob<R extends Record<string, any>> = {
 
 export type MakeManyKnob<R extends Record<string, any>> = {
   kind: 'many',
-  create: (id: string) => (
+  create: (
     R extends Record<string, infer V>
       ? MakeConfigKnob<V>
       : never

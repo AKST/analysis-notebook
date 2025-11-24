@@ -77,7 +77,7 @@ struct GridUniforms {
   _pad: f32
 }
 
-@group(0) @binding(0) var<uniform> grid_uniforms: GridUniforms;
+@group(0) @binding(0) var<uniform> u_grid: GridUniforms;
 
 struct GridVertexInput {
   @location(0) position: vec4<f32>,
@@ -90,32 +90,35 @@ struct GridVertexOutput {
 
 @vertex
 fn gridVertex(input: GridVertexInput) -> GridVertexOutput {
-  var output: GridVertexOutput;
-  let w_position = grid_uniforms.world * input.position;
-  output.out_pos = grid_uniforms.view_proj * w_position;
-  output.in_pos = input.position;
-  return output;
+  let w_position = u_grid.world * input.position;
+  return GridVertexOutput(u_grid.view_proj * w_position, input.position);
 }
 
-struct WallAngle { start: f32, end: f32 }
+struct Radians { deg_45: f32, deg_135: f32, deg_225: f32, deg_315: f32 }
+struct TransparencyCondition { start: f32, end: f32, axis: u32, pos: f32, or: u32 }
 
+const ANGLES = Radians(0.785, 2.356, 3.927, 5.498);
+const FRONT_WALL = TransparencyCondition(ANGLES.deg_315, ANGLES.deg_45, 2, 500, 1);
+const RIGHT_WALL = TransparencyCondition(ANGLES.deg_45, ANGLES.deg_135, 0, 500, 0);
+const BACK_WALL = TransparencyCondition(ANGLES.deg_135, ANGLES.deg_225, 2, -500, 0);
+const LEFT_WALL = TransparencyCondition(ANGLES.deg_225, ANGLES.deg_315, 0, -500, 0);
 const PI = radians(180.0);
-const FRONT_WALL = WallAngle(5.498, 0.785);
-const RIGHT_WALL = WallAngle(0.785, 2.356);
-const BACK_WALL = WallAngle(2.356, 3.927);
-const LEFT_WALL = WallAngle(3.927, 5.498);
 
 @fragment
 fn gridFragment(input: GridVertexOutput) -> @location(0) vec4<f32> {
-  let _a = grid_uniforms.camera_angle;
-  let a = _a - floor(_a / (PI*2)) * (PI*2);
   let p = input.in_pos;
+  let a = u_grid.camera_angle - floor(u_grid.camera_angle / (PI*2)) * (PI*2);
 
   if p.y > 0 {
-    if p.x == 500 && (a > RIGHT_WALL.start && a < RIGHT_WALL.end) { discard; }
-    if p.z == 500 && (a > FRONT_WALL.start || a < FRONT_WALL.end) { discard; }
-    if p.x == -500 && (a > LEFT_WALL.start && a < LEFT_WALL.end) { discard; }
-    if p.z == -500 && (a > BACK_WALL.start && a < BACK_WALL.end) { discard; }
+    if is_transparent(p, a, RIGHT_WALL) { discard; }
+    if is_transparent(p, a, FRONT_WALL) { discard; }
+    if is_transparent(p, a, LEFT_WALL) { discard; }
+    if is_transparent(p, a, BACK_WALL) { discard; }
   }
-  return vec4<f32>(1.0, 1.0, 1.0, 1.0);
+
+  return vec4(1.0, 1.0, 1.0, 1.0);
+}
+
+fn is_transparent(p: vec4<f32>, a: f32, w: TransparencyCondition) -> bool {
+  return p[w.axis] == w.pos && select((a > w.start && a < w.end), (a > w.start || a < w.end), w.or == 1);
 }
