@@ -23,6 +23,7 @@
   background: var(--bg-msgrey);
   box-sizing: content-box;
   border: var(--border-inset-grey);
+  border-width: 2px;
 
   &::-webkit-slider-track {
     width: 100%;
@@ -37,6 +38,7 @@
     background: var(--bg-msgrey);
     cursor: pointer;
     border: var(--border-outset-grey);
+    border-width: 2px;
   }
 
   &::-moz-range-track {
