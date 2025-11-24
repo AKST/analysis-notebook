@@ -1,5 +1,7 @@
 # Tasks for CLaude to do
 
+- prelude
+    - move econ here
 
 - ui/navigator
     - just emit all events from the navigation element
@@ -9,12 +11,8 @@
         - Formular Explorer
         - Definition Explorer
 
-- config
-    - load knobs asyncronously
-
 - base/runtime
     - Can I get util to run in a webworker?
-
 - base/runtime/widget/document
     - [ ] Replace `styles: string` with `styles: Record<string, string>`
     - [ ] Implement events
@@ -36,11 +34,9 @@
 - base/{dom_ui,dom_app}
     - unify these two APIs, have seperate renders if necessary.
 
-- prelude
-    - move econ here
 
 - lib/ui/chrome
     - Reusable loading state, possibly even clone the top level one.
 - lib/ui/chrome/config
+    - load knobs asyncronously
     - [What if it was a popup](https://developer.mozilla.org/en-US/docs/Web/API/Window/open)
-
