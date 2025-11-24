@@ -10,7 +10,6 @@
         - Definition Explorer
 
 - config
-    - add Windows95 style select drop down
     - load knobs asyncronously
 
 - base/runtime
@@ -39,14 +38,9 @@
 
 - prelude
     - move econ here
-- prelude/math
-    - add `mtr` method to `op`s to have a method to return a table row
 
 - lib/ui/chrome
     - Reusable loading state, possibly even clone the top level one.
-- lib/ui/chrome/navigation
-    - lift use of `history` API out of `./app_explorer/util.js`. This just isn't
-      an obvious place to find this.
 - lib/ui/chrome/config
     - [What if it was a popup](https://developer.mozilla.org/en-US/docs/Web/API/Window/open)
 
