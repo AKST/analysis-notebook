@@ -4,6 +4,15 @@ export type GpuTypeDeclare<Type> = {
   init?: GpuTypeInCpu<Type>,
 };
 
+export type FieldDescriptor = {
+  name: string,
+  type: GpuType,
+};
+
+export type DataFrame =
+   | { kind: 'rows', rows: Record<string, any>[] }
+   | { kind: 'cols', cols: Record<string, any[]>, length: number };
+
 export type GpuType =
   | 'f32' | 'i32' | 'u32'
   | `vec${'2' | '3' | '4'}<${'f32' | 'i32' | 'u32'}>`
