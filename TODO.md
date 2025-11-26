@@ -28,6 +28,12 @@
       - [ ] Establish API for engine runner to specify their widget content
       - [ ] Establish API for engines to emit their stylesheets
         - support vanilla style sheets
+- base/platform/buffer
+    - rewrite reading from GPU buffer
+    - MemoryLayout
+        - Generate pipeline buffer params
+        - Allow Nesting Of Layouts
+        - Generate useful types & Propagate them to everything else
 - base/runtime/widget/svg
     - Has an initialisation step
     - Then takes state
