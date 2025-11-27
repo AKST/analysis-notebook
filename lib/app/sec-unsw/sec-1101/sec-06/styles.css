@@ -1,0 +1,7 @@
+.tradeLosers {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 8px;
+
+  figcaption > p { font-size: smaller }
+}

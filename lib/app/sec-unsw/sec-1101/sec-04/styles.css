@@ -1,0 +1,17 @@
+.horizontal-summary-math {
+  font-size: 16px;
+}
+.adamSmith {
+  float: left;
+  margin-right: 16px;
+  animation: rotateY 12s linear infinite;
+  transform-style: preserve-3d;
+  :is(.mq--mobile, .mq--slim) & {
+    display: none;
+  }
+}
+
+@keyframes rotateY {
+  from { transform: rotateY(0deg) }
+  to { transform: rotateY(360deg) }
+}
