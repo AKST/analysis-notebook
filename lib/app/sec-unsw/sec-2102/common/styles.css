@@ -1,0 +1,31 @@
+table.paddedTable {
+  th, td {
+    padding-inline: 16px;
+    padding-block: 4px;
+  }
+}
+
+table.setupTable {
+  tr > th:first-child {
+    text-align: left;
+    width: 300px;
+  }
+}
+
+table.really-wide {
+  font-size: 9,
+  tr > th:first-child {
+    text-align: left;
+    width: 300px;
+  }
+
+  tr > th:not(:first-child) {
+    width: 60px;
+  }
+
+  th, td {
+    padding-inline: 4px;
+    padding-block: 4px;
+  }
+}
+

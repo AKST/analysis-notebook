@@ -1,0 +1,9 @@
+figure {
+  display: grid;
+  grid-gap: 16px;
+  grid-auto-flow: row;
+  justify-items: center;
+  margin: 16px auto;
+
+  figcaption: { font-size: 12px };
+}

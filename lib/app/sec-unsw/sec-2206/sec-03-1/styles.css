@@ -1,0 +1,41 @@
+.fDistributionTable {
+  overflow: auto;
+  max-width: 100%;
+  td { padding: 4px 8px; }
+}
+
+th.denominator-df {
+  position: relative;
+
+  > span {
+    transform: translateY(10em);
+    writing-mode: sideways-lr;
+    text-orientation: mixed;
+    white-space: nowrap;
+    height: 100%;
+  }
+}
+
+summary.grid-layout {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
+  grid-gap: 8px;
+  align-items: center;
+
+  &, & > h4 { background: var(--bg-pink); }
+  & > h4 { color: var(--fg-black-on-pink); }
+
+  &::before {
+    content: '▶';
+    line-height: 1;
+    width: auto;
+    display: block;
+    padding-inline: 8px 4px;
+    transform: translateY(-1px);
+  }
+
+  details[open] &::before {
+    transform: rotate(90deg);
+  }
+}
