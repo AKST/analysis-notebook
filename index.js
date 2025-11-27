@@ -1,4 +1,5 @@
 import { SharedStyleSheet } from './lib/base/dom_ui/shared_style_sheet.js';
+import { installHeader } from './lib/ui/chrome/header/create.js';
 import { installNavigation } from './lib/ui/chrome/navigation/create.js';
 import { installApplication } from './lib/ui/chrome/application/create.js';
 import { installConfig } from './lib/ui/chrome/config/create.js';
@@ -6,6 +7,8 @@ import { installResponsiveChrome } from './lib/ui/chrome/create.js';
 
 const scrollSheet = new SharedStyleSheet('./lib/ui/layout/scroll.css')
 const urlQuery = new URLSearchParams(globalThis.location.search);
+
+const header = installHeader();
 
 const navCtrl = installNavigation({
   scrollSheet,
@@ -31,6 +34,7 @@ const application = installApplication({
 
 installResponsiveChrome({
   application,
+  header,
   navigation: navCtrl,
   configMenu: cfgCtrl,
 });

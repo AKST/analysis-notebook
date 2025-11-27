@@ -1,3 +1,10 @@
+:host {
+  --outline: drop-shadow(1px 0 0 black)
+             drop-shadow(-1px 0 0 black)
+             drop-shadow(0 1px 0 black)
+             drop-shadow(0 -1px 0 black);
+}
+
 div {
   position: relative;
   width: 100%;
@@ -14,7 +21,8 @@ input {
   padding: var(--input-padding);
   border: var(--border-inset-grey);
   border-width: var(--border-width);
-  font-family: inherit;
+  font-family: monospace;
+  font-size: 11px;
 }
 
 input.webkit-input::-webkit-inner-spin-button,
@@ -22,7 +30,7 @@ input.webkit-input::-webkit-outer-spin-button {
   -webkit-appearance: none;
   border: var(--border-outset-grey);
   background: var(--bg-msgrey);
-  opacity: 1;
+  opacity: 0;
   height: var(--input-height);
   top: 0;
   bottom: 0;
@@ -57,9 +65,11 @@ span {
 #a {
   bottom: calc(var(--input-height) / 2);
   border-top-color: transparent;
+  filter: var(--outline);
 }
 
 #b {
   top: calc(var(--input-height) / 2);
   border-bottom-color: transparent;
+  filter: var(--outline);
 }

@@ -8,6 +8,18 @@
         - Formular Explorer
         - Definition Explorer
 
+- Styles
+  - move hardcoded units to styles.css
+    - [ ] colours used for borders
+    - [ ] font-sizes in inputs
+  - Cross platform: make styles consistent across chrome and safari
+    - [ ] slider input
+    - [ ] toggle input
+    - [ ] ticker input
+  - Consistent Borders for inputs
+    - [ ] text input has inconsistent border size
+
+
 - base/runtime
     - Can I get util to run in a webworker?
 - base/runtime/widget/document

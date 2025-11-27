@@ -26,10 +26,10 @@ nav {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: max-content;
-  grid-gap: 2px;
+  grid-gap: 1px;
   list-style: none;
   justify-content: start;
-  margin: 0;
+  margin: 1px;
 
   padding-left: 0;
 }

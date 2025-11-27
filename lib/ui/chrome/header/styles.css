@@ -1,0 +1,23 @@
+* { box-sizing: border-box; }
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 20px;
+  align-items: center;
+  background: var(--bg-blue);
+  color: var(--fg-white-on-blue);
+  padding: var(--container-padding);
+}
+
+#title {
+  grid-column: 1 / 2;
+}
+
+#buttons {
+  display: grid;
+  grid-column: 2 / 3;
+  grid-template-rows: 1fr;
+  grid-gap: 8px;
+  grid-auto-flow: column;
+}

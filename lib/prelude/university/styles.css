@@ -390,6 +390,8 @@ table {
 .pre--infobox {
   --fontsize-body-m: 10px;
   --fontsize-h3: 11.7px;
+  --grey-s: color(srgb 0.1726 0.1726 0.1726);
+  --grey-l: color(srgb 0.8315 0.8316 0.8316);
   display: grid;
   justify-content: start;
   align-self: start;
@@ -397,7 +399,11 @@ table {
   grid-gap: 4px;
   padding: 2px;
   background: #c0c0c0;
-  border: 2px outset grey;
+  border-style: solid;
+  border-color: var(--grey-l);
+  border-right-color: var(--grey-s);
+  border-bottom-color: var(--grey-s);
+  border-width: 2px;
 
   .infobox-name,
   .pre--infobox-name {
@@ -413,7 +419,11 @@ table {
     color: black;
     background: white;
     padding: 8px;
-    border: 2px inset grey;
+    border-style: solid;
+    border-color: var(--grey-s);
+    border-right-color: var(--grey-l);
+    border-bottom-color: var(--grey-l);
+    border-width: 2px;
     font-size: 10px;
   }
 }
