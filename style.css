@@ -110,7 +110,7 @@ body {
   grid-gap: 2px;
 }
 
-.toolbar {
+.header {
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: 20px;
@@ -153,7 +153,7 @@ body {
 .layout-wide {
   width: 100%;
 
-  .toolbar {
+  .header {
     grid-column: span 3;
   }
 
