@@ -1,0 +1,12 @@
+.math-mrs {
+  font-size: 12,
+}
+
+td:has(> .choiceInc) {
+  background: #66ff66;
+}
+
+td:has(> .choiceSame) {
+  background: #666;
+  color: white;
+}

@@ -4,6 +4,8 @@
   --fontsize-body-l: 13px;
   --fontsize-math-s: 14px;
   --fontsize-math-m: 16px;
+  --pre--th-width: 32px;
+  --pre--th-widthFirst: 40px;
 }
 
 .mq--mobile,
@@ -344,28 +346,23 @@ dl {
  *          lib/app/sec-unsw/sec-1101/sec-02/style.js
  * Define --pre--th-width and --pre--th-widthFirst on elements that need custom widths.
  */
-.table-styles,
-.pre--table-styles {
-  table {
-    --pre--th-width: 32px;
-    --pre--th-widthFirst: 40px;
-    background: white;
-    font-size: 10px;
-    color: black;
+table {
+  background: white;
+  font-size: 10px;
+  color: black;
 
-    td {
-      text-align: center;
-    }
+  td {
+    text-align: center;
+  }
 
-    th {
-      background: #00f;
-      color: white;
-      width: calc(var(--pre--th-width) * 1px);
+  th {
+    background: #00f;
+    color: white;
+    width: var(--pre--th-width);
+  }
 
-      &:first-child {
-        width: calc(var(--pre--th-widthFirst) * 1px);
-      }
-    }
+  tr th:first-child {
+    width: var(--pre--th-widthFirst);
   }
 
   .footerCap,

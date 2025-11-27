@@ -1,0 +1,54 @@
+table {
+  --pre--th-width: 72px;
+  --pre--th-widthFirst: 48px;
+}
+
+.info-container {
+  display: grid;
+  justify-content: center;
+}
+
+.cbp, .elasticity {
+  font-size: 16px;
+}
+
+.big-math {
+  font-size: 20px;
+  padding: 16px 0;
+}
+
+.supplycurvetable {
+  td {
+    height 15px;
+    line-height: 1;
+  }
+}
+
+.elasticity-table {
+  table {
+    width: 100%;
+    font-size: 10px;
+    margin-top:  16px;
+    th { width: initial }
+  }
+}
+
+.relevance-disclaimer {
+  padding: 15px;
+  position: relative;
+  color: black;
+  background: white;
+}
+
+.relevance-disclaimer-2 {
+  display: block;
+  content: '.';
+  z-index: -1;
+  padding: 15px;
+  border: 2px dashed red;
+  & strong {
+    color: red;
+    text-decoration: underline;
+    text-shadow: none;
+  }
+}
