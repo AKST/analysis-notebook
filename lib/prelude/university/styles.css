@@ -1,0 +1,471 @@
+/* Typography Styles */
+:host {
+  --fontsize-body-m: 11.5;
+  --fontsize-body-l: 13;
+  --fontsize-math-s: 14;
+  --fontsize-math-m: 16;
+}
+
+.mq--mobile,
+.mq--slim {
+  --fontsize-math-s: 12;
+  --fontsize-math-m: 14;
+}
+
+p, quote, li, dd, figcaption {
+  font-size: var(--fontsize-body-m);
+}
+
+details {
+  strong {
+    color: var(--fg-white);
+  }
+
+  & > summary {
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  & > *:not(summary) {
+    color: var(--fg-white-cc);
+  }
+
+  & > .pre--container {
+    padding: 8px;
+  }
+}
+
+:is(a, a:visited) {
+  color: var(--fg-peach);
+}
+
+quote {
+  display: block;
+  font-style: italic;
+  padding-left: 16px;
+  border-left: var(--border-solid-white);
+  border-left-width: 4px;
+  color: var(--fg-grey-aa);
+
+  strong {
+    color: var(--fg-white);
+  }
+}
+
+:is(summary, quote, p, dd, li, h1, h2, h3, h4, h5, h6, span) > :is(strong, b) {
+  text-shadow: var(--txt-shadow-blue);
+
+  & > :is(strong, b) {
+    box-sizing: content-size;
+    background-color: var(--bg-pink);
+    border: var(--bg-pink) 4px solid;
+    text-shadow: var(--txt-shadow-red);
+  }
+
+  & > :is(em, i) {
+    box-sizing: content-size;
+    background-color: var(--bg-red);
+    border: var(--bg-red) 4px solid;
+  }
+}
+
+quote, p {
+  margin-bottom: 0.75rem;
+}
+
+figure {
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
+  max-width: 100%;
+  position: relative;
+
+  & > math {
+    padding-top: 4px;
+  }
+
+  figcaption {
+    padding: 0;
+    margin: 0;
+    padding-top: 8px;
+    line-height: 1.5;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* horizontalShadow: Define these CSS variables on figure elements that need the shadow effect */
+.pre--horizontal-shadow {
+  --pre--hs-bg: var(--bg-black);
+  --pre--hs-shadow: var(--fg-white);
+  background-color: var(--pre--hs-bg);
+  background-image:
+    linear-gradient(to right, var(--pre--hs-bg), var(--pre--hs-bg)),
+    linear-gradient(to right, var(--pre--hs-bg), var(--pre--hs-bg)),
+    linear-gradient(to right, color-mix(in srgb, var(--pre--hs-shadow) 25%, transparent), transparent),
+    linear-gradient(to left, color-mix(in srgb, var(--pre--hs-shadow) 25%, transparent), transparent);
+  background-position: left center, right center, left center, right center;
+  background-repeat: no-repeat;
+  background-size: 32px 100%, 32px 100%, 16px 100%, 16px 100%;
+  background-attachment: local, local, scroll, scroll;
+}
+
+quote, p, dd, li {
+  line-height: 1.8;
+}
+
+.pre--text-medium {
+  font-size: var(--fontsize-body-m);
+}
+
+.pre--text-large {
+  font-size: var(--fontsize-body-l);
+}
+
+.pre--chartLabel {
+  min-width: 0;
+  margin-bottom: 16px;
+}
+
+:is(ul, ol) {
+  padding-left: 32px;
+
+  li + li {
+    margin-top: 16px;
+  }
+
+  &:is(.pre--c2, .pre--no-item-padding) > li + li {
+    margin-top: 0;
+  }
+
+  :is(li > span, li > p, li) > ul {
+    padding-left: 16px;
+  }
+}
+
+hr {
+  width: 100%;
+
+  &.pre--divider {
+    background: var(--bg-msteal);
+    display: block;
+    height: 16px;
+    border: var(--border-outset-grey);
+  }
+}
+
+h4 {
+  background: var(--bg-blue);
+  color: var(--fg-white-on-blue);
+  padding: 4px 8px;
+}
+
+dl {
+  padding: 0 8px;
+
+  .mq--mobile & {
+    padding: 0 16px;
+  }
+
+  .mq--slim & {
+    padding: 0 0;
+  }
+
+  dt {
+    background: var(--bg-greygreen);
+    font-weight: 700;
+    margin: 8px 0;
+    padding: 4px 8px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  dd {
+    margin-left: 24px;
+
+    & + dt {
+      margin-top: 16px;
+    }
+  }
+}
+
+/* Layout Styles */
+.pre--container {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(8, 1fr);
+  align-content: start;
+  max-width: 800px;
+  margin: 0 auto;
+
+  & > * {
+    grid-column: 1 / -1;
+  }
+
+  & .pre--container {
+    margin: 0;
+    grid-template-columns: unset;
+  }
+
+  & > dl {
+    padding: 0 8px;
+    margin: 0;
+  }
+}
+
+.pre--readmore {
+  border: var(--border-white-dash);
+  border-width: 1px;
+  padding: 8px;
+
+  & > summary {
+    cursor: pointer;
+  }
+}
+
+.pre--dashbox {
+  padding: 16px;
+  border: var(--border-white-dash);
+  border-width: 1px;
+}
+
+:is(quote, p, h1, h2, h3, h4, ul, ol, dl) {
+  margin: 0;
+}
+
+.pre--diagram-table {
+  border: solid 4px blue;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 4px;
+
+  & th {
+    line-height: 1.5;
+    border: dashed 1px blue;
+    color: black;
+    background: white;
+  }
+
+  & > caption {
+    padding: 4px;
+    background: blue;
+    color: white;
+  }
+
+  &:has(> caption) {
+    margin-bottom: 6px;
+  }
+}
+
+.pre--grid-responsive-row {
+  display: grid;
+  grid-gap: 16px;
+  grid-auto-flow: row;
+  align-items: center;
+  justify-items: space-around;
+
+  .mq--slim & {
+    grid-template-columns: var(--grid-responsive-row-slim-columns);
+  }
+
+  .mq--mobile & {
+    grid-template-columns: var(--grid-responsive-row-mobile-columns);
+  }
+
+  .mq--desktop & {
+    grid-template-columns: var(--grid-responsive-row-desktop-columns);
+  }
+}
+
+:is(.pre--grid-responsive-row, .pre--c2) {
+  & > figure {
+    align-self: center;
+    margin: 1em 0;
+  }
+}
+
+.pre--c2 {
+  display: grid;
+  grid-gap: 16px;
+
+  &:is(ul, ol) {
+    grid-gap: 0 16px;
+  }
+
+  & > * {
+    align-self: start;
+  }
+
+  .mq--desktop & {
+    grid-template-columns: 1fr 1fr;
+
+    &.pre--twoThree {
+      grid-template-columns: 1fr 300px;
+    }
+  }
+
+  &.pre--center {
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .mq--mobile & {
+    grid-template-columns: 1fr;
+
+    &.pre--twoThree {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+/* Table Styles */
+/*
+ * Note: When converted to CSS, use CSS variables over params.
+ * Used in: lib/app/sec-unsw/sec-1101/sec-01/style.js
+ *          lib/app/sec-unsw/sec-1101/sec-02/style.js
+ * Define --pre--th-width and --pre--th-widthFirst on elements that need custom widths.
+ */
+.pre--table-styles {
+  table {
+    --pre--th-width: 32;
+    --pre--th-widthFirst: 40;
+    background: white;
+    font-size: 10px;
+    color: black;
+
+    td {
+      text-align: center;
+    }
+
+    th {
+      background: #00f;
+      color: white;
+      width: calc(var(--pre--th-width) * 1px);
+
+      &:first-child {
+        width: calc(var(--pre--th-widthFirst) * 1px);
+      }
+    }
+  }
+
+  .pre--footerCap {
+    color: white;
+    font-size: 10px;
+    margin-top: 4px;
+    caption-side: bottom;
+  }
+
+  .pre--headingCap {
+    color: white;
+    background: blue;
+    padding: 4px 8px;
+    font-size: 10px;
+    font-weight: 900;
+    margin-bottom: 4px;
+    caption-side: top;
+  }
+}
+
+/* InfoBox Styles */
+.pre--infobox {
+  --fontsize-body-m: 10;
+  --fontsize-h3: 11.7;
+  display: grid;
+  justify-content: start;
+  align-self: start;
+  grid-template-columns: 1fr;
+  grid-gap: 4px;
+  padding: 2px;
+  background: #c0c0c0;
+  border: 2px outset grey;
+
+  .pre--infobox-name {
+    background: var(--bg-blue);
+    color: var(--fg-white-on-blue);
+    padding: 4px;
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .pre--infobox-body {
+    color: black;
+    background: white;
+    padding: 8px;
+    border: 2px inset grey;
+    font-size: 10px;
+  }
+}
+
+/* Term Definition Styles */
+.pre--word-def {
+  position: relative;
+  font-size: 10px;
+  border: var(--border-white-dash);
+  border-width: 1px;
+  padding: 8px 16px;
+}
+
+.pre--word-def-word {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: auto auto;
+  align-items: center;
+  align-content: center;
+  justify-content: start;
+  justify-items: start;
+}
+
+.pre--word-def-source {
+  display: grid;
+  grid-gap: 8px;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  line-height: 1;
+  padding: 4px;
+  position: absolute;
+  border: var(--border-white-dash);
+  border-width: 1px;
+  background: var(--bg-black);
+  bottom: -10px;
+  right: 8px;
+
+  & > :is(a, a:visited) {
+    color: var(--fg-peach);
+  }
+}
+
+.pre--word-def-meanings {
+  color: var(--fg-white-ee);
+  padding-left: 8px;
+}
+
+/* Legend Styles */
+.pre--legendInfo {
+  display: grid;
+  font-size: 10px;
+  grid-gap: 16px;
+  grid-template-columns: auto 1fr auto 1fr auto 1fr auto 1fr auto 1fr;
+  align-items: center;
+
+  .mq--mobile & {
+    grid-template-columns: auto 1fr auto 1fr auto 1fr;
+  }
+
+  .mq--slim & {
+    grid-template-columns: auto 1fr auto 1fr;
+  }
+
+  dd {
+    margin: 0;
+  }
+
+  dt {
+    margin: 0;
+    color: var(--fg-white-on-grey);
+    background: var(--bg-greygreen);
+    text-align: center;
+    padding: 4px 8px;
+  }
+}
