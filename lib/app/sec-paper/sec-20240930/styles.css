@@ -1,0 +1,46 @@
+dl > dt {
+  background: var(--bg-pink);
+}
+
+dd {
+  font-size: smaller;
+}
+
+figure {
+  overflow: scroll;
+  max-width: 100%;
+  margin-inline: auto;
+
+  figcaption {
+    text-align: center;
+    margin-top: 1em;
+  }
+}
+
+table :is(td,th):nth-child(1) {
+  text-align: start;
+  padding-left: 16px;
+}
+
+table th {
+  padding: 4px;
+}
+
+table td {
+  padding-block: 4px;
+}
+
+figure:has(> .wideMath) {
+  .mq--slim & {
+    border: color(from var(--bg-blue) srgb r g b / 0.5) dashed 1px;
+  }
+}
+
+figure math {
+  &.wideMath {
+    .mq--desktop & { font-size: 14px }
+    .mq--mobile & { font-size: 12px }
+    .mq--slim & { font-size: 12px }
+  }
+  .mq--slim & { font-size: 14px }
+}
