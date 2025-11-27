@@ -55,4 +55,4 @@ function! Disabled()
   augroup END
 endfunction
 
-echo Disabled()
+" echo Disabled()

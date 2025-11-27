@@ -1,8 +1,5 @@
 # Tasks for CLaude to do
 
-- prelude
-    - move econ here
-
 - ui/navigator
     - just emit all events from the navigation element
     - app state
