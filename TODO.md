@@ -44,3 +44,20 @@
 - lib/ui/chrome/config
     - load knobs asyncronously
     - [What if it was a popup](https://developer.mozilla.org/en-US/docs/Web/API/Window/open)
+
+
+# Big Fish
+
+Archetecture
+
+1. Run UI in iFrame
+2. Run state in web worker
+3. Run canvas rendering in web worker
+
+Internal API
+
+1. dom
+  - Unify dom_ui and dom_app under dom_desc
+  - Better typing for dom_desc
+2. webgpu buffer memoryLayout
+  - Add typing

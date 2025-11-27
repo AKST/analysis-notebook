@@ -44,6 +44,10 @@ export interface WidgetRunner<State, Config> {
 export interface EngineRunner<C> {
   start(): void;
   stop(): void;
+
+  ready: Promise<void>;
+  closed: Promise<void>;
+
   container: HTMLElement;
   getAnchors(): readonly WidgetAnchor[];
   resize(newWidth: number, newHeight?: number): void;
@@ -60,6 +64,7 @@ export type ModuleCommon<State, Config, Event> = {
 export type MultiModule<State, Config, Event> = {
   meta: {
     kind: 'multi',
+    sheets?: string[],
     layout?: {
       gridTemplateColumns?: string[],
       breakpoints?: Record<string, number>,

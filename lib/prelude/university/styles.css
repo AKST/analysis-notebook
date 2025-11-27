@@ -1,15 +1,15 @@
 /* Typography Styles */
 :host {
-  --fontsize-body-m: 11.5;
-  --fontsize-body-l: 13;
-  --fontsize-math-s: 14;
-  --fontsize-math-m: 16;
+  --fontsize-body-m: 11.5px;
+  --fontsize-body-l: 13px;
+  --fontsize-math-s: 14px;
+  --fontsize-math-m: 16px;
 }
 
 .mq--mobile,
 .mq--slim {
-  --fontsize-math-s: 12;
-  --fontsize-math-m: 14;
+  --fontsize-math-s: 12px;
+  --fontsize-math-m: 14px;
 }
 
 p, quote, li, dd, figcaption {
@@ -30,6 +30,7 @@ details {
     color: var(--fg-white-cc);
   }
 
+  & > .container,
   & > .pre--container {
     padding: 8px;
   }
@@ -74,6 +75,8 @@ quote, p {
 }
 
 figure {
+  --pre--hs-bg: var(--bg-black);
+  --pre--hs-shadow: var(--fg-white);
   margin-left: auto;
   margin-right: auto;
   overflow-x: auto;
@@ -96,8 +99,6 @@ figure {
 
 /* horizontalShadow: Define these CSS variables on figure elements that need the shadow effect */
 .pre--horizontal-shadow {
-  --pre--hs-bg: var(--bg-black);
-  --pre--hs-shadow: var(--fg-white);
   background-color: var(--pre--hs-bg);
   background-image:
     linear-gradient(to right, var(--pre--hs-bg), var(--pre--hs-bg)),
@@ -114,15 +115,18 @@ quote, p, dd, li {
   line-height: 1.8;
 }
 
+.text-medium,
 .pre--text-medium {
   font-size: var(--fontsize-body-m);
 }
 
+.text-large,
 .pre--text-large {
   font-size: var(--fontsize-body-l);
 }
 
-.pre--chartLabel {
+.chartLabel,
+.pre--chart-label {
   min-width: 0;
   margin-bottom: 16px;
 }
@@ -134,6 +138,7 @@ quote, p, dd, li {
     margin-top: 16px;
   }
 
+  &:is(.c2, .no-item-padding) > li + li,
   &:is(.pre--c2, .pre--no-item-padding) > li + li {
     margin-top: 0;
   }
@@ -146,6 +151,7 @@ quote, p, dd, li {
 hr {
   width: 100%;
 
+  &.divider,
   &.pre--divider {
     background: var(--bg-msteal);
     display: block;
@@ -192,6 +198,7 @@ dl {
 }
 
 /* Layout Styles */
+.container,
 .pre--container {
   display: grid;
   grid-gap: 16px;
@@ -204,6 +211,7 @@ dl {
     grid-column: 1 / -1;
   }
 
+  & .container,
   & .pre--container {
     margin: 0;
     grid-template-columns: unset;
@@ -215,6 +223,7 @@ dl {
   }
 }
 
+.readmore,
 .pre--readmore {
   border: var(--border-white-dash);
   border-width: 1px;
@@ -225,6 +234,7 @@ dl {
   }
 }
 
+.dashbox,
 .pre--dashbox {
   padding: 16px;
   border: var(--border-white-dash);
@@ -235,6 +245,7 @@ dl {
   margin: 0;
 }
 
+.diagram-table,
 .pre--diagram-table {
   border: solid 4px blue;
   margin-top: 2px;
@@ -259,6 +270,7 @@ dl {
   }
 }
 
+.grid-responsive-row,
 .pre--grid-responsive-row {
   display: grid;
   grid-gap: 16px;
@@ -279,6 +291,7 @@ dl {
   }
 }
 
+:is(.grid-responsive-row, .c2),
 :is(.pre--grid-responsive-row, .pre--c2) {
   & > figure {
     align-self: center;
@@ -286,6 +299,7 @@ dl {
   }
 }
 
+.c2,
 .pre--c2 {
   display: grid;
   grid-gap: 16px;
@@ -301,11 +315,13 @@ dl {
   .mq--desktop & {
     grid-template-columns: 1fr 1fr;
 
-    &.pre--twoThree {
+    &.twoThree,
+    &.pre--two-three {
       grid-template-columns: 1fr 300px;
     }
   }
 
+  &.center,
   &.pre--center {
     justify-items: center;
     justify-content: center;
@@ -314,7 +330,8 @@ dl {
   .mq--mobile & {
     grid-template-columns: 1fr;
 
-    &.pre--twoThree {
+    &.twoThree,
+    &.pre--two-three {
       grid-template-columns: 1fr;
     }
   }
@@ -327,10 +344,11 @@ dl {
  *          lib/app/sec-unsw/sec-1101/sec-02/style.js
  * Define --pre--th-width and --pre--th-widthFirst on elements that need custom widths.
  */
+.table-styles,
 .pre--table-styles {
   table {
-    --pre--th-width: 32;
-    --pre--th-widthFirst: 40;
+    --pre--th-width: 32px;
+    --pre--th-widthFirst: 40px;
     background: white;
     font-size: 10px;
     color: black;
@@ -350,14 +368,16 @@ dl {
     }
   }
 
-  .pre--footerCap {
+  .footerCap,
+  .pre--footer-cap {
     color: white;
     font-size: 10px;
     margin-top: 4px;
     caption-side: bottom;
   }
 
-  .pre--headingCap {
+  .headingCap,
+  .pre--heading-cap {
     color: white;
     background: blue;
     padding: 4px 8px;
@@ -369,9 +389,10 @@ dl {
 }
 
 /* InfoBox Styles */
+.infobox,
 .pre--infobox {
-  --fontsize-body-m: 10;
-  --fontsize-h3: 11.7;
+  --fontsize-body-m: 10px;
+  --fontsize-h3: 11.7px;
   display: grid;
   justify-content: start;
   align-self: start;
@@ -381,6 +402,7 @@ dl {
   background: #c0c0c0;
   border: 2px outset grey;
 
+  .infobox-name,
   .pre--infobox-name {
     background: var(--bg-blue);
     color: var(--fg-white-on-blue);
@@ -389,6 +411,7 @@ dl {
     margin: 0;
   }
 
+  .infobox-body,
   .pre--infobox-body {
     color: black;
     background: white;
@@ -399,6 +422,7 @@ dl {
 }
 
 /* Term Definition Styles */
+.word-def,
 .pre--word-def {
   position: relative;
   font-size: 10px;
@@ -407,6 +431,7 @@ dl {
   padding: 8px 16px;
 }
 
+.word-def-word,
 .pre--word-def-word {
   display: grid;
   grid-gap: 8px;
@@ -417,6 +442,7 @@ dl {
   justify-items: start;
 }
 
+.word-def-source,
 .pre--word-def-source {
   display: grid;
   grid-gap: 8px;
@@ -436,13 +462,15 @@ dl {
   }
 }
 
+.word-def-meanings,
 .pre--word-def-meanings {
   color: var(--fg-white-ee);
   padding-left: 8px;
 }
 
 /* Legend Styles */
-.pre--legendInfo {
+.legendInfo,
+.pre--legend-info {
   display: grid;
   font-size: 10px;
   grid-gap: 16px;
