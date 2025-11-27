@@ -5,6 +5,7 @@
   --grey-f: color(srgb 0.7529 0.7529 0.753);
   --button-color: black;
   --shadow: color-mix(in oklch, transparent 80%, black);
+  transition: var(--transition-rule-opacity);
 }
 
 .button {

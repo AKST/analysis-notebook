@@ -8,6 +8,9 @@
         - Formular Explorer
         - Definition Explorer
 
+- clean up mathml
+  - the italic mathematical greek letters are now broken
+
 - Styles
   - move hardcoded units to styles.css
     - [ ] colours used for borders
