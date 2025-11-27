@@ -2,7 +2,6 @@ import {
   RenderContextInit,
   Widget,
   MakeConfigKnobs,
-  Econ,
   Vec2,
 } from '@app/prelude-type.ts';
 import {
@@ -11,6 +10,7 @@ import {
   PointRenderer,
   LineRenderer,
 } from '@app/prelude.js';
+import * as Econ from '@base/econ/micro/type';
 
 export type RenderContext = RenderContextInit & {
   text: TextRenderer,

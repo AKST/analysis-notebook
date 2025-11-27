@@ -1,4 +1,5 @@
-import { RenderContextInit, Econ, MakeConfigKnobs, Vec2 } from '@app/prelude-type.ts';
+import { RenderContextInit, MakeConfigKnobs, Vec2 } from '@app/prelude-type.ts';
+import * as Econ from '@base/econ/micro/type.ts';
 import {
   TextRenderer,
   Grid,

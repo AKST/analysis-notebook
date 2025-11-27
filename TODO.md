@@ -39,6 +39,7 @@
     - Then takes state
 - base/{dom_ui,dom_app}
     - unify these two APIs, have seperate renders if necessary.
+    - math (annontation under should just let you specify the next positionally)
 
 
 - lib/ui/chrome

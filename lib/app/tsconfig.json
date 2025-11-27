@@ -10,7 +10,8 @@
     "paths": {
       "@app/*": ["./*"],
       "@base/*": ["../base/*"],
-      "@prelude-uni/*": ["../prelude/university/*"]
+      "@prelude-uni/*": ["../prelude/university/*"],
+      "@prelude-econ/*": ["../prelude/econ/*"]
     }
   },
   "include": ["**/*.js", "**/*.ts", "*.js", "*.ts"],

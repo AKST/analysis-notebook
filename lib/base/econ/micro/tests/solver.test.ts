@@ -1,6 +1,6 @@
 import { assert, expect, describe, it } from 'vitest';
-import { Unreachable } from '../../util/type.js';
-import { v2 } from '../../geom_2d/index.js';
+import { Unreachable } from '../../../util/type.js';
+import { v2 } from '../../../geom_2d/index.js';
 import type { Curve, Model } from '../type.ts';
 import { status as _status } from '../solver.js';
 import * as curves from '../curve.js';

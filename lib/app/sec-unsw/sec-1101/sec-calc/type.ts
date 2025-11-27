@@ -1,10 +1,5 @@
-import { ModelRenderer } from '@prelude-uni/2d/model.js';
-import {
-  Vec2,
-  RenderContextInit,
-  MakeConfigKnobs,
-  Econ,
-} from '@app/prelude-type.ts';
+import { ModelRenderer } from '@prelude-econ/2d-micro/model.js';
+import { Vec2, RenderContextInit, MakeConfigKnobs } from '@app/prelude-type.ts';
 import {
   TextRenderer,
   Grid,
@@ -12,6 +7,7 @@ import {
   LineRenderer,
   PolygonRenderer,
 } from '@app/prelude.js';
+import * as Econ from '@base/econ/micro/type';
 
 export type RenderContext = RenderContextInit & {
   model: ModelRenderer,

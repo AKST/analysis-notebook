@@ -1,4 +1,4 @@
-import { VectorOf } from '../math/type.ts';
+import { VectorOf } from '../../math/type.ts';
 
 export type DiscreteRateOfChange =
   | { kind: 'const', const: number }
