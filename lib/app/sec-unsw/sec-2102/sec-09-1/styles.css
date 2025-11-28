@@ -1,0 +1,51 @@
+.footnotes {
+  --scale: 0.7;
+
+  animation-name: progress;
+  animation-timing-function: steps(5, end);
+  animation-direction: alternate;
+  animation-duration: 0.25s;
+  animation-iteration-count: infinite;
+
+  --background: color-mix(in hsl, yellow calc(100% - (0.2 * var(--a-state))), red);
+  --border: color-mix(in hsl, blue var(--a-state), red);
+  background: var(--background);
+  border-color: var(--border);
+  border-width: 2px;
+  filter: drop-shadow(4px 0 0 var(--background))
+          drop-shadow(-4px 0 0 var(--background))
+          drop-shadow(0 4px 0 var(--background))
+          drop-shadow(0 -4px 0 var(--background));
+
+  & > h6 {
+    font-size: calc(var(--fontsize-math-m) * var(--scale));
+    color: yellow;
+    background: red;
+    padding: 4px;
+    margin: 0;
+    & > .icon {
+      display: inline-block;
+      transform-origin: 0.75em 1ex;
+      line-height: 1;
+      animation-name: progress;
+      animation-timing-function: steps(5, end);
+      animation-duration: 0.5s;
+      animation-iteration-count: infinite;
+      transform: rotate(var(--a-deg)) scale(calc(1.5 + 1 * sin(var(--a-deg))));
+      margin-right: 16px;
+    }
+  }
+  & > ol > li {
+    font-size: calc(var(--fontsize-math-s) * var(--scale));
+  }
+}
+
+@keyframes progress {
+  0% { --a-state: 100%; --a-deg: 0; }
+  20% { --a-state: 80%; --a-deg: 72deg; }
+  40% { --a-state: 60%; --a-deg: 144deg; }
+  60% { --a-state: 40%; --a-deg: 216deg; }
+  80% { --a-state: 20%; --a-deg: 288deg; }
+  100% { --a-state: 0%; --a-deg: 360deg; }
+}
+

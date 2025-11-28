@@ -12,6 +12,7 @@
   --bg-msgrey: #c6c6c6;
   --bg-msteal: teal;
   --bg-greygreen: rgb(112, 121, 110);
+  --bg-yellow: yellow;
 
   --fg-grey-aa: #aaa;
   --fg-white: #fafafa;
@@ -31,6 +32,7 @@
   --border-solid-grey: 1px solid #333;
   --border-solid-white: white 1px solid;
   --border-white-dash: white 1px dashed;
+  --border-color-yellow: yellow;
 
   @media (prefers-color-scheme: light) {
     --bg-black: #fafafa;
