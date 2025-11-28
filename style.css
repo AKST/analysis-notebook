@@ -123,6 +123,12 @@ body {
     color: var(--fg-white-on-blue);
     margin: 0;
     line-height: 1;
+    /* Note this is only here to avoid layout shift
+     * and if at any point the height of the content
+     * on the right side of the menu changes size
+     * this should be updated */
+    height: 21px;
+    align-content: center;
   }
 }
 

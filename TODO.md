@@ -2,12 +2,6 @@
 
 This is effectly a poor mans issue tracker.
 
-## Questions
-
-1. Do I need to rename chrome to chasis. Chrome feels like a more
-   appropiate name for the UI library used to build the components
-   of the app.
-
 ## Big Fish
 
 ### Archetecture
@@ -77,6 +71,14 @@ This is effectly a poor mans issue tracker.
 
 ## Small Fish
 
+### Tables with editable cells
+
+We need to have a way of updating data without it always having to
+first be defined in a config panel or modified in the config panel.
+It would be nice to have more interactive components where edits to
+it trigger some kind of event to produce an output which we again
+show in the table.
+
 ### UI Chrome improvements
 
 - Loading State
@@ -122,6 +124,10 @@ benefit from using it. Its worth exploring.
 - Consistent Borders for inputs
   - [ ] text input has inconsistent border size
 
+### Renames
+
+- Rename lib/base/dom_app/helpers/typography to html
+- Rename lib/ui/chrome to lib/ui/{os,chasis,environment,system}
 
 ## Unsorted
 

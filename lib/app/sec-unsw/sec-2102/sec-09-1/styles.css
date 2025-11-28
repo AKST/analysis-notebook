@@ -1,3 +1,19 @@
+.legend {
+  & :is(td, th) { padding: 4px 0 }
+  tr > :first-child:is(th) { max-width: 10px }
+  th {
+    background-color: white;
+    color: blue;
+    border: 1px dashed blue;
+  }
+  caption {
+    margin-bottom: 8px;
+    font-size: var(--fontsize-body-l);
+    font-weight: bold;
+    color: blue;
+  }
+}
+
 .footnotes {
   --scale: 0.7;
 
@@ -49,3 +65,73 @@
   100% { --a-state: 0%; --a-deg: 360deg; }
 }
 
+:is(.hour-glass-animation, .globe-animation, .transport-animation)::before {
+  height: 1em;
+  max-height: 1em;
+  vertical-align: center;
+  margin-right: 16px;
+  display: inline-block;
+  animation-iteration-count: infinite;
+  filter: drop-shadow(2px 0 0 yellow)
+          drop-shadow(-2px 0 0 yellow)
+          drop-shadow(0 2px 0 yellow)
+          drop-shadow(0 -2px 0 yellow);
+}
+
+.globe-animation::before {
+  animation-name: around-the-globe;
+  animation-duration: 1s;
+}
+
+.hour-glass-animation::before {
+  animation-name: why-look-at-the-time;
+  animation-duration: 3.5s;
+}
+
+.transport-animation::before {
+  animation-name: vroom-vroom;
+  animation-duration: 3.5s;
+}
+
+@keyframes around-the-globe {
+  0% { content: '🌏' }
+  33% { content: '🌎' }
+  66% { content: '🌍' }
+  100% { content: '🌏' }
+}
+
+@keyframes why-look-at-the-time {
+  0% { content: '⏳⏱️' }
+  7% { content: '⌛️🔘' }
+  14% { content: '👶🕐' }
+  21% { content: '👦🕑' }
+  28% { content: '👨🕒' }
+  35% { content: '👴🕓' }
+  42% { content: '🛌🕔' }
+  50% { content: '🛏️🕕' }
+  57% { content: '💀🕖' }
+  64% { content: '🪦🕗' }
+  71% { content: '🌱🕘' }
+  78% { content: '🪴🕙' }
+  85% { content: '🌳🕚' }
+  92% { content: '🪾🕛' }
+  100% { content: '⏳⏱️' }
+}
+
+@keyframes vroom-vroom {
+  0% { content: '🚗' }
+  7% { content: '🚕' }
+  14% { content: '🚙' }
+  21% { content: '🚌' }
+  28% { content: '🚎' }
+  35% { content: '🏎️' }
+  42% { content: '🚓' }
+  50% { content: '🚑' }
+  57% { content: '🚒' }
+  64% { content: '🚐' }
+  71% { content: '🛻' }
+  78% { content: '🚚' }
+  85% { content: '🚛' }
+  93% { content: '🚜' }
+  100% { content: '🚗' }
+}
