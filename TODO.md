@@ -1,78 +1,136 @@
-# Tasks for CLaude to do
+# Todos
 
-- ui/navigator
-    - just emit all events from the navigation element
-    - app state
-        - preserve the Table of contents in the URL bar
-    - new tabs
-        - Formular Explorer
-        - Definition Explorer
+This is effectly a poor mans issue tracker.
 
-- clean up mathml
-  - the italic mathematical greek letters are now broken
+## Questions
 
-- Styles
-  - move hardcoded units to styles.css
-    - [ ] colours used for borders
-    - [ ] font-sizes in inputs
-  - Cross platform: make styles consistent across chrome and safari
-    - [ ] slider input
-    - [ ] toggle input
-    - [ ] ticker input
-  - Consistent Borders for inputs
-    - [ ] text input has inconsistent border size
+1. Do I need to rename chrome to chasis. Chrome feels like a more
+   appropiate name for the UI library used to build the components
+   of the app.
 
+## Big Fish
 
-- base/runtime
-    - Can I get util to run in a webworker?
-- base/runtime/widget/document
-    - [ ] Replace `styles: string` with `styles: Record<string, string>`
-    - [ ] Implement events
-    - [ ] Element Attribute types dependent on Element
-    - [ ] Make each widget exist in a web component.
-- base/runtime/widget
-    - [ ] Make each widget exist in a web component.
-- base/runtime/{multi-styles + widget/document/appStyleManager}
-    - I need to have a more explict API for loading styles. I should
-      also consider styles sheets as well. But for now I'd like to
-      avoid having the widget runners and engines making direct dom
-      mutations
-      - [ ] Establish API for engine runner to specify their widget content
-      - [ ] Establish API for engines to emit their stylesheets
-        - support vanilla style sheets
-- base/platform/buffer
-    - rewrite reading from GPU buffer
-    - MemoryLayout
-        - Generate pipeline buffer params
-        - Allow Nesting Of Layouts
-        - Generate useful types & Propagate them to everything else
-- base/runtime/widget/svg
-    - Has an initialisation step
-    - Then takes state
-- base/{dom_ui,dom_app}
-    - unify these two APIs, have seperate renders if necessary.
-    - math (annontation under should just let you specify the next positionally)
-
-
-- lib/ui/chrome
-    - Reusable loading state, possibly even clone the top level one.
-- lib/ui/chrome/config
-    - load knobs asyncronously
-    - [What if it was a popup](https://developer.mozilla.org/en-US/docs/Web/API/Window/open)
-
-
-# Big Fish
-
-Archetecture
+### Archetecture
 
 1. Run UI in iFrame
 2. Run state in web worker
 3. Run canvas rendering in web worker
 
-Internal API
+### Internal API
 
 1. dom
-  - Unify dom_ui and dom_app under dom_desc
-  - Better typing for dom_desc
+  1. Unify dom_ui and dom_app under dom_desc
+    - Need to first ensure the APIs are uniform before merging
+      - make sure they both use `class` or `className` for classes.
+
+  2. Post unifying changes
+    - [ ] Attribute typing dependent on `tagName`
+    - [ ] Replace `styles: string` with `styles: Record<string, string>`
+    - [ ] Allow supporting events.
+        - Alternatively maybe I can add an effect system where certain
+          attributes emit directives to perform events and the events
+          are performed after render (an example is a directive to
+          create a style tag with a media query or register an event)
+
 2. webgpu buffer memoryLayout
+  - Rewrite reading from GPU buffer
+    - Current approach is probably wasteful
+
   - Add typing
+    - Generate useful types & Propagate them to everything else
+
+  - Allow Nesting Of Layouts
+    - Sometimes structs take structs as params
+
+  - Generate config for createPipeline
+    - Generate pipeline buffer params
+
+3. Url State
+  - Need a generalised archetecture for representing this.
+    - Something that encodes this information, generates
+      short URL params while maintaining backwards compatibility.
+    - Isolate params to specify parts of the app
+
+  - More state should be tracked in the url
+    - Within apps, last visible header
+    - Within the chrome which tabs are visible.
+
+4. User content containment and moving into an iframe
+  - Unordered changes
+    - [ ] Each widget exist in a web component.
+    - [ ] State should be managed in a web worker
+    - [ ] Rendering should also be moved a web worker
+
+  - Ordered Changes
+    1. Need to unify single/multi engines
+      - [ ] Single Engines should be just be specialised config,
+        it can probably already be generalised in multi apps.
+      - [ ] It might just be a matter of rewritting existing single
+        engine apps to multi apps and the appropiate extensions
+        to archive that.
+      - [ ] After that we can delete the single engine and simplify
+        the types of the runtime generally.
+
+    2. Figure out what code runs in the parent and child window.
+      - We will probably need to define a quasi runtime for the window.
+
+
+## Small Fish
+
+### UI Chrome improvements
+
+- Loading State
+  - Make reusable
+
+- Web Components should replace their mounting elements.
+  - This is already done by `user-content` and `app-header`
+
+- lib/ui/chrome/config
+  - Load indivisual knobs asyncronously
+
+- Crazy stuff
+  - [What if it was a popup][window-open]
+
+[window-open]: https://developer.mozilla.org/en-US/docs/Web/API/Window/open
+
+### Explore Column Layouts
+
+There is this [w3c spec](https://www.w3.org/TR/css-multicol-1/)
+for multicolumn layouts, alot of the content I have written might
+benefit from using it. Its worth exploring.
+
+### Mathml Cleanup
+
+- [ ] Replace Italic greek characters
+  > All the math italitc greek characters (widely used in my used in
+  > mathml)  no longer render the same in the latest macos update.
+  > I need to use normal greek characters now. Its mostly a problem
+  > with combining glyphs.
+- [ ] simplify annontation under
+  - it should just let you specify the next positionally
+
+
+### Clean up CSS
+
+- move hardcoded units to styles.css
+  - [ ] colours used for borders
+  - [ ] font-sizes in inputs
+- Cross platform: make styles consistent across chrome and safari
+  - [ ] slider input
+  - [ ] toggle input
+  - [ ] ticker input
+- Consistent Borders for inputs
+  - [ ] text input has inconsistent border size
+
+
+## Unsorted
+
+- ui/navigator
+  - new tabs
+    - Formular Explorer
+    - Definition Explorer
+
+- base/runtime/widget/svg
+  - Has an initialisation step
+  - Then takes state
+
