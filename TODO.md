@@ -33,7 +33,7 @@ This is effectly a poor mans issue tracker.
   - Add typing
     - Generate useful types & Propagate them to everything else
 
-  - Allow Nesting Of Layouts
+  - Allow Nesting Of Layo3ts
     - Sometimes structs take structs as params
 
   - Generate config for createPipeline
@@ -135,8 +135,4 @@ benefit from using it. Its worth exploring.
   - new tabs
     - Formular Explorer
     - Definition Explorer
-
-- base/runtime/widget/svg
-  - Has an initialisation step
-  - Then takes state
 
