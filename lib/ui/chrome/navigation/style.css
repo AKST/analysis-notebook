@@ -9,7 +9,6 @@ nav {
   background: var(--bg-black-0f);
   border-right: var(--border-solid-grey);
   border-right-width: 1px;
-  padding: 11px;
   overflow: auto;
 }
 
