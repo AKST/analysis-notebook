@@ -103,11 +103,12 @@ benefit from using it. Its worth exploring.
 
 ### Mathml Cleanup
 
-- [ ] Replace Italic greek characters
-  > All the math italitc greek characters (widely used in my used in
-  > mathml)  no longer render the same in the latest macos update.
-  > I need to use normal greek characters now. Its mostly a problem
-  > with combining glyphs.
+- [ ] Replace unicode combining characters in mathml
+  - Lets accept defeat and not use unicode combining characters... We
+    shoulds a combination of `mover` and `munder`. We can probably
+    make some specialised functions or a version of `mi` in the
+    prelude with methods like `.circumflex`, `.accent`, `.tilda`, etc
+    (although shorthand might be nice).
 - [ ] simplify annontation under
   - it should just let you specify the next positionally
 
@@ -129,10 +130,16 @@ benefit from using it. Its worth exploring.
 - Rename lib/base/dom_app/helpers/typography to html
 - Rename lib/ui/chrome to lib/ui/{os,chasis,environment,system}
 
+## Exploration
+
+### Worklets
+
+[Read more here](https://developer.mozilla.org/en-US/docs/Web/API/Worklet).
+
 ## Unsorted
 
 - ui/navigator
   - new tabs
     - Formular Explorer
     - Definition Explorer
-
+- Use Marquee effect in long titles.

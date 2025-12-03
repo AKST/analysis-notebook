@@ -18,6 +18,10 @@ p, quote, li, dd, figcaption {
   font-size: var(--fontsize-body-m);
 }
 
+math mi {
+  font-family: "Times New Roman", serif;
+}
+
 details {
   strong {
     color: var(--fg-white);
