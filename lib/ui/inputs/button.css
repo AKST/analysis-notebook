@@ -1,38 +1,29 @@
 :host {
-  --grey-s: #6c6c6c;
-  --grey-d: color(srgb 0.447 0.447 0.4471);
-  --grey-l: color(srgb 0.9999 1 1);
-  --grey-f: color(srgb 0.7529 0.7529 0.753);
   --button-color: black;
-  --shadow: color-mix(in oklch, transparent 80%, black);
   transition: var(--transition-rule-opacity);
 }
 
 .button {
-  box-sizing: border-box;
-
   display: block;
+
+  box-sizing: border-box;
+  padding: var(--button-padding);
   width: 100%;
+
   color: var(--button-color);
   background: var(--button-bg);
-  border-style: solid;
-  border-color: var(--grey-l);
-  border-right-color: var(--grey-s);
-  border-bottom-color: var(--grey-s);
+
   border-width: 2px;
-  padding: var(--button-padding);
-  font-family: monospace;
+  border-style: solid;
+  border-color: var(--border-outset-ms-color);
+
+  font-family: var(--fontfamily-default);
   font-size: 10px;
-  filter: drop-shadow(1px 0 0 black)
-          drop-shadow(-1px 0 0 black)
-          drop-shadow(0 1px 0 black)
-          drop-shadow(0 -1px 0 black);
+  filter: var(--filter-ms-button-border);
 
   &:active {
     background: oklch(from var(--button-bg) calc(l - 0.11) c h);
-    border-color: var(--grey-d);
-    border-right-color: var(--grey-l);
-    border-bottom-color: var(--grey-l);
+    border-color: var(--border-inset-ms-color);
   }
 }
 

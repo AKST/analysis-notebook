@@ -4,6 +4,11 @@ This is effectly a poor mans issue tracker.
 
 ## Big Fish
 
+### Build System
+
+1. Look at settting up `esbuild`.
+   - Main blocker is really just how to handle dynamism.
+
 ### Archetecture
 
 1. Run UI in iFrame
@@ -124,6 +129,7 @@ benefit from using it. Its worth exploring.
   - [ ] ticker input
 - Consistent Borders for inputs
   - [ ] text input has inconsistent border size
+  - [ ] UPDATE inset & outset TO USE EXPLICT COLOURS.
 
 ### Renames
 

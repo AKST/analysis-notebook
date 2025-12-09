@@ -10,6 +10,7 @@
   --bg-pink: #ff00DD;
   --bg-red: #ff0000;
   --bg-msgrey: #c6c6c6;
+  --bg-ms-button-idle: #c0c0c0;
   --bg-msteal: teal;
   --bg-greygreen: rgb(112, 121, 110);
   --bg-yellow: yellow;
@@ -33,6 +34,15 @@
   --border-solid-white: white 1px solid;
   --border-white-dash: white 1px dashed;
   --border-color-yellow: yellow;
+
+  --border-outset-ms-color: #feffff #6c6c6c #6c6c6c #feffff;
+  --border-inset-ms-color: #727272 #feffff #feffff #727272;
+
+  --filter-ms-button-border:
+    drop-shadow(1px 0 0 black)
+    drop-shadow(-1px 0 0 black)
+    drop-shadow(0 1px 0 black)
+    drop-shadow(0 -1px 0 black);
 
   @media (prefers-color-scheme: light) {
     --bg-black: #fafafa;
@@ -75,6 +85,9 @@
   --boxshadow-ms-outset: inset 1px 1px 0 0 white, inset -1px -1px 0 0 #868a8e;
   --boxshadow-ms-inset: inset 1px 1px 0 0 #868a8e, 1px 1px 0 0 black, 1px 0 0 0 black, 0 1px 0 0 black;
 
+  --fontfamily-default: Menlo, monospace;
+
+  --fontsize-body-s: 9px;
   --fontsize-body-m: 10.8px;
   --fontsize-body-l: 13px;
   --fontsize-math-s: 14px;
@@ -102,7 +115,7 @@ html, body {
 body {
   margin: 0;
   color: var(--fg-white);
-  font-family: monospace;
+  font-family: var(--fontfamily-default);
   height: 100%;
   max-height: 100dvh;
   background: #c0c0c0;

@@ -1,4 +1,6 @@
-@import './lib/ui/layout/scroll.css';
+* {
+  box-sizing: border-box;
+}
 
 .layout {
   width: 100%;
@@ -34,20 +36,6 @@ nav {
   margin: 1px;
 
   padding-left: 0;
-}
-
-.tablist > button {
-  background: var(--bg-msgrey);
-  border: var(--border-outset-grey);
-  border-width: 2px;
-  padding: 4px 8px;
-  font-family: monospace;
-  font-size: 10px;
-  &.active {
-    background: lch(from var(--bg-msgrey) calc(l*0.9) c h);
-    border: var(--border-inset-grey);
-    border-width: 2px;
-  }
 }
 
 .content {
