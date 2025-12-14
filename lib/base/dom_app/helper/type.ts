@@ -13,10 +13,20 @@ type GeneralTemplateHelper<Attrs, Item> = {
   of: (...items: Item[]) => E.Item;
 };
 
-type GeneralVoidHelper<Attrs> = {
+export type VoidConstructor<O> = (attrs: O) => E.Item;
+export interface VoidBuilderAbstract<Attrs> {
+  attr(attr: Attrs): E.Item;
+  attrAdd(attr: Attrs): this;
+}
+
+type GeneralVoidHelper<Attrs> = VoidBuilderAbstract<Attrs> & {
   (attr?: Attrs): E.Item;
-  attr: (attr: Attrs) => E.Item;
 };
+
+export type VoidHelper<O = undefined> =
+  O extends undefined ?
+  GeneralVoidHelper<ElAttributes> :
+  GeneralVoidHelper<O & ElAttributes>;
 
 type GeneralHelper<Attrs, Items> = Items extends any[] ? {
   (...items: Items): E.Item;
@@ -36,11 +46,6 @@ export type TemplateHelper<O = undefined, Item = E.Item> =
   O extends undefined ?
   GeneralTemplateHelper<ElAttributes, Item> :
   GeneralTemplateHelper<O & ElAttributes, Item>;
-
-export type VoidHelper<O = undefined> =
-  O extends undefined ?
-  GeneralVoidHelper<ElAttributes> :
-  GeneralVoidHelper<O & ElAttributes>;
 
 export type Helper<O = undefined, Items = E.Item[]> =
   O extends undefined ?
