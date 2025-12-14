@@ -36,12 +36,10 @@ type GeneralVoidHelper<Attrs> = VoidBuilderAbstract<Attrs> & {
 type GeneralTemplateHelper<Attrs, Item> = {
   (text: TemplateStringsArray, ...items: Item[]): E.Item;
   (attr: Attrs): {
-    (text: TemplateStringsArray, ...items: Item[]): E.Item;
     t: (text: TemplateStringsArray, ...items: Item[]) => E.Item;
     of: (...items: Item[]) => E.Item;
   };
   attr: (attr: Attrs) => {
-    (text: TemplateStringsArray, ...items: Item[]): E.Item;
     t: (text: TemplateStringsArray, ...items: Item[]) => E.Item;
     of: (...items: Item[]) => E.Item;
   };
