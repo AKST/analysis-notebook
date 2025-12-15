@@ -6,7 +6,7 @@ This is effectly a poor mans issue tracker.
 
 ### Build System
 
-1. Look at settting up `esbuild`.
+1. Look at settting up `esbuild` or `bun`.
    - Main blocker is really just how to handle dynamism.
 
 ### Archetecture
@@ -24,12 +24,22 @@ This is effectly a poor mans issue tracker.
 
   2. Post unifying changes
     - [ ] Attribute typing dependent on `tagName`
+      - For different names spaces
+        - HTML, SVG: In typescript there are builtin types for this
+          - for svg there is `SVGElementNameMap`
+          - for html there is `HTMLElementNameMap`
+          - for mathml there is `MathMLElement`
     - [ ] Replace `styles: string` with `styles: Record<string, string>`
     - [ ] Allow supporting events.
         - Alternatively maybe I can add an effect system where certain
           attributes emit directives to perform events and the events
           are performed after render (an example is a directive to
           create a style tag with a media query or register an event)
+        - In typescript these types exist
+          - `HTMLElementEventMap`
+          - `HTMLMediaElementEventMap`
+          - `HTMLFormElementEventMap`
+          - `HTMLInputElementEventMap`
 
 2. webgpu buffer memoryLayout
   - Rewrite reading from GPU buffer
