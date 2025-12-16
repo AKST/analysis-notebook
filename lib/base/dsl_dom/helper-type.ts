@@ -10,14 +10,14 @@ export type ChildOfIfEl<L> = L extends E.Item[] ? E.Item : never;
 export interface AttributeBuilder<Attrs> {
 }
 
-export type VoidConstructor<NS, T, O> = (attrs: O) => E.Node<NS, T, DefaultHelperAttrs<NS, T>>;
+export type VoidConstructor<NS, T, O> = (attrs: E.Attrs<O>) => E.Node<NS, T, DefaultHelperAttrs<NS, T>>;
 export interface VoidBuilderAbstract<NS, T, Attrs> extends AttributeBuilder<Attrs> {
   attr(attr: Attrs): HelperNode<NS, T>;
   attrAdd(attr: Attrs): this;
 }
 
 export type HelperConstructor<NS, T, O, I> =
-  (attrs: O, items: I) => HelperNode<NS, T>;
+  (attrs: E.Attrs<O>, items: I) => HelperNode<NS, T>;
 
 type OverloadBuilderAbstract<NS, T, Attrs, I> =
   I extends E.Item[]

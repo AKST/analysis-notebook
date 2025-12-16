@@ -15,6 +15,7 @@ export type WritableElementKeys =
   | "className"
   | "classList"
   | "id"
+  | "role"
   | "slot";
 
 export type WritableHTMLElementKeys =
@@ -138,6 +139,7 @@ type UserLandRect = [x: number, y: number, width: number, height: number];
  */
 type UserLandPropType<E, P extends keyof E, Otherwise> =
   E[P] extends DOMTokenList ? string[] :
+  E[P] extends CSSStyleDeclaration ? string :
   [E, P] extends [HTMLInputElement, 'value'] ? (number | string) :
   P extends ReadonlyExceptions<E> ? (
     E[P] extends SVGAnimatedLength ? (number | string) :
