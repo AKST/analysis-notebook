@@ -19,6 +19,7 @@ export type ElAttributes<O> = {
 };
 
 export type El =
+  | Node
   | HTMLElement
   | SVGElement
   | MathMLElement

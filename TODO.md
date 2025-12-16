@@ -158,3 +158,4 @@ benefit from using it. Its worth exploring.
 - Fix tests for components
 - UI bugs
   - toggle on calculator looks bad
+  - label in many knob somewhat big
