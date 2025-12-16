@@ -1,6 +1,6 @@
 import { E } from '../type.ts';
 import { expect, describe, it, beforeEach, vi } from 'vitest';
-import { render, update, attr, node, frag } from '../render.js';
+import { render, update, attr, node, frag, insert } from '../render.js';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const HTML_NS = 'http://www.w3.org/1999/xhtml';
@@ -161,6 +161,23 @@ describe('Element namespace and fragment handling', () => {
       expect(aDom.childNodes.length).toEqual(3);
       expect(aDom.childNodes[1].textContent).toEqual('text 1.');
       expect(aDom.childNodes[2].textContent).toEqual('text 2.');
+    });
+
+    it('insert with attributes and nested children', () => {
+      const existingDiv = document.createElement('div');
+      existingDiv.id = 'existing';
+      const vDom = node('html', 'div', undefined, [
+        insert(existingDiv, attr().data('test', 'value'), [
+          node('html', 'span', undefined, ['inner content']),
+        ]),
+      ]);
+      const aDom = render(vDom);
+      expect(aDom.children[0]).toBe(existingDiv);
+      expect(existingDiv.id).toEqual('existing');
+      expect(existingDiv.dataset.test).toEqual('value');
+      expect(existingDiv.childNodes.length).toEqual(1);
+      expect(existingDiv.children[0].tagName).toMatch(/span/i);
+      expect(existingDiv.children[0].textContent).toEqual('inner content');
     });
   });
 

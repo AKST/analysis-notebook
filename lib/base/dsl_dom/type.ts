@@ -24,22 +24,37 @@ export type El =
   | MathMLElement
   | ElFragment
   | ElSingle
-  | ElNode<unknown, unknown, unknown>;
+  | ElNode<unknown, unknown, unknown>
+  | ElInsert<unknown>;
 
 export type ElSingle =
   | string | number
   | undefined | null | false;
 
 export type ElNode<NS, Tag, O> = {
+  kind: 'node',
   ns: NS,
   tagName: Tag,
   attributes?: ElAttributes<O>,
   children?: readonly El[],
 }
 
+/**
+ * This is for already initialised elements, in which
+ * you wish to put in your render tree.
+ */
+export type ElInsert<Elem> = {
+  kind: 'insert',
+  elem: Elem,
+  // todo refine this type.
+  attributes?: ElAttributes<Partial<Elem>>,
+  children?: readonly El[],
+};
+
 export namespace E {
   export type Item = El;
   export type Node<NS, Tag, O> = ElNode<NS, Tag, O>;
+  export type Insert<Elem> = ElInsert<Elem>;
   export type Frag = ElFragment;
   export type Atom = ElSingle;
   export type Attrs<O> = ElAttributes<O>;
