@@ -20,10 +20,8 @@ This is effectly a poor mans issue tracker.
 1. dom
   1. Unify `dom_app` and `dom_ui` APIs, currently underway.
   2. Post unifying changes
+    - [ ] document the purpose of ComponentType
     - [ ] remove methods from `ElAttributes` just move it to a helper module
-    - [ ] removing `dom_ui`
-      - Relocate `SharedStyleSheeet` and `generateCSS` out of `base/dom_ui`.
-      - Then delete `base/dom_ui`
     - [ ] removing `dom_app`
       - Remove the table helper
     - [ ] Allow supporting events.
