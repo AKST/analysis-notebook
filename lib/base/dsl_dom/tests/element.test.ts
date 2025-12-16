@@ -63,17 +63,47 @@ describe('Element namespace and fragment handling', () => {
     });
 
     it.each([
-      ['disabled', true],
+      ['disabled' as const, true],
       [true, true],
       [null, false],
       [undefined, false],
       [false, false],
-      ['', false],
+      ['' as const, false],
     ])('with disabled attribute %s=%s', (a, b) => {
       const vAttrs = attr('html', 'input').elem('disabled', a);
       const vDom = node('html', 'input', vAttrs, []);
       const aDom = render(vDom);
       expect(aDom.disabled).toEqual(b);
+    });
+
+    it('with style single property', () => {
+      const vAttrs = attr('html', 'div').style({ color: 'red' });
+      const vDom = node('html', 'div', vAttrs, []);
+      const aDom = render(vDom);
+      expect(aDom.style.color).toEqual('red');
+    });
+
+    it('with style multiple properties', () => {
+      const vAttrs = attr('html', 'div').style({
+        backgroundColor: 'blue',
+        fontSize: '16px',
+        display: 'block'
+      });
+      const vDom = node('html', 'div', vAttrs, []);
+      const aDom = render(vDom);
+      expect(aDom.style.backgroundColor).toEqual('blue');
+      expect(aDom.style.fontSize).toEqual('16px');
+      expect(aDom.style.display).toEqual('block');
+    });
+
+    it('with style and elem combined', () => {
+      const vAttrs = attr('html', 'div')
+        .style({ color: 'red' })
+        .elem('id', 'test');
+      const vDom = node('html', 'div', vAttrs, []);
+      const aDom = render(vDom);
+      expect(aDom.style.color).toEqual('red');
+      expect(aDom.id).toEqual('test');
     });
 
     it('render children, all vnodes', () => {
@@ -167,6 +197,53 @@ describe('Element namespace and fragment handling', () => {
       expect(domB).toEqual(undefined);
       expect(domA.value).toEqual('100');
       expect(setAttributeSpy).not.toHaveBeenCalled();
+    });
+
+    it('update style single property', () => {
+      const vAttrA = attr('html', 'div').style({ color: 'red' });
+      const vDomA = node('html', 'div', vAttrA, []);
+      const domA = render(vDomA);
+
+      const vAttrB = attr('html', 'div').style({ color: 'blue' });
+      const vDomB = node('html', 'div', vAttrB, []);
+      update(domA, vDomB);
+      expect(domA.style.color).toEqual('blue');
+    });
+
+    it('update style multiple properties', () => {
+      const vAttrA = attr('html', 'div').style({ color: 'red', fontSize: '12px' });
+      const vDomA = node('html', 'div', vAttrA, []);
+      const domA = render(vDomA);
+
+      const vAttrB = attr('html', 'div').style({ color: 'blue', fontSize: '16px', display: 'block' });
+      const vDomB = node('html', 'div', vAttrB, []);
+      update(domA, vDomB);
+      expect(domA.style.color).toEqual('blue');
+      expect(domA.style.fontSize).toEqual('16px');
+      expect(domA.style.display).toEqual('block');
+    });
+
+    it.skip('update style remove property', () => {
+      const vAttrA = attr('html', 'div').style({ color: 'red', fontSize: '12px' });
+      const vDomA = node('html', 'div', vAttrA, []);
+      const domA = render(vDomA);
+
+      const vAttrB = attr('html', 'div').style({ color: 'red' });
+      const vDomB = node('html', 'div', vAttrB, []);
+      update(domA, vDomB);
+      expect(domA.style.color).toEqual('red');
+      expect(domA.style.fontSize).toEqual(undefined);
+    });
+
+    it('update style - no changes when style unchanged', () => {
+      const vAttrA = attr('html', 'div').style({ color: 'red' });
+      const vDomA = node('html', 'div', vAttrA, []);
+      const domA = render(vDomA);
+
+      const vAttrB = attr('html', 'div').style({ color: 'red' });
+      const vDomB = node('html', 'div', vAttrB, []);
+      update(domA, vDomB);
+      expect(domA.style.color).toEqual('red');
     });
 
     /*

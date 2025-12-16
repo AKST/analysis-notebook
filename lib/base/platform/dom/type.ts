@@ -141,6 +141,7 @@ type UserLandPropType<E, P extends keyof E, Otherwise> =
   E[P] extends DOMTokenList ? string[] :
   E[P] extends CSSStyleDeclaration ? string :
   [E, P] extends [HTMLInputElement, 'value'] ? (number | string) :
+  [E, P] extends [HTMLInputElement, 'disabled'] ? ('disabled' | ''  | boolean | undefined | null) :
   P extends ReadonlyExceptions<E> ? (
     E[P] extends SVGAnimatedLength ? (number | string) :
     E[P] extends SVGAnimatedRect ? string | UserLandRect :
