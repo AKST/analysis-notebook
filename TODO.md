@@ -18,8 +18,14 @@ This is effectly a poor mans issue tracker.
 ### Internal API
 
 1. dom
-  1. Unify dom_app and dom_ui APIs, currently underway.
+  1. Unify `dom_app` and `dom_ui` APIs, currently underway.
   2. Post unifying changes
+    - [ ] remove methods from `ElAttributes` just move it to a helper module
+    - [ ] removing `dom_ui`
+      - Relocate `SharedStyleSheeet` and `generateCSS` out of `base/dom_ui`.
+      - Then delete `base/dom_ui`
+    - [ ] removing `dom_app`
+      - Remove the table helper
     - [ ] Allow supporting events.
         - Alternatively maybe I can add an effect system where certain
           attributes emit directives to perform events and the events
@@ -149,3 +155,6 @@ benefit from using it. Its worth exploring.
     - Formular Explorer
     - Definition Explorer
 - Use Marquee effect in long titles.
+- Fix tests for components
+- UI bugs
+  - toggle on calculator looks bad

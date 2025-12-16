@@ -7,12 +7,11 @@ export type HelperNode<NS, T> = E.Node<NS, T, DefaultHelperAttrs<NS, T>>;
 export type ChildOf<L> = L extends (infer I)[] ? I : never;
 export type ChildOfIfEl<L> = L extends E.Item[] ? E.Item : never;
 
-export interface AttributeBuilder<Attrs> {
-}
 
 export type VoidConstructor<NS, T, O> = (attrs: E.Attrs<O>) => E.Node<NS, T, DefaultHelperAttrs<NS, T>>;
-export interface VoidBuilderAbstract<NS, T, Attrs> extends AttributeBuilder<Attrs> {
+export interface VoidBuilderAbstract<NS, T, Attrs> {
   css(style: E.Styles): VoidBuilderAbstract<NS, T, Attrs>;
+  data(data: E.Dataset): VoidBuilderAbstract<NS, T, Attrs>;
   attr(attr: Attrs): HelperNode<NS, T>;
   attrAdd(attr: Attrs): VoidBuilderAbstract<NS, T, Attrs>;
 }
@@ -25,8 +24,9 @@ type OverloadBuilderAbstract<NS, T, Attrs, I> =
     ? TextBuilderAbstract<NS, T, Attrs, I>
     : BuilderAbstract<NS, T, Attrs, I>;
 
-export type BuilderAbstract<NS, T, Attrs, I> = AttributeBuilder<Attrs> & {
+export type BuilderAbstract<NS, T, Attrs, I> = {
   css: (style: E.Styles) => OverloadBuilderAbstract<NS, T, Attrs, I>;
+  data: (data: E.Dataset) => OverloadBuilderAbstract<NS, T, Attrs, I>;
   attr: (attr: Attrs) => OverloadBuilderAbstract<NS, T, Attrs, I>;
   of: (...elements: ChildOf<I>[]) => HelperNode<NS, T>;
   pre: (element: ChildOf<I>) => OverloadBuilderAbstract<NS, T, Attrs, I>;

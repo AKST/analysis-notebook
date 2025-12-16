@@ -106,6 +106,23 @@ describe('Element namespace and fragment handling', () => {
       expect(aDom.id).toEqual('test');
     });
 
+    it('with data single attribute', () => {
+      const vAttrs = attr('html', 'div').data('testKey', 'testValue');
+      const vDom = node('html', 'div', vAttrs, []);
+      const aDom = render(vDom);
+      expect(aDom.dataset.testKey).toEqual('testValue');
+    });
+
+    it('with data multiple attributes', () => {
+      const vAttrs = attr('html', 'div')
+        .data('foo', 'bar')
+        .data('baz', 'qux');
+      const vDom = node('html', 'div', vAttrs, []);
+      const aDom = render(vDom);
+      expect(aDom.dataset.foo).toEqual('bar');
+      expect(aDom.dataset.baz).toEqual('qux');
+    });
+
     it('render children, all vnodes', () => {
       const vDom = node('html', 'div', undefined, [
         node('html', 'p', undefined, ['hello ']),
@@ -244,6 +261,30 @@ describe('Element namespace and fragment handling', () => {
       const vDomB = node('html', 'div', vAttrB, []);
       update(domA, vDomB);
       expect(domA.style.color).toEqual('red');
+    });
+
+    it('update data single attribute', () => {
+      const vAttrA = attr('html', 'div').data('userId', '123');
+      const vDomA = node('html', 'div', vAttrA, []);
+      const domA = render(vDomA);
+
+      const vAttrB = attr('html', 'div').data('userId', '456');
+      const vDomB = node('html', 'div', vAttrB, []);
+      update(domA, vDomB);
+      expect(domA.dataset.userId).toEqual('456');
+    });
+
+    it('update data multiple attributes', () => {
+      const vAttrA = attr('html', 'div').data('foo', 'bar').data('baz', 'qux');
+      const vDomA = node('html', 'div', vAttrA, []);
+      const domA = render(vDomA);
+
+      const vAttrB = attr('html', 'div').data('foo', 'updated').data('baz', 'changed').data('new', 'value');
+      const vDomB = node('html', 'div', vAttrB, []);
+      update(domA, vDomB);
+      expect(domA.dataset.foo).toEqual('updated');
+      expect(domA.dataset.baz).toEqual('changed');
+      expect(domA.dataset.new).toEqual('value');
     });
 
     /*
