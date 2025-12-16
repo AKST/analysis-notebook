@@ -18,18 +18,8 @@ This is effectly a poor mans issue tracker.
 ### Internal API
 
 1. dom
-  1. Unify dom_ui and dom_app under dom_desc
-    - Need to first ensure the APIs are uniform before merging
-      - make sure they both use `class` or `className` for classes.
-
+  1. Unify dom_app and dom_ui APIs, currently underway.
   2. Post unifying changes
-    - [ ] Attribute typing dependent on `tagName`
-      - For different names spaces
-        - HTML, SVG: In typescript there are builtin types for this
-          - for svg there is `SVGElementNameMap`
-          - for html there is `HTMLElementNameMap`
-          - for mathml there is `MathMLElement`
-    - [ ] Replace `styles: string` with `styles: Record<string, string>`
     - [ ] Allow supporting events.
         - Alternatively maybe I can add an effect system where certain
           attributes emit directives to perform events and the events
