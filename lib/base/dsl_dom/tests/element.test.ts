@@ -62,6 +62,20 @@ describe('Element namespace and fragment handling', () => {
       expect(Array.from(aDom.classList)).toEqual(['helloworld']);
     });
 
+    it.each([
+      ['disabled', true],
+      [true, true],
+      [null, false],
+      [undefined, false],
+      [false, false],
+      ['', false],
+    ])('with disabled attribute %s=%s', (a, b) => {
+      const vAttrs = attr('html', 'input').elem('disabled', a);
+      const vDom = node('html', 'input', vAttrs, []);
+      const aDom = render(vDom);
+      expect(aDom.disabled).toEqual(b);
+    });
+
     it('render children, all vnodes', () => {
       const vDom = node('html', 'div', undefined, [
         node('html', 'p', undefined, ['hello ']),
