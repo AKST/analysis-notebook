@@ -4,6 +4,7 @@ export {
   Renderer,
 } from '@base/canvas_2d/type.js';
 export { E } from '@base/dom_app/type.js';
+export { E as E2 } from '@base/dsl_dom/type.js';
 export {
   RemoteChildWidget as RemoteWidget,
   DocumentChildWidget as DocumentWidget,

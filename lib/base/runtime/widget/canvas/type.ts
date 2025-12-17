@@ -1,4 +1,4 @@
-import { E } from '../../../../base/dom_app/type.js';
+import { E } from '../../../../base/dsl_dom/type.js';
 import { Renderer, ProjectionConstraint } from '../../../canvas_2d/type.ts';
 
 export type RenderContextInit = {
