@@ -20,10 +20,12 @@ This is effectly a poor mans issue tracker.
 1. dom
   1. Unify `dom_app` and `dom_ui` APIs, currently underway.
   2. Post unifying changes
-    - [ ] document the purpose of ComponentType
-    - [ ] remove methods from `ElAttributes` just move it to a helper module
     - [ ] removing `dom_app`
-      - Remove the table helper
+        - in helpers, rename `typography` to `html`
+        - update the interface of the `frag` function to take varargs
+        - ensure everything in `ui/app` uses the helper interface not the array interface
+    - [ ] remove methods from `ElAttributes` just move it to a helper module
+    - [ ] Document the concept of a safe render and update (being able to control less safe tags)
     - [ ] Allow supporting events.
         - Alternatively maybe I can add an effect system where certain
           attributes emit directives to perform events and the events
@@ -34,6 +36,12 @@ This is effectly a poor mans issue tracker.
           - `HTMLMediaElementEventMap`
           - `HTMLFormElementEventMap`
           - `HTMLInputElementEventMap`
+  3. API extensions
+     - [ ] helper method, `doc.[tag].void` which just takes attribute and returns the element
+     - [ ] helper method, `doc.[tag].unit` which has type `(it: E.Item) => E.Node<...>`
+           See `lib/app/sec-unsw/sec-1101/sec-03/tables.js` (193)
+     - [ ] helper method, `doc.[tag].from` which has type `(it: Iterable<E.Item>) => E.Node<...>`
+           See `lib/app/sec-unsw/sec-1101/sec-03/tables.js` (256)
 
 2. webgpu buffer memoryLayout
   - Rewrite reading from GPU buffer
@@ -130,10 +138,18 @@ benefit from using it. Its worth exploring.
 - Cross platform: make styles consistent across chrome and safari
   - [ ] slider input
   - [ ] toggle input
+    - toggle on calculator looks bad
   - [ ] ticker input
 - Consistent Borders for inputs
   - [ ] text input has inconsistent border size
   - [ ] UPDATE inset & outset TO USE EXPLICT COLOURS.
+- Typography
+  - [ ] label in many knob somewhat big
+- Load States
+  - [ ] Minimise load jank
+- Bugs
+  - [ ] Missing footer caption on unsw.1101.03
+  - [ ] Summary array for details in unsw.2206.04-1
 
 ### Renames
 
@@ -142,9 +158,62 @@ benefit from using it. Its worth exploring.
 
 ## Exploration
 
+### Organising directory structure
+
+#### General Thoughts
+
+I think I need to figure out what problems really exist,
+consider them in relation to longer term objects, and what
+I really want to accomplish.
+
+1. With unifiying `dom_ui` and `dom_app` as `dom_dsl`,
+   - do I need to differeiant between reusable ui in both the app and chrome?
+   - if so does it make sense to
+     - nest the contents of ui in a directory like `ui/runtime`?
+     - create a directory like `ui/common` for the reused stuff?
+
+2. Are there larger packages that would benefit from incremental compliation?
+   Are there directory structures that mitigate that better manage this cost?
+
+3. Have fewer relative import paths in base. The reason I haven't specified a
+   self relative import within base is because I wanted to keep the code in
+   usable with fewer steps and forcing them to always also setup a path alias
+   but in practise anything already using it already does this. So maybe this
+   is a nonissue?
+   - Should I just expose that alias to base?
+
+4. There are some sense of arbitrary self importance of earlier added code
+   that ended up not being as important in the long run or code that after
+   giving more thought, I realised could be done differently. They are being
+   imported in more places than I would like, and I would like to emphasis them.
+   - The subproblems
+     1. Some of these packages have been added to the default prelude but have
+        no business being there. Their import should be removed, and possibly
+
+#### What would a better structure look like
+
+If I can't define this, maybe this is a grass is always greener thing.
+
+#### Unsorted Thoughts
+
+- Should there be a general pkg dir?
+  - It just includes anything that is reused
+  - I think a place like that might be more appropiate for `runtime` than `base`
+  - `prelude/blah` could just `pkg/prelude-blah`
+- Group `app` and `prelude`
+  - `app` because `app/instances`
+  - `prelude` because `app/preludes`, unless it just gets moved to `pkg/prelude-{a,b,c}`
+- Move stuff out of `base` into prelude
+  - like the math and economics stuff
+
 ### Worklets
 
 [Read more here](https://developer.mozilla.org/en-US/docs/Web/API/Worklet).
+
+#### General Thoughts
+
+- I can't really benefit from this if browser support isn't there and its
+  unclear when safari will support any of the useful stuff here.
 
 ## Unsorted
 
@@ -153,7 +222,5 @@ benefit from using it. Its worth exploring.
     - Formular Explorer
     - Definition Explorer
 - Use Marquee effect in long titles.
+- Loader doesn't consistently appear for loading.
 - Fix tests for components
-- UI bugs
-  - toggle on calculator looks bad
-  - label in many knob somewhat big

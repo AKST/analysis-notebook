@@ -1,3 +1,9 @@
+/**
+ * This type exists to abstract referencing constructors without
+ * over exposing implementation details and risk coupling to those
+ * impl details, as well as allowing providing wrapped instances
+ * which largely exist to handle dependency mapping.
+ */
 export type ComponentType<T, Props = undefined, Args = []> =
   T extends HTMLElement ? Args extends unknown[] ? Internal_ComponentTypeImpl<T, Props, Args> : never : never;
 
