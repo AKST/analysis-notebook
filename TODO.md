@@ -21,7 +21,7 @@ This is effectly a poor mans issue tracker.
   1. Unify `dom_app` and `dom_ui` APIs, currently underway.
   2. Post unifying changes
     - [ ] removing `dom_app`, after ensuring all use of `dom_app` is a subset of `dsl_dom`
-        - ensure everything in `ui/app` uses the helper interface not the array interface
+        - migrate existing use of doc.{b,i} to text.{b,i} which just map to strong & em
     - [ ] remove methods from `ElAttributes` just move it to a helper module
     - [ ] Document the concept of a safe render and update (being able to control less safe tags)
     - [ ] Allow supporting events.
@@ -34,12 +34,17 @@ This is effectly a poor mans issue tracker.
           - `HTMLMediaElementEventMap`
           - `HTMLFormElementEventMap`
           - `HTMLInputElementEventMap`
-  3. API extensions
+  3. Clean up
+     - Migrate anything using the style attr to use the css helper
+     - Turn doc.ul into a normal helper not a template helper
+  4. API extensions
      - [ ] helper method, `doc.[tag].void` which just takes attribute and returns the element
      - [ ] helper method, `doc.[tag].unit` which has type `(it: E.Item) => E.Node<...>`
            See `lib/app/sec-unsw/sec-1101/sec-03/tables.js` (193)
      - [ ] helper method, `doc.[tag].from` which has type `(it: Iterable<E.Item>) => E.Node<...>`
            See `lib/app/sec-unsw/sec-1101/sec-03/tables.js` (256)
+           See `lib/app/sec-unsw/sec-1190/common.js`
+           See `lib/app/sec-debug/sec-2/index.js`
 
 2. webgpu buffer memoryLayout
   - Rewrite reading from GPU buffer
@@ -143,19 +148,38 @@ benefit from using it. Its worth exploring.
   - [ ] UPDATE inset & outset TO USE EXPLICT COLOURS.
 - Typography
   - [ ] label in many knob somewhat big
+  - [ ] Fix typography sizing in unsw.1101.*
 - Load States
   - [ ] Minimise load jank
 - Bugs
-  - [ ] Missing footer caption on unsw.1101.03
+  - [ ] Table styles are missing lower footer caption on unsw.1101.03
   - [ ] Summary array for details in unsw.2206.04-1
   - [ ] Layout overflow of unsw.1101.01
+  - [ ] Fix all of unsw.comm1190
 
 ### Renames
 
 - Rename lib/base/dom_app/helpers/typography to html
 - Rename lib/ui/chrome to lib/ui/{os,chasis,environment,system}
 
+### Remove old APIs
+
+- There's some stuff in prelude components that can probably be replaced
+
 ## Exploration
+
+### Is it possible to type CSS?
+
+Two options
+
+- Type the strings
+  - I'm not really sure how possible this is
+
+- Allow expressing css in more advance datastructures?
+  - One an immediately unappealing aspect is it adds a runtime overhead
+
+Both require require an insane amount of work, possibly better
+addressed by some kind of linter.
 
 ### Organising directory structure
 
@@ -223,3 +247,4 @@ If I can't define this, maybe this is a grass is always greener thing.
 - Use Marquee effect in long titles.
 - Loader doesn't consistently appear for loading.
 - Fix tests for components
+- get rid of any duplication in comm-1190/common.js
