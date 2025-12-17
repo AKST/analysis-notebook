@@ -21,7 +21,6 @@ This is effectly a poor mans issue tracker.
   1. Unify `dom_app` and `dom_ui` APIs, currently underway.
   2. Post unifying changes
     - [ ] removing `dom_app`
-        - in helpers, rename `typography` to `html`
         - update the interface of the `frag` function to take varargs
         - ensure everything in `ui/app` uses the helper interface not the array interface
     - [ ] remove methods from `ElAttributes` just move it to a helper module
