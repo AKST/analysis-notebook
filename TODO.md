@@ -19,11 +19,22 @@ This is effectly a poor mans issue tracker.
 
 1. dom
   1. Unify `dom_app` and `dom_ui` APIs, currently underway.
-  2. Post unifying changes
     - [ ] removing `dom_app`, after ensuring all use of `dom_app` is a subset of `dsl_dom`
-        - migrate existing use of doc.{b,i} to text.{b,i} which just map to strong & em
-    - [ ] remove methods from `ElAttributes` just move it to a helper module
+  2. Post unifying changes
     - [ ] Document the concept of a safe render and update (being able to control less safe tags)
+  3. Clean up
+     - Migrate anything using the style attr to use the css helper
+     - Turn doc.ul into a normal helper not a template helper
+  4. API changes
+     - [ ] remove methods from `ElAttributes` just move it to a helper module
+     - [ ] helper method, `doc.[tag].void` which just takes attribute and returns the element
+     - [ ] helper method, `doc.[tag].unit` which has type `(it: E.Item) => E.Node<...>`
+           See `lib/app/sec-unsw/sec-1101/sec-03/tables.js` (193)
+     - [ ] helper method, `doc.[tag].from` which has type `(it: Iterable<E.Item>) => E.Node<...>`
+           See `lib/app/sec-unsw/sec-1101/sec-03/tables.js` (256)
+           See `lib/app/sec-unsw/sec-1190/common.js`
+           See `lib/app/sec-debug/sec-2/index.js`
+  5. The hardest part
     - [ ] Allow supporting events.
         - Alternatively maybe I can add an effect system where certain
           attributes emit directives to perform events and the events
@@ -34,17 +45,6 @@ This is effectly a poor mans issue tracker.
           - `HTMLMediaElementEventMap`
           - `HTMLFormElementEventMap`
           - `HTMLInputElementEventMap`
-  3. Clean up
-     - Migrate anything using the style attr to use the css helper
-     - Turn doc.ul into a normal helper not a template helper
-  4. API extensions
-     - [ ] helper method, `doc.[tag].void` which just takes attribute and returns the element
-     - [ ] helper method, `doc.[tag].unit` which has type `(it: E.Item) => E.Node<...>`
-           See `lib/app/sec-unsw/sec-1101/sec-03/tables.js` (193)
-     - [ ] helper method, `doc.[tag].from` which has type `(it: Iterable<E.Item>) => E.Node<...>`
-           See `lib/app/sec-unsw/sec-1101/sec-03/tables.js` (256)
-           See `lib/app/sec-unsw/sec-1190/common.js`
-           See `lib/app/sec-debug/sec-2/index.js`
 
 2. webgpu buffer memoryLayout
   - Rewrite reading from GPU buffer
