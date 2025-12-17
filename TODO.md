@@ -20,8 +20,7 @@ This is effectly a poor mans issue tracker.
 1. dom
   1. Unify `dom_app` and `dom_ui` APIs, currently underway.
   2. Post unifying changes
-    - [ ] removing `dom_app`
-        - update the interface of the `frag` function to take varargs
+    - [ ] removing `dom_app`, after ensuring all use of `dom_app` is a subset of `dsl_dom`
         - ensure everything in `ui/app` uses the helper interface not the array interface
     - [ ] remove methods from `ElAttributes` just move it to a helper module
     - [ ] Document the concept of a safe render and update (being able to control less safe tags)
@@ -149,6 +148,7 @@ benefit from using it. Its worth exploring.
 - Bugs
   - [ ] Missing footer caption on unsw.1101.03
   - [ ] Summary array for details in unsw.2206.04-1
+  - [ ] Layout overflow of unsw.1101.01
 
 ### Renames
 

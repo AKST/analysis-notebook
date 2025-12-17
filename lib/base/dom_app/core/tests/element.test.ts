@@ -51,14 +51,14 @@ describe('Element namespace and fragment handling', () => {
 
   describe('Fragment flattening', () => {
     it('flattens fragments correctly', () => {
-      const fragContent = frag([
+      const fragContent = frag(
         ['p', {}, ['First paragraph']],
         ['p', {}, ['Second paragraph']],
-        frag([
+        frag(
           ['p', {}, ['Nested first']],
           ['p', {}, ['Nested second']]
-        ])
-      ]);
+        )
+      );
 
       const containerWithFrag = r(['div', {}, [
         ['h1', {}, ['Title']],
@@ -125,10 +125,10 @@ describe('Element namespace and fragment handling', () => {
               ['circle', { cx: '50', cy: '50', r: '40', fill: 'red' }, []],
               ['rect', { x: '10', y: '10', width: '20', height: '20', fill: 'blue' }, []]
             ]],
-            frag([
+            frag(
               ['p', {}, ['This paragraph comes from a fragment']],
               ['p', {}, ['This is another fragment paragraph']]
-            ])
+            )
           ]]
         ]]
       ]], null, null) as any;
