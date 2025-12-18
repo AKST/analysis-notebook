@@ -1,4 +1,4 @@
-import { E } from '../../../../base/dom_app/type.js';
+import { E } from '../../../../base/dsl_dom/type.js';
 
 export type DocumentWidget<Ctx, State, Config> = {
   meta: { kind: 'document' },

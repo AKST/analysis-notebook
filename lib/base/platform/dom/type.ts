@@ -111,8 +111,7 @@ type ElementAttributesWriteOnly_Impl_SVG<NS, T, E, ReadonlyKeys> = {
       P extends keyof SVGElement ? never :
       P
   )]: UserLandPropType<E, P, E[P]>
-}
-
+} & UnspecifiedAttribute<NS, T>;
 
 /**
  * Update as needed.
@@ -122,12 +121,13 @@ type ElementAttributesWriteOnly_Impl_SVG<NS, T, E, ReadonlyKeys> = {
  * at the element property level.
  */
 type ReadonlyExceptions<E> =
+  // https://developer.mozilla.org/en-US/docs/Web/API/SVGRectElement
+  E extends SVGRectElement ? ('x' | 'y' | 'width' | 'height' | 'rx' | 'ry') :
+  E extends SVGTextElement ? ('x' | 'y') :
+
   // https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement
   //   - viewBox: https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement/viewBox
   E extends SVGElement ? ('width' | 'height' | 'viewBox') :
-
-  // https://developer.mozilla.org/en-US/docs/Web/API/SVGRectElement
-  E extends SVGRectElement ? ('x' | 'y' | 'width' | 'height' | 'rx' | 'ry') :
 
   never;
 
@@ -145,9 +145,13 @@ type UserLandPropType<E, P extends keyof E, Otherwise> =
   [E, P] extends [HTMLInputElement, 'value' | 'max' | 'min' | 'step'] ? (number | string) :
   [E, P] extends [HTMLInputElement, 'disabled'] ? ('disabled' | ''  | boolean | undefined | null) :
   P extends ReadonlyExceptions<E> ? (
+    /**
+      * - This includes `y` on `text`, https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute/y#text
+      */
+    E[P] extends SVGAnimatedLengthList ? (number | string | (number | string)[]) :
     E[P] extends SVGAnimatedLength ? (number | string) :
     E[P] extends SVGAnimatedRect ? string | UserLandRect :
-    never
+    Otherwise
   ) :
   Otherwise;
 
@@ -161,8 +165,20 @@ type UnspecifiedAttribute<NS, T> =
     T extends 'math' ? { display?: 'block' } :
     T extends 'mspace' ? { width?: number | string, height?: number | string } :
     T extends 'mtr' ? { columnalign?: string } :
-    T extends 'mtd' ? { columnalign?: string } :
+    T extends 'mtd' ? {
+      // TODO use 'left' | 'right' | 'center'
+      columnalign?: string,
+      columnspan?: number } :
     T extends 'mtable' ? { columnalign?: string } :
+    {}
+  ) :
+  /**
+   * - [fill](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute/fill)
+   *   - Is allowed as an attribute but isn't a property
+   */
+  NS extends 'svg' ? (
+    T extends 'rect' ? { fill?: string, stroke?: string } :
+    T extends 'text' ? { fill?: string } :
     {}
   ) :
   {};
