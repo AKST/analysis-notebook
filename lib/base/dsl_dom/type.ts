@@ -29,7 +29,7 @@ export type ElNode<NS, Tag, O> = {
   kind: 'node',
   ns: NS,
   tagName: Tag,
-  attributes?: ElMeta<O>,
+  meta?: ElMeta<O>,
   children?: readonly El[],
 }
 
@@ -40,8 +40,15 @@ export type ElNode<NS, Tag, O> = {
 export type ElInsert<Elem> = {
   kind: 'insert',
   elem: Elem,
-  // todo refine this type.
-  attributes?: ElMeta<Partial<Elem>>,
+
+  /**
+   * TODO refine the behaviour of this type, as there are a
+   * few open questions. Like what is the expected behaviour
+   * should it override all attributes? probably not. Can that
+   * be clearer? or should this be expressed in a way that is
+   * more apparent?
+   */
+  meta?: ElMeta<Partial<Elem>>,
   children?: readonly El[],
 };
 
