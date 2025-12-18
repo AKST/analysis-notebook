@@ -12,6 +12,7 @@ export type VoidConstructor<NS, T, O> = (attrs: E.Attrs<O>) => E.Node<NS, T, Def
 export interface VoidBuilderAbstract<NS, T, Attrs> {
   css(style: E.Styles): VoidBuilderAbstract<NS, T, Attrs>;
   data(data: E.Dataset): VoidBuilderAbstract<NS, T, Attrs>;
+  meta: (attr: E.Attrs<Attrs>) => VoidBuilderAbstract<NS, T, Attrs>;
   attr(attr: Attrs): HelperNode<NS, T>;
   attrAdd(attr: Attrs): VoidBuilderAbstract<NS, T, Attrs>;
 }
@@ -25,20 +26,23 @@ type OverloadBuilderAbstract<NS, T, Attrs, I> =
     : BuilderAbstract<NS, T, Attrs, I>;
 
 export type BuilderAbstract<NS, T, Attrs, I> = {
-  css: (style: E.Styles) => OverloadBuilderAbstract<NS, T, Attrs, I>;
-  data: (data: E.Dataset) => OverloadBuilderAbstract<NS, T, Attrs, I>;
-  attr: (attr: Attrs) => OverloadBuilderAbstract<NS, T, Attrs, I>;
   of: (...elements: ChildOf<I>[]) => HelperNode<NS, T>;
-  pre: (element: ChildOf<I>) => OverloadBuilderAbstract<NS, T, Attrs, I>;
-  app: (element: ChildOf<I>) => OverloadBuilderAbstract<NS, T, Attrs, I>;
-  post: (element: ChildOf<I>) => OverloadBuilderAbstract<NS, T, Attrs, I>;
+  css: (style: E.Styles) => BuilderAbstract<NS, T, Attrs, I>;
+  data: (data: E.Dataset) => BuilderAbstract<NS, T, Attrs, I>;
+  meta: (attr: E.Attrs<Attrs>) => BuilderAbstract<NS, T, Attrs, I>;
+  attr: (attr: Attrs) => BuilderAbstract<NS, T, Attrs, I>;
+  app: (element: ChildOf<I>) => BuilderAbstract<NS, T, Attrs, I>;
 };
 
-export type TextBuilderAbstract<NS, T, Attrs, I> = BuilderAbstract<NS, T, Attrs, I> & {
+export type TextBuilderAbstract<NS, T, Attrs, I> = {
   t: (text: TemplateStringsArray, ...items: E.Item[]) => HelperNode<NS, T>;
-  preT: (text: TemplateStringsArray, ...items: E.Item[]) => OverloadBuilderAbstract<NS, T, Attrs, I>;
-  appT: (text: TemplateStringsArray, ...items: E.Item[]) => OverloadBuilderAbstract<NS, T, Attrs, I>;
-  postT: (text: TemplateStringsArray, ...items: E.Item[]) => OverloadBuilderAbstract<NS, T, Attrs, I>;
+  of: (...elements: ChildOf<I>[]) => HelperNode<NS, T>;
+  css: (style: E.Styles) => TextBuilderAbstract<NS, T, Attrs, I>;
+  data: (data: E.Dataset) => TextBuilderAbstract<NS, T, Attrs, I>;
+  meta: (attr: E.Attrs<Attrs>) => TextBuilderAbstract<NS, T, Attrs, I>;
+  attr: (attr: Attrs) => TextBuilderAbstract<NS, T, Attrs, I>;
+  app: (element: ChildOf<I>) => TextBuilderAbstract<NS, T, Attrs, I>;
+  appT: (text: TemplateStringsArray, ...items: E.Item[]) => TextBuilderAbstract<NS, T, Attrs, I>;
 };
 
 /*
@@ -53,11 +57,13 @@ type GeneralVoidHelper<NS, T, Attrs> = VoidBuilderAbstract<NS, T, Attrs> & {
 
 type GeneralTemplateHelper<NS, T, Attrs, Items> = Items extends any[] ? (OverloadBuilderAbstract<NS, T, Attrs, Items> & {
   (text: TemplateStringsArray, ...items: Items): HelperNode<NS, T>;
+  (attr: E.Attrs<Attrs>): OverloadBuilderAbstract<NS, T, Attrs, Items>;
   (attr: Attrs): OverloadBuilderAbstract<NS, T, Attrs, Items>;
 }) : never;
 
 type GeneralHelper<NS, T, Attrs, Items> = Items extends any[] ? (OverloadBuilderAbstract<NS, T, Attrs, Items> & {
   (...items: Items): HelperNode<NS, T>;
+  (attr: E.Attrs<Attrs>): OverloadBuilderAbstract<NS, T, Attrs, Items>;
   (attr: Attrs): OverloadBuilderAbstract<NS, T, Attrs, Items>;
 }) : never;
 
@@ -73,78 +79,37 @@ export type Helper<NS, T, O = DefaultHelperAttrs<NS, T>, Items = E.Item[]> =
 
 export type VoidHelperFactory = {
   /**
-   * Known element with default attributes
-   */
-  <NS extends string, T extends string>(ns: NS, t: T): (
-    f?: (attrs: E.Attrs<DefaultHelperAttrs<NS, T>>) => HelperNode<NS, T>,
-  ) => VoidHelper<NS, T, DefaultHelperAttrs<NS, T>>;
-  /**
    * Known element with overriden attributes
    */
-  <NS extends string, T extends string, O extends Object>(ns: NS, t: T): (
-    f: (attrs: E.Attrs<O>) => HelperNode<NS, T>,
-    defaultArgs: O,
-  ) => VoidHelper<NS, T, O>;
-  /**
-   * Anonymous element custom Attributes
-   */
-  <O extends Object>(): (
-    f: (attrs: E.Attrs<O>) => E.Node<unknown, unknown, O>,
-    defaultArgs: O
-  ) => VoidHelper<unknown, unknown, O>;
+  <NS extends string, T extends string, O extends Object = DefaultHelperAttrs<NS, T>>(options: {
+    of: [NS, T];
+    create?: (meta: E.Attrs<O>) => HelperNode<NS, T>;
+  }): VoidHelper<NS, T, O>;
 }
 
 export type TemplateHelperFactory = {
   /**
-   * Known element with default attributes
-   */
-  <NS extends string, T extends string, Items extends any[] = E.Item[]>(ns: NS, t: T): (
-    f?: (
-      attrs: E.Attrs<DefaultHelperAttrs<NS, T>>,
-      items: Items,
-    ) => HelperNode<NS, T>,
-  ) => TemplateHelper<NS, T, DefaultHelperAttrs<NS, T>, Items>;
-  /**
    * Known element with overriden attributes
    */
-  <NS extends string, T extends string, O extends Object, Items extends any[] = E.Item[]>(ns: NS, t: T): (
-    f: (attrs: E.Attrs<O>, items: Items) => HelperNode<NS, T>,
-    defaultArgs: O,
-  ) => TemplateHelper<NS, T, O, Items>;
-  /**
-   * Anonymous element custom Attributes
-   */
-  <O extends Object, Items extends any[] = E.Item[]>(): (
-    f: (attrs: E.Attrs<O>, items: Items) => E.Node<unknown, unknown, O>,
-    defaultArgs: O
-  ) => TemplateHelper<unknown, unknown, O, Items>;
+  <NS extends string, T extends string, O extends Object = DefaultHelperAttrs<NS, T>, Items extends any[] = E.Item[]>(options: {
+    of: [NS, T];
+    create?: (meta: E.Attrs<O>, items: Items) => HelperNode<NS, T>;
+  }): TemplateHelper<NS, T, O, Items>;
 }
 
 export type HelperFactory = {
   /**
-   * Known element with default attributes
-   */
-  <NS extends string, T extends string, Items extends any[] = E.Item[]>(ns: NS, t: T): (
-    f?: (
-      attrs: E.Attrs<DefaultHelperAttrs<NS, T>>,
-      items: Items,
-    ) => HelperNode<NS, T>,
-  ) => Helper<NS, T, DefaultHelperAttrs<NS, T>, Items>;
-  /**
    * Known element with overriden attributes
    */
-  <NS extends string, T extends string, O extends Object, Items extends any[] = E.Item[]>(
-    ns: NS,
-    t: T,
-  ): (
-    f: (attrs: E.Attrs<O>, items: Items) => HelperNode<NS, T>,
-    defaultArgs: O,
-  ) => Helper<NS, T, O, Items>;
-  /**
-   * Anonymous element custom Attributes
-   */
-  <O extends Object, Items extends any[] = E.Item[]>(): (
-    f: (attrs: E.Attrs<O>, items: Items) => E.Node<unknown, unknown, O>,
-    defaultArgs: O,
-  ) => Helper<unknown, unknown, O, Items>;
+  <NS extends string, T extends string, O extends Object = DefaultHelperAttrs<NS, T>, Items extends any[] = E.Item[]>(options: {
+    of: [NS, T];
+    create?: (meta: E.Attrs<O>, items: Items) => HelperNode<NS, T>;
+  }): Helper<NS, T, O, Items>;
+
+  // /**
+  //  * Anonymous element with overriden attributes
+  //  */
+  // <NS extends string, T extends string, O extends Object = DefaultHelperAttrs<NS, T>, Items extends any[] = E.Item[]>(options: {
+  //   create: (meta: E.Attrs<O>, items: Items) => HelperNode<unknown, unknown>;
+  // }): Helper<unknown, unknown, O, Items>;
 }

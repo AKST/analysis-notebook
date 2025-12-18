@@ -1,6 +1,8 @@
 
 export type FindDomElementHTML<T> =
-  T extends keyof HTMLElementTagNameMap ? HTMLElementTagNameMap[T] : never;
+  T extends keyof HTMLElementTagNameMap ? HTMLElementTagNameMap[T] :
+  T extends 'font' ? HTMLElement :
+  never;
 
 export type FindDomElementSVG<T> =
   T extends keyof SVGElementTagNameMap ? SVGElementTagNameMap[T] : never;
@@ -81,7 +83,7 @@ type ElementAttributesWriteOnly_Impl_HTML<NS, T, E, ReadonlyKeys> = {
       P extends keyof HTMLElement ? never :
       P
   )]: UserLandPropType<E, P, E[P]>
-}
+} & UnspecifiedAttribute<NS, T>;
 
 type ElementAttributesWriteOnly_Impl_MathML<NS, T, E, ReadonlyKeys> = {
   -readonly [P in keyof E as (
@@ -154,6 +156,13 @@ type UserLandPropType<E, P extends keyof E, Otherwise> =
  * mostly in relation to MathML.
  */
 type UnspecifiedAttribute<NS, T> =
-  [NS, T] extends ['mathml', 'math'] ? { display?: 'block' } :
-  [NS, T] extends ['mathml', 'mspace'] ? { width?: number | string, height?: number | string } :
-  never;
+  [NS, T] extends ['html', 'font'] ? { face?: string, color?: string, size?: string } :
+  NS extends 'mathml' ? (
+    T extends 'math' ? { display?: 'block' } :
+    T extends 'mspace' ? { width?: number | string, height?: number | string } :
+    T extends 'mtr' ? { columnalign?: string } :
+    T extends 'mtd' ? { columnalign?: string } :
+    T extends 'mtable' ? { columnalign?: string } :
+    {}
+  ) :
+  {};
