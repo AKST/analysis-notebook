@@ -14,7 +14,7 @@
   --fontsize-math-m: 14px;
 }
 
-p, quote, li, dd, figcaption {
+p, q, blockquote, li, dd, figcaption {
   font-size: var(--fontsize-body-m);
 }
 
@@ -46,7 +46,7 @@ details {
   color: var(--fg-peach);
 }
 
-quote {
+q, blockquote {
   display: block;
   font-style: italic;
   padding-left: 16px;
@@ -59,7 +59,7 @@ quote {
   }
 }
 
-:is(summary, quote, p, dd, li, h1, h2, h3, h4, h5, h6, span) > :is(strong, b) {
+:is(summary, q, blockquote, p, dd, li, h1, h2, h3, h4, h5, h6, span) > :is(strong, b) {
   text-shadow: var(--txt-shadow-blue);
 
   & > :is(strong, b) {
@@ -76,7 +76,7 @@ quote {
   }
 }
 
-quote, p {
+q, blockquote, p {
   margin-bottom: 0.75rem;
 }
 
@@ -117,7 +117,7 @@ figure {
   background-attachment: local, local, scroll, scroll;
 }
 
-quote, p, dd, li {
+q, blockquote, p, dd, li {
   line-height: 1.8;
 }
 
@@ -247,7 +247,7 @@ dl {
   border-width: 1px;
 }
 
-:is(quote, p, h1, h2, h3, h4, ul, ol, dl) {
+:is(q, blockquote, p, h1, h2, h3, h4, ul, ol, dl) {
   margin: 0;
 }
 

@@ -1,6 +1,7 @@
 import { E } from '../type.ts';
 import { expect, describe, it, beforeEach, vi } from 'vitest';
 import { render, update, attr, node, frag, insert } from '../render.js';
+import * as Meta from '../node_meta.js';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const HTML_NS = 'http://www.w3.org/1999/xhtml';
@@ -18,7 +19,7 @@ describe('Element namespace and fragment handling', () => {
       [HTML_NS, node('html', 'b', undefined, [])],
       [HTML_NS, node('html', 'i', attr(), undefined)],
       [HTML_NS, node('html', 's')],
-      [SVG_NS, node('svg', 'rect', attr('svg', 'rect').elem('width', 2), [])],
+      [SVG_NS, node('svg', 'rect', Meta.build(attr('svg', 'rect')).attr('width', 2).meta, [])],
       // apparently tagName's are in lowercase with this namespace...
       [MATH_NS, node('mathml', 'math')],
     ])('should render text %p', (ns: string, vDom: E.Node<string, string, unknown>) => {
@@ -34,28 +35,29 @@ describe('Element namespace and fragment handling', () => {
     });
 
     it('set simple attribute', () => {
-      const vDom = node('svg', 'rect', attr('html', 'div').elem('id', 'a'), []);
+      const vDom = node('svg', 'rect', Meta.build(attr('html', 'div')).attr('id', 'a').meta, []);
       const aDom = render(vDom);
       expect(aDom.getAttribute('id')).toEqual('a');
       expect(aDom.id).toEqual('a');
     });
 
     it('set attribute which requires normalisation', () => {
-      const vDom = node('svg', 'rect', attr('svg', 'rect').elem('width', 2), []);
+      const aMeta = Meta.build(attr('svg', 'rect')).attr('width', 2).meta;
+      const vDom = node('svg', 'rect', aMeta, []);
       const aDom = render(vDom);
       expect(aDom.getAttribute('width')).toEqual('2');
       // JSDOM won't correctly update `width.baseVal.valueInSpecifiedUnits`
     });
 
     it('with classList attribute', () => {
-      const vAttrs = attr('html', 'div').elem('classList', ['a', 'b']);
+      const vAttrs = Meta.build(attr('html', 'div')).attr('classList', ['a', 'b']).meta;
       const vDom = node('html', 'div', vAttrs, []);
       const aDom = render(vDom);
       expect(Array.from(aDom.classList)).toEqual(['a', 'b']);
     });
 
     it('with className attribute', () => {
-      const vAttrs = attr('html', 'div').elem('className', 'helloworld');
+      const vAttrs = Meta.build(attr('html', 'div')).attr('className', 'helloworld').meta;
       const vDom = node('html', 'div', vAttrs, []);
       const aDom = render(vDom);
       expect(aDom.className).toEqual('helloworld');
@@ -70,25 +72,25 @@ describe('Element namespace and fragment handling', () => {
       [false, false],
       ['' as const, false],
     ])('with disabled attribute %s=%s', (a, b) => {
-      const vAttrs = attr('html', 'input').elem('disabled', a);
+      const vAttrs = Meta.build(attr('html', 'input')).attr('disabled', a).meta;
       const vDom = node('html', 'input', vAttrs, []);
       const aDom = render(vDom);
       expect(aDom.disabled).toEqual(b);
     });
 
     it('with style single property', () => {
-      const vAttrs = attr('html', 'div').style({ color: 'red' });
+      const vAttrs = Meta.build(attr('html', 'div')).style({ color: 'red' }).meta;
       const vDom = node('html', 'div', vAttrs, []);
       const aDom = render(vDom);
       expect(aDom.style.color).toEqual('red');
     });
 
     it('with style multiple properties', () => {
-      const vAttrs = attr('html', 'div').style({
+      const vAttrs = Meta.build(attr('html', 'div')).style({
         backgroundColor: 'blue',
         fontSize: '16px',
         display: 'block'
-      });
+      }).meta;
       const vDom = node('html', 'div', vAttrs, []);
       const aDom = render(vDom);
       expect(aDom.style.backgroundColor).toEqual('blue');
@@ -97,9 +99,10 @@ describe('Element namespace and fragment handling', () => {
     });
 
     it('with style and elem combined', () => {
-      const vAttrs = attr('html', 'div')
+      const vAttrs = Meta.build(attr('html', 'div'))
         .style({ color: 'red' })
-        .elem('id', 'test');
+        .attr('id', 'test')
+        .meta;
       const vDom = node('html', 'div', vAttrs, []);
       const aDom = render(vDom);
       expect(aDom.style.color).toEqual('red');
@@ -107,16 +110,17 @@ describe('Element namespace and fragment handling', () => {
     });
 
     it('with data single attribute', () => {
-      const vAttrs = attr('html', 'div').data('testKey', 'testValue');
+      const vAttrs = Meta.build(attr('html', 'div')).data('testKey', 'testValue').meta;
       const vDom = node('html', 'div', vAttrs, []);
       const aDom = render(vDom);
       expect(aDom.dataset.testKey).toEqual('testValue');
     });
 
     it('with data multiple attributes', () => {
-      const vAttrs = attr('html', 'div')
+      const vAttrs = Meta.build(attr('html', 'div'))
         .data('foo', 'bar')
-        .data('baz', 'qux');
+        .data('baz', 'qux')
+        .meta;
       const vDom = node('html', 'div', vAttrs, []);
       const aDom = render(vDom);
       expect(aDom.dataset.foo).toEqual('bar');
@@ -166,8 +170,9 @@ describe('Element namespace and fragment handling', () => {
     it('insert with attributes and nested children', () => {
       const existingDiv = document.createElement('div');
       existingDiv.id = 'existing';
+      const insertMeta = Meta.build(attr()).data('test', 'value').meta;
       const vDom = node('html', 'div', undefined, [
-        insert(existingDiv, attr().data('test', 'value'), [
+        insert(existingDiv, insertMeta, [
           node('html', 'span', undefined, ['inner content']),
         ]),
       ]);
@@ -193,24 +198,24 @@ describe('Element namespace and fragment handling', () => {
     });
 
     it('basic attribute update (id)', () => {
-      const vAttrA = attr('html', 'div').elem('id', 'a');
+      const vAttrA = Meta.build(attr('html', 'div')).attr('id', 'a').meta;
       const vDomA = node('html', 'div', vAttrA, []);
       const domA = render(vDomA);
       expect(Array.from(domA.id)).toEqual(['a']);
 
-      const vAttrB = attr('html', 'div').elem('id', 'b');
+      const vAttrB = Meta.build(attr('html', 'div')).attr('id', 'b').meta;
       const vDomB = node('html', 'div', vAttrB, []);
       update(domA, vDomB);
       expect(Array.from(domA.id)).toEqual(['b']);
     });
 
     it('update classList attribute', () => {
-      const vAttrA = attr('html', 'div').elem('classList', ['a', 'b']);
+      const vAttrA = Meta.build(attr('html', 'div')).attr('classList', ['a', 'b']).meta;
       const vDomA = node('html', 'div', vAttrA, []);
       const domA = render(vDomA);
       expect(Array.from(domA.classList)).toEqual(['a', 'b']);
 
-      const vAttrB = attr('html', 'div').elem('classList', ['b', 'c']);
+      const vAttrB = Meta.build(attr('html', 'div')).attr('classList', ['b', 'c']).meta;
       const vDomB = node('html', 'div', vAttrB, []);
       const domB = update(domA, vDomB);
       expect(domB).toEqual(undefined);
@@ -219,13 +224,13 @@ describe('Element namespace and fragment handling', () => {
     });
 
     it('update input value attribute - no unnecessary setAttribute when value unchanged', () => {
-      const vAttrA = attr('html', 'input').elem('value', 100);
+      const vAttrA = Meta.build(attr('html', 'input')).attr('value', 100).meta;
       const vDomA = node('html', 'input', vAttrA, []);
       const domA = render(vDomA);
 
       const setAttributeSpy = vi.spyOn(domA, 'setAttribute');
 
-      const vAttrB = attr('html', 'input').elem('value', 100);
+      const vAttrB = Meta.build(attr('html', 'input')).attr('value', 100).meta;
       const vDomB = node('html', 'input', vAttrB, []);
       const domB = update(domA, vDomB);
       expect(domB).toEqual(undefined);
@@ -234,22 +239,24 @@ describe('Element namespace and fragment handling', () => {
     });
 
     it('update style single property', () => {
-      const vAttrA = attr('html', 'div').style({ color: 'red' });
+      const vAttrA = Meta.build(attr('html', 'div')).style({ color: 'red' }).meta;
       const vDomA = node('html', 'div', vAttrA, []);
       const domA = render(vDomA);
 
-      const vAttrB = attr('html', 'div').style({ color: 'blue' });
+      const vAttrB = Meta.build(attr('html', 'div')).style({ color: 'blue' }).meta;
       const vDomB = node('html', 'div', vAttrB, []);
       update(domA, vDomB);
       expect(domA.style.color).toEqual('blue');
     });
 
     it('update style multiple properties', () => {
-      const vAttrA = attr('html', 'div').style({ color: 'red', fontSize: '12px' });
+      const vAttrA = Meta.build(attr('html', 'div'))
+        .style({ color: 'red', fontSize: '12px' }).meta;
       const vDomA = node('html', 'div', vAttrA, []);
       const domA = render(vDomA);
 
-      const vAttrB = attr('html', 'div').style({ color: 'blue', fontSize: '16px', display: 'block' });
+      const vAttrB = Meta.build(attr('html', 'div'))
+        .style({ color: 'blue', fontSize: '16px', display: 'block' }).meta;
       const vDomB = node('html', 'div', vAttrB, []);
       update(domA, vDomB);
       expect(domA.style.color).toEqual('blue');
@@ -258,11 +265,11 @@ describe('Element namespace and fragment handling', () => {
     });
 
     it.skip('update style remove property', () => {
-      const vAttrA = attr('html', 'div').style({ color: 'red', fontSize: '12px' });
+      const vAttrA = Meta.build(attr('html', 'div')).style({ color: 'red', fontSize: '12px' }).meta;
       const vDomA = node('html', 'div', vAttrA, []);
       const domA = render(vDomA);
 
-      const vAttrB = attr('html', 'div').style({ color: 'red' });
+      const vAttrB = Meta.build(attr('html', 'div')).style({ color: 'red' }).meta;
       const vDomB = node('html', 'div', vAttrB, []);
       update(domA, vDomB);
       expect(domA.style.color).toEqual('red');
@@ -270,33 +277,38 @@ describe('Element namespace and fragment handling', () => {
     });
 
     it('update style - no changes when style unchanged', () => {
-      const vAttrA = attr('html', 'div').style({ color: 'red' });
+      const vAttrA = Meta.build(attr('html', 'div')).style({ color: 'red' }).meta;
       const vDomA = node('html', 'div', vAttrA, []);
       const domA = render(vDomA);
 
-      const vAttrB = attr('html', 'div').style({ color: 'red' });
+      const vAttrB = Meta.build(attr('html', 'div')).style({ color: 'red' }).meta;
       const vDomB = node('html', 'div', vAttrB, []);
       update(domA, vDomB);
       expect(domA.style.color).toEqual('red');
     });
 
     it('update data single attribute', () => {
-      const vAttrA = attr('html', 'div').data('userId', '123');
+      const vAttrA = Meta.build(attr('html', 'div')).data('userId', '123').meta;
       const vDomA = node('html', 'div', vAttrA, []);
       const domA = render(vDomA);
 
-      const vAttrB = attr('html', 'div').data('userId', '456');
+      const vAttrB = Meta.build(attr('html', 'div')).data('userId', '456').meta;
       const vDomB = node('html', 'div', vAttrB, []);
       update(domA, vDomB);
       expect(domA.dataset.userId).toEqual('456');
     });
 
     it('update data multiple attributes', () => {
-      const vAttrA = attr('html', 'div').data('foo', 'bar').data('baz', 'qux');
+      const vAttrA = Meta.build(attr('html', 'div'))
+        .data('foo', 'bar')
+        .data('baz', 'qux').meta;
       const vDomA = node('html', 'div', vAttrA, []);
       const domA = render(vDomA);
 
-      const vAttrB = attr('html', 'div').data('foo', 'updated').data('baz', 'changed').data('new', 'value');
+      const vAttrB = Meta.build(attr('html', 'div'))
+        .data('foo', 'updated')
+        .data('baz', 'changed')
+        .data('new', 'value').meta;
       const vDomB = node('html', 'div', vAttrB, []);
       update(domA, vDomB);
       expect(domA.dataset.foo).toEqual('updated');

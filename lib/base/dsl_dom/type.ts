@@ -8,12 +8,7 @@ export type ElAttributes<O> = {
   readonly events?: EventSpec;
   readonly dataset?: E.Dataset;
   readonly styles?: E.Styles;
-  readonly element: O,
-
-  // TODO add these to a helper module instead of members, keep this as pure data
-  elem<K extends keyof O>(key: K, value: O[K]): ElAttributes<O>;
-  style(styles: E.Styles): ElAttributes<O>;
-  data(key: string, val: string): ElAttributes<O>;
+  readonly element: O;
 };
 
 export type El =
