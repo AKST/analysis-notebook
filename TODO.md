@@ -25,6 +25,7 @@ This is effectly a poor mans issue tracker.
      - Migrate anything using the style attr to use the css helper
      - Turn doc.ul into a normal helper not a template helper
      - Setup tests to preserve render output
+     - Get rid of `doc.quote`
   4. API changes
      - [ ] helper method, `doc.[tag].void` which just takes attribute and returns the element
      - [ ] helper method, `doc.[tag].unit` which has type `(it: E.Item) => E.Node<...>`
