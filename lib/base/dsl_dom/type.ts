@@ -1,5 +1,3 @@
-import * as Dom from '../platform/dom/type.ts';
-
 export type EventSpec = { [eventType: string]: any };
 
 export interface ElFragment {
