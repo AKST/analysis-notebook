@@ -74,6 +74,24 @@ describe('dsl_dom::render', () => {
       expect(Array.from(aDom.classList)).toEqual(['helloworld']);
     });
 
+    it('with className set to undefined', () => {
+      const vAttrs = Meta.build(attr('html', 'div')).attr('className', undefined).meta;
+      const vDom = node('html', 'div', vAttrs, []);
+      const aDom = render(vDom);
+      expect(aDom.className).toEqual('');
+      expect(aDom.getAttribute('class')).toEqual(null);
+      expect(Array.from(aDom.classList)).toEqual([]);
+    });
+
+    it('with className set to string "undefined"', () => {
+      const vAttrs = Meta.build(attr('html', 'div')).attr('className', 'undefined').meta;
+      const vDom = node('html', 'div', vAttrs, []);
+      const aDom = render(vDom);
+      expect(aDom.className).toEqual('undefined');
+      expect(aDom.getAttribute('class')).toEqual('undefined');
+      expect(Array.from(aDom.classList)).toEqual(['undefined']);
+    });
+
     it.each([
       ['disabled' as const, true],
       [true, true],
