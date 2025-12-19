@@ -49,6 +49,16 @@ describe('dsl_dom::render', () => {
       // JSDOM won't correctly update `width.baseVal.valueInSpecifiedUnits`
     });
 
+    it.each([
+      ['string format', '0 0 100 100'],
+      ['tuple format', [0, 0, 100, 100] as any],
+    ])('set viewBox on svg element (%s)', (_label, viewBox) => {
+      const aMeta = Meta.build(attr('svg', 'svg')).attr('viewBox', viewBox).meta;
+      const vDom = node('svg', 'svg', aMeta, []);
+      const aDom = render(vDom) as SVGSVGElement;
+      expect(aDom.getAttribute('viewBox')).toEqual('0 0 100 100');
+    });
+
     it('with classList attribute', () => {
       const vAttrs = Meta.build(attr('html', 'div')).attr('classList', ['a', 'b']).meta;
       const vDom = node('html', 'div', vAttrs, []);
