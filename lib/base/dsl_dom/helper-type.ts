@@ -33,7 +33,15 @@ export type BuilderAbstract<NS, T, Attrs, I> = {
    * `c` is short for `children`
    */
   c: (...elements: ChildOf<I>[]) => HelperNode<NS, T>;
+  from: (elements: ChildOf<I>[]) => HelperNode<NS, T>;
   void: (attr: Attrs) =>  HelperNode<NS, T>;
+  /**
+   * This exist for code like items.map. Why not `.c()`?
+   * Because the second and 3rd array parameters get swept
+   * up as .c(it, index, ls) as 3 seperate children which
+   * is annoying.
+   */
+  unit: (element: ChildOf<I>) => HelperNode<NS, T>;
 
   css: (style: E.Styles) => BuilderAbstract<NS, T, Attrs, I>;
   data: (data: E.Dataset) => BuilderAbstract<NS, T, Attrs, I>;
@@ -48,9 +56,14 @@ export type TextBuilderAbstract<NS, T, Attrs, I> = {
    */
   t: (text: TemplateStringsArray, ...items: E.Item[]) => HelperNode<NS, T>;
   /**
-   * `c` is short for `children`
+   * See docstring for `BuilderAbstract`.
    */
   c: (...elements: ChildOf<I>[]) => HelperNode<NS, T>;
+  from: (elements: ChildOf<I>[]) => HelperNode<NS, T>;
+  /**
+   * See docstring for `BuilderAbstract`.
+   */
+  unit: (element: ChildOf<I>) => HelperNode<NS, T>;
   css: (style: E.Styles) => TextBuilderAbstract<NS, T, Attrs, I>;
   void: (attr: Attrs) =>  HelperNode<NS, T>;
 

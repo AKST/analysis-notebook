@@ -1,17 +1,13 @@
-import { E } from '../type.ts';
 import { expect, describe, it, beforeEach, vi } from 'vitest';
-import { render, update, meta, node, frag, insert } from '../render.js';
 import * as Meta from '../node_meta.js';
+import { render, update, meta, node, frag, insert } from '../render.js';
+import { E } from '../type.ts';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const HTML_NS = 'http://www.w3.org/1999/xhtml';
 const MATH_NS = 'http://www.w3.org/1998/Math/MathML';
 
 describe('dsl_dom::render', () => {
-  beforeEach(() => {
-    document.body.innerHTML = '';
-  });
-
   describe('render', () => {
     it.each([
       [HTML_NS, node('html', 'div', meta(), [])],
