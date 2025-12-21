@@ -25,7 +25,7 @@ This is effectly a poor mans issue tracker.
      - [ ] Turn doc.ul into a normal helper not a template helper
      - [ ] Setup tests to preserve render output
   4. API changes
-     - [ ] helper method, `doc.[tag].void` which just takes attribute and returns the element
+     - [x] helper method, `doc.[tag].void` which just takes attribute and returns the element
      - [ ] helper method, `doc.[tag].unit` which has type `(it: E.Item) => E.Node<...>`
            See `lib/app/sec-unsw/sec-1101/sec-03/tables.js` (193)
      - [ ] helper method, `doc.[tag].from` which has type `(it: Iterable<E.Item>) => E.Node<...>`
@@ -33,7 +33,7 @@ This is effectly a poor mans issue tracker.
            See `lib/app/sec-unsw/sec-1190/common.js`
            See `lib/app/sec-debug/sec-2/index.js`
   5. The hardest part
-    - [ ] Allow supporting events.
+    - [ ] Support events.
         - Alternatively maybe I can add an effect system where certain
           attributes emit directives to perform events and the events
           are performed after render (an example is a directive to

@@ -13,7 +13,10 @@ export interface VoidBuilderAbstract<NS, T, Attrs> {
   css(style: E.Styles): VoidBuilderAbstract<NS, T, Attrs>;
   data(data: E.Dataset): VoidBuilderAbstract<NS, T, Attrs>;
   meta: (attr: E.Meta<Attrs>) => VoidBuilderAbstract<NS, T, Attrs>;
-  attr(attr: Attrs): HelperNode<NS, T>;
+  /**
+   * Creates void element with just attributes.
+   */
+  void(attr: Attrs): HelperNode<NS, T>;
   attrAdd(attr: Attrs): VoidBuilderAbstract<NS, T, Attrs>;
 }
 
@@ -30,6 +33,8 @@ export type BuilderAbstract<NS, T, Attrs, I> = {
    * `c` is short for `children`
    */
   c: (...elements: ChildOf<I>[]) => HelperNode<NS, T>;
+  void: (attr: Attrs) =>  HelperNode<NS, T>;
+
   css: (style: E.Styles) => BuilderAbstract<NS, T, Attrs, I>;
   data: (data: E.Dataset) => BuilderAbstract<NS, T, Attrs, I>;
   meta: (attr: E.Meta<Attrs>) => BuilderAbstract<NS, T, Attrs, I>;
@@ -47,6 +52,8 @@ export type TextBuilderAbstract<NS, T, Attrs, I> = {
    */
   c: (...elements: ChildOf<I>[]) => HelperNode<NS, T>;
   css: (style: E.Styles) => TextBuilderAbstract<NS, T, Attrs, I>;
+  void: (attr: Attrs) =>  HelperNode<NS, T>;
+
   data: (data: E.Dataset) => TextBuilderAbstract<NS, T, Attrs, I>;
   meta: (attr: E.Meta<Attrs>) => TextBuilderAbstract<NS, T, Attrs, I>;
   attr: (attr: Attrs) => TextBuilderAbstract<NS, T, Attrs, I>;
