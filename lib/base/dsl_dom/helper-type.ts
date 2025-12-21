@@ -34,7 +34,7 @@ export type BuilderAbstract<NS, T, Attrs, I> = {
   data: (data: E.Dataset) => BuilderAbstract<NS, T, Attrs, I>;
   meta: (attr: E.Meta<Attrs>) => BuilderAbstract<NS, T, Attrs, I>;
   attr: (attr: Attrs) => BuilderAbstract<NS, T, Attrs, I>;
-  app: (element: ChildOf<I>) => BuilderAbstract<NS, T, Attrs, I>;
+  cAppend: (element: ChildOf<I>) => BuilderAbstract<NS, T, Attrs, I>;
 };
 
 export type TextBuilderAbstract<NS, T, Attrs, I> = {
@@ -50,8 +50,8 @@ export type TextBuilderAbstract<NS, T, Attrs, I> = {
   data: (data: E.Dataset) => TextBuilderAbstract<NS, T, Attrs, I>;
   meta: (attr: E.Meta<Attrs>) => TextBuilderAbstract<NS, T, Attrs, I>;
   attr: (attr: Attrs) => TextBuilderAbstract<NS, T, Attrs, I>;
-  app: (element: ChildOf<I>) => TextBuilderAbstract<NS, T, Attrs, I>;
-  appT: (text: TemplateStringsArray, ...items: E.Item[]) => TextBuilderAbstract<NS, T, Attrs, I>;
+  cAppend: (element: ChildOf<I>) => TextBuilderAbstract<NS, T, Attrs, I>;
+  tAppend: (text: TemplateStringsArray, ...items: E.Item[]) => TextBuilderAbstract<NS, T, Attrs, I>;
 };
 
 /*
