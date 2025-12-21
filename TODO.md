@@ -19,13 +19,11 @@ This is effectly a poor mans issue tracker.
 
 1. dom
   1. [x] Unify `dom_app` and `dom_ui` APIs, currently underway.
-  2. [ ] Post unifying changes
-    - Document the concept of a safe render and update (being able to control less safe tags)
+  2. [x] Post unifying changes
   3. Clean up
-     - Migrate anything using the style attr to use the css helper
-     - Turn doc.ul into a normal helper not a template helper
-     - Setup tests to preserve render output
-     - Get rid of `doc.quote`
+     - [ ] Migrate anything using the style attr to use the css helper
+     - [ ] Turn doc.ul into a normal helper not a template helper
+     - [ ] Setup tests to preserve render output
   4. API changes
      - [ ] helper method, `doc.[tag].void` which just takes attribute and returns the element
      - [ ] helper method, `doc.[tag].unit` which has type `(it: E.Item) => E.Node<...>`
@@ -90,6 +88,13 @@ This is effectly a poor mans issue tracker.
 
 
 ## Small Fish
+
+### Safe Render Function
+
+Add method to the dom rendering DSL library to avoid tags like script,
+or style or anything possibly unsafe being rendered, possibly rename
+render as unsafeRender or render without safety. I want to be able to
+continue to it through out my app but I whatver.
 
 ### Improve App Layout APIs
 
