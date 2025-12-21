@@ -26,7 +26,10 @@ type OverloadBuilderAbstract<NS, T, Attrs, I> =
     : BuilderAbstract<NS, T, Attrs, I>;
 
 export type BuilderAbstract<NS, T, Attrs, I> = {
-  of: (...elements: ChildOf<I>[]) => HelperNode<NS, T>;
+  /**
+   * `c` is short for `children`
+   */
+  c: (...elements: ChildOf<I>[]) => HelperNode<NS, T>;
   css: (style: E.Styles) => BuilderAbstract<NS, T, Attrs, I>;
   data: (data: E.Dataset) => BuilderAbstract<NS, T, Attrs, I>;
   meta: (attr: E.Meta<Attrs>) => BuilderAbstract<NS, T, Attrs, I>;
@@ -35,8 +38,14 @@ export type BuilderAbstract<NS, T, Attrs, I> = {
 };
 
 export type TextBuilderAbstract<NS, T, Attrs, I> = {
+  /**
+   * `t` is short for `text`
+   */
   t: (text: TemplateStringsArray, ...items: E.Item[]) => HelperNode<NS, T>;
-  of: (...elements: ChildOf<I>[]) => HelperNode<NS, T>;
+  /**
+   * `c` is short for `children`
+   */
+  c: (...elements: ChildOf<I>[]) => HelperNode<NS, T>;
   css: (style: E.Styles) => TextBuilderAbstract<NS, T, Attrs, I>;
   data: (data: E.Dataset) => TextBuilderAbstract<NS, T, Attrs, I>;
   meta: (attr: E.Meta<Attrs>) => TextBuilderAbstract<NS, T, Attrs, I>;

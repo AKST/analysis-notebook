@@ -35,9 +35,6 @@ This is effectly a poor mans issue tracker.
            See `lib/app/sec-unsw/sec-1190/common.js`
            See `lib/app/sec-debug/sec-2/index.js`
      - [ ] Rename helper methods
-           - `AttributeContainer` to `ElementMeta`
-           - `E.Attrs` to `E.Meta`
-           - `of` to `c`
            - `app` & `appT` to `cAppend` & `tAppend`
   5. The hardest part
     - [ ] Allow supporting events.
