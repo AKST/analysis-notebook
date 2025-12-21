@@ -256,4 +256,3 @@ If I can't define this, maybe this is a grass is always greener thing.
 - Use Marquee effect in long titles.
 - Loader doesn't consistently appear for loading.
 - Fix tests for components
-- get rid of any duplication in comm-1190/common.js
