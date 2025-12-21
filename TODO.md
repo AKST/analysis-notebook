@@ -170,6 +170,9 @@ benefit from using it. Its worth exploring.
 
 - Rename lib/base/dom_app/helpers/typography to html
 - Rename lib/ui/chrome to lib/ui/{os,chasis,environment,system}
+- DSL_DOM: Helper::void, this name is somewhat inaccurate, as void tags
+  are supposed to be implict self closing tag in html, whereas I've named
+  a method void to construct a node with only attributes.
 
 ### Remove old APIs
 
