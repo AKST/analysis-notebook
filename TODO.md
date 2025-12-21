@@ -21,15 +21,11 @@ This is effectly a poor mans issue tracker.
   1. [x] Unify `dom_app` and `dom_ui` APIs, currently underway.
   2. [x] Post unifying changes
   3. Clean up
+     - [x] Turn doc.ul into a normal helper not a template helper
+     - [x] API changes
      - [ ] Migrate anything using the style attr to use the css helper
-     - [ ] Turn doc.ul into a normal helper not a template helper
      - [ ] Setup tests to preserve render output
-  4. API changes
-     - [x] helper method, `doc.[tag].void`
-     - [x] helper method, `doc.[tag].unit`
-     - [x] helper method, `doc.[tag].from`
-           See `lib/app/sec-unsw/sec-1190/common.js`
-  5. The hardest part
+  4. The hardest part
     - [ ] Support events.
         - Alternatively maybe I can add an effect system where certain
           attributes emit directives to perform events and the events
