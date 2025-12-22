@@ -1,0 +1,603 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`app(unsw::2102::05.3).snapshot > should match snapshots 1`] = `
+"<style id="test-styles"></style><div class="widget-container document" id="test-widget-0" style="grid-column: span 2;"><style id="test-widget-0-styles"></style><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>MP Curve<br><small style="color: #aaaaff">
+        ECON2102, W5, Lecture 2
+      </small></h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li>Chapter 12 of the textbook</li><li><a title="What is Arbitrage?" href="https://en.wikipedia.org/wiki/Arbitrage" target="_blank">Arbitrage</a></li><li><a title="What is the Classical Dichotomy?" href="https://en.wikipedia.org/wiki/Classical_dichotomy" target="_blank">Classical Dichotomy</a></li></ul></div></div></aside></div></div></div><div class="widget-container document" id="test-widget-1" style="grid-column: span 2;"><style id="test-widget-1-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Introduction</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C9 P318)</strong></span></div><p>
+    The <strong>IS Curve</strong> and the <strong>MP Curve</strong> are
+    two halves of the same whole. While the IS Curve stands
+    for <strong>investment</strong> and <strong>saving</strong>, the MP
+    in MP curve stands for <strong>Monetrary Policy</strong>.
+  </p></div></div><div class="widget-container document" id="test-widget-2" style="grid-column: span 2;"><style id="test-widget-2-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>The MP Curve Monetary Policy and interest Rates</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C9 P319)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p>
+      We use the MP Curve to understand the nature in which
+      the central bank is willing and borrow to lend at
+      a specific overnight rate.
+    </p></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>From Nominal to Real Interest Rates</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C9 P321)</strong></span></div><div class="c2 pre--c2"><div class="container pre--container"><p>
+          Here we establish a link between real and nominal
+          inflation based on the <strong>Fisher Equation</strong>.
+          <strong><strong>
+            <u>Nominal Interest</u> is the sum of
+            <u>Real Interest</u> and the
+            <u>rate of inflation</u></strong></strong>.
+          Given that, we arrive at the second equation
+          after rearraning the first equation.
+        </p></div><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>i</mi><mi>t</mi></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>R</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>π</mi><mi>t</mi></msub></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>R</mi><mi>t</mi></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>i</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>π</mi><mi>t</mi></msub></mrow></mtd></mtr></mtable></math><figcaption>Nominal and real interest rate relationship</figcaption></figure></div><p>
+      <strong>Sticky Inflation Assumption</strong> is where we assume that
+      the rate of inflation exhbits <strong>inertia</strong> or <strong>stickiness</strong>,
+      so that it adjusts slowly over time. In the very short run—say within
+      6 months or so—we assume that the rate of infaltion does not respond
+      directly to chagnes in monetary policy. For example we shouldn't see
+      a change in inflation in response to monetrary policy for at least
+      6 months.
+    </p><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h4>Ex Ante and Ex Post Real Interest Rates</h4><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C9 P321)</strong></span></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+          The varation of the fisher equation on the right
+          is important for interpretating the behaviour of
+          investment decisions. Ultimately you're not going
+          know the actual rate of inflation but that won't
+          stop people from forming doing some guess work. Given
+          what's at stack and what can be gained, investors are
+          going to use some kind of expectation, to inform their
+          decisions which is why this variation exists.
+        </p></div><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>i</mi><mi>t</mi></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>R</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msubsup><mi>π</mi><mi>t</mi><mi>e</mi></msubsup></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msubsup><mi>R</mi><mi>t</mi><mtext>exante</mtext></msubsup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mi>i</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msubsup><mi>π</mi><mi>t</mi><mi>e</mi></msubsup></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msubsup><mi>R</mi><mi>t</mi><mtext>expost</mtext></msubsup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mi>i</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>π</mi><mi>t</mi></msub></mrow></mtd></mtr></mtable></math><figcaption>Using expected inflation</figcaption></figure></div><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>Exante</strong>, is the real inflation investors expect to prevail.</li><li><strong>Expost</strong>, is the real inflation investors that actually occured.</li></ul></div></div></div><div class="widget-container canvas2d" id="test-widget-3" style="grid-column: span 1;"></div><div class="widget-container canvas2d" id="test-widget-4" style="grid-column: span 1;"></div><div class="widget-container document" id="test-widget-5" style="grid-column: span 2;"><style id="test-widget-5-styles"></style><div class="container pre--container"><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>The IS-MP Diagram</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C9 P323)</strong></span></div><p>
+      When you combine the IS Curve and the MP Curve
+      you get the <strong>IS-MP Diagram</strong>
+    </p></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>Example: The End of a Housing Bubble</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C9 P324)</strong></span></div><p>
+      In theory the central bank could adjust the MP curve the moment
+      the housing bubble collapsed and there would be no decline in
+      output. In pracise it takes a while to determine the nature and
+      servity of the shock that hit the economy. It takes times for
+      changes in interest rates to affect investment and output.
+    </p></div></div></div><div class="widget-container document" id="test-widget-6" style="grid-column: span 2;"><style id="test-widget-6-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>The Phillips Curve</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C9 P327)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="grid-responsive-row pre--grid-responsive-row" style="
+      --grid-responsive-row-slim-columns: 1fr;
+      --grid-responsive-row-mobile-columns: 1fr;
+      --grid-responsive-row-desktop-columns: auto auto auto;
+      
+    "><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>π</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>≡</mo><mspace width="4px"></mspace><mfrac><mrow><mo>(</mo><msub><mi>P</mi><mrow><mi>t</mi><mo>-</mo><mn>1</mn></mrow></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>P</mi><mi>t</mi></msub><mo>)</mo></mrow><msub><mi>P</mi><mi>t</mi></msub></mfrac></mrow></math><figcaption>Inflation Identity</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>π</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><munder><mrow><msubsup><mi>π</mi><mi>t</mi><mi>e</mi></msubsup></mrow><munder><mo>⏟</mo><mrow style=""><mtext>expected inflation</mtext></mrow></munder></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><mrow><mi>v̄</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>Ẏ</mi><mi>t</mi></msub></mrow></mrow><munder><mo>⏟</mo><mrow style=""><mtext>demand conditions</mtext></mrow></munder></munder></mrow></mrow></math><figcaption>Decomposition into components</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><msubsup><mi>π</mi><mi>t</mi><mi>e</mi></msubsup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msub><mi>π</mi><mrow><mi>t</mi><mo>-</mo><mn>1</mn></mrow></msub></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>π</mi><mi>t</mi></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>π</mi><mrow><mi>t</mi><mo>-</mo><mn>1</mn></mrow></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>v̄</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>Ẏ</mi><mi>t</mi></msub></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mrow><mi>𝛥</mi><mi>π</mi></mrow><mi>t</mi></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>π</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>π</mi><mrow><mi>t</mi><mo>-</mo><mn>1</mn></mrow></msub></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mrow><mi>𝛥</mi><mi>π</mi></mrow><mi>t</mi></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mi>v̄</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>Ẏ</mi><mi>t</mi></msub></mrow></mtd></mtr></mtable></math><figcaption>Inflation dynamics over time</figcaption></figure></div><p>
+      Firms set their prices to the amount to which they expect
+      they'll need to charge (based on their expectation of
+      inflation) so that by the time they sell their goods the
+      amount they receive is still enough to cover their costs.
+      The difference in price can be observed by the <strong>Inflation
+      Identity</strong> below. We can break this down further into subcomponents:
+    </p><ol style="margin-block: 0px;"><li><p>One component is the expectations we just discussed <strong>π<sup>e</sup><sub>t</sub></strong>.</p><ul class="no-item-padding" style="margin-block: 8px;"><li>This is called <strong>expected inflation</strong>.</li><li>
+            This captures information relating to the fact that they
+            may not be able to sell as much this period.
+          </li></ul></li><li><p>
+          Two there is also the demand conditions which impact inflation
+          based on output output fluctucation (<strong>Ỹ<sub>t</sub></strong>), we use the
+          coefficent <strong>ν̄</strong> to control the extent to which this impacts
+          inflation.
+        </p><ul class="no-item-padding" style="margin-block: 8px;"><li>This is called the <strong>demand condition</strong>.</li><li>
+            This is defined to capture the effect slackness in the
+            economy has on actual inflation.
+          </li><li><p>
+              <strong>ν̄</strong> measures how sensitive inflation is to
+              demand conditions. If it's high then price-setting
+              behaviour is more pronounced, when it's lower it takes
+              inflation is less sensitive
+            </p><ul class="no-item-padding" style="margin-block: 8px;"><li>
+                For example if it's low, a larger recession is necessary
+                to reduce inflation.
+              </li></ul></li></ul></li></ol><div class="c2 twoThree pre--c2 pre--two-three"><p>
+        The top portion of the inflation dynamics captures something
+        called <strong>adaptive expceations</strong>, which is when firms
+        expect the rate of inflation in the coming period to equal the
+        the rate of inflation prevailing in the previous period. This
+        eases the rate at which inflation adjusts, reflecting the fact
+        firms tend to adjust their focrecasts of inflation slowly.
+      </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><msubsup><mi>π</mi><mi>t</mi><mi>e</mi></msubsup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msub><mi>π</mi><mrow><mi>t</mi><mo>-</mo><mn>1</mn></mrow></msub></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>π</mi><mi>t</mi></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>π</mi><mrow><mi>t</mi><mo>-</mo><mn>1</mn></mrow></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>v̄</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>Ẏ</mi><mi>t</mi></msub></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mrow><mi>𝛥</mi><mi>π</mi></mrow><mi>t</mi></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>π</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>π</mi><mrow><mi>t</mi><mo>-</mo><mn>1</mn></mrow></msub></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mrow><mi>𝛥</mi><mi>π</mi></mrow><mi>t</mi></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mi>v̄</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>Ẏ</mi><mi>t</mi></msub></mrow></mtd></mtr></mtable></math><figcaption>Inflation dynamics over time</figcaption></figure></div><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: content</p></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>Price Shocks and the Phillips Curve</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C9 P329)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>π</mi><mi>t</mi></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>π</mi><mrow><mi>t</mi><mo>-</mo><mn>1</mn></mrow></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>v̄</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>Ẏ</mi><mi>t</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>ō</mi></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mrow><mi>𝛥</mi><mi>π</mi></mrow><mi>t</mi></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mi>v̄</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>Ẏ</mi><mi>t</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>ō</mi></mrow></mtd></mtr></mtable></math><figcaption>Inflation including shock term</figcaption></figure><p>
+      While most of the time inflation dynamics flow the dynamics
+      already specified, there is one additional determinant. That
+      being shocks. Such as an oil price shock (<em>denoted by
+      <strong>ο̄</strong></em>).
+    </p><ul class="no-item-padding" style="margin-block: 0px;"><li>Most of the time <strong>ο̄</strong> is zero.</li><li>
+        However when a shock occurs, <strong>ο̄</strong> has a positive value
+        if the shock raises inflation temporarily.
+      </li></ul><p>
+      Such shocks have a highly visible impact on prices, often
+      occuring immediately. For example a shock to the price of
+      oil will be immediately reflected in the price of airline
+      tickets, home heating, car fuel, etc. <strong>For producers</strong>,
+      when the costs of their inputs goes up they will pass that
+      cost directly on to consumers as it's often a marginal cost
+      associated with the production of each good.
+    </p></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>Cost-Push and Demand-Pull Inflation</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C9 P329)</strong></span></div><p>
+      Shocks due to sudden changes to inputs of production are
+      generally called <strong>cost-push inflation</strong> given they
+      push up the inflation rate. The term <strong>ν̄</strong><strong>Ỹ<sub>t</sub></strong>
+      is called <strong>demand-pull inflation</strong>, incases in
+      aggregate demand in the economy raise the inflation rate.
+    </p><p>
+      <strong>ο̄</strong> can also increase when union bargain for a
+      particurally large increase in wage, and a sudden large
+      increase in population may have the opposite effect and
+      decrease the wages having the opposite effect on <strong>ο̄</strong>.
+    </p></div></div></div><div class="widget-container document" id="test-widget-7" style="grid-column: span 2;"><style id="test-widget-7-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Using the Short-Run Model</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C9 P332)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p>
+      In order to illustrate the be behaviour of the model,
+      we'll take a look at 2 extreme cases of inflation and
+      deflation in the USA.
+    </p></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>The Volcker Disinflation</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C9 P333)</strong></span></div><p>
+      In 1979 <a title="Who is Paul Volcker?" href="https://en.wikipedia.org/wiki/Paul_Volcker" target="_blank">Paul Volcker</a> was appointed
+      to the US FEDs board of governors, during this period
+      inflation was exceeding 10% and there was no reason to think
+      that would change. This was in part due to oil shocks in the
+      previous periods as well as monetary policy decisions from
+      previous periods. So it was Volckers job to address all this
+      and bring inflation down to reasonable levels.
+    </p><p>
+      Wasting no time, he cranked up the inflation rate and inflation
+      went down along with the level of employment. This went on for
+      some time.
+    </p><p>
+      Within the model this can largely be observed by lifting the
+      MP curve along the IS curve, in which we'll see the the new
+      equalibrium production drop to the point of intersection. This
+      lead to a massive recession in the US.
+    </p></div><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: show Volcker deflation</p><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>The Great Inflation of the 1970s</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C9 P336)</strong></span></div><p>
+      Prior to this in 1960s, this was before the phillips curve
+      was developed, and there were theory that assumed there was
+      a permanent trade-off between unemployment and inflation.
+      It was thought that decreasing inflation could only be done
+      by increasing unemployment. This was even the view of
+      <strong>Rober Solow</strong>.
+    </p><p>
+      At this point in time there was significantly more gaps in
+      the information collected to make monetary decisions. There
+      was a productivity slow down in the sense it was growing
+      slower than people realised at the time. They believed the
+      economy was going into recession and that <strong>Ỹ<sub>t</sub></strong>
+      was negative when infact it was at zero. Because of this
+      they lowered interest rates and then this led to higher
+      inflation.
+    </p></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>The Short-Run Model in a Nutshell</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C9 P336)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right left"><mtd columnalign="right"><mtext>MP curve</mtext></mtd><mtd columnalign="left"><mrow><mi>↑iₜ</mi><mspace width="4px"></mspace><mo>⇒</mo><mspace width="4px"></mspace><mi>↑Rₜ</mi></mrow></mtd></mtr><mtr columnalign="right left"><mtd columnalign="right"><mtext>IS curve</mtext></mtd><mtd columnalign="left"><mrow><mi>↑Rₜ</mi><mspace width="4px"></mspace><mo>⇒</mo><mspace width="4px"></mspace><mi>↓Ẏₜ</mi></mrow></mtd></mtr><mtr columnalign="right left"><mtd columnalign="right"><mtext>Phillips curve</mtext></mtd><mtd columnalign="left"><mrow><mi>↓Ẏₜ</mi><mspace width="4px"></mspace><mo>⇒</mo><mspace width="4px"></mspace><mi>↓Δπₜ</mi></mrow></mtd></mtr></mtable></math><figcaption>relationships implied by MP, IS, and Phillips curves</figcaption></figure></div></div></div><div class="widget-container document" id="test-widget-8" style="grid-column: span 2;"><style id="test-widget-8-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Microfoundations: Understanding Sticky Inflation</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C9 P338)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p>Firstly...</p><ul style="margin-block: 0px;"><li>
+        <strong>sticky inflation</strong> is an essential assumption
+        underlying the short-run model.
+      </li><li>
+        The <strong>MP Curve</strong> has the <u>sticky inflation</u> assumption
+        builtin, where we assume that changes in nominal interest
+        lead to changes in the real interest rate.
+      </li><li>
+        The <u>sticky inflation</u> assumption is also central
+        to the forumation of the <strong>Philips Curve</strong>.
+      </li></ul><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+          The <strong>Classical Dichotomy</strong> states that <u>the real
+          side of the economy is determined solely by real forces</u>.
+        </p><p>
+          In order for monetary policy to affect real variables, it must be
+          the case that the <strong>fails to hold</strong>. At least so in the
+          short-run.
+        </p><p>
+          Examining this failure is one of the crucial
+          requirements of a good short-run model.
+        </p></div><aside class="infobox"><h3 class="infobox-name">💡 Question...</h3><div class="infobox-body"><div class="container"><p>
+          The intuition underlying the classical dichotomy is
+          quite powerful: <em>if the Federal Reserve decides
+          to double the money supply, then all prices can double and
+          nothing real needs to change</em>. This holds up in the long
+          run, <em>but why isn't it the case it applies in the short
+          terms</em>?
+        </p></div></div></aside></div></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>The Classical Dichotomy in the Short Run</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C9 P338)</strong></span></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+          For the classical dichotomy to hold at all points in
+          time, <em>all prices in the economy, including
+          nominal wages <strong>must</strong> ajudst in the same
+          proportion immediattely</em>. This of course will not
+          happen, at least not in reality (such a feat would
+          require no <a title="Information Asymmetry" href="https://en.wikipedia.org/wiki/Information_asymmetry" target="_blank">information asymmetry
+          or imperfect information</a>).
+        </p><p>
+          Additionally there's a level of <a title="I don't Want to think about it now: Decision Theory with Colsty Computation" href="https://arxiv.org/pdf/1106.2657" target="_blank">Costly
+          computation</a>, which is a game theory concept relating to the cost
+          of making a decision.
+        </p><details><summary>Menu prices, and small business realities</summary><br><p>
+            Just think about any number of businesses and why their prices
+            have remained as is for whatever timeframe. Larger scale
+            businesses may have a means to dynamically adjust menus but
+            10 small business owners in the row of shops down the road
+            likely do not.
+          </p></details></div><aside class="infobox"><h3 class="infobox-name">💡 An Example</h3><div class="infobox-body"><div class="container"><p>
+          When you're running a store, monetary policy
+          likely isn't top of mind. You've got inventory
+          sell, staff to run around and customers to up
+          sell. There's just a lot going on. Additionally
+          it's not like you got a telepathic link into the
+          FED telling you need you pull back spending as
+          an inflation shock is about to hit.
+        </p></div></div></aside></div><h4>Communicating Monetary Policy</h4><p>
+      Even with monetary policy itself, changes are more subtle
+      and announcments are often incremental changes to the short
+      term nominal interest rate. In the FED wanted to double the
+      money supply over a certain period it probably explictly
+      outline that if it meant people would behave erraditically.
+    </p><h4>Contracts setting prices</h4><p>
+      In addition to imperfect information and costly
+      computation, a third reason for the failure of the
+      classical dichotomy in the short run is the <u>many
+      <strong>contracts set prices and wages in nominal</strong>
+      rather than real terms</u>.
+    </p><h4>Bargaining costs</h4><p>
+      A 4th reason is the cost associated with negotiating
+      over prices and wages. For wages this was more relevant
+      in the paste with higher concerntation of unions. But
+      also negotiating contracts, even for other inputs.
+    </p><h4>Social Norms</h4><p>
+      Another reason is Social norms and
+      <a title="Money Illusion" href="https://en.wikipedia.org/wiki/Money_illusion" target="_blank">Money Illusion</a> which have
+      to do with a sense of fairness how people tend to focus
+      on a nominal price over things like real magnitudes.
+      People have strong feelings over about whether or not
+      nominal wage can or should decline (even if in real terms
+      it was the same thing).
+    </p></div></div></div><div class="widget-container document" id="test-widget-9" style="grid-column: span 2;"><style id="test-widget-9-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Microfoundations: How Central Banks Control Nominal Interest Rates</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C9 P342)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><blockquote>
+      The <strong>nominal interest rate</strong> is the
+      <strong>opportunity cost</strong> of holding money.
+    </blockquote><div class="c2 twoThree pre--c2 pre--two-three"><p>
+        How does the bank set the nominal interest rate? Well the central
+        bank <em><u>sets it by supplying whatever money is
+        demanded at that interest rate</u></em>. Given <u>the nominal
+        interest rate is the opportunity cost of holding money</u> the
+        rate reflects <u>the amount you <em>give up by
+        <strong>holding money</strong></em> instead of <em>keeping it in a
+        <strong>savings account</strong></em></u>.
+      </p><aside class="infobox"><h3 class="infobox-name">💡 Definitions</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>M<sup>S</sup></strong>: Money Supply</li><li><strong>M<sup>d</sup></strong>: Money Demand</li><li><strong>i<sup>*</sup></strong>: Nominal Interest Rate</li></ul></div></div></aside></div><blockquote>
+      The demand for money is a decreasing function of the nominal
+      interest rate.
+    </blockquote><h4>Money Supply &amp; Demand Curve</h4><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+          Given Central bank supplies money at <strong>M<sup>S</sup></strong> and demand
+          for money exists at <strong>M<sup>d</sup></strong>, from here it doesn't take
+          much imagination to visualise a Supply &amp; Demand Diagram with
+          one curve overlaping the other. Eventually the question crosses
+          your mind what can we infer from the equilibrium; where <strong>M<sup>d</sup></strong>
+          = <strong>M<sup>S</sup></strong>?
+        </p><p>
+          Firstly, it's worth noting that the supply diagram here is a
+          vertical line, because ultimately it is the central bank who
+          decides that price. However the demand itself isn't too
+          dissimilar from a typical demand curve in terms of shape.
+        </p><p>Now finally, what is the equalibrium?</p><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>i<sup>*</sup></strong>: On the vertical axis we have <strong>Nominal Interest</strong>.</li><li><strong>M<sup>*</sup></strong>: On the horizontal axis we have the <strong>Money Supply</strong>.</li></ul></div><aside class="infobox"><h3 class="infobox-name">💡 Nominal Interest in the short run</h3><div class="infobox-body"><div class="container"><p>
+          With <a title="Nominal Rigidity" href="https://en.wikipedia.org/wiki/Nominal_rigidity" target="_blank">stick Inflation</a> we
+          can't count on tomorrows price levels immediately responding to
+          changes in the money supply. Well the bank does this through
+          changes to the <a title="Velocity Of Money" href="https://en.wikipedia.org/wiki/Velocity_of_money" target="_blank">velocity of money</a>.
+          But wait you say, doesn't the <a title="Quantity Theory Of Money" href="https://en.wikipedia.org/wiki/Quantity_theory_of_money" target="_blank">quantity
+          theory of money</a> says that velocity is constant... in the long run?
+          Yes, but as you said "the long run". In the short run we turn
+          this on its head. A change in the nominal interest rate will
+          drive a change in the velocity of money, allowing the money
+          markets to clear.
+        </p></div></div></aside></div></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>Changing the Interest Rate</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C9 P343)</strong></span></div><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>How does the bank increase the interest rate</strong>? It decreases the money supply</li><li><strong>How does the bank decrease the interest rate</strong>? It increases the money supply</li></ul></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>Why iₜ Instead of Mₜ?</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C9 P343)</strong></span></div><p>
+      Before the 1970s (early 1980) the focus of banks was on money supply but
+      beginning in the 1980s there was a shift to focusing on interest rates.
+      There are other things that shift the demand money, such as:
+    </p><ul class="no-item-padding" style="margin-block: 0px;"><li>The change in the price level in the economy in relation to real output.</li><li>Advances in finanical technology such as ATMs.</li></ul><h4>Some additional definitions</h4><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>Monetary Expansion</strong>: a loosening of monetary policy.</li><li><strong>Monetary Contraction</strong>: a tighening of monetary policy.</li></ul></div></div></div><div class="widget-container document" id="test-widget-10" style="grid-column: span 2;"><style id="test-widget-10-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Inside the Federal Reserve</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C9 P346)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h3>Conventional Monetary Policy</h3><p>The US FED has 3 conventional tools for exercising monetary policy:</p><ol style="margin-block: 0px;"><li><p>
+          <strong>Reserve Requirements</strong>: this is where banks are
+          required to hold a certian fraction of their deposits in
+          special accounts called "<strong>in reserve</strong>",
+        </p><ul class="no-item-padding" style="margin-block: 0px;"><li>Historically these accounts paid no interest</li></ul></li><li><p>
+          The second instrument, is infact the ability to update
+          the fraction at which the first is enforced.
+        </p><ul class="no-item-padding" style="margin-block: 0px;"><li>This is seldom changed.</li></ul></li><li><p>
+          <strong>Discount Rate</strong>: this is the interest rate charged
+          by the Federal Reseve itself on loans that it makes to
+          commerical abnks and other financial institutions.
+        </p><ul class="no-item-padding" style="margin-block: 0px;"><li>
+            When a bank finds itself short of reserves and unable
+            to borrow sufficient amounts in financial markets may
+            turn to the dicount window of the Fed. This is where
+            the lender of last resort comes from.
+          </li></ul></li></ol></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><details><summary>How does the RBA do all this?</summary><br><div class="container pre--container"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: provide more accurate descriptions</p><p>
+        The RBA controls the supply money of by setting
+        the othernight cashrate. It lowers it if it wants
+        to increase the supply of money and it increases
+        it if wants to decrease the supply.
+      </p></div></details></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>Open- Market Operations: How the Fed Controls the Money Supply</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C9 P347)</strong></span></div><p>
+      This is the the main way in which the US central banks (and
+      central banks generally influence their money supply). This
+      is stuff like the central bank sell bonds, in order to attract
+      buyer they central bank may have to increase the inctest rate
+      so that someone is willing to hold those bonds.
+    </p><p>
+      If the bank wants to lower interest rates, it'll offer to
+      buy back government bonds in excahnge for a credit in the
+      buyers reserve account.
+    </p><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: write something about face values of bonds</p></div></div></div><hr style="width: 100%; border-color: transparent;">"
+`;

@@ -1,0 +1,549 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`app(unsw::2206::05.2).snapshot > should match snapshots 1`] = `
+"<style id="test-styles"></style><div class="widget-container document" id="test-widget-0" style="grid-column: span 2;"><style id="test-widget-0-styles"></style><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>
+        Introduction to Heteroskedasticity<br>
+        <small style="color: #aaaaff">ECON2206, W5, Lecture 2</small>
+      </h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><p>Chapter 8 of the text book</p><ul class="no-item-padding" style="margin-block: 0px;"><li><a href="https://en.wikipedia.org/wiki/Breusch–Pagan_test" target="_blank">Breush Pagan Test</a></li></ul></div></div></aside></div><h2>Introduction</h2><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p>Reminder this is how we define homoskedasticity and variance under MLR 5</p><div class="c2 pre--c2"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>u</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>...</mo><msub><mi>x</mi><mi>K</mi></msub></mrow></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msup><mi>σ</mi><mn>2</mn></msup></mrow></math><figcaption>Homoskedasticity</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mover><mtext>Var</mtext><mo>^</mo></mover><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><msup><mi>σ̂</mi><mn>2</mn></msup><mrow><munderover><mo>Σ</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msup><mrow><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>x̄</mi><mo>)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mrow></math><figcaption>Unbiased estimator under MLR.5</figcaption></figure></div></div></div></div><div class="widget-container document" id="test-widget-1" style="grid-column: span 2;"><style id="test-widget-1-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Consequences of Heteroskedasticity for OLS</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C8 P262)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 pre--c2"><div class="container pre--container"><h4>✅ Okay with Heteroskedasticity</h4><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>SSR/n</strong> consistently estimates <strong>σ<sub>u</sub><sup>2</sup></strong></li><li><strong>SST/n</strong> consistently estimates <strong>σ<sub>y</sub><sup>2</sup></strong></li><li>
+            <strong>OLS estimators</strong> will continue to be consistent and unbias
+            provided the sample size is sufficiently large.
+          </li><li>
+            <strong>R²</strong> and <strong>R̄²</strong> will continue to be consistent estimators of
+            the population R².
+          </li></ul></div><div class="container pre--container"><h4>❌ Not okay with Heteroskedasticity</h4><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>Var(β̂ⱼ)</strong>, due to biased estimator.</li><li><strong>SE(β̂ⱼ)</strong>, because we can't estimate <strong>Var(β̂ⱼ)</strong></li><li>Therefore we can't perform<ul style="--fontsize-body-m: 10px" class="no-item-padding"><li><strong><strong>T tests</strong></strong><ul class="no-item-padding" style="margin-block: 0px;"><li>Our t distributions will not be t distributions.</li></ul></li><li><strong><strong>F tests</strong></strong><ul class="no-item-padding" style="margin-block: 0px;"><li>Our F distributions will not be F distributions.</li></ul></li><li><strong><strong>LM statistic</strong></strong><ul class="no-item-padding" style="margin-block: 0px;"><li>We won't have asympototic χ² distribution.</li></ul></li></ul></li></ul></div></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+          The <strong>Gauss-Markov Theorem</strong> says that OLS is
+          the best linear unbiased estimators, relies on the
+          homoskedasticity assumption. If <strong>Var(x|u)</strong>
+          is not constant then OLS is no longer <strong>BLUE</strong>.
+          Nor is OLS <strong>asymptotically efficient</strong>.
+        </p></div><dl><dt>BLUE</dt><dd>Best Linear unbiased Estimators</dd></dl></div><p>
+      With large enough sample sizes it might not be too
+      important to obtain an efficient estimator. That
+      said not all is lost, there are methods to allow us
+      to continue performing asymptotically valid tests.
+    </p></div></div></div><div class="widget-container document" id="test-widget-2" style="grid-column: span 2;"><style id="test-widget-2-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Heteroskedasticity-Robust Inference after OLS Estimation</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C8 P263)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><blockquote>
+      Run the following in STATA for robust standard errors <strong><em>reg wage educ, robost</em></strong>.
+    </blockquote><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+          In the last 2 decades a variety of methods have been developed to
+          allow used use of OLS in the presense of <strong>Heteroskedasticity
+          of unknown form</strong>s.
+
+          We call these methods <strong>Heteroskedasticity-robust</strong> prodecures,
+          and they allow ust ot obtain an estimate of the standard error, which
+          we'll call the
+          <strong><strong>Heteroskedasticity-robust standard error</strong></strong> (HRSE).
+          Effectively what this means is we can continue to use our previous
+          methods once we swap out the the standard error for the HRSE. Including:
+        </p><ul class="no-item-padding" style="margin-block: 0px;"><li>F Statitic for the F Test</li><li>t statitic for the t test</li><li>LM statistic for <font color="red">unknown todo</font></li></ul><h4>Deriving Heteroskedastic Robost SE</h4><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>y</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>i</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>u</mi><mi>i</mi></msub></mrow></mrow></mrow></math><figcaption>Example Model</figcaption></figure><p>
+          The definition of the Heteroskedastic Robost places
+          emphasis on the use of residuals, so its worth taking
+          note to the <strong>i</strong> subscript in the model above.
+          Also note this definition of variance:
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>u</mi><mi>i</mi></msub><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><msub><mi>x</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msubsup><mi>σ</mi><mi>i</mi><mn>2</mn></msubsup></mrow></math><figcaption>Variance Under Heteroskedasticity</figcaption></figure><p>
+          Note the <strong>i</strong> subscript on <strong>σ²</strong>, also note the
+          definition of the estimator does not change.
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow><mrow><mrow><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>x̄</mi><mo>)</mo></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>u</mi><mi>i</mi></msub></mrow></mrow></mrow><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow><msup><mrow><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>x̄</mi><mo>)</mo></mrow><mn>2</mn></msup></mrow></mrow></mfrac></mrow></mrow></math><figcaption>Estimate Beta 1</figcaption></figure><p>
+          What will have to change is our estimation of variance of
+          β̂₁ (for reasons explained on the right). We will swap σ² for
+          σᵢ².
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mover><mtext>Var</mtext><mo>^</mo></mover><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow><mrow><msup><mrow><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>x̄</mi><mo>)</mo></mrow><mn>2</mn></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>û</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mrow></mrow><msubsup><mtext>SST</mtext><mi>x</mi><mn>2</mn></msubsup></mfrac></mrow></math><figcaption>SLR: Estimate Beta 1 Variance</figcaption></figure><p>
+          And for multiple regresssion we swap out SST<sub>x</sub>
+          for SSR<sub>j</sub>.
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mover><mtext>Var</mtext><mo>^</mo></mover><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow><mrow><msubsup><mi>r̂</mi><mi>ij</mi><mn>2</mn></msubsup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>û</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mrow></mrow><msubsup><mtext>SSR</mtext><mi>i</mi><mn>2</mn></msubsup></mfrac></mrow></math><figcaption>MLR: Estimate Beta 1 Variance</figcaption></figure><p>
+          The details of all this are expanded upon within the
+          <a href="https://www.jstor.org/stable/1912934" target="_blank">1980 paper by white</a>. But from
+          here we can start constructing 95 CI's and T statistics,
+          because now we have a <strong><strong>Heteroskedastic
+          Robust Standard Error</strong></strong>.
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>SE</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msqrt><mfrac><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow><mrow><msubsup><mi>r̂</mi><mi>ij</mi><mn>2</mn></msubsup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>û</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mrow></mrow><msubsup><mtext>SSR</mtext><mi>i</mi><mn>2</mn></msubsup></mfrac></msqrt></mrow></math><figcaption>Heteroskedastic Robust Standard Error</figcaption></figure><h4>Why ever use the Normal Standard Error?</h4><p>
+          With the Heteroskadacsticity Robust Standard Error, you
+          might ask your self why bother with the default standard
+          error. The reason why is because it's not justifiable
+          until the sample size is sufficiently large.
+        </p><p>
+          This is evident when you look at a t test for a smaller
+          sample size, the smaller the sample the larger the
+          difference in distributions of a robust t distribution
+          verse a normal t distribution.
+        </p><h4>Chow Test</h4><p>
+          Given the Sum of Squared residuals form of the F
+          statistic is not valid undrer heteroskedascity
+          care must be taken in computing a Chow test.
+        </p><p>
+          What we do instead is include a dummy variable
+          to distinguish between each group along with
+          interactions betweeen that dummy variable and all
+          other explanatory variable.
+        </p><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>Heteroskedasticity-Robust LM Tests</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C8 P267)</strong></span></div><p>In Summary:</p><ol style="margin-block: 0px;"><li>Obtain the residuals ũ from the restricted model.</li><li>
+            Regress each of the independent varibales excluded under
+            the null on all of the included indendent variables, this
+            leads to a set of residuals (r̃₁, r̃₂, ..., r̃<sub>q</sub>).
+          </li><li>Find the product of each r̃ⱼ and ũ (for all obsevations)</li><li>
+            Run the regression of 1 on r̃₁ũ, r̃₂ũ ..., r̃<sub>q</sub>ũ
+            without an intercept. The heteroskedasticity-robust LM
+            statistic is <u>(n - SSR₁)</u>, where SSR₁ is just
+            the SSR from the final regression. Under H₀, LM is
+            distributed approximately as χ<sub>q</sub>².
+          </li></ol><p>
+          Once the robust LM statistic is obtained, the rejection
+          rule and computation of p-values are the same as for the
+          usual LM statistic
+        </p></div><div class="container pre--container"><dl><dt>Heteroskedasticity-robust SE</dt><dd>
+            A form of the standard error which produces robust standard errors in
+            the presense of heteroskedasticity.
+          </dd></dl><aside class="infobox"><h3 class="infobox-name">💡 Reading List</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li><a href="https://www.jstor.org/stable/1912934" target="_blank">White 1980</a></li><li><a href="https://projecteuclid.org/proceedings/berkeley-symposium-on-mathematical-statistics-and-probability/proceedings-of-the-fifth-berkeley-symposium-on-mathematical-statistics-and/Chapter/The-behavior-of-maximum-likelihood-estimates-under-nonstandard-conditions/bsmsp/1200512988" target="_blank">Huber 1967</a></li><li><a href="https://projecteuclid.org/proceedings/berkeley-symposium-on-mathematical-statistics-and-probability/Proceedings-of-the-Fifth-Berkeley-Symposium-on-Mathematical-Statistics-and/Chapter/Limit-theorems-for-regressions-with-unequal-and-dependent-errors/bsmsp/1200512981" target="_blank">Eicker 1967</a></li><li><a href="https://www.sciencedirect.com/science/article/abs/pii/0304407685901587" target="_blank">MacKinnon and White 1985</a></li></ul></div></div></aside><aside class="infobox"><h3 class="infobox-name">💡 Convergence</h3><div class="infobox-body"><div class="container"><p>Read later</p><ul class="no-item-padding" style="margin-block: 0px;"><li><a href="https://en.wikipedia.org/wiki/Convergence_tests" target="_blank">Convergence Test</a></li><li><a href="https://en.wikipedia.org/wiki/Rate_of_convergence" target="_blank">Rate of Convergence</a></li></ul></div></div></aside><h4>Problems with earlier Std Variance</h4><div class="container" style="--fontsize-body-m: 10px"><figure class="pre--horizontal-shadow"><math style="font-size: 11px" display="block"><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow><mrow><msup><mrow><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>x̄</mi><mo>)</mo></mrow><mn>2</mn></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>σ</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mrow></mrow><msubsup><mtext>SST</mtext><mi>x</mi><mn>2</mn></msubsup></mfrac></mrow></math><figcaption>Invalid Estimate Beta 1 Variance</figcaption></figure><p>
+            The problem with this formular arise from
+            the nature of SST, which is defined as:
+          </p><figure class="pre--horizontal-shadow"><math style="font-size: 11px" display="block"><mrow><msubsup><mtext>SST</mtext><mi>x</mi><mn>2</mn></msubsup><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow><msup><mrow><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>x̄</mi><mo>)</mo></mrow><mn>2</mn></msup></mrow></mrow></mrow></math><figcaption>Sum of Squares</figcaption></figure><p>
+            The reason it's a problem is it assumes uniform variance
+            across all values of x, which is no longer the the case
+            under hetro skadasticity.
+          </p></div><div class="container" style="--fontsize-body-m: 10px"><h4>Convergence Property of Var(β̂₁)</h4><figure class="pre--horizontal-shadow"><math style="font-size: 11px" display="block"><mrow><mrow><munderover><mi>lim</mi><mrow><mi>n</mi><mo>→</mo><mo>∞</mo></mrow><mrow></mrow></munderover><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><mrow><mtext>E</mtext><mrow><mo>[</mo><mrow><msup><mrow><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>μ</mi><mi>x</mi></msub><mo>)</mo></mrow><mn>2</mn></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>u</mi><mi>i</mi><mn>2</mn></msubsup></mrow><mo>]</mo></mrow></mrow><msup><mrow><mo>(</mo><msubsup><mi>σ</mi><mi>x</mi><mn>2</mn></msubsup><mo>)</mo></mrow><mn>2</mn></msup></mfrac></mrow></math><figcaption>Convergence as n approaches infinity</figcaption></figure></div><div class="container" style="--fontsize-body-m: 10px"><h4>What is r̂ᵢⱼ?</h4><figure class="pre--horizontal-shadow"><math style="font-size: 11px" display="block"><mrow><mrow><msub><mi>r̂</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msub><mi>u</mi><mi>i</mi></msub></mrow><mspace width="8px"></mspace><mtext> from regressing </mtext><mspace width="8px"></mspace><msub><mi>x</mi><mi>j</mi></msub></mrow></math><figcaption>Expression for residuals</figcaption></figure></div><aside class="infobox"><h3 class="infobox-name">💡 HRSE DF correction</h3><div class="infobox-body"><div class="container"><p>
+            Sometimes before applying the square root in
+            the HRSE the estimated variance is multiplied by
+            the following:
+          </p><math display="block"><mfrac><mi>n</mi><mrow><mi>n</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>k</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mn>1</mn></mrow></mfrac></math></div></div></aside><aside class="infobox"><h3 class="infobox-name">💡 SSRⱼ</h3><div class="infobox-body"><div class="container"><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>SSR</mi><mi>j</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>SST</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msubsup><mi>R</mi><mi>j</mi><mn>2</mn></msubsup><mo>)</mo></mrow></mrow></mrow></math><figcaption>Defining SSR<sub>j</sub></figcaption></figure><p>
+            SSTⱼ is just sum of squares of xⱼ and Rⱼ²
+            is the R² from regressing xⱼ on all other
+            explainatory variables.
+          </p></div></div></aside><aside class="infobox"><h3 class="infobox-name">💡 MultiColinearity in HRSE</h3><div class="infobox-body"><div class="container"><p>
+            It's notable that MultiColinearity can cause
+            the standard errors to explode under when
+            computed with HRSE's.
+          </p></div></div></aside><dl><dt>Wald statistic</dt><dd>
+            Heteroskedastic robust F statistic.
+          </dd><dt>Heteroskedastic-Robust LM Test</dt><dd>
+            A test which can test multiple exclusion restrictions
+            in the presense of heteroskedasticity.
+          </dd></dl></div></div></div></div></div><div class="widget-container document" id="test-widget-3" style="grid-column: span 2;"><style id="test-widget-3-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Testing for Heteroskedasticity</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C8 P269)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><blockquote>
+          This section describes tests for detecting Heteroskedasticity.
+        </blockquote><p>
+          There's a need to explictly test and confirm the presense
+          of heteroskedasticity. When you you report standard errors, when
+          you report robust standard errors, there'll be an expectation to
+          comment on whether heteroskedasticity is present or any analysis
+          was undertaken. <strong>Secondly, OLS estimators are no longer
+          the BLUE estimators</strong>. However when the nature of heteroskadascity
+          is known it's possible to obtain better estimators than the ones
+          provided by OLS.
+        </p></div><div class="container pre--container"><aside class="infobox"><h3 class="infobox-name">💡 Exam note</h3><div class="infobox-body"><div class="container"><p>It is expected to be perform this from memory in the exam.</p></div></div></aside><aside class="infobox"><h3 class="infobox-name">💡 Distribution of u²/σ²</h3><div class="infobox-body"><div class="container"><p>
+            Apparently when u is normally distributed
+            u²/σ² as a distribution of χ².
+          </p></div></div></aside></div></div><div class="container pre--container"><h4>Assembling a Test</h4><p>
+        Our test for heteroskedasticity starts with the constraint our model
+        needs to hold in order for it to be homoskedastic (MLR 5), as this
+        will be the basis of our null hypothesis. Naturally our alternative
+        hypothesis is that our model exhibts heteroskedaticity, and like with
+        alternative tests we can not accept the alternative
+        hypothesis only reject the null hypothesis.
+      </p><blockquote>We assume all other MLR assumptions to hold</blockquote><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right left"><mtd columnalign="right"><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>u</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mrow><msub><mi>x</mi><mn>1</mn></msub><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><msub><mi>x</mi><mn>2</mn></msub><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mo>⋯</mo><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msup><mi>σ</mi><mn>2</mn></msup></mrow></mtd></mtr><mtr columnalign="right left"><mtd columnalign="right"><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>u</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mrow><msub><mi>x</mi><mn>1</mn></msub><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><msub><mi>x</mi><mn>2</mn></msub><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mo>⋯</mo><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msup><mi>u</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msup><mi>σ</mi><mn>2</mn></msup></mrow></mtd></mtr></mtable></math><figcaption>Two equilivant null hypothesises</figcaption></figure><p>What does this mean in practise?</p><ol class="no-item-padding" style="margin-block: 0px;"><li>
+          Given all other assumptions hold the two above are equilivant, which
+          is more than a fun piece of trivia as we use this constraint to test
+          for the presence of heteroskedacity.
+        </li><li>
+          To test for a violation of the homoskedasticity assumption, we
+          must test whether <strong>u<sup>2</sup></strong> is related to
+          any of the explanatory variables.
+        </li></ol><figure class="pre--horizontal-shadow"><math display="block"><mrow><msup><mi>u</mi><mn>2</mn></msup><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>v</mi></mrow></mrow></math><figcaption>Auxiliary regression model</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msup><mi>û</mi><mn>2</mn></msup><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>error</mi></mrow></mrow></math><figcaption>Estimated auxiliary regression model</figcaption></figure><div class="c2 pre--c2"><p>
+          Number 2 (from the earlier list) can be tested by running a
+          regression on the following and checking if any of the estimator
+          coefficents are something other than 0. More formually:
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right left"><mtd columnalign="right"><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo></mrow></mtd><mtd columnalign="left"><mrow><msub><mi>δ</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msub><mi>δ</mi><mn>2</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msub><mi>δ</mi><mi>k</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow></mtd></mtr></mtable></math><figcaption>Null hypothesis for auxiliary regression</figcaption></figure></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><figure class="pre--horizontal-shadow"><math display="block"><msubsup><mi>R</mi><msup><mi>û</mi><mn>2</mn></msup><mn>2</mn></msubsup></math><figcaption>R Squared from Residual Regression</figcaption></figure><p>
+            Under our null hypothesis we can assume <strong>v</strong> is
+            independent of all the other explanatory variables. We
+            can test these assumptions using either a F or LM
+            statistic for overal signficance of the independent
+            variables in explaning <strong>u<sup>2</sup></strong>.
+          </p></div><aside class="infobox"><h3 class="infobox-name">💡 Koenker (1981)</h3><div class="infobox-body"><div class="container"><p>
+            <a href="https://www.jstor.org/stable/1912528" target="_blank">Koenker (1981)</a> suggests
+            the form shown below for for the lm statistic. Although
+            in the original <a href="https://www.jstor.org/stable/1911963" target="_blank">Breusch and
+            Pagan 1979 paper</a> suggest normally distributing the
+            errors. The former is generally preferred and is more
+            widely applicable.
+          </p></div></div></aside></div><div class="c2 pre--c2"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>LM</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mi>n</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msubsup><mi>R</mi><msup><mi>û</mi><mn>2</mn></msup><mn>2</mn></msubsup></mrow></mrow></math><figcaption>LM-statistic for Breusch-Pagan test</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>F</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><mrow><msubsup><mi>R</mi><msup><mi>û</mi><mn>2</mn></msup><mn>2</mn></msubsup><mspace width="4px"></mspace><mo>÷</mo><mspace width="4px"></mspace><mi>k</mi></mrow><mrow><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msubsup><mi>R</mi><msup><mi>û</mi><mn>2</mn></msup><mn>2</mn></msubsup><mo>)</mo></mrow><mspace width="4px"></mspace><mo>÷</mo><mspace width="4px"></mspace><mrow><mo>(</mo><mi>n</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>k</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mn>1</mn><mo>)</mo></mrow></mrow></mfrac></mrow></math><figcaption>F-statistic for Breusch-Pagan test</figcaption></figure></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+            We can produce either LM or F statistics based on the
+            R squared from regressing our residual estimator model.
+            To produce the LM statistic just times that same
+            R squared by the size of the sample.
+          </p><ul class="no-item-padding" style="margin-block: 0px;"><li>
+              To test the null hypothesis with the F statistic, just
+              keep in mind the F statistic under the null hypothesis
+              should have a F(k, n-k-1) distribution.
+            </li><li>
+              And to test with the LM statistic, we just need to keep
+              in mind that under the null hypothesis LM is distributed
+              asymptotically as <strong>χₖ²</strong>.
+            </li></ul></div><aside class="infobox"><h3 class="infobox-name">💡 Testing specfic Variables</h3><div class="infobox-body"><div class="container"><p>
+            If we want to test a handful of the independent
+            variables instead of each and everyone of the
+            variables from the model, this is doable. We
+            instead compose our Axuiliary regression from
+            those specific variables instead, and repeat
+            the tests (adjusting the degrees of freedom
+            to the number of variables we're testing).
+          </p></div></div></aside></div><p>
+        If the P value is sufficently small we can reject the
+        null hypothesis.
+      </p></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h4>The White Test for Heteroskedasticity</h4><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C8 P271)</strong></span></div><p>
+          The <a href="https://www.jstor.org/stable/1912934" target="_blank">white</a> test, takes a different approach
+          and its based on the fact there is a weaker assumption that
+          can be swapped out for the one used in Breucsh Pagan test.
+          That being <strong>u²</strong> is uncorrelated with all the
+          independent variables (<strong>xⱼ</strong>), their squares
+          (<strong>xⱼ²</strong>) and their cross product (which we'll call
+          our auxillary model).
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr><mtd columnalign="right"><msup><mi>ŷ</mi><mn>2</mn></msup></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>3</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>û</mi></mrow></mtd></mtr><mtr><mtd columnalign="right"><msup><mi>û</mi><mn>2</mn></msup></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>δ</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>3</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>4</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mn>1</mn><mn>2</mn></msubsup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>5</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mn>2</mn><mn>2</mn></msubsup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>6</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mn>3</mn><mn>2</mn></msubsup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>7</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>8</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>3</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>9</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>3</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>error</mi></mrow></mtd></mtr></mtable></math><figcaption>K=3 and its white auxillary model</figcaption></figure><blockquote>Our null hypothesis is all the coefficients are 0.</blockquote><p>
+          Above is only a case when we have 3 independent variables,
+          however this quickly gets out of hand and risks exhausting
+          degrees of freedom. Forunately there is a simpler version
+          of this same Auxiliary Model (which works for any number
+          of random variables), written like so:
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>û</mi><mn>2</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>ŷ</mi></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msup><mi>ŷ</mi><mn>2</mn></msup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>error</mi></mrow></mrow></math><figcaption>White Auxillary Simplified</figcaption></figure><div class="container pre--container"><blockquote>Note above we are using fitted values</blockquote><p>
+            Our Null hypothesis is this, and we can use either a
+            F or LM statitic to test it.
+          </p></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mi>H</mi><mo>:</mo><mspace width="4px"></mspace><msub><mi>δ</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msub><mi>δ</mi><mn>2</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow></math><figcaption>White null hypothesis</figcaption></figure><blockquote>
+          One important note, even when testing for heteroskedascity
+          we must still maintain and uphold MLR assumption 1 through
+          to 4.
+        </blockquote></div><div class="container pre--container"><dl><dt>Auxiliary Model</dt><dd>
+            This is not offical terminology, its just
+            a means to refer to the model we create in
+            addition to the actual model for the sake
+            of carrying out these tests or other
+            objectives. It's effectively a means to
+            an ends and exists for the duration of
+            pursuing that ends (like running a test).
+          </dd></dl><aside class="infobox"><h3 class="infobox-name">💡 White test Summary</h3><div class="infobox-body"><div class="container"><ol class="no-item-padding" style="margin-block: 0px;"><li>Estimate the model by OLS.</li><li>Obtain û and ŷ from the OLS.</li><li>Comptued OLS û² and ŷ².</li><li>Run the Auxillary model.</li><li>Keep the R² as R<sub>û²</sub>².</li><li>Either<ol class="no-item-padding" style="margin-block: 0px;"><li>An F statistic<ul class="no-item-padding" style="margin-block: 0px;"><li>Let df of F<sub>s, n - 3</sub></li></ul></li><li>LM statistic<ul class="no-item-padding" style="margin-block: 0px;"><li>Get P value using χ² dist</li></ul></li></ol></li></ol></div></div></aside></div></div></div></div></div><div class="widget-container document" id="test-widget-4" style="grid-column: span 2;"><style id="test-widget-4-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Weighted Least Squares Estimation</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C8 P273)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+          While using Heteroskedasticity-Robust standard errors
+          help us ignore heteroskedasticity when we understand
+          the functional form and nature of heteroskedasticity
+          within our model. We can get more efficient estimators
+          using <strong>weighted least squares</strong>. Using WLS will
+          also mean new <strong>t</strong> and <strong>F</strong> statistics
+          which have their respective <strong>t/F distribution</strong>.
+        </p><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>The Heteroskedasticity Is Known up to a Multiplicative Constant</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C8 P273)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><msubsup><mi>σ</mi><mi>i</mi><mn>2</mn></msubsup><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>u</mi><mi>i</mi></msub><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><msub><mi>x</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msup><mi>σ</mi><mn>2</mn></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mtext>h</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>)</mo></mrow></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msup><mi>σ</mi><mn>2</mn></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>h</mi><mi>i</mi></msub></mrow></mrow></math><figcaption>Population variance with heteroskedasticity</figcaption></figure><p>
+          When talking about the form of heteroskedasticity we typically
+          expresss it with syntax like <strong>h(x)</strong>, which is some
+          function on the relevant explanatory variable. So if that
+          explanatory variable is income then your variance could be
+          written like <strong>σ² · income</strong>. In practise that means:
+        </p><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>The error is proportional to the level of income</strong>.</li><li><strong>As income increases, the variance increases</strong>.</li><li><strong>The Standard Deviation of û is conditional on income</strong>.</li></ul><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>StdDev</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>u</mi><mi>i</mi></msub><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><msub><mi>x</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mi>σ</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msqrt><msub><mi>x</mi><mi>i</mi></msub></msqrt></mrow></mrow></math><figcaption>Conditional Residual Variance</figcaption></figure><p>
+          We can solve for our a transformed variation of the
+          model which satisifies all the MLR assumptions.
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr><mtd columnalign="right"><mrow><mo>∵</mo><mspace width="8px"></mspace><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>u</mi><mi>i</mi></msub><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><msub><mi>x</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msubsup><mi>u</mi><mi>i</mi><mn>2</mn></msubsup><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><msub><mi>x</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msup><mi>σ</mi><mn>2</mn></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>h</mi><mi>i</mi></msub></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>[</mo><msup><mrow><mo>(</mo><mfrac><msub><mi>u</mi><mi>i</mi></msub><msqrt><msub><mi>h</mi><mi>i</mi></msub></msqrt></mfrac><mo>)</mo></mrow><mn>2</mn></msup><mo>]</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mfrac><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msubsup><mi>u</mi><mi>i</mi><mn>2</mn></msubsup><mo>)</mo></mrow></mrow><msub><mi>h</mi><mi>i</mi></msub></mfrac><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><mrow><mo>(</mo><msup><mi>σ</mi><mn>2</mn></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>h</mi><mi>i</mi></msub><mo>)</mo></mrow><msub><mi>h</mi><mi>i</mi></msub></mfrac><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msup><mi>σ</mi><mn>2</mn></msup></mrow></mtd></mtr><mtr><mtd columnalign="right"><mfrac><msub><mi>y</mi><mi>i</mi></msub><msqrt><msub><mi>h</mi><mi>i</mi></msub></msqrt></mfrac></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mfrac><msub><mi>β</mi><mn>0</mn></msub><msqrt><msub><mi>h</mi><mi>i</mi></msub></msqrt></mfrac><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mfrac><msub><mi>x</mi><mrow><mi>i</mi><mspace width="1px"></mspace><mn>1</mn></mrow></msub><msqrt><msub><mi>h</mi><mi>i</mi></msub></msqrt></mfrac></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mfrac><msub><mi>x</mi><mrow><mi>i</mi><mspace width="1px"></mspace><mn>2</mn></mrow></msub><msqrt><msub><mi>h</mi><mi>i</mi></msub></msqrt></mfrac></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mfrac><msub><mi>x</mi><mrow><mi>i</mi><mspace width="1px"></mspace><mi>k</mi></mrow></msub><msqrt><msub><mi>h</mi><mi>i</mi></msub></msqrt></mfrac></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>u</mi><mi>i</mi></msub><msqrt><msub><mi>h</mi><mi>i</mi></msub></msqrt></mfrac></mrow></mtd></mtr><mtr><mtd columnalign="right"><msubsup><mi>y</mi><mi>i</mi><mo>*</mo></msubsup></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mrow><mi>i</mi><mn>0</mn></mrow><mo>*</mo></msubsup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow><mo>*</mo></msubsup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mrow><mi>i</mi><mn>2</mn></mrow><mo>*</mo></msubsup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mrow><mi>i</mi><mi>k</mi></mrow><mo>*</mo></msubsup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msubsup><mi>u</mi><mi>i</mi><mo>*</mo></msubsup></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mtext>Where</mtext><mspace width="24px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mrow><mi>i</mi><mn>0</mn></mrow><mo>*</mo></msubsup></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mn>1</mn><msqrt><msub><mi>h</mi><mi>i</mi></msub></msqrt></mfrac></mtd></mtr></mtable></math><figcaption>Solving for GLS</figcaption></figure><p>
+          Our transformed model now satisifies all 5 Gauss Markov
+          assumptions. The estimators produced are actually a
+          variant of <strong>Generalised Least Squares</strong>, and they
+          are the best linear unbiased estimators of the βⱼ and
+          are more efficient than esimators produced under OLS.
+        </p><ul class="no-item-padding" style="margin-block: 0px;"><li>We can now create Standard Errors</li><li>We can now create t statistics</li><li>We can now create F statistics</li><li>etc</li></ul><h4>Computing WLS</h4><figure class="pre--horizontal-shadow"><math display="block"><mfrac><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow><msup><mrow><mo>(</mo><msub><mi>y</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>b</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>b</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>b</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>2</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>b</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub></mrow><mo>)</mo></mrow><mn>2</mn></msup></mrow></mrow><msub><mi>h</mi><mi>i</mi></msub></mfrac></math><figcaption>WLS objective function</figcaption></figure><p>
+          Mathematically, the WLS estimators are the values of
+          the bⱼ that make as small as possible. Bringing the
+          square root of 1/hᵢ inside the squared residual shows
+          that the weighted sum of squared residuals is identical
+          to the sum of squared residuals in the transformed
+          variables:
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow><msup><mrow><mo>(</mo><msubsup><mi>y</mi><mi>i</mi><mo>*</mo></msubsup><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>b</mi><mn>0</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mrow><mi>i</mi><mn>0</mn></mrow><mo>*</mo></msubsup></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>b</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow><mo>*</mo></msubsup></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>b</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mrow><mi>i</mi><mn>2</mn></mrow><mo>*</mo></msubsup></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>b</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mrow><mi>i</mi><mi>k</mi></mrow><mo>*</mo></msubsup></mrow><mo>)</mo></mrow><mn>2</mn></msup></mrow></mrow></math><figcaption>WLS transformed objective function</figcaption></figure><p>How to think about weighting</p><ul class="no-item-padding" style="margin-block: 0px;"><li>
+            In WLS Observations are weighted by inverse sqrt hᵢ
+          </li><li>
+            OLS is a special case where all observations are
+            given the same weight.
+          </li></ul><p>
+          As you can imagine F statistics are computed from the
+          weighted R². However the weighted R² is not particuarlly
+          useful as a goodness of fit measure. <strong>Because it
+          effectively measures explained variation in yᵢ* rather
+          than yᵢ</strong> (remember we've also weighted our fitted
+          values).
+        </p><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: explain why last few pages of chapter which explian why ppl just use OLS</p></div><div class="container pre--container"><aside class="infobox"><h3 class="infobox-name">💡 variance under heteroskedascity</h3><div class="infobox-body"><div class="container"><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr><mtd columnalign="right"><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>u</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mi>x</mi></mrow><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msup><mi>σ</mi><mn>2</mn></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mtext>h</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mtext>h</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></mtd><mtd><mo>&gt;</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr></mtable></math><figcaption>Var(u) under Heteroskedacity</figcaption></figure><p>
+            Because variance must be positive, so much the
+            return value of our function h.
+          </p></div></div></aside><dl><dt>WLS</dt><dd>Weight Least Squares Estimation</dd><dt>Interpreting h(x)</dt><dd>
+            The variance of the error is propotional
+            to the level of <strong>x</strong>.
+          </dd><dt>GLS</dt><dd>Generalised Least Squares</dd></dl><aside class="infobox"><h3 class="infobox-name">💡 When to use WLS</h3><div class="infobox-body"><div class="container"><p>
+            If you know there's heteroskedascity and the
+            functional form it takes then you can use it.
+            In these cases WLS is more efficient than OLS.
+          </p></div></div></aside><aside class="infobox"><h3 class="infobox-name">💡 WLS, Weighted by what?</h3><div class="infobox-body"><div class="container"><p>
+            The name comes from the the fact that βⱼ*
+            minimizes the weighted sum of squared residuals
+            where each squared residual is weighted by 1/hᵢ
+          </p></div></div></aside><dl><dt>Weighted SSR</dt><dd>Weighted Sum of Square Residuals</dd><dt>Weighted R²</dt><dd>
+            Weight R Squared computed from weighted SSR.
+          </dd><dt>(FGLS) estimator</dt><dd>
+            Feasible GLS estimator, sometimes called estimated GLS, or EGLS.
+          </dd></dl><aside class="infobox"><h3 class="infobox-name">💡 WLS/FGLS different signs to OLS</h3><div class="infobox-body"><div class="container"><p>
+            If OLS and WLS produce statistically significant
+            estimates that differ in sign—for example, the OLS
+            price elasticity is positive and significant, while the
+            WLS price elasticity is negative and significant
+            or the difference in magnitudes of the estimates is
+            practically large, we should be suspicious.
+            <strong>Typically, this indicates that one of the
+            other Gauss-Markov assumptions is false</strong>, in
+            particular the zero conditional mean assumption
+            on the error.
+          </p></div></div></aside><aside class="infobox"><h3 class="infobox-name">💡 Functional form misspecification</h3><div class="infobox-body"><div class="container"><p>
+            For WLS to be consistent for the βⱼ, it is not
+            enough for u to be uncorrelated with each xⱼ. We need
+            the stronger assumption MLR.4 in the linear model
+            MLR.1. Therefore, a significant difference between
+            OLS and WLS can indicate a functional form
+            misspecification in E(y|x)
+          </p></div></div></aside></div></div><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>The Heteroskedasticity Function Must Be Estimated: Feasible GLS</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C8 P278)</strong></span></div><p>
+        In many case the exact form of heteroskedasicity is not known
+        and is not obvious. Nevertheless, in many cases we can model
+        the <strong>h</strong> and use the data to estimate the unknown parameters
+        in this model.
+      </p><p>
+        One way to model heteroskedasicity it to assume it takes this form.
+      </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr><mtd columnalign="right"><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>u</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mi>x</mi></mrow><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msup><mi>σ</mi><mn>2</mn></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mtext>exp</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>δ</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mtext>h</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mtext>exp</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>δ</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mtd></mtr></mtable></math><figcaption>FGLS variance assumption</figcaption></figure><p>
+        When testing for heteroskedasticity using the Breusch-Pagan test,
+        we assumed that heteroskedasticity was a linear function of the xⱼ.
+        Linear alternatives are fine when testing for heteroskedasticity, but
+        they can be problematic when correcting for heteroskedasticity using
+        weighted least squares. We have encountered the reason for this problem
+        before: linear models do not ensure that predicted values are positive,
+        and our estimated variances must be positive in order to perform WLS.
+      </p><p>
+        If the parameters δⱼ were known, then we would just apply WLS, as in
+        the previous subsection. This is not very realistic. It is better to
+        use the data to estimate these parameters, and then to use these
+        estimates to construct weights. To estimate δⱼ, we will transform this
+        equation into a linear form that, with slight modification, can be
+        estimated by OLS.
+      </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr><mtd columnalign="right"><msup><mi>u</mi><mn>2</mn></msup></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msup><mi>σ</mi><mn>2</mn></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mtext>exp</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>δ</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow></mrow><mo>)</mo></mrow></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>v</mi></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mtext>log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msup><mi>u</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>α</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>e</mi></mrow></mtd></mtr></mtable></math><figcaption>FGLS linear form</figcaption></figure><p>
+        Assume "v"'s mean (for some reason) is equal to unity (conditional
+        on all independent variables). But if we assume v is independent
+        (for some reason) we can write the second line. e has a zero mean
+        and is independent of x; the intercept in this equation is different
+        from δ₀ (this is not important in implementing WLS). The dependent
+        variable is the log of the squared error, and because it satisifies
+        the Gauss-Markov assumptions, we can get unbiased estimators of δⱼ
+        using OLS.
+      </p><div class="c2 pre--c2"><p>
+          Ultimatel what we want from this regression is the fitted values
+          which we'll call <strong>ĝᵢ</strong>, from here we can simply estimate
+          ĥᵢ as:
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>ĥ</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mtext>exp</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>ĝ</mi><mi>i</mi></msub><mo>)</mo></mrow></mrow></mrow></math><figcaption>Estimated HetroSkedascity</figcaption></figure></div><p>
+        From here we can attempt WLS. Having to estimate hi using the same
+        data means that the FGLS estimator is no longer unbiased. Nevertheless,
+        the FGLS estimator is consistent and asymptotically more efficient
+        than OLS. We use the FGLS estimates in place of the OLS estimates
+        because the FGLS estimators are more efficient and have associated
+        test statistics with the usual t and F distributions, at least in
+        large samples If for any reason we have doubts about the variance,
+        <strong>we can always just use heteroskedasticity-robust standard
+        errors</strong> and test statistics in the transformed equation.
+      </p><div class="c2 pre--c2"><p>
+          Another option of estimating ĝᵢ is to instead use
+          the fitted value ŷ and its square ŷ² in a
+          regression like so:
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msup><mi>û</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>α</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>ŷ</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>ŷ</mi><mn>2</mn><mn>2</mn></msubsup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>e</mi></mrow></mrow></math><figcaption>Alternative method</figcaption></figure></div><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>What If the Assumed Heteroskedasticity Function Is Wrong?</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C8 P281)</strong></span></div><p>
+        What happens if our variance function is misspecified? Well
+        provided MLR 4 holds, we don't need to worry too much about
+        a misspecified h(x) introducing bias or inconsistency in our
+        estimators. Provided the conditional mean assumption holds
+        any function of h(x) is uncorrelated with u and by extention
+        the weighted error is uncorrelated with our weighted regressors
+        (at least if h(x) is positive). <strong>This is why, we can
+        take large differences between the OLS and WLS estimators as
+        indicative of functional form misspecification</strong>.
+      </p><p>
+        What are the concequences of using WLS with a misspecified
+        variance function? One is that the usual WLS standard errors
+        and test statistics, computed under the assumption that
+        Var(y, x) = σ²h(x), are no longer valid, even in large samples.
+        If this assumption is false, the standard errors (and any
+        statistics obtain using the standard errors) are not valid.
+      </p><p>
+        Thankfully there is a simple fix, <strong>just as we can obtain
+        standard errors for the OLS estimates that are robust to arbitrary
+        heteroskedasticity, we can obtain standard errors for WLS that
+        allow the variance function to be arbitrarily misspecified</strong>.
+      </p><p>
+        Even if we use flexible forms of variance functions, there is
+        no guarantee that we have the correct model. Therefore, it is
+        always a good idea to compute fully robust standard errors and
+        test statistics after WLS estimation.
+      </p><p>
+        A modern criticism of WLS is that if the variance function is
+        misspecified, it is not guaranteed to be more efficient than OLS.
+        However, this techinically correct this critique misses an important
+        point. Being in cases of strong heteroskedasticity, it is better to
+        use a wrong form of heteroskedasticity and apply WLS than to ignore
+        heteroskedasticity altogether and use OLS.
+      </p><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>Prediction and Prediction Intervals with Heteroskedasticity</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C8 P283)</strong></span></div><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: write about predictions</p></div></div></div></div><div class="widget-container document" id="test-widget-5" style="grid-column: span 2;"><style id="test-widget-5-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>The Linear Probability Model Revisited</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C8 P284)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p>
+      Firstly don't waste your time on this, if you're going to use
+      a Linear probabily model at all, firstly don't waste your time
+      on using WLS just use OLS (if at all). Secondly there are
+      significantly better models to use than either WLS or OLS.
+    </p></div></div></div><hr style="width: 100%; border-color: transparent;">"
+`;

@@ -1,0 +1,96 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`app(unsw::1101::08).snapshot > should match snapshots 1`] = `
+"<style id="test-styles"></style><div class="widget-container document" id="test-widget-0"><style id="test-widget-0-styles"></style><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>Market Power and Oligopolies</h1><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h2>Game Theory</h2><p>
+            Much of this topic will be modelled and expressed
+            in terms of basic game theory, using examples of
+            <strong>Simultaneous Games</strong>.
+          </p><h3>Simultaneous Game</h3><p>
+            A Simultaneous Game is a game in which the
+            players move simultaneously. As in each player
+            has to plays their move in the same time frame
+            as the other player, and the outcome of their move
+            will depend on a combination of their move and
+            their competitors move.
+          </p><p>
+            Meaning one challenge for players in this type of
+            game is they can't play in response their competitors,
+            which can be ethier a blessing or a curse.
+          </p><h3>Game ground rules:</h3><ul><li class="text-medium"><strong>Games are simultaneous</strong>,
+              Players move simultaneously, or at least
+              no player knows how what straegy their
+              opponent played unilt they play their own.
+            </li><li class="text-medium"><strong>There is full information</strong>,
+              All players know their payoffs and the
+              payoffs of their opponent.
+            </li><li class="text-medium"><strong>Players are rational</strong>,
+              Players are attempting to maximise
+              their own payoffs.
+            </li></ul></div></div><div class="container pre--container"><blockquote class="word-def"><div class="word-def-word"><dfn><strong>Oligpoly</strong></dfn><span class="word-de-ipa"><span class="word-def-ipa-syn">/ɒlɪˈɡɒpəli/</span><sup class="word-def-ipa-act">(rp)</sup></span></div><ul class="word-def-meanings"><li><span>An economic condition in which a small number of sellers exert control over the market of a commodity.</span></li></ul><hr><div class="word-def-etymology"><strong>FROM:</strong> <span>greek</span></div><span class="word-def-source"><a class="word-def-source-link" href="https://en.wiktionary.org/wiki/oligopoly">Wikitionary</a><a class="word-def-source-link" href="https://en.wikipedia.org/wiki/Oligopoly">Wikipedia</a></span></blockquote><h4>Example Games</h4><table class="diagram-table"><thead><tr><th colspan="2" rowspan="2"></th><th colspan="2"><font color="red">Player Two</font></th></tr><tr><th colspan="1"><font color="red">left</font></th><th colspan="1"><font color="red">right</font></th></tr></thead><tbody><tr><th rowspan="2"><font color="blue">Player One</font></th><th><font color="blue">up</font></th><td><font color="blue">8</font> / <font color="red">10</font></td><td><font color="blue">6</font> / <font color="red">7</font></td></tr><tr><th><font color="blue">down</font></th><td><font color="blue">3</font> / <font color="red">5</font></td><td><font color="blue">8</font> / <font color="red">3</font></td></tr></tbody></table><table class="diagram-table"><thead><tr><th colspan="2" rowspan="2"></th><th colspan="3"><font color="red">Bert</font></th></tr><tr><th colspan="1"><font color="red">left</font></th><th colspan="1"><font color="red">center</font></th><th colspan="1"><font color="red">right</font></th></tr></thead><tbody><tr><th rowspan="3"><font color="blue">Ernie</font></th><th><font color="blue">top</font></th><td><font color="blue">5</font> / <font color="red">5</font></td><td><font color="blue">6</font> / <font color="red">3</font></td><td><font color="blue">3</font> / <font color="red">4</font></td></tr><tr><th><font color="blue">middle</font></th><td><font color="blue">6</font> / <font color="red">6</font></td><td><font color="blue">2</font> / <font color="red">5</font></td><td><font color="blue">5</font> / <font color="red">3</font></td></tr><tr><th><font color="blue">bottom</font></th><td><font color="blue">3</font> / <font color="red">5</font></td><td><font color="blue">4</font> / <font color="red">7</font></td><td><font color="blue">4</font> / <font color="red">1</font></td></tr></tbody></table></div></div><hr><div class="c2"><details class="readmore"><summary>Nash Equilibrium</summary><br><div class="container"><p>
+        A strategy profile at which neither player
+        has incentive to unilaterally deivate.
+        It is the result of mutual best responses.
+      </p><p>
+        It isn't always the case that the nash
+        equilibrium will be pareto efficient
+        for the two players, this is in part due
+        to the tendency for players to deviate.
+      </p></div></details><details class="readmore"><summary>Unilateral Deviation</summary><br><div class="container"><p>
+        TODO
+      </p></div></details><details class="readmore"><summary>Coordination Game</summary><br><div class="container"><p>
+        A type of game in which players benefit
+        from coordinating their decisions.
+      </p></div></details></div><hr><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: Point out which is a coordination game</p><div class="c2"><table class="diagram-table"><thead><tr><th colspan="2" rowspan="2"></th><th colspan="2"><font color="red">Player B</font></th></tr><tr><th colspan="1"><font color="red">Copy</font></th><th colspan="1"><font color="red">Own Work</font></th></tr></thead><tbody><tr><th rowspan="2"><font color="blue">Player A</font></th><th><font color="blue">Copy</font></th><td><font color="blue">Fail</font> / <font color="red">Fail</font></td><td><font color="blue">HD</font> / <font color="red">Pass</font></td></tr><tr><th><font color="blue">Own Work</font></th><td><font color="blue">Pass</font> / <font color="red">HD</font></td><td><font color="blue">Credit</font> / <font color="red">Credit</font></td></tr></tbody></table><table class="diagram-table"><thead><tr><th colspan="2" rowspan="2"></th><th colspan="2"><font color="red">Player B</font></th></tr><tr><th colspan="1"><font color="red">Copy</font></th><th colspan="1"><font color="red">Own Work</font></th></tr></thead><tbody><tr><th rowspan="2"><font color="blue">Player A</font></th><th><font color="blue">Copy</font></th><td><font color="blue">30</font> / <font color="red">30</font></td><td><font color="blue">90</font> / <font color="red">50</font></td></tr><tr><th><font color="blue">Own Work</font></th><td><font color="blue">50</font> / <font color="red">90</font></td><td><font color="blue">65</font> / <font color="red">65</font></td></tr></tbody></table></div><hr></div></div><div class="widget-container document" id="test-widget-1"><style id="test-widget-1-styles"></style><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h2>Existing Oligpolies in Australia</h2><p>
+          In Australia one example of oligipolies we encounter in our
+          day to day itinerary and routines are Grocery chances such as
+          Coles and Woolworths. The Oligolic nature of this industry is
+          in big part of entry and exit costs (entry moreso) for new
+          partipants.
+        </p><p>
+          In order to compete with woolworths, competitor must:
+        </p><ul class="no-item-padding" style="margin-block: 0px;"><li>Pay upfront costs for instore infrastructure</li><li>Compete on Wages with existing labour pool</li><li>Establish relationships with suppliers</li><li>Establish supply chains</li><li>Accessing to large land lots</li><li>Aquiring planning permissions to build store</li></ul><h3>Entry Game</h3><p>
+          One way of modelling this is with an entry game (a
+          specialised case of a simulatenous game), where
+          the dominant strategy of the encumbant is stay and
+          dominant strategy of the entrant is "no entry" (often
+          the result of entry fees).
+        </p></div><div class="container pre--container"><h4>Entry Game Example</h4><table class="diagram-table"><thead><tr><th colspan="2" rowspan="2"></th><th colspan="2"><font color="blue">Cottoncosts</font></th></tr><tr><th colspan="1"><font color="blue">Entry</font></th><th colspan="1"><font color="blue">No Entry</font></th></tr></thead><tbody><tr><th rowspan="2"><font color="green">Woolworths</font></th><th><font color="green">Stay</font></th><td><font color="green">8</font> / <font color="blue">-20</font></td><td><font color="green">10</font> / <font color="blue">0</font></td></tr><tr><th><font color="green">Exit</font></th><td><font color="green">0</font> / <font color="blue">-10</font></td><td><font color="green">0</font> / <font color="blue">0</font></td></tr></tbody></table><aside class="infobox"><h3 class="infobox-name">💡 2024-25 Supermarket Enquiry</h3><div class="infobox-body"><div class="container"><p class="text-medium"><img src="./assets/econ/supermarket-enquiry.png" height="100" style="float: left; margin-right: 8px">
+      During the 2024-25, the ACCC conducted an enquiry in the
+      supermarket "duopoly" (as they are often called), one thing
+      found during the enquiry they found was the Planning
+      System (or planning systems of different states) imposed higher
+      barriers to entry for new partipants. [<a href="https://www.accc.gov.au/inquiries-and-consultations/supermarkets-inquiry-2024-25">read more here</a>]</p><p class="text-medium">
+      The role of the planning system in this industry is an example
+      of an entry cost. It is often the case, that development
+      applications to build a grocery store get <a href="https://www.smh.com.au/national/nsw/woolworths-accuses-council-of-inventing-fake-planning-rules-to-stymie-supermarket-20210525-p57uyx.html">challenged</a> by members of the community for whatever reason.
+    </p></div></div></aside></div></div><div class="c2 pre--c2"><details class="readmore"><summary>Dominant Strategy</summary><br><div class="container"><p>
+        A Dominant Strategy represents a strategy that
+        is preferred by a player irrespective of the
+        strategy selected by the other player.
+      </p><p>
+        When it "depends" what your opponent is doing
+        you do not have a dominant strategy.
+      </p></div></details><details class="readmore"><summary>Iterated Elimination of Dominated Strategies</summary><br><div class="container"><p>
+        The Iterated Elimination of Dominated Strategies is
+        solution concept that involves iteratively removing
+        strategies that are not dominant.
+      </p></div></details></div><hr></div></div><div class="widget-container document" id="test-widget-2"><style id="test-widget-2-styles"></style><div class="container pre--container"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: for "Violation of invisible hand principle" graphic</p></div></div><div class="widget-container document" id="test-widget-3"><style id="test-widget-3-styles"></style><div class="container pre--container"><h2>Prisoners Delimma</h2><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: Provide examples</p><table class="diagram-table"><thead><tr><th colspan="2" rowspan="2"></th><th colspan="2"><font color="red">Player B</font></th></tr><tr><th colspan="1"><font color="red">Confess</font></th><th colspan="1"><font color="red">Keep Quite</font></th></tr></thead><tbody><tr><th rowspan="2"><font color="blue">Player A</font></th><th><font color="blue">Confess</font></th><td><font color="blue">Suspension</font> / <font color="red">Suspension</font></td><td><font color="blue">Scholarship</font> / <font color="red">Expelled</font></td></tr><tr><th><font color="blue">Keep Quite</font></th><td><font color="blue">Expelled</font> / <font color="red">Scholarship</font></td><td><font color="blue">Nothing</font> / <font color="red">Nothing</font></td></tr></tbody></table></div></div><div class="widget-container document" id="test-widget-4"><style id="test-widget-4-styles"></style><div class="container pre--container"><h2>Cartel Games</h2><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: provide examples of Cartel games</p><details class="readmore"><summary>Cartel</summary><br><div class="container"><p>
+        A private agreement aimed at increasing the profit
+        of cartel members by reducing competition in the
+        market (by controlling prices or preventing entry
+        into the market).
+      </p><p>
+        Cartels will behave as if they are a monopoly (find
+        profite maximising quantity where MR = MC, price
+        along the demand curve) and then split the profits
+        at the end. However, there's a strong temptation
+        to slightly undercut your opponent to steal all the
+        customers in the market.
+      </p></div></details></div></div><div class="widget-container document" id="test-widget-5"><style id="test-widget-5-styles"></style><div class="container pre--container"><h2>Mixed Strategy Games</h2><details class="readmore"><summary>Mixed Strategy Games</summary><br><div class="container"><p>
+        Some games do not have a Nash Equilibrium in
+        pure strategries. Instead, players best respond
+        by playing each strategy with a certain probability.
+        Games with pure strategy Nash Equilibrium may have
+        mixed strategy Nash Equilibria.
+      </p></div></details><table class="diagram-table"><thead><tr><th colspan="2" rowspan="2"></th><th colspan="3"><font color="red">Player B</font></th></tr><tr><th colspan="1"><font color="red">rock</font></th><th colspan="1"><font color="red">paper</font></th><th colspan="1"><font color="red">scissors</font></th></tr></thead><tbody><tr><th rowspan="3"><font color="blue">Player A</font></th><th><font color="blue">rock</font></th><td><font color="blue">0</font> / <font color="red">0</font></td><td><font color="blue">-1</font> / <font color="red">1</font></td><td><font color="blue">1</font> / <font color="red">-1</font></td></tr><tr><th><font color="blue">paper</font></th><td><font color="blue">1</font> / <font color="red">-1</font></td><td><font color="blue">0</font> / <font color="red">0</font></td><td><font color="blue">-1</font> / <font color="red">1</font></td></tr><tr><th><font color="blue">scissors</font></th><td><font color="blue">-1</font> / <font color="red">1</font></td><td><font color="blue">1</font> / <font color="red">-1</font></td><td><font color="blue">0</font> / <font color="red">0</font></td></tr></tbody></table></div></div><hr style="width: 100%; border-color: transparent;">"
+`;

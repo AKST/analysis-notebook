@@ -1,0 +1,149 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`app(unsw::1101::02).snapshot > should match snapshots 1`] = `
+"<style id="test-styles"></style><div class="widget-container document" id="test-widget-0" style="grid-column: span 4;"><style id="test-widget-0-styles"></style><div class="container pre--container"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: for "document horizontal intepretation of curve" graphic</p></div></div><div class="widget-container document" id="test-widget-1" style="grid-column: span 4;"><style id="test-widget-1-styles"></style><div class="container pre--container"><h1>Supply Curve</h1><div class="c2 twoThree"><div class="container pre--container"><h2>Marginal Cost</h2><p>
+            In economics we tend to think at the
+            margin. In practise this means inrespective
+            of sunk costs, if you could produce one of
+            2 goods, to think at the margins would be
+            to decide producing one more of either good
+            based on an evaluation of the cost/benefit of
+            producing an additional good of either kind.
+          </p></div><aside class="infobox"><h3 class="infobox-name">💡 Reservation Price</h3><div class="infobox-body"><div class="container"><p>
+            The marginal cost is also know as
+            the resevation price, in that it is
+            the lowest price someone (within the
+            model) is willing to accept in
+            exchange for each a quantity of a
+            given good they produce.
+          </p></div></div></aside></div><h3>Modelling discrete costs</h3><p>
+        This section here isn't too important, but I
+        wanted to document some thoughts on modelling.
+      </p><div class="c2"><div class="container pre--container"><h4>Cumulative Cost</h4><p>
+            This function takes x and returns
+            a cumulative cost (y) to produce
+            x number of goods.
+          </p><div style="font-size: 24px"><math display="block"><mi>y</mi><mspace width="8px"></mspace><mo>=</mo><mspace width="8px"></mspace><mrow><mrow><munderover><mi>∑</mi><mrow><mrow><mo>|</mo><mrow><mi>x</mi></mrow><mo>|</mo></mrow><mo>-</mo><mn>1</mn></mrow><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mrow><mrow><mrow><mi>M</mi></mrow><mrow><mo>[</mo><mi>i</mi><mo>]</mo></mrow></mrow></mrow></mrow></math></div><h4>Time to Output</h4><p>
+            This function takes an amount of
+            time (y) and returns the number
+            of goods that can be produced.
+          </p><div style="font-size: 20px"><math display="block"><mi>x</mi><mo>=</mo><mrow><mrow><mi>max</mi><mspace width="8px"></mspace><mrow><mi>j</mi><mo>∈</mo><mi>ℕ</mi></mrow></mrow><mo>:</mo><mrow><mrow><munderover><mi>∑</mi><mrow><mi>j</mi><mo>-</mo><mn>1</mn></mrow><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mrow><mrow><mrow><mi>C</mi></mrow><mrow><mo>[</mo><mi>i</mi><mo>]</mo></mrow></mrow><mo>≤</mo><mi>y</mi></mrow></mrow></mrow></math></div></div><div class="container pre--container"><h4>Vectors</h4><p>
+            To produce either function you
+            need either cumulative costs or
+            marginal costs. If you have one
+            of them you can compute the other.
+          </p><math display="block"><mtable class="mathtable"><mtr columnalign=""><mtd columnalign=""><mi>C</mi></mtd><mtd><mo>=</mo></mtd><mtd><mover><mrow><mo>{</mo><mn>0</mn><mo>,</mo><mspace width="4px"></mspace><mn>0</mn><mo>,</mo><mspace width="4px"></mspace><mn>2</mn><mo>,</mo><mspace width="4px"></mspace><mn>5</mn><mo>,</mo><mspace width="4px"></mspace><mn>10</mn><mo>,</mo><mspace width="4px"></mspace><mn>18</mn><mo>,</mo><mspace width="4px"></mspace><mn>28</mn><mo>,</mo><mspace width="4px"></mspace><mn>40</mn><mo>}</mo></mrow><mtext>Cumulative Cost Vector</mtext></mover></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mi>D</mi></mtd><mtd><mo>=</mo></mtd><mtd><mover><mrow><mo>[</mo><mtable><mtr><mtd><mn>-1</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd><mtd><mo>⋯</mo></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>-1</mn></mtd><mtd><mn>1</mn></mtd><mtd><mo>⋯</mo></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>-1</mn></mtd><mtd><mo>⋯</mo></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mo>⋮</mo></mtd><mtd><mo>⋮</mo></mtd><mtd><mo>⋮</mo></mtd><mtd><mo>⋱</mo></mtd><mtd><mo>⋮</mo></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mo>⋯</mo></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>]</mo></mrow><mtext>Difference Matrix</mtext></mover></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mi>M</mi></mtd><mtd><mo>=</mo></mtd><mtd><mrow><mrow><mi>D</mi><mi>C</mi></mrow><mo>=</mo><mover><mrow><mo>{</mo><mn>2</mn><mo>,</mo><mspace width="4px"></mspace><mn>3</mn><mo>,</mo><mspace width="4px"></mspace><mn>5</mn><mo>,</mo><mspace width="4px"></mspace><mn>8</mn><mo>,</mo><mspace width="4px"></mspace><mn>10</mn><mo>,</mo><mspace width="4px"></mspace><mn>12</mn><mo>}</mo></mrow><mtext>Marginal Cost Vector</mtext></mover></mrow></mtd></mtr></mtable></math></div></div></div></div><div class="widget-container document" id="test-widget-2" style="grid-column: span 4;"><style id="test-widget-2-styles"></style></div><div class="widget-container canvas2d" id="test-widget-3" style="grid-column: span 2;"></div><div class="widget-container canvas2d" id="test-widget-4" style="grid-column: span 2;"></div><div class="widget-container canvas2d" id="test-widget-5" style="grid-column: span 2;"></div><div class="widget-container canvas2d" id="test-widget-6" style="grid-column: span 2;"></div><div class="widget-container document" id="test-widget-7" style="grid-column: span 4;"><style id="test-widget-7-styles"></style><div class="container pre--container"><h3>Quantity Produced?</h3><p>
+      Referring back to the concept of the reservation
+      price, a producer will only produce goods as long
+      as the return is above (or at) their marginal cost.
+    </p></div></div><div class="widget-container canvas2d" id="test-widget-8" style="grid-column: span 2;"></div><div class="widget-container canvas2d" id="test-widget-9" style="grid-column: span 2;"></div><div class="widget-container document" id="test-widget-10" style="grid-column: span 4;"><style id="test-widget-10-styles"></style><div class="container pre--container"><div class="c2 twoThree"><div class="container pre--container"><h3>Different kinds of Costs</h3><dl><dt>Fixed Cost</dt><dd>
+            Costs associated with fixed facotrs of
+            production, do not vary with the quantity
+            produced (machinery, rent, etc).
+          </dd><dt>Sunk costs</dt><dd>
+            Costs that, once paid, cannot be recovered.
+            All sunk costs are fixed.
+          </dd><dt>Variable costs</dt><dd>
+            costs associated with variable factors of
+            production, will vary wit the quantity
+            produced (materials, variable labour, etc).
+          </dd></dl><h3>Other Terms</h3><dl><dt>Fixed Factor of Production</dt><dd>
+            If a factor of production is fixed,
+            then the cost associated with it does
+            not vary with the quantity produced.
+          </dd><dt>Variable Factor of Production</dt><dd>
+            If a factor of production is variable,
+            then the cost associated with it tends
+            to vary with the number of units produced
+          </dd></dl></div><div class="container pre--container"><aside class="infobox"><h3 class="infobox-name">💡 Cost Benefit Principle</h3><div class="infobox-body"><div class="container"><p class="text-medium">
+            If the marginal benefit (MB) of taking an
+            action is greater of equal to the marginal
+            cost (MC) of taking the action, you should
+            do it.
+          </p><br><span class="cbp"><math display="block"><mrow><mrow><mtext>MB</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>Price</mi><mo>)</mo></mrow></mrow><mo>≤</mo><mi>MC</mi><mspace width="8px"></mspace><mo>⇒</mo><mspace width="8px"></mspace><mtext>do it!</mtext></mrow></math></span></div></div></aside><aside class="infobox"><h3 class="infobox-name">💡 Law of Supply</h3><div class="infobox-body"><div class="container"><p class="text-medium">
+            There is a tendency to offer more of a certain
+            good of service when the price of that good or
+            service increases.
+          </p></div></div></aside><aside class="infobox"><h3 class="infobox-name">💡 Economic Surplus</h3><div class="infobox-body"><div class="container"><p class="text-medium">
+            The difference between the marginal benefit
+            and the marginal cost of taking an action.
+          </p></div></div></aside></div></div><h2>Supply Curve of a Firm</h2><p>
+      Referring back to the concept of the reservation
+      price, a producer will only produce goods as long
+      as the return is above (or at) their marginal cost.
+    </p></div></div><div class="widget-container canvas2d" id="test-widget-11" style="grid-column: span 4;"></div><div class="widget-container document" id="test-widget-12" style="grid-column: span 4;"><style id="test-widget-12-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h2>Timeframe for a firm</h2><div class="c2"><dl><dt>Short run</dt><dd><p>
+            In the short run you've already paid your
+            fixed costs. To continue operating, you
+            want to at least cover your variable costs.
+          </p><br><blockquote>
+            At least one factor is fixed.
+          </blockquote></dd><dt>Long run</dt><dd><p>
+            In the long run, you need to be profitable.
+            You don't want to open a new business/renew
+            your fixed constracts unless you can cover
+            all your costs.
+          </p><br><blockquote>
+            At least one factor is fixed.
+          </blockquote></dd></dl><div class="container pre--container"><dl><dt>Short run shut down condition</dt><dd>
+            The Entrepreneur should shut down
+            production if Profit &lt; -FC
+            (of Price &lt; min AVC).
+          </dd><dt>Long run shut down condition</dt><dd>
+            The Entrepreneur should exit the industry
+            if Profit &lt; 0 (of Price &lt; min ATC).
+          </dd></dl></div></div><p>
+      If a firm mets all operating conditions
+      then they should should operate where
+      <strong>MB = MC</strong> to choose optimal Quantity to
+      maximise profit.
+    </p><div class="c2 twoThree"><div class="container pre--container"><h2>Elasticity of Supply</h2><p>Here are some determinants of elasticity of supply</p><dl><dt>Availablity of raw materials</dt><dd>
+              A greater availablity of resources contributes
+              to greater elasticity. For example, when a
+              market has a sudden surge in demand, a scarcity
+              of resources would be prevented from supplying
+              in response to the demand for that good.
+          </dd><dt>Factory Mobility</dt><dd>
+              Mobility of production factors is the ease at
+              which the factors of production can be diverted
+              to produce different goods. Greater mobility
+              contributes to greater elasticity.
+          </dd><dt>Inventory/Excess Capacity</dt><dd>
+              The greater the excess inventory more easily
+              supply can respond to an increase demand.
+              Those with less inventory relative to their
+              competitors will run out of stock before their
+              competitors.
+          </dd><dt>Time Horizon</dt><dd>
+              The more time time producers have to adjust
+              their production plans the more elastic
+              their suppy will be.
+          </dd></dl></div><div class="container pre--container"><aside class="infobox"><h3 class="infobox-name">💡 Elasticity Formular</h3><div class="infobox-body"><div class="container"><div class="container pre--container"><p class="text-medium">
+              Elasticity is <a href="https://en.wikipedia.org/wiki/Functional_dependency" target="_blank">functionally dependent</a>
+              on Price and quanity, as it is simply a measurement of
+              their relationship and how they change
+              to one another. You cannot take it
+              and calculate Price of quantity.
+              But the moment you have Price of
+              Quantity you have the other and
+              elasticity. This is called a
+              second order property, it
+              describes how the system behaves.
+            </p><h3>Different ways to compute</h3><div class="elasticity"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mi>ε</mi></mtd><mtd><mo>=</mo></mtd><mtd><mrow><mfrac><mi>P</mi><mi>Q</mi></mfrac><mo>×</mo><mfrac><mi>ΔQ</mi><mi>ΔP</mi></mfrac></mrow></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mi>ε</mi></mtd><mtd><mo>=</mo></mtd><mtd><mrow><mfrac><mi>P</mi><mi>Q</mi></mfrac><mo>×</mo><mfrac><mi>1</mi><mtext>slope</mtext></mfrac></mrow></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mi>ε</mi></mtd><mtd><mo>=</mo></mtd><mtd><mrow><mi>P</mi><mspace width="4px"></mspace><msup><mi>Q</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mspace width="4px"></mspace><msup><mtext>slope</mtext><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mtd></mtr></mtable></math></div><p class="text-medium">This is point elasticity</p></div></div></div></aside><span class="elasticity-table"><table><thead><tr><th>State</th><th>Implication</th></tr></thead><tbody><tr><td>ε &lt; 1</td><td>Inelastic</td></tr><tr><td>ε = 1</td><td>Unit elastic</td></tr><tr><td>ε &gt; 1</td><td>Elastic</td></tr></tbody></table></span></div></div><blockquote>
+      Note: Price here is the Marginal cost at
+      the given quantity, not the market price
+      specified earlier.
+    </blockquote></div></div><div class="widget-container document" id="test-widget-13" style="grid-column: span 4;"><style id="test-widget-13-styles"></style><div class="container pre--container"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: for "Graph elasitcity" graphic</p></div></div><div class="widget-container document" id="test-widget-14" style="grid-column: span 4;"><style id="test-widget-14-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h2>Partial ATC and AVC from MC</h2><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+          While more information is need to get a firms precise
+          ATC and AVC, you can get a partial form of the ATC &amp;
+          AVC by integrating the supply / MC curve.
+        </p><h3>Why would that be useful?</h3><p>
+          Well if you want to simulate the supply side of the
+          market it gives you some structure in how to approach
+          it if you're working backwards from the MC. If you have
+          statistical information about the distribution of the
+          unknown values then you could also simulate that as well.
+          Assuming a normal distribution is unwise but for a simple
+          simulation it is fine to illustrate the value of such a
+          system.
+        </p></div><aside class="infobox"><h3 class="infobox-name">💡 Derive Parital ATC &amp; AVC</h3><div class="infobox-body"><div class="container"><div style="font-size: 14px"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mover><mrow><mi>MC</mi><mo>=</mo><msub><mi>P</mi><mi>S</mi></msub><mo>=</mo><mi>α</mi><mo>+</mo><mi>β</mi><mi>Q</mi></mrow><mtext>Marginal Cost</mtext></mover></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mspace width="8px"></mspace></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mover><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mi>VC</mi><mo>=</mo><mrow><mo>∫</mo><mrow><mi>α</mi><mo>+</mo><mi>β</mi><mi>Q</mi></mrow><mspace width="4px"></mspace><mi>d</mi><mi>Q</mi></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mi>VC</mi><mo>=</mo><mrow><mi>α</mi><mi>Q</mi><mo>+</mo><mfrac><mi>β</mi><mn>2</mn></mfrac><msup><mi>Q</mi><mn>2</mn></msup><mo>+</mo><mi>C</mi></mrow></mrow></mtd></mtd></mtr></mtable><mtext>Variable Cost</mtext></mover></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mspace width="8px"></mspace></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mover><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mrow><mi>ATC</mi><mo>=</mo><mfrac><mrow><mi>VC</mi><mo>+</mo><mi>FC</mi></mrow><mi>Q</mi></mfrac></mrow><mspace width="16px"></mspace><mrow><mi>AVC</mi><mo>=</mo><mfrac><mi>VC</mi><mi>Q</mi></mfrac></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mi>ATC</mi><mo>=</mo><mrow><mspace width="2px"></mspace><mi>α</mi><mspace width="2px"></mspace><mo>+</mo><mspace width="2px"></mspace><mfrac><mi>β</mi><mn>2</mn></mfrac><mi>Q</mi><mspace width="2px"></mspace><mo>+</mo><mspace width="2px"></mspace><mfrac><mrow><mi>C</mi><mo>+</mo><mi>FC</mi></mrow><mi>Q</mi></mfrac></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mi>AVC</mi><mo>=</mo><mrow><mspace width="2px"></mspace><mi>α</mi><mspace width="2px"></mspace><mo>+</mo><mspace width="2px"></mspace><mfrac><mi>β</mi><mn>2</mn></mfrac><mi>Q</mi><mspace width="2px"></mspace><mo>+</mo><mspace width="2px"></mspace><mfrac><mi>C</mi><mi>Q</mi></mfrac></mrow></mrow></mtd></mtd></mtr></mtable><mtext>Average {Total,Variable} Cost</mtext></mover></mtd></mtd></mtr></mtable></math></div></div></div></aside></div></div></div><hr style="width: 100%; border-color: transparent;">"
+`;

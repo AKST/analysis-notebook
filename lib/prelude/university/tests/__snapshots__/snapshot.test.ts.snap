@@ -1,0 +1,53 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`components > clsRef 1`] = `
+"<div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Title</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>W1, / Class (Slide 5)</strong></span></div>"
+`;
+
+exports[`components > dashbox 1`] = `"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p>content</p></div>"`;
+
+exports[`components > note 1`] = `
+"<p style="
+      color: var(--fg-white-on-blue);
+      background: var(--bg-blue);
+      padding: 8px
+    "><p><strong>NOTE</strong><ul class="no-item-padding" style="margin-block: 0px;"><li>item</li></ul></p></p>"
+`;
+
+exports[`components > noteOn 1`] = `
+"<p style="
+      color: var(--fg-white-on-blue);
+      background: var(--bg-blue);
+      padding: 8px
+    "><p><strong>NOTE (on topic )</strong></p><ul class="no-item-padding" style="margin-block: 0px;"><li>item</li></ul></p>"
+`;
+
+exports[`layout > fontsize 1`] = `"<div style="font-size: 14px"><span>test</span></div>"`;
+
+exports[`layout > responsiveGridAutoRow 1`] = `
+"<div class="grid-responsive-row pre--grid-responsive-row" style="
+      --grid-responsive-row-slim-columns: 1fr;
+      --grid-responsive-row-mobile-columns: 1fr 1fr;
+      --grid-responsive-row-desktop-columns: 1fr 1fr 1fr;
+      
+    "><div>a</div><div>b</div></div>"
+`;
+
+exports[`mathml > annotationOver 1`] = `"<mover><mrow><mi>y</mi></mrow><mover><mo>⏞</mo><mrow style="font-size: 12px"><mi>x</mi></mrow></mover></mover>"`;
+
+exports[`mathml > annotationUnder 1`] = `"<munder><mrow><mi>y</mi></mrow><munder><mo>⏟</mo><mrow style="; font-size: 12px"><mi>x</mi></mrow></munder></munder>"`;

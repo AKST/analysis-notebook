@@ -1,0 +1,327 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`app(unsw::2102::04.1).snapshot > should match snapshots 1`] = `
+"<style id="test-styles"></style><div class="widget-container document" id="test-widget-0" style="grid-column: span 2;"><style id="test-widget-0-styles"></style><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>Inflation<br><small style="color: #aaaaff">ECON2102, W4, Lecture 1</small></h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li>Chapter 8 of the text book</li><li><a href="https://www.youtube.com/watch?v=pbgY0dYoBvA" target="_blank">The monster of Inflation</a></li><li><a href="https://www.rba.gov.au/publications/bulletin/2018/sep/money-in-the-australian-economy.html" target="_blank">Money in the Economy</a></li></ul></div></div></aside></div></div></div><div class="widget-container document" id="test-widget-1" style="grid-column: span 2;"><style id="test-widget-1-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Intro</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>W4 W, / Class (Slide 3), Book (C8 P212)</strong></span></div><div class="container pre--container"><p>
+      Some might say, inflation is not a vibe. Between
+      1919 and 1923 bread in Germany went from a ¼ of
+      a mark and rose by a factor of a trillion. This
+      obviously for Germany and probably no better for
+      the world at large. There are countless other
+      examples through out history.
+    </p><div class="container pre--container"><h4>How is inflation measured?</h4><p>
+        The Inflation rate is generally measured as
+        annual propotional changes in the price level.
+      </p></div></div></div></div><div class="widget-container document" id="test-widget-2" style="grid-column: span 2;"><style id="test-widget-2-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Quantity Theory of Money</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>W4 W, / Class (Slide 14), Book (C8 P216)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>Measures of money supply</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C8 P216)</strong></span></div><div class="container pre--container"><p>
+        The value of money and inflation is closely
+        related in the way we model inflation, one
+        such model is the quantity theory of money.
+        Historically money use to be valued by the
+        value of various rare materials and a governments
+        pledge to exchange money for those resources one
+        such standard is as the gold standard. Nowadays
+        money has value mostly because others value it,
+        some say because they need to pay their taxes in
+        money but this is neither here nor there. By all
+        means how we got here is an interesting question,
+        but irrelevant to our current exercise.
+      </p></div><p style="
+      color: var(--fg-white-on-blue);
+      background: var(--bg-blue);
+      padding: 8px
+    "><p><strong>NOTE</strong><ul class="no-item-padding" style="margin-block: 0px;"><li>Todays money is fiat money<ul class="no-item-padding" style="margin-block: 0px;"><li>The main danger is risk of people losing faith the money has value.</li></ul></li><li>Money has value because we expect others will value it</li><li>Dollarsiation<ul class="no-item-padding" style="margin-block: 0px;"><li>Some countries with high inflation have ditched their currency for the USD</li></ul></li></ul></p></p><div class="container pre--container"><h3>Measures of money</h3><div class="c2 pre--c2"><div class="container pre--container"><h4>Currency</h4><p>
+            Paper the government has decided has a nominal value, and is
+            worth a certain price.
+          </p><h4>M1</h4><p>Takes the money base and adds demand deposits.</p></div><div class="container pre--container"><h4>Money Base</h4><p>
+            The accounts private banks hold with an economy's central
+            bank, which they pay no interest.
+          </p><h4>M2</h4><p>
+            Adds savings accounts and money market account
+            balanaces to M1. Australia doesn't have this
+            it has M3 (unclear what the difference is).
+          </p></div></div></div></div><figure class="pre--horizontal-shadow"><div style="display: grid; grid-template-columns: 1fr"><table><thead><tr><th>Identifier</th><th>Meaning</th></tr></thead><tbody><tr><td>C</td><td>Currency</td></tr><tr><td>MB</td><td>Monetary Base = currency plus reserves</td></tr><tr><td>M1</td><td>Currency plus demand deposits (e.g. checking accounts)</td></tr><tr><td>M2</td><td>M1 plus savings deposits and indivisual money market accounts</td></tr></tbody></table></div><figcaption>Different Measure of money</figcaption></figure><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>Quantity Equation</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C8 P218)</strong></span></div><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+            The quantity theory of money can be expressed in terms
+            of this this relation. Here's what these terms means:
+          </p><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>M<sub>t</sub></strong>: the supply of money</li><li><strong>P<sub>t</sub></strong>: price level</li><li><strong>Y<sub>t</sub></strong>: real GDP</li><li><strong>V<sub>t</sub></strong>: the velocity of money</li></ul></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><msub><mi>M</mi><mi>t</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>V</mi><mi>t</mi></msub></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>P</mi><mi>t</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>Y</mi><mi>t</mi></msub></mrow></mrow></math><figcaption>Quantity of Money</figcaption></figure></div><p>
+        The Theory sugggests that the terms on either side is nominal GDP,
+        or at least because <strong>P<sub>t</sub></strong><strong>Y<sub>t</sub></strong> is equal to nominal GDP, the
+        other side should. <strong>P<sub>t</sub></strong><strong>Y<sub>t</sub></strong> equals nominal GDP because the price
+        level is the value of goods in the economy and real GDP is the
+        quantity of goods. You multiply the quantity of goods and
+        the value of goods and you get nominal GDP.
+      </p></div><div class="c2 pre--c2"><div class="container pre--container"><h4>The Classical Dichotomy</h4><p>
+          This equation largely states that <strong>in the
+          long run, the real and nominal sides of the economy
+          are completely seperately</strong> in that:
+        </p><ul class="no-item-padding" style="margin-block: 0px;"><li>
+            Real GDP doesn't depend on things such as the value of
+            money, but instead on real variables such as Total
+            Factor Productivity or the investment rate.
+            For that real it is treated as an exogenous variable,
+            by the very nature of it being determined by forces
+            beyond the model.
+          </li></ul></div><div class="container pre--container"><h4>The Velocity of money</h4><blockquote>Read <a target="_blank" href="https://en.wikipedia.org/wiki/Velocity_of_money">here about the velocity of money</a></blockquote><p>
+          For the sake our explaination here, it is assumed the
+          velocity of money is constant and so the exogenous
+          source of money without a time subscript. Although
+          apparently in reality the <strong>velocity of M2</strong>
+          is approximately constant, so it's not an entirely
+          unreasonable assumption for us to work within.
+        </p><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: what is the velocity of money</p><h4>Money Supply</h4><p>
+          The last equation of the theory is the money supply
+          itself. This is largely controlled by the central
+          bank. For now we'll largely just treat it as an
+          exogenous variable.
+        </p></div></div><h4>Solving the model</h4><div class="c2 pre--c2"><div class="container pre--container"><p>
+          After establishing the various exogenous variables
+          we can then solve for price level.
+        </p></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><msubsup><mi>P</mi><mi>t</mi><mo>*</mo></msubsup><mspace width="8px"></mspace><mo>=</mo><mspace width="8px"></mspace><mfrac><mrow><msub><mi>M̄</mi><mi>t</mi></msub><mi>V̄</mi></mrow><msub><mi>Ȳ</mi><mi>t</mi></msub></mfrac></mrow></math><figcaption>Price Level Of Money</figcaption></figure></div><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>Our Model</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>W4 W, / Class (Slide 20)</strong></span></div><div class="grid-responsive-row pre--grid-responsive-row" style="
+      --grid-responsive-row-slim-columns: 1fr;
+      --grid-responsive-row-mobile-columns: 1fr;
+      --grid-responsive-row-desktop-columns: auto auto auto auto;
+      
+    "><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><msub><mi>M</mi><mi>t</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>V</mi><mi>t</mi></msub></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>P</mi><mi>t</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>Y</mi><mi>t</mi></msub></mrow></mrow></math><figcaption>Quantity of Money</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>V</mi><mi>t</mi></msub><mo>=</mo><mi>V̄</mi></mrow></math><figcaption>Velocity Of Money</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>M</mi><mi>t</mi></msub><mo>=</mo><msub><mi>M̄</mi><mi>t</mi></msub></mrow></math><figcaption>Supply Of Money</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>Y</mi><mi>t</mi></msub><mo>=</mo><msub><mi>Ȳ</mi><mi>t</mi></msub></mrow></math><figcaption>Real GDP</figcaption></figure></div><p>
+      The essence of the quantity theory of money is: <strong>in the long run</strong>
+      a key determinant of the price level is the level of the money supply.
+    </p><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: explain why it velocity and real GDP can't be a source of inflation</p></div></div></div><div class="widget-container document" id="test-widget-3" style="grid-column: span 2;"><style id="test-widget-3-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>Theory Of Inflation</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>W4 W, / Class (Slide 26)</strong></span></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+        Given inflation is the rate of change in the price level,
+        we can translate the quantity theory money from stocks to
+        flows, growth rates and  rates of change of those same
+        stocks in order to work towards a measure of inflation.
+      </p><p>
+        Given we assume the velocity of money is constant the
+        growth in of velocity is zero, (∆V = 0). Given the right
+        hand of the quantity of money theory is nominal GPD and
+        the rate of change in that is inflation, we've demostrate
+        that <strong>∆P = π</strong>.
+      </p></div><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mtable style="font-size: 10px"><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>g</mi><mi>M</mi></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mtext>% change in money supply</mtext></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>g</mi><mi>V</mi></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mtext>% change in velocity</mtext></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>g</mi><mi>P</mi></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mtext>% change in price level</mtext></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>g</mi><mi>Y</mi></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mtext>% change in real GDP</mtext></mtd></mtr></mtable></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mtable><mtr columnalign="right centre left"><mtd columnalign="right"><msup><mi>π</mi><mo>*</mo></msup></mtd><mtd columnalign="centre"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>g</mi><mi>M</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>g</mi><mi>Y</mi></msub></mrow></mtd></mtr><mtr columnalign="right centre left"><mtd columnalign="right"><mrow><msub><mi>g</mi><mi>M</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>g</mi><mi>V</mi></msub></mrow></mtd><mtd columnalign="centre"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>g</mi><mi>P</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>g</mi><mi>Y</mi></msub></mrow></mtd></mtr></mtable></mtd></mtd></mtr></mtable></math><figcaption>Theory Of Inflation</figcaption></figure></div><div class="c2 twoThree pre--c2 pre--two-three"><p>
+      With Velocity constant the rate of change in the level of
+      prices ends up being the rate of inflation.
+      The quantity theory implies that in the long run, changes in the
+      growth rate of money lead one-for-one to changes in the inflation
+      rate.
+    </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><msup><mi>π</mi><mo>*</mo></msup><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>g</mi><mi>M</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>g</mi><mi>Y</mi></msub></mrow></mrow></math><figcaption>Theory Of Inflation</figcaption></figure></div><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>inflation</strong>: When money growth is faster than the growth of real GDP</li><li><strong>deflation</strong>: When money growth is slower than the growth of real GDP</li></ul><h4>The neutrality of money</h4><p>
+    There's a proposition that goes changes in the money supply
+    have no real effect on the economy and only affect prices.
+    This position is called the neutrality of money. In the long
+    run this seems to be a compelling proposition but in the
+    short run this doesn't seem to be the case.
+  </p></div></div><div class="widget-container document" id="test-widget-4" style="grid-column: span 2;"><style id="test-widget-4-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Real And Nominal Interest Rate</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>W4 W, / Class (Slide 33), Book (C8 P223)</strong></span></div><div class="c2 pre--c2"><div class="container pre--container"><p>
+        While the real interest is equal to the marginal
+        product of capital. That is the real interest rate
+        is the real rate at which you reap a return in
+        purchasing a unit of capital, investing it, and
+        the reaping the returns of the investment.
+      </p><p>
+        However that isn't same interest rate in which you
+        earn a return on your savings account. That rate is
+        the <strong>nominal interest rate</strong>.,
+      </p></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>i</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mi>R</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>π</mi></mrow></mrow></math><figcaption>Fisher Equation</figcaption></figure></div></div></div><div class="widget-container document" id="test-widget-5" style="grid-column: span 2;"><style id="test-widget-5-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Cost of Inflation</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>W4 W, / Class (Slide 40), Book (C8 P225)</strong></span></div><p>
+    An immediate example of the cost of inflation is how someones
+    pension of $10'000 in 1970 can devalue to the equilivant of
+    $4000 by the year 1983. This can happen with fixed
+    incomes like a pension when they aren't adjusted for inflation.
+  </p></div></div><div class="widget-container document" id="test-widget-6" style="grid-column: span 2;"><style id="test-widget-6-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Fiscal Causes Of High Inflation</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>W4 W, / Class (Slide 46), Book (C8 P228)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 pre--c2"><div class="container pre--container"><p>
+          The quantity theory of money tells us when inflation
+          follows a central bank printing a ton of money it is
+          the increase in money supply that is underlying reason
+          for the inflation.
+        </p><p>
+           One reason this can happen is a governmnent spending too much
+           money all at once, either in paying its bills or with government
+           spending in the form of infrastructure or services.
+           Infrastructure spending in the long run has a productivity return
+           so increased is a bit more excusable than for increasing the amount
+           of services offered by government but all things in moderation.
+        </p></div><div class="container pre--container"><figure class="pre--horizontal-shadow"><math display="block"><mrow><munder><mrow><mi>G</mi></mrow><munder><mo>⏟</mo><mrow style=""><mtext>uses</mtext></mrow></munder></munder><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><munder><mrow><mrow><mi>T</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>∆B</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>∆M</mi></mrow></mrow><munder><mo>⏟</mo><mrow style=""><mtext>sources of funds</mtext></mrow></munder></munder></mrow></math><figcaption>The Government Budget Constraint</figcaption></figure><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>G</strong>: Govt use of money</li><li><strong>T</strong>: Tax revenue</li><li><strong>∆B</strong>: change in outstanding debt</li><li><strong>∆M</strong>: change in money supply</li></ul></div></div><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h4>Inflation Tax</h4><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>W4 W, / Class (Slide 47), Book (C8 P228)</strong></span></div><p>
+      The revenue the government obtains by issuing new money
+      (∆M) is called <strong>seignorage</strong> or the
+      <strong>inflation tax</strong>. Inflation tax is paid by who
+      ever is holding currency, while this sounds like everyone
+      in practise different people hold different portions of
+      their wealth in different assets. Those holding their
+      wealth in land for example will not end up paying this
+      so called tax. This ends up being a transfer from those
+      holding cash to those holding assets.
+    </p><p>
+      In the case of debts, there are cases where a government
+      runs a large debt and its spending is greater than the
+      rate at which it collects tax, but it still has an
+      obligation to pay its debts. If they don't lenders will
+      stop lending, so there's a temptation for them to pay
+      those debts by printing money. This typically leads to
+      <strong>Hyperinflation</strong>.
+    </p><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: quote Sargent</p><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h4>Central Bank Independence</h4><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>W4 W, / Class (Slide 48), Book (C8 P229)</strong></span></div><p>
+      In an effort to rule out this temptation most countries
+      have arrived at the decision to establish a level of
+      independence for their central banks.
+    </p></div></div></div><div class="widget-container document" id="test-widget-7" style="grid-column: span 2;"><style id="test-widget-7-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h2>Tutorial Notes</h2><p style="
+      color: var(--fg-white-on-blue);
+      background: var(--bg-blue);
+      padding: 8px
+    "><p><strong>NOTE (on inflation )</strong></p><ul class="no-item-padding" style="margin-block: 0px;"><li>to the central bank expected inflation is more important than actual inflation</li><li>who is Paul Volker, <ul class="no-item-padding" style="margin-block: 0px;"><li>Read the wikipedia on him</li><li>He made everyone unemployed</li><li>Why did he do this? To eliminate inflation</li></ul></li><li>Something about stagflation<ul class="no-item-padding" style="margin-block: 0px;"><li>Politically hard to fix</li><li>Need to put more people out work</li></ul></li><li>What is worse, deflation or inflation<ul class="no-item-padding" style="margin-block: 0px;"><li>Is one easier to manage by a central bank?</li></ul></li><li>yield curve<ul class="no-item-padding" style="margin-block: 0px;"><li>Increase cash rate, and yield curve will go up</li></ul></li><li>risk free rate, government bond rate</li></ul></p></div></div><hr style="width: 100%; border-color: transparent;">"
+`;

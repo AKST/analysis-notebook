@@ -1,0 +1,315 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`app(unsw::2206::04.2).snapshot > should match snapshots 1`] = `
+"<style id="test-styles"></style><div class="widget-container document" id="test-widget-0" style="grid-column: span 2;"><style id="test-widget-0-styles"></style><header><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>Multiple Regression Analysis: Further Issues<br><small style="color: #aaaaff">ECON2206, W4</small></h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li>Chapter 6</li></ul></div></div></aside></div></div></header></div><div class="widget-container document" id="test-widget-1" style="grid-column: span 2;"><style id="test-widget-1-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Effects of Data Scaling on OLS Statistics</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C6 P181)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p>
+      Data Scaling is the process of scaling dependent of independent
+      variables on standard errors, t statistic, F statistics, and
+      confindence intervals. Data scaling largely occurs for cosmetic
+      purposes like a coefficient having fewer trailing zeros, without
+      chaning the the measured effects.
+    </p></div><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>Beta Coefficients</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C6 P184)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p>
+      Sometimes, it is useful to obtain regression results when all
+      variables involved, the dependent as well as all the independent
+      variables, have been standardized. A variable is standardized in
+      the sample by subtracting off its mean and dividing by its
+      standard deviation (<strong>z score</strong>). This is known as
+      <strong>standardized coefficients</strong> or <strong>beta coefficients</strong>.
+    </p><p>
+      The interesting thing with this is the regression coefficients
+      now tell you what the effect of one standard deviations from the
+      mean has on the dependent variable. This inteperation places all
+      variables on equal footing and shows which variable is a more
+      significant determinant.
+    </p><p>
+      However the largeest coefficnt doesn't tell you what is the most important coefficent.
+    </p></div></div></div><div class="widget-container document" id="test-widget-2" style="grid-column: span 2;"><style id="test-widget-2-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>More on Functional Form</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C6 P186)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>Logarithms</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C6 P186)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mrow><mtext>log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mtext>log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mover><mrow><mrow><mi>%Δŷ</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mn>100</mn><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mrow><mtext>exp</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>Δx</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mn>1</mn><mo>)</mo></mrow></mrow></mrow></mrow><mover><mo>⏞</mo><mrow><mtext>with x₁ fixed</mtext></mrow></mover></mover><mspace width="32px"></mspace><mover><mrow><mrow><mi>%Δŷ</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mi>%Δx₁</mi></mrow></mrow></mrow><mover><mo>⏞</mo><mrow><mtext>with x₂ fixed</mtext></mrow></mover></mover></mrow></mtd></mtd></mtr></mtable></math><figcaption>
+      Interpretations of changes in x₁ and x₂ in a semilog model
+    </figcaption></figure><p>
+      Above is a rough interpretation of how to interpret a
+      log model when controlling of either the a logged
+      variable or nonlogged variable. One limiation of
+      using log is you can get extreme values for zero
+      of negative values. Especailly when y can be zero,
+      in such cases it is acceptable to use log(y+1).
+    </p><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>Quadaratics</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C6 P188)</strong></span></div><div class="grid-responsive-row pre--grid-responsive-row" style="
+      --grid-responsive-row-slim-columns: 1fr;
+      --grid-responsive-row-mobile-columns: 1fr;
+      --grid-responsive-row-desktop-columns: auto auto;
+      
+    "><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right centre left"><mtd columnalign="right"><mi>y</mi></mtd><mtd columnalign="centre"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msup><msub><mi>x</mi><mn>1</mn></msub><mn>2</mn></msup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></mtd></mtr><mtr columnalign="right centre left"><mtd columnalign="right"><mi>ŷ</mi></mtd><mtd columnalign="centre"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msup><msub><mi>x</mi><mn>1</mn></msub><mn>2</mn></msup></mrow></mrow></mtd></mtr><mtr columnalign="right centre left"><mtd columnalign="right"><mi>Δŷ</mi></mtd><mtd columnalign="centre"><mo>≈</mo></mtd><mtd columnalign="left"><mrow><mrow><mo>(</mo><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mn>2</mn><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow></mrow></mrow><mo>)</mo></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>Δx</mi><mn>1</mn></msub></mrow></mtd></mtr><mtr columnalign="right centre left"><mtd columnalign="right"><mfrac><mi>Δŷ</mi><msub><mi>Δx</mi><mn>1</mn></msub></mfrac></mtd><mtd columnalign="centre"><mo>≈</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mn>2</mn><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow></mrow></mrow></mtd></mtr></mtable></math><figcaption>Quadratic-in-x₁ model, fitted form, and marginal effect</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msup><mi>x</mi><mo>*</mo></msup><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mo>|</mo><mrow><mfrac><msub><mi>β̂</mi><mn>1</mn></msub><mrow><mn>2</mn><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>β̂</mi><mn>2</mn></msub></mrow></mfrac></mrow><mo>|</mo></mrow></mrow></math><figcaption>Quadratic Turning Point</figcaption></figure></div><p>
+      One motivation for using quadratic form is for modelling
+      a deminishing effect. There is nothing stopping you from
+      combining quadratics and logarithms.
+    </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mtext>log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mtext>log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msup><mrow><mo>(</mo><mrow><mtext>log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mn>2</mn></msup></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mi>%Δy</mi></mtd><mtd columnalign="center"><mo>≈</mo></mtd><mtd columnalign="left"><mrow><mrow><mo>[</mo><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mn>2</mn><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mtext>log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow></mrow></mrow></mrow><mo>]</mo></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mi>%Δx₁</mi></mrow></mtd></mtr></mtable></math><figcaption>Semilog quadratic model and %Δy interpretation</figcaption></figure><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>Interaction Terms</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C6 P186)</strong></span></div><p>Here's an example of an interaction term and it's marginal effects</p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mfrac><mi>Δy</mi><msub><mi>Δx</mi><mn>2</mn></msub></mfrac><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow></mrow></mrow></mtd></mtd></mtr></mtable></math><figcaption>Marginal effect of interaction model</figcaption></figure><p>
+      Here is an example of a reparameterised model to show partial effects.
+      Caution should be exercised before performing something like this, you'd
+      likely want to make sure you have the population mean or a solid estimate
+      reinforced with sufficiently tested hypothesises to justify the estimate.
+    </p><figure class="pre--horizontal-shadow"><math class="big-math" display="block"><mrow><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>α</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>δ</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>μ</mi><mn>1</mn></msub><mo>)</mo></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mn>2</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>μ</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></mrow></mrow></mrow></math><figcaption>Parital Effect</figcaption></figure><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>Partial Average Effects</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C6 P186)</strong></span></div><figure class="pre--horizontal-shadow"><math class="big-math" display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msup><msub><mi>x</mi><mn>1</mn></msub><mn>2</mn></msup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mn>4</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mfrac><mi>Δy</mi><msub><mi>Δx</mi><mn>1</mn></msub></mfrac><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mn>2</mn><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>4</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msub><mi>APE</mi><msub><mi>x</mi><mn>1</mn></msub></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mn>2</mn><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x̄</mi><mn>1</mn></msub></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>4</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x̄</mi><mn>2</mn></msub></mrow></mrow></mrow></mtd></mtd></mtr></mtable></math><figcaption>Average partial effect and marginal response in a quadratic interaction model</figcaption></figure><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: explain the motivation and outcome of this</p></div></div></div><div class="widget-container document" id="test-widget-3" style="grid-column: span 2;"><style id="test-widget-3-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>More on Goodness-of-Fit and Selection of Regressors</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C6 P195)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+          Through out these notes, not much emphasis has been placed
+          on <strong>R<sup>2</sup></strong> as it tends to distract from equally
+          and more important considerations, and getting a high R
+          squared can easily be cheesed when the important of the
+          Classical model have not been well understood, and leads
+          to harmful nonsense models.
+        </p><ul class="no-item-padding" style="margin-block: 0px;"><li>
+            For example, if you were to overfit your model you could
+            easily get an inflated value, as <strong>R<sup>2</sup></strong> does not
+            punish overfitted models.
+          </li></ul><p>
+          Importantly, just because a model has a low <strong>R<sup>2</sup></strong>
+          does not mean it is without value. Often there is a lot value
+          in getting unbias estimators for different variables, as we
+          can learn a lot from those. However, a low <strong>R<sup>2</sup></strong> value
+          does mean <strong>making predictions is difficult</strong>.
+        </p></div><dl><dt>Nested Model</dt><dd>
+          When one model's independent variables are a subset of
+          another model's independent variables. At least when
+          they have the same dependent variable.
+        </dd></dl></div><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h4>Adjusted R Squared</h4><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C6 P196)</strong></span></div><div class="grid-responsive-row pre--grid-responsive-row" style="
+      --grid-responsive-row-slim-columns: 1fr;
+      --grid-responsive-row-mobile-columns: 1fr;
+      --grid-responsive-row-desktop-columns: auto auto auto;
+      
+    "><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><msup><mi>R</mi><mn>2</mn></msup><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mo>[</mo><mfrac><mrow><mo>(</mo><mi>SSR</mi><mspace width="4px"></mspace><mo>÷</mo><mspace width="4px"></mspace><mi>n</mi><mo>)</mo></mrow><mrow><mo>(</mo><mi>SST</mi><mspace width="4px"></mspace><mo>÷</mo><mspace width="4px"></mspace><mi>n</mi><mo>)</mo></mrow></mfrac><mo>]</mo></mrow></mrow></mrow></mrow></math><figcaption>R-Squared</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><msup><mi>ρ</mi><mn>2</mn></msup><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mo>[</mo><mfrac><msubsup><mi>σ</mi><mi>u</mi><mn>2</mn></msubsup><msubsup><mi>σ</mi><mi>y</mi><mn>2</mn></msubsup></mfrac><mo>]</mo></mrow></mrow></mrow></mrow></math><figcaption>Population R-Squared</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><msup><mi>R̄</mi><mn>2</mn></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mo>[</mo><mfrac><mrow><mi>SSR</mi><mspace width="4px"></mspace><mo>÷</mo><mspace width="4px"></mspace><mrow><mo>(</mo><mi>n</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>k</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mn>1</mn><mo>)</mo></mrow></mrow><mrow><mi>SST</mi><mspace width="4px"></mspace><mo>÷</mo><mspace width="4px"></mspace><mrow><mo>(</mo><mi>n</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mn>1</mn><mo>)</mo></mrow></mrow></mfrac><mo>]</mo></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mrow></mrow></mtd><mtd columnalign="center"><mrow></mrow></mtd><mtd columnalign="left"><mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msup><mi>σ̂</mi><mn>2</mn></msup><mspace width="4px"></mspace><mo>÷</mo><mspace width="4px"></mspace><mrow><mo>[</mo><mi>SST</mi><mspace width="4px"></mspace><mo>÷</mo><mspace width="4px"></mspace><mrow><mo>(</mo><mi>n</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mn>1</mn><mo>)</mo></mrow><mo>]</mo></mrow></mrow></mrow></mtd></mtr></mtable></math><figcaption>Adjusted R-Squared</figcaption></figure></div><ul class="no-item-padding" style="margin-block: 0px;"><li>
+          Given the definition of we'll devise adjusted R Squared. First
+          note what R squared is actually estimating, <strong>it's estimating
+          the residual variance and subtracting that from 1</strong>. Actually
+          it's an estimate of a population statistic, which we've shown
+          as well. Given that we we
+        </li><li>
+          Sometimes the Adjusted R Squared is called the
+          <strong>corrected R-Square</strong>, however this is
+          not a good name, as it is not necessarily a better
+          estimator of the population R Squared nor, and it
+          is also not unbias.
+        </li><li>
+          The main motivator to use adjusted R Squared is that it
+          imposes a penalty for adding additional independent
+          variables to a model.
+        </li></ul></div></div></div></div><div class="widget-container document" id="test-widget-4" style="grid-column: span 2;"><style id="test-widget-4-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Prediction and Residual Analysis</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C6 P201)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><ul class="no-item-padding" style="margin-block: 0px;"><li>
+            While predictions are useful, they are subject to
+            sampling variation, as they are obtained using the OLS
+            estimators.
+          </li><li>
+            Sometimes we want to study a particular observation or
+            indivisual, which is our main motivator for studying residuals.
+          </li></ul><h4>Confindence Intervals for predictions</h4><p>
+          Say you obtain a predicted value from a model (which we can
+          also call <strong>an estimate of the expected value</strong>.
+        </p><p>
+          In order to get a 95 CI for a prediction we need a standard
+          error for the esimated value <em>(but not only this)</em>.
+          We get obtaining this by recomputing our estimators after
+          subtracting the variables used to obtain the estimate from
+          the sample data and recomputing estimators for the model.
+          The Intercept we end up in this new model will be our
+          <strong>standard error of our estimated value</strong>.
+        </p></div><div class="container pre--container"><h3>Definitions</h3><dl><dt>Estimate of an Expected Value</dt><dd>This another name for a prediction.</dd><dt>Varinace in the unobseved error</dt><dd>
+            A measure of our ignorance of the
+            uobserved factors that effect our
+            dependent variable.
+          </dd><dt>Standard Error of estimated</dt><dd>
+            This is different from the standard error of
+            a prediction, this is specifically the standard
+            error of our estimated value.
+          </dd></dl></div></div><div class="grid-responsive-row pre--grid-responsive-row" style="
+      --grid-responsive-row-slim-columns: 1fr;
+      --grid-responsive-row-mobile-columns: 1fr;
+      --grid-responsive-row-desktop-columns: auto auto;
+      
+    "><figure class="pre--horizontal-shadow"><math display="block"><mtable style="text-align: left"><mtr columnalign=""><mtd columnalign=""><mtd><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>θ̂</mi><mn>0</mn></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>c</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>c</mi><mi>k</mi></msub></mrow></mrow></mtd></mtr></mtable></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mtext>Let c in </mtext><mspace width="8px"></mspace><mrow><mo>{</mo><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>c</mi><mn>2</mn></msub><mo>,</mo><mspace width="4px"></mspace><mo>⋯</mo><mo>,</mo><mspace width="4px"></mspace><msub><mi>c</mi><mi>k</mi></msub><mo>}</mo></mrow><mspace width="8px"></mspace><mtext> be values from a predicted observation.</mtext></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mover><mrow><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><munder><mrow><msub><mi>θ</mi><mn>0</mn></msub></mrow><munder><mo>⏟</mo><mrow style=""><mtext>Std Err</mtext></mrow></munder></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>c</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mi>k</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>c</mi><mi>k</mi></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></mtd></mtr></mtable></mrow><mover><mo>⏞</mo><mrow><mtext>Compute new model, Use intercept as Standard Error</mtext></mrow></mover></mover></mtd></mtd></mtr></mtable></math><figcaption>Standard Error of estimation</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mrow><mtext>Se</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>θ̂</mi><mn>0</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msub><mi>θ</mi><mn>0</mn></msub></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msub><mi>θ̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>±</mo><mspace width="4px"></mspace><mrow><mn>2</mn><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mtext>Se</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>θ̂</mi><mn>0</mn></msub><mo>)</mo></mrow></mrow></mrow></mrow></mtd></mtd></mtr></mtable></math><figcaption>
+      Confindence Interval <br>
+      For Mean Response
+    </figcaption></figure></div><h4>A distinction</h4><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>There's a diffrence between:</p><ol style="margin-block: 0px;"><li>
+            <strong>Confidence interval for the mean response</strong>:
+            CI around the OLS estimate of E(y|x<sub>1</sub>...x<sub>k</sub>)
+            for any explanatory variable. <ul class="no-item-padding" style="margin-block: 0px;"><li>This a confidence interval for the average value of y for the subpopulation with a given set of covariates.</li><li>As values of <strong>c<sub>j</sub></strong> get further away from <strong>x̄<sub>j</sub></strong>, Var(ŷ) gets bigger.</li><li>You do this with hypothetical values you provide to the model</li></ul>
+          </li><li>
+            <strong>Prediction interval for an individual observation</strong>:
+            This is an interval in which a new observation will fall. For
+            this we must account for the residual or error term. <ul class="no-item-padding" style="margin-block: 0px;"><li>
+                You do this with actual values you observe in the population
+                and you're predicting the dependent variable.
+              </li></ul>
+          </li></ol></div><dl><dt>A prediction interval</dt><dd>
+          A prediction interval is the confindence interval
+          in which the dependent variable exists in the
+          population.
+        </dd><dt>Varinace in the unobseved error</dt><dd>
+          A measure of our ignorance of the
+          uobserved factors that effect our
+          dependent variable.
+        </dd><dt>ZCM</dt><dd>Zero Conditional Mean</dd></dl></div><blockquote>
+      The "average mean response" is the mean value you get from
+      hypothetical values you provide to your estimated model. Where
+      as a prediction interval is for a estimated y based on new
+      explanatory values you see in the population.
+    </blockquote><p>
+      The difference here is largely, the first one is an inverval
+      for the <strong>mean</strong> estimated indivisual. Where as a prediction
+      interval relates to a specific indivisual not an average of the
+      population of indivisuals. In order to get a prediction interval
+      we need to better understand the variance in the ounobserved error,
+      which is a measure our ignorance of the unobserved factors that
+      determine y.
+    </p><blockquote><strong>Resource</strong>:
+      What is the difference between a <a href="https://www.datacamp.com/blog/confidence-intervals-vs-prediction-intervals" target="_blank">
+        Confindence Interval vs Prediction interval</a>?
+    </blockquote><h4>Prediction Error</h4><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><msup><mi>y</mi><mn>0</mn></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msup><msub><mi>x</mi><mn>1</mn></msub><mn>0</mn></msup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msup><msub><mi>x</mi><mn>2</mn></msub><mn>0</mn></msup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msup><msub><mi>x</mi><mi>k</mi></msub><mn>0</mn></msup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msup><mi>u</mi><mn>0</mn></msup></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msup><mi>ŷ</mi><mn>0</mn></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msup><msub><mi>x</mi><mn>1</mn></msub><mn>0</mn></msup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msup><msub><mi>x</mi><mn>2</mn></msub><mn>0</mn></msup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msup><msub><mi>x</mi><mi>k</mi></msub><mn>0</mn></msup></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msup><mi>ê</mi><mn>0</mn></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><msup><mi>y</mi><mn>0</mn></msup><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msup><mi>ŷ</mi><mn>0</mn></msup></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mo>(</mo><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mn>1</mn><mn>0</mn></msubsup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mi>k</mi><mn>0</mn></msubsup></mrow></mrow><mo>)</mo></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msup><mi>u</mi><mn>0</mn></msup><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msup><mi>ŷ</mi><mn>0</mn></msup></mrow></mrow></mrow></mtd></mtr></mtable></math><figcaption>Prediction error</figcaption></figure><h4>Variance in Prediction Error</h4><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msup><mi>ê</mi><mn>0</mn></msup><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msup><mi>ŷ</mi><mn>0</mn></msup><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msup><mi>u</mi><mn>0</mn></msup><mo>)</mo></mrow></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msup><mi>ŷ</mi><mn>0</mn></msup><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msup><mi>σ</mi><mn>2</mn></msup></mrow></mrow></mrow></math><figcaption>Variance of prediction error</figcaption></figure><p>There are 2 sources of variation in ê⁰</p><ol style="margin-block: 0px;"><li><strong>Var(ŷ⁰)</strong>: Sampling error in ŷ⁰ (as a result of esimating βⱼ)<ul class="no-item-padding" style="margin-block: 0px;"><li>Var(ŷ⁰) is proportional to 1/n, as samples grow Var(ŷ⁰) will shrink.</li></ul></li><li><strong>Var(u⁰) / σ²</strong>: Unobserved randomness, as the variance of the redisuals u⁰.</li></ol><h4>Prediction Interval</h4><div class="grid-responsive-row pre--grid-responsive-row" style="
+      --grid-responsive-row-slim-columns: 1fr;
+      --grid-responsive-row-mobile-columns: 1fr;
+      --grid-responsive-row-desktop-columns: auto auto auto;
+      
+    "><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>se</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msup><mi>ê</mi><mn>0</mn></msup><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msup><mrow><mo>{</mo><mrow><msup><mrow><mo>[</mo><mrow><mtext>se</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msup><mi>ŷ</mi><mn>0</mn></msup><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mn>2</mn></msup><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msup><mi>σ</mi><mn>2</mn></msup></mrow><mo>}</mo></mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></msup></mrow></math><figcaption>Standard error of prediction error</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mi>P</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mrow><mrow><mo>−</mo><msub><mi>t</mi><mn>0.025</mn></msub></mrow><mspace width="4px"></mspace><mo>≤</mo><mspace width="4px"></mspace><mfrac><msup><mi>ê</mi><mn>0</mn></msup><mrow><mtext>se</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msup><mi>ê</mi><mn>0</mn></msup><mo>)</mo></mrow></mrow></mfrac><mspace width="4px"></mspace><mo>≤</mo><mspace width="4px"></mspace><msub><mi>t</mi><mn>0.025</mn></msub></mrow></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0.95</mn></mrow></math><figcaption>Probability interval (df: n − k − 1)</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><msup><mi>ŷ</mi><mn>0</mn></msup><mspace width="4px"></mspace><mo>±</mo><mspace width="4px"></mspace><mrow><msub><mi>t</mi><mn>0.025</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mtext>se</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msup><mi>ê</mi><mn>0</mn></msup><mo>)</mo></mrow></mrow></mrow></mrow></mrow></math><figcaption>Prediction interval</figcaption></figure></div><h4>Other</h4><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>y</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>ŷ</mi><mn>0</mn></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msup><mi>σ</mi><mn>2</mn></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mrow><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msubsup><mi>x</mi><mn>0</mn><mi>T</mi></msubsup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msup><mrow><mo>(</mo><mrow><msup><mi>X</mi><mi>T</mi></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>X</mi></mrow><mo>)</mo></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>0</mn></msub></mrow></mrow><mo>)</mo></mrow></mrow></mrow></math><figcaption>Prediction variance</figcaption></figure></div><h3>Residual Analysis</h3><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: content</p></div></div></div><hr style="width: 100%; border-color: transparent;">"
+`;

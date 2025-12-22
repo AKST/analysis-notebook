@@ -1,0 +1,162 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`app(unsw::1101::05).snapshot > should match snapshots 1`] = `
+"<style id="test-styles"></style><div class="widget-container document" id="test-widget-0" style="grid-column: span 2;"><style id="test-widget-0-styles"></style><div class="container pre--container"><h1>Government Intervention</h1><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p class="text-large">
+          Whenever governments intervenes in <strong>perfectly competitive</strong>
+          markets, both producers and consumers are worse off. Note,
+          <strong>perfectly competitive</strong> is an important qualitifier.
+        </p><p class="text-large">
+          Not all markets are perfectly competitive, very few in reality are, but
+          many (but not all) are close enough for much of this to generally hold.
+          Regardless, before asserting policy reform in the form of market
+          liberalisation it is worth examining is the market question
+          <strong>perfectly competitive</strong>.
+        </p><details class="readmore"><summary>When markets are not perfectly competitive</summary><br><div class="container"><p><img src="./assets/econ/imperfect-markets.png" height="120" style="float: left; margin-right: 16px;">
+        The moment any of the assumptions of perject competition
+        are violated you no longer have perfect competition.
+        Monopolies are one of the most apparent examples (explained
+        in more detail later), who for example violate several of
+        those assumptions, including buyer and sellers are
+        <strong>price takers</strong> as well as <strong>free exit and entry</strong>
+        as well as <strong>homonogenous goods</strong>.
+      </p></div></details></div><aside class="infobox"><h3 class="infobox-name">💡 Effiency Vs Equity</h3><div class="infobox-body"><div class="container"><p class="text-medium">
+      While government intervention reduces overall effiency, this may
+      be a preferable outcome in terms of equity.
+    </p><p class="text-medium">
+      Sometimes a market is viewed as pedatoral and a society may actually
+      prefer it to be less effient. However most examples of this tend to
+      be examples of markets with externalities (which is often the source
+      a desire by the public for government intervention).
+    </p></div></div></aside></div></div></div><div class="widget-container document" id="test-widget-1" style="grid-column: span 2;"><style id="test-widget-1-styles"></style><div class="container pre--container"><h2>Price Controls, Anchors, and Limits</h2><p class="text-large">
+      Firstly, before price ceilings and floors can have an
+      impact they need to be binging. For price ceilings
+      this means it is below the market price, and for floors
+      it means it is above the equilibrium. Otherwise they
+      will have no effect.
+    </p><div class="c2 pre--c2"><div class="container pre--container"><h4>Price Ceiling, Excess demand</h4><p class="text-large">
+          A price ceiling is a maximum allowable price
+          for goods in a given market. Some examples include,
+          Road Toll prices, Council Rates, Water Rates, or
+          Rent Controls.
+        </p><details class="readmore"><summary>Producer Implications</summary><br><div class="container"><p>
+              While the price is effectively lowered this tends
+              to reduce the overall quantity. In context of a
+              shortage suppliers have no incentive to increase
+              output, it is very likely they are already producing
+              up to a point at which - if it were any higher their
+              marginal costs would exceed their ability to repay them.
+            </p><p>
+              There is also less incentive to take on debt to increase
+              production capacity as the market price would make repaying
+              difficult.
+            </p></div></details><details class="readmore"><summary>Consumer Implications</summary><br><div class="container"><p><img src="./assets/econ/survivorship-bias.png" height="120" style="float: left; margin-right: 16px;">
+              When a Price ceiling is binding, all the surplus
+              under the equilibrium price and above the price ceiling
+              that would have otherwise gone to the producer will go
+              to the consumer. So are consumers always better off?
+              It depends. One criticism of rent controls follows that
+              it actualy subsidises incumbants, more generally price
+              ceilings only really benefit those who manage to end up
+              accessing the good.
+            </p><p>
+              An example of this is water rates, in that it benefits
+              those with a water connection but it makes it harder for
+              water utilities to grow inline with growth of demand. This
+              cost either gets be passed on to new homebuyers or the
+              water utility company may just refuse to provide additional
+              connections.
+            </p></div></details></div><div class="container pre--container"><h4>Price Floor, Excess supply</h4><p class="text-large">
+          A price floor is a minimum allowable price for
+          goods (or services) in a given market. Some examples
+          include minimum wages, or support for farms.
+        </p><details class="readmore"><summary>Producer Implications</summary><br><div class="container"><p>
+              This is fairly similar to the consumer implications
+              for price ceilings, in that there are fewer
+              opportunities to sell.
+            </p></div></details></div></div><details class="readmore"><summary>Price Ceilings in NSW</summary><br><div class="container"><p><figure style="width: 165px; float: left; margin: 0; margin-right: 16px;"><img src="./assets/econ/ipart-founder.png" height="161"><figcaption>"Tom Parry" IPART Founder</figcaption></figure>
+        In NSW, prices for some goods are regulated by IPART.
+        This is for a number of things, such as council rates,
+        Water rates, fares for services like Sydney Trains or
+        Sydney Ferries. Even for prices between different
+        Government institutions such as the price the valuer
+        General can charge councils to access land value
+        information for indivisual lots.
+      </p></div></details><h3>Deadweight loss</h3><p class="text-large">
+      While price controls change can increase and decrease the overall
+      portion which goes to consumers or producers, overall sum will
+      be reduced regardless. The area lost is called <strong>Deadweight loss</strong>,
+      we use the same term when refering to a reduction in overall surplus
+      in a number of scenarios, including taxes, as well as any devations from
+      equilibrium we see in imperfect markets such as monopolies.
+    </p></div></div><div class="widget-container canvas2d" id="test-widget-2" style="grid-column: span 1;"></div><div class="widget-container canvas2d" id="test-widget-3" style="grid-column: span 1;"></div><div class="widget-container document" id="test-widget-4" style="grid-column: span 2;"><style id="test-widget-4-styles"></style><div class="container pre--container"><hr><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h2>Unit Taxes and Subsidies</h2><p class="text-large">
+          Taxes and subsidies are kind of the same thing,
+          in same way addition and subtract are the same thing
+          but stress different directions. It's probably more
+          correct they exist on the same continuum in the same
+          way negative numbers and positive numbers do.
+          A negative tax is just a subsidy and a negative subsidy
+          is just a tax. A positive tax is a negative subsidy and
+          positive subsidy is a negative tax. All functions of tax
+          are the inverse of a subsidy in respect to market activity
+          and government cost.
+        </p><details class="readmore"><summary>Correctly modelling Taxes and Subsides</summary><br><div class="container"><p>
+        It is entirely possible I've modelled taxes and subsides
+        unconventionally here. Many examples I've seen of modelling
+        taxes has involved incrementing the intercept of the tax.
+        Whereas here I haven't done that, I've instead placed a wedge
+        between the surplus of the two curves.
+        I guess I found this easier to show where dead weightloss is.
+      </p></div></details><details class="readmore"><summary>Taxes and Subsidy as Wedge</summary><br><div class="container"><p><img src="./assets/econ/tax-wedge.png" height="107" style="float: left; margin-right: 16px;">
+        Taxes and subsidies being the same thing isn't just a metaphor for
+        understanding taxes, but something significantly simplifies modeling
+        taxes and subsides. For example, when computing equilibrium handling
+        taxes and subsidies requires no special treatment when they are
+        represented as the same variables (Transfers = Taxes - Subsidies).
+      </p><p>
+        So when you model a market, and you have a positive transfer (tax),
+        you'll seee a divide form between the supply and demand surplus,
+        aka <strong>a wedge</strong>. When you have a negative transfer (subsidy)
+        you'll see the opposite occur, instead you'll see the surpluses overlap.
+      </p><p>
+        Note this is some what Contingent on how you model taxes, it isn't
+        uncommon to simply move the supply curve, though the graph takes on a
+        different meaning.
+      </p></div></details><h3>Difference between taxes on Supply and Demand</h3><p class="text-large">
+          In <strong>perfect competition</strong> with no other
+          Government intervention, it actually doesn't matter.
+          However, if you have a price floor or ceilling it will
+          make a difference, but we are not talking about
+          that here.
+        </p></div><div class="container pre--container"><aside class="infobox"><h3 class="infobox-name">💡 Constraint solving Equilibrium</h3><div class="infobox-body"><div class="container"><div class="equilibrium-equation"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mover><munder><mrow><msub><mi>P</mi><mi>D</mi></msub><mo>=</mo><mi>α</mi><mo>+</mo><mi>β</mi><mi>Q</mi></mrow><mtext>Such that β &lt; 0</mtext></munder><mtext>Demand</mtext></mover><mspace width="32px"></mspace><mover><mrow><msub><mi>P</mi><mi>S</mi></msub><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mi>Q</mi></mrow><mtext>Supply</mtext></mover></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mover><mrow><mi>W</mi><mo>=</mo><mtext>Taxes</mtext><mo>-</mo><mtext>Subsidies</mtext></mrow><mtext>Wedge</mtext></mover></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mover><mrow><mrow><mo>[</mo><mtable><mtr><mtd><mrow><mo>-</mo><mi>β</mi></mrow></mtd><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mrow><mo>-</mo><mi>b</mi></mrow></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mrow><mo>-</mo><mn>1</mn></mrow></mtd></mtr></mtable><mo>]</mo></mrow><mrow><mo>[</mo><mtable><mtr><mtd><mi>Q</mi></mtd></mtr><mtr><mtd><msub><mi>P</mi><mi>D</mi></msub></mtd></mtr><mtr><mtd><msub><mi>P</mi><mi>S</mi></msub></mtd></mtr></mtable><mo>]</mo></mrow><mo>=</mo><mrow><mo>[</mo><mtable><mtr><mtd><mi>α</mi></mtd></mtr><mtr><mtd><mi>a</mi></mtd></mtr><mtr><mtd><mi>W</mi></mtd></mtr></mtable><mo>]</mo></mrow></mrow><mtext>Establish Contraints</mtext></mover></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mover><mrow><mrow><mo>[</mo><mtable><mtr><mtd><mi>Q</mi></mtd></mtr><mtr><mtd><msub><mi>P</mi><mi>D</mi></msub></mtd></mtr><mtr><mtd><msub><mi>P</mi><mi>S</mi></msub></mtd></mtr></mtable><mo>]</mo></mrow><mo>=</mo><msup><mrow><mo>[</mo><mtable><mtr><mtd><mrow><mo>-</mo><mi>β</mi></mrow></mtd><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mrow><mo>-</mo><mi>b</mi></mrow></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mrow><mo>-</mo><mn>1</mn></mrow></mtd></mtr></mtable><mo>]</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mrow><mo>[</mo><mtable><mtr><mtd><mi>α</mi></mtd></mtr><mtr><mtd><mi>a</mi></mtd></mtr><mtr><mtd><mi>W</mi></mtd></mtr></mtable><mo>]</mo></mrow></mrow><mtext>Rearrange to solve</mtext></mover></mtd></mtd></mtr></mtable></math></div></div></div></aside><aside class="infobox"><h3 class="infobox-name">💡 Ad Valorem Tax</h3><div class="infobox-body"><div class="container"><p class="text-medium">
+      Ad Valorem taxes are percentage based
+      taxes, these taxes are a percentage of
+      the value of the price. Examples include
+      stamp duty, GST and land value tax.
+      Ad valorem Subsidies do exist as well.
+    </p></div></div></aside></div></div><div class="c2 pre--c2"><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h3>Tax Burden</h3><p>
+          While who pays the tax doesn't matter, it won't always be
+          the case that everyone pays it equally (which has nothing
+          to do with who pays). This is called <strong>Tax burden</strong>.
+        </p><math display="block"><mrow><mi>P</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mi>α</mi><mspace width="4px"></mspace><mo>±</mo><mspace width="4px"></mspace><mrow><mover><mi>β</mi><mtext>slope</mtext></mover><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mi>Q</mi></mrow></mrow></mrow></math><p>
+          As a general rule, the tax burden is greatest held by the side
+          is the more elastic portion of the market, or which ever
+          curve has the steepest slope.
+        </p><h4>Subsidy <s>Burden</s> <em>Beneficiary</em></h4><p>
+          Similarly, when there's a subsidy which ever of the two
+          curves is the steepest (or elastic) will reap the
+          greatest benefit of the subsidy.
+        </p><h4>Computing Burden</h4><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mrow><munder><mrow><msub><mi>P</mi><mi>D</mi></msub><mo>=</mo><msub><mi>α</mi><mi>D</mi></msub><mo>-</mo><msub><mi>β</mi><mi>D</mi></msub><mi>Q</mi></mrow><mtext>Consumer Price</mtext></munder><mspace width="16px"></mspace></mrow></mtd><mtd><mrow><munder><mtext>Burden</mtext><mtext>consumer</mtext></munder><mo>=</mo><mfrac><msub><mi>β</mi><mi>D</mi></msub><mrow><msub><mi>β</mi><mi>S</mi></msub><mo>-</mo><msub><mi>β</mi><mi>D</mi></msub></mrow></mfrac></mrow></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mrow><munder><mrow><msub><mi>P</mi><mi>S</mi></msub><mo>=</mo><msub><mi>α</mi><mi>S</mi></msub><mo>+</mo><msub><mi>β</mi><mi>S</mi></msub><mi>Q</mi></mrow><mtext>Producer Price</mtext></munder><mspace width="16px"></mspace></mrow></mtd><mtd><mrow><munder><mtext>Burden</mtext><mtext>producer</mtext></munder><mo>=</mo><mfrac><msub><mi>β</mi><mi>S</mi></msub><mrow><msub><mi>β</mi><mi>S</mi></msub><mo>-</mo><msub><mi>β</mi><mi>D</mi></msub></mrow></mfrac></mrow></mtd></mtr></mtable></math></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h3>Price after Tax</h3><p>
+          The difference in price paid by consumers, won't be the
+          size of the tax. If both curves have an identical
+          magnitude for their slope, the difference will be ½ the
+          size of the tax and it will be split evenly. But when it's
+          not? The difference will be the size of the tax TIMES
+          the size of their portion of the burden.
+        </p><h3>Quantity after tax</h3><p>
+          Elasicity and the slope of the curves of the market will largely
+          determine how many units will remain in the market after the
+          introduction of a tax. Inelastic markets (steep curves) lose
+          fewer units than elasitic markets (flatter curves).
+          They also generate more <strong>Government Revenue</strong>.
+        </p><h4>Computing the New Equilibrium</h4><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mover><mi>W</mi><mtext>Wedge</mtext></mover><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mtext>Taxes</mtext><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mtext>Subsidies</mtext></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msup><mi>Q</mi><mo>*</mo></msup><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><mrow><msub><mi>α</mi><mi>D</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mo>(</mo><msub><mi>α</mi><mi>S</mi></msub><mo>+</mo><mi>W</mi><mo>)</mo></mrow></mrow><mrow><msub><mi>β</mi><mi>S</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mi>D</mi></msub></mrow></mfrac></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msub><mi>P</mi><mi>S</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>α</mi><mi>S</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>S</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msup><mi>Q</mi><mo>*</mo></msup></mrow></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msub><mi>P</mi><mi>D</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>α</mi><mi>D</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>D</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msup><mi>Q</mi><mo>*</mo></msup></mrow></mrow></mrow></mtd></mtd></mtr></mtable></math></div></div></div></div><div class="widget-container canvas2d" id="test-widget-5" style="grid-column: span 1;"></div><div class="widget-container canvas2d" id="test-widget-6" style="grid-column: span 1;"></div><div class="widget-container document" id="test-widget-7" style="grid-column: span 2;"><style id="test-widget-7-styles"></style><div class="container pre--container"><p class="text-large">Demand burden and Subsidy benefit are split identically</p><div class="c2 pre--c2"></div></div></div><hr style="width: 100%; border-color: transparent;">"
+`;

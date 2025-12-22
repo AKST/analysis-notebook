@@ -1,0 +1,730 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`app(unsw::2206::03.1).snapshot > should match snapshots 1`] = `
+"<style id="test-styles"></style><div class="widget-container document" id="test-widget-0" style="grid-column: span 2;"><style id="test-widget-0-styles"></style><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>Intro to Econometrics<br><small style="color: #aaaaff">ECON2206, W3, Lecture 2</small></h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li>chapter 4 of the textbook</li><li>Week 3 Lecture 2</li><li>Week 4 Lecture 1</li></ul></div></div></aside></div></div></div><div class="widget-container document" id="test-widget-1" style="grid-column: span 2;"><style id="test-widget-1-styles"></style><div class="container pre--container"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: for "t value vs test statistic vs t distribution"</p></div></div><div class="widget-container document" id="test-widget-2" style="grid-column: span 2;"><style id="test-widget-2-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Sampling Distribution of OLS Estimators</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>W3 Th, / Class (Slide 3), Book (C4 P117)</strong></span></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+      In the earlier chapter we discussed how to obtain expected value and
+      variance of the OLS estimators, however in order to perform
+      <strong>statistical inference</strong>, we need to know more than just the
+      first two moments of <strong>β̂<sub>j</sub></strong> we need to know the full
+      sampling distribution of <strong>β̂<sub>j</sub></strong>. Even under Gauss-Markov
+      assumptions <strong>β̂<sub>j</sub></strong> can have virtually any shape.
+    </p></div><div class="container pre--container"><aside class="infobox"><h3 class="infobox-name">💡 First 2 Moments?</h3><div class="infobox-body"><div class="container"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: describe what that means</p></div></div></aside></div></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+      When we condition on the values of the independent variables in our
+      sample, it is clear that the sampling distribution of the OLS estimators
+      depend on the underlying distribution of the errors. To make sampling
+      disibution of the <strong>β̂<sub>j</sub></strong> managable we now assume the error rate
+      to be normally distributed. We call this the <strong>normality assumption</strong>.
+    </p></div><div class="container pre--container"><aside class="infobox"><h3 class="infobox-name">💡 Normality Assumption</h3><div class="infobox-body"><div class="container"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: Do research on why this is acceptable and not some appeal to concequences</p></div></div></aside></div></div><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><aside class="infobox"><h3 class="infobox-name">💡 MLR 6, Normality</h3><div class="infobox-body"><div class="container"><p>
+        The population error <strong>u</strong> is independent of the
+        explanatory variables, <strong>x<sub>1</sub></strong>, <strong>x<sub>2</sub></strong>, <strong>x<sub>k</sub></strong>
+        and is normally distibuted with zero mean and variance of
+        <strong>σ<sup>2</sup></strong>, which we can write as...
+      </p><figure class="pre--horizontal-shadow"><math style="font-size: 16px" display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mi>u</mi><mspace width="4px"></mspace><mo>∼</mo><mspace width="4px"></mspace><mrow><mtext>Normal</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mn>0</mn><mo>,</mo><mspace width="4px"></mspace><msup><mi>σ</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>u</mi><mspace width="4px"></mspace><mo>|</mo><mspace width="4px"></mspace><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><mo>⋯</mo><mo>,</mo><mspace width="4px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>u</mi><mspace width="4px"></mspace><mo>|</mo><mspace width="4px"></mspace><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><mo>⋯</mo><mo>,</mo><mspace width="4px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msup><mi>σ</mi><mn>2</mn></msup></mrow></mtd></mtd></mtr></mtable></math><figcaption>MLR 6 Normality Assumption</figcaption></figure></div></div></aside><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C4 P118)</strong></span></div><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h4>Normality Assumption</h4><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>W3 Th, / Class (Slide 3), Book (C4 P118)</strong></span></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+        The normality assumption is stronger than any of the
+        earlier Gauss Markov assumptions. Under MLR 6, <strong>u</strong>
+        is indepenet of the value <strong>x<sub>j</sub></strong>. This assumption by
+        default assumes MLR4 and MLR5. Combined these are called
+        the <a target="_blank" href="https://www.le.ac.uk/users/dsgp1/COURSES/MESOMET/ECMETXT/06mesmet.pdf">Classical Linear Model (CLM)
+        Assumptions</a>.
+      </p><p>
+        It is best to think of the CLM assumptions as containing
+        all of the Gauss-Markov assumptions plus the assumption
+        of a normally distributed error term. This additional
+        strengthens the efficiency properties of our estimators
+        than they would be otherwise under the Gauss-Marov
+        assumptions.
+      </p></div><div class="container pre--container"><figure class="pre--horizontal-shadow"><math style="font-size: 14px" display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msub><mi>β̂</mi><mi>j</mi></msub><mspace width="4px"></mspace><mo>∼</mo><mspace width="4px"></mspace><mrow><mtext>Normal</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>β</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mspace width="8px"></mspace></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mfrac><mrow><msub><mi>β̂</mi><mi>j</mi></msub><mspace width="4px"></mspace><mo>−</mo><mspace width="4px"></mspace><msub><mi>β</mi><mi>j</mi></msub></mrow><msqrt><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></msqrt></mfrac><mspace width="4px"></mspace><mo>∼</mo><mspace width="4px"></mspace><mrow><mtext>Normal</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mn>0</mn><mo>,</mo><mspace width="4px"></mspace><mn>1</mn></mrow><mo>)</mo></mrow></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mspace width="8px"></mspace></mrow></mtd></mtd></mtr></mtable></math><figcaption>Nrm Sampling Dist under MLR1-6</figcaption></figure></div></div><figure class="pre--horizontal-shadow"><math style="font-size: 14px" display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mi>y</mi><mspace width="4px"></mspace><mo>|</mo><mspace width="4px"></mspace><mi>x</mi><mspace width="4px"></mspace><mo>∼</mo><mspace width="4px"></mspace><mrow><mtext>Normal</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow><mo>,</mo><mspace width="4px"></mspace><msup><mi>σ</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mi>x</mi><mspace width="8px"></mspace><mtext>is short for</mtext><mspace width="8px"></mspace><mrow><mrow><mo>(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mspace width="8px"></mspace><mo>…</mo><mo>,</mo><mspace width="8px"></mspace><msub><mi>x</mi><mi>k</mi></msub><mo>)</mo></mrow></mrow></mrow></mtd></mtd></mtr></mtable></math><figcaption>Summarising the Classical Linear Model (CLM)</figcaption></figure><div class="container pre--container"><h4>Notes on my thoughts on these assumptions</h4><div class="c2 pre--c2"><div class="container pre--container"><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><details><summary>Thought bubble... 💭</summary><br><div class="container pre--container"><p>
+                How does this last assumption not entirely undermine the legitmacy of any
+                research done under this model? It is stated this is done for practicallity
+                purposes, okay and? Sure it's simplier but it's modelling something different from
+                what is being described.
+              </p><blockquote>
+                I wrote this before finding the answer on the right
+                hand side, however I am not entirely sure I am
+                satisified with it.
+              </blockquote></div></details></div></div><div class="container pre--container"><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><details><summary><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    ">Justification for CLM<span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C4 P119)</strong></span></div></summary><br><div class="container pre--container"><h4>The justification</h4><p>
+                The textbok says the argument justifying this goes like <em>
+                  "Because u is the sum of many different unobserved factors
+                  affecting y, we can invoke the central limit theorem (CLT)
+                  to conclude that u has an approximate normal distribution"</em>.
+              </p><h4>Weaknesses admitted with the assumption</h4><p>
+                It goes on to say this does have some weakness, given the
+                factors in u can have very different distributions in the
+                population (which is exactly my point). Then it proceeds to
+                say it is good enough, which feels like we just went around
+                in a circle.
+              </p></div></details></div></div></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><details><summary>Problems with the CLT Arugment</summary><br><div class="container pre--container"><p>The textbook states that:</p><blockquote>
+              A more serious problem with the CLT argument is that it assumes
+              that all unobserved factors affect <strong>y</strong> in a separate, additive
+              fashion. Nothing guarantees that this is so. If <strong>u</strong> is a
+              complicated function of the unobserved factors, then the CLT
+              argument does not really apply.
+            </blockquote><p>
+              Why do I get the feeling people just ignore that? I have no doubt
+              I am not the first to ask this and wonder if people make this
+              assumption to readily. The Textbook goes on to say
+            </p><blockquote>
+              ... whether normality of u can be assumed is really an
+              empirical matter ... Nevertheless, as a practical matter, we can
+              ask whether the conditional wage distribution is “close” to
+              being normal. <strong>Past empirical evidence suggests that normality is
+              not a good assumption for wages</strong>.
+            </blockquote><p>
+              Then why do we assume this? If the answer is <strong>Practicallity</strong>
+              that really just sounds like a cope and a refusal admit we don't know
+              shit.
+            </p></div></details></div><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: Understand why the CLT isn't just cope.</p></div><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mi>A</mi></mtd><mtd><mrow><msub><mi>β̂</mi><mi>j</mi></msub><mspace width="4px"></mspace><mo>∼</mo><mspace width="4px"></mspace><mrow><mi>Normal</mi><mo>[</mo><msub><mi>β</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow><mo>]</mo></mrow></mrow></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mi>B</mi></mtd><mtd><mrow><mfrac><mrow><msub><mi>β̂</mi><mi>j</mi></msub><mspace width="4px"></mspace><mo>−</mo><mspace width="4px"></mspace><msub><mi>β</mi><mi>j</mi></msub></mrow><mrow><mtext>Sd</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></mfrac><mspace width="4px"></mspace><mo>∼</mo><mspace width="4px"></mspace><mrow><mtext>Normal</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mn>0</mn><mo>,</mo><mspace width="4px"></mspace><mn>1</mn></mrow><mo>)</mo></mrow></mrow></mrow></mtd></mtr></mtable></math><figcaption>Classical Linear Model (CLM) assumptions 1 through 6 — showing Normal Sampling Distribution</figcaption></figure></div></div></div><div class="widget-container canvas2d" id="test-widget-3" style="grid-column: span 1;"></div><div class="widget-container canvas2d" id="test-widget-4" style="grid-column: span 1;"></div><div class="widget-container document" id="test-widget-5" style="grid-column: span 2;"><style id="test-widget-5-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Hypothesis Testing </h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C4 P120)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>Testing Hypothesises about a population</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C4 P120)</strong></span></div><blockquote>Note the population regression function as expressed on the right.</blockquote><div class="c2 pre--c2"><div class="container pre--container"><p>
+        Here we will move on to the topic of hypothesis testing which we can do
+        for any parameter in the population regression function.
+      </p></div><div class="container pre--container"><div style="font-size: 12px"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>1</mn></msub><msub><mi>x</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>2</mn></msub><msub><mi>x</mi><mn>2</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>3</mn></msub><msub><mi>x</mi><mn>3</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mi>k</mi></msub><msub><mi>x</mi><mi>k</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></math><figcaption>General MLR</figcaption></figure></div></div></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><details><summary>What is a parameter</summary><br><p>I actually forgot</p><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: what is a parameter</p></details></div><div class="container pre--container"><h3>T Distribution</h3><div class="container pre--container"><div class="c2 pre--c2"><div class="container pre--container"><p>
+            In order to construct ao hypotheses test we need the construct
+            the <strong>t distribution</strong>. The T distribution comes from
+            the fact that:
+          </p><ul class="no-item-padding" style="margin-block: 0px;"><li>The constant σ in SE(β̂ⱼ) has been random variable σ̂</li><li>The proof that leads to a t distribution with <strong>n - k - 1</strong> is difficult demostrate</li></ul><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: explain why for above</p></div><div class="container pre--container"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mfrac><mrow><msub><mi>β̂</mi><mi>j</mi></msub><mspace width="4px"></mspace><mo>−</mo><mspace width="4px"></mspace><msub><mi>β</mi><mi>j</mi></msub></mrow><mrow><mtext>Se</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></mfrac><mspace width="4px"></mspace><mo>∼</mo><mspace width="4px"></mspace><msub><mi>t</mi><mrow><mi>n</mi><mspace width="2px"></mspace><mo>−</mo><mspace width="2px"></mspace><mi>k</mi><mspace width="2px"></mspace><mo>−</mo><mspace width="2px"></mspace><mn>1</mn></mrow></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msub><mi>t</mi><mi>df</mi></msub></mrow></math><figcaption style="font-size: 8px">Theorem for <strong>degrees of freedom</strong> — the t-statistic for β̂<br>follows a t-distribution with n−k−1 degrees of freedom.</figcaption></figure></div></div><p>
+          That theorum allow us to test hypothesis involving βⱼ.
+          Such as the null hypothesis with one such example being:
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo><mspace width="4px"></mspace><msub><mi>β</mi><mi>j</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow></math><figcaption>Null hypothesis for βⱼ — testing whether the coefficient equals zero.</figcaption></figure><p>
+          Here j coresponds to any of the k number independent variables.
+        </p></div><div class="container pre--container"><h4>An example</h4><p>Given this model:</p><figure class="pre--horizontal-shadow"><math display="block"><mrow><munder><mrow><mrow><mtext>log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow></mrow><munder><mo>⏟</mo><mrow style=""><mtext>wage %</mtext></mrow></munder></munder><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>1</mn></msub><munder><mrow><msub><mi>x</mi><mn>1</mn></msub></mrow><munder><mo>⏟</mo><mrow style=""><mtext>edu</mtext></mrow></munder></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>2</mn></msub><munder><mrow><msub><mi>x</mi><mn>2</mn></msub></mrow><munder><mo>⏟</mo><mrow style=""><mtext>expr</mtext></mrow></munder></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>3</mn></msub><munder><mrow><msub><mi>x</mi><mn>3</mn></msub></mrow><munder><mo>⏟</mo><mrow style=""><mtext>tenure</mtext></mrow></munder></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></math><figcaption>example Wage Model</figcaption></figure><p>
+          A null hypothesis for <strong>β<sub>2</sub></strong> might go <strong>β<sub>2</sub></strong> = 0 suggesting
+          once education and tenure have been accounted for expereince has no
+          impact of the log(wage). Because the intution is that it does
+          impact log(wage) our alternative hypothesis would be <strong>β<sub>2</sub></strong> &gt; 0
+          (not just ≠ 0).
+        </p><ul class="no-item-padding" style="margin-block: 0px;"><li>H₀: β₂ = 0</li><li>H₁: β₂ &gt; 0</li></ul><p>
+          We don't just settle for it not being 0, because of intution we focus
+          more on energy on the more meaningful suggestion that has an impact
+          we believe it has which is likely necessary in some elaborate analysis.
+        </p></div></div></div><p style="
+      color: var(--fg-white-on-blue);
+      background: var(--bg-blue);
+      padding: 8px
+    "><p><strong>NOTE</strong><ul class="no-item-padding" style="margin-block: 0px;"><li>t-distribution in Theorum 4.2, t-distribution<ul class="no-item-padding" style="margin-block: 0px;"><li>t-distribution close to standard normal if degrees of freedom (N - K - 1) is large</li></ul></li></ul></p></p></div></div><div class="widget-container document" id="test-widget-6" style="grid-column: span 2;"><style id="test-widget-6-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>The Test Statistic</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C4 P121)</strong></span></div><p>
+        On the right is the t statistic for this specific hypothesis,
+        there is a more general form that will be given attention later.
+        If you've ever built a model in anything like R or Python you
+        will have seen those tools tend to compute these for you.
+      </p></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>t</mi><msub><mi>β̂</mi><mi>j</mi></msub></msub><mspace width="4px"></mspace><mo>≡</mo><mspace width="4px"></mspace><mfrac><msub><mi>β̂</mi><mi>j</mi></msub><mrow><mtext>Se</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></mfrac><mspace width="4px"></mspace><mo>≡</mo><mspace width="4px"></mspace><mo>.</mo></mrow></math><figcaption>t-statistic for β̂ⱼ</figcaption></figure></div><p>
+    To understand its application take the following question
+    "<strong>How far is β̂ⱼ from 0</strong>?" Consider the following:
+  </p><ul class="no-item-padding" style="margin-block: 0px;"><li>A sample value of β̂ⱼ provides evidence against H₀</li><li>We much recognise there is a <strong>sampling error</strong> in our estimate of β̂ⱼ</li><li>The size of βⱼ must be weighed aginst its sampling error</li><li>The standard error of β̂ⱼ is an estimate of the standard deviation of β̂ⱼ</li><li>t<sub>β̂ⱼ</sub> measures how many estimated standard deviatoions β̂ⱼ is away from zero</li></ul><p>
+    In order to reject H₀ we need values of <strong>t<sub>β̂ⱼ</sub></strong>
+    sufficiently far from zero. The precise rejection rule depends on
+    the alternative hypothesis and the choosen <strong>significance level</strong>.
+  </p><blockquote>
+    The signifcance level is detremined by the probability of the null hypothesis being true.
+  </blockquote><details><summary>Layman terms</summary><br><div class="container pre--container"><p>
+        You need to think backwards and you also need to be confindent
+        about the shape of the distribution of population parameter
+        your performing your hypothesis against to make any sense of
+        what a t statistics. So a <strong>test statitic won't make
+        any sense outside the context of a null hypothesis test</strong>.
+      </p><p>Given the following:</p><ul class="no-item-padding" style="margin-block: 0px;"><li>You have an unbiased estimate for the sample distribution</li><li>Create a distribution around the expected value of your population parameter</li></ul><p>
+        You can compute a test statistic using the formular specified above,
+        but the <strong>test statistic</strong> is the number of standard devivations
+        between the same result and the expected value of the null hypothesis.
+      </p></div></details></div></div><div class="widget-container document" id="test-widget-7" style="grid-column: span 2;"><style id="test-widget-7-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>Testing Against One Sided Alternatives</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C4 P122)</strong></span></div><blockquote>Example of One Sided Alternative Hypothesis <strong>H₁:  βⱼ &gt; 0</strong></blockquote><p>
+        An alternative hypothesis is needed before a null hypothesis can be
+        rejected. One such alternative hypothesis is the
+        <strong>one sided alternative</strong>. After choosing our null and alternative
+        hypothesis in order to test either hyothesis we need to:
+      </p><ul class="no-item-padding" style="margin-block: 0px;"><li>Decided on your significance level</li><li>Derive your critical value from your significance level</li><li>Compute the test statistic based on the sample statistic</li><li>Perform your hypthosis tests (shown on the right)</li></ul></div><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><munder><mtable><mtr columnalign="right left"><mtd columnalign="right"><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo></mrow></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mi>j</mi></msub><mo>≤</mo><mn>0</mn></mrow></mtd></mtr><mtr columnalign="right left"><mtd columnalign="right"><mrow><msub><mi>H</mi><mn>1</mn></msub><mo>:</mo></mrow></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mi>j</mi></msub><mo>&gt;</mo><mn>0</mn></mrow></mtd></mtr></mtable><munder><mspace width="0px"></mspace><mtext>Hypothesis'</mtext></munder></munder></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mspace width="8px"></mspace></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><munder><mrow><mrow><mmultiscripts><msub><mi>β</mi><mi>j</mi></msub><mrow></mrow><mrow></mrow><mprescripts></mprescripts><mrow></mrow><mi>t</mi></mmultiscripts><mspace width="4px"></mspace><mo>&gt;</mo><mspace width="4px"></mspace><mi>c</mi></mrow></mrow><munder><mspace width="0px"></mspace><mtext>H₀ rejection rule</mtext></munder></munder><mspace width="32px"></mspace><munder><mrow><mrow><mmultiscripts><msub><mi>β</mi><mi>j</mi></msub><mrow></mrow><mrow></mrow><mprescripts></mprescripts><mrow></mrow><mi>t</mi></mmultiscripts><mspace width="8px"></mspace><mo>≤</mo><mspace width="8px"></mspace><mi>c</mi></mrow></mrow><munder><mspace width="0px"></mspace><mtext>H₁ rejection rule</mtext></munder></munder></mrow></mtd></mtd></mtr></mtable></math><figcaption>βⱼ hypothesis tests</figcaption></figure></div><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: confirm significance level to reject the alternatie hypothesis</p><div class="c2 pre--c2"><div class="container pre--container"><h4>Significance level (α)</h4><p>
+      What is a significance level? Well it's the
+      <strong>probability of rejecting H₀ when it's true</strong>.
+      What does that mean? It is the <u>Maximum
+      probability you're willing to accept of making a
+      <strong>Type I error</strong></u>.
+    </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>α</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mtext>P</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mtext>Type 1 Error</mtext><mspace width="4px"></mspace><mo>|</mo><mspace width="4px"></mspace><msub><mi>H</mi><mn>0</mn></msub></mrow><mo>)</mo></mrow></mrow></mrow></math><figcaption>Significance level</figcaption></figure><details><summary>Layman Terms</summary><br><div class="container pre--container"><p>
+          Outside the context of the null hypthosis the
+          signficance has little meaning, it's a area
+          under the distribution your sample statistic
+          would need to fall <strong>within a distribution
+          constructed on the assumption the null hypothesis
+          is true</strong> in which you'd be comfortable in rejecting
+          the null hypothesis.
+        </p><p>This means:</p><ul class="no-item-padding" style="margin-block: 0px;"><li>You need to have some idea of the distribution</li></ul><p>
+          So if you assumed the null to be true and you created
+          a normal distribution based on that assumption and
+          with a distribution around what the null hypothesis
+          suggests is the expected value. The <strong>significance
+          level</strong> is the area under that distribution based on
+          that expected value and variance that your sample
+          result would need to fall in order for you to reject
+          the null hypothesis.
+        </p><p>
+          Sorry if that is repeatitive, but you could say it is a
+          significant point of confusion. I think you need to
+          think backwards to make sense of what all this means.
+        </p></div></details></div><div class="container pre--container"><h4>Critical Value (c)</h4><p>
+      What is a critical value? Well it's the result you get when find
+      the position of your <strong>significance level</strong> (so you need to
+      figure that out first), offset by you degree of degrees of freedom
+      on the inverse cumulative density function.
+    </p><p>In our case it will be on a t distribution</p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>c</mi><mi>lower</mi></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msup><mi>CDF</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mfrac><mi>α</mi><mn>2</mn></mfrac><mo>;</mo><mspace width="4px"></mspace><mi>df</mi><mo>)</mo></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>c</mi><mi>upper</mi></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msup><mi>CDF</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mfrac><mi>α</mi><mn>2</mn></mfrac></mrow><mo>;</mo><mspace width="4px"></mspace><mi>df</mi><mo>)</mo></mrow></mrow></mtd></mtr></mtable></math><figcaption>Critical Value</figcaption></figure></div></div></div></div><div class="widget-container document" id="test-widget-8" style="grid-column: span 2;"><style id="test-widget-8-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>Testing Against Two Sided Alternatives</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C4 P126)</strong></span></div><p>
+        A 2 sided test makes more sense when the exact effect of the
+        population parameter is not well understood. So it opens up to
+        the possibility of the effect being negative or positive. Steps
+        such as computing a test statitic is the same,
+      </p><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: confirm nothing else changes</p></div><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><munder><mtable><mtr columnalign="right left"><mtd columnalign="right"><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo></mrow></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mi>j</mi></msub><mo>=</mo><mn>0</mn></mrow></mtd></mtr><mtr columnalign="right left"><mtd columnalign="right"><mrow><msub><mi>H</mi><mn>1</mn></msub><mo>:</mo></mrow></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mi>j</mi></msub><mo>≠</mo><mn>0</mn></mrow></mtd></mtr></mtable><munder><mspace width="0px"></mspace><mtext>Hypothesis'</mtext></munder></munder></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mspace width="8px"></mspace></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><munder><mrow><mrow><mo>|</mo><mi>c</mi><mo>|</mo><mspace width="4px"></mspace><mo>&lt;</mo><mspace width="4px"></mspace><mmultiscripts><msub><mi>β</mi><mi>j</mi></msub><mrow></mrow><mrow></mrow><mprescripts></mprescripts><mrow></mrow><mi>t</mi></mmultiscripts></mrow></mrow><munder><mspace width="0px"></mspace><mtext>H₀ rejection rule</mtext></munder></munder><mspace width="32px"></mspace><munder><mrow><mrow><mo>|</mo><mi>c</mi><mo>|</mo><mspace width="4px"></mspace><mo>&gt;</mo><mspace width="4px"></mspace><mmultiscripts><msub><mi>β</mi><mi>j</mi></msub><mrow></mrow><mrow></mrow><mprescripts></mprescripts><mrow></mrow><mi>t</mi></mmultiscripts></mrow></mrow><munder><mspace width="0px"></mspace><mtext>H₁ rejection rule</mtext></munder></munder></mrow></mtd></mtd></mtr></mtable></math><figcaption>two tailed βⱼ hypothesis test</figcaption></figure></div><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h4>There are other kinds of tests</h4><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C4 P128)</strong></span></div><p>But they will not be covered here.</p></div></div><div class="widget-container canvas2d" id="test-widget-9" style="grid-column: span 2;"></div><div class="widget-container document" id="test-widget-10" style="grid-column: span 2;"><style id="test-widget-10-styles"></style><div class="container pre--container"><figure class="pre--horizontal-shadow"><table style="width: 100%"><thead><tr><th></th><th>Coefficent</th><th>Std. Err.</th><th>t</th><th>P&gt;|t|</th><th>L 95 CI</th><th>R 95 CI</th></tr></thead><tbody><tr><th>x₁</th><td>0.2566717</td><td>0.0345167</td><td>7.44</td><td>0</td><td>0.1886224</td><td>0.3247209</td></tr><tr><th>Intercept</th><td>4.821997</td><td>0.2883396</td><td>16.72</td><td>0</td><td>4.253538</td><td>5.390455</td></tr></tbody></table><figcaption>Example of stata output</figcaption></figure></div></div><div class="widget-container document" id="test-widget-11" style="grid-column: span 2;"><style id="test-widget-11-styles"></style><div class="container pre--container"><details><summary class="grid-layout pink"><h4>Open to view Significance level table</h4></summary><br><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><figure class="pre--horizontal-shadow"><table style="width: 100%"><thead><tr><th colspan="6">2-tailed α: .20  .10  .05  .02  .01</th></tr><tr><th>df</th><th>.10</th><th>.05</th><th>.025</th><th>.01</th><th>.005</th></tr></thead><tbody><tr><th>1</th><td>3.078</td><td>6.314</td><td>12.706</td><td>31.821</td><td>63.657</td></tr><tr><th>2</th><td>1.886</td><td>2.920</td><td>4.303</td><td>6.965</td><td>9.925</td></tr><tr><th>3</th><td>1.638</td><td>2.353</td><td>3.182</td><td>4.541</td><td>5.841</td></tr><tr><th>4</th><td>1.533</td><td>2.132</td><td>2.776</td><td>3.747</td><td>4.604</td></tr><tr><th>5</th><td>1.476</td><td>2.015</td><td>2.571</td><td>3.365</td><td>4.032</td></tr><tr><th>6</th><td>1.440</td><td>1.943</td><td>2.447</td><td>3.143</td><td>3.707</td></tr><tr><th>7</th><td>1.415</td><td>1.895</td><td>2.365</td><td>2.998</td><td>3.499</td></tr><tr><th>8</th><td>1.397</td><td>1.860</td><td>2.306</td><td>2.896</td><td>3.355</td></tr><tr><th>9</th><td>1.383</td><td>1.833</td><td>2.262</td><td>2.821</td><td>3.250</td></tr><tr><th>10</th><td>1.372</td><td>1.812</td><td>2.228</td><td>2.764</td><td>3.169</td></tr><tr><th>12</th><td>1.356</td><td>1.782</td><td>2.179</td><td>2.681</td><td>3.055</td></tr><tr><th>15</th><td>1.341</td><td>1.753</td><td>2.131</td><td>2.602</td><td>2.947</td></tr><tr><th>20</th><td>1.325</td><td>1.725</td><td>2.086</td><td>2.528</td><td>2.845</td></tr><tr><th>25</th><td>1.316</td><td>1.708</td><td>2.060</td><td>2.485</td><td>2.787</td></tr><tr><th>30</th><td>1.310</td><td>1.697</td><td>2.042</td><td>2.457</td><td>2.750</td></tr><tr><th>40</th><td>1.303</td><td>1.684</td><td>2.021</td><td>2.423</td><td>2.704</td></tr><tr><th>60</th><td>1.296</td><td>1.671</td><td>2.000</td><td>2.390</td><td>2.660</td></tr><tr><th>∞</th><td>1.282</td><td>1.645</td><td>1.960</td><td>2.326</td><td>2.576</td></tr></tbody></table><figcaption>Significance level table</figcaption></figure><p>In practise don't bother using this table</p></div></details></div></div><div class="widget-container document" id="test-widget-12" style="grid-column: span 2;"><style id="test-widget-12-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Type I &amp; Type II Errors</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>W3 W, / Class (Slide 21)</strong></span></div><p>
+    This was elaborated on in the earlier section on
+    selecting an appropiate significance level, but
+    here is a bit more on the topic. But not a ton
+    more.
+  </p><div class="c2 pre--c2"><aside class="infobox"><h3 class="infobox-name">💡 Type 1 Error</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li><em>False negative</em></li><li><em>Rejecting H₀ when H₀ is true</em></li></ul></div></div></aside><aside class="infobox"><h3 class="infobox-name">💡 Type 2 Error</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li><em>False Positive.</em></li><li><em>Not Rejecting H₀ when H₀ is false</em></li></ul></div></div></aside></div></div></div><div class="widget-container document" id="test-widget-13" style="grid-column: span 2;"><style id="test-widget-13-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>P-Value</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>W3 W, / Class (Slide 22)</strong></span></div><p>
+    Above describes the <strong>classical approach</strong> to testing
+    hypothesises, however it isn't the only way to perform
+    hypothesis testing. One criticism of the classical approach
+    is there a level of arbitrariness with the selection of the
+    significance level. This is where <strong>P-Values</strong> come in.
+  </p><p>The long and short of it is:</p><ul class="no-item-padding" style="margin-block: 0px;"><li>Small P Value are evidence against of null hypothesis</li><li>Large P Value are evidence in favour of null hypothesis</li><li>p Value simmarise infomration on any number of tests at fixed signifiance levels</li></ul><h4>What P-Values do</h4><p>
+    A P Value flips the process on its head and instead of
+    asking you what significance value would be needed to
+    reject the null hypothesis and checking it tells you the
+    smallest significance level at which the null hypothesis
+    would need to reject. It's basically a value between zero
+    and one. <strong>Overally general rule of thumb</strong>, the
+    smaller the value the better.
+  </p><div class="c2 twoThree pre--c2 pre--two-three"><p>
+      When you're working on a model when you see the regression
+      output show P Values, it is assuming your null hypothesis is
+      <strong>H₀: βⱼ = 0</strong> and is telling the smallest significance
+      value at which those are rejected. But I have no doubt there
+      are tools that let you specify your own hypothesis.
+    </p><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h4>Computing a P-Value</h4><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C4 P132)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mtext>P-Value</mtext><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mtext>P</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mrow><mo>|</mo><mrow><mi>T</mi></mrow><mo>|</mo></mrow><mspace width="2px"></mspace><mo>&gt;</mo><mspace width="2px"></mspace><mrow><mo>|</mo><mrow><mi>t</mi></mrow><mo>|</mo></mrow></mrow><mo>)</mo></mrow></mrow></mrow></math><figcaption>The value of a P-Value</figcaption></figure><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>T</strong> denotes a t distribution with <strong>n - k - 1</strong> degrees of freedom</li></ul></div></div><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h4>General interpretation</h4><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C4 P132)</strong></span></div><p>
+    The p-value is the probability of observing a t statistic as extreme as we did if the null hypothesis is true.
+  </p><div class="c2 pre--c2"><ul class="no-item-padding" style="margin-block: 0px;"><li>Big P-Value Bad <ul class="no-item-padding" style="margin-block: 0px;"><li>They provide evidence in favour of the H₀</li></ul></li><li>Small P-Value Good <ul class="no-item-padding" style="margin-block: 0px;"><li>They provide little evidence in favour of the H₀</li><li>They is largely evidence against the H₀</li></ul></li></ul><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h4>Difference in application</h4><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>W3 Th, / Class (Slide 23)</strong></span></div><ul class="no-item-padding" style="margin-block: 0px;"><li>2 tail P(<strong>t<sub>N-K-1</sub></strong> &gt; <strong>t<sub>β̂<sub>j</sub></sub></strong>) + P(<strong>t<sub>N-K-1</sub></strong> &lt; -<strong>t<sub>β̂<sub>j</sub></sub></strong>)</li><li>Upper tail P(<strong>t<sub>N-K-1</sub></strong> &gt; <strong>t<sub>β̂<sub>j</sub></sub></strong>)</li><li>Lower tail P(<strong>t<sub>N-K-1</sub></strong> &lt; -<strong>t<sub>β̂<sub>j</sub></sub></strong>)</li></ul></div></div><div class="c2 pre--c2"><details><summary>Language relating Hypothesis testing</summary><br><p>
+        We never say <strong>we accept the null hypothesis</strong>,
+        we do not reject a null hypothesis. We simply say
+        <strong>we failed to reject the null hypothesis</strong>.
+      </p></details><details><summary>Why is there a dash between P &amp; Value</summary><br><p>I don't know man, I think there's more important things to consider</p></details></div></div></div><div class="widget-container document" id="test-widget-14" style="grid-column: span 2;"><style id="test-widget-14-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Confindence Intervals</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C4 P136)</strong></span></div><div class="c2 twoThree pre--c2 pre--two-three"><p>
+      A 95 Confidence Interval (CI) is an interval in which
+      we are 95% confindent that the population parameter
+      sit in. Not just a point estimate. Typically this
+      requires collecting many samples over and over, although
+      computers kind of fudge this for a single sample with
+      <a target="_blank" href="https://en.wikipedia.org/wiki/Resampling_(statistics)#Bootstrap">performing resampling over same sample</a>
+      in which it simulates multiple samples. Obviously this is
+      less ideal than actually collecting multiple samples, but
+      it's the not the worse thing in the world if your sample
+      is really a random sample and representative of the general
+      population.
+    </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>β̂</mi><mi>j</mi></msub></mtd><mtd columnalign="center"><mo>±</mo></mtd><mtd columnalign="left"><mrow><mrow><mi>c</mi><mspace width="4px"></mspace></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mtext>Se</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>β̲</mi><mi>j</mi></msub></mtd><mtd columnalign="center"><mo>≡</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β̂</mi><mi>j</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mrow><mi>c</mi><mspace width="4px"></mspace></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mtext>Se</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>β̄</mi><mi>j</mi></msub></mtd><mtd columnalign="center"><mo>≡</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β̂</mi><mi>j</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><mi>c</mi><mspace width="4px"></mspace></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mtext>Se</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></mrow></mrow></mtd></mtr></mtable></math><figcaption>95 confidence interval</figcaption></figure></div><div class="c2 pre--c2"><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h4>What is the 95% CI?</h4><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C4 P135)</strong></span></div><p>
+      It is the smallest range in which the estimate β̂ⱼ for βⱼ
+      sits for 95% of all samples. <strong>Put another way</strong>,
+      If random samples were obtained over and over
+      again, with β̱ⱼ and β̄ⱼ computed each time, then the (unknown)
+      population value βⱼ would lie in the interval (β̱ⱼ and β̄ⱼ) for
+      95% of the samples.
+    </p></div><div class="container pre--container"><h4>Testing Hypothesises</h4><p>
+      Back to hypothesis testing, if your null hypothesis
+      is something like "<strong>H₀: βⱼ = 0</strong>, then using
+      rejecting null hypothesis is simply a matter getting
+      a confindence interval which is not inclusive of zero.
+    </p></div></div><h3>⚠️ Important Assumption ⚠️</h3><p>
+    While this entire time we've been making assumptions about
+    our data being normally distributed. It's is worth noting
+    the way it is being described here in terms of calculation
+    and based on an assumption is the fact the data is normally
+    distributed. Especailly when you're involving the <strong>Central
+    Limit Theorum</strong>.
+  </p></div></div><div class="widget-container document" id="test-widget-15" style="grid-column: span 2;"><style id="test-widget-15-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Testing Hypothesis for a combination of parameters</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C4 P136)</strong></span></div><p>
+      This is where it gets more interesting. So far we have written tests
+      for about indivisual parameters. However we can actually also write
+      tests for more than one parameter at a time. Here's an example.
+    </p><h4>Example</h4><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><figure class="pre--horizontal-shadow"><math display="block"><mrow><munder><mrow><mrow><mtext>log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow></mrow><munder><mo>⏟</mo><mrow style=""><mtext>wage</mtext></mrow></munder></munder><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>1</mn></msub><munder><mrow><msub><mi>x</mi><mn>1</mn></msub></mrow><munder><mo>⏟</mo><mrow style=""><mtext>jc</mtext></mrow></munder></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>2</mn></msub><munder><mrow><msub><mi>x</mi><mn>2</mn></msub></mrow><munder><mo>⏟</mo><mrow style=""><mtext>univ</mtext></mrow></munder></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>3</mn></msub><munder><mrow><msub><mi>x</mi><mn>3</mn></msub></mrow><munder><mo>⏟</mo><mrow style=""><mtext>exper</mtext></mrow></munder></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></math><figcaption>Wage Model</figcaption></figure><p>
+          Using the above model as an example we can write
+          a null and alternative hypothesis like we've done
+          on the right side (or below). Where the null says
+          there is no difference, but in the alternative
+          hypothesis we make a positive claim that the
+          effect of one parameter is greater the effect
+          of another parameter from the same model.
+        </p></div><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>2</mn></msub></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msub><mi>H</mi><mn>1</mn></msub><mo>:</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>&lt;</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>2</mn></msub></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mi>t</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>2</mn></msub></mrow><mrow><mtext>Se</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow></mrow></mfrac></mrow></mtd></mtd></mtr></mtable></math><figcaption>Multi parameter hypothesises</figcaption></figure></div><div class="c2 twoThree pre--c2 pre--two-three"><p>
+        Besides the tests being different one thing you may
+        notice now is the test statitic is now written different.
+        We actually arrive at this by rearranging our hypothesis
+        like on the right. And then plugging them into the
+        earlier function.
+      </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msub><mi>H</mi><mn>1</mn></msub><mo>:</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>&lt;</mo><mspace width="4px"></mspace><mn>0</mn><mo>,</mo></mrow></mrow></mtd></mtd></mtr></mtable></math><figcaption>one-sided hypothesis test for β₁ − β₂</figcaption></figure></div></div><div class="container pre--container"><h4>Obtaining the Standard Error</h4><p>
+      We should have no problem obtaining our t statistic, and we
+      can specify significance level and obtain a critical value
+      using our degrees of freedom. <u>One thing we'll need to approach
+      differently is <strong>obtaining our standard error</strong></u>.
+    </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mrow><mn>2</mn><mspace width="4px"></mspace></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mtext>Cov</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow></mrow></mrow></mrow></mrow></math><figcaption>variance of difference between β̂₁ and β̂₂</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>Se</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msup><mrow><mo>(</mo><mrow><mrow><msup><mrow><mo>[</mo><mrow><mtext>Se</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mn>2</mn></msup><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msup><mrow><mo>[</mo><mrow><mtext>Se</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mn>2</mn></msup></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mn>2</mn><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>s</mi><mrow><mn>1</mn><mn>2</mn></mrow></msub></mrow></mrow><mo>)</mo></mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></msup></mrow></math><figcaption>standard error of β̂₁ − β̂₂</figcaption></figure><p>
+      You can solve for s<sub>12</sub> using a bit of matrix algebra
+      as shown below but lets also look at a simpler approach.
+    </p><div class="grid-responsive-row pre--grid-responsive-row" style="
+      --grid-responsive-row-slim-columns: 1fr;
+      --grid-responsive-row-mobile-columns: 1fr;
+      --grid-responsive-row-desktop-columns: auto auto;
+      
+    "><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mi>β̂</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msup><mrow><mo>(</mo><mrow><msup><mi>X</mi><mi>⊤</mi></msup><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mi>X</mi></mrow><mo>)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><msup><mi>X</mi><mi>⊤</mi></msup><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mi>y</mi></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>β̂</mi><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msup><mi>σ̂</mi><mn>2</mn></msup><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msup><mrow><mo>(</mo><mrow><msup><mi>X</mi><mi>⊤</mi></msup><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mi>X</mi></mrow><mo>)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msup><mi>σ̂</mi><mn>2</mn></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mfrac><mi>SSR</mi><mrow><mrow><mi>n</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>k</mi></mrow></mrow></mfrac><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mo>(</mo><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><msup><msub><mi>û</mi><mi>i</mi></msub><mn>2</mn></msup><mo>)</mo></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msup><mrow><mo>(</mo><mrow><mi>n</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>k</mi></mrow><mo>)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></mtd></mtr></mtable></math><figcaption>Solve for s Part 1</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left center left"><mtd columnalign="right"><mi>V</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>β̂</mi><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msup><mi>σ̂</mi><mn>2</mn></msup><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msup><mrow><mo>(</mo><mrow><msup><mi>X</mi><mi>⊤</mi></msup><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mi>X</mi></mrow><mo>)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mtd></mtr><mtr columnalign="right center left center left"><mtd columnalign="right"><msub><mi>s</mi><mn>12</mn></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mtext>Cov</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msup><mi>σ̂</mi><mn>2</mn></msup><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><msup><mrow><mo>(</mo><mrow><msup><mi>X</mi><mi>⊤</mi></msup><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mi>X</mi></mrow><mo>)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mn>12</mn></msub></mrow></mtd></mtr></mtable></math><figcaption>Solve for s Part 2</figcaption></figure></div></div><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h4>Something simpler than matrix math</h4><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C4 P138)</strong></span></div><div class="container pre--container"><p>
+      Instead of computing the Standard Error of (β̂₁ - β̂₂)
+      we can simply create a model that includes a coefficient
+      that yields the same standard error.
+    </p><div class="grid-responsive-row pre--grid-responsive-row" style="
+      --grid-responsive-row-slim-columns: 1fr;
+      --grid-responsive-row-mobile-columns: 1fr;
+      --grid-responsive-row-desktop-columns: auto auto auto auto;
+      
+    "><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>θ</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>2</mn></msub></mrow></mrow></math><figcaption>parameter definition θ₁</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo><mspace width="4px"></mspace><mrow><msub><mi>θ</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow></mrow></math><figcaption>null hypothesis</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>H</mi><mn>1</mn></msub><mo>:</mo><mspace width="4px"></mspace><mrow><msub><mi>θ</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>&lt;</mo><mspace width="4px"></mspace><mn>0</mn></mrow></mrow></math><figcaption>alternative hypothesis</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>t</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><msub><mi>θ̂</mi><mn>1</mn></msub><mrow><mtext>Se</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>θ̂</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow></mfrac></mrow></math><figcaption>t-statistic for θ̂₁</figcaption></figure></div><div class="grid-responsive-row pre--grid-responsive-row" style="
+      --grid-responsive-row-slim-columns: 1fr;
+      --grid-responsive-row-mobile-columns: 1fr;
+      --grid-responsive-row-desktop-columns: 1fr auto;
+      
+    "><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mtext>log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><mo>(</mo><mrow><msub><mi>θ</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>3</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mspace width="0px"></mspace></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>θ</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>3</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mspace width="0px"></mspace></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>θ</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mn>1</mn><mo>+</mo><mn>2</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>3</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></mtd></mtr></mtable></math><figcaption>plug alias into population model</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>θ̂</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>±</mo><mspace width="4px"></mspace><mrow><mrow><mn>1.96</mn><mspace width="8px"></mspace></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mtext>Se</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>θ̂</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow></mrow></mrow></math><figcaption>95% ci</figcaption></figure></div><p>
+      Note the changes in the hypothesis test. The null is
+      theta is zero, and the alternative is theta is less
+      than zero. As it will now be trying to correct for
+      the impact of coefficent of the combined years of
+      study (junior college and four years at college).
+    </p></div></div></div><div class="widget-container document" id="test-widget-16" style="grid-column: span 2;"><style id="test-widget-16-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>F Test</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C4 P134)</strong></span></div><p>
+      While a <strong>t statistic</strong> associated with any OLS
+      coefficient can be used to test whether its corresponding
+      unknown population parameter is equal to any given constant
+      (normally zero), and we've seen how to test the relationship
+      between any two parameters. But what is we were like <em>"fuck it
+      lets test all the hypothesises"?</em> Well you're in luck, it's called
+      the <strong>F test</strong>.
+    </p><h4>Testing Restrictions</h4><p>
+      One kind of test we can perform is one where we state that some variables
+      <strong>d</strong>, <strong>d</strong>, and <strong>e</strong> have no effect when controlling
+      for other varibles.
+    </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><munder><mrow><mrow><mtext>log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow></mrow><munder><mo>⏟</mo><mrow style=""><mtext>a</mtext></mrow></munder></munder><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>1</mn></msub><munder><mrow><msub><mi>x</mi><mn>1</mn></msub></mrow><munder><mo>⏟</mo><mrow style=""><mtext>b</mtext></mrow></munder></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>2</mn></msub><munder><mrow><msub><mi>x</mi><mn>2</mn></msub></mrow><munder><mo>⏟</mo><mrow style=""><mtext>c</mtext></mrow></munder></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>3</mn></msub><munder><mrow><msub><mi>x</mi><mn>3</mn></msub></mrow><munder><mo>⏟</mo><mrow style=""><mtext>d</mtext></mrow></munder></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>4</mn></msub><munder><mrow><msub><mi>x</mi><mn>4</mn></msub></mrow><munder><mo>⏟</mo><mrow style=""><mtext>e</mtext></mrow></munder></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>5</mn></msub><munder><mrow><msub><mi>x</mi><mn>5</mn></msub></mrow><munder><mo>⏟</mo><mrow style=""><mtext>f</mtext></mrow></munder></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></math><figcaption>log Salary model</figcaption></figure><div class="c2 twoThree pre--c2 pre--two-three"><p>
+        On the right we have constructed a null hypothesis using
+        multiple parameters. These are <strong>Exclusion restrictions</strong>
+        that say <em>if true, the subsequent regressors have no effect
+        on the dependent variable and should be excluded from the model</em>.
+        This is also an example of a set of  <strong>multiple restictions</strong>
+        as we are putting more than 1 restictions on the parameters. A set
+        of multiple restirctions is also called a <strong>multiple hypothesis
+        test</strong> or my preferred name <strong>joint hypothesis test</strong>.
+      </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="left"><mtd columnalign="left"><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow><mo>,</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>4</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow><mo>,</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>5</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow><msub><mi>H</mi><mn>1</mn></msub><mo>:</mo><mspace width="4px"></mspace><msub><mi>H</mi><mn>0</mn></msub><mspace width="4px"></mspace><mtext>is not true</mtext></mrow></mtd></mtr></mtable></math><figcaption>
+    Joint hypothesis test for <br>
+    β 3 to 5 have no effect when <br>
+    controlling for β 1 and 2.
+  </figcaption></figure></div><p>
+      Thankfully the alternative hypothesis is much simpler.
+      <strong>Now how do we approach this</strong>?
+      We can't test each statistically indivisually with
+      the test statistic, because they put no restriction
+      on the other parameters. We need to test the
+      exclusion jointly to do so.
+    </p><div class="c2 pre--c2"><div class="container pre--container"><h4>Why can't we test each variable?</h4><p>
+        It may have crossed your mind (and admittedly mine as well) why not just
+        look at the t statistics of each variables we want to omit? The problem
+        is that a <strong>t statistic places no restrictions on the other parameters</strong>,
+        even if this wasn't an issue there are several logisitical issues that
+        arise such as <strong>do we want to have the same or different significance
+        level for each test</strong>? But ultimately it just an inappropiate methodology
+        to test the claim. They need to be tested jointly.
+      </p></div><div class="container pre--container"><h4>Restricted model</h4><p>
+        This is our model in which we omit the variables we believe have no effect.
+      </p><h4>Unrestricted model</h4><p>
+        This is our model where we omit no variables.
+      </p><h4>Multiple Restrictions</h4><p>
+        This when a hypothesis is saying something about more than one parameter.
+      </p></div></div><div class="c2 twoThree pre--c2 pre--two-three"><p>
+        The result from checking the T statistic of each variable
+        independently will consistently yield irrelevant results
+        sometimes it will be correctly rejected or not rejected
+        others it won't be. It's just the wrong methodology. Instead
+        we will want to look at a method that places more emphasis on
+        a difference in residuals between the restricted and
+        unrestricted models.
+      </p><aside class="infobox"><h3 class="infobox-name">💡 What is q?</h3><div class="infobox-body"><div class="container"><p>This is the number of exclusion restrictions</p></div></div></aside></div></div><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h3>Methodology —&nbsp;F Stat</h3><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C4 P141)</strong></span></div><div class="grid-responsive-row pre--grid-responsive-row" style="
+      --grid-responsive-row-slim-columns: 1fr;
+      --grid-responsive-row-mobile-columns: 1fr;
+      --grid-responsive-row-desktop-columns: auto auto;
+      
+    "><figure class="pre--horizontal-shadow"><math style="font-size: 14px" display="block"><mtable><mtr columnalign="right center left center left"><mtd columnalign="right"><mi>F</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mrow><mo>(</mo><msub><mi>SSR</mi><mi>r</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>SSR</mi><mi>ur</mi></msub><mo>)</mo></mrow><mspace width="4px"></mspace><mo>÷</mo><mspace width="4px"></mspace><mi>q</mi></mrow><mrow><msub><mi>SSR</mi><mi>ur</mi></msub><mspace width="4px"></mspace><mo>÷</mo><mspace width="4px"></mspace><mrow><mo>(</mo><mi>n</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>k</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mn>1</mn><mo>)</mo></mrow></mrow></mfrac></mtd><mtd columnalign="center"><mspace width="0px"></mspace></mtd><mtd columnalign="left"><mspace width="0px"></mspace></mtd></mtr><mtr columnalign="right center left center left"><mtd columnalign="right"><mspace width="0px"></mspace></mtd></mtr><mtr columnalign="right center left center left"><mtd columnalign="right"><mspace width="0px"></mspace></mtd></mtr><mtr columnalign="right center left center left"><mtd columnalign="right"><mi>q</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mtext>numerator degrees of freedom</mtext></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>df</mi><mi>r</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>df</mi><mi>ur</mi></msub></mrow></mtd></mtr><mtr columnalign="right center left center left"><mtd columnalign="right"><mrow><mi>n</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>k</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mn>1</mn></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mtext>denominator degrees of freedom</mtext></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msub><mi>df</mi><mi>ur</mi></msub></mtd></mtr></mtable></math><figcaption>F-statistic</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>F</mi><mspace width="4px"></mspace><mo>∼</mo><mspace width="4px"></mspace><msub><mi>F</mi><mrow><mi>q</mi><mo>,</mo><mspace width="4px"></mspace><mrow><mi>n</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>k</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mn>1</mn></mrow></mrow></mrow></msub></mrow></math><figcaption>sampling distribution of the F-statistic</figcaption></figure></div><p>
+      Our null hypothesis will roughly state the <strong>q</strong>
+      excluded variables will be zero. Above we define the
+      <strong>F Statistic</strong> which can be broken down like so:
+    </p><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>numerator</strong>: differences in residuals divided by the number of omitted.</li><li><strong>demonator</strong>: unrestricted divided by normal degrees of freedom.</li></ul><div class="c2 twoThree pre--c2 pre--two-three"><p>
+        The F Statistic, will never be negative. In order to test it we need to
+        know the critical value and rejection rules, and in order to get those
+        we must know the sampling distribution under the null hypothesis. Once
+        we know that we let <strong>c be the 95<sup>th</sup> percentile</strong> from
+        the F distribution and the rejection rule is <strong>F &gt; c</strong>.
+        When we reject the <strong>null hypothesis</strong> we say the excluded variables
+        are <strong>jointly statistically significant</strong> (or jointly significant).
+        When we fail to reject the <strong>null hypothesis</strong> we say those excluded
+        variables are <strong>jointly insignificant</strong>.
+      </p><aside class="infobox"><h3 class="infobox-name">💡 When to use this?</h3><div class="infobox-body"><div class="container"><p>
+          When the omitted variables are highly correlated
+          and exhibt multicollinearity sometimes their t
+          statistic will be statically insignificant, and
+          the multicollinearity makes it difficult to
+          uncover the effect of each variable.
+        </p></div></div></aside></div></div><div class="container pre--container"><div class="c2 pre--c2"><div class="container pre--container"><h4>Relationship between F and t Statistic</h4><ul class="no-item-padding" style="margin-block: 0px;"><li>Do we have two seperate ways of testing hypothesis about a single coefficent?<ul class="no-item-padding" style="margin-block: 0px;"><li>
+              No, as either approach using the F statistic and t statistic
+              will lead to the same outcome.
+            </li></ul></li><li>
+            In practise there really is no good reason to use the
+            F statistic over the t statistic for a single variable.
+          </li></ul></div><div class="container pre--container"><h4>The R-Squared From of the F statistic</h4><figure class="pre--horizontal-shadow"><math style="font-size: 10px" display="block"><mrow><mrow><mi>F</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><mrow><mrow><mo>(</mo><mrow><msup><msub><mi>R</mi><mi>ur</mi></msub><mn>2</mn></msup><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msup><msub><mi>R</mi><mi>r</mi></msub><mn>2</mn></msup></mrow><mo>)</mo></mrow><mspace width="4px"></mspace><mo>÷</mo><mspace width="4px"></mspace><mi>q</mi></mrow><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msup><msub><mi>R</mi><mi>ur</mi></msub><mn>2</mn></msup></mrow><mo>)</mo></mrow><mspace width="4px"></mspace><mo>÷</mo><mspace width="4px"></mspace><mrow><mo>(</mo><mi>n</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>k</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mn>1</mn><mo>)</mo></mrow></mrow></mfrac></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><mrow><mrow><mo>(</mo><mrow><msup><msub><mi>R</mi><mi>ur</mi></msub><mn>2</mn></msup><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msup><msub><mi>R</mi><mi>r</mi></msub><mn>2</mn></msup></mrow><mo>)</mo></mrow><mspace width="4px"></mspace><mo>÷</mo><mspace width="4px"></mspace><mi>q</mi></mrow><mrow><mrow><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msup><msub><mi>R</mi><mi>ur</mi></msub><mn>2</mn></msup></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>df</mi><mi>ur</mi></msub></mrow></mfrac></mrow></math><figcaption>F-statistic expressed using R² values for restricted and unrestricted models</figcaption></figure><p>
+          While the R-squared form of the F statistic is very convenient for
+          testing exclusion restrictions, it cannot be applied for testing all
+          linear restrictions.
+        </p></div></div><div class="c2 pre--c2"><div class="container pre--container"><h4>Writing P values for F Statistics</h4><figure class="pre--horizontal-shadow"><math display="block"><mrow><mtext>p-value</mtext><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mtext>P</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>ℱ</mi><mspace width="4px"></mspace><mo>&gt;</mo><mspace width="4px"></mspace><mi>F</mi></mrow><mo>)</mo></mrow></mrow></mrow></math><figcaption>P value of F</figcaption></figure><p>
+          Let ℱ be an F random variable with (q,n2 k2 1) degrees of freedom.
+          The P Value has a similar interpretation as it does for the
+          t statistic, in that it is the probability of observing the value
+          of F in the even the null hypothesis is true.
+        </p></div><div class="container pre--container"><h4>The F Statistic for Overall Significance of a Regression</h4><p>
+          Sometimes the F statistic is used to reject the
+          null hypothesis that none of the explanatory
+          variables has an effect on the depentent variable.
+          With an alternative that at least one of the
+          coefficients is different from zero.
+        </p><p>
+          This tends to be what most statisical packages
+          report by default.
+        </p></div></div><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h4>Testing General Linear Restrictions</h4><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C4 P148)</strong></span></div><p>
+        This is the most important application of the F statistic. Note
+        this is different from exclusion restrictions but instead
+        more general linear restrictions (where you can't use the
+        F statistic based on the R squared).
+      </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>1</mn></mrow><mo>,</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow><mo>,</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow><mo>,</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>4</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow></mrow></math><figcaption>Null hypothesis</figcaption></figure><div class="grid-responsive-row pre--grid-responsive-row" style="
+      --grid-responsive-row-slim-columns: 1fr;
+      --grid-responsive-row-mobile-columns: 1fr;
+      --grid-responsive-row-desktop-columns: auto auto auto;
+      
+    "><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>3</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mn>4</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>4</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></mrow></mrow></math><figcaption>General Linear Restrictions: unrestricted</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>x₁</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></math><figcaption>General Linear Restrictions: restricted</figcaption></figure></div></div><p>
+      In some cases if you use the t statistic to check
+      each variable you may fail to correclty reject
+      the null hypothesis. Again this is because this is
+      aj <strong>joint hypothesis</strong>.
+    </p></div></div></div><div class="widget-container document" id="test-widget-17" style="grid-column: span 2;"><style id="test-widget-17-styles"></style><div class="container pre--container"><details><summary class="grid-layout pink"><h4>10% Critical Values of F Distribution</h4></summary><br><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><figure class="pre--horizontal-shadow"><table class="fDistributionTable"><thead><tr><th>df₂\\df₁</th><th colspan="11">Degrees of Freedom (Numerator)</th></tr><tr><th colspan="2"></th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr></thead><tbody><tr><th class="denominator-df" rowspan="35"><span>Degrees of Freedom (Denominator)</span></th><th>1</th><td>39.86</td><td>49.50</td><td>53.59</td><td>55.83</td><td>57.24</td><td>58.20</td><td>58.91</td><td>59.44</td><td>59.86</td><td>60.19</td></tr><tr><th>2</th><td>8.53</td><td>9.00</td><td>9.16</td><td>9.24</td><td>9.29</td><td>9.33</td><td>9.35</td><td>9.37</td><td>9.38</td><td>9.39</td></tr><tr><th>3</th><td>5.54</td><td>5.46</td><td>5.39</td><td>5.34</td><td>5.31</td><td>5.28</td><td>5.27</td><td>5.25</td><td>5.24</td><td>5.23</td></tr><tr><th>4</th><td>4.54</td><td>4.32</td><td>4.19</td><td>4.11</td><td>4.05</td><td>4.01</td><td>3.98</td><td>3.95</td><td>3.94</td><td>3.92</td></tr><tr><th>5</th><td>4.06</td><td>3.78</td><td>3.62</td><td>3.52</td><td>3.45</td><td>3.40</td><td>3.37</td><td>3.34</td><td>3.32</td><td>3.30</td></tr><tr><th>6</th><td>3.78</td><td>3.46</td><td>3.29</td><td>3.18</td><td>3.11</td><td>3.05</td><td>3.01</td><td>2.98</td><td>2.96</td><td>2.94</td></tr><tr><th>7</th><td>3.59</td><td>3.26</td><td>3.07</td><td>2.96</td><td>2.88</td><td>2.83</td><td>2.78</td><td>2.75</td><td>2.72</td><td>2.70</td></tr><tr><th>8</th><td>3.46</td><td>3.11</td><td>2.92</td><td>2.81</td><td>2.73</td><td>2.67</td><td>2.62</td><td>2.59</td><td>2.56</td><td>2.54</td></tr><tr><th>9</th><td>3.36</td><td>3.01</td><td>2.81</td><td>2.69</td><td>2.61</td><td>2.55</td><td>2.51</td><td>2.47</td><td>2.44</td><td>2.42</td></tr><tr><th>10</th><td>3.29</td><td>2.92</td><td>2.73</td><td>2.61</td><td>2.52</td><td>2.46</td><td>2.41</td><td>2.38</td><td>2.35</td><td>2.32</td></tr><tr><th>11</th><td>3.23</td><td>2.86</td><td>2.66</td><td>2.54</td><td>2.45</td><td>2.39</td><td>2.34</td><td>2.30</td><td>2.27</td><td>2.25</td></tr><tr><th>12</th><td>3.18</td><td>2.81</td><td>2.61</td><td>2.48</td><td>2.39</td><td>2.33</td><td>2.28</td><td>2.24</td><td>2.21</td><td>2.19</td></tr><tr><th>13</th><td>3.14</td><td>2.76</td><td>2.56</td><td>2.43</td><td>2.35</td><td>2.28</td><td>2.23</td><td>2.20</td><td>2.16</td><td>2.14</td></tr><tr><th>14</th><td>3.10</td><td>2.73</td><td>2.52</td><td>2.39</td><td>2.31</td><td>2.24</td><td>2.19</td><td>2.15</td><td>2.12</td><td>2.10</td></tr><tr><th>15</th><td>3.07</td><td>2.70</td><td>2.49</td><td>2.36</td><td>2.27</td><td>2.21</td><td>2.16</td><td>2.12</td><td>2.09</td><td>2.06</td></tr><tr><th>16</th><td>3.05</td><td>2.67</td><td>2.46</td><td>2.33</td><td>2.24</td><td>2.18</td><td>2.13</td><td>2.09</td><td>2.06</td><td>2.03</td></tr><tr><th>17</th><td>3.03</td><td>2.64</td><td>2.44</td><td>2.31</td><td>2.22</td><td>2.15</td><td>2.10</td><td>2.06</td><td>2.03</td><td>2.00</td></tr><tr><th>18</th><td>3.01</td><td>2.62</td><td>2.42</td><td>2.29</td><td>2.20</td><td>2.13</td><td>2.08</td><td>2.04</td><td>2.00</td><td>1.98</td></tr><tr><th>19</th><td>2.99</td><td>2.61</td><td>2.40</td><td>2.27</td><td>2.18</td><td>2.11</td><td>2.06</td><td>2.02</td><td>1.98</td><td>1.96</td></tr><tr><th>20</th><td>2.97</td><td>2.59</td><td>2.38</td><td>2.25</td><td>2.16</td><td>2.09</td><td>2.04</td><td>2.00</td><td>1.96</td><td>1.94</td></tr><tr><th>21</th><td>2.96</td><td>2.57</td><td>2.36</td><td>2.23</td><td>2.14</td><td>2.08</td><td>2.02</td><td>1.98</td><td>1.95</td><td>1.92</td></tr><tr><th>22</th><td>2.95</td><td>2.56</td><td>2.35</td><td>2.22</td><td>2.13</td><td>2.06</td><td>2.01</td><td>1.97</td><td>1.93</td><td>1.90</td></tr><tr><th>23</th><td>2.94</td><td>2.55</td><td>2.34</td><td>2.21</td><td>2.11</td><td>2.05</td><td>1.99</td><td>1.95</td><td>1.92</td><td>1.89</td></tr><tr><th>24</th><td>2.93</td><td>2.54</td><td>2.33</td><td>2.19</td><td>2.10</td><td>2.04</td><td>1.98</td><td>1.94</td><td>1.91</td><td>1.88</td></tr><tr><th>25</th><td>2.92</td><td>2.53</td><td>2.32</td><td>2.18</td><td>2.09</td><td>2.02</td><td>1.97</td><td>1.93</td><td>1.89</td><td>1.87</td></tr><tr><th>26</th><td>2.91</td><td>2.52</td><td>2.31</td><td>2.17</td><td>2.08</td><td>2.01</td><td>1.96</td><td>1.92</td><td>1.88</td><td>1.86</td></tr><tr><th>27</th><td>2.90</td><td>2.51</td><td>2.30</td><td>2.17</td><td>2.07</td><td>2.00</td><td>1.95</td><td>1.91</td><td>1.87</td><td>1.85</td></tr><tr><th>28</th><td>2.89</td><td>2.50</td><td>2.29</td><td>2.16</td><td>2.06</td><td>2.00</td><td>1.94</td><td>1.90</td><td>1.87</td><td>1.84</td></tr><tr><th>29</th><td>2.89</td><td>2.50</td><td>2.28</td><td>2.15</td><td>2.06</td><td>1.99</td><td>1.93</td><td>1.89</td><td>1.86</td><td>1.83</td></tr><tr><th>30</th><td>2.88</td><td>2.49</td><td>2.28</td><td>2.14</td><td>2.05</td><td>1.98</td><td>1.93</td><td>1.88</td><td>1.85</td><td>1.82</td></tr><tr><th>40</th><td>2.84</td><td>2.44</td><td>2.23</td><td>2.09</td><td>2.00</td><td>1.93</td><td>1.87</td><td>1.83</td><td>1.79</td><td>1.76</td></tr><tr><th>60</th><td>2.79</td><td>2.39</td><td>2.18</td><td>2.04</td><td>1.95</td><td>1.87</td><td>1.82</td><td>1.77</td><td>1.74</td><td>1.71</td></tr><tr><th>90</th><td>2.76</td><td>2.36</td><td>2.15</td><td>2.01</td><td>1.91</td><td>1.84</td><td>1.78</td><td>1.74</td><td>1.70</td><td>1.67</td></tr><tr><th>120</th><td>2.75</td><td>2.35</td><td>2.13</td><td>1.99</td><td>1.90</td><td>1.82</td><td>1.77</td><td>1.72</td><td>1.68</td><td>1.65</td></tr><tr><th>∞</th><td>2.71</td><td>2.30</td><td>2.08</td><td>1.94</td><td>1.85</td><td>1.77</td><td>1.72</td><td>1.67</td><td>1.63</td><td>1.60</td></tr></tbody></table><figcaption>10% critical values F Table distribution</figcaption></figure></div></details><details><summary class="grid-layout pink"><h4>5% Critical Values of F Distribution</h4></summary><br><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><figure class="pre--horizontal-shadow"><table class="fDistributionTable"><thead><tr><th>df₂\\df₁</th><th colspan="11">Numerator Degrees of Freedom</th></tr><tr><th colspan="2"></th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr></thead><tbody><tr><th class="denominator-df" rowspan="35"><span>Degrees of Freedom (Denominator)</span></th><th>1</th><td>161.4</td><td>199.5</td><td>215.7</td><td>224.6</td><td>230.2</td><td>234.0</td><td>236.8</td><td>238.9</td><td>240.5</td><td>241.9</td></tr><tr><th>2</th><td>18.51</td><td>19.00</td><td>19.16</td><td>19.25</td><td>19.30</td><td>19.33</td><td>19.35</td><td>19.37</td><td>19.38</td><td>19.40</td></tr><tr><th>3</th><td>10.13</td><td>9.55</td><td>9.28</td><td>9.12</td><td>9.01</td><td>8.94</td><td>8.89</td><td>8.85</td><td>8.81</td><td>8.79</td></tr><tr><th>4</th><td>7.71</td><td>6.94</td><td>6.59</td><td>6.39</td><td>6.26</td><td>6.16</td><td>6.09</td><td>6.04</td><td>6.00</td><td>5.96</td></tr><tr><th>5</th><td>6.61</td><td>5.79</td><td>5.41</td><td>5.19</td><td>5.05</td><td>4.95</td><td>4.88</td><td>4.82</td><td>4.77</td><td>4.74</td></tr><tr><th>6</th><td>5.99</td><td>5.14</td><td>4.76</td><td>4.53</td><td>4.39</td><td>4.28</td><td>4.21</td><td>4.15</td><td>4.10</td><td>4.06</td></tr><tr><th>7</th><td>5.59</td><td>4.74</td><td>4.35</td><td>4.12</td><td>3.97</td><td>3.87</td><td>3.79</td><td>3.73</td><td>3.68</td><td>3.64</td></tr><tr><th>8</th><td>5.32</td><td>4.46</td><td>4.07</td><td>3.84</td><td>3.69</td><td>3.58</td><td>3.50</td><td>3.44</td><td>3.39</td><td>3.35</td></tr><tr><th>9</th><td>5.12</td><td>4.26</td><td>3.86</td><td>3.63</td><td>3.48</td><td>3.37</td><td>3.29</td><td>3.23</td><td>3.18</td><td>3.14</td></tr><tr><th>10</th><td>4.96</td><td>4.10</td><td>3.71</td><td>3.48</td><td>3.33</td><td>3.22</td><td>3.14</td><td>3.07</td><td>3.02</td><td>2.98</td></tr><tr><th>11</th><td>4.84</td><td>3.98</td><td>3.59</td><td>3.36</td><td>3.20</td><td>3.09</td><td>3.01</td><td>2.95</td><td>2.90</td><td>2.85</td></tr><tr><th>12</th><td>4.75</td><td>3.89</td><td>3.49</td><td>3.26</td><td>3.11</td><td>3.00</td><td>2.91</td><td>2.85</td><td>2.80</td><td>2.75</td></tr><tr><th>13</th><td>4.67</td><td>3.81</td><td>3.41</td><td>3.18</td><td>3.03</td><td>2.92</td><td>2.83</td><td>2.77</td><td>2.71</td><td>2.67</td></tr><tr><th>14</th><td>4.60</td><td>3.74</td><td>3.34</td><td>3.11</td><td>2.96</td><td>2.85</td><td>2.76</td><td>2.70</td><td>2.65</td><td>2.60</td></tr><tr><th>15</th><td>4.54</td><td>3.68</td><td>3.29</td><td>3.06</td><td>2.90</td><td>2.79</td><td>2.71</td><td>2.64</td><td>2.59</td><td>2.54</td></tr><tr><th>16</th><td>4.49</td><td>3.63</td><td>3.24</td><td>3.01</td><td>2.85</td><td>2.74</td><td>2.66</td><td>2.59</td><td>2.54</td><td>2.49</td></tr><tr><th>17</th><td>4.45</td><td>3.59</td><td>3.20</td><td>2.96</td><td>2.81</td><td>2.70</td><td>2.61</td><td>2.55</td><td>2.49</td><td>2.45</td></tr><tr><th>18</th><td>4.41</td><td>3.55</td><td>3.16</td><td>2.93</td><td>2.77</td><td>2.66</td><td>2.58</td><td>2.51</td><td>2.46</td><td>2.41</td></tr><tr><th>19</th><td>4.38</td><td>3.52</td><td>3.13</td><td>2.90</td><td>2.74</td><td>2.63</td><td>2.54</td><td>2.48</td><td>2.42</td><td>2.38</td></tr><tr><th>20</th><td>4.35</td><td>3.49</td><td>3.10</td><td>2.87</td><td>2.71</td><td>2.60</td><td>2.51</td><td>2.45</td><td>2.39</td><td>2.35</td></tr><tr><th>21</th><td>4.32</td><td>3.47</td><td>3.07</td><td>2.84</td><td>2.68</td><td>2.57</td><td>2.49</td><td>2.42</td><td>2.37</td><td>2.32</td></tr><tr><th>22</th><td>4.30</td><td>3.44</td><td>3.05</td><td>2.82</td><td>2.66</td><td>2.55</td><td>2.46</td><td>2.40</td><td>2.34</td><td>2.30</td></tr><tr><th>23</th><td>4.28</td><td>3.42</td><td>3.03</td><td>2.80</td><td>2.64</td><td>2.53</td><td>2.44</td><td>2.37</td><td>2.32</td><td>2.27</td></tr><tr><th>24</th><td>4.26</td><td>3.40</td><td>3.01</td><td>2.78</td><td>2.62</td><td>2.51</td><td>2.42</td><td>2.36</td><td>2.30</td><td>2.25</td></tr><tr><th>25</th><td>4.24</td><td>3.39</td><td>2.99</td><td>2.76</td><td>2.60</td><td>2.49</td><td>2.40</td><td>2.34</td><td>2.28</td><td>2.24</td></tr><tr><th>26</th><td>4.23</td><td>3.37</td><td>2.98</td><td>2.74</td><td>2.59</td><td>2.47</td><td>2.39</td><td>2.32</td><td>2.27</td><td>2.22</td></tr><tr><th>27</th><td>4.21</td><td>3.35</td><td>2.96</td><td>2.73</td><td>2.57</td><td>2.46</td><td>2.37</td><td>2.31</td><td>2.25</td><td>2.20</td></tr><tr><th>28</th><td>4.20</td><td>3.34</td><td>2.95</td><td>2.71</td><td>2.56</td><td>2.45</td><td>2.36</td><td>2.29</td><td>2.24</td><td>2.19</td></tr><tr><th>29</th><td>4.18</td><td>3.33</td><td>2.93</td><td>2.70</td><td>2.55</td><td>2.43</td><td>2.35</td><td>2.28</td><td>2.22</td><td>2.18</td></tr><tr><th>30</th><td>4.17</td><td>3.32</td><td>2.92</td><td>2.69</td><td>2.53</td><td>2.42</td><td>2.33</td><td>2.27</td><td>2.21</td><td>2.16</td></tr><tr><th>40</th><td>4.08</td><td>3.23</td><td>2.84</td><td>2.61</td><td>2.45</td><td>2.34</td><td>2.25</td><td>2.18</td><td>2.12</td><td>2.08</td></tr><tr><th>60</th><td>4.00</td><td>3.15</td><td>2.76</td><td>2.53</td><td>2.37</td><td>2.25</td><td>2.17</td><td>2.10</td><td>2.04</td><td>1.99</td></tr><tr><th>90</th><td>3.95</td><td>3.10</td><td>2.71</td><td>2.47</td><td>2.32</td><td>2.20</td><td>2.11</td><td>2.04</td><td>1.99</td><td>1.94</td></tr><tr><th>120</th><td>3.92</td><td>3.07</td><td>2.68</td><td>2.45</td><td>2.29</td><td>2.18</td><td>2.09</td><td>2.02</td><td>1.96</td><td>1.91</td></tr><tr><th>∞</th><td>3.84</td><td>3.00</td><td>2.60</td><td>2.37</td><td>2.21</td><td>2.10</td><td>2.01</td><td>1.94</td><td>1.88</td><td>1.83</td></tr></tbody></table><figcaption>5% critical values F Table distribution</figcaption></figure></div></details><details><summary class="grid-layout pink"><h4>1% Critical Values of F Distribution</h4></summary><br><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><figure class="pre--horizontal-shadow"><table class="fDistributionTable"><thead><tr><th>df₂\\df₁</th><th></th><th colspan="11">Numerator Degrees of Freedom</th></tr><tr><th colspan="2"></th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr></thead><tbody><tr><th class="denominator-df" rowspan="35"><span>Degrees of Freedom (Denominator)</span></th><th>1</th><td>4052</td><td>4999.5</td><td>5403</td><td>5625</td><td>5764</td><td>5859</td><td>5928</td><td>5982</td><td>6022</td><td>6056</td></tr><tr><th>2</th><td>98.50</td><td>99.00</td><td>99.17</td><td>99.25</td><td>99.30</td><td>99.33</td><td>99.36</td><td>99.37</td><td>99.39</td><td>99.40</td></tr><tr><th>3</th><td>34.12</td><td>30.82</td><td>29.46</td><td>28.71</td><td>28.24</td><td>27.91</td><td>27.67</td><td>27.49</td><td>27.35</td><td>27.23</td></tr><tr><th>4</th><td>21.20</td><td>18.00</td><td>16.69</td><td>15.98</td><td>15.52</td><td>15.21</td><td>14.98</td><td>14.80</td><td>14.66</td><td>14.55</td></tr><tr><th>5</th><td>16.26</td><td>13.27</td><td>12.06</td><td>11.39</td><td>10.97</td><td>10.67</td><td>10.46</td><td>10.29</td><td>10.16</td><td>10.05</td></tr><tr><th>6</th><td>13.75</td><td>10.92</td><td>9.78</td><td>9.15</td><td>8.75</td><td>8.47</td><td>8.26</td><td>8.10</td><td>7.98</td><td>7.87</td></tr><tr><th>7</th><td>12.25</td><td>9.55</td><td>8.45</td><td>7.85</td><td>7.46</td><td>7.19</td><td>6.99</td><td>6.84</td><td>6.72</td><td>6.62</td></tr><tr><th>8</th><td>11.26</td><td>8.65</td><td>7.59</td><td>7.01</td><td>6.63</td><td>6.37</td><td>6.18</td><td>6.03</td><td>5.91</td><td>5.81</td></tr><tr><th>9</th><td>10.56</td><td>8.02</td><td>6.99</td><td>6.42</td><td>6.06</td><td>5.80</td><td>5.61</td><td>5.47</td><td>5.35</td><td>5.26</td></tr><tr><th>10</th><td>10.04</td><td>7.56</td><td>6.55</td><td>5.99</td><td>5.64</td><td>5.39</td><td>5.20</td><td>5.06</td><td>4.94</td><td>4.85</td></tr><tr><th>11</th><td>9.65</td><td>7.21</td><td>6.22</td><td>5.67</td><td>5.32</td><td>5.07</td><td>4.89</td><td>4.74</td><td>4.63</td><td>4.54</td></tr><tr><th>12</th><td>9.33</td><td>6.93</td><td>5.95</td><td>5.41</td><td>5.06</td><td>4.82</td><td>4.64</td><td>4.50</td><td>4.39</td><td>4.30</td></tr><tr><th>13</th><td>9.07</td><td>6.70</td><td>5.74</td><td>5.21</td><td>4.86</td><td>4.62</td><td>4.44</td><td>4.30</td><td>4.19</td><td>4.10</td></tr><tr><th>14</th><td>8.86</td><td>6.51</td><td>5.56</td><td>5.04</td><td>4.69</td><td>4.46</td><td>4.28</td><td>4.14</td><td>4.03</td><td>3.94</td></tr><tr><th>15</th><td>8.68</td><td>6.36</td><td>5.42</td><td>4.89</td><td>4.56</td><td>4.32</td><td>4.14</td><td>4.00</td><td>3.89</td><td>3.80</td></tr><tr><th>16</th><td>8.53</td><td>6.23</td><td>5.29</td><td>4.77</td><td>4.44</td><td>4.20</td><td>4.03</td><td>3.89</td><td>3.78</td><td>3.69</td></tr><tr><th>17</th><td>8.40</td><td>6.11</td><td>5.18</td><td>4.67</td><td>4.34</td><td>4.10</td><td>3.93</td><td>3.79</td><td>3.68</td><td>3.59</td></tr><tr><th>18</th><td>8.29</td><td>6.01</td><td>5.09</td><td>4.58</td><td>4.25</td><td>4.01</td><td>3.84</td><td>3.71</td><td>3.60</td><td>3.51</td></tr><tr><th>19</th><td>8.18</td><td>5.93</td><td>5.01</td><td>4.50</td><td>4.17</td><td>3.94</td><td>3.77</td><td>3.63</td><td>3.52</td><td>3.43</td></tr><tr><th>20</th><td>8.10</td><td>5.85</td><td>4.94</td><td>4.43</td><td>4.10</td><td>3.87</td><td>3.70</td><td>3.56</td><td>3.46</td><td>3.37</td></tr><tr><th>21</th><td>8.02</td><td>5.78</td><td>4.87</td><td>4.37</td><td>4.04</td><td>3.81</td><td>3.64</td><td>3.51</td><td>3.40</td><td>3.31</td></tr><tr><th>22</th><td>7.95</td><td>5.72</td><td>4.82</td><td>4.31</td><td>3.99</td><td>3.76</td><td>3.59</td><td>3.45</td><td>3.35</td><td>3.26</td></tr><tr><th>23</th><td>7.88</td><td>5.66</td><td>4.76</td><td>4.26</td><td>3.94</td><td>3.71</td><td>3.54</td><td>3.41</td><td>3.30</td><td>3.21</td></tr><tr><th>24</th><td>7.82</td><td>5.61</td><td>4.72</td><td>4.22</td><td>3.90</td><td>3.67</td><td>3.50</td><td>3.36</td><td>3.26</td><td>3.17</td></tr><tr><th>25</th><td>7.77</td><td>5.57</td><td>4.68</td><td>4.18</td><td>3.85</td><td>3.63</td><td>3.46</td><td>3.32</td><td>3.22</td><td>3.13</td></tr><tr><th>26</th><td>7.72</td><td>5.53</td><td>4.64</td><td>4.14</td><td>3.82</td><td>3.59</td><td>3.42</td><td>3.29</td><td>3.18</td><td>3.09</td></tr><tr><th>27</th><td>7.68</td><td>5.49</td><td>4.60</td><td>4.11</td><td>3.78</td><td>3.56</td><td>3.39</td><td>3.26</td><td>3.15</td><td>3.06</td></tr><tr><th>28</th><td>7.64</td><td>5.45</td><td>4.57</td><td>4.07</td><td>3.75</td><td>3.53</td><td>3.36</td><td>3.23</td><td>3.12</td><td>3.03</td></tr><tr><th>29</th><td>7.60</td><td>5.42</td><td>4.54</td><td>4.04</td><td>3.73</td><td>3.50</td><td>3.33</td><td>3.20</td><td>3.09</td><td>3.00</td></tr><tr><th>30</th><td>7.56</td><td>5.39</td><td>4.51</td><td>4.02</td><td>3.70</td><td>3.47</td><td>3.30</td><td>3.17</td><td>3.07</td><td>2.98</td></tr><tr><th>40</th><td>7.31</td><td>5.18</td><td>4.31</td><td>3.83</td><td>3.51</td><td>3.29</td><td>3.12</td><td>2.99</td><td>2.89</td><td>2.80</td></tr><tr><th>60</th><td>7.08</td><td>4.98</td><td>4.13</td><td>3.65</td><td>3.34</td><td>3.12</td><td>2.95</td><td>2.82</td><td>2.72</td><td>2.63</td></tr><tr><th>90</th><td>6.93</td><td>4.85</td><td>4.01</td><td>3.53</td><td>3.23</td><td>3.01</td><td>2.84</td><td>2.72</td><td>2.61</td><td>2.52</td></tr><tr><th>120</th><td>6.85</td><td>4.79</td><td>3.95</td><td>3.48</td><td>3.17</td><td>2.96</td><td>2.79</td><td>2.66</td><td>2.56</td><td>2.47</td></tr><tr><th>∞</th><td>6.63</td><td>4.61</td><td>3.78</td><td>3.32</td><td>3.02</td><td>2.80</td><td>2.64</td><td>2.51</td><td>2.41</td><td>2.32</td></tr></tbody></table><figcaption>1% critical values F Table distribution</figcaption></figure></div></details></div></div><hr style="width: 100%; border-color: transparent;">"
+`;

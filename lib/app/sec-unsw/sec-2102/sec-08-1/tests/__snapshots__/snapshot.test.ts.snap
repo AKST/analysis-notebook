@@ -1,0 +1,379 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`app(unsw::2102::08.1).snapshot > should match snapshots 1`] = `
+"<style id="test-styles"></style><div class="widget-container document" id="test-widget-0" style="grid-column: span 2;"><style id="test-widget-0-styles"></style><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>Government Spending<br><small style="color: #aaaaff">ECON2102, W8, Lecture 1</small></h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><p>See here for resources relating to the lesson</p></div></div></aside></div></div></div><div class="widget-container document" id="test-widget-1" style="grid-column: span 2;"><style id="test-widget-1-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Introduction</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C18 P509)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p>
+      Government spending plays no small role in the wider discussion of
+      macroeconomics. This writeup but largely focuses on the government
+      budget constraint, which is more a relation between todays debt
+      repayments, taxes, and government spending with future debt.
+    </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>BondValue</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mtext>Coupon</mtext><mo>,</mo><mspace width="4px"></mspace><mtext>FaceValue</mtext><mo>,</mo><mspace width="4px"></mspace><mi>N</mi><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><munderover><mi>∑</mi><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mspace width="4px"></mspace><mrow><mfrac><mtext>Coupon</mtext><msup><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>r</mi><mo>)</mo></mrow><mi>t</mi></msup></mfrac></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><mtext>FaceValue</mtext><msup><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>r</mi><mo>)</mo></mrow><mi>n</mi></msup></mfrac></mrow></mrow></math><figcaption>Bond Value</figcaption></figure></div></div></div><div class="widget-container document" id="test-widget-2" style="grid-column: span 2;"><style id="test-widget-2-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>U.S. Government Spending and Revenue</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C18 P509)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><figure class="pre--horizontal-shadow"><table class="setupTable paddedTable"><tr><th></th><th>Percentage of GDP</th><th>Dollars per person</th></tr><tr><th colspan="3"></th></tr><tr><th style="background: deeppink">Total expenditures</th><td>20.0</td><td>12,550</td></tr><tr><th>Health (including Medicare)</th><td>5.6</td><td>3,480</td></tr><tr><th>Social Security</th><td>4.8</td><td>3,020</td></tr><tr><th>National defence</th><td>3.1</td><td>1,930</td></tr><tr><th>Income security</th><td>2.4</td><td>1,510</td></tr><tr><th>Net interest</th><td>1.6</td><td>990</td></tr><tr><th>Other</th><td>2.6</td><td>1,620</td></tr><tr><th colspan="3"></th></tr><tr><th style="background: deeppink">Total revenues</th><td>16.2</td><td>10,170</td></tr><tr><th>Individual income taxes</th><td>8.2</td><td>5,140</td></tr><tr><th>Social insurance and retirement receipts</th><td>5.7</td><td>3,580</td></tr><tr><th>Corporate income taxes</th><td>1.0</td><td>630</td></tr><tr><th>Other</th><td>1.3</td><td>830</td></tr><tr><th colspan="3"></th></tr><tr><th style="background: deeppink">Budget deficit</th><td>−3.8</td><td>−2,380</td></tr></table><figcaption>The U.S. Federal Government Budget, 2018</figcaption></figure><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h4>The Debt-GDP Ratio</h4><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C18 P511)</strong></span></div><p>
+          When the government runs a defiicit to continue
+          spending it borrows, and this is typically done
+          by issuing government bonds to finance its
+          spending. The US government itself own a large
+          number of their own bonds, mostly in a social
+          security trust fund for retirees.
+        </p><p>
+          However most analysises of government debt is
+          typically analysises of government debt held
+          outside the government, by foreigners in
+          particular.
+        </p></div><div class="container pre--container"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mfrac><msub><mi>B</mi><mi>t</mi></msub><msub><mi>Y</mi><mi>t</mi></msub></mfrac><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mtext>Debt to GDP Ratio for period t</mtext></mrow></math></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>B</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>B</mi><mrow><mi>t</mi><mo>-</mo><mn>1</mn></mrow></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>i</mi><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><munder><mrow><mrow><mo>[</mo><msub><mi>T</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>G</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>TR</mi><mi>t</mi></msub><mo>]</mo></mrow></mrow><munder><mo>⏟</mo><mrow style=""><mtext>Primary Budget Balance</mtext></mrow></munder></munder></mrow></mrow></math><figcaption>Primary Budget Balance (PBBₜ)</figcaption></figure><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: Government debt ratio</p><dl><dt>The Budget Balance</dt><dd>The difference between tax revenues and spending.</dd><dt>Budget Defict</dt><dd>The difference when spending exceeds tax.</dd><dt>Balanced Budget</dt><dd>When spending and taxes are equal.</dd></dl></div></div></div></div></div><div class="widget-container document" id="test-widget-3" style="grid-column: span 2;"><style id="test-widget-3-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>International Evidence on Spending and Debt</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C18 P513)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p>
+      Despite all the fuss the US doesn't compare that badly
+      to other developed nations in terms of their debt to
+      GDP ratio (at least in 2017). Then again I looked and
+      it's mostly italy and japan from what I could tell.
+    </p></div></div></div><div class="widget-container document" id="test-widget-4" style="grid-column: span 2;"><style id="test-widget-4-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>The Government Budget Constraint</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C18 P514)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+          Below is the flow version of the government budget
+          constraint, it says the sources of funds to the
+          government must equal the uses of funds by the
+          government.
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><munder><mrow><mrow><msub><mi>G</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>Tr</mi><mi>t</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>i</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>B</mi><mi>t</mi></msub></mrow></mrow></mrow><munder><mo>⏟</mo><mrow style=""><mtext>uses</mtext></mrow></munder></munder><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><munder><mrow><mrow><msub><mi>T</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>ΔB</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>ΔM</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mrow></mrow><munder><mo>⏟</mo><mrow style=""><mtext>sources</mtext></mrow></munder></munder></mrow></math><figcaption>Flow version of the Government budget constraint</figcaption></figure><p>
+          The government budget constraint is typically called
+          a constraint, but personally I view it as an accounting
+          identity or measure of expected debt in the subsequent
+          period.
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>B</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>i</mi><mo>)</mo></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>B</mi><mi>t</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><mrow><msub><mi>G</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>T</mi><mi>t</mi></msub></mrow></mrow><munder><mo>⏟</mo><mrow style=""><mtext>deficit</mtext></mrow></munder></munder></mrow></mrow></math><figcaption>Evolution of government bonds</figcaption></figure></div><dl><dt>𝛥Mₜ₊₁</dt><dd>
+          Source of funds from printing money
+        </dd><dt>TR</dt><dd>
+          Government transfers.
+        </dd></dl></div><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h4>The Intertemporal Budget Constraint</h4><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C18 P515)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><munder><mrow><mrow><msub><mi>G</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>G</mi><mn>2</mn></msub><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>i</mi><mo>)</mo></mrow></mfrac></mrow></mrow><munder><mo>⏟</mo><mrow style=""><mtext>pdv of spending</mtext></mrow></munder></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><mrow><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>i</mi><mo>)</mo></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>B</mi><mn>1</mn></msub></mrow></mrow><munder><mo>⏟</mo><mrow style=""><mtext>initial debt</mtext></mrow></munder></munder></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>T</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><mfrac><msub><mi>T</mi><mn>2</mn></msub><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>i</mi><mo>)</mo></mrow></mfrac></mrow><munder><mo>⏟</mo><mrow style=""><mtext>pdv of taxes</mtext></mrow></munder></munder></mrow></mrow></math><figcaption>Intertemporal budget constraint</figcaption></figure><p>
+        The intertemporal budget constraint says that the present
+        discounted value of government spending must equal the
+        present discounted value of tax revenues. Additionally,
+        the government’s budget must balance—not period by period,
+        but rather in a present discounted value sense.
+      </p></div></div></div></div><div class="widget-container document" id="test-widget-5" style="grid-column: span 2;"><style id="test-widget-5-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>How Much Can the Government Borrow?</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C18 P517)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h4>Economic Growth and the Debt-GDP Ratio</h4><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C18 P517)</strong></span></div><p>
+          <strong>Generally</strong>: If your future prospects look good, lenders may
+          be willing to lend you a lot today even though your current income
+          may be low. A high and growing stock of debt, however, would set off
+          alarms. Lenders would worry about your ability to pay in the future,
+          unless they had some independent evidence that your future prospects
+          looked much better than your current ones. Countries operate in much
+          the same way.
+        </p><p>The GDP to debt ratio is typically is how this assessed.</p><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h4>High Inflation and Default</h4><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C18 P518)</strong></span></div><p>
+          When a countries debt-GDP ratio gets too higher lends begin to doubt
+          a governments ability to repay its outstanding debt. When this happens
+          there's a temptation to start the money printers.
+        </p><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h4>Generational Accounting</h4><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C18 P519)</strong></span></div><p>
+          By its very nature, a debt involves borrowing for the present and
+          repaying in the future. You could say that existing generations
+          are borrowing from future generations.
+        </p></div><div class="container pre--container"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>Y</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>T</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>C</mi></mrow></math><figcaption>Private Sector Savings</figcaption></figure><dl><dt>Disposable Income</dt><dd>Income net Taxes</dd></dl><aside class="infobox"><h3 class="infobox-name">💡 On Crowding out</h3><div class="infobox-body"><div class="container"><p>
+            This is my own take, while I am sure there is a macro
+            effect when the government subsidises a particular
+            industry over other industries (redirecting investment
+            to that industry). During 2024 in Australia there was
+            a bit of commentary around the infrastructure spending
+            crowing out residential development.
+          </p></div></div></aside></div></div><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h4>Deficits and Investment</h4><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C18 P519)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mi>Y</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>C</mi></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>G</mi></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mo>(</mo><mi>IM</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>EX</mi></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mi>I</mi></mrow></math><figcaption>National income identity</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><munder><mrow><mrow><mo>(</mo><mi>Y</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>T</mi></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>C</mi></mrow><mo>)</mo></mrow></mrow><munder><mo>⏟</mo><mrow style=""><mtext>private saving</mtext></mrow></munder></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><mrow><mo>(</mo><mi>T</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>G</mi></mrow><mo>)</mo></mrow></mrow><munder><mo>⏟</mo><mrow style=""><mtext>government saving</mtext></mrow></munder></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><mrow><mo>(</mo><mi>IM</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>EX</mi></mrow><mo>)</mo></mrow></mrow><munder><mo>⏟</mo><mrow style=""><mtext>foreign saving</mtext></mrow></munder></munder></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mi>I</mi></mrow></math><figcaption>Saving identity</figcaption></figure><p>
+        One source of concern about budget deficits is that if the
+        government’s savings are negative, this may reduce investment.
+        Some of the savings by the private sector or by foreigners must
+        then go to fund the government’s borrowing, and these funds cannot
+        be used for investment. Economists call this phenomenon crowding out:
+        budget deficits may soak up saving in the economy and crowd out
+        investment.
+      </p><p>
+        The crowding-out interpretation does not take into
+        account the possibility that private or foreign saving might
+        increase in response to the additional demand for funds by the
+        government. Whether government borrowing crowds out investment
+        has been the subject of much research in economics, and the
+        issue is still debated. The extent to which budget deficits crowd
+        out investment is unclear, and there no consensus on the answer
+        in the economics literature
+      </p></div></div></div></div><div class="widget-container document" id="test-widget-6" style="grid-column: span 2;"><style id="test-widget-6-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>The (USA's) Fiscal Problem of the Twenty-First Century</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C18 P521)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h4>The Problem</h4><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C18 P522)</strong></span></div><p>
+            In the US the debt ceiling gets a lot attention as
+            does their government debt. A lot of focus is placed
+            on spending from business as usual which are difficult
+            to wind back without affect quality of life such as
+            social security, medicare and medicaid. For context:
+          </p><ul class="no-item-padding" style="margin-block: 0px;"><li>In <strong>1950</strong> entitlement spending was 0.3% of GDP</li><li>In <strong>2000</strong> this percent has risen to 7.6% of GDP</li></ul><p>Some of the reasons for this change include:</p><ul class="no-item-padding" style="margin-block: 0px;"><li>Increased generosity of entitlement programs</li><li>Increased eligiblity of population to programs</li></ul><p>
+            By and large the health expenditures are actually some
+            of the larger contributors to the government deficit.
+            Health expenditure is projected to rise from 3.4 percent
+            of GDP in 2000 to 7.7 percent in 2030 and 14.9 percent
+            by 2075 (this is all assuming existing trends hold).
+          </p></div><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h4>Possible Solutions</h4><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C18 P525)</strong></span></div><p>
+            As always, the solutions are rather in term of implementation
+            are actually very simple, ensure spending is inline with
+            taxisation (so a combination of decreasing expenditure and
+            increasing taxisation). However as you can imagine politically
+            it is a different matter.
+          </p><p>
+            It is also worth asking why Medicare and Medicaid spending are
+            growing so rapidly. In part, people are living longer and the
+            population is aging, the portion of the population with greater
+            health needs are a more significant portion of the population now.
+            <strong>However</strong>, this is hardly unique to the USA, Japans much
+            older population spends less on health (as share of GDP) than the
+            USA. Research from <a href="https://www.aeaweb.org/articles?id=10.1257%2Fjep.6.3.3" target="_blank">Joseph Newhouse</a>
+            from 1992 suggests doctors are incentativised to induce patients
+            to spend more on medical care than they really need. This is often
+            associated with newer more expensive medical technologies such as
+            MRIs or CT scans (think about how often your dentist recommends a
+            scan of your teeth just in case).
+          </p><p>
+            Newhouses research raises other questions, people don't have to buy
+            these newer technologies, nor do people have to invent them if they
+            don't want to. But they do, which suggests something about peoples
+            preferences.
+          </p></div></div><div class="container pre--container"><aside class="infobox"><h3 class="infobox-name">💡 Note</h3><div class="infobox-body"><div class="container"><p>This section is very US centric.</p></div></div></aside><aside class="infobox"><h3 class="infobox-name">💡 CBO 2002 report</h3><div class="infobox-body"><div class="container"><p>
+            The CBO in the USA released a report titled
+            <a href="https://www.cbo.gov/sites/default/files/107th-congress-2001-2002/reports/125revisedjuly3.pdf" target="_blank">A 125-Year Picture of the Federal
+            Government’s Share of the Economy, 1950 to 2075</a>.
+          </p></div></div></aside><dl><dt>CBO</dt><dd>Congressional Budget Office</dd><dt>PBO</dt><dd>Paralimentary Budget Office</dd></dl><aside class="infobox"><h3 class="infobox-name">💡 Moral case for a Sustainable budget</h3><div class="infobox-body"><div class="container"><p>
+            By all means the impact of the lives of indivisual people
+            from these programs is a wonderful thing, and nothing here
+            is a value judgement on this. So the concern is more one
+            of the nature of the ability to continuing providing these
+            services into the future. If it's not immediately obvious but
+            for the same reason we care about climate change and the
+            sustainability of our planet we ought to consider the
+            sustainabilty of our institutions for the welfare of those
+            who come after us.
+          </p><p>
+            To disregard their welbeing is hedonism at expense of those
+            who come after us. <strong>At the same time</strong>, we should be
+            on guard for those who wish to use such motivation in bad
+            faith to dispropotionately disregard the welbeing of our
+            most vunerable today. It is not an easy decision and we
+            should avoid any temptation to dismiss engaging with this
+            question as too hard.
+          </p></div></div></aside></div></div><div class="container pre--container"><h4>Returns to life</h4><p>
+        Unlike consumption of a specific good, the length of
+        ones life does not face diminishing returns. When you
+        spend your time one something spending additional time
+        on it becomes less desirable, inversely as you increase
+        your available the value of you spending time on those
+        things increases. With consumption being such a large
+        contributor to GDP, it might be ill advised to reduce
+        spending on it (indepently of effiency).
+      </p></div></div></div></div><div class="widget-container document" id="test-widget-7" style="grid-column: span 2;"><style id="test-widget-7-styles"></style><div class="container pre--container"><div style="
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 8px;
+    "><h2>Conclusion</h2><span style="
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 0.5em;
+        align-items: center;
+        max-height: 2em;
+        line-height: 1;
+        font-size: 10px;
+        color: var(--fg-black-on-pink);
+        background: var(--bg-pink);
+        padding: 4px;
+      "><strong>Book (C18 P527)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 pre--c2"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: explain monetary ways to decrease debt</p><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: explain fiscal ways to decrease debt</p></div><h4>Government Budget Constraint at period t</h4><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>B</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><munderover><mi>∏</mi><mrow><mi>p</mi><mo>=</mo><mn>1</mn></mrow><mi>t</mi></munderover><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>i</mi><mi>p</mi></msub><mo>)</mo></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>B</mi><mn>0</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><munderover><mi>∑</mi><mrow><mi>p</mi><mo>=</mo><mn>1</mn></mrow><mi>t</mi></munderover><mspace width="4px"></mspace><mrow><mrow><mo>{</mo><mrow><mo>[</mo><mrow><munderover><mi>∏</mi><mrow><mi>q</mi><mo>=</mo><mi>p</mi></mrow><mrow><mi>t</mi><mo>-</mo><mn>1</mn></mrow></munderover><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>i</mi><mi>q</mi></msub><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mrow><mo>(</mo><msub><mi>G</mi><mi>p</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>T</mi><mi>p</mi></msub><mo>)</mo></mrow><mo>}</mo></mrow></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mo>(</mo><msub><mi>G</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>T</mi><mi>t</mi></msub><mo>)</mo></mrow></mrow></mrow></math><figcaption>Intertemporal evolution of government debt</figcaption></figure></div></div></div><hr style="width: 100%; border-color: transparent;">"
+`;
