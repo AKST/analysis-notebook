@@ -1,14 +1,35 @@
-import { defineConfig } from 'vitest/config';
+import { defineConfig, Plugin } from 'vitest/config';
 import { fileURLToPath } from 'node:url';
 
-export default defineConfig({
-  resolve: {
-    alias: {
-      '@base/': fileURLToPath(new URL('./lib/base/', import.meta.url)),
-      '@ui/': fileURLToPath(new URL('./lib/ui/', import.meta.url)),
-      '@app/': fileURLToPath(new URL('./lib/app/', import.meta.url)),
-      '@prelude-uni/': fileURLToPath(new URL('./lib/prelude/university/', import.meta.url)),
+const aliases: Record<string, string> = {
+  '@base/': './lib/base/',
+  '@ui/': './lib/ui/',
+  '@app/': './lib/app/',
+  '@prelude-uni/': './lib/prelude/university/',
+  '@prelude-econ/': './lib/prelude/econ/',
+};
+
+function resolveImportMetaPlugin(): Plugin {
+  return {
+    name: 'resolve-import-meta',
+    transform(code, id) {
+      if (!code.includes('import.meta.resolve')) return;
+      let transformed = code;
+      for (const [alias, path] of Object.entries(aliases)) {
+        const regex = new RegExp(`import\\.meta\\.resolve\\(['"]${alias.replace('/', '\\/')}`, 'g');
+        transformed = transformed.replace(regex, `import.meta.resolve('${path}`);
+      }
+      return transformed !== code ? transformed : undefined;
     },
+  };
+}
+
+export default defineConfig({
+  plugins: [resolveImportMetaPlugin()],
+  resolve: {
+    alias: Object.fromEntries(
+      Object.entries(aliases).map(([k, v]) => [k, fileURLToPath(new URL(v, import.meta.url))])
+    ),
   },
   test: {
     environment: 'jsdom',

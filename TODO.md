@@ -24,7 +24,6 @@ This is effectly a poor mans issue tracker.
      - [x] Turn doc.ul into a normal helper not a template helper
      - [x] API changes
      - [ ] Migrate anything using the style attr to use the css helper
-     - [ ] Setup tests to preserve render output
   4. The hardest part
     - [ ] Support events.
         - Alternatively maybe I can add an effect system where certain
@@ -63,6 +62,8 @@ This is effectly a poor mans issue tracker.
 4. User content containment and moving into an iframe
   - Unordered changes
     - [ ] Each widget exist in a web component.
+        - The main challenge here is sharing stylesheets.
+
     - [ ] State should be managed in a web worker
     - [ ] Rendering should also be moved a web worker
 
@@ -81,6 +82,14 @@ This is effectly a poor mans issue tracker.
 
 
 ## Small Fish
+
+### Get rid of `StyleManager`
+
+Replace with `StyleService`.
+
+### Snapshot Regression tests for `lib/app`
+
+This should be useful when migrating to new APIs.
 
 ### Safe Render Function
 
@@ -163,9 +172,17 @@ benefit from using it. Its worth exploring.
 
 - Rename lib/base/dom_app/helpers/typography to html
 - Rename lib/ui/chrome to lib/ui/{os,chasis,environment,system}
-- DSL_DOM: Helper::void, this name is somewhat inaccurate, as void tags
-  are supposed to be implict self closing tag in html, whereas I've named
-  a method void to construct a node with only attributes.
+- DSL_DOM: Helper::void, this name is somewhat inaccurate, they are named
+  after [void elements][void-elements] which are a bit like implict self
+  closing tag in html. The problem is this method really has nothing to do
+  with this. When I gave it this name, tbh I was in between a few things
+  but I decided a method like this when I noticed there were several cases
+  where .c() was used (like this with no arguments) immediately after attr
+  which is entirley doable with the void helpers, and in jsx would just be
+  a self closing tag. IDK the name is kind of confusing so I should rename
+  it.
+
+[void-elements]: https://developer.mozilla.org/en-US/docs/Glossary/Void_element
 
 ### Remove old APIs
 
