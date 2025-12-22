@@ -41,7 +41,7 @@ describe('NumberSliderInput', () => {
     sliderInput.addEventListener('change', changeHandler);
 
     // @ts-ignore - tests
-    const numberInput = getByDisplayValue(sliderInput.shadowRoot!, '0.50');
+    const numberInput = getByDisplayValue(sliderInput.shadowRoot!, '0.5');
 
     // Simulate user editing the input directly
     // @ts-ignore - tests
