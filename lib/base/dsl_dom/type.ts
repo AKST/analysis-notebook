@@ -5,9 +5,10 @@ export interface ElFragment {
 }
 
 export type ElMeta<O> = {
-  readonly events?: EventSpec;
-  readonly dataset?: E.Dataset;
-  readonly styles?: E.Styles;
+  readonly events: EventSpec  | undefined;
+  readonly dataset: E.Dataset | undefined;
+  readonly styles: E.Styles | undefined;
+  readonly stylesVar: E.StylesVar | undefined;
   readonly attributes: O;
 };
 
@@ -61,5 +62,6 @@ export namespace E {
   export type Meta<O> = ElMeta<O>;
   export type Events = EventSpec
   export type Styles = Partial<CSSStyleDeclaration>;
+  export type StylesVar = Record<string, string | undefined>;
   export type Dataset = Record<string, string>;
 }

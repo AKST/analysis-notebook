@@ -44,6 +44,7 @@ export type BuilderAbstract<NS, T, Attrs, I> = {
   unit: (element: ChildOf<I>) => HelperNode<NS, T>;
 
   css: (style: E.Styles) => BuilderAbstract<NS, T, Attrs, I>;
+  cssVar: (style: E.StylesVar) => BuilderAbstract<NS, T, Attrs, I>;
   data: (data: E.Dataset) => BuilderAbstract<NS, T, Attrs, I>;
   meta: (attr: E.Meta<Attrs>) => BuilderAbstract<NS, T, Attrs, I>;
   attr: (attr: Attrs) => BuilderAbstract<NS, T, Attrs, I>;

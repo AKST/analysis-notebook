@@ -102,111 +102,129 @@ describe('dsl_dom::render', () => {
       expect(aDom.disabled).toEqual(b);
     });
 
-    it('with style single property', () => {
-      const vAttrs = Meta.build(meta('html', 'div')).style({ color: 'red' }).meta;
-      const vDom = node('html', 'div', vAttrs, []);
-      const aDom = render(vDom);
-      expect(aDom.style.color).toEqual('red');
+    describe('style', () => {
+      it('with style single property', () => {
+        const vAttrs = Meta.build(meta('html', 'div')).style({ color: 'red' }).meta;
+        const vDom = node('html', 'div', vAttrs, []);
+        const aDom = render(vDom);
+        expect(aDom.style.color).toEqual('red');
+      });
+
+      it('with style multiple properties', () => {
+        const vAttrs = Meta.build(meta('html', 'div')).style({
+          backgroundColor: 'blue',
+          fontSize: '16px',
+          display: 'block'
+        }).meta;
+        const vDom = node('html', 'div', vAttrs, []);
+        const aDom = render(vDom);
+        expect(aDom.style.backgroundColor).toEqual('blue');
+        expect(aDom.style.fontSize).toEqual('16px');
+        expect(aDom.style.display).toEqual('block');
+      });
+
+      it('with style and elem combined', () => {
+        const vAttrs = Meta.build(meta('html', 'div'))
+          .style({ color: 'red' })
+          .attr('id', 'test')
+          .meta;
+        const vDom = node('html', 'div', vAttrs, []);
+        const aDom = render(vDom);
+        expect(aDom.style.color).toEqual('red');
+        expect(aDom.id).toEqual('test');
+      });
     });
 
-    it('with style multiple properties', () => {
-      const vAttrs = Meta.build(meta('html', 'div')).style({
-        backgroundColor: 'blue',
-        fontSize: '16px',
-        display: 'block'
-      }).meta;
-      const vDom = node('html', 'div', vAttrs, []);
-      const aDom = render(vDom);
-      expect(aDom.style.backgroundColor).toEqual('blue');
-      expect(aDom.style.fontSize).toEqual('16px');
-      expect(aDom.style.display).toEqual('block');
+    describe('style vars', () => {
+      it('with style single property', () => {
+        const vAttrs = Meta.build(meta('html', 'div')).styleProp({
+          '--c-text': 'red'
+        }).meta;
+
+        const vDom = node('html', 'div', vAttrs, []);
+        const aDom = render(vDom);
+        expect(aDom.style.getPropertyValue('--c-text')).toEqual('red');
+      });
     });
 
-    it('with style and elem combined', () => {
-      const vAttrs = Meta.build(meta('html', 'div'))
-        .style({ color: 'red' })
-        .attr('id', 'test')
-        .meta;
-      const vDom = node('html', 'div', vAttrs, []);
-      const aDom = render(vDom);
-      expect(aDom.style.color).toEqual('red');
-      expect(aDom.id).toEqual('test');
+    describe('dataset', () => {
+      it('with data single attribute', () => {
+        const vAttrs = Meta.build(meta('html', 'div')).data('testKey', 'testValue').meta;
+        const vDom = node('html', 'div', vAttrs, []);
+        const aDom = render(vDom);
+        expect(aDom.dataset.testKey).toEqual('testValue');
+      });
+
+      it('with data multiple attributes', () => {
+        const vAttrs = Meta.build(meta('html', 'div'))
+          .data('foo', 'bar')
+          .data('baz', 'qux')
+          .meta;
+        const vDom = node('html', 'div', vAttrs, []);
+        const aDom = render(vDom);
+        expect(aDom.dataset.foo).toEqual('bar');
+        expect(aDom.dataset.baz).toEqual('qux');
+      });
     });
 
-    it('with data single attribute', () => {
-      const vAttrs = Meta.build(meta('html', 'div')).data('testKey', 'testValue').meta;
-      const vDom = node('html', 'div', vAttrs, []);
-      const aDom = render(vDom);
-      expect(aDom.dataset.testKey).toEqual('testValue');
-    });
+    describe('children variants', () => {
+      it('render children, all vnodes', () => {
+        const vDom = node('html', 'div', undefined, [
+          node('html', 'p', undefined, ['hello ']),
+          node('html', 'p', undefined, ['world', 1]),
+        ]);
 
-    it('with data multiple attributes', () => {
-      const vAttrs = Meta.build(meta('html', 'div'))
-        .data('foo', 'bar')
-        .data('baz', 'qux')
-        .meta;
-      const vDom = node('html', 'div', vAttrs, []);
-      const aDom = render(vDom);
-      expect(aDom.dataset.foo).toEqual('bar');
-      expect(aDom.dataset.baz).toEqual('qux');
-    });
+        const aDom = render(vDom);
 
-    it('render children, all vnodes', () => {
-      const vDom = node('html', 'div', undefined, [
-        node('html', 'p', undefined, ['hello ']),
-        node('html', 'p', undefined, ['world', 1]),
-      ]);
+        // preserves whitespace
+        expect(aDom.textContent).toEqual('hello world1');
+        expect(aDom.childNodes.length).toEqual(2);
+      });
 
-      const aDom = render(vDom);
+      it('render children, with domnodes', () => {
+        const vDom = node('html', 'div', undefined, [
+          render(node('html', 'p', undefined, ['hello '])),
+          node('html', 'p', undefined, ['world', 1]),
+        ]);
 
-      // preserves whitespace
-      expect(aDom.textContent).toEqual('hello world1');
-      expect(aDom.childNodes.length).toEqual(2);
-    });
+        const aDom = render(vDom);
 
-    it('render children, with domnodes', () => {
-      const vDom = node('html', 'div', undefined, [
-        render(node('html', 'p', undefined, ['hello '])),
-        node('html', 'p', undefined, ['world', 1]),
-      ]);
+        // preserves whitespace
+        expect(aDom.textContent).toEqual('hello world1');
+        expect(aDom.childNodes.length).toEqual(2);
+      });
 
-      const aDom = render(vDom);
+      it('flattens fragments', () => {
+        const vDom = node('html', 'div', undefined, [
+          node('html', 'h1', undefined, ['hello world']),
+          frag(
+            node('html', 'p', undefined, ['text 1.']),
+            node('html', 'p', undefined, ['text 2.']),
+          ),
+        ]);
+        const aDom = render(vDom);
+        expect(aDom.childNodes.length).toEqual(3);
+        expect(aDom.childNodes[1].textContent).toEqual('text 1.');
+        expect(aDom.childNodes[2].textContent).toEqual('text 2.');
+      });
 
-      // preserves whitespace
-      expect(aDom.textContent).toEqual('hello world1');
-      expect(aDom.childNodes.length).toEqual(2);
-    });
-
-    it('flattens fragments', () => {
-      const vDom = node('html', 'div', undefined, [
-        node('html', 'h1', undefined, ['hello world']),
-        frag(
-          node('html', 'p', undefined, ['text 1.']),
-          node('html', 'p', undefined, ['text 2.']),
-        ),
-      ]);
-      const aDom = render(vDom);
-      expect(aDom.childNodes.length).toEqual(3);
-      expect(aDom.childNodes[1].textContent).toEqual('text 1.');
-      expect(aDom.childNodes[2].textContent).toEqual('text 2.');
-    });
-
-    it('insert with attributes and nested children', () => {
-      const existingDiv = document.createElement('div');
-      existingDiv.id = 'existing';
-      const insertMeta = Meta.build(meta()).data('test', 'value').meta;
-      const vDom = node('html', 'div', undefined, [
-        insert(existingDiv, insertMeta, [
-          node('html', 'span', undefined, ['inner content']),
-        ]),
-      ]);
-      const aDom = render(vDom);
-      expect(aDom.children[0]).toBe(existingDiv);
-      expect(existingDiv.id).toEqual('existing');
-      expect(existingDiv.dataset.test).toEqual('value');
-      expect(existingDiv.childNodes.length).toEqual(1);
-      expect(existingDiv.children[0].tagName).toMatch(/span/i);
-      expect(existingDiv.children[0].textContent).toEqual('inner content');
+      it('insert with attributes and nested children', () => {
+        const existingDiv = document.createElement('div');
+        existingDiv.id = 'existing';
+        const insertMeta = Meta.build(meta()).data('test', 'value').meta;
+        const vDom = node('html', 'div', undefined, [
+          insert(existingDiv, insertMeta, [
+            node('html', 'span', undefined, ['inner content']),
+          ]),
+        ]);
+        const aDom = render(vDom);
+        expect(aDom.children[0]).toBe(existingDiv);
+        expect(existingDiv.id).toEqual('existing');
+        expect(existingDiv.dataset.test).toEqual('value');
+        expect(existingDiv.childNodes.length).toEqual(1);
+        expect(existingDiv.children[0].tagName).toMatch(/span/i);
+        expect(existingDiv.children[0].textContent).toEqual('inner content');
+      });
     });
   });
 
@@ -262,53 +280,89 @@ describe('dsl_dom::render', () => {
       expect(setAttributeSpy).not.toHaveBeenCalled();
     });
 
-    it('update style single property', () => {
-      const vAttrA = Meta.build(meta('html', 'div')).style({ color: 'red' }).meta;
-      const vDomA = node('html', 'div', vAttrA, []);
-      const domA = render(vDomA);
+    describe('style', () => {
+      it('update style single property', () => {
+        const vAttrA = Meta.build(meta('html', 'div')).style({ color: 'red' }).meta;
+        const vDomA = node('html', 'div', vAttrA, []);
+        const domA = render(vDomA);
 
-      const vAttrB = Meta.build(meta('html', 'div')).style({ color: 'blue' }).meta;
-      const vDomB = node('html', 'div', vAttrB, []);
-      update(domA, vDomB);
-      expect(domA.style.color).toEqual('blue');
+        const vAttrB = Meta.build(meta('html', 'div')).style({ color: 'blue' }).meta;
+        const vDomB = node('html', 'div', vAttrB, []);
+        update(domA, vDomB);
+        expect(domA.style.color).toEqual('blue');
+      });
+
+      it('update style multiple properties', () => {
+        const vAttrA = Meta.build(meta('html', 'div'))
+          .style({ color: 'red', fontSize: '12px' }).meta;
+        const vDomA = node('html', 'div', vAttrA, []);
+        const domA = render(vDomA);
+
+        const vAttrB = Meta.build(meta('html', 'div'))
+          .style({ color: 'blue', fontSize: '16px', display: 'block' }).meta;
+        const vDomB = node('html', 'div', vAttrB, []);
+        update(domA, vDomB);
+        expect(domA.style.color).toEqual('blue');
+        expect(domA.style.fontSize).toEqual('16px');
+        expect(domA.style.display).toEqual('block');
+      });
+
+      it.skip('update style remove property', () => {
+        const vAttrA = Meta.build(meta('html', 'div')).style({ color: 'red', fontSize: '12px' }).meta;
+        const vDomA = node('html', 'div', vAttrA, []);
+        const domA = render(vDomA);
+
+        const vAttrB = Meta.build(meta('html', 'div')).style({ color: 'red' }).meta;
+        const vDomB = node('html', 'div', vAttrB, []);
+        update(domA, vDomB);
+        expect(domA.style.color).toEqual('red');
+        expect(domA.style.fontSize).toEqual(undefined);
+      });
+
+      it('update style - no changes when style unchanged', () => {
+        const vAttrA = Meta.build(meta('html', 'div')).style({ color: 'red' }).meta;
+        const vDomA = node('html', 'div', vAttrA, []);
+        const domA = render(vDomA);
+
+        const vAttrB = Meta.build(meta('html', 'div')).style({ color: 'red' }).meta;
+        const vDomB = node('html', 'div', vAttrB, []);
+        update(domA, vDomB);
+        expect(domA.style.color).toEqual('red');
+      });
     });
 
-    it('update style multiple properties', () => {
-      const vAttrA = Meta.build(meta('html', 'div'))
-        .style({ color: 'red', fontSize: '12px' }).meta;
-      const vDomA = node('html', 'div', vAttrA, []);
-      const domA = render(vDomA);
+    describe('style vars', () => {
+      it('with style single property', () => {
+        const vAttrs = Meta.build(meta('html', 'div')).styleProp({
+          '--c-text': 'red'
+        }).meta;
 
-      const vAttrB = Meta.build(meta('html', 'div'))
-        .style({ color: 'blue', fontSize: '16px', display: 'block' }).meta;
-      const vDomB = node('html', 'div', vAttrB, []);
-      update(domA, vDomB);
-      expect(domA.style.color).toEqual('blue');
-      expect(domA.style.fontSize).toEqual('16px');
-      expect(domA.style.display).toEqual('block');
-    });
+        const vDomA = node('html', 'div', vAttrs, []);
+        const domA = render(vDomA);
 
-    it.skip('update style remove property', () => {
-      const vAttrA = Meta.build(meta('html', 'div')).style({ color: 'red', fontSize: '12px' }).meta;
-      const vDomA = node('html', 'div', vAttrA, []);
-      const domA = render(vDomA);
+        const vAttrB = Meta.build(meta('html', 'div')).styleProp({
+          '--c-text': 'blue'
+        }).meta;
+        const vDomB = node('html', 'div', vAttrB, []);
+        update(domA, vDomB);
+        expect(domA.style.getPropertyValue('--c-text')).toEqual('blue');
+      });
 
-      const vAttrB = Meta.build(meta('html', 'div')).style({ color: 'red' }).meta;
-      const vDomB = node('html', 'div', vAttrB, []);
-      update(domA, vDomB);
-      expect(domA.style.color).toEqual('red');
-      expect(domA.style.fontSize).toEqual(undefined);
-    });
+      it('with style single property', () => {
+        const vAttrs = Meta.build(meta('html', 'div')).styleProp({
+          '--c-text': 'red'
+        }).meta;
 
-    it('update style - no changes when style unchanged', () => {
-      const vAttrA = Meta.build(meta('html', 'div')).style({ color: 'red' }).meta;
-      const vDomA = node('html', 'div', vAttrA, []);
-      const domA = render(vDomA);
+        const vDomA = node('html', 'div', vAttrs, []);
+        const domA = render(vDomA);
 
-      const vAttrB = Meta.build(meta('html', 'div')).style({ color: 'red' }).meta;
-      const vDomB = node('html', 'div', vAttrB, []);
-      update(domA, vDomB);
-      expect(domA.style.color).toEqual('red');
+        const vAttrB = Meta.build(meta('html', 'div')).styleProp({
+          '--c-text': undefined
+        }).meta;
+        const vDomB = node('html', 'div', vAttrB, []);
+        update(domA, vDomB);
+        expect(domA.style.getPropertyValue('--c-text')).toEqual('');
+      });
     });
 
     it('update data single attribute', () => {
