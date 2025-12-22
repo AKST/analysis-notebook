@@ -10,10 +10,14 @@ global.PointerEvent = class PointerEvent extends Event {
   pointerType: string;
 };
 
-// Mock SharedStyleSheet globally
-vi.mock('@base/dom_ui/shared_style_sheet.js', () => ({
+/*
+ * We need to gradually refactor users of this to avoid
+ * global dependencies like this.
+ */
+vi.mock('@base/platform/styles/shared_style_sheet.js', () => ({
   SharedStyleSheet: class {
     constructor() {}
     install() {}
+    sheetPromise = Promise.resolve(new CSSStyleSheet());
   },
 }));
