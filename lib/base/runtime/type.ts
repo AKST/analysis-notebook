@@ -12,10 +12,6 @@ export {
 
 export { WidgetChild as Widget };
 
-export type WidgetHud = {
-  header?: E.Item
-};
-
 export type WidgetSize = { height?: number, gridColumn?: GridColumnCfg };
 export type RenderStrategy = 'frame' | 'event';
 export type ScalingStrategy = 'fluid' | 'fixed';
@@ -24,6 +20,14 @@ export type WidgetAnchor = {
   title: string,
   titleId: string,
   titleLevel: number,
+}
+
+export type WidgetHud = {
+  header?: E.Item
+};
+
+export type WidgetFactory = {
+  create<S, C, E>(module: WidgetChild<any, S, C, E>, config: ChildWidgetParam): WidgetRunner<S, C>;
 }
 
 export interface WidgetRunner<State, Config> {
@@ -123,10 +127,6 @@ export type ChildWidgetParam = {
   viewportWidth: number,
   viewportHeight?: number,
 };
-
-export type WidgetFactory = {
-  create<S, C, E>(module: WidgetChild<any, S, C, E>, config: ChildWidgetParam): WidgetRunner<S, C>;
-}
 
 export type MultiEngineFactory = {
   create<S, C, E>(module: MultiModule<S, C, E>, config: {

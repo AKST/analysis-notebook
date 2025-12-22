@@ -184,10 +184,6 @@ benefit from using it. Its worth exploring.
 
 [void-elements]: https://developer.mozilla.org/en-US/docs/Glossary/Void_element
 
-### Remove old APIs
-
-- There's some stuff in prelude components that can probably be replaced
-
 ## Exploration
 
 ### Is it possible to type CSS?
