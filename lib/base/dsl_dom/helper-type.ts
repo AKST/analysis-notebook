@@ -66,6 +66,7 @@ export type TextBuilderAbstract<NS, T, Attrs, I> = {
    */
   unit: (element: ChildOf<I>) => HelperNode<NS, T>;
   css: (style: E.Styles) => TextBuilderAbstract<NS, T, Attrs, I>;
+  cssVar: (style: E.StylesVar) => TextBuilderAbstract<NS, T, Attrs, I>;
   void: (attr: Attrs) =>  HelperNode<NS, T>;
 
   data: (data: E.Dataset) => TextBuilderAbstract<NS, T, Attrs, I>;

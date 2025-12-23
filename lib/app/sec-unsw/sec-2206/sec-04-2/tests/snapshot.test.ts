@@ -1,15 +1,34 @@
 import { beforeEach, expect, describe, it } from 'vitest';
-import { renderModule } from '@base/runtime/testing/test-multi.js';
-import * as module from '../index.js';
+import { renderWidget } from '@base/runtime/testing/test-multi.js';
+import * as doc from '../doc.js';
 
-describe('app(unsw::2206::04.2).snapshot', () => {
+describe('app(unsw::2206::04.2).widgets', () => {
   beforeEach(() => {
     document.body.innerHTML = '';
   });
 
-  it('should match snapshots', async () => {
-    const element = await renderModule(module, { width: 900 });
-    document.body.appendChild(element);
-    expect(element.innerHTML).toMatchSnapshot();
+  it('intro', () => {
+    const el = renderWidget(doc.intro);
+    expect(el.outerHTML).toMatchSnapshot();
+  });
+
+  it('dataScaling', () => {
+    const el = renderWidget(doc.dataScaling);
+    expect(el.outerHTML).toMatchSnapshot();
+  });
+
+  it('moreOnFunctionalForm', () => {
+    const el = renderWidget(doc.moreOnFunctionalForm);
+    expect(el.outerHTML).toMatchSnapshot();
+  });
+
+  it('moreOnGoodnessOfFit', () => {
+    const el = renderWidget(doc.moreOnGoodnessOfFit);
+    expect(el.outerHTML).toMatchSnapshot();
+  });
+
+  it('predictionAndResidualAnalysis', () => {
+    const el = renderWidget(doc.predictionAndResidualAnalysis);
+    expect(el.outerHTML).toMatchSnapshot();
   });
 });

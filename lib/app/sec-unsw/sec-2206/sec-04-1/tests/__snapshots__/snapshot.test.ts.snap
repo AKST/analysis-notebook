@@ -1,118 +1,9 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`app(unsw::2206::04.1).snapshot > should match snapshots 1`] = `
-"<style id="test-styles"></style><div class="widget-container document" id="test-widget-0" style="grid-column: span 2;"><style id="test-widget-0-styles"></style><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>Multiple Regression Analysis: OLS Asymptotics<br><small style="color: #aaaaff">ECON2206, W4</small></h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li>Chapter 5</li><li><a target="_blank" href="https://en.wikipedia.org/wiki/Asymptotic_theory_(statistics)">Asymptotic Theory</a></li><li><a target="_blank" href="https://en.wikipedia.org/wiki/Asymptotic_theory_(statistics)">Probability Limits</a></li><li><a target="_blank" href="https://en.wikipedia.org/wiki/Sampling_distribution">Sampling Distribution</a></li></ul></div></div></aside></div></div></div><div class="widget-container document" id="test-widget-1" style="grid-column: span 2;"><style id="test-widget-1-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Intro</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C5 P164)</strong></span></div><p><strong>Finite Sample Properties</strong> of OLS</p><ul class="no-item-padding" style="margin-block: 0px;"><li>
-      Unbiasness under the first 4 Gauss-Markvo Assumptions is a
-      <strong>finite sample property</strong> because <u>it holds
-      for any sample size <strong>n</strong> where <strong>n</strong> is
-      greater than the number of variables (<strong>k</strong>)</u>.
-    </li><li>
-      OLS being the best unbiased estimator under the full set of
-      the Gauss-Markov assumtions.
-    </li></ul><p>
-    However these are not the only properties of estimators and test
-    statistics we should know about. There are also <strong>asympototic
-    properties</strong> or <strong>large sample properties</strong> of estimators
-    and test statistics. These are properties as the size of samples
-    grow. OLS continues to work large properties but these are properties
-    observable with larger samples.
-  </p></div></div><div class="widget-container document" id="test-widget-2" style="grid-column: span 2;"><style id="test-widget-2-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Consistency</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C5 P164)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p>
-      Consistency in this context can be described a number of ways,
-      but here's an example. An example of this is the way in which
-      an estimator an <strong>β̂ⱼ</strong> narrows around a true value of
-      <strong>βⱼ</strong> as the size of the sample to esimate <strong>βⱼ</strong>
-      increases. As the sample size increasese the inifinity
-      (or the total population) the estimate <strong>β̂ⱼ</strong>
-      converges to the value <strong>βⱼ</strong>.
-    </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>β̂</mi><mn>1</mn></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mo>(</mo><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mspace width="4px"></mspace><mrow><mo>(</mo><mrow><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>x̄</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><msub><mi>y</mi><mi>i</mi></msub><mo>)</mo></mrow><mspace width="4px"></mspace><mo>÷</mo><mspace width="4px"></mspace><mrow><mo>(</mo><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mspace width="4px"></mspace><msup><mrow><mo>(</mo><mrow><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>x̄</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mn>2</mn></msup><mo>)</mo></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mspace width="0px"></mspace></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><mo>(</mo><mrow><mrow><msup><mi>n</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mrow><mo>(</mo><mrow><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>x̄</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>u</mi><mi>i</mi></msub></mrow></mrow><mo>)</mo></mrow><mspace width="4px"></mspace><mo>÷</mo><mspace width="4px"></mspace><mrow><mo>(</mo><mrow><msup><mi>n</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msup><mrow><mo>(</mo><mrow><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>x̄</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow></mtd></mtr></mtable></math><figcaption>derivation of β̂₁ using sample covariance and variance terms</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left left"><mtd columnalign="right"><mrow><mi>plim</mi><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>1</mn></msub></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mo>(</mo><mrow><mtext>Cov</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><mi>u</mi></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>÷</mo><mspace width="4px"></mspace><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></mtd></mtr><mtr columnalign="right center left left"><mtd columnalign="right"><mspace width="0px"></mspace></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="16px"></mspace><mtext>because</mtext><mspace width="16px"></mspace><mrow><mrow><mtext>Cov</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><mi>u</mi></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow></mrow></mtd></mtr></mtable></math><figcaption>Probability limit and covariance condition</figcaption></figure><p>
-      Above demostrating this via <strong>probability limits</strong>,
-    </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow style="border: 1px solid black; padding: 4px 8px"><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>&lt;</mo><mspace width="4px"></mspace><mi>∞</mi></mrow><mspace width="32px"></mspace><mrow style="border: 1px solid black; padding: 4px 8px"><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>&lt;</mo><mspace width="4px"></mspace><mi>∞</mi></mrow></mrow></math><figcaption>Finite variance condition</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow><mspace width="16px"></mspace><mrow><mrow><mtext>Cov</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><mo>,</mo><mo>,</mo><mspace width="4px"></mspace><mspace width="4px"></mspace><mo>,</mo><mspace width="4px"></mspace><mi>u</mi><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow><mo>,</mo><mspace width="4px"></mspace><mtext>for</mtext><mspace width="4px"></mspace><mrow><mi>j</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mn>1</mn><mo>,</mo><mspace width="4px"></mspace><mn>2</mn><mo>,</mo><mspace width="4px"></mspace><mo>⋯</mo><mo>,</mo><mspace width="4px"></mspace><mi>k</mi></mrow></mrow></mrow></math><figcaption>Assumption MLR 4' (stronger MLR 4)</figcaption></figure><p>
-      Above is a stronger conditional mean assumption necessary,
-      but it also means we have properly modelled the population
-      regression function (PRF). Under the this updated
-      assumption looks something like this:
-    </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>y</mi><mo>,</mo><mspace width="4px"></mspace><mrow><mi>x₁</mi><mo>,</mo><mspace width="4px"></mspace><mo>⋯</mo><mo>,</mo><mspace width="4px"></mspace><mi>xₖ</mi></mrow><mo>)</mo></mrow></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow></mrow></mrow></mrow></math><figcaption>Population regression function</figcaption></figure></div><div class="c2 pre--c2"><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><details><summary>Definition of consistency (TODO)</summary><br><div class="container pre--container"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: refer to the definintion of consistency under math refersher C</p></div></details></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><details><summary>Probability Limits (TODO)</summary><br><div class="container pre--container"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: refer to the definintion of Probability Limits under math refersher C</p></div></details></div></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h3>Deriving the Inconsistency in OLS</h3><div class="c2 twoThree pre--c2 pre--two-three"><p>
-        When the unconditional mean assumption mean fails, it
-        suggests all the OLS estimators to be inconsistent.
-        Put another way <strong>if the error is correlated with
-        any of the independent variables, then OLS is biased and
-        inconsistent</strong>. This can be written more formually as:
-      </p><aside class="infobox"><h3 class="infobox-name">💡 Asymptotic Bias</h3><div class="infobox-body"><div class="container"><p>This is another name for inconsistency in an estimator such as β̂ⱼ</p></div></div></aside></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mi>plim</mi><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><mrow><mtext>Cov</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><mi>u</mi><mo>)</mo></mrow></mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow></mfrac></mrow></math><figcaption>Probability limit bias of β̂₁</figcaption></figure><p>When Var(x₁) &gt; 0, this means</p><ul class="no-item-padding" style="margin-block: 0px;"><li>
-        When x₁ and u are positively correlated,
-        the inconsistency in β̂₁ is positive.
-      </li><li>
-        When x₁ and u are negatively correlated,
-        the inconsistency in β̂₁ is negative.
-      </li><li>
-        When the covariance between x₁ and u is
-        small the inconsistency can be negligible.
-        Unforunately we cannot estimate how big the
-        covariance is because u is unobserved.
-      </li></ul><p>
-      But in order demostrate this point we use an example
-      of an omitted variable to demostrate this. For
-      practical purposes here we can treat inconsistency as
-      the same as the bias, the main difference largely being
-      that an inconsistency is generally expressed in terms
-      of the population variance of <strong>x₁</strong> and the
-      covariance between <strong>x₁</strong> and <strong>x₂</strong>.
-      While the bias is based on their sample counterparts.
-    </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mi>plim</mi><mspace width="4px"></mspace><msub><mi>β̃</mi><mn>1</mn></msub></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>𝛥</mi><mn>1</mn></msub></mrow></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>δ</mi><mn>1</mn></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mtext>Cov</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>x</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>÷</mo><mspace width="4px"></mspace><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow></mrow></mtd></mtr></mtable></math><figcaption>Probability limit in omitted variable case</figcaption></figure><p>
-      If the 2 variables aren't correlated then δ₁ is 0 and
-      the estimator of β₁ is consistent. Otherwise for any
-      kind of bias (positive or negative) for a given
-      correlation (positive or negative) there will be a
-      like inconsistency (posititve or negative). But an
-      important point about inconsistency in OLS estimators
-      is it doesn't go away by adding more observations to the
-      sample. <strong>It actually gets harder as you increase
-      the sample size</strong>.
-    </p></div></div></div><div class="widget-container document" id="test-widget-3" style="grid-column: span 2;"><style id="test-widget-3-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Asymptotic Normality and Large Sample Inference</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C5 P168)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p>
+exports[`app(unsw::2206::04.1).widgets > asymptoticEfficiencyOfOLS 1`] = `"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Asymptotic Efficiency of OLS</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C5 P175)</strong></span></div><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: reread this chapter to include most valuable insights</p></div>"`;
+
+exports[`app(unsw::2206::04.1).widgets > asymptoticNormality 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Asymptotic Normality and Large Sample Inference</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C5 P168)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><p>
       Consistency is an important property but it alone is insufficent
       for statistical inference, we need to know the <strong>sampling
       distribution</strong> of the OLS estimators. This is like the standard
@@ -153,22 +44,7 @@ exports[`app(unsw::2206::04.1).snapshot > should match snapshots 1`] = `
         </p><ul class="no-item-padding" style="margin-block: 0px;"><li>t statistics = <strong>asymptotic t statistics</strong></li><li>ci = <strong>asymptotic confidence intervals</strong></li></ul></div></div></aside></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>Se</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>≈</mo><mspace width="4px"></mspace><mfrac><mi>σ</mi><mrow><mrow><msub><mi>σ</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msqrt><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msup><msub><mi>ρ</mi><mi>j</mi></msub><mn>2</mn></msup><mo>)</mo></mrow></msqrt></mrow><msqrt><mi>n</mi></msqrt></mrow></mfrac></mrow></math><figcaption>Asymptotic standard error of β̂_j</figcaption></figure><p>
       Note the above is an approximation, and everything said here
       also generally applies to the F statistic.
-    </p></div><div class="c2 pre--c2"><details><summary><h4>CTL and asymptotic normality</h4></summary><br><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: Why is this not cope?</p></div></details><details><summary><h4>Stocktake of when the CTL holds and doesnt</h4></summary><br><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: TODO</p></div></details></div><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: if you read this you wouldn't wonder what the issue is...</p><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Other Large Sample Tests: The Lagrange Multiplier Statistic</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C5 P172)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><blockquote>This will not be tested</blockquote><p>
+    </p></div><div class="c2 pre--c2"><details><summary><h4>CTL and asymptotic normality</h4></summary><br><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: Why is this not cope?</p></div></details><details><summary><h4>Stocktake of when the CTL holds and doesnt</h4></summary><br><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: TODO</p></div></details></div><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: if you read this you wouldn't wonder what the issue is...</p><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Other Large Sample Tests: The Lagrange Multiplier Statistic</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C5 P172)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><blockquote>This will not be tested</blockquote><p>
       The t and F statistic is generally sufficent for a board sweet of
       tests, however this isn't to say there aren't more tools at our
       disposal or better ways to address different problems. On such
@@ -179,20 +55,81 @@ exports[`app(unsw::2206::04.1).snapshot > should match snapshots 1`] = `
       fact, that the LM statisic also relies on the same Gauss-Markov
       assumptions used to justify the use of F &amp; t in large samples.
       We also <strong>don't have to assume normality</strong>.
-    </p></div></div></div><div class="widget-container document" id="test-widget-4" style="grid-column: span 2;"><style id="test-widget-4-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Asymptotic Efficiency of OLS</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C5 P175)</strong></span></div><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: reread this chapter to include most valuable insights</p></div></div><hr style="width: 100%; border-color: transparent;">"
+    </p></div></div>"
+`;
+
+exports[`app(unsw::2206::04.1).widgets > consistency 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Consistency</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C5 P164)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><p>
+      Consistency in this context can be described a number of ways,
+      but here's an example. An example of this is the way in which
+      an estimator an <strong>β̂ⱼ</strong> narrows around a true value of
+      <strong>βⱼ</strong> as the size of the sample to esimate <strong>βⱼ</strong>
+      increases. As the sample size increasese the inifinity
+      (or the total population) the estimate <strong>β̂ⱼ</strong>
+      converges to the value <strong>βⱼ</strong>.
+    </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>β̂</mi><mn>1</mn></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mo>(</mo><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mspace width="4px"></mspace><mrow><mo>(</mo><mrow><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>x̄</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><msub><mi>y</mi><mi>i</mi></msub><mo>)</mo></mrow><mspace width="4px"></mspace><mo>÷</mo><mspace width="4px"></mspace><mrow><mo>(</mo><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mspace width="4px"></mspace><msup><mrow><mo>(</mo><mrow><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>x̄</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mn>2</mn></msup><mo>)</mo></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mspace width="0px"></mspace></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><mo>(</mo><mrow><mrow><msup><mi>n</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mrow><mo>(</mo><mrow><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>x̄</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>u</mi><mi>i</mi></msub></mrow></mrow><mo>)</mo></mrow><mspace width="4px"></mspace><mo>÷</mo><mspace width="4px"></mspace><mrow><mo>(</mo><mrow><msup><mi>n</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msup><mrow><mo>(</mo><mrow><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>x̄</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow></mtd></mtr></mtable></math><figcaption>derivation of β̂₁ using sample covariance and variance terms</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left left"><mtd columnalign="right"><mrow><mi>plim</mi><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>1</mn></msub></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mo>(</mo><mrow><mtext>Cov</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><mi>u</mi></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>÷</mo><mspace width="4px"></mspace><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></mtd></mtr><mtr columnalign="right center left left"><mtd columnalign="right"><mspace width="0px"></mspace></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="16px"></mspace><mtext>because</mtext><mspace width="16px"></mspace><mrow><mrow><mtext>Cov</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><mi>u</mi></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow></mrow></mtd></mtr></mtable></math><figcaption>Probability limit and covariance condition</figcaption></figure><p>
+      Above demostrating this via <strong>probability limits</strong>,
+    </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow style="border: 1px solid black; padding: 4px 8px"><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>&lt;</mo><mspace width="4px"></mspace><mi>∞</mi></mrow><mspace width="32px"></mspace><mrow style="border: 1px solid black; padding: 4px 8px"><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>&lt;</mo><mspace width="4px"></mspace><mi>∞</mi></mrow></mrow></math><figcaption>Finite variance condition</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow><mspace width="16px"></mspace><mrow><mrow><mtext>Cov</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><mo>,</mo><mo>,</mo><mspace width="4px"></mspace><mspace width="4px"></mspace><mo>,</mo><mspace width="4px"></mspace><mi>u</mi><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow><mo>,</mo><mspace width="4px"></mspace><mtext>for</mtext><mspace width="4px"></mspace><mrow><mi>j</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mn>1</mn><mo>,</mo><mspace width="4px"></mspace><mn>2</mn><mo>,</mo><mspace width="4px"></mspace><mo>⋯</mo><mo>,</mo><mspace width="4px"></mspace><mi>k</mi></mrow></mrow></mrow></math><figcaption>Assumption MLR 4' (stronger MLR 4)</figcaption></figure><p>
+      Above is a stronger conditional mean assumption necessary,
+      but it also means we have properly modelled the population
+      regression function (PRF). Under the this updated
+      assumption looks something like this:
+    </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>y</mi><mo>,</mo><mspace width="4px"></mspace><mrow><mi>x₁</mi><mo>,</mo><mspace width="4px"></mspace><mo>⋯</mo><mo>,</mo><mspace width="4px"></mspace><mi>xₖ</mi></mrow><mo>)</mo></mrow></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow></mrow></mrow></mrow></math><figcaption>Population regression function</figcaption></figure></div><div class="c2 pre--c2"><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><details><summary>Definition of consistency (TODO)</summary><br><div class="container pre--container"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: refer to the definintion of consistency under math refersher C</p></div></details></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><details><summary>Probability Limits (TODO)</summary><br><div class="container pre--container"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: refer to the definintion of Probability Limits under math refersher C</p></div></details></div></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><h3>Deriving the Inconsistency in OLS</h3><div class="c2 twoThree pre--c2 pre--two-three"><p>
+        When the unconditional mean assumption mean fails, it
+        suggests all the OLS estimators to be inconsistent.
+        Put another way <strong>if the error is correlated with
+        any of the independent variables, then OLS is biased and
+        inconsistent</strong>. This can be written more formually as:
+      </p><aside class="infobox"><h3 class="infobox-name">💡 Asymptotic Bias</h3><div class="infobox-body"><div class="container"><p>This is another name for inconsistency in an estimator such as β̂ⱼ</p></div></div></aside></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mi>plim</mi><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><mrow><mtext>Cov</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><mi>u</mi><mo>)</mo></mrow></mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow></mfrac></mrow></math><figcaption>Probability limit bias of β̂₁</figcaption></figure><p>When Var(x₁) &gt; 0, this means</p><ul class="no-item-padding" style="margin-block: 0px;"><li>
+        When x₁ and u are positively correlated,
+        the inconsistency in β̂₁ is positive.
+      </li><li>
+        When x₁ and u are negatively correlated,
+        the inconsistency in β̂₁ is negative.
+      </li><li>
+        When the covariance between x₁ and u is
+        small the inconsistency can be negligible.
+        Unforunately we cannot estimate how big the
+        covariance is because u is unobserved.
+      </li></ul><p>
+      But in order demostrate this point we use an example
+      of an omitted variable to demostrate this. For
+      practical purposes here we can treat inconsistency as
+      the same as the bias, the main difference largely being
+      that an inconsistency is generally expressed in terms
+      of the population variance of <strong>x₁</strong> and the
+      covariance between <strong>x₁</strong> and <strong>x₂</strong>.
+      While the bias is based on their sample counterparts.
+    </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mi>plim</mi><mspace width="4px"></mspace><msub><mi>β̃</mi><mn>1</mn></msub></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>𝛥</mi><mn>1</mn></msub></mrow></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>δ</mi><mn>1</mn></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mtext>Cov</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>x</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>÷</mo><mspace width="4px"></mspace><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow></mrow></mtd></mtr></mtable></math><figcaption>Probability limit in omitted variable case</figcaption></figure><p>
+      If the 2 variables aren't correlated then δ₁ is 0 and
+      the estimator of β₁ is consistent. Otherwise for any
+      kind of bias (positive or negative) for a given
+      correlation (positive or negative) there will be a
+      like inconsistency (posititve or negative). But an
+      important point about inconsistency in OLS estimators
+      is it doesn't go away by adding more observations to the
+      sample. <strong>It actually gets harder as you increase
+      the sample size</strong>.
+    </p></div></div>"
+`;
+
+exports[`app(unsw::2206::04.1).widgets > intro 1`] = `"<div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>Multiple Regression Analysis: OLS Asymptotics<br><small style="color: rgb(170, 170, 255);">ECON2206, W4</small></h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li>Chapter 5</li><li><a target="_blank" href="https://en.wikipedia.org/wiki/Asymptotic_theory_(statistics)">Asymptotic Theory</a></li><li><a target="_blank" href="https://en.wikipedia.org/wiki/Asymptotic_theory_(statistics)">Probability Limits</a></li><li><a target="_blank" href="https://en.wikipedia.org/wiki/Sampling_distribution">Sampling Distribution</a></li></ul></div></div></aside></div></div>"`;
+
+exports[`app(unsw::2206::04.1).widgets > introduction 1`] = `
+"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Intro</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C5 P164)</strong></span></div><p><strong>Finite Sample Properties</strong> of OLS</p><ul class="no-item-padding" style="margin-block: 0px;"><li>
+      Unbiasness under the first 4 Gauss-Markvo Assumptions is a
+      <strong>finite sample property</strong> because <u>it holds
+      for any sample size <strong>n</strong> where <strong>n</strong> is
+      greater than the number of variables (<strong>k</strong>)</u>.
+    </li><li>
+      OLS being the best unbiased estimator under the full set of
+      the Gauss-Markov assumtions.
+    </li></ul><p>
+    However these are not the only properties of estimators and test
+    statistics we should know about. There are also <strong>asympototic
+    properties</strong> or <strong>large sample properties</strong> of estimators
+    and test statistics. These are properties as the size of samples
+    grow. OLS continues to work large properties but these are properties
+    observable with larger samples.
+  </p></div>"
 `;

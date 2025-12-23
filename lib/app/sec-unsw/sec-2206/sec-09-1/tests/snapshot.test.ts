@@ -1,15 +1,39 @@
 import { beforeEach, expect, describe, it } from 'vitest';
-import { renderModule } from '@base/runtime/testing/test-multi.js';
-import * as module from '../index.js';
+import { renderWidget } from '@base/runtime/testing/test-multi.js';
+import * as doc from '../doc.js';
 
-describe('app(unsw::2206::09.1).snapshot', () => {
+describe('app(unsw::2206::09.1).widgets', () => {
   beforeEach(() => {
     document.body.innerHTML = '';
   });
 
-  it('should match snapshots', async () => {
-    const element = await renderModule(module, { width: 900 });
-    document.body.appendChild(element);
-    expect(element.innerHTML).toMatchSnapshot();
+  it('intro', () => {
+    const el = renderWidget(doc.intro);
+    expect(el.outerHTML).toMatchSnapshot();
+  });
+
+  it('poolingIndependentCrossSections', () => {
+    const el = renderWidget(doc.poolingIndependentCrossSections);
+    expect(el.outerHTML).toMatchSnapshot();
+  });
+
+  it('policyAnalysisPooledCrossSections', () => {
+    const el = renderWidget(doc.policyAnalysisPooledCrossSections);
+    expect(el.outerHTML).toMatchSnapshot();
+  });
+
+  it('twoPeriodPanelDataAnalysis', () => {
+    const el = renderWidget(doc.twoPeriodPanelDataAnalysis);
+    expect(el.outerHTML).toMatchSnapshot();
+  });
+
+  it('policyAnalysisTwoPeriodPanelData', () => {
+    const el = renderWidget(doc.policyAnalysisTwoPeriodPanelData);
+    expect(el.outerHTML).toMatchSnapshot();
+  });
+
+  it('differencingMoreThanTwoTimePeriods', () => {
+    const el = renderWidget(doc.differencingMoreThanTwoTimePeriods);
+    expect(el.outerHTML).toMatchSnapshot();
   });
 });

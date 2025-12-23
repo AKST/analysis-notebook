@@ -1,17 +1,5 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`BasicButton > renders default button correctly 1`] = `
-"<button class="button" tabindex="0" style="
-    --button-color: black;
-    --button-bg: var(--bg-ms-button-idle);
-    --button-padding: 2px 8px 2px;
-  ">Click me</button>"
-`;
+exports[`BasicButton > renders default button correctly 1`] = `"<button class="button" tabindex="0" style="--button-color: black; --button-bg: var(--bg-ms-button-idle); --button-padding: 2px 8px 2px;">Click me</button>"`;
 
-exports[`BasicButton > renders destructive button correctly 1`] = `
-"<button class="button" tabindex="0" style="
-    --button-color: white;
-    --button-bg: red;
-    --button-padding: 2px 8px 2px;
-  ">Delete</button>"
-`;
+exports[`BasicButton > renders destructive button correctly 1`] = `"<button class="button" tabindex="0" style="--button-color: white; --button-bg: red; --button-padding: 2px 8px 2px;">Delete</button>"`;

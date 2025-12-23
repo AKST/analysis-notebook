@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`app(unsw::2206::01.1).snapshot > should match snapshots 1`] = `
-"<style id="test-styles"></style><div class="widget-container document" id="test-widget-0" style="grid-column: span 2;"><style id="test-widget-0-styles"></style><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>Nature of Economic Data<br><small style="color: #aaaaff">ECON2206, W1, Lecture 1</small></h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><p>Lesson resources</p><ul class="no-item-padding" style="margin-block: 0px;"><li>Chapter 1 of textbook</li><li><a href="https://www.princeton.edu/~otorres/Stata/" target="_blank">Welcome to Stata</a></li></ul></div></div></aside></div></div></div><div class="widget-container document" id="test-widget-1" style="grid-column: span 2;"><style id="test-widget-1-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h2>What is Econometrics</h2><p>
+exports[`app(unsw::2206::01.1).widgets > about 1`] = `
+"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><h2>What is Econometrics</h2><p>
     Econometrics is largely about applying statical methods to
     estimate economic relations, testing economics theories and
     hypothesises, as well as evaluating and understanding
@@ -36,7 +36,15 @@ exports[`app(unsw::2206::01.1).snapshot > should match snapshots 1`] = `
     They come into play largely when there's an economic theory to be tested or
     relationship that needs testing in relation to a business policy or policy analysis.
     Testing these is called an <strong>Empirical analysis</strong>.
-  </p><ul class="no-item-padding" style="margin-block: 0px;"><li>Sometimes that means testing if something is consistent with an existing economic theory</li><li>Other times it may mean constructing a formal <strong>Economic model</strong>.</li></ul><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: How utility maximisation is an underlying premise in many models, page 2</p></div></div><div class="widget-container document" id="test-widget-2" style="grid-column: span 2;"><style id="test-widget-2-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h2>The Structure of Economic Data</h2><div class="c2 pre--c2"><div class="container pre--container"><div class="container pre--container"><h4>Cross Sectional Data</h4><p>A <strong>Cross sectional</strong> dataset consists
+  </p><ul class="no-item-padding" style="margin-block: 0px;"><li>Sometimes that means testing if something is consistent with an existing economic theory</li><li>Other times it may mean constructing a formal <strong>Economic model</strong>.</li></ul><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: How utility maximisation is an underlying premise in many models, page 2</p></div>"
+`;
+
+exports[`app(unsw::2206::01.1).widgets > causality 1`] = `"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><h2>Causality, Ceteris Paribus, and Counterfactual Reasoning</h2><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: Complete this section, page 10-14</p></div>"`;
+
+exports[`app(unsw::2206::01.1).widgets > intro 1`] = `"<div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>Nature of Economic Data<br><small style="color: rgb(170, 170, 255);">ECON2206, W1, Lecture 1</small></h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><p>Lesson resources</p><ul class="no-item-padding" style="margin-block: 0px;"><li>Chapter 1 of textbook</li><li><a href="https://www.princeton.edu/~otorres/Stata/" target="_blank">Welcome to Stata</a></li></ul></div></div></aside></div></div>"`;
+
+exports[`app(unsw::2206::01.1).widgets > structureOfEconomicData 1`] = `
+"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><h2>The Structure of Economic Data</h2><div class="c2 pre--c2"><div class="container pre--container"><div class="container pre--container"><h4>Cross Sectional Data</h4><p>A <strong>Cross sectional</strong> dataset consists
     of a sample of indivisual subjects at a specfic point in
     time. Although sometimes the data isn't observed precisely
     at the same time and instead during different points in a week
@@ -76,5 +84,5 @@ exports[`app(unsw::2206::01.1).snapshot > should match snapshots 1`] = `
     data lends itself to specific kinds of analysis, answering
     questions that cannot be answered from analysis on a
     simple pooled cross sectional dataset.
-  </p><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: Provide example of table</p></div></div></div></div></div><div class="widget-container document" id="test-widget-3" style="grid-column: span 2;"><style id="test-widget-3-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h2>Causality, Ceteris Paribus, and Counterfactual Reasoning</h2><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: Complete this section, page 10-14</p></div></div><hr style="width: 100%; border-color: transparent;">"
+  </p><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: Provide example of table</p></div></div></div></div>"
 `;

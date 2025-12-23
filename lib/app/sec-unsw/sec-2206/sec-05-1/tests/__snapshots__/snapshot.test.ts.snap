@@ -1,90 +1,12 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`app(unsw::2206::05.1).snapshot > should match snapshots 1`] = `
-"<style id="test-styles"></style><div class="widget-container document" id="test-widget-0" style="grid-column: span 2;"><style id="test-widget-0-styles"></style><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>Multiple Regression Analysis with Qualitative Info<br><small style="color: #aaaaff">ECON2206, W5, Lecture 1</small></h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li>Chapter 7</li></ul></div></div></aside></div><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Introduction</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C7 P220)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><ul style="margin-block: 0px;"><li>
-        The purpose of this section is to provide a comprehensive analysis of
-        how to include qualitative factors into regression models
-      </li><li>
-        The <strong>linear probability model</strong> (LPM) will be introduced which is a
-        variant of multiple regression, where the coefficients can be
-        interpreted as changes in a probability.
-      </li><li>
-        The simplicity of the LPM makes it useful in many empirical contexts,
-        although it appears to be maligned by some econometricians.
-      </li></ul></div></div></div><div class="widget-container document" id="test-widget-1" style="grid-column: span 2;"><style id="test-widget-1-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Describing Qualitative Information</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C7 P221)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><ul style="margin-block: 0px;"><li>
-            When we put a binary categorical variable in a model, we
-            often decide which one is explictly specified as a parameter
-            as the effects of the omitted one gets baked into the
-            intercept. Specifying both causes multicolinary problems.
-          </li></ul></div><dl><dt>Dummy Variable</dt><dd>
-          A binary variable, which is either zero or 1, it is used to
-          demark the different qualitative states of a category variable.
-        </dd></dl></div></div></div></div><div class="widget-container document" id="test-widget-2" style="grid-column: span 2;"><style id="test-widget-2-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>A Single Dummy Independent Variable</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C7 P222)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><ul style="margin-block: 0px;"><li>When you have a single Categorical and quantative variable<ul class="no-item-padding" style="margin-block: 0px;"><li>The Categorical variable acts as intercept shift</li></ul></li></ul><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>0</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>dummy</mi></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mtable style="font-size: 12px"><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mi>E</mi><mrow><mo>(</mo><mrow><mi>y</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mrow><mi>dummy</mi><mo>=</mo><mn>0</mn></mrow></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msub><mi>β</mi><mn>0</mn></msub></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mi>E</mi><mrow><mo>(</mo><mrow><mi>y</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mrow><mi>dummy</mi><mo>=</mo><mn>1</mn></mrow></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>δ</mi><mn>0</mn></msub></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mrow><mi>E</mi><mrow><mo>(</mo><mrow><mi>y</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mrow><mi>dummy</mi><mo>=</mo><mn>1</mn></mrow></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>E</mi><mrow><mo>(</mo><mrow><mi>y</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mrow><mi>dummy</mi><mo>=</mo><mn>0</mn></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msub><mi>δ</mi><mn>0</mn></msub></mtd></mtr></mtable></mtd></mtd></mtr></mtable></math><figcaption>Effects of dummy variables</figcaption></figure><p>
+exports[`app(unsw::2206::05.1).widgets > aSingleDummyIndependentVariable 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>A Single Dummy Independent Variable</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C7 P222)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><ul style="margin-block: 0px;"><li>When you have a single Categorical and quantative variable<ul class="no-item-padding" style="margin-block: 0px;"><li>The Categorical variable acts as intercept shift</li></ul></li></ul><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>0</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>dummy</mi></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mtable style="font-size: 12px"><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mi>E</mi><mrow><mo>(</mo><mrow><mi>y</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mrow><mi>dummy</mi><mo>=</mo><mn>0</mn></mrow></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msub><mi>β</mi><mn>0</mn></msub></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mi>E</mi><mrow><mo>(</mo><mrow><mi>y</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mrow><mi>dummy</mi><mo>=</mo><mn>1</mn></mrow></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>δ</mi><mn>0</mn></msub></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mrow><mi>E</mi><mrow><mo>(</mo><mrow><mi>y</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mrow><mi>dummy</mi><mo>=</mo><mn>1</mn></mrow></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>E</mi><mrow><mo>(</mo><mrow><mi>y</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mrow><mi>dummy</mi><mo>=</mo><mn>0</mn></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msub><mi>δ</mi><mn>0</mn></msub></mtd></mtr></mtable></mtd></mtd></mtr></mtable></math><figcaption>Effects of dummy variables</figcaption></figure><p>
           <strong>δ₀</strong> represents the mean difference in the
           absense of presence of a dummy. A less abstract example
           might be the difference between man and women if the
           dummy was gender.
-        </p><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Interpretation Coefficients with (log(y))</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C7 P226)</strong></span></div><ul style="margin-block: 0px;"><li>Coefficients have a percentage interpretation<ul style="margin-block: 0px;"><li>
+        </p><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Interpretation Coefficients with (log(y))</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C7 P226)</strong></span></div><ul style="margin-block: 0px;"><li>Coefficients have a percentage interpretation<ul style="margin-block: 0px;"><li>
               Holding all other factors Fixed, the coefficient on a dummy
               variable can be interpretded as a % difference (when multiplying
               by 100).
@@ -104,147 +26,11 @@ exports[`app(unsw::2206::05.1).snapshot > should match snapshots 1`] = `
           This is the state of a binary variable baked into
           the intercept and not explictly specified as a
           variable.
-        </dd></dl></div></div></div></div><div class="widget-container document" id="test-widget-3" style="grid-column: span 2;"><style id="test-widget-3-styles"></style><div class="container pre--container"><h2>Using Dummy Variables for Multiple Categories</h2><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><ul class="no-item-padding" style="margin-block: 0px;"><li>Say you have a model with 2 variables, <strong>gender</strong> and <strong>married</strong>.<ul style="margin-block: 0px;"><li>If you have a coefficient for married, can you assume it's the same for both genders?</li><li>One thing you can do is have a seperate variable for each permutation of these categories<ul class="no-item-padding" style="margin-block: 0px;"><li>And then you omit one of the permutations (like single men)</li></ul></li><li>Another approach is to omit the intercept coefficent for each dummy<ol class="no-item-padding" style="margin-block: 0px;"><li>1st drawback of this is it more cumbersome to test for differences relative to a base group.</li><li>2nd drawback is some statitcal packages change how R-Squared is computed.</li></ol></li></ul></li></ul></div><dl><dt>Uncentererd R-Squared R₀²</dt><dd>
-          The R squared computed when the intercept is omitted.
-          It is rarely suitable as a goodness of fit measure.
-        </dd><dt>Ordinal Variable</dt><dd>This is categorical information with a meaningful ordering.</dd></dl></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Ordinal data as Dummy Variables</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C7 P230)</strong></span></div><ul class="no-item-padding" style="margin-block: 0px;"><li>
-          Ordinal variables, such as a rating out of 1-5 may not make sense
-          especaully if there are discrete criterias for movement between
-          each value. Such as a credit score, which might reserve certain
-          events to move to more extreme values.
-        </li></ul><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: write something about testing</p></div></div></div></div><div class="widget-container document" id="test-widget-4" style="grid-column: span 2;"><style id="test-widget-4-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Interactions Involving Dummy Variables</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C7 P232)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
-          Having interactions between multiple dumies is basically the
-          same as creating seperate permutations for each dummy.
-        </p><h4>Allowing for different slopes</h4><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mtext>dummy</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mtext>slope</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>β̂</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mtext>interaction</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow><figcaption>Different slopes for dummy</figcaption></math></figure><p>
-          Interaction terms allow you to measure a seperate slope for
-          a quantitative variable for different dummy variables,
-          like in the example above with a single dummy and slope.
-          You would test it like this.
-        </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>δ</mi><mn>0</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mtext>dummy</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mtext>slope</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>δ</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mtext>interaction</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mtable><mtr columnalign="left left"><mtd columnalign="left"><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo></mrow></mtd><mtd columnalign="left"><mrow><msub><mi>δ</mi><mn>0</mn></msub><mo>=</mo><msub><mi>δ</mi><mn>1</mn></msub><mo>=</mo><mn>0</mn></mrow></mtd></mtr><mtr columnalign="left left"><mtd columnalign="left"><mrow><msub><mi>H</mi><mn>1</mn></msub><mo>:</mo></mrow></mtd><mtd columnalign="left"><mtext>otherwise</mtext></mtd></mtr></mtable></mtd></mtd></mtr></mtable></math><figcaption>F Test: Hypothesis test for different slopes</figcaption></figure><h4>Testing for differences in regression functions across groups</h4><div style="--fontsize-math-m: 14px"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>1</mn></msub></mrow><mtext>slope 1</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>2</mn></msub></mrow><mtext>slope 2</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>β̂</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>3</mn></msub></mrow><mtext>slope 3</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></math><figcaption>Model without dummy</figcaption></figure></div><p>
-          Say you have have model which measure the effect of 3
-          different slopes over a population, but then you realise
-          that the slope varies between two different groups in
-          these slopes. A simple example might be gender, but it
-          could be anything so you update it to the following.
-        </p><div style="--fontsize-math-m: 14px"><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><munder><mrow><msub><mi>δ</mi><mn>0</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>d</mi><mn>1</mn></msub></mrow><mtext>dummy</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>1</mn></msub></mrow><mtext>slope 1</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>δ</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>d</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>1</mn></msub></mrow><mtext>interaction</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>2</mn></msub></mrow><mtext>slope 2</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mspace width="0px"></mspace></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mspace width="0px"></mspace></mtd><mtd columnalign="center"><mspace width="0px"></mspace></mtd><mtd columnalign="left"><mrow><munder><mrow><msub><mi>δ</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>d</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>2</mn></msub></mrow><mtext>interaction</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>3</mn></msub></mrow><mtext>slope 3</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>δ</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>d</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>3</mn></msub></mrow><mtext>interaction</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mtd></mtr></mtable></math><figcaption>Model with dummy</figcaption></figure></div><p>
-          The difference in slope for under the dummy here
-          are demarked with <strong>δ</strong>. Generally speaking
-          you would define a test like so with just the
-          coefficents for the dummy, which again are
-          demarked by the <strong>δ</strong>.
-        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>δ</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mrow><msub><mi>δ</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mrow><msub><mi>δ</mi><mn>2</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mrow><msub><mi>δ</mi><mn>3</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow></mrow></mrow></math><figcaption>Null hypothesis</figcaption></figure><p>
-          If you tested the 4 terms independently none would have
-          a very statistically significant t statistic. But this is
-          a joint hypothesis so we need to instead compute out an
-          F statistic. In this case our restricted model just drops
-          all variables with the dummy (including interactions with it).
-          From there we compute the a seperate R² and restricted R².
-        </p><h4>Chow Test Approach</h4><p>
-          Another way to test difference in slopes in groups is
-          to instead split the data into different groups, which
-          we denote with <strong>g</strong>. You will have a seperate group
-          for each possible state of the dummy variable in quetsion.
-          We can describe this group specific model like this:
-        </p><div style="--fontsize-math-m: 14px"><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>y</mi><mi>g</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mrow><mi>g</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>0</mn></mrow></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mrow><mi>g</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>1</mn></mrow></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mrow><mi>g</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>2</mn></mrow></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mrow><mi>g</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>3</mn></mrow></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>3</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></math><figcaption>Model without dummy</figcaption></figure></div><blockquote>
-          Note each variable here is a slope and if there is
-          2 groups, then g can either be 1 or 2.
-        </blockquote><div style="--fontsize-math-m: 14px"><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo><mspace width="4px"></mspace><mrow><mrow><mo>{</mo><mrow><msub><mi>β</mi><mrow><mi>g</mi><mi>j</mi></mrow></msub><mo>:</mo><mspace width="4px"></mspace><mi>g</mi><mo>∈</mo><mrow><mo>{</mo><mn>1</mn><mo>,</mo><mspace width="4px"></mspace><mn>2</mn><mo>,</mo><mspace width="4px"></mspace><mo>⋯</mo><mo>,</mo><mspace width="4px"></mspace><mi>G</mi><mo>}</mo></mrow></mrow><mo>}</mo></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mo>{</mo><msub><mi>β</mi><mi>j</mi></msub><mo>}</mo></mrow></mrow><mspace width="4px"></mspace><mtext>for all</mtext><mspace width="4px"></mspace><mi>j</mi><mo>∈</mo><mrow><mo>{</mo><mn>0</mn><mo>,</mo><mspace width="4px"></mspace><mn>1</mn><mo>,</mo><mspace width="4px"></mspace><mn>2</mn><mo>,</mo><mspace width="4px"></mspace><mo>⋯</mo><mo>,</mo><mspace width="4px"></mspace><mi>k</mi><mo>}</mo></mrow></mrow></math><figcaption>Chow test null hypothesis</figcaption></figure></div><p>
-          Our null hypothesis basically claims that there is
-          no difference for the slopes between the different
-          tests. And we create this F statitic to test it
-          which we also call the Chow Statitic. The null
-          hypothesis implies the error variance between
-          the groups must be equal.
-        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>F</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mfrac><mrow><mo>[</mo><msub><mtext>SSR</mtext><mi>P</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mo>(</mo><msub><mtext>SSR</mtext><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mtext>SSR</mtext><mn>2</mn></msub><mo>)</mo></mrow><mo>]</mo></mrow><mrow><mo>(</mo><msub><mtext>SSR</mtext><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mtext>SSR</mtext><mn>2</mn></msub><mo>)</mo></mrow></mfrac><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mfrac><mrow><mo>[</mo><mi>n</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mn>2</mn><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mi>k</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mn>1</mn><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mrow><mo>(</mo><mi>k</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mn>1</mn><mo>)</mo></mrow></mfrac></mrow></mrow></math><figcaption>Chow statistic</figcaption></figure><blockquote>
-          SSR₁ refers to the SSR of group one, and of
-          course SSR₂ is the same for group two. And
-          SSR<sub>p</sub> is the <u>pooled</u>
-          model with all groups.
-        </blockquote><h4>Sum-of-square-residuals F Statistic</h4><p>
-          The Chow test  only allows for null hypothesis that assume no
-          difference between group. This includes the intercept! All it
-          would take is a different intercept to reject that test which
-          isn't very interesting, and we're actually more interested in
-          whether there are different slopes between  groups. Again this
-          is why the SSR F Stat exists.
-        </p><math display="block"><mrow><mi>F</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mfrac><mrow><mo>[</mo><msub><mtext>SSR</mtext><mi>P</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mo>(</mo><msub><mtext>SSR</mtext><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mtext>SSR</mtext><mn>2</mn></msub><mo>)</mo></mrow><mo>]</mo></mrow><mrow><mo>(</mo><msub><mtext>SSR</mtext><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mtext>SSR</mtext><mn>2</mn></msub><mo>)</mo></mrow></mfrac><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mfrac><mrow><mo>[</mo><mi>n</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mn>2</mn><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mi>k</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mn>1</mn><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mi>k</mi></mfrac></mrow></mrow></math><p>
-          Note that k+1 has now become k, this is because we are not
-          longer testing the intercept.
-        </p></div><div class="container pre--container"><dl><dt>Difference in slope</dt><dd>
-            This similar but different to shifting the intercept.
-            It's more of a change in multiplier for the same
-            quantative explanatory variable.
-          </dd><dt>Restricted R Squared</dt><dd>
-            When you're performing an F test, you're typically
-            testing if an 2 or more added variables improves
-            the model or not.
-          </dd></dl><aside class="infobox"><h3 class="infobox-name">💡 SE's on dummy slope interactions</h3><div class="infobox-body"><div class="container"><p>
-            Don't be alarmed if you see <strong>much larger standard
-            errors</strong> for coefficents for interactions between a slope
-            and a dummy compared to the slope in isolation, for
-            interaction variables. An F test is better suited to help
-            determine if these are statitically significant.
-          </p></div></div></aside><aside class="infobox"><h3 class="infobox-name">💡 Chow Test Degree of Freedom</h3><div class="infobox-body"><div class="container"><p>
-            Now that we are running seperate models for each
-            group we techincally have omitted some variables
-            from the regression (at least in the context of
-            these being restricted models). So the degreees
-            of freedom for these group specific regressions
-            will be something like:
-          </p><math display="block"><mrow><mi>n</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>g</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mi>k</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mn>1</mn><mo>)</mo></mrow></mrow></mrow></math></div></div></aside><dl style="--fontsize-math-m: 12px"><dt>RSS<sub>p</sub></dt><dd>
-            Restricted Sum of Squares. It's not immediately
-            obvious why this is considered a restricted model
-            seeing as it includes all the results. But it
-            is considered restricted before it forces all
-            groups to share the same coefficients.
-            <br>
-            <br>
-            I can't help but feel there has to be a better
-            way to describe this.
-          </dd><dt>RSS<sub>ur</sub></dt><dd>
-            This is the sum of all grouped
-            SSRs, something like:
-            <br>
-            <br>
-            <math display="block"><mrow><msub><mi>SSR</mi><mi>ur</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>SSR</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>SSR</mi><mn>2</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>SSR</mi><mi>g</mi></msub></mrow></mrow></math>
-          </dd></dl><aside class="infobox"><h3 class="infobox-name">💡 A Limitation of Chow Test</h3><div class="infobox-body"><div class="container"><p>
-            One annoying restriction of the Chow test is
-            that the null hypothesis is only allowed to
-            assume there is no difference between the
-            difference groups.
-          </p></div></div></aside><dl style="--fontsize-math-m: 12px"><dt>SSR F statistic</dt><dd>
-            <p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: write meaning</p>
-          </dd></dl></div></div></div></div></div><div class="widget-container document" id="test-widget-5" style="grid-column: span 2;"><style id="test-widget-5-styles"></style><div class="container pre--container"><h2>A Binary Dependent Variable: The Linear Probability Model</h2><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><blockquote>You may want to do this if you want to explain a <strong>Qualitative event</strong>.</blockquote><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+        </dd></dl></div></div></div>"
+`;
+
+exports[`app(unsw::2206::05.1).widgets > binaryDependentVariable 1`] = `
+"<div class="container pre--container"><h2>A Binary Dependent Variable: The Linear Probability Model</h2><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><blockquote>You may want to do this if you want to explain a <strong>Qualitative event</strong>.</blockquote><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
           <strong>When the <em>dependent variable</em> of a model is a <strong>qualative
           variable</strong>, it takes on <em>only 2 values</em>, being <strong>zero</strong> or
           <strong>one</strong></strong>. One Interpretation of this is the model output acts as
@@ -322,5 +108,153 @@ exports[`app(unsw::2206::05.1).snapshot > should match snapshots 1`] = `
       its variance, conditional on x</strong>, is:
       <br><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>y</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mi>x</mi></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mi>p</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>[</mo><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>p</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>]</mo></mrow></mrow></mrow></math><figcaption>LPM assumption violation</figcaption></figure><br>
       The implication is <strong>heteroskedasticity</strong>.
-    </p></div></div></div><div class="widget-container document" id="test-widget-6" style="grid-column: span 2;"><style id="test-widget-6-styles"></style><div class="container pre--container"><h2>More on Policy Analysis and Program Evaluation</h2><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: content</p></div></div></div><div class="widget-container document" id="test-widget-7" style="grid-column: span 2;"><style id="test-widget-7-styles"></style><div class="container pre--container"><h2>Interpreting Regression Results with Discrete Dependent Variables</h2><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: content</p></div></div></div><hr style="width: 100%; border-color: transparent;">"
+    </p></div></div>"
 `;
+
+exports[`app(unsw::2206::05.1).widgets > describingQualitativeInformation 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Describing Qualitative Information</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C7 P221)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><ul style="margin-block: 0px;"><li>
+            When we put a binary categorical variable in a model, we
+            often decide which one is explictly specified as a parameter
+            as the effects of the omitted one gets baked into the
+            intercept. Specifying both causes multicolinary problems.
+          </li></ul></div><dl><dt>Dummy Variable</dt><dd>
+          A binary variable, which is either zero or 1, it is used to
+          demark the different qualitative states of a category variable.
+        </dd></dl></div></div></div>"
+`;
+
+exports[`app(unsw::2206::05.1).widgets > dummyInteractions 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Interactions Involving Dummy Variables</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C7 P232)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+          Having interactions between multiple dumies is basically the
+          same as creating seperate permutations for each dummy.
+        </p><h4>Allowing for different slopes</h4><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mtext>dummy</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mtext>slope</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>β̂</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mtext>interaction</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow><figcaption>Different slopes for dummy</figcaption></math></figure><p>
+          Interaction terms allow you to measure a seperate slope for
+          a quantitative variable for different dummy variables,
+          like in the example above with a single dummy and slope.
+          You would test it like this.
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>δ</mi><mn>0</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mtext>dummy</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mtext>slope</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>δ</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mtext>interaction</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mtable><mtr columnalign="left left"><mtd columnalign="left"><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo></mrow></mtd><mtd columnalign="left"><mrow><msub><mi>δ</mi><mn>0</mn></msub><mo>=</mo><msub><mi>δ</mi><mn>1</mn></msub><mo>=</mo><mn>0</mn></mrow></mtd></mtr><mtr columnalign="left left"><mtd columnalign="left"><mrow><msub><mi>H</mi><mn>1</mn></msub><mo>:</mo></mrow></mtd><mtd columnalign="left"><mtext>otherwise</mtext></mtd></mtr></mtable></mtd></mtd></mtr></mtable></math><figcaption>F Test: Hypothesis test for different slopes</figcaption></figure><h4>Testing for differences in regression functions across groups</h4><div style="--fontsize-math-m: 14px;"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>1</mn></msub></mrow><mtext>slope 1</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>2</mn></msub></mrow><mtext>slope 2</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>β̂</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>3</mn></msub></mrow><mtext>slope 3</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></math><figcaption>Model without dummy</figcaption></figure></div><p>
+          Say you have have model which measure the effect of 3
+          different slopes over a population, but then you realise
+          that the slope varies between two different groups in
+          these slopes. A simple example might be gender, but it
+          could be anything so you update it to the following.
+        </p><div style="--fontsize-math-m: 14px;"><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><munder><mrow><msub><mi>δ</mi><mn>0</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>d</mi><mn>1</mn></msub></mrow><mtext>dummy</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>1</mn></msub></mrow><mtext>slope 1</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>δ</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>d</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>1</mn></msub></mrow><mtext>interaction</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>2</mn></msub></mrow><mtext>slope 2</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mspace width="0px"></mspace></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mspace width="0px"></mspace></mtd><mtd columnalign="center"><mspace width="0px"></mspace></mtd><mtd columnalign="left"><mrow><munder><mrow><msub><mi>δ</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>d</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>2</mn></msub></mrow><mtext>interaction</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>3</mn></msub></mrow><mtext>slope 3</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><munder><mrow><msub><mi>δ</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>d</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>3</mn></msub></mrow><mtext>interaction</mtext></munder><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mtd></mtr></mtable></math><figcaption>Model with dummy</figcaption></figure></div><p>
+          The difference in slope for under the dummy here
+          are demarked with <strong>δ</strong>. Generally speaking
+          you would define a test like so with just the
+          coefficents for the dummy, which again are
+          demarked by the <strong>δ</strong>.
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>δ</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mrow><msub><mi>δ</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mrow><msub><mi>δ</mi><mn>2</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mrow><msub><mi>δ</mi><mn>3</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow></mrow></mrow></math><figcaption>Null hypothesis</figcaption></figure><p>
+          If you tested the 4 terms independently none would have
+          a very statistically significant t statistic. But this is
+          a joint hypothesis so we need to instead compute out an
+          F statistic. In this case our restricted model just drops
+          all variables with the dummy (including interactions with it).
+          From there we compute the a seperate R² and restricted R².
+        </p><h4>Chow Test Approach</h4><p>
+          Another way to test difference in slopes in groups is
+          to instead split the data into different groups, which
+          we denote with <strong>g</strong>. You will have a seperate group
+          for each possible state of the dummy variable in quetsion.
+          We can describe this group specific model like this:
+        </p><div style="--fontsize-math-m: 14px;"><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>y</mi><mi>g</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mrow><mi>g</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>0</mn></mrow></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mrow><mi>g</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>1</mn></mrow></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mrow><mi>g</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>2</mn></mrow></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mrow><mi>g</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>3</mn></mrow></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>s</mi><mn>3</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></math><figcaption>Model without dummy</figcaption></figure></div><blockquote>
+          Note each variable here is a slope and if there is
+          2 groups, then g can either be 1 or 2.
+        </blockquote><div style="--fontsize-math-m: 14px;"><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo><mspace width="4px"></mspace><mrow><mrow><mo>{</mo><mrow><msub><mi>β</mi><mrow><mi>g</mi><mi>j</mi></mrow></msub><mo>:</mo><mspace width="4px"></mspace><mi>g</mi><mo>∈</mo><mrow><mo>{</mo><mn>1</mn><mo>,</mo><mspace width="4px"></mspace><mn>2</mn><mo>,</mo><mspace width="4px"></mspace><mo>⋯</mo><mo>,</mo><mspace width="4px"></mspace><mi>G</mi><mo>}</mo></mrow></mrow><mo>}</mo></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mo>{</mo><msub><mi>β</mi><mi>j</mi></msub><mo>}</mo></mrow></mrow><mspace width="4px"></mspace><mtext>for all</mtext><mspace width="4px"></mspace><mi>j</mi><mo>∈</mo><mrow><mo>{</mo><mn>0</mn><mo>,</mo><mspace width="4px"></mspace><mn>1</mn><mo>,</mo><mspace width="4px"></mspace><mn>2</mn><mo>,</mo><mspace width="4px"></mspace><mo>⋯</mo><mo>,</mo><mspace width="4px"></mspace><mi>k</mi><mo>}</mo></mrow></mrow></math><figcaption>Chow test null hypothesis</figcaption></figure></div><p>
+          Our null hypothesis basically claims that there is
+          no difference for the slopes between the different
+          tests. And we create this F statitic to test it
+          which we also call the Chow Statitic. The null
+          hypothesis implies the error variance between
+          the groups must be equal.
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>F</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mfrac><mrow><mo>[</mo><msub><mtext>SSR</mtext><mi>P</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mo>(</mo><msub><mtext>SSR</mtext><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mtext>SSR</mtext><mn>2</mn></msub><mo>)</mo></mrow><mo>]</mo></mrow><mrow><mo>(</mo><msub><mtext>SSR</mtext><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mtext>SSR</mtext><mn>2</mn></msub><mo>)</mo></mrow></mfrac><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mfrac><mrow><mo>[</mo><mi>n</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mn>2</mn><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mi>k</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mn>1</mn><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mrow><mo>(</mo><mi>k</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mn>1</mn><mo>)</mo></mrow></mfrac></mrow></mrow></math><figcaption>Chow statistic</figcaption></figure><blockquote>
+          SSR₁ refers to the SSR of group one, and of
+          course SSR₂ is the same for group two. And
+          SSR<sub>p</sub> is the <u>pooled</u>
+          model with all groups.
+        </blockquote><h4>Sum-of-square-residuals F Statistic</h4><p>
+          The Chow test  only allows for null hypothesis that assume no
+          difference between group. This includes the intercept! All it
+          would take is a different intercept to reject that test which
+          isn't very interesting, and we're actually more interested in
+          whether there are different slopes between  groups. Again this
+          is why the SSR F Stat exists.
+        </p><math display="block"><mrow><mi>F</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mfrac><mrow><mo>[</mo><msub><mtext>SSR</mtext><mi>P</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mo>(</mo><msub><mtext>SSR</mtext><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mtext>SSR</mtext><mn>2</mn></msub><mo>)</mo></mrow><mo>]</mo></mrow><mrow><mo>(</mo><msub><mtext>SSR</mtext><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mtext>SSR</mtext><mn>2</mn></msub><mo>)</mo></mrow></mfrac><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mfrac><mrow><mo>[</mo><mi>n</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mn>2</mn><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mi>k</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mn>1</mn><mo>)</mo></mrow></mrow><mo>]</mo></mrow><mi>k</mi></mfrac></mrow></mrow></math><p>
+          Note that k+1 has now become k, this is because we are not
+          longer testing the intercept.
+        </p></div><div class="container pre--container"><dl><dt>Difference in slope</dt><dd>
+            This similar but different to shifting the intercept.
+            It's more of a change in multiplier for the same
+            quantative explanatory variable.
+          </dd><dt>Restricted R Squared</dt><dd>
+            When you're performing an F test, you're typically
+            testing if an 2 or more added variables improves
+            the model or not.
+          </dd></dl><aside class="infobox"><h3 class="infobox-name">💡 SE's on dummy slope interactions</h3><div class="infobox-body"><div class="container"><p>
+            Don't be alarmed if you see <strong>much larger standard
+            errors</strong> for coefficents for interactions between a slope
+            and a dummy compared to the slope in isolation, for
+            interaction variables. An F test is better suited to help
+            determine if these are statitically significant.
+          </p></div></div></aside><aside class="infobox"><h3 class="infobox-name">💡 Chow Test Degree of Freedom</h3><div class="infobox-body"><div class="container"><p>
+            Now that we are running seperate models for each
+            group we techincally have omitted some variables
+            from the regression (at least in the context of
+            these being restricted models). So the degreees
+            of freedom for these group specific regressions
+            will be something like:
+          </p><math display="block"><mrow><mi>n</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>g</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mi>k</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mn>1</mn><mo>)</mo></mrow></mrow></mrow></math></div></div></aside><dl style="--fontsize-math-m: 12px;"><dt>RSS<sub>p</sub></dt><dd>
+            Restricted Sum of Squares. It's not immediately
+            obvious why this is considered a restricted model
+            seeing as it includes all the results. But it
+            is considered restricted before it forces all
+            groups to share the same coefficients.
+            <br>
+            <br>
+            I can't help but feel there has to be a better
+            way to describe this.
+          </dd><dt>RSS<sub>ur</sub></dt><dd>
+            This is the sum of all grouped
+            SSRs, something like:
+            <br>
+            <br>
+            <math display="block"><mrow><msub><mi>SSR</mi><mi>ur</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>SSR</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>SSR</mi><mn>2</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>SSR</mi><mi>g</mi></msub></mrow></mrow></math>
+          </dd></dl><aside class="infobox"><h3 class="infobox-name">💡 A Limitation of Chow Test</h3><div class="infobox-body"><div class="container"><p>
+            One annoying restriction of the Chow test is
+            that the null hypothesis is only allowed to
+            assume there is no difference between the
+            difference groups.
+          </p></div></div></aside><dl style="--fontsize-math-m: 12px;"><dt>SSR F statistic</dt><dd>
+            <p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: write meaning</p>
+          </dd></dl></div></div></div></div>"
+`;
+
+exports[`app(unsw::2206::05.1).widgets > dummyVariablesForMultiCategories 1`] = `
+"<div class="container pre--container"><h2>Using Dummy Variables for Multiple Categories</h2><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><ul class="no-item-padding" style="margin-block: 0px;"><li>Say you have a model with 2 variables, <strong>gender</strong> and <strong>married</strong>.<ul style="margin-block: 0px;"><li>If you have a coefficient for married, can you assume it's the same for both genders?</li><li>One thing you can do is have a seperate variable for each permutation of these categories<ul class="no-item-padding" style="margin-block: 0px;"><li>And then you omit one of the permutations (like single men)</li></ul></li><li>Another approach is to omit the intercept coefficent for each dummy<ol class="no-item-padding" style="margin-block: 0px;"><li>1st drawback of this is it more cumbersome to test for differences relative to a base group.</li><li>2nd drawback is some statitcal packages change how R-Squared is computed.</li></ol></li></ul></li></ul></div><dl><dt>Uncentererd R-Squared R₀²</dt><dd>
+          The R squared computed when the intercept is omitted.
+          It is rarely suitable as a goodness of fit measure.
+        </dd><dt>Ordinal Variable</dt><dd>This is categorical information with a meaningful ordering.</dd></dl></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Ordinal data as Dummy Variables</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C7 P230)</strong></span></div><ul class="no-item-padding" style="margin-block: 0px;"><li>
+          Ordinal variables, such as a rating out of 1-5 may not make sense
+          especaully if there are discrete criterias for movement between
+          each value. Such as a credit score, which might reserve certain
+          events to move to more extreme values.
+        </li></ul><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: write something about testing</p></div></div></div>"
+`;
+
+exports[`app(unsw::2206::05.1).widgets > interpretingRegressionResults 1`] = `"<div class="container pre--container"><h2>Interpreting Regression Results with Discrete Dependent Variables</h2><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: content</p></div></div>"`;
+
+exports[`app(unsw::2206::05.1).widgets > intro 1`] = `
+"<div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>Multiple Regression Analysis with Qualitative Info<br><small style="color: rgb(170, 170, 255);">ECON2206, W5, Lecture 1</small></h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li>Chapter 7</li></ul></div></div></aside></div><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Introduction</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C7 P220)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><ul style="margin-block: 0px;"><li>
+        The purpose of this section is to provide a comprehensive analysis of
+        how to include qualitative factors into regression models
+      </li><li>
+        The <strong>linear probability model</strong> (LPM) will be introduced which is a
+        variant of multiple regression, where the coefficients can be
+        interpreted as changes in a probability.
+      </li><li>
+        The simplicity of the LPM makes it useful in many empirical contexts,
+        although it appears to be maligned by some econometricians.
+      </li></ul></div></div>"
+`;
+
+exports[`app(unsw::2206::05.1).widgets > policyAnalysis 1`] = `"<div class="container pre--container"><h2>More on Policy Analysis and Program Evaluation</h2><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: content</p></div></div>"`;

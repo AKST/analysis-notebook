@@ -1,31 +1,13 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`app(unsw::2206::05.2).snapshot > should match snapshots 1`] = `
-"<style id="test-styles"></style><div class="widget-container document" id="test-widget-0" style="grid-column: span 2;"><style id="test-widget-0-styles"></style><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>
-        Introduction to Heteroskedasticity<br>
-        <small style="color: #aaaaff">ECON2206, W5, Lecture 2</small>
-      </h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><p>Chapter 8 of the text book</p><ul class="no-item-padding" style="margin-block: 0px;"><li><a href="https://en.wikipedia.org/wiki/Breusch–Pagan_test" target="_blank">Breush Pagan Test</a></li></ul></div></div></aside></div><h2>Introduction</h2><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p>Reminder this is how we define homoskedasticity and variance under MLR 5</p><div class="c2 pre--c2"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>u</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>...</mo><msub><mi>x</mi><mi>K</mi></msub></mrow></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msup><mi>σ</mi><mn>2</mn></msup></mrow></math><figcaption>Homoskedasticity</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mover><mtext>Var</mtext><mo>^</mo></mover><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><msup><mi>σ̂</mi><mn>2</mn></msup><mrow><munderover><mo>Σ</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msup><mrow><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>x̄</mi><mo>)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mrow></math><figcaption>Unbiased estimator under MLR.5</figcaption></figure></div></div></div></div><div class="widget-container document" id="test-widget-1" style="grid-column: span 2;"><style id="test-widget-1-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Consequences of Heteroskedasticity for OLS</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C8 P262)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 pre--c2"><div class="container pre--container"><h4>✅ Okay with Heteroskedasticity</h4><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>SSR/n</strong> consistently estimates <strong>σ<sub>u</sub><sup>2</sup></strong></li><li><strong>SST/n</strong> consistently estimates <strong>σ<sub>y</sub><sup>2</sup></strong></li><li>
+exports[`app(unsw::2206::05.2).widgets > consequencesOfHeteroskedasticity 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Consequences of Heteroskedasticity for OLS</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C8 P262)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="c2 pre--c2"><div class="container pre--container"><h4>✅ Okay with Heteroskedasticity</h4><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>SSR/n</strong> consistently estimates <strong>σ<sub>u</sub><sup>2</sup></strong></li><li><strong>SST/n</strong> consistently estimates <strong>σ<sub>y</sub><sup>2</sup></strong></li><li>
             <strong>OLS estimators</strong> will continue to be consistent and unbias
             provided the sample size is sufficiently large.
           </li><li>
             <strong>R²</strong> and <strong>R̄²</strong> will continue to be consistent estimators of
             the population R².
-          </li></ul></div><div class="container pre--container"><h4>❌ Not okay with Heteroskedasticity</h4><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>Var(β̂ⱼ)</strong>, due to biased estimator.</li><li><strong>SE(β̂ⱼ)</strong>, because we can't estimate <strong>Var(β̂ⱼ)</strong></li><li>Therefore we can't perform<ul style="--fontsize-body-m: 10px" class="no-item-padding"><li><strong><strong>T tests</strong></strong><ul class="no-item-padding" style="margin-block: 0px;"><li>Our t distributions will not be t distributions.</li></ul></li><li><strong><strong>F tests</strong></strong><ul class="no-item-padding" style="margin-block: 0px;"><li>Our F distributions will not be F distributions.</li></ul></li><li><strong><strong>LM statistic</strong></strong><ul class="no-item-padding" style="margin-block: 0px;"><li>We won't have asympototic χ² distribution.</li></ul></li></ul></li></ul></div></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+          </li></ul></div><div class="container pre--container"><h4>❌ Not okay with Heteroskedasticity</h4><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>Var(β̂ⱼ)</strong>, due to biased estimator.</li><li><strong>SE(β̂ⱼ)</strong>, because we can't estimate <strong>Var(β̂ⱼ)</strong></li><li>Therefore we can't perform<ul class="no-item-padding" style="margin-block: 0px; --fontsize-body-m: 10px;"><li><strong><strong>T tests</strong></strong><ul class="no-item-padding" style="margin-block: 0px;"><li>Our t distributions will not be t distributions.</li></ul></li><li><strong><strong>F tests</strong></strong><ul class="no-item-padding" style="margin-block: 0px;"><li>Our F distributions will not be F distributions.</li></ul></li><li><strong><strong>LM statistic</strong></strong><ul class="no-item-padding" style="margin-block: 0px;"><li>We won't have asympototic χ² distribution.</li></ul></li></ul></li></ul></div></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
           The <strong>Gauss-Markov Theorem</strong> says that OLS is
           the best linear unbiased estimators, relies on the
           homoskedasticity assumption. If <strong>Var(x|u)</strong>
@@ -36,22 +18,27 @@ exports[`app(unsw::2206::05.2).snapshot > should match snapshots 1`] = `
       important to obtain an efficient estimator. That
       said not all is lost, there are methods to allow us
       to continue performing asymptotically valid tests.
-    </p></div></div></div><div class="widget-container document" id="test-widget-2" style="grid-column: span 2;"><style id="test-widget-2-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Heteroskedasticity-Robust Inference after OLS Estimation</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C8 P263)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><blockquote>
+    </p></div></div>"
+`;
+
+exports[`app(unsw::2206::05.2).widgets > intro 1`] = `
+"<div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>
+        Introduction to Heteroskedasticity<br>
+        <small style="color: rgb(170, 170, 255);">ECON2206, W5, Lecture 2</small>
+      </h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><p>Chapter 8 of the text book</p><ul class="no-item-padding" style="margin-block: 0px;"><li><a href="https://en.wikipedia.org/wiki/Breusch–Pagan_test" target="_blank">Breush Pagan Test</a></li></ul></div></div></aside></div><h2>Introduction</h2><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><p>Reminder this is how we define homoskedasticity and variance under MLR 5</p><div class="c2 pre--c2"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>u</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>...</mo><msub><mi>x</mi><mi>K</mi></msub></mrow></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msup><mi>σ</mi><mn>2</mn></msup></mrow></math><figcaption>Homoskedasticity</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mover><mtext>Var</mtext><mo>^</mo></mover><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><msup><mi>σ̂</mi><mn>2</mn></msup><mrow><munderover><mo>Σ</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msup><mrow><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>x̄</mi><mo>)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mrow></math><figcaption>Unbiased estimator under MLR.5</figcaption></figure></div></div></div>"
+`;
+
+exports[`app(unsw::2206::05.2).widgets > lpmRevisited 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>The Linear Probability Model Revisited</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C8 P284)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><p>
+      Firstly don't waste your time on this, if you're going to use
+      a Linear probabily model at all, firstly don't waste your time
+      on using WLS just use OLS (if at all). Secondly there are
+      significantly better models to use than either WLS or OLS.
+    </p></div></div>"
+`;
+
+exports[`app(unsw::2206::05.2).widgets > robustInference 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Heteroskedasticity-Robust Inference after OLS Estimation</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C8 P263)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><blockquote>
       Run the following in STATA for robust standard errors <strong><em>reg wage educ, robost</em></strong>.
     </blockquote><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
           In the last 2 decades a variety of methods have been developed to
@@ -104,22 +91,7 @@ exports[`app(unsw::2206::05.2).snapshot > should match snapshots 1`] = `
           to distinguish between each group along with
           interactions betweeen that dummy variable and all
           other explanatory variable.
-        </p><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Heteroskedasticity-Robust LM Tests</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C8 P267)</strong></span></div><p>In Summary:</p><ol style="margin-block: 0px;"><li>Obtain the residuals ũ from the restricted model.</li><li>
+        </p><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Heteroskedasticity-Robust LM Tests</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C8 P267)</strong></span></div><p>In Summary:</p><ol style="margin-block: 0px;"><li>Obtain the residuals ũ from the restricted model.</li><li>
             Regress each of the independent varibales excluded under
             the null on all of the included indendent variables, this
             leads to a set of residuals (r̃₁, r̃₂, ..., r̃<sub>q</sub>).
@@ -136,14 +108,14 @@ exports[`app(unsw::2206::05.2).snapshot > should match snapshots 1`] = `
         </p></div><div class="container pre--container"><dl><dt>Heteroskedasticity-robust SE</dt><dd>
             A form of the standard error which produces robust standard errors in
             the presense of heteroskedasticity.
-          </dd></dl><aside class="infobox"><h3 class="infobox-name">💡 Reading List</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li><a href="https://www.jstor.org/stable/1912934" target="_blank">White 1980</a></li><li><a href="https://projecteuclid.org/proceedings/berkeley-symposium-on-mathematical-statistics-and-probability/proceedings-of-the-fifth-berkeley-symposium-on-mathematical-statistics-and/Chapter/The-behavior-of-maximum-likelihood-estimates-under-nonstandard-conditions/bsmsp/1200512988" target="_blank">Huber 1967</a></li><li><a href="https://projecteuclid.org/proceedings/berkeley-symposium-on-mathematical-statistics-and-probability/Proceedings-of-the-Fifth-Berkeley-Symposium-on-Mathematical-Statistics-and/Chapter/Limit-theorems-for-regressions-with-unequal-and-dependent-errors/bsmsp/1200512981" target="_blank">Eicker 1967</a></li><li><a href="https://www.sciencedirect.com/science/article/abs/pii/0304407685901587" target="_blank">MacKinnon and White 1985</a></li></ul></div></div></aside><aside class="infobox"><h3 class="infobox-name">💡 Convergence</h3><div class="infobox-body"><div class="container"><p>Read later</p><ul class="no-item-padding" style="margin-block: 0px;"><li><a href="https://en.wikipedia.org/wiki/Convergence_tests" target="_blank">Convergence Test</a></li><li><a href="https://en.wikipedia.org/wiki/Rate_of_convergence" target="_blank">Rate of Convergence</a></li></ul></div></div></aside><h4>Problems with earlier Std Variance</h4><div class="container" style="--fontsize-body-m: 10px"><figure class="pre--horizontal-shadow"><math style="font-size: 11px" display="block"><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow><mrow><msup><mrow><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>x̄</mi><mo>)</mo></mrow><mn>2</mn></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>σ</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mrow></mrow><msubsup><mtext>SST</mtext><mi>x</mi><mn>2</mn></msubsup></mfrac></mrow></math><figcaption>Invalid Estimate Beta 1 Variance</figcaption></figure><p>
+          </dd></dl><aside class="infobox"><h3 class="infobox-name">💡 Reading List</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li><a href="https://www.jstor.org/stable/1912934" target="_blank">White 1980</a></li><li><a href="https://projecteuclid.org/proceedings/berkeley-symposium-on-mathematical-statistics-and-probability/proceedings-of-the-fifth-berkeley-symposium-on-mathematical-statistics-and/Chapter/The-behavior-of-maximum-likelihood-estimates-under-nonstandard-conditions/bsmsp/1200512988" target="_blank">Huber 1967</a></li><li><a href="https://projecteuclid.org/proceedings/berkeley-symposium-on-mathematical-statistics-and-probability/Proceedings-of-the-Fifth-Berkeley-Symposium-on-Mathematical-Statistics-and/Chapter/Limit-theorems-for-regressions-with-unequal-and-dependent-errors/bsmsp/1200512981" target="_blank">Eicker 1967</a></li><li><a href="https://www.sciencedirect.com/science/article/abs/pii/0304407685901587" target="_blank">MacKinnon and White 1985</a></li></ul></div></div></aside><aside class="infobox"><h3 class="infobox-name">💡 Convergence</h3><div class="infobox-body"><div class="container"><p>Read later</p><ul class="no-item-padding" style="margin-block: 0px;"><li><a href="https://en.wikipedia.org/wiki/Convergence_tests" target="_blank">Convergence Test</a></li><li><a href="https://en.wikipedia.org/wiki/Rate_of_convergence" target="_blank">Rate of Convergence</a></li></ul></div></div></aside><h4>Problems with earlier Std Variance</h4><div class="container" style="--fontsize-body-m: 10px;"><figure class="pre--horizontal-shadow"><math style="font-size: 11px" display="block"><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow><mrow><msup><mrow><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>x̄</mi><mo>)</mo></mrow><mn>2</mn></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>σ</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mrow></mrow><msubsup><mtext>SST</mtext><mi>x</mi><mn>2</mn></msubsup></mfrac></mrow></math><figcaption>Invalid Estimate Beta 1 Variance</figcaption></figure><p>
             The problem with this formular arise from
             the nature of SST, which is defined as:
           </p><figure class="pre--horizontal-shadow"><math style="font-size: 11px" display="block"><mrow><msubsup><mtext>SST</mtext><mi>x</mi><mn>2</mn></msubsup><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow><msup><mrow><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>x̄</mi><mo>)</mo></mrow><mn>2</mn></msup></mrow></mrow></mrow></math><figcaption>Sum of Squares</figcaption></figure><p>
             The reason it's a problem is it assumes uniform variance
             across all values of x, which is no longer the the case
             under hetro skadasticity.
-          </p></div><div class="container" style="--fontsize-body-m: 10px"><h4>Convergence Property of Var(β̂₁)</h4><figure class="pre--horizontal-shadow"><math style="font-size: 11px" display="block"><mrow><mrow><munderover><mi>lim</mi><mrow><mi>n</mi><mo>→</mo><mo>∞</mo></mrow><mrow></mrow></munderover><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><mrow><mtext>E</mtext><mrow><mo>[</mo><mrow><msup><mrow><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>μ</mi><mi>x</mi></msub><mo>)</mo></mrow><mn>2</mn></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>u</mi><mi>i</mi><mn>2</mn></msubsup></mrow><mo>]</mo></mrow></mrow><msup><mrow><mo>(</mo><msubsup><mi>σ</mi><mi>x</mi><mn>2</mn></msubsup><mo>)</mo></mrow><mn>2</mn></msup></mfrac></mrow></math><figcaption>Convergence as n approaches infinity</figcaption></figure></div><div class="container" style="--fontsize-body-m: 10px"><h4>What is r̂ᵢⱼ?</h4><figure class="pre--horizontal-shadow"><math style="font-size: 11px" display="block"><mrow><mrow><msub><mi>r̂</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msub><mi>u</mi><mi>i</mi></msub></mrow><mspace width="8px"></mspace><mtext> from regressing </mtext><mspace width="8px"></mspace><msub><mi>x</mi><mi>j</mi></msub></mrow></math><figcaption>Expression for residuals</figcaption></figure></div><aside class="infobox"><h3 class="infobox-name">💡 HRSE DF correction</h3><div class="infobox-body"><div class="container"><p>
+          </p></div><div class="container" style="--fontsize-body-m: 10px;"><h4>Convergence Property of Var(β̂₁)</h4><figure class="pre--horizontal-shadow"><math style="font-size: 11px" display="block"><mrow><mrow><munderover><mi>lim</mi><mrow><mi>n</mi><mo>→</mo><mo>∞</mo></mrow><mrow></mrow></munderover><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><mrow><mtext>E</mtext><mrow><mo>[</mo><mrow><msup><mrow><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>μ</mi><mi>x</mi></msub><mo>)</mo></mrow><mn>2</mn></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>u</mi><mi>i</mi><mn>2</mn></msubsup></mrow><mo>]</mo></mrow></mrow><msup><mrow><mo>(</mo><msubsup><mi>σ</mi><mi>x</mi><mn>2</mn></msubsup><mo>)</mo></mrow><mn>2</mn></msup></mfrac></mrow></math><figcaption>Convergence as n approaches infinity</figcaption></figure></div><div class="container" style="--fontsize-body-m: 10px;"><h4>What is r̂ᵢⱼ?</h4><figure class="pre--horizontal-shadow"><math style="font-size: 11px" display="block"><mrow><mrow><msub><mi>r̂</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msub><mi>u</mi><mi>i</mi></msub></mrow><mspace width="8px"></mspace><mtext> from regressing </mtext><mspace width="8px"></mspace><msub><mi>x</mi><mi>j</mi></msub></mrow></math><figcaption>Expression for residuals</figcaption></figure></div><aside class="infobox"><h3 class="infobox-name">💡 HRSE DF correction</h3><div class="infobox-body"><div class="container"><p>
             Sometimes before applying the square root in
             the HRSE the estimated variance is multiplied by
             the following:
@@ -160,22 +132,11 @@ exports[`app(unsw::2206::05.2).snapshot > should match snapshots 1`] = `
           </dd><dt>Heteroskedastic-Robust LM Test</dt><dd>
             A test which can test multiple exclusion restrictions
             in the presense of heteroskedasticity.
-          </dd></dl></div></div></div></div></div><div class="widget-container document" id="test-widget-3" style="grid-column: span 2;"><style id="test-widget-3-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Testing for Heteroskedasticity</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C8 P269)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><blockquote>
+          </dd></dl></div></div></div></div>"
+`;
+
+exports[`app(unsw::2206::05.2).widgets > testingHeteroskedasticity 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Testing for Heteroskedasticity</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C8 P269)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><blockquote>
           This section describes tests for detecting Heteroskedasticity.
         </blockquote><p>
           There's a need to explictly test and confirm the presense
@@ -245,22 +206,7 @@ exports[`app(unsw::2206::05.2).snapshot > should match snapshots 1`] = `
           </p></div></div></aside></div><p>
         If the P value is sufficently small we can reject the
         null hypothesis.
-      </p></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>The White Test for Heteroskedasticity</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C8 P271)</strong></span></div><p>
+      </p></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>The White Test for Heteroskedasticity</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C8 P271)</strong></span></div><p>
           The <a href="https://www.jstor.org/stable/1912934" target="_blank">white</a> test, takes a different approach
           and its based on the fact there is a weaker assumption that
           can be swapped out for the one used in Breucsh Pagan test.
@@ -289,22 +235,11 @@ exports[`app(unsw::2206::05.2).snapshot > should match snapshots 1`] = `
             objectives. It's effectively a means to
             an ends and exists for the duration of
             pursuing that ends (like running a test).
-          </dd></dl><aside class="infobox"><h3 class="infobox-name">💡 White test Summary</h3><div class="infobox-body"><div class="container"><ol class="no-item-padding" style="margin-block: 0px;"><li>Estimate the model by OLS.</li><li>Obtain û and ŷ from the OLS.</li><li>Comptued OLS û² and ŷ².</li><li>Run the Auxillary model.</li><li>Keep the R² as R<sub>û²</sub>².</li><li>Either<ol class="no-item-padding" style="margin-block: 0px;"><li>An F statistic<ul class="no-item-padding" style="margin-block: 0px;"><li>Let df of F<sub>s, n - 3</sub></li></ul></li><li>LM statistic<ul class="no-item-padding" style="margin-block: 0px;"><li>Get P value using χ² dist</li></ul></li></ol></li></ol></div></div></aside></div></div></div></div></div><div class="widget-container document" id="test-widget-4" style="grid-column: span 2;"><style id="test-widget-4-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Weighted Least Squares Estimation</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C8 P273)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+          </dd></dl><aside class="infobox"><h3 class="infobox-name">💡 White test Summary</h3><div class="infobox-body"><div class="container"><ol class="no-item-padding" style="margin-block: 0px;"><li>Estimate the model by OLS.</li><li>Obtain û and ŷ from the OLS.</li><li>Comptued OLS û² and ŷ².</li><li>Run the Auxillary model.</li><li>Keep the R² as R<sub>û²</sub>².</li><li>Either<ol class="no-item-padding" style="margin-block: 0px;"><li>An F statistic<ul class="no-item-padding" style="margin-block: 0px;"><li>Let df of F<sub>s, n - 3</sub></li></ul></li><li>LM statistic<ul class="no-item-padding" style="margin-block: 0px;"><li>Get P value using χ² dist</li></ul></li></ol></li></ol></div></div></aside></div></div></div></div>"
+`;
+
+exports[`app(unsw::2206::05.2).widgets > weightedLeastSquares 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Weighted Least Squares Estimation</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C8 P273)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
           While using Heteroskedasticity-Robust standard errors
           help us ignore heteroskedasticity when we understand
           the functional form and nature of heteroskedasticity
@@ -312,22 +247,7 @@ exports[`app(unsw::2206::05.2).snapshot > should match snapshots 1`] = `
           using <strong>weighted least squares</strong>. Using WLS will
           also mean new <strong>t</strong> and <strong>F</strong> statistics
           which have their respective <strong>t/F distribution</strong>.
-        </p><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>The Heteroskedasticity Is Known up to a Multiplicative Constant</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C8 P273)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><msubsup><mi>σ</mi><mi>i</mi><mn>2</mn></msubsup><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>u</mi><mi>i</mi></msub><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><msub><mi>x</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msup><mi>σ</mi><mn>2</mn></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mtext>h</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>)</mo></mrow></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msup><mi>σ</mi><mn>2</mn></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>h</mi><mi>i</mi></msub></mrow></mrow></math><figcaption>Population variance with heteroskedasticity</figcaption></figure><p>
+        </p><div style="display: grid; grid-template-columns: 1fr auto;"><h3>The Heteroskedasticity Is Known up to a Multiplicative Constant</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C8 P273)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><msubsup><mi>σ</mi><mi>i</mi><mn>2</mn></msubsup><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>u</mi><mi>i</mi></msub><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><msub><mi>x</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msup><mi>σ</mi><mn>2</mn></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mtext>h</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>)</mo></mrow></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msup><mi>σ</mi><mn>2</mn></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>h</mi><mi>i</mi></msub></mrow></mrow></math><figcaption>Population variance with heteroskedasticity</figcaption></figure><p>
           When talking about the form of heteroskedasticity we typically
           expresss it with syntax like <strong>h(x)</strong>, which is some
           function on the relevant explanatory variable. So if that
@@ -397,22 +317,7 @@ exports[`app(unsw::2206::05.2).snapshot > should match snapshots 1`] = `
             MLR.1. Therefore, a significant difference between
             OLS and WLS can indicate a functional form
             misspecification in E(y|x)
-          </p></div></div></aside></div></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>The Heteroskedasticity Function Must Be Estimated: Feasible GLS</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C8 P278)</strong></span></div><p>
+          </p></div></div></aside></div></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>The Heteroskedasticity Function Must Be Estimated: Feasible GLS</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C8 P278)</strong></span></div><p>
         In many case the exact form of heteroskedasicity is not known
         and is not obvious. Nevertheless, in many cases we can model
         the <strong>h</strong> and use the data to estimate the unknown parameters
@@ -461,22 +366,7 @@ exports[`app(unsw::2206::05.2).snapshot > should match snapshots 1`] = `
           Another option of estimating ĝᵢ is to instead use
           the fitted value ŷ and its square ŷ² in a
           regression like so:
-        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msup><mi>û</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>α</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>ŷ</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>ŷ</mi><mn>2</mn><mn>2</mn></msubsup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>e</mi></mrow></mrow></math><figcaption>Alternative method</figcaption></figure></div><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>What If the Assumed Heteroskedasticity Function Is Wrong?</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C8 P281)</strong></span></div><p>
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msup><mi>û</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>α</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>ŷ</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>ŷ</mi><mn>2</mn><mn>2</mn></msubsup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>e</mi></mrow></mrow></math><figcaption>Alternative method</figcaption></figure></div><div style="display: grid; grid-template-columns: 1fr auto;"><h3>What If the Assumed Heteroskedasticity Function Is Wrong?</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C8 P281)</strong></span></div><p>
         What happens if our variance function is misspecified? Well
         provided MLR 4 holds, we don't need to worry too much about
         a misspecified h(x) introducing bias or inconsistency in our
@@ -510,40 +400,5 @@ exports[`app(unsw::2206::05.2).snapshot > should match snapshots 1`] = `
         point. Being in cases of strong heteroskedasticity, it is better to
         use a wrong form of heteroskedasticity and apply WLS than to ignore
         heteroskedasticity altogether and use OLS.
-      </p><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Prediction and Prediction Intervals with Heteroskedasticity</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C8 P283)</strong></span></div><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: write about predictions</p></div></div></div></div><div class="widget-container document" id="test-widget-5" style="grid-column: span 2;"><style id="test-widget-5-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>The Linear Probability Model Revisited</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C8 P284)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p>
-      Firstly don't waste your time on this, if you're going to use
-      a Linear probabily model at all, firstly don't waste your time
-      on using WLS just use OLS (if at all). Secondly there are
-      significantly better models to use than either WLS or OLS.
-    </p></div></div></div><hr style="width: 100%; border-color: transparent;">"
+      </p><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Prediction and Prediction Intervals with Heteroskedasticity</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C8 P283)</strong></span></div><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: write about predictions</p></div></div></div>"
 `;

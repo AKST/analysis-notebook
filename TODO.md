@@ -20,10 +20,7 @@ This is effectly a poor mans issue tracker.
 1. dom
   1. [x] Unify `dom_app` and `dom_ui` APIs, currently underway.
   2. [x] Post unifying changes
-  3. Clean up
-     - [x] Turn doc.ul into a normal helper not a template helper
-     - [x] API changes
-     - [ ] Migrate anything using the style attr to use the css helper
+  3. [ ] Clean up
   4. The hardest part
     - [ ] Support events.
         - Alternatively maybe I can add an effect system where certain
@@ -43,7 +40,7 @@ This is effectly a poor mans issue tracker.
   - Add typing
     - Generate useful types & Propagate them to everything else
 
-  - Allow Nesting Of Layo3ts
+  - Allow Nesting Of Layouts
     - Sometimes structs take structs as params
 
   - Generate config for createPipeline

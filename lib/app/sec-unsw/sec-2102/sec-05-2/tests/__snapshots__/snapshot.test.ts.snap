@@ -1,202 +1,13 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`app(unsw::2102::05.2).snapshot > should match snapshots 1`] = `
-"<style id="test-styles"></style><div class="widget-container document" id="test-widget-0" style="grid-column: span 2;"><style id="test-widget-0-styles"></style><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>
-        IS Curve<br>
-        <small style="color: #aaaaff">ECON2102, W5, Lecture 2</small>
-      </h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li>Chapter 11 of the textbook</li><li><a href="https://en.wikipedia.org/wiki/IS–LM_model" target="_blank">IS-LM Model</a></li></ul></div></div></aside></div></div></div><div class="widget-container document" id="test-widget-1" style="grid-column: span 2;"><style id="test-widget-1-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Introduction</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P287)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mo>↑</mo><mspace width="4px"></mspace><mtext>interest rate</mtext><mspace width="12px"></mspace><mo>⇒</mo><mspace width="12px"></mspace><mo>↓</mo><mspace width="4px"></mspace><mtext>investment</mtext><mspace width="12px"></mspace><mo>⇒</mo><mspace width="12px"></mspace><mo>↓</mo><mspace width="4px"></mspace><mtext>output</mtext></mrow></math><figcaption>Monetary transmission: higher interest rate reduces investment and output</figcaption></figure><p>
-      The IS Curve is one of 2 curves in the <strong>IS-LM Model</strong>.
-      The I stands for investment and the S standds for savings. It
-      exists to model interest rates, which has important implications
-      for all sorts of facets of society. What an increase in the real
-      interest rate means, the cost of borrowing captial for businesses
-      and households goes up. Consumers respond borrow less for new
-      housing, firms respond by reducing their purchases of machines
-      and buildings. A reduction in investment leads to firms producing
-      less.
-    </p></div></div></div><div class="widget-container canvas2d" id="test-widget-2" style="grid-column: span 2;"></div><div class="widget-container document" id="test-widget-3" style="grid-column: span 2;"><style id="test-widget-3-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Setting up the Economy</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P288)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="grid-responsive-row pre--grid-responsive-row" style="
-      --grid-responsive-row-slim-columns: 1fr;
-      --grid-responsive-row-mobile-columns: 1fr;
-      --grid-responsive-row-desktop-columns: auto auto;
-      
-    "><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>Y</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>C</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>I</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>G</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>EX</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>IM</mi><mi>t</mi></msub></mrow></mrow></mrow></math><figcaption>Output in Expenditure Accounting identities.</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>C</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>ā</mi><mi>c</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>Ȳ</mi><mi>t</mi></msub></mrow></mrow></math><figcaption>Consumption</figcaption></figure></div><div class="grid-responsive-row pre--grid-responsive-row" style="
-      --grid-responsive-row-slim-columns: 1fr;
-      --grid-responsive-row-mobile-columns: 1fr;
-      --grid-responsive-row-desktop-columns: auto auto auto auto;
-      
-    "><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>G</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>ā</mi><mi>g</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>Ȳ</mi><mi>t</mi></msub></mrow></mrow></math><figcaption>Government</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>EX</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>ā</mi><mi>ex</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>Ȳ</mi><mi>t</mi></msub></mrow></mrow></math><figcaption>Exports</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>IM</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>ā</mi><mi>im</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>Ȳ</mi><mi>t</mi></msub></mrow></mrow></math><figcaption>Imports</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mfrac><msub><mi>I</mi><mi>t</mi></msub><msub><mi>Ȳ</mi><mi>t</mi></msub></mfrac><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>ā</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>b̄</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>R</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>r̄</mi><mo>)</mo></mrow></mrow></mrow></mrow></math><figcaption>Investment</figcaption></figure></div><p>
-      Above are the accounting identities of a simple
-      4 sector economy (consumption, investment, government,
-      and the foreign sector), using these as a foundation
-      as we build towards the IS curve. Most of these are
-      fairly simpliar it is mostly the Investment that is
-      slightly different here.
-    </p></div><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Consumption and Friends</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P289)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p>
-      Note in this model is Ȳₜ is exogenous not endogenous
-      as opposed to previous instances where this model
-      has been introduced. In our shortrun model we use
-      output as solved by our long run model.
-    </p><ul class="no-item-padding" style="margin-block: 0px;"><li>Why is <strong>ā<sub>c</sub></strong> constant?<ul class="no-item-padding" style="margin-block: 0px;"><li>Note there is no time subscript</li><li>For our purposes it'll be 2/3 in most cases</li><li>
-          The economic justification for this is, consumption
-          is a constant fraction of potential output.
-        </li><li>
-          One implication of this is, because potential output
-          is smooth, consumption is also smooth.
-        </li><li>
-          During a recession consumers may keep their consumption
-          steady drawing on their savings. This behaviour is known
-          as the <strong>permanent income hypothesis</strong>.
-        </li></ul></li><li>Why are the rest of multipliers constant?<ul class="no-item-padding" style="margin-block: 0px;"><li>This the simplest assumption we can make that still deliver a reasonable model.</li><li>They all have a similar economic justifications which we may or may not explore.</li></ul></li></ul></div><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>The Investment Equation</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P289)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><ul class="no-item-padding" style="margin-block: 0px;"><li>About <strong>ā<sub>i</sub></strong>?<ul class="no-item-padding" style="margin-block: 0px;"><li>
-          This is similar to the other coefficents, and reflects the
-          long-run fraction of potenial output that goes into investment.
-          But it is not the only contributor to investment.
-        </li></ul></li><li>About <strong>R<sub>t</sub></strong>?<ul class="no-item-padding" style="margin-block: 0px;"><li>This is the real interest rate</li><li>This is the rate at which firms are willing to borrow</li></ul></li><li>About <strong>r̄</strong>?<ul class="no-item-padding" style="margin-block: 0px;"><li>This is the marginal rate of captial</li><li>
-          This is the amount of additional ouput a firm can
-          produce by investing one more unit of capital.
-        </li><li>
-          We take this as an exogenous parameter, and
-          like <strong>Y<sub>t</sub></strong> it is also determined by the
-          long run model.
-        </li><li>
-          We don't include a time subscript here as
-          it is constant along a balnaced growth path.
-        </li></ul></li><li>What is <strong>b̄</strong>?<ul class="no-item-padding" style="margin-block: 0px;"><li>This is roughly sensitivity to investment</li><li>
-          A high value for b̄ means that small differences
-          between the interest rate and marginal product
-          of capital lead to big changes in investment.
-        </li></ul></li></ul><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Some implications</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P291)</strong></span></div><ul class="no-item-padding" style="margin-block: 0px;"><li>
-        If the marginal product of capital is low relative to
-        the real interest rate, then firms are better off saving their
-        retained earnings in the financial market.
-      </li><li>
-        If the marginal product of capital is high relative to the real
-        interest rate, then firms would find it profitable to borrow at
-        the real interest rate and invest the proceeds in capital,
-        <strong>leading to a rise in investment</strong>.
-      </li><li>
-        In the long run, the real interest rate <strong>must</strong>
-        equal the marginal product of capital. This is what
-        was observed in the long run modell: firms rent capital
-        until the marginal product of capital is equal to the
-        interest rate.
-      </li><li>
-        In the short run these differ, which is explained by
-        the fact new factories taketime to be built and brought
-        online, along with any new machines with all their setup.
-      </li><li>
-        When <strong>R<sub>t</sub></strong> is equal to <strong>r̄</strong> in the long run,
-        investment portion of potenial output is <strong>ā<sub>i</sub></strong>.
-      </li></ul><p>
-      Technically our initial interactions with <strong>R<sub>t</sub></strong>
-      suggest it is exogenous but this will change in later
-      sections.
-    </p></div></div></div><div class="widget-container document" id="test-widget-4" style="grid-column: span 2;"><style id="test-widget-4-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Deriving the IS Curve</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P292)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="grid-responsive-row pre--grid-responsive-row" style="
-      --grid-responsive-row-slim-columns: 1fr;
-      --grid-responsive-row-mobile-columns: 1fr;
-      --grid-responsive-row-desktop-columns: auto auto;
-      
-    "><figure class="pre--horizontal-shadow"><math display="block"><mrow><mfrac><msub><mi>Y</mi><mi>t</mi></msub><msub><mi>Ȳ</mi><mi>t</mi></msub></mfrac><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mfrac><msub><mi>C</mi><mi>t</mi></msub><msub><mi>Ȳ</mi><mi>t</mi></msub></mfrac><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>I</mi><mi>t</mi></msub><msub><mi>Ȳ</mi><mi>t</mi></msub></mfrac><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>G</mi><mi>t</mi></msub><msub><mi>Ȳ</mi><mi>t</mi></msub></mfrac><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mfrac><msub><mi>EX</mi><mi>t</mi></msub><msub><mi>Ȳ</mi><mi>t</mi></msub></mfrac><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mfrac><msub><mi>IM</mi><mi>t</mi></msub><msub><mi>Ȳ</mi><mi>t</mi></msub></mfrac></mrow></mrow></mrow></math><figcaption>Output identity in ratio form</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mfrac><msub><mi>Y</mi><mi>t</mi></msub><msub><mi>Ȳ</mi><mi>t</mi></msub></mfrac><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>ā</mi><mi>c</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>ā</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>ā</mi><mi>g</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>ā</mi><mi>ex</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>ā</mi><mi>im</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>b̄</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>R</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>r̄</mi><mo>)</mo></mrow></mrow></mrow></mrow></mrow></math><figcaption>Equilibrium output as a function of behavioural parameters</figcaption></figure></div><p>
+exports[`app(unsw::2102::05.2).widgets > derivingTheIsCurve 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Deriving the IS Curve</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P292)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="grid-responsive-row pre--grid-responsive-row" style="--grid-responsive-row-slim-columns: 1fr; --grid-responsive-row-mobile-columns: 1fr; --grid-responsive-row-desktop-columns: auto auto;"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mfrac><msub><mi>Y</mi><mi>t</mi></msub><msub><mi>Ȳ</mi><mi>t</mi></msub></mfrac><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mfrac><msub><mi>C</mi><mi>t</mi></msub><msub><mi>Ȳ</mi><mi>t</mi></msub></mfrac><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>I</mi><mi>t</mi></msub><msub><mi>Ȳ</mi><mi>t</mi></msub></mfrac><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>G</mi><mi>t</mi></msub><msub><mi>Ȳ</mi><mi>t</mi></msub></mfrac><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mfrac><msub><mi>EX</mi><mi>t</mi></msub><msub><mi>Ȳ</mi><mi>t</mi></msub></mfrac><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mfrac><msub><mi>IM</mi><mi>t</mi></msub><msub><mi>Ȳ</mi><mi>t</mi></msub></mfrac></mrow></mrow></mrow></math><figcaption>Output identity in ratio form</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mfrac><msub><mi>Y</mi><mi>t</mi></msub><msub><mi>Ȳ</mi><mi>t</mi></msub></mfrac><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>ā</mi><mi>c</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>ā</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>ā</mi><mi>g</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>ā</mi><mi>ex</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>ā</mi><mi>im</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>b̄</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>R</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>r̄</mi><mo>)</mo></mrow></mrow></mrow></mrow></mrow></math><figcaption>Equilibrium output as a function of behavioural parameters</figcaption></figure></div><p>
       Before we can derive the relationship between output and
       interest rates, we <strong>start</strong> by dividing the output (in
       the expenditure accounting identities / national accounts format).
       <strong>Then</strong> we substitute our five equations for the different
       sectors into the equation.
-    </p><div class="grid-responsive-row pre--grid-responsive-row" style="
-      --grid-responsive-row-slim-columns: 1fr;
-      --grid-responsive-row-mobile-columns: 1fr;
-      --grid-responsive-row-desktop-columns: auto auto;
-      
-    "><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>Ỹ</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>≡</mo><mspace width="4px"></mspace><mfrac><mrow><msub><mi>Y</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>Ȳ</mi><mi>t</mi></msub></mrow><msub><mi>Ȳ</mi><mi>t</mi></msub></mfrac></mrow></math><figcaption>Definition of the output gap</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><munder><mrow><mfrac><msub><mi>Y</mi><mi>t</mi></msub><msub><mi>Ȳ</mi><mi>t</mi></msub></mfrac></mrow><munder><mo>⏟</mo><mrow style=""><mi>Ỹₜ</mi></mrow></munder></munder><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mn>1</mn></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><munder><mrow><mrow><msub><mi>ā</mi><mi>c</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>ā</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>ā</mi><mi>g</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>ā</mi><mi>ex</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>ā</mi><mi>im</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mn>1</mn></mrow></mrow></mrow><munder><mo>⏟</mo><mrow style=""><mi>ā</mi></mrow></munder></munder><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>b̄</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>R</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>r̄</mi><mo>)</mo></mrow></mrow></mrow></mrow></math><figcaption>Output gap decomposition with parameter grouping</figcaption></figure></div><p>
+    </p><div class="grid-responsive-row pre--grid-responsive-row" style="--grid-responsive-row-slim-columns: 1fr; --grid-responsive-row-mobile-columns: 1fr; --grid-responsive-row-desktop-columns: auto auto;"><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>Ỹ</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>≡</mo><mspace width="4px"></mspace><mfrac><mrow><msub><mi>Y</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>Ȳ</mi><mi>t</mi></msub></mrow><msub><mi>Ȳ</mi><mi>t</mi></msub></mfrac></mrow></math><figcaption>Definition of the output gap</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><munder><mrow><mfrac><msub><mi>Y</mi><mi>t</mi></msub><msub><mi>Ȳ</mi><mi>t</mi></msub></mfrac></mrow><munder><mo>⏟</mo><mrow style=""><mi>Ỹₜ</mi></mrow></munder></munder><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mn>1</mn></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><munder><mrow><mrow><msub><mi>ā</mi><mi>c</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>ā</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>ā</mi><mi>g</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>ā</mi><mi>ex</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>ā</mi><mi>im</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mn>1</mn></mrow></mrow></mrow><munder><mo>⏟</mo><mrow style=""><mi>ā</mi></mrow></munder></munder><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>b̄</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>R</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>r̄</mi><mo>)</mo></mrow></mrow></mrow></mrow></math><figcaption>Output gap decomposition with parameter grouping</figcaption></figure></div><p>
       Noting the identity relation for <strong>Ỹ<sub>t</sub></strong>, we
       subtract 1 from bothsides and get equation below
       (after adding the different multipliers for a).
@@ -213,121 +24,37 @@ exports[`app(unsw::2102::05.2).snapshot > should match snapshots 1`] = `
       subscripts actually add up to 1 when <strong>Y<sub>t</sub></strong> is
       at <strong>Ȳ<sub>t</sub></strong>. So in the long run <strong>ā</strong> add
       up to 1.
-    </p><h4>Notes from lecture</h4><ul class="no-item-padding" style="margin-block: 0px;"><li>if <strong>MPK = r̄ &lt; Rₜ</strong><ul class="no-item-padding" style="margin-block: 0px;"><li>Firms should <strong>save</strong></li><li>Firms should <strong>not invest</strong> in capital</li><li>Investment will decline</li></ul></li><li>if <strong>MPK = r̄ &gt; Rₜ</strong><ul class="no-item-padding" style="margin-block: 0px;"><li>Firms should <strong>borrow</strong></li><li>Firms should <strong>invest</strong> in capital</li><li>Investment will increase</li></ul></li></ul></div><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: explain why we divide by Y in solving for curve</p></div></div><div class="widget-container document" id="test-widget-5" style="grid-column: span 2;"><style id="test-widget-5-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Using the IS Curve</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P292)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p>
-      Given the above we can now plot the curve. Note while
-      it tends to be more natural to put outputs on the
-      vertical axis, the convention in economics is to put
-      the price on the Y axis (just like in supply and demand).
-    </p><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>The Effect of a Change in the Interest rate</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P294)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>Ỹ</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mi>ā</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>b̄</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>R</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>r̄</mi><mo>)</mo></mrow></mrow></mrow></mrow></math><figcaption>Output gap</figcaption></figure><p>
-        If you want to move the output flucation along
-        the curve, what you need to do is increase the
-        real interst rate, and you see output move along
-        the curve while preserving the output gap relation.
-      </p></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>An Aggregate Demand Shock</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P294)</strong></span></div><p>
-        Say businesses increase their investments due to a
-        new technology fad, this would increase <strong>ā<sub>i</sub></strong>
-        which will mean the curve itself will move.
-      </p></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>A Shock to Potential Output</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P294)</strong></span></div><p>
-        Shocks to potenial output, such as a loss of capital
-        in terms of infrastructure after a natural distaster
-        do not move the curve, actual output would also
-        decrease as well.
-      </p></div></div></div></div><div class="widget-container document" id="test-widget-6" style="grid-column: span 2;"><style id="test-widget-6-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Microfoundations of the IS Curve</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P298)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p>
+    </p><h4>Notes from lecture</h4><ul class="no-item-padding" style="margin-block: 0px;"><li>if <strong>MPK = r̄ &lt; Rₜ</strong><ul class="no-item-padding" style="margin-block: 0px;"><li>Firms should <strong>save</strong></li><li>Firms should <strong>not invest</strong> in capital</li><li>Investment will decline</li></ul></li><li>if <strong>MPK = r̄ &gt; Rₜ</strong><ul class="no-item-padding" style="margin-block: 0px;"><li>Firms should <strong>borrow</strong></li><li>Firms should <strong>invest</strong> in capital</li><li>Investment will increase</li></ul></li></ul></div><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: explain why we divide by Y in solving for curve</p></div>"
+`;
+
+exports[`app(unsw::2102::05.2).widgets > header 1`] = `
+"<div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>
+        IS Curve<br>
+        <small style="color: rgb(170, 170, 255);">ECON2102, W5, Lecture 2</small>
+      </h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li>Chapter 11 of the textbook</li><li><a href="https://en.wikipedia.org/wiki/IS–LM_model" target="_blank">IS-LM Model</a></li></ul></div></div></aside></div></div>"
+`;
+
+exports[`app(unsw::2102::05.2).widgets > intro 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Introduction</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P287)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mo>↑</mo><mspace width="4px"></mspace><mtext>interest rate</mtext><mspace width="12px"></mspace><mo>⇒</mo><mspace width="12px"></mspace><mo>↓</mo><mspace width="4px"></mspace><mtext>investment</mtext><mspace width="12px"></mspace><mo>⇒</mo><mspace width="12px"></mspace><mo>↓</mo><mspace width="4px"></mspace><mtext>output</mtext></mrow></math><figcaption>Monetary transmission: higher interest rate reduces investment and output</figcaption></figure><p>
+      The IS Curve is one of 2 curves in the <strong>IS-LM Model</strong>.
+      The I stands for investment and the S standds for savings. It
+      exists to model interest rates, which has important implications
+      for all sorts of facets of society. What an increase in the real
+      interest rate means, the cost of borrowing captial for businesses
+      and households goes up. Consumers respond borrow less for new
+      housing, firms respond by reducing their purchases of machines
+      and buildings. A reduction in investment leads to firms producing
+      less.
+    </p></div></div>"
+`;
+
+exports[`app(unsw::2102::05.2).widgets > microfoundations 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Microfoundations of the IS Curve</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P298)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><p>
       An important principle to bear in mind in this
       discussion is that aggregation tends to average
       out departures from the model that occur at the
       individual level.
-    </p><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Consumption</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P228)</strong></span></div><p>
+    </p><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Consumption</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P228)</strong></span></div><p>
         There are a set of theories that explain the consumer
         behaviour in this model, two of which being:
       </p><ul class="no-item-padding" style="margin-block: 0px;"><li><a href="https://en.wikipedia.org/wiki/Permanent_income_hypothesis" target="_blank">Permanent-Income Hypothesis</a> developed by Milton Friedman</li><li><a href="https://en.wikipedia.org/wiki/Life-cycle_hypothesis" target="_blank">Life-Cycle Hypothesis</a> developed by Franco Modigliani</li></ul><p>
@@ -360,27 +87,7 @@ exports[`app(unsw::2102::05.2).snapshot > should match snapshots 1`] = `
         <strong>How accurate is it in practise</strong>? The evidence is mixed.
         See <a href="https://www.jstor.org/stable/3132183" target="_blank">this study</a>,
         on consumers behaviour in Alaska with the Permanent oil Fund payouts.
-      </p></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Multiplier Effects</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P301)</strong></span></div><div class="grid-responsive-row pre--grid-responsive-row" style="
-      --grid-responsive-row-slim-columns: 1fr;
-      --grid-responsive-row-mobile-columns: 1fr;
-      --grid-responsive-row-desktop-columns: auto auto;
-      
-    "><figure class="pre--horizontal-shadow"><math display="block"><mrow><mfrac><msub><mi>C</mi><mi>t</mi></msub><msub><mi>Y</mi><mi>t</mi></msub></mfrac><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>ā</mi><mi>c</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>x̄</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>Ỹ</mi><mi>t</mi></msub></mrow></mrow></mrow></math><figcaption>Consumption share</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>Ỹ</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><munder><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>x̄</mi></mrow></mfrac></mrow><munder><mo>⏟</mo><mrow style=""><mtext>multiplier</mtext></mrow></munder></munder><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><munder><mrow><mrow><mo>[</mo><mi>ā</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>b̄</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>R</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>r̄</mi><mo>)</mo></mrow></mrow><mo>]</mo></mrow></mrow><munder><mo>⏟</mo><mrow style=""><mtext>original IS curve</mtext></mrow></munder></munder></mrow></mrow></math><figcaption>IS curve with consumption response</figcaption></figure></div><p>
+      </p></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Multiplier Effects</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P301)</strong></span></div><div class="grid-responsive-row pre--grid-responsive-row" style="--grid-responsive-row-slim-columns: 1fr; --grid-responsive-row-mobile-columns: 1fr; --grid-responsive-row-desktop-columns: auto auto;"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mfrac><msub><mi>C</mi><mi>t</mi></msub><msub><mi>Y</mi><mi>t</mi></msub></mfrac><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>ā</mi><mi>c</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>x̄</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>Ỹ</mi><mi>t</mi></msub></mrow></mrow></mrow></math><figcaption>Consumption share</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>Ỹ</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><munder><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>x̄</mi></mrow></mfrac></mrow><munder><mo>⏟</mo><mrow style=""><mtext>multiplier</mtext></mrow></munder></munder><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><munder><mrow><mrow><mo>[</mo><mi>ā</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>b̄</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>R</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>r̄</mi><mo>)</mo></mrow></mrow><mo>]</mo></mrow></mrow><munder><mo>⏟</mo><mrow style=""><mtext>original IS curve</mtext></mrow></munder></munder></mrow></mrow></math><figcaption>IS curve with consumption response</figcaption></figure></div><p>
         In an effort to simulate aggregate consumption responses
         to temporary changes to income we can modify our
         consumption equation like <strong>above</strong>. This
@@ -393,22 +100,7 @@ exports[`app(unsw::2102::05.2).snapshot > should match snapshots 1`] = `
         <strong>Note</strong> the implication of this multiplier is
         largely in relation to magnitude. The curve otherwise holds
         the same shape.
-      </blockquote></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Investment</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P302)</strong></span></div><p>There are 2 main determinants of investment at the firm level.</p><ol class="no-item-padding" style="margin-block: 0px;"><li>The gap between the real interest rate and the marginal product of capital</li><li>The second is a firms cash flow (internal resources after paying its dues)</li></ol><p>
+      </blockquote></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Investment</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P302)</strong></span></div><p>There are 2 main determinants of investment at the firm level.</p><ol class="no-item-padding" style="margin-block: 0px;"><li>The gap between the real interest rate and the marginal product of capital</li><li>The second is a firms cash flow (internal resources after paying its dues)</li></ol><p>
         In a simple model the return on captial is just the
         marginal product of captial net depreciation (as shown
         with the Solown Model). A richer model may include
@@ -421,22 +113,7 @@ exports[`app(unsw::2102::05.2).snapshot > should match snapshots 1`] = `
         forced to borrow in financial markets. <strong>It is more
         expensive to do the latter generally</strong> (this is explained by
         agency problems).
-      </p><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Agency Problems</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P303)</strong></span></div><ul><li>
+      </p><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Agency Problems</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P303)</strong></span></div><ul><li>
           <strong>Adverse Selection</strong>: When a firm knows it may be in
           for a rough time in the coming period, they may want to
           borrow. If the firm does well it can pay all that back,
@@ -449,22 +126,7 @@ exports[`app(unsw::2102::05.2).snapshot > should match snapshots 1`] = `
           can declare bankruptcy.
         </li></ul><p>
         Knowing these problems exist banks exercise caution.
-      </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>I</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>ā</mi><mi>i</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>Ȳ</mi><mi>t</mi></msub></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>b̄</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>R</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>r̄</mi><mo>)</mo></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>Ȳ</mi><mi>t</mi></msub></mrow></mrow></mrow></math><figcaption>Investment level: Iₜ = ā_iȲₜ − b̄(Rₜ − r̄)Ȳₜ</figcaption></figure><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: explain how this version of the function shows cashflow effects</p></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Government purchases</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P303)</strong></span></div><p>
+      </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>I</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>ā</mi><mi>i</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>Ȳ</mi><mi>t</mi></msub></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>b̄</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>R</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>r̄</mi><mo>)</mo></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>Ȳ</mi><mi>t</mi></msub></mrow></mrow></mrow></math><figcaption>Investment level: Iₜ = ā_iȲₜ − b̄(Rₜ − r̄)Ȳₜ</figcaption></figure><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: explain how this version of the function shows cashflow effects</p></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Government purchases</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P303)</strong></span></div><p>
         Government purchase of goods and services affect shor-run
         economic activity in two ways:
       </p><ol class="no-item-padding" style="margin-block: 0px;"><li>As a shock that can function as a source of fluctuations</li><li>As a policy instrument that can be used to reduce fluctuations</li></ol><p>
@@ -507,20 +169,100 @@ exports[`app(unsw::2102::05.2).snapshot > should match snapshots 1`] = `
         this year or next year; it will be lower in either case. So
         consumption should also be lower, perhaps completely offsetting
         the increased government spending.
-      </p></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Net Exports</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P309)</strong></span></div><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: content</p></div></div></div></div><hr style="width: 100%; border-color: transparent;">"
+      </p></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Net Exports</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P309)</strong></span></div><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: content</p></div></div></div>"
+`;
+
+exports[`app(unsw::2102::05.2).widgets > settingUpTheEconomony 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Setting up the Economy</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P288)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="grid-responsive-row pre--grid-responsive-row" style="--grid-responsive-row-slim-columns: 1fr; --grid-responsive-row-mobile-columns: 1fr; --grid-responsive-row-desktop-columns: auto auto;"><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>Y</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>C</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>I</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>G</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>EX</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>IM</mi><mi>t</mi></msub></mrow></mrow></mrow></math><figcaption>Output in Expenditure Accounting identities.</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>C</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>ā</mi><mi>c</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>Ȳ</mi><mi>t</mi></msub></mrow></mrow></math><figcaption>Consumption</figcaption></figure></div><div class="grid-responsive-row pre--grid-responsive-row" style="--grid-responsive-row-slim-columns: 1fr; --grid-responsive-row-mobile-columns: 1fr; --grid-responsive-row-desktop-columns: auto auto auto auto;"><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>G</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>ā</mi><mi>g</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>Ȳ</mi><mi>t</mi></msub></mrow></mrow></math><figcaption>Government</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>EX</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>ā</mi><mi>ex</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>Ȳ</mi><mi>t</mi></msub></mrow></mrow></math><figcaption>Exports</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>IM</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>ā</mi><mi>im</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>Ȳ</mi><mi>t</mi></msub></mrow></mrow></math><figcaption>Imports</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mfrac><msub><mi>I</mi><mi>t</mi></msub><msub><mi>Ȳ</mi><mi>t</mi></msub></mfrac><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>ā</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>b̄</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>R</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>r̄</mi><mo>)</mo></mrow></mrow></mrow></mrow></math><figcaption>Investment</figcaption></figure></div><p>
+      Above are the accounting identities of a simple
+      4 sector economy (consumption, investment, government,
+      and the foreign sector), using these as a foundation
+      as we build towards the IS curve. Most of these are
+      fairly simpliar it is mostly the Investment that is
+      slightly different here.
+    </p></div><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Consumption and Friends</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P289)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><p>
+      Note in this model is Ȳₜ is exogenous not endogenous
+      as opposed to previous instances where this model
+      has been introduced. In our shortrun model we use
+      output as solved by our long run model.
+    </p><ul class="no-item-padding" style="margin-block: 0px;"><li>Why is <strong>ā<sub>c</sub></strong> constant?<ul class="no-item-padding" style="margin-block: 0px;"><li>Note there is no time subscript</li><li>For our purposes it'll be 2/3 in most cases</li><li>
+          The economic justification for this is, consumption
+          is a constant fraction of potential output.
+        </li><li>
+          One implication of this is, because potential output
+          is smooth, consumption is also smooth.
+        </li><li>
+          During a recession consumers may keep their consumption
+          steady drawing on their savings. This behaviour is known
+          as the <strong>permanent income hypothesis</strong>.
+        </li></ul></li><li>Why are the rest of multipliers constant?<ul class="no-item-padding" style="margin-block: 0px;"><li>This the simplest assumption we can make that still deliver a reasonable model.</li><li>They all have a similar economic justifications which we may or may not explore.</li></ul></li></ul></div><div style="display: grid; grid-template-columns: 1fr auto;"><h3>The Investment Equation</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P289)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><ul class="no-item-padding" style="margin-block: 0px;"><li>About <strong>ā<sub>i</sub></strong>?<ul class="no-item-padding" style="margin-block: 0px;"><li>
+          This is similar to the other coefficents, and reflects the
+          long-run fraction of potenial output that goes into investment.
+          But it is not the only contributor to investment.
+        </li></ul></li><li>About <strong>R<sub>t</sub></strong>?<ul class="no-item-padding" style="margin-block: 0px;"><li>This is the real interest rate</li><li>This is the rate at which firms are willing to borrow</li></ul></li><li>About <strong>r̄</strong>?<ul class="no-item-padding" style="margin-block: 0px;"><li>This is the marginal rate of captial</li><li>
+          This is the amount of additional ouput a firm can
+          produce by investing one more unit of capital.
+        </li><li>
+          We take this as an exogenous parameter, and
+          like <strong>Y<sub>t</sub></strong> it is also determined by the
+          long run model.
+        </li><li>
+          We don't include a time subscript here as
+          it is constant along a balnaced growth path.
+        </li></ul></li><li>What is <strong>b̄</strong>?<ul class="no-item-padding" style="margin-block: 0px;"><li>This is roughly sensitivity to investment</li><li>
+          A high value for b̄ means that small differences
+          between the interest rate and marginal product
+          of capital lead to big changes in investment.
+        </li></ul></li></ul><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Some implications</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P291)</strong></span></div><ul class="no-item-padding" style="margin-block: 0px;"><li>
+        If the marginal product of capital is low relative to
+        the real interest rate, then firms are better off saving their
+        retained earnings in the financial market.
+      </li><li>
+        If the marginal product of capital is high relative to the real
+        interest rate, then firms would find it profitable to borrow at
+        the real interest rate and invest the proceeds in capital,
+        <strong>leading to a rise in investment</strong>.
+      </li><li>
+        In the long run, the real interest rate <strong>must</strong>
+        equal the marginal product of capital. This is what
+        was observed in the long run modell: firms rent capital
+        until the marginal product of capital is equal to the
+        interest rate.
+      </li><li>
+        In the short run these differ, which is explained by
+        the fact new factories taketime to be built and brought
+        online, along with any new machines with all their setup.
+      </li><li>
+        When <strong>R<sub>t</sub></strong> is equal to <strong>r̄</strong> in the long run,
+        investment portion of potenial output is <strong>ā<sub>i</sub></strong>.
+      </li></ul><p>
+      Technically our initial interactions with <strong>R<sub>t</sub></strong>
+      suggest it is exogenous but this will change in later
+      sections.
+    </p></div></div>"
+`;
+
+exports[`app(unsw::2102::05.2).widgets > tutorialNotes 1`] = `"<div class="container pre--container"><h2>Tutorial Notes</h2><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"></div></div>"`;
+
+exports[`app(unsw::2102::05.2).widgets > usingTheIsCurve 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Using the IS Curve</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P292)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><p>
+      Given the above we can now plot the curve. Note while
+      it tends to be more natural to put outputs on the
+      vertical axis, the convention in economics is to put
+      the price on the Y axis (just like in supply and demand).
+    </p><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>The Effect of a Change in the Interest rate</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P294)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>Ỹ</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mi>ā</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>b̄</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>R</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>r̄</mi><mo>)</mo></mrow></mrow></mrow></mrow></math><figcaption>Output gap</figcaption></figure><p>
+        If you want to move the output flucation along
+        the curve, what you need to do is increase the
+        real interst rate, and you see output move along
+        the curve while preserving the output gap relation.
+      </p></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>An Aggregate Demand Shock</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P294)</strong></span></div><p>
+        Say businesses increase their investments due to a
+        new technology fad, this would increase <strong>ā<sub>i</sub></strong>
+        which will mean the curve itself will move.
+      </p></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>A Shock to Potential Output</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P294)</strong></span></div><p>
+        Shocks to potenial output, such as a loss of capital
+        in terms of infrastructure after a natural distaster
+        do not move the curve, actual output would also
+        decrease as well.
+      </p></div></div></div>"
 `;

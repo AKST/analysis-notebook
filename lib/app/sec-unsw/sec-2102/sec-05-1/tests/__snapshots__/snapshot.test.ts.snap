@@ -1,22 +1,9 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`app(unsw::2102::05.1).snapshot > should match snapshots 1`] = `
-"<style id="test-styles"></style><div class="widget-container document" id="test-widget-0" style="grid-column: span 2;"><style id="test-widget-0-styles"></style><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>The Short run<br><small style="color: #aaaaff">ECON2102, W5, Lecture 1</small></h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li>Chapter 11 of the textbook</li><li><a href="https://en.wikipedia.org/wiki/Potential_output" target="_blank">Potential Output</a></li></ul></div></div></aside></div></div></div><div class="widget-container document" id="test-widget-1" style="grid-column: span 2;"><style id="test-widget-1-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Introductions</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P243)</strong></span></div><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p>
+exports[`app(unsw::2102::05.1).widgets > header 1`] = `"<div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>The Short run<br><small style="color: rgb(170, 170, 255);">ECON2102, W5, Lecture 1</small></h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li>Chapter 11 of the textbook</li><li><a href="https://en.wikipedia.org/wiki/Potential_output" target="_blank">Potential Output</a></li></ul></div></div></aside></div></div>"`;
+
+exports[`app(unsw::2102::05.1).widgets > intro 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Introductions</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P243)</strong></span></div><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><p>
           The long run model we developed in the earlier sections are
           generally models to explain behaviour on average and in the
           long run. As Keynes point this long run average typically is
@@ -31,22 +18,31 @@ exports[`app(unsw::2102::05.1).snapshot > should match snapshots 1`] = `
           we are all dead. Economists set themselves too easy, too useless a task if
           in tempestuous seasons they can only tell us that when the storm is long
           past the ocean is flat again.
-        </p><p style="text-align: right">— John Maynard Keynes</p></blockquote></div></div></div></div><div class="widget-container document" id="test-widget-2" style="grid-column: span 2;"><style id="test-widget-2-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>The Long-Run, the Short-Run, shocks</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P244)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 pre--c2"><p>
+        </p><p style="text-align: right;">— John Maynard Keynes</p></blockquote></div></div></div>"
+`;
+
+exports[`app(unsw::2102::05.1).widgets > okunsLaw 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Okuns Law: Output and Unemployment</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P255)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><p>
+      When we analyse economic fluctations we focus on either
+      unemployment of output. Note that:
+    </p><ul class="no-item-padding" style="margin-block: 0px;"><li>A recession, for example, is a time when output is below potential and unemployment is high</li><li>A boom is a time when output is above potential and unemployment is low</li></ul><div class="c2 twoThree pre--c2 pre--two-three"><p>
+        There's a relationship between levels of employment and
+        output relative to potential output. Capturing that relationship
+        is precisely what Okuns law. What this does is allow for to
+        focus on one or the other, or infer something about the one of
+        these from the other.
+        Another thing, levels of output and unemployment tend to move together.
+      </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mi>u</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>ū</mi></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mi>Ỹ</mi></mrow></mrow></math><figcaption>Okun's Law</figcaption></figure></div><h4>Notes from the lecturer</h4><ul class="no-item-padding" style="margin-block: 0px;"><li>
+        We don't use this in research too much any
+        more but the RBA still uses it.
+      </li><li>
+        When the economy is on the trend line, it means
+        <font color="red">TODO: insert meaning</font>.
+      </li></ul></div></div>"
+`;
+
+exports[`app(unsw::2102::05.1).widgets > theLongrunTheShortrun 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>The Long-Run, the Short-Run, shocks</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P244)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="c2 pre--c2"><p>
         The long long model is useful for determining the level of
         potential output aand long run inflation rate. In contrast,
         the short run model is useful for detemining the current levels
@@ -120,7 +116,7 @@ exports[`app(unsw::2102::05.1).snapshot > should match snapshots 1`] = `
         in particuar industries, and so on. However it is no less difficult
         to discren whether a change in GDP reflects changes in <strong>Ȳ<sub>t</sub></strong>
         or the <strong>Ỹ<sub>t</sub></strong>.
-      </p></div></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><details><summary>Hot Take</summary><br><div class="container pre--container"><p>
+      </p></div></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><details><summary>Hot Take</summary><br><div class="container pre--container"><p>
         We are still in the vials of mercury, treatment by leeches,
         earth rotating around the sun era in our understanding the
         nature of how macro economics works. In the defence of macro
@@ -151,26 +147,15 @@ exports[`app(unsw::2102::05.1).snapshot > should match snapshots 1`] = `
         in econometrics where the normal distribution or Central Limit
         Theorum is invoke to justify a litany of <s>excuses</s>
         assumptions.
-      </p></div></details></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="container pre--container"><h3>Inflation Rate</h3><p>
+      </p></div></details></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="container pre--container"><h3>Inflation Rate</h3><p>
         During a recesssion typically the rate of inflation falls, so
         when you look at a chart of inflation typically the point at
         which inflation starts falling indicates a recesssion.
-      </p></div></div></div></div><div class="widget-container canvas2d" id="test-widget-3" style="grid-column: span 1;"></div><div class="widget-container canvas2d" id="test-widget-4" style="grid-column: span 1;"></div><div class="widget-container document" id="test-widget-5" style="grid-column: span 2;"><style id="test-widget-5-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>The Short-Run Model</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P251)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p>The short run mode is based on three premises.</p><ul><li>
+      </p></div></div></div>"
+`;
+
+exports[`app(unsw::2102::05.1).widgets > theShortrunModel 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>The Short-Run Model</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P251)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><p>The short run mode is based on three premises.</p><ul><li>
         <em>The economy is constantly being hit by shocks</em>. These are
         <strong>Economic shocks</strong>, which is inclusive of changes in resource
         prices, disruptions in financial markets, new technologies, changes
@@ -191,22 +176,7 @@ exports[`app(unsw::2102::05.1).snapshot > should match snapshots 1`] = `
         If this does happen, well policy makers will want to lower it, but that
         would require a trade-off. We can model this trade off using  the
         <strong>Phillips Curve</strong>.
-      </li></ul></div><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>A graph of the short run model</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P252)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><ul><li><p>
+      </li></ul></div><div style="display: grid; grid-template-columns: 1fr auto;"><h3>A graph of the short run model</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P252)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><ul><li><p>
           The Phillips curve shows how a booming economy
           leads to an increase in the inflation rate. It
           also shows how a recession leads to a decrease.
@@ -230,36 +200,5 @@ exports[`app(unsw::2102::05.1).snapshot > should match snapshots 1`] = `
         The short- run model says that a booming economy leads
         the inflation rate to increase, and a slumping economy
         leads the inflation rate to fall.
-      </p></div></div></aside></div></div></div><div class="widget-container canvas2d" id="test-widget-6" style="grid-column: span 2;"></div><div class="widget-container document" id="test-widget-7" style="grid-column: span 2;"><style id="test-widget-7-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Okuns Law: Output and Unemployment</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P255)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p>
-      When we analyse economic fluctations we focus on either
-      unemployment of output. Note that:
-    </p><ul class="no-item-padding" style="margin-block: 0px;"><li>A recession, for example, is a time when output is below potential and unemployment is high</li><li>A boom is a time when output is above potential and unemployment is low</li></ul><div class="c2 twoThree pre--c2 pre--two-three"><p>
-        There's a relationship between levels of employment and
-        output relative to potential output. Capturing that relationship
-        is precisely what Okuns law. What this does is allow for to
-        focus on one or the other, or infer something about the one of
-        these from the other.
-        Another thing, levels of output and unemployment tend to move together.
-      </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mi>u</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>ū</mi></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mi>Ỹ</mi></mrow></mrow></math><figcaption>Okun's Law</figcaption></figure></div><h4>Notes from the lecturer</h4><ul class="no-item-padding" style="margin-block: 0px;"><li>
-        We don't use this in research too much any
-        more but the RBA still uses it.
-      </li><li>
-        When the economy is on the trend line, it means
-        <font color="red">TODO: insert meaning</font>.
-      </li></ul></div></div></div><hr style="width: 100%; border-color: transparent;">"
+      </p></div></div></aside></div></div>"
 `;

@@ -1,255 +1,75 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`app(unsw::2102::07.1).snapshot > should match snapshots 1`] = `
-"<style id="test-styles"></style><div class="widget-container document" id="test-widget-0" style="grid-column: span 2;"><style id="test-widget-0-styles"></style><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>Consumption<br><small style="color: #aaaaff">ECON2102, W7, Lecture 1</small></h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li>Chapter 16</li></ul></div></div></aside></div></div></div><div class="widget-container document" id="test-widget-1" style="grid-column: span 2;"><style id="test-widget-1-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Introduction</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C16 P461)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p>
+exports[`app(unsw::2102::07.1).widgets > deriveUtilityFunction 1`] = `"<div class="container pre--container"><h2>Extra: Deriving utility function using Lagrangean</h2><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><figure class="pre--horizontal-shadow"><div class="grid-responsive-row pre--grid-responsive-row" style="--grid-responsive-row-slim-columns: 1fr; --grid-responsive-row-mobile-columns: 1fr; --grid-responsive-row-desktop-columns: auto 1fr;"><div class="container" style="justify-items: left;"><div class="grid-responsive-row pre--grid-responsive-row" style="align-items: start; --grid-responsive-row-slim-columns: 1fr; --grid-responsive-row-mobile-columns: 1fr; --grid-responsive-row-desktop-columns: auto auto;"><math display="block"><mtable><mtr><mtd columnalign="left" columnspan="3"><mtext>Utility and IBC</mtext></mtd></mtr><mtr><mtd columnalign="right"><mrow><msub><mi>c</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>c</mi><mn>2</mn></msub><mi>ɹ</mi></mfrac></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>f</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>y</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>y</mi><mn>2</mn></msub><mi>ɹ</mi></mfrac></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mi>U</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>c</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mi>u</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>β</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mi>u</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow></mrow></mrow></mtd></mtr></mtable></math><math display="block"><mtable><mtr><mtd><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mtext>Where</mtext><mspace width="8px"></mspace><mi>ɹ</mi></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>r</mi></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mi>u</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mi>c</mi><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><msup><mi>c</mi><mrow><mn>1</mn><mo>-</mo><mi>γ</mi></mrow></msup><mrow><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>γ</mi></mrow></mfrac></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mrow><mi>u</mi><mo>'</mo></mrow><mspace width="2px"></mspace><mrow><mo>(</mo><mi>c</mi><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msup><mi>c</mi><mrow><mo>-</mo><mi>γ</mi></mrow></msup></mtd></mtr></mtable></mtd></mtr></mtable></math></div><div class="container pre--container"><math display="block"><mtable><mtr><mtd columnalign="left" columnspan="3"><mtext>Lagrangian</mtext></mtd></mtr><mtr><mtd columnalign="right"><mrow><mi>𝔏</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>c</mi><mn>2</mn></msub><mo>,</mo><mspace width="4px"></mspace><mi>λ</mi><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mrow><mi>u</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mi>u</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow></mrow></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>λ</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>[</mo><mrow><msub><mi>c</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>c</mi><mn>2</mn></msub><mi>ɹ</mi></mfrac></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mo>(</mo><msub><mi>f</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>y</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>y</mi><mn>2</mn></msub><mi>ɹ</mi></mfrac><mo>)</mo></mrow><mo>]</mo></mrow></mrow></mrow></mtd></mtr></mtable></math><math display="block"><mtable><mtr><mtd><mrow></mrow></mtd></mtr><mtr><mtd columnalign="left" columnspan="3"><mtext>First Order Condition</mtext></mtd></mtr><mtr><mtd columnalign="right"><mrow><msub><mi>𝔏</mi><msub><mi>c</mi><mn>1</mn></msub></msub><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>c</mi><mn>2</mn></msub><mo>,</mo><mspace width="4px"></mspace><mi>λ</mi><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mrow><mrow><mrow><mi>u</mi><mo>'</mo></mrow><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>λ</mi></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow><mspace width="4px"></mspace><mo>⇒</mo><mspace width="4px"></mspace><mrow><mrow><mrow><mi>u</mi><mo>'</mo></mrow><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mi>λ</mi></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><msub><mi>𝔏</mi><msub><mi>c</mi><mn>2</mn></msub></msub><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>c</mi><mn>2</mn></msub><mo>,</mo><mspace width="4px"></mspace><mi>λ</mi><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mrow><mrow><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mrow><mi>u</mi><mo>'</mo></mrow><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mfrac><mi>λ</mi><mi>ɹ</mi></mfrac></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow><mspace width="4px"></mspace><mo>⇒</mo><mspace width="4px"></mspace><mrow><mrow><mrow><mrow><mi>u</mi><mo>'</mo></mrow><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>ɹ</mi></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mi>λ</mi></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><msub><mi>𝔏</mi><mi>λ</mi></msub><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>c</mi><mn>2</mn></msub><mo>,</mo><mspace width="4px"></mspace><mi>λ</mi><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mrow><mrow><msub><mi>c</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>c</mi><mn>2</mn></msub><mi>ɹ</mi></mfrac></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mo>(</mo><msub><mi>f</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>y</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>y</mi><mn>2</mn></msub><mi>ɹ</mi></mfrac><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow><mspace width="4px"></mspace><mo>⇒</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>c</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>c</mi><mn>2</mn></msub><mi>ɹ</mi></mfrac></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>f</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>y</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>y</mi><mn>2</mn></msub><mi>ɹ</mi></mfrac></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><msub><mi>𝔏</mi><msub><mi>c</mi><mn>1</mn></msub></msub><mspace width="4px"></mspace><mo>∧</mo><mspace width="4px"></mspace><msub><mi>𝔏</mi><msub><mi>c</mi><mn>2</mn></msub></msub></mrow></mtd><mtd><mo>⇒</mo></mtd><mtd columnalign="left"><mrow><mrow><mrow><mrow><mrow><mi>u</mi><mo>'</mo></mrow><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>ɹ</mi></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mi>u</mi><mo>'</mo></mrow><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow></mrow><mspace width="4px"></mspace><mo>⇒</mo><mspace width="4px"></mspace><mrow><mrow><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>ɹ</mi></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><msubsup><mi>c</mi><mn>1</mn><mrow><mo>-</mo><mi>γ</mi></mrow></msubsup><msubsup><mi>c</mi><mn>2</mn><mrow><mo>-</mo><mi>γ</mi></mrow></msubsup></mfrac><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msup><mrow><mo>(</mo><mfrac><msub><mi>c</mi><mn>2</mn></msub><msub><mi>c</mi><mn>1</mn></msub></mfrac><mo>)</mo></mrow><mi>γ</mi></msup></mrow><mspace width="4px"></mspace><mo>⇒</mo><mspace width="4px"></mspace><munder><mrow><mrow><msub><mi>c</mi><mn>2</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>c</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msup><mrow><mo>[</mo><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>r</mi><mo>)</mo></mrow><mo>]</mo></mrow><mfrac><mn>1</mn><mi>γ</mi></mfrac></msup></mrow></mrow></mrow><munder><mo>⏟</mo><mrow style=""><mtext>Euler Equation</mtext></mrow></munder></munder></mrow></mtd></mtr></mtable></math><hr><math display="block"><mtable><mtr><mtd columnalign="right"><mrow><msub><mi>𝔏</mi><msub><mi>c</mi><mn>1</mn></msub></msub><mspace width="4px"></mspace><mo>∧</mo><mspace width="4px"></mspace><msub><mi>𝔏</mi><msub><mi>c</mi><mn>2</mn></msub></msub><mspace width="4px"></mspace><mo>∧</mo><mspace width="4px"></mspace><msub><mi>𝔏</mi><mi>λ</mi></msub></mrow></mtd><mtd><mo>⇒</mo></mtd><mtd columnalign="left"><mrow><mrow><msub><mi>f</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>y</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>y</mi><mn>2</mn></msub><mi>ɹ</mi></mfrac></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>c</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><mrow><msub><mi>c</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msup><mrow><mo>[</mo><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>r</mi><mo>)</mo></mrow><mo>]</mo></mrow><mfrac><mn>1</mn><mi>γ</mi></mfrac></msup></mrow><mi>ɹ</mi></mfrac></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>c</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msup><mrow><mo>[</mo><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>r</mi><mo>)</mo></mrow><mo>]</mo></mrow><mfrac><mn>1</mn><mi>γ</mi></mfrac></msup><mi>ɹ</mi></mfrac><mo>)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow></mrow></mtd><mtd><mo>⇒</mo></mtd><mtd columnalign="left"><mrow><msub><mi>c</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mfrac><mrow><msub><mi>f</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>y</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>y</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msup><mi>ɹ</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow><mrow><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msup><mrow><mo>[</mo><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>r</mi><mo>)</mo></mrow><mo>]</mo></mrow><mfrac><mn>1</mn><mi>γ</mi></mfrac></msup><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msup><mi>ɹ</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></mfrac><mspace width="4px"></mspace><mo>⇒</mo><mspace width="4px"></mspace><mrow><msubsup><mi>c</mi><mn>1</mn><mo>*</mo></msubsup><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><mrow><mrow><mi>ɹ</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>f</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>y</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>y</mi><mn>2</mn></msub></mrow><mrow><mi>ɹ</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msup><mrow><mo>[</mo><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>r</mi><mo>)</mo></mrow><mo>]</mo></mrow><mfrac><mn>1</mn><mi>γ</mi></mfrac></msup></mrow></mfrac></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow></mrow></mtd><mtd><mo>⇒</mo></mtd><mtd columnalign="left"><mrow><msubsup><mi>c</mi><mn>2</mn><mo>*</mo></msubsup><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msubsup><mi>c</mi><mn>1</mn><mo>*</mo></msubsup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msup><mrow><mo>[</mo><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>r</mi><mo>)</mo></mrow><mo>]</mo></mrow><mfrac><mn>1</mn><mi>γ</mi></mfrac></msup></mrow></mrow></mtd></mtr></mtable></math></div></div></div><figcaption>Solving Larangian</figcaption></figure></div></div>"`;
+
+exports[`app(unsw::2102::07.1).widgets > empiricalEvidence 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Empirical Evidence on Consumption</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C16 P472)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="c2 pre--c2"><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Evidence from Individual Households</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C16 P472)</strong></span></div><p>
+          Determinants of consumption at the household level is one of the
+          most studied areas in modern macroeconomics. Households are
+          <strong>Heterogeneous</strong>, meaning we can come up with a common
+          universal household measure that can be applied to all households.
+          Some may have similar or the same marginal perpensity to consume at
+          a point in time but there is no single measure of the <strong>marginal
+          Perpensity to consume</strong>.
+        </p><blockquote>
+          The microeconomics side of this is very messy. For each countries
+          the effect seems to be between 25 to 30 percent.
+        </blockquote><p>
+          More generally:
+        </p><ol style="margin-block: 0px;"><li>
+            The euler equation and permanent-income hypothesis provide a
+            useful description of the consumption behaviour of many
+            households, particullarly of those with above average wealth.
+          </li><li>
+            Some households (especially low income) behave as if they have
+            borrowing constraints, or engage in precautionary savings.
+          </li><li>
+            Lastly there are many anomalies where the wheels fall
+            off the neclassical consumption model.
+          </li></ol><p>
+          <strong>Behaviour economics</strong> is one of the most active areas
+          of research in the past decade. With its fusion of economics,
+          psychology and neuroscience it is helping us gain a better
+          idea of how indivisuals make eocnomic decisions.
+        </p></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Aggregate Evidence</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C16 P474)</strong></span></div><p>
+          Since the 1970s consumption as part of GDP has
+          risen from 60% of GDP to 68%.
+        </p><p>
+          In terms of what changed, part of the answer lies in
+          increased borrowing by households. Since the 1970s
+          household debt has risen from 50% of GDP to about 67%
+          of GDP by the 2000s. As of 2009 it reached nearly 100%,
+          the GFC followed some time after. The time Since 2009
+          has been one of the sharpest declines in household debt
+          to GDP (we call the this decrease <strong>deleveraging</strong>).
+        </p><p>
+          This rise in household debt was coincided with a decrease
+          in a large steady declince in the <strong>personal savings rate</strong>.
+          The personal savings rate is the ratio between personal savings
+          and disposable income (as portions of income after paying taxes).
+        </p><p>
+          One of the more widely held views is that gains in the stock
+          market have reduced the need for additional saving. Additionally
+          large gains in real estate in the 1980-1990s reduced the need
+          for personal savings. Consist with that suggestion we've seen the
+          rate of personal savings increase since the GFC.
+        </p></div></div></div></div>"
+`;
+
+exports[`app(unsw::2102::07.1).widgets > intro 1`] = `"<div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>Consumption<br><small style="color: rgb(170, 170, 255);">ECON2102, W7, Lecture 1</small></h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li>Chapter 16</li></ul></div></div></aside></div></div>"`;
+
+exports[`app(unsw::2102::07.1).widgets > introduction 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Introduction</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C16 P461)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><p>
       In the <strong>neoclassical consumption model</strong>, individuals choose
       consumption at each moment in time to maximize a lifetime utility function
       that depends on current and future consumption. People recognize that
       income in the future may differ from income today, and such differences
       influence consumption today.
-    </p></div></div></div><div class="widget-container document" id="test-widget-2" style="grid-column: span 2;"><style id="test-widget-2-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>The Neoclassical Consumption Model</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C16 P461)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p>
-      In the neoclassical consumption model we can simply things by
-      thinking of time as involving only two periods:
-      <strong>today and the future</strong>.
-    </p><ul class="no-item-padding" style="margin-block: 0px;"><li>People may earn income today and in the future</li><li>People consume today and in the future</li><li>People have to decide how much to consume today versus in the future</li></ul><p>
-      This is the essence of the neoclassical model, and we model this with
-      two main elements, an <strong>intertemporal budget constraint</strong> and a
-      <strong>utility function</strong>.
-    </p><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>The Intertemporal Budget Constraint</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C16 P461)</strong></span></div><div style="--fontsize-math-m: 12px"><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mrow><msub><mi>c</mi><mtext>today</mtext></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mo>(</mo><msub><mi>f</mi><mtext>future</mtext></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>f</mi><mtext>today</mtext></msub><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msub><mi>y</mi><mtext>today</mtext></msub></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>c</mi><mtext>future</mtext></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>y</mi><mtext>future</mtext></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi><mo>)</mo></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>f</mi><mtext>future</mtext></msub></mrow></mrow></mtd></mtr></mtable></math><figcaption>consumption plus saving equals income</figcaption></figure></div><p>
-          Above is a budget constraint, they mean
-        </p><ol class="no-item-padding" style="margin-block: 0px;"><li>The first equation represents today</li><li>The second equation represents the future</li></ol><div style="--fontsize-math-m: 12px"><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mrow><msub><mi>c</mi><mtext>today</mtext></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>c</mi><mtext>future</mtext></msub><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi><mo>)</mo></mrow></mfrac></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>f</mi><mtext>today</mtext></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>y</mi><mtext>today</mtext></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>y</mi><mtext>future</mtext></msub><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi><mo>)</mo></mrow></mfrac></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mtext>present value of consumption</mtext></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><munder><mrow><mrow><mtext>financial wealth</mtext><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mtext>human wealth</mtext></mrow></mrow><munder><mo>⏟</mo><mrow style=""><mtext>total wealth</mtext></mrow></munder></munder></mtd></mtr></mtable></math><figcaption>Intertemporal budget constraint</figcaption></figure></div><p>
-          This equation says that the present discounted value of consumption
-          must equal total wealth. It includes both <strong>financial wealth</strong>
-          (todays wealth), and <strong>human wealth</strong> (income today and
-          present discounted value of future income).
-        </p><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Utility</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C16 P462)</strong></span></div><p>
-          Consumption delivers utility through a utility function. For example,
-          if someone consumes some amount <strong>c</strong> in a given period, we
-          assume that he receives <strong>u(c)</strong> units of utility, sometimes
-          called <strong>“utils”</strong>.
-        </p><p>
-          Consumption exhibits diminishing marginal utility: each additional
-          unit of consumption raises utility by a smaller than the last unit
-          of consumption. This applies to all kinds of consumption.
-        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>U</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mi>u</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mtext>today</mtext></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mi>u</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mtext>future</mtext></msub><mo>)</mo></mrow></mrow></mrow></mrow></mrow></math><figcaption>Lifetime utility function</figcaption></figure><p>
-          The lifetime utility depends on how much he consumes today and
-          how much in the future. The parameter <strong>β</strong> is some number
-          such as 1.0/0.9 that captures the weight that the consumer places
-          on the future, relative to today.
-        </p><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><details><summary>Thought bubble on β</summary><br><p>
-            Do we understand the distribution of β in the population?
-            I was interested to know more on this but the lecturer
-            said not to think about it too hard because we know very
-            little about the behaviour of consumption in reality.
-          </p></details></div><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Choosing Consumption to Maximize Utility</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C16 P463)</strong></span></div><p>
-          The model assumes consumers will choose their consumption
-          so as to maximisse utility subject to their budget constraint.
-        </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mrow><munder><mi>max</mi><mrow><msub><mi>c</mi><mtext>today</mtext></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>c</mi><mtext>future</mtext></msub></mrow></munder><mspace width="8px"></mspace><mi>U</mi></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mi>u</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mtext>today</mtext></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mi>u</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mtext>future</mtext></msub><mo>)</mo></mrow></mrow></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mi>X̄</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>c</mi><mtext>today</mtext></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mo>(</mo><mfrac><msub><mi>c</mi><mtext>future</mtext></msub><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi><mo>)</mo></mrow></mfrac><mo>)</mo></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mi>X̄</mi></mtd><mtd columnalign="center"><mo>≡</mo></mtd><mtd columnalign="left"><mrow><msub><mi>f</mi><mtext>today</mtext></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>y</mi><mtext>today</mtext></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>y</mi><mtext>future</mtext></msub><mrow><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi></mrow></mfrac></mrow></mtd></mtr></mtable></math><figcaption>Utility maximisation</figcaption></figure><p>
-          <strong>X̄</strong> denotes total wealth which is the sum of financial
-          wealth and human wealth. Solving this can be done with a bit
-          of calculus.
-        </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right right center left"><mtd columnalign="right"><munder><mi>max</mi><msub><mi>c</mi><mtext>today</mtext></msub></munder></mtd><mtd columnalign="right"><mrow><mrow><mi>u</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mtext>today</mtext></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mi>u</mi><mspace width="2px"></mspace><mrow><mo>[</mo><mrow><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi><mo>)</mo></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mrow><mi>X̄</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>c</mi><mtext>today</mtext></msub></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow></mrow></mrow></mrow></mtd></mtr><mtr columnalign="right right center left"><mtd columnalign="right"><mrow></mrow></mtd><mtd columnalign="right"><mrow><mrow><msup><mi>u</mi><mo>′</mo></msup><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mtext>today</mtext></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><msup><mi>u</mi><mo>′</mo></msup><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mtext>future</mtext></msub><mo>)</mo></mrow></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi><mo>)</mo></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr></mtable></math><figcaption>Solving consumption maximisation</figcaption></figure><p>This expression is called the Euler equation for consumption.</p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><msup><mi>u</mi><mo>′</mo></msup><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mtext>today</mtext></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi><mo>)</mo></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><msup><mi>u</mi><mo>′</mo></msup><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mtext>future</mtext></msub><mo>)</mo></mrow></mrow></mrow></mrow></math><figcaption>Euler Equation, indifference</figcaption></figure><p>
-          The Euler equation essentially says that the consumer must be
-          indifferent between consuming one more unit today on the one hand
-          and saving that unit and consuming it in the future on the other.
-        </p></div><div class="container pre--container"><aside class="infobox"><h3 class="infobox-name">💡 Legend</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>R</strong>: Real Interest Rate</li><li><strong>f</strong>: Financial wealth</li><li><strong>y</strong>: Labour Income</li><li><strong>c</strong>: Consumption</li></ul></div></div></aside><dl><dt>Intertemporal Budget Constraint</dt><dd>Says that the present discounted value of consumption must equal <strong>total wealth</strong></dd><dt>Total Wealth</dt><dd>A combination of <strong>financial wealth</strong> and <strong>human wealth</strong></dd><dt>Financial Wealth</dt><dd>
-            This is expressed as <strong>f<sub>today</sub></strong>, and is generally stuff
-            such as savings, stock, bonds, and other financial assets.
-          </dd><dt>Human Wealth</dt><dd>
-            The present discounted value of labour income, also expressed as
-            <strong>f<sub>future</sub></strong>.
-          </dd><dt>Utility Function</dt><dd>A function form for expressing utility received from consumption.</dd><dt>Utils</dt><dd>Units of Utility, and how utility from consumption is measured.</dd><dt>Diminishing marginal utilities</dt><dd>
-            The way in how the next unit of consumptions results in less
-            additional utility the unit act of consumption.
-          </dd></dl><aside class="infobox"><h3 class="infobox-name">💡 Legend</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>β</strong>: weight placed on the future</li><li><strong>X̄</strong>: Totl welaht over lifetime</li></ul></div></div></aside><dl><dt>Substitution effect</dt><dd>TODO</dd><dt>Income effect</dt><dd>TODO</dd></dl><aside class="infobox"><h3 class="infobox-name">💡 Interpreting β</h3><div class="infobox-body"><div class="container"><ul style="padding-left: 16px"><li>When <strong>β = 1</strong>, utility from consumption today is equal from comsumption in the future</li><li>When <strong>β &lt; 1</strong>, utility from consumption today is worth more than in the future</li><li>When <strong>β &gt; 1</strong>, utility from consumption in the future is worth more than in the present</li></ul></div></div></aside></div></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Solving the Euler: Log Utility</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C16 P465)</strong></span></div><div class="c2 pre--c2"><div class="container pre--container"><p>
-            A common choice for the consumption curve is the logarithmic
-            function given its deminishing returns. It has a nice perk
-            of being easy to derive <strong>u'(c) = 1/c</strong>.
-          </p><p>
-            Here is the euler function written using the log
-            implementation of consumption, and rearranged to
-            get the ratio.
-          </p></div><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mfrac><mn>1</mn><msub><mi>c</mi><mtext>today</mtext></msub></mfrac></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi><mo>)</mo></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mfrac><mn>1</mn><msub><mi>c</mi><mtext>future</mtext></msub></mfrac></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mfrac><msub><mi>c</mi><mtext>future</mtext></msub><msub><mi>c</mi><mtext>today</mtext></msub></mfrac></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi><mo>)</mo></mrow></mrow></mtd></mtr></mtable></math><figcaption>Solving log utility</figcaption></figure></div><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Solving the Euler: Log Utility at β = 1</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C16 P466)</strong></span></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
-            The solved equation suggests that consumers choose their consumption
-            so that the growth rate of consumption is the product of the
-            discount parameter and the interest rate that he can earn on his
-            saving. It also suggests:
-          </p><ul style="margin-block: 0px;"><li>
-              A higher interest rate raises the return to saving, and
-              consumption growth is faster
-            </li><li>
-              If the consumer is impatient, they may places less weight
-              on future utility (a lower b), and consumption growth is
-              lower.
-            </li></ul><p>
-            It also suggests whey interest rates and growth rates
-            are similar numbers.
-          </p></div><figure class="pre--horizontal-shadow"><math style="--fontsize-math-m: 14px" display="block"><mtable><mtr columnalign="right right center left"><mtd columnalign="right"><mtext style="font-weight: 900">Where</mtext></mtd><mtd columnalign="right"><mfrac><msub><mi>c</mi><mtext>future</mtext></msub><msub><mi>c</mi><mtext>today</mtext></msub></mfrac></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi><mo>)</mo></mrow></mrow></mtd></mtr><mtr columnalign="right right center left"><mtd columnalign="right"><mrow></mrow></mtd><mtd columnalign="right"><mi>X̄</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>c</mi><mtext>today</mtext></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>c</mi><mtext>future</mtext></msub><mrow><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi></mrow></mfrac></mrow></mtd></mtr><mtr columnalign="right right center left"><mtd columnalign="right"><mrow></mrow></mtd></mtr><mtr columnalign="right right center left"><mtd columnalign="right"><mrow></mrow></mtd></mtr><mtr columnalign="right right center left"><mtd columnalign="right"><mrow></mrow></mtd></mtr><mtr columnalign="right right center left"><mtd columnalign="right"><mtext style="font-weight: 900">Let</mtext></mtd><mtd columnalign="right"><msub><mi>c</mi><mtext>today</mtext></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>X̄</mi></mrow></mtd></mtr><mtr columnalign="right right center left"><mtd columnalign="right"><mrow></mrow></mtd><mtd columnalign="right"><msub><mi>c</mi><mtext>future</mtext></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi><mo>)</mo></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>X̄</mi></mrow></mtd></mtr></mtable></math><figcaption>Solving consumption: β is 1</figcaption></figure></div><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: explain, the Euler equation explains how interest rates and growth rates are linked</p><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>The Effect of a Rise in R on Consumption</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C16 P467)</strong></span></div><p>
-        How does consumption respond to a rise in the interest rate?
-        A higher interest rate will reduce this present value, therefore
-        reducing consumption in the case of log utility. This force is called
-        the wealth effect of a higher interest rate, because it works through
-        the total wealth term.
-      </p><ul class="no-item-padding" style="margin-block: 0px;"><li>
-          <strong>The substitution effect</strong> of a higher interest rate is that
-          current consumption is now more expensive (because saving will lead
-          to even more consumption in the future), so consumers will tend to
-          reduce their consumption today.
-        </li><li>
-          <strong>The income effect</strong> says that consumers are now richer
-          because their current saving leads to more income in the future
-          which makes them want to consume more today.
-        </li></ul><p>A higher interest rate can either raise or lower consumption.</p></div></div></div></div><div class="widget-container document" id="test-widget-3" style="grid-column: span 2;"><style id="test-widget-3-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Lessons from the Neoclassical Model</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C16 P467)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>The Permanent-Income Hypothesis</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C16 P467)</strong></span></div><p>
+    </p></div></div>"
+`;
+
+exports[`app(unsw::2102::07.1).widgets > lessonsFromModel 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Lessons from the Neoclassical Model</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C16 P467)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>The Permanent-Income Hypothesis</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C16 P467)</strong></span></div><p>
           Aspects of the <strong>Permanent-Income Hypothesis</strong> can be
           expressed as a constraint on <strong>X̄</strong> suggesting
           consumption is propotional to a consumers overall wealth.
@@ -258,22 +78,7 @@ exports[`app(unsw::2102::07.1).snapshot > should match snapshots 1`] = `
           smooth their income over time, this suggests a period between
           two periods should resemble an average of the two, instead of
           precisely along the utility curve.
-        </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="left right center left"><mtd columnalign="left"><mtext>General</mtext></mtd><mtd columnalign="right"><mrow><mtext>𝔼</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msup><mi>n</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow><msub><mi>c</mi><mi>i</mi></msub></mrow></mrow><mo>)</mo></mrow></mrow></mtd></mtr><mtr columnalign="left right center left"><mtd columnalign="left"><mrow></mrow></mtd></mtr><mtr columnalign="left right center left"><mtd columnalign="left"><mtext>Two periods</mtext></mtd><mtd columnalign="right"><mrow><mtext>𝔼</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>c</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><msub><mi>c</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>c</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac></mtd></mtr></mtable></math><figcaption>Average utilty between 2 periods (c₁, c₂)</figcaption></figure><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Ricardian Equivalence (RE)</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C16 P469)</strong></span></div><blockquote>Ricardian Equivalence suggest <strong>y</strong> is as income <strong>after taxes</strong>.</blockquote><p>
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="left right center left"><mtd columnalign="left"><mtext>General</mtext></mtd><mtd columnalign="right"><mrow><mtext>𝔼</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msup><mi>n</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow><msub><mi>c</mi><mi>i</mi></msub></mrow></mrow><mo>)</mo></mrow></mrow></mtd></mtr><mtr columnalign="left right center left"><mtd columnalign="left"><mrow></mrow></mtd></mtr><mtr columnalign="left right center left"><mtd columnalign="left"><mtext>Two periods</mtext></mtd><mtd columnalign="right"><mrow><mtext>𝔼</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>c</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><msub><mi>c</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>c</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac></mtd></mtr></mtable></math><figcaption>Average utilty between 2 periods (c₁, c₂)</figcaption></figure><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Ricardian Equivalence (RE)</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C16 P469)</strong></span></div><blockquote>Ricardian Equivalence suggest <strong>y</strong> is as income <strong>after taxes</strong>.</blockquote><p>
           The implication of the <strong>Ricardian Equivalence</strong> suggests
           that <strong>Taxes</strong> must be subtracted from the right
           hand side of the intertemporal budget constraint.
@@ -284,22 +89,7 @@ exports[`app(unsw::2102::07.1).snapshot > should match snapshots 1`] = `
           Ricardian equivalence also suggests a change in the timing of taxes does not
           affect consumption. A tax cut today, financed by an increase in taxes
           in the future, will not affect consumption.
-        </p><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Borrowing Constraints</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C16 P469)</strong></span></div><p>
+        </p><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Borrowing Constraints</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C16 P469)</strong></span></div><p>
           A key assumption of the neoclassical model is that Irving can freely
           save or borrow at the <strong>market interest rate R</strong>. This describes
           the opportunities available to many consumers however it doesn't
@@ -346,22 +136,7 @@ exports[`app(unsw::2102::07.1).snapshot > should match snapshots 1`] = `
             It can also break down when the tax cuts are given
             to people who differ from the people paying the higher
             taxes. This can happen because of:
-          </p><ol style="margin-block: 0px;"><li>A Progressive tax system.</li><li>A tax cut paid for by higher taxes on future generations.</li></ol></div></div></aside></div></div><div class="c2 pre--c2"><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Consumption as a Random Walk</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C16 P470)</strong></span></div><blockquote>
+          </p><ol style="margin-block: 0px;"><li>A Progressive tax system.</li><li>A tax cut paid for by higher taxes on future generations.</li></ol></div></div></aside></div></div><div class="c2 pre--c2"><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Consumption as a Random Walk</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C16 P470)</strong></span></div><blockquote>
           See <a href="https://www.jstor.org/stable/1840393" target="_blank">Robert E. Hall (1978)</a>.
         </blockquote><p>
           What happens when income is uncertain? The neoclassical
@@ -383,22 +158,7 @@ exports[`app(unsw::2102::07.1).snapshot > should match snapshots 1`] = `
           Due to the nature of loss adversion, the magnitude of a
           response to a possible promotion will be smaller than the
           magnitude of a response to the posiblity of losing a job.
-        </p></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Precautionary Saving</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C16 P471)</strong></span></div><blockquote>Read more <a href="https://www.aeaweb.org/articles?id=10.1257%2Fjep.15.3.23" target="_blank">here</a>.</blockquote><p>
+        </p></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Precautionary Saving</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C16 P471)</strong></span></div><blockquote>Read more <a href="https://www.aeaweb.org/articles?id=10.1257%2Fjep.15.3.23" target="_blank">here</a>.</blockquote><p>
           This is permissitic response to income uncertainty,
           in that consumers may save to hedge against the possibility
           of a large drop in income, perhaps associated with unemployment
@@ -417,7 +177,7 @@ exports[`app(unsw::2102::07.1).snapshot > should match snapshots 1`] = `
           consumer's consumption may be especially sensitive to their
           current income. This adds additional variance to a hypothetical
           spread of possible values of <strong>β</strong>.
-        </p></div></div></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><details><summary>💭 Information dynamics</summary><br><p>
+        </p></div></div></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><details><summary>💭 Information dynamics</summary><br><p>
       I wonder if you can simulate information dynamics
       over time through a population of different actors
       to simulate this kind of thing. I imagine without
@@ -425,110 +185,101 @@ exports[`app(unsw::2102::07.1).snapshot > should match snapshots 1`] = `
       quite the task and be an incredibly speculative use
       of time given the number assumptions you'd need to
       make before you start modelling any outcomes.
-    </p></details></div></div></div><div class="widget-container document" id="test-widget-4" style="grid-column: span 2;"><style id="test-widget-4-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Empirical Evidence on Consumption</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C16 P472)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 pre--c2"><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Evidence from Individual Households</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C16 P472)</strong></span></div><p>
-          Determinants of consumption at the household level is one of the
-          most studied areas in modern macroeconomics. Households are
-          <strong>Heterogeneous</strong>, meaning we can come up with a common
-          universal household measure that can be applied to all households.
-          Some may have similar or the same marginal perpensity to consume at
-          a point in time but there is no single measure of the <strong>marginal
-          Perpensity to consume</strong>.
-        </p><blockquote>
-          The microeconomics side of this is very messy. For each countries
-          the effect seems to be between 25 to 30 percent.
-        </blockquote><p>
-          More generally:
-        </p><ol style="margin-block: 0px;"><li>
-            The euler equation and permanent-income hypothesis provide a
-            useful description of the consumption behaviour of many
-            households, particullarly of those with above average wealth.
-          </li><li>
-            Some households (especially low income) behave as if they have
-            borrowing constraints, or engage in precautionary savings.
-          </li><li>
-            Lastly there are many anomalies where the wheels fall
-            off the neclassical consumption model.
-          </li></ol><p>
-          <strong>Behaviour economics</strong> is one of the most active areas
-          of research in the past decade. With its fusion of economics,
-          psychology and neuroscience it is helping us gain a better
-          idea of how indivisuals make eocnomic decisions.
-        </p></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Aggregate Evidence</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C16 P474)</strong></span></div><p>
-          Since the 1970s consumption as part of GDP has
-          risen from 60% of GDP to 68%.
+    </p></details></div></div>"
+`;
+
+exports[`app(unsw::2102::07.1).widgets > neoclassicalModel 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>The Neoclassical Consumption Model</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C16 P461)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><p>
+      In the neoclassical consumption model we can simply things by
+      thinking of time as involving only two periods:
+      <strong>today and the future</strong>.
+    </p><ul class="no-item-padding" style="margin-block: 0px;"><li>People may earn income today and in the future</li><li>People consume today and in the future</li><li>People have to decide how much to consume today versus in the future</li></ul><p>
+      This is the essence of the neoclassical model, and we model this with
+      two main elements, an <strong>intertemporal budget constraint</strong> and a
+      <strong>utility function</strong>.
+    </p><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>The Intertemporal Budget Constraint</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C16 P461)</strong></span></div><div style="--fontsize-math-m: 12px;"><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mrow><msub><mi>c</mi><mtext>today</mtext></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mo>(</mo><msub><mi>f</mi><mtext>future</mtext></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>f</mi><mtext>today</mtext></msub><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msub><mi>y</mi><mtext>today</mtext></msub></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>c</mi><mtext>future</mtext></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>y</mi><mtext>future</mtext></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi><mo>)</mo></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>f</mi><mtext>future</mtext></msub></mrow></mrow></mtd></mtr></mtable></math><figcaption>consumption plus saving equals income</figcaption></figure></div><p>
+          Above is a budget constraint, they mean
+        </p><ol class="no-item-padding" style="margin-block: 0px;"><li>The first equation represents today</li><li>The second equation represents the future</li></ol><div style="--fontsize-math-m: 12px;"><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mrow><msub><mi>c</mi><mtext>today</mtext></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>c</mi><mtext>future</mtext></msub><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi><mo>)</mo></mrow></mfrac></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>f</mi><mtext>today</mtext></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>y</mi><mtext>today</mtext></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>y</mi><mtext>future</mtext></msub><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi><mo>)</mo></mrow></mfrac></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mtext>present value of consumption</mtext></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><munder><mrow><mrow><mtext>financial wealth</mtext><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mtext>human wealth</mtext></mrow></mrow><munder><mo>⏟</mo><mrow style=""><mtext>total wealth</mtext></mrow></munder></munder></mtd></mtr></mtable></math><figcaption>Intertemporal budget constraint</figcaption></figure></div><p>
+          This equation says that the present discounted value of consumption
+          must equal total wealth. It includes both <strong>financial wealth</strong>
+          (todays wealth), and <strong>human wealth</strong> (income today and
+          present discounted value of future income).
+        </p><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Utility</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C16 P462)</strong></span></div><p>
+          Consumption delivers utility through a utility function. For example,
+          if someone consumes some amount <strong>c</strong> in a given period, we
+          assume that he receives <strong>u(c)</strong> units of utility, sometimes
+          called <strong>“utils”</strong>.
         </p><p>
-          In terms of what changed, part of the answer lies in
-          increased borrowing by households. Since the 1970s
-          household debt has risen from 50% of GDP to about 67%
-          of GDP by the 2000s. As of 2009 it reached nearly 100%,
-          the GFC followed some time after. The time Since 2009
-          has been one of the sharpest declines in household debt
-          to GDP (we call the this decrease <strong>deleveraging</strong>).
-        </p><p>
-          This rise in household debt was coincided with a decrease
-          in a large steady declince in the <strong>personal savings rate</strong>.
-          The personal savings rate is the ratio between personal savings
-          and disposable income (as portions of income after paying taxes).
-        </p><p>
-          One of the more widely held views is that gains in the stock
-          market have reduced the need for additional saving. Additionally
-          large gains in real estate in the 1980-1990s reduced the need
-          for personal savings. Consist with that suggestion we've seen the
-          rate of personal savings increase since the GFC.
-        </p></div></div></div></div></div><div class="widget-container document" id="test-widget-5" style="grid-column: span 2;"><style id="test-widget-5-styles"></style><div class="container pre--container"><h2>Extra: Deriving utility function using Lagrangean</h2><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><figure class="pre--horizontal-shadow"><div class="grid-responsive-row pre--grid-responsive-row" style="
-      --grid-responsive-row-slim-columns: 1fr;
-      --grid-responsive-row-mobile-columns: 1fr;
-      --grid-responsive-row-desktop-columns: auto 1fr;
-      
-    "><div class="container" style="justify-items: left"><div class="grid-responsive-row pre--grid-responsive-row" style="
-      --grid-responsive-row-slim-columns: 1fr;
-      --grid-responsive-row-mobile-columns: 1fr;
-      --grid-responsive-row-desktop-columns: auto auto;
-      align-items: start;
-    "><math display="block"><mtable><mtr><mtd columnalign="left" columnspan="3"><mtext>Utility and IBC</mtext></mtd></mtr><mtr><mtd columnalign="right"><mrow><msub><mi>c</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>c</mi><mn>2</mn></msub><mi>ɹ</mi></mfrac></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>f</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>y</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>y</mi><mn>2</mn></msub><mi>ɹ</mi></mfrac></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mi>U</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>c</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mi>u</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>β</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mi>u</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow></mrow></mrow></mtd></mtr></mtable></math><math display="block"><mtable><mtr><mtd><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mtext>Where</mtext><mspace width="8px"></mspace><mi>ɹ</mi></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>r</mi></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mi>u</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mi>c</mi><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><msup><mi>c</mi><mrow><mn>1</mn><mo>-</mo><mi>γ</mi></mrow></msup><mrow><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>γ</mi></mrow></mfrac></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mrow><mi>u</mi><mo>'</mo></mrow><mspace width="2px"></mspace><mrow><mo>(</mo><mi>c</mi><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msup><mi>c</mi><mrow><mo>-</mo><mi>γ</mi></mrow></msup></mtd></mtr></mtable></mtd></mtr></mtable></math></div><div class="container pre--container"><math display="block"><mtable><mtr><mtd columnalign="left" columnspan="3"><mtext>Lagrangian</mtext></mtd></mtr><mtr><mtd columnalign="right"><mrow><mi>𝔏</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>c</mi><mn>2</mn></msub><mo>,</mo><mspace width="4px"></mspace><mi>λ</mi><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mrow><mi>u</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mi>u</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow></mrow></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>λ</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>[</mo><mrow><msub><mi>c</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>c</mi><mn>2</mn></msub><mi>ɹ</mi></mfrac></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mo>(</mo><msub><mi>f</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>y</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>y</mi><mn>2</mn></msub><mi>ɹ</mi></mfrac><mo>)</mo></mrow><mo>]</mo></mrow></mrow></mrow></mtd></mtr></mtable></math><math display="block"><mtable><mtr><mtd><mrow></mrow></mtd></mtr><mtr><mtd columnalign="left" columnspan="3"><mtext>First Order Condition</mtext></mtd></mtr><mtr><mtd columnalign="right"><mrow><msub><mi>𝔏</mi><msub><mi>c</mi><mn>1</mn></msub></msub><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>c</mi><mn>2</mn></msub><mo>,</mo><mspace width="4px"></mspace><mi>λ</mi><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mrow><mrow><mrow><mi>u</mi><mo>'</mo></mrow><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>λ</mi></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow><mspace width="4px"></mspace><mo>⇒</mo><mspace width="4px"></mspace><mrow><mrow><mrow><mi>u</mi><mo>'</mo></mrow><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mi>λ</mi></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><msub><mi>𝔏</mi><msub><mi>c</mi><mn>2</mn></msub></msub><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>c</mi><mn>2</mn></msub><mo>,</mo><mspace width="4px"></mspace><mi>λ</mi><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mrow><mrow><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mrow><mi>u</mi><mo>'</mo></mrow><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mfrac><mi>λ</mi><mi>ɹ</mi></mfrac></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow><mspace width="4px"></mspace><mo>⇒</mo><mspace width="4px"></mspace><mrow><mrow><mrow><mrow><mi>u</mi><mo>'</mo></mrow><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>ɹ</mi></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mi>λ</mi></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><msub><mi>𝔏</mi><mi>λ</mi></msub><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>c</mi><mn>2</mn></msub><mo>,</mo><mspace width="4px"></mspace><mi>λ</mi><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mrow><mrow><msub><mi>c</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>c</mi><mn>2</mn></msub><mi>ɹ</mi></mfrac></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mo>(</mo><msub><mi>f</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>y</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>y</mi><mn>2</mn></msub><mi>ɹ</mi></mfrac><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow><mspace width="4px"></mspace><mo>⇒</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>c</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>c</mi><mn>2</mn></msub><mi>ɹ</mi></mfrac></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>f</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>y</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>y</mi><mn>2</mn></msub><mi>ɹ</mi></mfrac></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><msub><mi>𝔏</mi><msub><mi>c</mi><mn>1</mn></msub></msub><mspace width="4px"></mspace><mo>∧</mo><mspace width="4px"></mspace><msub><mi>𝔏</mi><msub><mi>c</mi><mn>2</mn></msub></msub></mrow></mtd><mtd><mo>⇒</mo></mtd><mtd columnalign="left"><mrow><mrow><mrow><mrow><mrow><mi>u</mi><mo>'</mo></mrow><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>ɹ</mi></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mi>u</mi><mo>'</mo></mrow><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow></mrow><mspace width="4px"></mspace><mo>⇒</mo><mspace width="4px"></mspace><mrow><mrow><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>ɹ</mi></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><msubsup><mi>c</mi><mn>1</mn><mrow><mo>-</mo><mi>γ</mi></mrow></msubsup><msubsup><mi>c</mi><mn>2</mn><mrow><mo>-</mo><mi>γ</mi></mrow></msubsup></mfrac><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msup><mrow><mo>(</mo><mfrac><msub><mi>c</mi><mn>2</mn></msub><msub><mi>c</mi><mn>1</mn></msub></mfrac><mo>)</mo></mrow><mi>γ</mi></msup></mrow><mspace width="4px"></mspace><mo>⇒</mo><mspace width="4px"></mspace><munder><mrow><mrow><msub><mi>c</mi><mn>2</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>c</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msup><mrow><mo>[</mo><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>r</mi><mo>)</mo></mrow><mo>]</mo></mrow><mfrac><mn>1</mn><mi>γ</mi></mfrac></msup></mrow></mrow></mrow><munder><mo>⏟</mo><mrow style=""><mtext>Euler Equation</mtext></mrow></munder></munder></mrow></mtd></mtr></mtable></math><hr><math display="block"><mtable><mtr><mtd columnalign="right"><mrow><msub><mi>𝔏</mi><msub><mi>c</mi><mn>1</mn></msub></msub><mspace width="4px"></mspace><mo>∧</mo><mspace width="4px"></mspace><msub><mi>𝔏</mi><msub><mi>c</mi><mn>2</mn></msub></msub><mspace width="4px"></mspace><mo>∧</mo><mspace width="4px"></mspace><msub><mi>𝔏</mi><mi>λ</mi></msub></mrow></mtd><mtd><mo>⇒</mo></mtd><mtd columnalign="left"><mrow><mrow><msub><mi>f</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>y</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>y</mi><mn>2</mn></msub><mi>ɹ</mi></mfrac></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>c</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><mrow><msub><mi>c</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msup><mrow><mo>[</mo><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>r</mi><mo>)</mo></mrow><mo>]</mo></mrow><mfrac><mn>1</mn><mi>γ</mi></mfrac></msup></mrow><mi>ɹ</mi></mfrac></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>c</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msup><mrow><mo>[</mo><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>r</mi><mo>)</mo></mrow><mo>]</mo></mrow><mfrac><mn>1</mn><mi>γ</mi></mfrac></msup><mi>ɹ</mi></mfrac><mo>)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow></mrow></mtd><mtd><mo>⇒</mo></mtd><mtd columnalign="left"><mrow><msub><mi>c</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mfrac><mrow><msub><mi>f</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>y</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>y</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msup><mi>ɹ</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow><mrow><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msup><mrow><mo>[</mo><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>r</mi><mo>)</mo></mrow><mo>]</mo></mrow><mfrac><mn>1</mn><mi>γ</mi></mfrac></msup><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msup><mi>ɹ</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></mfrac><mspace width="4px"></mspace><mo>⇒</mo><mspace width="4px"></mspace><mrow><msubsup><mi>c</mi><mn>1</mn><mo>*</mo></msubsup><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><mrow><mrow><mi>ɹ</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>f</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>y</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>y</mi><mn>2</mn></msub></mrow><mrow><mi>ɹ</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msup><mrow><mo>[</mo><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>r</mi><mo>)</mo></mrow><mo>]</mo></mrow><mfrac><mn>1</mn><mi>γ</mi></mfrac></msup></mrow></mfrac></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow></mrow></mtd><mtd><mo>⇒</mo></mtd><mtd columnalign="left"><mrow><msubsup><mi>c</mi><mn>2</mn><mo>*</mo></msubsup><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msubsup><mi>c</mi><mn>1</mn><mo>*</mo></msubsup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msup><mrow><mo>[</mo><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>r</mi><mo>)</mo></mrow><mo>]</mo></mrow><mfrac><mn>1</mn><mi>γ</mi></mfrac></msup></mrow></mrow></mtd></mtr></mtable></math></div></div></div><figcaption>Solving Larangian</figcaption></figure></div></div></div><hr style="width: 100%; border-color: transparent;">"
+          Consumption exhibits diminishing marginal utility: each additional
+          unit of consumption raises utility by a smaller than the last unit
+          of consumption. This applies to all kinds of consumption.
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>U</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mi>u</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mtext>today</mtext></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mi>u</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mtext>future</mtext></msub><mo>)</mo></mrow></mrow></mrow></mrow></mrow></math><figcaption>Lifetime utility function</figcaption></figure><p>
+          The lifetime utility depends on how much he consumes today and
+          how much in the future. The parameter <strong>β</strong> is some number
+          such as 1.0/0.9 that captures the weight that the consumer places
+          on the future, relative to today.
+        </p><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><details><summary>Thought bubble on β</summary><br><p>
+            Do we understand the distribution of β in the population?
+            I was interested to know more on this but the lecturer
+            said not to think about it too hard because we know very
+            little about the behaviour of consumption in reality.
+          </p></details></div><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Choosing Consumption to Maximize Utility</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C16 P463)</strong></span></div><p>
+          The model assumes consumers will choose their consumption
+          so as to maximisse utility subject to their budget constraint.
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mrow><munder><mi>max</mi><mrow><msub><mi>c</mi><mtext>today</mtext></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>c</mi><mtext>future</mtext></msub></mrow></munder><mspace width="8px"></mspace><mi>U</mi></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mi>u</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mtext>today</mtext></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mi>u</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mtext>future</mtext></msub><mo>)</mo></mrow></mrow></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mi>X̄</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>c</mi><mtext>today</mtext></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mo>(</mo><mfrac><msub><mi>c</mi><mtext>future</mtext></msub><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi><mo>)</mo></mrow></mfrac><mo>)</mo></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mi>X̄</mi></mtd><mtd columnalign="center"><mo>≡</mo></mtd><mtd columnalign="left"><mrow><msub><mi>f</mi><mtext>today</mtext></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>y</mi><mtext>today</mtext></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>y</mi><mtext>future</mtext></msub><mrow><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi></mrow></mfrac></mrow></mtd></mtr></mtable></math><figcaption>Utility maximisation</figcaption></figure><p>
+          <strong>X̄</strong> denotes total wealth which is the sum of financial
+          wealth and human wealth. Solving this can be done with a bit
+          of calculus.
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right right center left"><mtd columnalign="right"><munder><mi>max</mi><msub><mi>c</mi><mtext>today</mtext></msub></munder></mtd><mtd columnalign="right"><mrow><mrow><mi>u</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mtext>today</mtext></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mi>u</mi><mspace width="2px"></mspace><mrow><mo>[</mo><mrow><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi><mo>)</mo></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mrow><mi>X̄</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>c</mi><mtext>today</mtext></msub></mrow><mo>)</mo></mrow></mrow><mo>]</mo></mrow></mrow></mrow></mrow></mtd></mtr><mtr columnalign="right right center left"><mtd columnalign="right"><mrow></mrow></mtd><mtd columnalign="right"><mrow><mrow><msup><mi>u</mi><mo>′</mo></msup><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mtext>today</mtext></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><msup><mi>u</mi><mo>′</mo></msup><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mtext>future</mtext></msub><mo>)</mo></mrow></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi><mo>)</mo></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr></mtable></math><figcaption>Solving consumption maximisation</figcaption></figure><p>This expression is called the Euler equation for consumption.</p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><msup><mi>u</mi><mo>′</mo></msup><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mtext>today</mtext></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi><mo>)</mo></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><msup><mi>u</mi><mo>′</mo></msup><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>c</mi><mtext>future</mtext></msub><mo>)</mo></mrow></mrow></mrow></mrow></math><figcaption>Euler Equation, indifference</figcaption></figure><p>
+          The Euler equation essentially says that the consumer must be
+          indifferent between consuming one more unit today on the one hand
+          and saving that unit and consuming it in the future on the other.
+        </p></div><div class="container pre--container"><aside class="infobox"><h3 class="infobox-name">💡 Legend</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>R</strong>: Real Interest Rate</li><li><strong>f</strong>: Financial wealth</li><li><strong>y</strong>: Labour Income</li><li><strong>c</strong>: Consumption</li></ul></div></div></aside><dl><dt>Intertemporal Budget Constraint</dt><dd>Says that the present discounted value of consumption must equal <strong>total wealth</strong></dd><dt>Total Wealth</dt><dd>A combination of <strong>financial wealth</strong> and <strong>human wealth</strong></dd><dt>Financial Wealth</dt><dd>
+            This is expressed as <strong>f<sub>today</sub></strong>, and is generally stuff
+            such as savings, stock, bonds, and other financial assets.
+          </dd><dt>Human Wealth</dt><dd>
+            The present discounted value of labour income, also expressed as
+            <strong>f<sub>future</sub></strong>.
+          </dd><dt>Utility Function</dt><dd>A function form for expressing utility received from consumption.</dd><dt>Utils</dt><dd>Units of Utility, and how utility from consumption is measured.</dd><dt>Diminishing marginal utilities</dt><dd>
+            The way in how the next unit of consumptions results in less
+            additional utility the unit act of consumption.
+          </dd></dl><aside class="infobox"><h3 class="infobox-name">💡 Legend</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>β</strong>: weight placed on the future</li><li><strong>X̄</strong>: Totl welaht over lifetime</li></ul></div></div></aside><dl><dt>Substitution effect</dt><dd>TODO</dd><dt>Income effect</dt><dd>TODO</dd></dl><aside class="infobox"><h3 class="infobox-name">💡 Interpreting β</h3><div class="infobox-body"><div class="container"><ul style="padding-left: 16px; margin-block: 0px;"><li>When <strong>β = 1</strong>, utility from consumption today is equal from comsumption in the future</li><li>When <strong>β &lt; 1</strong>, utility from consumption today is worth more than in the future</li><li>When <strong>β &gt; 1</strong>, utility from consumption in the future is worth more than in the present</li></ul></div></div></aside></div></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Solving the Euler: Log Utility</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C16 P465)</strong></span></div><div class="c2 pre--c2"><div class="container pre--container"><p>
+            A common choice for the consumption curve is the logarithmic
+            function given its deminishing returns. It has a nice perk
+            of being easy to derive <strong>u'(c) = 1/c</strong>.
+          </p><p>
+            Here is the euler function written using the log
+            implementation of consumption, and rearranged to
+            get the ratio.
+          </p></div><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mfrac><mn>1</mn><msub><mi>c</mi><mtext>today</mtext></msub></mfrac></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi><mo>)</mo></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mfrac><mn>1</mn><msub><mi>c</mi><mtext>future</mtext></msub></mfrac></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mfrac><msub><mi>c</mi><mtext>future</mtext></msub><msub><mi>c</mi><mtext>today</mtext></msub></mfrac></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi><mo>)</mo></mrow></mrow></mtd></mtr></mtable></math><figcaption>Solving log utility</figcaption></figure></div><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Solving the Euler: Log Utility at β = 1</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C16 P466)</strong></span></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+            The solved equation suggests that consumers choose their consumption
+            so that the growth rate of consumption is the product of the
+            discount parameter and the interest rate that he can earn on his
+            saving. It also suggests:
+          </p><ul style="margin-block: 0px;"><li>
+              A higher interest rate raises the return to saving, and
+              consumption growth is faster
+            </li><li>
+              If the consumer is impatient, they may places less weight
+              on future utility (a lower b), and consumption growth is
+              lower.
+            </li></ul><p>
+            It also suggests whey interest rates and growth rates
+            are similar numbers.
+          </p></div><figure class="pre--horizontal-shadow"><math style="--fontsize-math-m: 14px" display="block"><mtable><mtr columnalign="right right center left"><mtd columnalign="right"><mtext style="font-weight: 900">Where</mtext></mtd><mtd columnalign="right"><mfrac><msub><mi>c</mi><mtext>future</mtext></msub><msub><mi>c</mi><mtext>today</mtext></msub></mfrac></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mi>β</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi><mo>)</mo></mrow></mrow></mtd></mtr><mtr columnalign="right right center left"><mtd columnalign="right"><mrow></mrow></mtd><mtd columnalign="right"><mi>X̄</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>c</mi><mtext>today</mtext></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><msub><mi>c</mi><mtext>future</mtext></msub><mrow><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi></mrow></mfrac></mrow></mtd></mtr><mtr columnalign="right right center left"><mtd columnalign="right"><mrow></mrow></mtd></mtr><mtr columnalign="right right center left"><mtd columnalign="right"><mrow></mrow></mtd></mtr><mtr columnalign="right right center left"><mtd columnalign="right"><mrow></mrow></mtd></mtr><mtr columnalign="right right center left"><mtd columnalign="right"><mtext style="font-weight: 900">Let</mtext></mtd><mtd columnalign="right"><msub><mi>c</mi><mtext>today</mtext></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>X̄</mi></mrow></mtd></mtr><mtr columnalign="right right center left"><mtd columnalign="right"><mrow></mrow></mtd><mtd columnalign="right"><msub><mi>c</mi><mtext>future</mtext></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi><mo>)</mo></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>X̄</mi></mrow></mtd></mtr></mtable></math><figcaption>Solving consumption: β is 1</figcaption></figure></div><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: explain, the Euler equation explains how interest rates and growth rates are linked</p><div style="display: grid; grid-template-columns: 1fr auto;"><h4>The Effect of a Rise in R on Consumption</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C16 P467)</strong></span></div><p>
+        How does consumption respond to a rise in the interest rate?
+        A higher interest rate will reduce this present value, therefore
+        reducing consumption in the case of log utility. This force is called
+        the wealth effect of a higher interest rate, because it works through
+        the total wealth term.
+      </p><ul class="no-item-padding" style="margin-block: 0px;"><li>
+          <strong>The substitution effect</strong> of a higher interest rate is that
+          current consumption is now more expensive (because saving will lead
+          to even more consumption in the future), so consumers will tend to
+          reduce their consumption today.
+        </li><li>
+          <strong>The income effect</strong> says that consumers are now richer
+          because their current saving leads to more income in the future
+          which makes them want to consume more today.
+        </li></ul><p>A higher interest rate can either raise or lower consumption.</p></div></div></div>"
 `;

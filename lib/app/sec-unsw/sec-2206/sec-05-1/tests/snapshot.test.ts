@@ -1,15 +1,49 @@
 import { beforeEach, expect, describe, it } from 'vitest';
-import { renderModule } from '@base/runtime/testing/test-multi.js';
-import * as module from '../index.js';
+import { renderWidget } from '@base/runtime/testing/test-multi.js';
+import * as doc from '../doc.js';
 
-describe('app(unsw::2206::05.1).snapshot', () => {
+describe('app(unsw::2206::05.1).widgets', () => {
   beforeEach(() => {
     document.body.innerHTML = '';
   });
 
-  it('should match snapshots', async () => {
-    const element = await renderModule(module, { width: 900 });
-    document.body.appendChild(element);
-    expect(element.innerHTML).toMatchSnapshot();
+  it('intro', () => {
+    const el = renderWidget(doc.intro);
+    expect(el.outerHTML).toMatchSnapshot();
+  });
+
+  it('describingQualitativeInformation', () => {
+    const el = renderWidget(doc.describingQualitativeInformation);
+    expect(el.outerHTML).toMatchSnapshot();
+  });
+
+  it('aSingleDummyIndependentVariable', () => {
+    const el = renderWidget(doc.aSingleDummyIndependentVariable);
+    expect(el.outerHTML).toMatchSnapshot();
+  });
+
+  it('dummyVariablesForMultiCategories', () => {
+    const el = renderWidget(doc.dummyVariablesForMultiCategories);
+    expect(el.outerHTML).toMatchSnapshot();
+  });
+
+  it('dummyInteractions', () => {
+    const el = renderWidget(doc.dummyInteractions);
+    expect(el.outerHTML).toMatchSnapshot();
+  });
+
+  it('binaryDependentVariable', () => {
+    const el = renderWidget(doc.binaryDependentVariable);
+    expect(el.outerHTML).toMatchSnapshot();
+  });
+
+  it('policyAnalysis', () => {
+    const el = renderWidget(doc.policyAnalysis);
+    expect(el.outerHTML).toMatchSnapshot();
+  });
+
+  it('interpretingRegressionResults', () => {
+    const el = renderWidget(doc.interpretingRegressionResults);
+    expect(el.outerHTML).toMatchSnapshot();
   });
 });

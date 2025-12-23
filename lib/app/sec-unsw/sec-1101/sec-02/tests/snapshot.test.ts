@@ -1,15 +1,36 @@
 import { beforeEach, expect, describe, it } from 'vitest';
-import { renderModule } from '@base/runtime/testing/test-multi.js';
-import * as module from '../index.js';
+import { renderWidget } from '@base/runtime/testing/test-multi.js';
+import * as doc from '../doc.js';
 
-describe('app(unsw::1101::02).snapshot', () => {
+describe('app(unsw::1101::02).widgets', () => {
   beforeEach(() => {
     document.body.innerHTML = '';
   });
 
-  it('should match snapshots', async () => {
-    const element = await renderModule(module, { width: 900 });
-    document.body.appendChild(element);
-    expect(element.innerHTML).toMatchSnapshot();
+  it('intro', () => {
+    const el = renderWidget(doc.intro);
+    expect(el.outerHTML).toMatchSnapshot();
+  });
+
+  // example widget requires state.examples - skip for now
+
+  it('quantity', () => {
+    const el = renderWidget(doc.quantity);
+    expect(el.outerHTML).toMatchSnapshot();
+  });
+
+  it('kindsOfCosts', () => {
+    const el = renderWidget(doc.kindsOfCosts);
+    expect(el.outerHTML).toMatchSnapshot();
+  });
+
+  it('elascity', () => {
+    const el = renderWidget(doc.elascity);
+    expect(el.outerHTML).toMatchSnapshot();
+  });
+
+  it('deriveAtcAndAvcFromMC', () => {
+    const el = renderWidget(doc.deriveAtcAndAvcFromMC);
+    expect(el.outerHTML).toMatchSnapshot();
   });
 });

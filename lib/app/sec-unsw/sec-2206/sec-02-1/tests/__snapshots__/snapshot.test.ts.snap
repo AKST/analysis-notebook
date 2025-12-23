@@ -1,7 +1,213 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`app(unsw::2206::02.1).snapshot > should match snapshots 1`] = `
-"<style id="test-styles"></style><div class="widget-container document" id="test-widget-0" style="grid-column: span 2;"><style id="test-widget-0-styles"></style><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>Multi Linear Regression<br><small style="color: #aaaaff">ECON2206, W2-W3, Lecture 1</small></h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li>Chapter 3 of the textbook</li><li><a href="https://en.wikipedia.org/wiki/Gauss–Markov_theorem" target="_blank">Gauss Marko Theorem</a></li><li><a href="https://en.wikipedia.org/wiki/Frisch–Waugh–Lovell_theorem" target="_blank">Frisch–Waugh–Lovell theorem</a></li></ul></div></div></aside></div></div></div><div class="widget-container document" id="test-widget-1" style="grid-column: span 2;"><style id="test-widget-1-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h2>Motivation for Multiple Regression</h2><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+exports[`app(unsw::2206::02.1).widgets > beyondTheScope 1`] = `
+"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><h2>Beyond the Scope of all this</h2><p>
+    For my own sake I am want to document a few things.
+  </p><div class="c2 pre--c2"><div class="container pre--container"><h3>Logit Models</h3><p>You can <a href="https://www.youtube.com/watch?v=iQNRzHKjFw0" target="_blank">watch a video on this here</a>.</p><h4>Why its useful</h4><p>
+      It seems to be useful for modeling the probabiliy of a
+      categorical dependent variable. In this video includes
+      the odds of a car being sold.
+    </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>ln</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mfrac><msub><mi>P</mi><mi>i</mi></msub><mrow><mn>1</mn><mspace width="4px"></mspace><mo>−</mo><mspace width="4px"></mspace><msub><mi>P</mi><mi>i</mi></msub></mrow></mfrac><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>ε</mi><mi>i</mi></msub></mrow></mrow></math><figcaption>Example Logit Model</figcaption></figure></div><div class="container pre--container"><h3>Rnd-Eff Models for Longitudinal Data</h3><p>
+      You can <a href="https://www.youtube.com/watch?v=MOyjGnjAols" target="_blank">watch a video on this here</a>, and read
+      a paper on its applications <a href="https://www.jstor.org/stable/2529876" target="_blank">here</a>.
+    </p><h4>Why its useful</h4><p>
+      The example given in the video explains a scenario where patients in
+      a trial are unlikely to end up having their appointments scheduled for
+      the same time and this model helps control for this irregularity.
+    </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>y</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>b</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>ε</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></mrow></math><figcaption>Random Effects For Longitudinal Data</figcaption></figure></div></div></div>"
+`;
+
+exports[`app(unsw::2206::02.1).widgets > efficiencyOfOLS 1`] = `"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="container pre--container"><h2>Efficiency of OLS: The Gauss-Markov Theorem</h2><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: reread textbook</p></div></div>"`;
+
+exports[`app(unsw::2206::02.1).widgets > estimatingStandardErrorOfOLSEstimators 1`] = `
+"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Estimating σ²: Standard Errors of the OLS Estimators</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C3 P94)</strong></span></div><div class="grid-responsive-row pre--grid-responsive-row" style="--grid-responsive-row-slim-columns: 1fr; --grid-responsive-row-mobile-columns: 1fr; --grid-responsive-row-desktop-columns: auto auto;"><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><msub><mi>û</mi><mi>i</mi></msub></mtd><mtd><mo>=</mo></mtd><mtd><mrow><msub><mi>y</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>2</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub></mrow><mspace width="4px"></mspace><mo>.</mo></mrow></mtd></mtr><mtr columnalign=""><mtd columnalign=""><msup><mi>σ̂</mi><mn>2</mn></msup></mtd><mtd><mo>=</mo></mtd><mtd><mrow><mfrac><mrow><mo>(</mo><mrow><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mspace width="6px"></mspace><msup><msub><mi>û</mi><mi>i</mi></msub><mn>2</mn></msup></mrow><mo>)</mo></mrow><mrow><mi>n</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>k</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mn>1</mn></mrow></mfrac><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mfrac><mi>SSR</mi><mrow><mi>n</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>k</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mn>1</mn></mrow></mfrac><mspace width="4px"></mspace><mo>.</mo></mrow></mrow></mtd></mtr></mtable></math><figcaption>estimating unbiased standard of σ²</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mrow><mtext>Sd</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd><mover><mrow><msqrt><mrow><msup><mi>n</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msup><mrow><mo>(</mo><mrow><msub><mi>x</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>x̄</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mrow><mover><mo>⏞</mo><mrow><mtext>standard deviation</mtext></mrow></mover></mover></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mrow><mtext>Se</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd><mfrac><mi>σ̂</mi><mrow><msqrt><mi>n</mi></msqrt><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mtext>Sd</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msqrt><mrow><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msup><msub><mi>R</mi><mi>j</mi></msub><mn>2</mn></msup></mrow></msqrt></mrow></mfrac></mtd></mtr></mtable></math><figcaption>
+      standard deviation and its relation <br>
+      to the unbiased standard error of σ²
+    </figcaption></figure></div><p>
+      These standard errors are only valid if there is
+      no presense of heteroskedasticity.
+    </p></div></div>"
+`;
+
+exports[`app(unsw::2206::02.1).widgets > expectedOLSEstimators 1`] = `
+"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Expected Values of OLS Estimators</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C3 P79)</strong></span></div><div class="container pre--container"><h3>MLR Assumptions</h3><div class="c2 pre--c2"><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Linear in parameters</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C3 P80)</strong></span></div><p>This is more less the same thing in SLR.</p></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Random Sampling</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C3 P80)</strong></span></div><p>This is more less the same thing in SLR.</p></div></div><div class="c2 pre--c2"><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>No Perfect Colinearity</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C3 P80)</strong></span></div><p>
+          This means, of the mean independent variables
+          there should not be a linear relationship between
+          any 2 or more independent variable. This isn't to
+          say there can't be any correlation the independent
+          variables, they just cannot be perfectly correlated.
+        </p><blockquote>
+          This can happen when one variable is just
+          a multiple of another variable.
+        </blockquote></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Zero Conditional Mean</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C3 P82)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow>E<mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>u</mi><mspace width="4px"></mspace><mo>|</mo><mspace width="4px"></mspace><msub><mi>x</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>,</mo><mspace width="4px"></mspace><msub><mi>x</mi><mn>2</mn></msub><mspace width="4px"></mspace><mo>,</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>,</mo><mspace width="4px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow></math><figcaption>Zero Conditional Mean</figcaption></figure><p>
+          One scenario this can fail is where there any of
+          the regressors doesn't have a linear relationship
+          with y. One such example is when there's a
+          quadratic relationship and the model includes only
+          one of the 2 variables (the linear and squared one).
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mn>2</mn></msub><msup><msub><mi>x</mi><mn>1</mn></msub><mn>2</mn></msup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></mrow></math><figcaption>Quadratic Equation</figcaption></figure></div></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Homoskedacity</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C3 P88)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>u</mi><mspace width="4px"></mspace><mo>|</mo><mspace width="4px"></mspace><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><mo>⋯</mo><mo>,</mo><mspace width="4px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msup><mi>σ</mi><mn>2</mn></msup></mrow></math><figcaption>Homoskedasticity</figcaption></figure><p>
+        In order to have Homoskedacity the variance of the
+        error rate needs to be uniform over the range of
+        values for each regressor.
+      </p></div></div><hr><div class="grid-responsive-row pre--grid-responsive-row" style="--grid-responsive-row-slim-columns: 1fr; --grid-responsive-row-mobile-columns: 1fr; --grid-responsive-row-desktop-columns: auto auto;"><figure class="pre--horizontal-shadow"><math style="font-size: 12px" display="block"><mrow><mrow>E<mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>y</mi><mspace width="4px"></mspace><mo>|</mo><mspace width="4px"></mspace><mi>x</mi></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow></mrow></mrow></math><figcaption>MLR 1, 2, 3, 4</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow>E<mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><mi>j</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn><mo>,</mo><mspace width="4px"></mspace><mn>1</mn><mo>,</mo><mspace width="4px"></mspace><mo>⋯</mo><mo>,</mo><mspace width="4px"></mspace><mi>k</mi></mrow></mrow></math><figcaption>Unbiasedness of OLS</figcaption></figure></div></div>"
+`;
+
+exports[`app(unsw::2206::02.1).widgets > expectedOLSEstimatorsIrrelevantVars 1`] = `
+"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Irrelevant Variables in a regression Model</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C3 P83)</strong></span></div><p>
+    The long and short of this is, it doesn't matter and you're fine if you
+    have irrelevant variables, ultimately they end up with a coefficient of
+    zero and will have no effect.
+  </p><div style="display: grid; grid-template-columns: 1fr auto;"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: document the role of MLR 3</p><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>W3 M, / Class (Slide 12)</strong></span></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Explaination</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>W3 M, / Class (Slide 8)</strong></span></div><ul class="no-item-padding" style="margin-block: 0px;"><li>Say you make a model <ul class="no-item-padding" style="margin-block: 0px;"><li><strong>Y = θ0 + θ1*X1 + θ2*X2 + θ3*X3 + V</strong></li></ul></li><li>Say the True model is <ul class="no-item-padding" style="margin-block: 0px;"><li><strong>Y = B0 + B1*X1 + B2*X2 + U</strong></li></ul></li><li>At the very least there won't be a bias<ul class="no-item-padding" style="margin-block: 0px;"><li>E(U|X1,X2) = 0 =&gt; E(V|X1,X2,X3)</li><li>X3 is irrelevant: θ3 = 0</li></ul></li></ul></div></div>"
+`;
+
+exports[`app(unsw::2206::02.1).widgets > expectedOLSEstimatorsOmittedVariableBias 1`] = `
+"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Omitted Variable Bias</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>W3 M, / Class (Slide 3), Book (C3 P84)</strong></span></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+        Now this is actually a problem, and something we should avoid. It can
+        lead to a litany of issues. Some include biased estimators which either
+        under estimate or overestimate the effect of the specified regressors
+        (especially when there's some level of correlation with the omitted regressor).
+      </p><p>
+        The earlier section on <strong>Comparing SLR &amp; MLR regressors
+        Estimates</strong> explain some concepts used in this section (such as
+        β̃₁ or δ̃₁).
+      </p></div><aside class="infobox"><h3 class="infobox-name">💡 Nomenclature</h3><div class="infobox-body"><div class="container"><p>This is also called:</p><ul class="no-item-padding" style="margin-block: 0px;"><li>Excluding a relevant variable</li><li>underspecifying the model</li></ul><p>
+        Deriving the Bias caused from an important
+        missing variable is called
+        <strong>misspecification analysis</strong>.
+      </p></div></div></aside></div><div class="container pre--container"><h4>Determining Bias</h4><div class="grid-responsive-row pre--grid-responsive-row" style="--grid-responsive-row-slim-columns: 1fr; --grid-responsive-row-mobile-columns: 1fr; --grid-responsive-row-desktop-columns: auto auto;"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></math><figcaption>general MLR with 2 independent vars</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>ỹ</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β̃</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̃</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow></mrow></mrow></math><figcaption>Modeling with missing variable</figcaption></figure></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+          Say the true population model (on the left) has x₁ and
+          x₂ but you unknowning omit x² and end up on the model on
+          the right. Eventually you find out this was the case and
+          recreate your model, but you want to measure how wrong the
+          earlier model was, well reusing the SLR/MLR comparison logic
+          shown on the right you can solve for δ̃₁.
+        </p><p>
+          A summary below is provided to decern the effect of the bias.
+        </p><figure class="pre--horizontal-shadow"><table style="width: 100%;"><thead><tr><th></th><th>Corr(x₁,x₂) &gt; 0</th><th>Corr(x₁,x₂) &lt; 0</th></tr></thead><tbody><tr><td>β₂ &gt; 0</td><td>Positive bias</td><td>Negative bias</td></tr><tr><td>β₂ &lt; 0</td><td>Negative bias</td><td>Positive bias</td></tr></tbody></table><figcaption>Summary of Bias in β̃₁ when x₂ is an Omitted Variable</figcaption></figure></div><div class="container pre--container"><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mi>ỹ</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β̃</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̃</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x̃</mi><mn>1</mn></msub></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mi>ŷ</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>β̃</mi><mn>1</mn></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>δ̃</mi><mn>1</mn></msub></mrow></mrow></mtd></mtr></mtable></math><figcaption>Comparing SLR and MLR Estimates</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mrow>E<mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̃</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow>E<mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>δ̃</mi><mn>1</mn></msub></mrow></mrow><mo>)</mo></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mspace width="0px"></mspace></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow>E<mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow>E<mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>δ̃</mi><mn>1</mn></msub></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mspace width="0px"></mspace></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>δ̃</mi><mn>1</mn></msub></mrow></mrow></mtd></mtr></mtable></math><figcaption>Solving for E(β̃₁)</figcaption></figure></div></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>Bias</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̃</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow>E<mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̃</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>−</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>δ̃</mi><mn>1</mn></msub></mrow></mrow></mrow></math><figcaption>Bias of Omitted Variable</figcaption></figure><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Omitted Variable Bias more general case</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C3 P87)</strong></span></div><p>
+      Measuring Omitted Bias is more difficult the more variables. The
+      omission of an important variable will lead to bias in any variable
+      it has any meaningful correlation with.
+    </p></div></div>"
+`;
+
+exports[`app(unsw::2206::02.1).widgets > expectedOLSEstimatorsVariance 1`] = `
+"<div class="container pre--container"><aside class="infobox"><h3 class="infobox-name">💡 What is J?</h3><div class="infobox-body"><div class="container"><p>
+      When we see a J subscript it generally referrs to the Jth
+      random variable (of a model or dataset). J is choose to
+      differiate from I which is typically used to denote an
+      observations.
+    </p><p><strong>In summmary:</strong></p><ul class="no-item-padding" style="margin-block: 0px;"><li>N denotes the size of a sample or population</li><li>K denotes the number of variables in a dataset or model</li><li>I subscript denotes observation, e.g. observation № I out N</li><li>J subscript denotes variables, e.g. variable № J out K</li></ul></div></div></aside><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Variance of OLS Estimators</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>W3 M, / Class (Slide 14), Book (C3 P88)</strong></span></div><div class="c2 pre--c2"><div class="container pre--container"><h4>Homoskedasticity</h4><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>u</mi><mspace width="4px"></mspace><mo>|</mo><mspace width="4px"></mspace><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><mo>⋯</mo><mo>,</mo><mspace width="4px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msup><mi>σ</mi><mn>2</mn></msup></mrow></math><figcaption>Homoskedasticity</figcaption></figure><p>
+          Homoskedasticity is present when the variance for expected value for
+          the error term does not change with any of the independent variables.
+        </p></div><div class="container pre--container"><h4>Other MLR assumptions</h4><figure class="pre--horizontal-shadow"><math style="font-size: 12px" display="block"><mrow><mrow>E<mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>y</mi><mspace width="4px"></mspace><mo>|</mo><mspace width="4px"></mspace><mi>x</mi></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow></mrow></mrow></math><figcaption>MLR 1, 2, 3, 4</figcaption></figure><p>Reminder of other MLR assumptions.</p></div></div><div class="container pre--container"><div class="container pre--container"><h3>Sampling Variance of estimators</h3><p>
+          When MLR 1, 2, 3, 4, 5 hold the variance of the
+          sampling estimators should resemble something
+          like this.
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><msup><mi>σ</mi><mn>2</mn></msup><mrow><msub><mi>SST</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>−</mo><mspace width="4px"></mspace><msup><msub><mi>R</mi><mi>j</mi></msub><mn>2</mn></msup><mo>)</mo></mrow></mrow></mfrac></mrow></math><figcaption>Sampling Variances of The OLS Slope Estimators</figcaption></figure></div><div style="display: grid; grid-template-columns: 1fr auto;"><p style="color: var(--fg-white-on-blue); background: var(--bg-blue); padding: 8px;"><p><strong>NOTE (on Var(βᵢ) )</strong></p><ul class="no-item-padding" style="margin-block: 0px;"><li>decreases with SSTᵢ</li></ul></p><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>W3 M, / Class (Slide 15)</strong></span></div><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Multicollinearity</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>W3 M, / Class (Slide 16), Book (C3 P89)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><msup><mi>σ</mi><mn>2</mn></msup><mrow><msub><mi>SST</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>−</mo><mspace width="4px"></mspace><msup><msub><mi>R</mi><mi>j</mi></msub><mn>2</mn></msup><mo>)</mo></mrow></mrow></mfrac></mrow></math><figcaption>Sampling Variances of The OLS Slope Estimators</figcaption></figure><div class="c2 pre--c2"><div class="container pre--container"><h4>The Error Variance, σ<sup>2</sup></h4><p>
+            From the above equation <strong>a large σ²</strong> means <strong>larger sampling variances</strong>
+            for the OLS Estimators. Which <strong>put another way means more noise</strong>.
+          </p><p>
+            <strong>Note</strong>, because σ² is a population feature it has nothing to do with
+            the sample size. <strong>It is an unknown component</strong>.
+          </p></div><div class="container pre--container"><h4>Total Sample Variance in , x<sub>j</sub>, SST<sub>j</sub></h4><p>
+            Inversely from the same equation we can derive the idea
+            that the larger the <strong>SST<strong>j</strong></strong> the smaller
+            the variance. I mean take any fraction leave the
+            nominator as is and increase the denominator and watch
+            the resulting value decrease. However <strong>we want to
+            the variance to be as large as possible</strong>.
+          </p><p>
+            The one way we can ensure this is as large as possible is
+            by increasing the size of the sample.
+          </p></div></div><div class="container pre--container"><h4>The linear relationship amoung the independent variables , R<sub>j</sub><sup>2</sup></h4><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><ul class="no-item-padding" style="margin-block: 0px;"><li>Obtaining <strong>R<sub>j</sub><sup>2</sup></strong>, <ul class="no-item-padding" style="margin-block: 0px;"><li>Given a model explain y from K independent variables</li><li>Create a new model to explain the Jth independent variable using the remaining variables</li><li>Compute the <strong>R<sup>2</sup></strong> for that model</li><li><strong>R<sub>j</sub><sup>2</sup></strong> does not appear in SLR, due to need for additional variables</li></ul></li><li>Understanding <strong>R<sub>j</sub><sup>2</sup></strong>, <ul class="no-item-padding" style="margin-block: 0px;"><li>Given a model explain y from 2 independent variables</li><li>Compute the R₂² (<strong>R<sub>j</sub><sup>2</sup></strong> of x₂), with this regression:<ul class="no-item-padding" style="margin-block: 0px;"><li>x₂ = β₀ + β₁x₁ + u</li></ul></li><li>A value of R₂² close to 1 means:<ul class="no-item-padding" style="margin-block: 0px;"><li>Most of the variance in x₂ is explained by x₁</li><li>x₂ and x₁ are highly correlated.</li></ul></li><li>As R₂² gets closer to 1 Var(β̂₂) gets larger:<ul class="no-item-padding" style="margin-block: 0px;"><li>This suggests a high degree of linearity between x₁ and x₂</li><li>This describes multicollinearity</li></ul></li></ul></li></ul><p>
+              Note a case where R₂² gets close to 1, <strong>is not a violation of MLR 1</strong>
+            </p></div><aside class="infobox"><h3 class="infobox-name">💡 R²j</h3><div class="infobox-body"><div class="container"><p>R²j is the R² of the following regression</p><blockquote>Xj = ⍺₀ + ⍺₁X₁ + ... + αₖXₖ + V</blockquote><p>
+      When R²j is high, it brings very
+      little information, this is
+      Multicollinearity.
+    </p></div></div></aside></div><p>
+          Multicolinearity is clearly an observable trait and it can be a
+          problem but it doesn't violate <strong>NONE</strong> of our assumptions.
+          While the extent of the problem is difficult to define all other
+          things being equal it is better to have less correlation between
+          x<strong>j</strong>
+        </p><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><details><summary>Thought bubble — multicolinearity subtraction</summary><br><div class="container pre--container"><p>
+              I wonder if there is a practise where variables with high multicolinearity get
+              trimmed by the portion of their value explainable by other variables (leaving
+              the residual) and using that as a parameter in the model. I guess in order to
+              do that you would need to be fairly confindent in the this multicolinearity
+              relationship, as you'd be:
+            </p><ul class="no-item-padding" style="margin-block: 0px;"><li>estimating (predicted y) values</li><li>based on an estimate (coefficent on the residual)</li><li>derived from an estimation (xⱼ residual)</li><li>derived from estimations (estimated xⱼ)</li><li>from an estimation (estimated coefficent for the model to explain xⱼ with the other independent variables)</li></ul><p>
+              This sounds like alot of assumptions based on
+              the accuracy of the estimates. But it would look
+              like this:
+            </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>ŷ</mi><mi>i</mi></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>1i</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>2i</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>û</mi><mi>i</mi></msub></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>x̂</mi><mi>2i</mi></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β̂</mi><msub><mn>0</mn><mn>2</mn></msub></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><msub><mn>1</mn><mn>2</mn></msub></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>1i</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>ê</mi><mrow><mi>i</mi><mn>2</mn></mrow></msub></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>ŷ</mi><mrow><mi>i</mi><msub><mi>x</mi><mn>2</mn></msub></mrow></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mrow><mn>0</mn><msub><mi>x</mi><mn>2</mn></msub></mrow></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mrow><mn>1</mn><msub><mi>x</mi><mn>2</mn></msub></mrow></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>1i</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mrow><mi>i</mi><mn>2</mn></mrow></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mover><mrow><mrow><mo>(</mo><mrow><msub><mi>x</mi><mi>2i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>x̂</mi><mi>2i</mi></msub></mrow><mo>)</mo></mrow></mrow><mover><mo>⏞</mo><mrow><msub><mi>ê</mi><mrow><mi>i</mi><msub><mi>x</mi><mn>2</mn></msub></mrow></msub></mrow></mover></mover></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>û</mi><mrow><mi>i</mi><msub><mi>x</mi><mn>2</mn></msub></mrow></msub></mrow></mrow></mtd></mtr></mtable></math><figcaption>Fitted value subtraction.</figcaption></figure><hr><p>
+              Note all of this done to cancel out multicolinearity while
+              retaining the portion of xⱼ that explains y. However if most
+              or all values of xⱼ end up being 0 maybe it should be omitted
+              from the model.
+            </p><hr><p>
+              What if instead of subtracting the fitted value
+              we replace x₂ with a function call x₂ which returns
+              a probability density function and the regression
+              that returning a probability density function (or
+              distribution of values). Let me explain.
+            </p><blockquote>
+              ŷ :: (x₁, x₂, ..., xₖ) -&gt; Pdf
+            </blockquote><p>
+              I don't know I just feel like it could be cool to
+              handle probability density functions like numbers
+              compose them, etc, etc.
+            </p></div></details></div></div></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Variance inflation factor (VIF)</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C3 P92)</strong></span></div><div class="grid-responsive-row pre--grid-responsive-row" style="--grid-responsive-row-slim-columns: 1fr; --grid-responsive-row-mobile-columns: 1fr; --grid-responsive-row-desktop-columns: auto auto;"><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>VIF</mi><mi>j</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><mn>1</mn><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msup><msub><mi>R</mi><mi>j</mi></msub><mn>2</mn></msup><mo>)</mo></mrow></mfrac></mrow></math><figcaption>Variance Inflation Factor</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mfrac><msup><mi>σ</mi><mn>2</mn></msup><msub><mi>SST</mi><mi>j</mi></msub></mfrac><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>VIF</mi><mi>j</mi></msub></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><msup><mi>σ</mi><mn>2</mn></msup><mrow><msub><mi>SST</mi><mi>j</mi></msub><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msup><msub><mi>R</mi><mi>j</mi></msub><mn>2</mn></msup><mo>)</mo></mrow></mrow></mfrac></mrow></math><figcaption>Variance of β̂ⱼ expressed using VIFⱼ.</figcaption></figure></div><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: write about this and explain its utility</p></div></div></div>"
+`;
+
+exports[`app(unsw::2206::02.1).widgets > intro 1`] = `"<div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>Multi Linear Regression<br><small style="color: rgb(170, 170, 255);">ECON2206, W2-W3, Lecture 1</small></h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li>Chapter 3 of the textbook</li><li><a href="https://en.wikipedia.org/wiki/Gauss–Markov_theorem" target="_blank">Gauss Marko Theorem</a></li><li><a href="https://en.wikipedia.org/wiki/Frisch–Waugh–Lovell_theorem" target="_blank">Frisch–Waugh–Lovell theorem</a></li></ul></div></div></aside></div></div>"`;
+
+exports[`app(unsw::2206::02.1).widgets > mechanicsOfOLS 1`] = `
+"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Mechanics and interpretations of OLS</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C3 P70)</strong></span></div><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><p>
+        Alot of what applies here to models with 2 variables
+        will apply to a model with any number (<strong>k</strong>)
+        of variables.
+      </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>𝑦̂</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow></mrow></math><figcaption>Estimated Model with 2 regressors</figcaption></figure></div><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mo>{</mo><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>2</mn></mrow></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>y</mi><mi>i</mi></msub><mo>)</mo></mrow><mspace width="6px"></mspace><mo>:</mo><mspace width="6px"></mspace><mi>i</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>1</mn><mo>,</mo><mspace width="4px"></mspace><mn>2</mn><mo>,</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>,</mo><mspace width="4px"></mspace><mi>n</mi><mspace width="2px"></mspace><mo>}</mo></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mspace width="8px"></mspace><msup><mrow><mo>(</mo><msub><mi>y</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><msub><mi>x</mi><mrow><mi>i</mi><mn>2</mn></mrow></msub></mrow><mo>)</mo></mrow><mn>2</mn></msup></mrow></mtd></mtd></mtr></mtable></math><figcaption>OLS for 2 Regressors</figcaption></figure><div style="display: grid; grid-template-columns: 1fr auto;"><h4>First Order Conditions</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C3 P71)</strong></span></div><p>
+      Estimating the coefficients can be solved by
+      multivariable calculus, but in practise you'll get
+      a computer to solve this (but the methodology is
+      based in multi variable calculus). You basically
+      need a set of values for <strong>β̂<sub>1</sub></strong>,
+      <strong>β̂<sub>1</sub></strong>, <strong>β̂<sub>2</sub></strong>, ..., <strong>β̂<sub>k</sub></strong>,
+      that holds the <strong>k</strong> regressors for the
+      below linear constraints.
+    </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mrow><mo>(</mo><msub><mi>y</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mrow><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>y</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub></mrow><mo>)</mo></mrow></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mrow><msub><mi>x</mi><mrow><mi>i</mi><mn>2</mn></mrow></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>y</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub></mrow><mo>)</mo></mrow></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mo>⋮</mo></mtd><mtd columnalign="center"><mspace width="4px"></mspace></mtd><mtd columnalign="left"><mspace width="4px"></mspace></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mrow><msub><mi>x</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>y</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub></mrow><mo>)</mo></mrow></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr></mtable></math><figcaption>OLS Constraint for K regressors</figcaption></figure><p>
+      The above involves K + 1 linear equations with k +
+      unknown coefficients. This is called the
+      <strong>First Order Conditions</strong>. This can be
+      obtained by the <a href="https://en.wikipedia.org/wiki/Method_of_moments_(statistics)" target="_blank">Method of moments</a>.
+      You can solve this by hand if you'd like but I would probably
+      use a computed.
+    </p></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Interpreting OLS Regression Equations</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C3 P71)</strong></span></div><div class="grid-responsive-row pre--grid-responsive-row" style="--grid-responsive-row-slim-columns: 1fr; --grid-responsive-row-mobile-columns: 1fr; --grid-responsive-row-desktop-columns: auto auto;"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>𝑦̂</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>1</mn></msub><msub><mi>x</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>2</mn></msub><msub><mi>x</mi><mn>2</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mi>k</mi></msub><msub><mi>x</mi><mi>k</mi></msub><mspace width="4px"></mspace></mrow></mrow></math><figcaption>Estimated Model with K regressors</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mi>𝛥</mi><mi>ŷ</mi></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mi>𝛥</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mi>𝛥</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mi>𝛥</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow></mrow></mrow></mrow></math><figcaption>Ceteris Paribus interpretation</figcaption></figure></div><p>
+      The Ceteris Paribus interpretation just shows the
+      relationship that exists between the rate of change
+      of <strong>ŷ</strong> with respect to any of its regressors.
+      From here it is quite straight forward to model the
+      impact of changing any of the indivisual regressors.
+    </p><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>OLS Fitted Value and Residuals</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C3 P74)</strong></span></div><div class="grid-responsive-row pre--grid-responsive-row" style="--grid-responsive-row-slim-columns: 1fr; --grid-responsive-row-mobile-columns: 1fr; --grid-responsive-row-desktop-columns: auto auto;"><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>ŷ</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>2</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub></mrow></mrow></mrow></math><figcaption>Fitted values</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>u</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>y</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>ŷ</mi><mi>i</mi></msub></mrow></mrow></math><figcaption>Residuals</figcaption></figure></div></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Goodness of fit and R²</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C3 P76)</strong></span></div><p>These don't really change really</p></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Regression through origin</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C3 P79)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>ỹ</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β̃</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̃</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̃</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow></mrow></mrow></math><figcaption>Regressoin through the origin</figcaption></figure><p>
+        If for whatever reason the <strong>β<sub>1</sub></strong> is 0 then this
+        is typically how'd you represent that. So when any of
+        the regressors are zero when then the predicted value
+        would be zero.
+      </p></div></div><div class="c2 pre--c2"><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>"Partialling Out" Interpretation</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C3 P75)</strong></span></div><figure class="pre--horizontal-shadow"><math style="font-size: 12px" display="block"><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mo>(</mo><mrow><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mrow><msub><mi>r̂</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>y</mi><mi>i</mi></msub></mrow></mrow><mo>)</mo></mrow><mspace width="4px"></mspace><mo>÷</mo><mspace width="4px"></mspace><mrow><mo>(</mo><mrow><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><msup><msub><mi>r̂</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow></math><figcaption>A "Partialling out" Interpretation of multiple regression</figcaption></figure><p>
+        I'mma be real, no clue what the go with this is or
+        why it matters. See <a href="https://en.wikipedia.org/wiki/Frisch–Waugh–Lovell_theorem" target="_blank">Frisch–Waugh–Lovell theorem</a> for more info I guess.
+      </p><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: Figure out why this is relevant</p></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Comparing SLR &amp; MLR Regressor Est</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C3 P75)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mi>ỹ</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β̃</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̃</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x̃</mi><mn>1</mn></msub></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mi>ŷ</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>β̃</mi><mn>1</mn></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>δ̃</mi><mn>1</mn></msub></mrow></mrow></mtd></mtr></mtable></math><figcaption>Comparing SLR and MLR Estimates</figcaption></figure><p>
+        Test by running a model with and without a variable.
+      </p><ul class="no-item-padding" style="margin-block: 0px;"><li>If the partial effect on ŷ is 0, then β̂₂ is 0</li><li>If x₁ and x₂ are uncorrelated then δ̂₁ is 0</li></ul><blockquote>
+        The value of this will be more apparent when we're looking
+        into omitted variable bias.
+      </blockquote></div></div></div>"
+`;
+
+exports[`app(unsw::2206::02.1).widgets > motivationForMultiRegression 1`] = `
+"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><h2>Motivation for Multiple Regression</h2><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
         The main drawback in using a single variable in a linear
         regression, is it is difficult to draw <strong>ceterix paribus</strong>
         conclusions about how <strong>x</strong> affects <strong>y</strong>.
@@ -43,22 +249,7 @@ exports[`app(unsw::2206::02.1).snapshot > should match snapshots 1`] = `
       about this form is you can isolate the change in <strong>y</strong> to
       the different coeffients. Given you have an exhaustive model
       this is fairly compelling.
-    </p></div><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Expressing a quadratic function in MLR</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C3 P68)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mn>2</mn></msub><msup><msub><mi>x</mi><mn>1</mn></msub><mn>2</mn></msup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></mrow></math><figcaption>Quadratic Equation</figcaption></figure><p>
+    </p></div><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Expressing a quadratic function in MLR</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C3 P68)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mn>2</mn></msub><msup><msub><mi>x</mi><mn>1</mn></msub><mn>2</mn></msup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></mrow></math><figcaption>Quadratic Equation</figcaption></figure><p>
           Similar to how logarithmic relations can be
           expressed in a linear regression, now with multiple
           variables you can also express quadratic functions well.
@@ -74,22 +265,7 @@ exports[`app(unsw::2206::02.1).snapshot > should match snapshots 1`] = `
       to <strong>u</strong>. It basically says if there are other variables
       that affect y, it will not flucation over different values of
       the values <strong>x<sub>1</sub></strong> and <strong>x<sub>2</sub></strong>
-    </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mfrac><mrow><mi>𝛥</mi><mi>y</mi></mrow><mrow><mi>𝛥</mi><msub><mi>x</mi><mn>1</mn></msub></mrow></mfrac><mspace width="4px"></mspace><mo>≈</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mn>2</mn><msub><mi>β</mi><mn>2</mn></msub><msub><mi>x</mi><mn>1</mn></msub></mrow></math><figcaption>Interpreting coefficent in quadratic equation MLRs</figcaption></figure></div><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>General MLR Form</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C3 P69)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>1</mn></msub><msub><mi>x</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>2</mn></msub><msub><mi>x</mi><mn>2</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>3</mn></msub><msub><mi>x</mi><mn>3</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mi>k</mi></msub><msub><mi>x</mi><mi>k</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></math><figcaption>General MLR</figcaption></figure></div><aside class="infobox"><h3 class="infobox-name">💡 K convention</h3><div class="infobox-body"><div class="container"><p>k often denotes the number independent vars.</p></div></div></aside></div><p>
+    </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mfrac><mrow><mi>𝛥</mi><mi>y</mi></mrow><mrow><mi>𝛥</mi><msub><mi>x</mi><mn>1</mn></msub></mrow></mfrac><mspace width="4px"></mspace><mo>≈</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mn>2</mn><msub><mi>β</mi><mn>2</mn></msub><msub><mi>x</mi><mn>1</mn></msub></mrow></math><figcaption>Interpreting coefficent in quadratic equation MLRs</figcaption></figure></div><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>General MLR Form</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C3 P69)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>1</mn></msub><msub><mi>x</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>2</mn></msub><msub><mi>x</mi><mn>2</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>3</mn></msub><msub><mi>x</mi><mn>3</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mi>k</mi></msub><msub><mi>x</mi><mi>k</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></math><figcaption>General MLR</figcaption></figure></div><aside class="infobox"><h3 class="infobox-name">💡 K convention</h3><div class="infobox-body"><div class="container"><p>k often denotes the number independent vars.</p></div></div></aside></div><p>
       Despite adding additional parameters, several things
       don't change. <strong>u</strong> is still the error term or
       disturbance, <strong>y</strong> is still the dependent variable,
@@ -108,647 +284,22 @@ exports[`app(unsw::2206::02.1).snapshot > should match snapshots 1`] = `
       To be explict this just means the average value of <strong>u</strong>
       should be <strong>0</strong>. Which implies the error term is not
       contingent on any set of independent variables.
-    </p></div></div></div><div class="widget-container document" id="test-widget-2" style="grid-column: span 2;"><style id="test-widget-2-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Mechanics and interpretations of OLS</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C3 P70)</strong></span></div><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><p>
-        Alot of what applies here to models with 2 variables
-        will apply to a model with any number (<strong>k</strong>)
-        of variables.
-      </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>𝑦̂</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow></mrow></math><figcaption>Estimated Model with 2 regressors</figcaption></figure></div><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mo>{</mo><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>2</mn></mrow></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>y</mi><mi>i</mi></msub><mo>)</mo></mrow><mspace width="6px"></mspace><mo>:</mo><mspace width="6px"></mspace><mi>i</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>1</mn><mo>,</mo><mspace width="4px"></mspace><mn>2</mn><mo>,</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>,</mo><mspace width="4px"></mspace><mi>n</mi><mspace width="2px"></mspace><mo>}</mo></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mspace width="8px"></mspace><msup><mrow><mo>(</mo><msub><mi>y</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><msub><mi>x</mi><mrow><mi>i</mi><mn>2</mn></mrow></msub></mrow><mo>)</mo></mrow><mn>2</mn></msup></mrow></mtd></mtd></mtr></mtable></math><figcaption>OLS for 2 Regressors</figcaption></figure><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>First Order Conditions</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C3 P71)</strong></span></div><p>
-      Estimating the coefficients can be solved by
-      multivariable calculus, but in practise you'll get
-      a computer to solve this (but the methodology is
-      based in multi variable calculus). You basically
-      need a set of values for <strong>β̂<sub>1</sub></strong>,
-      <strong>β̂<sub>1</sub></strong>, <strong>β̂<sub>2</sub></strong>, ..., <strong>β̂<sub>k</sub></strong>,
-      that holds the <strong>k</strong> regressors for the
-      below linear constraints.
-    </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mrow><mo>(</mo><msub><mi>y</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mrow><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>y</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub></mrow><mo>)</mo></mrow></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mrow><msub><mi>x</mi><mrow><mi>i</mi><mn>2</mn></mrow></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>y</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub></mrow><mo>)</mo></mrow></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mo>⋮</mo></mtd><mtd columnalign="center"><mspace width="4px"></mspace></mtd><mtd columnalign="left"><mspace width="4px"></mspace></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mrow><msub><mi>x</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mo>(</mo><msub><mi>y</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub></mrow><mo>)</mo></mrow></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr></mtable></math><figcaption>OLS Constraint for K regressors</figcaption></figure><p>
-      The above involves K + 1 linear equations with k +
-      unknown coefficients. This is called the
-      <strong>First Order Conditions</strong>. This can be
-      obtained by the <a href="https://en.wikipedia.org/wiki/Method_of_moments_(statistics)" target="_blank">Method of moments</a>.
-      You can solve this by hand if you'd like but I would probably
-      use a computed.
-    </p></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Interpreting OLS Regression Equations</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C3 P71)</strong></span></div><div class="grid-responsive-row pre--grid-responsive-row" style="
-      --grid-responsive-row-slim-columns: 1fr;
-      --grid-responsive-row-mobile-columns: 1fr;
-      --grid-responsive-row-desktop-columns: auto auto;
-      
-    "><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>𝑦̂</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>1</mn></msub><msub><mi>x</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>2</mn></msub><msub><mi>x</mi><mn>2</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mi>k</mi></msub><msub><mi>x</mi><mi>k</mi></msub><mspace width="4px"></mspace></mrow></mrow></math><figcaption>Estimated Model with K regressors</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mi>𝛥</mi><mi>ŷ</mi></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mi>𝛥</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mi>𝛥</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mi>𝛥</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow></mrow></mrow></mrow></math><figcaption>Ceteris Paribus interpretation</figcaption></figure></div><p>
-      The Ceteris Paribus interpretation just shows the
-      relationship that exists between the rate of change
-      of <strong>ŷ</strong> with respect to any of its regressors.
-      From here it is quite straight forward to model the
-      impact of changing any of the indivisual regressors.
-    </p><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>OLS Fitted Value and Residuals</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C3 P74)</strong></span></div><div class="grid-responsive-row pre--grid-responsive-row" style="
-      --grid-responsive-row-slim-columns: 1fr;
-      --grid-responsive-row-mobile-columns: 1fr;
-      --grid-responsive-row-desktop-columns: auto auto;
-      
-    "><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>ŷ</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>2</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub></mrow></mrow></mrow></math><figcaption>Fitted values</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>u</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>y</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>ŷ</mi><mi>i</mi></msub></mrow></mrow></math><figcaption>Residuals</figcaption></figure></div></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Goodness of fit and R²</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C3 P76)</strong></span></div><p>These don't really change really</p></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Regression through origin</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C3 P79)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>ỹ</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β̃</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̃</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̃</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow></mrow></mrow></math><figcaption>Regressoin through the origin</figcaption></figure><p>
-        If for whatever reason the <strong>β<sub>1</sub></strong> is 0 then this
-        is typically how'd you represent that. So when any of
-        the regressors are zero when then the predicted value
-        would be zero.
-      </p></div></div><div class="c2 pre--c2"><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>"Partialling Out" Interpretation</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C3 P75)</strong></span></div><figure class="pre--horizontal-shadow"><math style="font-size: 12px" display="block"><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mo>(</mo><mrow><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mrow><msub><mi>r̂</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>y</mi><mi>i</mi></msub></mrow></mrow><mo>)</mo></mrow><mspace width="4px"></mspace><mo>÷</mo><mspace width="4px"></mspace><mrow><mo>(</mo><mrow><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><msup><msub><mi>r̂</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></mrow></math><figcaption>A "Partialling out" Interpretation of multiple regression</figcaption></figure><p>
-        I'mma be real, no clue what the go with this is or
-        why it matters. See <a href="https://en.wikipedia.org/wiki/Frisch–Waugh–Lovell_theorem" target="_blank">Frisch–Waugh–Lovell theorem</a> for more info I guess.
-      </p><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: Figure out why this is relevant</p></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Comparing SLR &amp; MLR Regressor Est</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C3 P75)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mi>ỹ</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β̃</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̃</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x̃</mi><mn>1</mn></msub></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mi>ŷ</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>β̃</mi><mn>1</mn></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>δ̃</mi><mn>1</mn></msub></mrow></mrow></mtd></mtr></mtable></math><figcaption>Comparing SLR and MLR Estimates</figcaption></figure><p>
-        Test by running a model with and without a variable.
-      </p><ul class="no-item-padding" style="margin-block: 0px;"><li>If the partial effect on ŷ is 0, then β̂₂ is 0</li><li>If x₁ and x₂ are uncorrelated then δ̂₁ is 0</li></ul><blockquote>
-        The value of this will be more apparent when we're looking
-        into omitted variable bias.
-      </blockquote></div></div></div></div><div class="widget-container document" id="test-widget-3" style="grid-column: span 2;"><style id="test-widget-3-styles"></style><div class="container pre--container"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: for "Discuss confounding factors"</p></div></div><div class="widget-container document" id="test-widget-4" style="grid-column: span 2;"><style id="test-widget-4-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Expected Values of OLS Estimators</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C3 P79)</strong></span></div><div class="container pre--container"><h3>MLR Assumptions</h3><div class="c2 pre--c2"><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Linear in parameters</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C3 P80)</strong></span></div><p>This is more less the same thing in SLR.</p></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Random Sampling</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C3 P80)</strong></span></div><p>This is more less the same thing in SLR.</p></div></div><div class="c2 pre--c2"><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>No Perfect Colinearity</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C3 P80)</strong></span></div><p>
-          This means, of the mean independent variables
-          there should not be a linear relationship between
-          any 2 or more independent variable. This isn't to
-          say there can't be any correlation the independent
-          variables, they just cannot be perfectly correlated.
-        </p><blockquote>
-          This can happen when one variable is just
-          a multiple of another variable.
-        </blockquote></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Zero Conditional Mean</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C3 P82)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow>E<mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>u</mi><mspace width="4px"></mspace><mo>|</mo><mspace width="4px"></mspace><msub><mi>x</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>,</mo><mspace width="4px"></mspace><msub><mi>x</mi><mn>2</mn></msub><mspace width="4px"></mspace><mo>,</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>,</mo><mspace width="4px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow></math><figcaption>Zero Conditional Mean</figcaption></figure><p>
-          One scenario this can fail is where there any of
-          the regressors doesn't have a linear relationship
-          with y. One such example is when there's a
-          quadratic relationship and the model includes only
-          one of the 2 variables (the linear and squared one).
-        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mn>2</mn></msub><msup><msub><mi>x</mi><mn>1</mn></msub><mn>2</mn></msup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></mrow></math><figcaption>Quadratic Equation</figcaption></figure></div></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Homoskedacity</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C3 P88)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>u</mi><mspace width="4px"></mspace><mo>|</mo><mspace width="4px"></mspace><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><mo>⋯</mo><mo>,</mo><mspace width="4px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msup><mi>σ</mi><mn>2</mn></msup></mrow></math><figcaption>Homoskedasticity</figcaption></figure><p>
-        In order to have Homoskedacity the variance of the
-        error rate needs to be uniform over the range of
-        values for each regressor.
-      </p></div></div><hr><div class="grid-responsive-row pre--grid-responsive-row" style="
-      --grid-responsive-row-slim-columns: 1fr;
-      --grid-responsive-row-mobile-columns: 1fr;
-      --grid-responsive-row-desktop-columns: auto auto;
-      
-    "><figure class="pre--horizontal-shadow"><math style="font-size: 12px" display="block"><mrow><mrow>E<mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>y</mi><mspace width="4px"></mspace><mo>|</mo><mspace width="4px"></mspace><mi>x</mi></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow></mrow></mrow></math><figcaption>MLR 1, 2, 3, 4</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow>E<mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><mi>j</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn><mo>,</mo><mspace width="4px"></mspace><mn>1</mn><mo>,</mo><mspace width="4px"></mspace><mo>⋯</mo><mo>,</mo><mspace width="4px"></mspace><mi>k</mi></mrow></mrow></math><figcaption>Unbiasedness of OLS</figcaption></figure></div></div></div><div class="widget-container document" id="test-widget-5" style="grid-column: span 2;"><style id="test-widget-5-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Irrelevant Variables in a regression Model</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C3 P83)</strong></span></div><p>
-    The long and short of this is, it doesn't matter and you're fine if you
-    have irrelevant variables, ultimately they end up with a coefficient of
-    zero and will have no effect.
-  </p><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: document the role of MLR 3</p><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>W3 M, / Class (Slide 12)</strong></span></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Explaination</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>W3 M, / Class (Slide 8)</strong></span></div><ul class="no-item-padding" style="margin-block: 0px;"><li>Say you make a model <ul class="no-item-padding" style="margin-block: 0px;"><li><strong>Y = θ0 + θ1*X1 + θ2*X2 + θ3*X3 + V</strong></li></ul></li><li>Say the True model is <ul class="no-item-padding" style="margin-block: 0px;"><li><strong>Y = B0 + B1*X1 + B2*X2 + U</strong></li></ul></li><li>At the very least there won't be a bias<ul class="no-item-padding" style="margin-block: 0px;"><li>E(U|X1,X2) = 0 =&gt; E(V|X1,X2,X3)</li><li>X3 is irrelevant: θ3 = 0</li></ul></li></ul></div></div></div><div class="widget-container document" id="test-widget-6" style="grid-column: span 2;"><style id="test-widget-6-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Omitted Variable Bias</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>W3 M, / Class (Slide 3), Book (C3 P84)</strong></span></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
-        Now this is actually a problem, and something we should avoid. It can
-        lead to a litany of issues. Some include biased estimators which either
-        under estimate or overestimate the effect of the specified regressors
-        (especially when there's some level of correlation with the omitted regressor).
-      </p><p>
-        The earlier section on <strong>Comparing SLR &amp; MLR regressors
-        Estimates</strong> explain some concepts used in this section (such as
-        β̃₁ or δ̃₁).
-      </p></div><aside class="infobox"><h3 class="infobox-name">💡 Nomenclature</h3><div class="infobox-body"><div class="container"><p>This is also called:</p><ul class="no-item-padding" style="margin-block: 0px;"><li>Excluding a relevant variable</li><li>underspecifying the model</li></ul><p>
-        Deriving the Bias caused from an important
-        missing variable is called
-        <strong>misspecification analysis</strong>.
-      </p></div></div></aside></div><div class="container pre--container"><h4>Determining Bias</h4><div class="grid-responsive-row pre--grid-responsive-row" style="
-      --grid-responsive-row-slim-columns: 1fr;
-      --grid-responsive-row-mobile-columns: 1fr;
-      --grid-responsive-row-desktop-columns: auto auto;
-      
-    "><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></math><figcaption>general MLR with 2 independent vars</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>ỹ</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β̃</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̃</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow></mrow></mrow></math><figcaption>Modeling with missing variable</figcaption></figure></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
-          Say the true population model (on the left) has x₁ and
-          x₂ but you unknowning omit x² and end up on the model on
-          the right. Eventually you find out this was the case and
-          recreate your model, but you want to measure how wrong the
-          earlier model was, well reusing the SLR/MLR comparison logic
-          shown on the right you can solve for δ̃₁.
-        </p><p>
-          A summary below is provided to decern the effect of the bias.
-        </p><figure class="pre--horizontal-shadow"><table style="width: 100%"><thead><tr><th></th><th>Corr(x₁,x₂) &gt; 0</th><th>Corr(x₁,x₂) &lt; 0</th></tr></thead><tbody><tr><td>β₂ &gt; 0</td><td>Positive bias</td><td>Negative bias</td></tr><tr><td>β₂ &lt; 0</td><td>Negative bias</td><td>Positive bias</td></tr></tbody></table><figcaption>Summary of Bias in β̃₁ when x₂ is an Omitted Variable</figcaption></figure></div><div class="container pre--container"><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mi>ỹ</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β̃</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̃</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x̃</mi><mn>1</mn></msub></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mi>ŷ</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>β̃</mi><mn>1</mn></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>δ̃</mi><mn>1</mn></msub></mrow></mrow></mtd></mtr></mtable></math><figcaption>Comparing SLR and MLR Estimates</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mrow>E<mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̃</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow>E<mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>δ̃</mi><mn>1</mn></msub></mrow></mrow><mo>)</mo></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mspace width="0px"></mspace></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow>E<mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow>E<mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>δ̃</mi><mn>1</mn></msub></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mspace width="0px"></mspace></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>δ̃</mi><mn>1</mn></msub></mrow></mrow></mtd></mtr></mtable></math><figcaption>Solving for E(β̃₁)</figcaption></figure></div></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>Bias</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̃</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow>E<mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̃</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>−</mo><mspace width="4px"></mspace><msub><mi>β</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>δ̃</mi><mn>1</mn></msub></mrow></mrow></mrow></math><figcaption>Bias of Omitted Variable</figcaption></figure><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Omitted Variable Bias more general case</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C3 P87)</strong></span></div><p>
-      Measuring Omitted Bias is more difficult the more variables. The
-      omission of an important variable will lead to bias in any variable
-      it has any meaningful correlation with.
-    </p></div></div></div><div class="widget-container document" id="test-widget-7" style="grid-column: span 2;"><style id="test-widget-7-styles"></style><div class="container pre--container"><aside class="infobox"><h3 class="infobox-name">💡 What is J?</h3><div class="infobox-body"><div class="container"><p>
-      When we see a J subscript it generally referrs to the Jth
-      random variable (of a model or dataset). J is choose to
-      differiate from I which is typically used to denote an
-      observations.
-    </p><p><strong>In summmary:</strong></p><ul class="no-item-padding" style="margin-block: 0px;"><li>N denotes the size of a sample or population</li><li>K denotes the number of variables in a dataset or model</li><li>I subscript denotes observation, e.g. observation № I out N</li><li>J subscript denotes variables, e.g. variable № J out K</li></ul></div></div></aside><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Variance of OLS Estimators</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>W3 M, / Class (Slide 14), Book (C3 P88)</strong></span></div><div class="c2 pre--c2"><div class="container pre--container"><h4>Homoskedasticity</h4><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>u</mi><mspace width="4px"></mspace><mo>|</mo><mspace width="4px"></mspace><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mspace width="4px"></mspace><mo>⋯</mo><mo>,</mo><mspace width="4px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msup><mi>σ</mi><mn>2</mn></msup></mrow></math><figcaption>Homoskedasticity</figcaption></figure><p>
-          Homoskedasticity is present when the variance for expected value for
-          the error term does not change with any of the independent variables.
-        </p></div><div class="container pre--container"><h4>Other MLR assumptions</h4><figure class="pre--horizontal-shadow"><math style="font-size: 12px" display="block"><mrow><mrow>E<mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>y</mi><mspace width="4px"></mspace><mo>|</mo><mspace width="4px"></mspace><mi>x</mi></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow></mrow></mrow></math><figcaption>MLR 1, 2, 3, 4</figcaption></figure><p>Reminder of other MLR assumptions.</p></div></div><div class="container pre--container"><div class="container pre--container"><h3>Sampling Variance of estimators</h3><p>
-          When MLR 1, 2, 3, 4, 5 hold the variance of the
-          sampling estimators should resemble something
-          like this.
-        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><msup><mi>σ</mi><mn>2</mn></msup><mrow><msub><mi>SST</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>−</mo><mspace width="4px"></mspace><msup><msub><mi>R</mi><mi>j</mi></msub><mn>2</mn></msup><mo>)</mo></mrow></mrow></mfrac></mrow></math><figcaption>Sampling Variances of The OLS Slope Estimators</figcaption></figure></div><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><p style="
-      color: var(--fg-white-on-blue);
-      background: var(--bg-blue);
-      padding: 8px
-    "><p><strong>NOTE (on Var(βᵢ) )</strong></p><ul class="no-item-padding" style="margin-block: 0px;"><li>decreases with SSTᵢ</li></ul></p><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>W3 M, / Class (Slide 15)</strong></span></div><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Multicollinearity</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>W3 M, / Class (Slide 16), Book (C3 P89)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><msup><mi>σ</mi><mn>2</mn></msup><mrow><msub><mi>SST</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>−</mo><mspace width="4px"></mspace><msup><msub><mi>R</mi><mi>j</mi></msub><mn>2</mn></msup><mo>)</mo></mrow></mrow></mfrac></mrow></math><figcaption>Sampling Variances of The OLS Slope Estimators</figcaption></figure><div class="c2 pre--c2"><div class="container pre--container"><h4>The Error Variance, σ<sup>2</sup></h4><p>
-            From the above equation <strong>a large σ²</strong> means <strong>larger sampling variances</strong>
-            for the OLS Estimators. Which <strong>put another way means more noise</strong>.
-          </p><p>
-            <strong>Note</strong>, because σ² is a population feature it has nothing to do with
-            the sample size. <strong>It is an unknown component</strong>.
-          </p></div><div class="container pre--container"><h4>Total Sample Variance in , x<sub>j</sub>, SST<sub>j</sub></h4><p>
-            Inversely from the same equation we can derive the idea
-            that the larger the <strong>SST<strong>j</strong></strong> the smaller
-            the variance. I mean take any fraction leave the
-            nominator as is and increase the denominator and watch
-            the resulting value decrease. However <strong>we want to
-            the variance to be as large as possible</strong>.
-          </p><p>
-            The one way we can ensure this is as large as possible is
-            by increasing the size of the sample.
-          </p></div></div><div class="container pre--container"><h4>The linear relationship amoung the independent variables , R<sub>j</sub><sup>2</sup></h4><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><ul class="no-item-padding" style="margin-block: 0px;"><li>Obtaining <strong>R<sub>j</sub><sup>2</sup></strong>, <ul class="no-item-padding" style="margin-block: 0px;"><li>Given a model explain y from K independent variables</li><li>Create a new model to explain the Jth independent variable using the remaining variables</li><li>Compute the <strong>R<sup>2</sup></strong> for that model</li><li><strong>R<sub>j</sub><sup>2</sup></strong> does not appear in SLR, due to need for additional variables</li></ul></li><li>Understanding <strong>R<sub>j</sub><sup>2</sup></strong>, <ul class="no-item-padding" style="margin-block: 0px;"><li>Given a model explain y from 2 independent variables</li><li>Compute the R₂² (<strong>R<sub>j</sub><sup>2</sup></strong> of x₂), with this regression:<ul class="no-item-padding" style="margin-block: 0px;"><li>x₂ = β₀ + β₁x₁ + u</li></ul></li><li>A value of R₂² close to 1 means:<ul class="no-item-padding" style="margin-block: 0px;"><li>Most of the variance in x₂ is explained by x₁</li><li>x₂ and x₁ are highly correlated.</li></ul></li><li>As R₂² gets closer to 1 Var(β̂₂) gets larger:<ul class="no-item-padding" style="margin-block: 0px;"><li>This suggests a high degree of linearity between x₁ and x₂</li><li>This describes multicollinearity</li></ul></li></ul></li></ul><p>
-              Note a case where R₂² gets close to 1, <strong>is not a violation of MLR 1</strong>
-            </p></div><aside class="infobox"><h3 class="infobox-name">💡 R²j</h3><div class="infobox-body"><div class="container"><p>R²j is the R² of the following regression</p><blockquote>Xj = ⍺₀ + ⍺₁X₁ + ... + αₖXₖ + V</blockquote><p>
-      When R²j is high, it brings very
-      little information, this is
-      Multicollinearity.
-    </p></div></div></aside></div><p>
-          Multicolinearity is clearly an observable trait and it can be a
-          problem but it doesn't violate <strong>NONE</strong> of our assumptions.
-          While the extent of the problem is difficult to define all other
-          things being equal it is better to have less correlation between
-          x<strong>j</strong>
-        </p><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><details><summary>Thought bubble — multicolinearity subtraction</summary><br><div class="container pre--container"><p>
-              I wonder if there is a practise where variables with high multicolinearity get
-              trimmed by the portion of their value explainable by other variables (leaving
-              the residual) and using that as a parameter in the model. I guess in order to
-              do that you would need to be fairly confindent in the this multicolinearity
-              relationship, as you'd be:
-            </p><ul class="no-item-padding" style="margin-block: 0px;"><li>estimating (predicted y) values</li><li>based on an estimate (coefficent on the residual)</li><li>derived from an estimation (xⱼ residual)</li><li>derived from estimations (estimated xⱼ)</li><li>from an estimation (estimated coefficent for the model to explain xⱼ with the other independent variables)</li></ul><p>
-              This sounds like alot of assumptions based on
-              the accuracy of the estimates. But it would look
-              like this:
-            </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>ŷ</mi><mi>i</mi></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>1i</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>2i</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>û</mi><mi>i</mi></msub></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>x̂</mi><mi>2i</mi></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β̂</mi><msub><mn>0</mn><mn>2</mn></msub></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><msub><mn>1</mn><mn>2</mn></msub></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>1i</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>ê</mi><mrow><mi>i</mi><mn>2</mn></mrow></msub></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>ŷ</mi><mrow><mi>i</mi><msub><mi>x</mi><mn>2</mn></msub></mrow></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mrow><mn>0</mn><msub><mi>x</mi><mn>2</mn></msub></mrow></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mrow><mn>1</mn><msub><mi>x</mi><mn>2</mn></msub></mrow></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>1i</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mrow><mi>i</mi><mn>2</mn></mrow></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mover><mrow><mrow><mo>(</mo><mrow><msub><mi>x</mi><mi>2i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>x̂</mi><mi>2i</mi></msub></mrow><mo>)</mo></mrow></mrow><mover><mo>⏞</mo><mrow><msub><mi>ê</mi><mrow><mi>i</mi><msub><mi>x</mi><mn>2</mn></msub></mrow></msub></mrow></mover></mover></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>û</mi><mrow><mi>i</mi><msub><mi>x</mi><mn>2</mn></msub></mrow></msub></mrow></mrow></mtd></mtr></mtable></math><figcaption>Fitted value subtraction.</figcaption></figure><hr><p>
-              Note all of this done to cancel out multicolinearity while
-              retaining the portion of xⱼ that explains y. However if most
-              or all values of xⱼ end up being 0 maybe it should be omitted
-              from the model.
-            </p><hr><p>
-              What if instead of subtracting the fitted value
-              we replace x₂ with a function call x₂ which returns
-              a probability density function and the regression
-              that returning a probability density function (or
-              distribution of values). Let me explain.
-            </p><blockquote>
-              ŷ :: (x₁, x₂, ..., xₖ) -&gt; Pdf
-            </blockquote><p>
-              I don't know I just feel like it could be cool to
-              handle probability density functions like numbers
-              compose them, etc, etc.
-            </p></div></details></div></div></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Variance inflation factor (VIF)</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C3 P92)</strong></span></div><div class="grid-responsive-row pre--grid-responsive-row" style="
-      --grid-responsive-row-slim-columns: 1fr;
-      --grid-responsive-row-mobile-columns: 1fr;
-      --grid-responsive-row-desktop-columns: auto auto;
-      
-    "><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>VIF</mi><mi>j</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><mn>1</mn><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msup><msub><mi>R</mi><mi>j</mi></msub><mn>2</mn></msup><mo>)</mo></mrow></mfrac></mrow></math><figcaption>Variance Inflation Factor</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mfrac><msup><mi>σ</mi><mn>2</mn></msup><msub><mi>SST</mi><mi>j</mi></msub></mfrac><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>VIF</mi><mi>j</mi></msub></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><msup><mi>σ</mi><mn>2</mn></msup><mrow><msub><mi>SST</mi><mi>j</mi></msub><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msup><msub><mi>R</mi><mi>j</mi></msub><mn>2</mn></msup><mo>)</mo></mrow></mrow></mfrac></mrow></math><figcaption>Variance of β̂ⱼ expressed using VIFⱼ.</figcaption></figure></div><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: write about this and explain its utility</p></div></div></div></div><div class="widget-container document" id="test-widget-8" style="grid-column: span 2;"><style id="test-widget-8-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Variance in Misspecfied Models</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C3 P92)</strong></span></div><p>
+    </p></div></div>"
+`;
+
+exports[`app(unsw::2206::02.1).widgets > other 1`] = `"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><h2>Other</h2><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Exogenous And Endogenous Variables</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>W3 M, / Class (Slide 13)</strong></span></div><p style="color: var(--fg-white-on-blue); background: var(--bg-blue); padding: 8px;"><p><strong>NOTE</strong><ul class="no-item-padding" style="margin-block: 0px;"><li>Exogenous: <ul class="no-item-padding" style="margin-block: 0px;"><li>These are characterised by uncorrelatled variables</li><li>Where Z is the variable E(U|X0...Xn) = E(Z|X0...Xn) = 0</li></ul></li><li>Endogenous: <ul class="no-item-padding" style="margin-block: 0px;"><li>These are characterised by correlated variables E(U|X0...Xn) = 0</li><li>Where Z is the variable E(U|X0...Xn) = E(Z|X0...Xn) ≠ 0</li></ul></li></ul></p></p></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Endogenous Vs Exogenous</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>W3 M, / Class (Slide 13)</strong></span></div><p style="color: var(--fg-white-on-blue); background: var(--bg-blue); padding: 8px;"><p><strong>NOTE</strong><ul class="no-item-padding" style="margin-block: 0px;"><li>Exogenous<ul class="no-item-padding" style="margin-block: 0px;"><li>These are characterised by uncorrelatled variables</li><li>Where Z is the variable E(U|X0...Xn) = E(Z|X0...Xn) = 0</li></ul></li><li>Endogenous<ul class="no-item-padding" style="margin-block: 0px;"><li>These are characterised by correlated variables E(U|X0...Xn) = 0</li><li>Where Z is the variable E(U|X0...Xn) = E(Z|X0...Xn) ≠ 0</li></ul></li></ul></p></p></div></div>"`;
+
+exports[`app(unsw::2206::02.1).widgets > varianceInMisspecifedModels 1`] = `
+"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Variance in Misspecfied Models</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C3 P92)</strong></span></div><p>
       <strong>How do you decide between omitting or including a variable?</strong>
       Ultimately it's a trade off between bias and variance. Say we have
       a population model, an exhaustive model and a model that omitts
       a variable. And we are trying to decide if we should include or
       omit this other variable.
-    </p><div class="grid-responsive-row pre--grid-responsive-row" style="
-      --grid-responsive-row-slim-columns: 1fr;
-      --grid-responsive-row-mobile-columns: 1fr;
-      --grid-responsive-row-desktop-columns: auto auto auto;
-      
-    "><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></math><figcaption>general MLR with 2 independent vars</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>𝑦̂</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow></mrow></math><figcaption>Estimated Model with 2 regressors</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>ỹ</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β̃</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̃</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow></mrow></mrow></math><figcaption>Modeling with missing variable</figcaption></figure></div><p>
+    </p><div class="grid-responsive-row pre--grid-responsive-row" style="--grid-responsive-row-slim-columns: 1fr; --grid-responsive-row-mobile-columns: 1fr; --grid-responsive-row-desktop-columns: auto auto auto;"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></math><figcaption>general MLR with 2 independent vars</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>𝑦̂</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow></mrow></math><figcaption>Estimated Model with 2 regressors</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>ỹ</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β̃</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̃</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow></mrow></mrow></math><figcaption>Modeling with missing variable</figcaption></figure></div><p>
       If bias was the only criteria we were selecting model by
       well we'd go with the exhaustive model, however we will
       weigh up the cost of inclusion when there's high multicolinearity
       and compare by variance.
-    </p><div class="grid-responsive-row pre--grid-responsive-row" style="
-      --grid-responsive-row-slim-columns: 1fr;
-      --grid-responsive-row-mobile-columns: 1fr;
-      --grid-responsive-row-desktop-columns: auto auto;
-      
-    "><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mfrac><msup><mi>σ</mi><mn>2</mn></msup><msub><mi>SST</mi><mi>j</mi></msub></mfrac><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>VIF</mi><mi>j</mi></msub></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><msup><mi>σ</mi><mn>2</mn></msup><mrow><msub><mi>SST</mi><mi>j</mi></msub><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msup><msub><mi>R</mi><mi>j</mi></msub><mn>2</mn></msup><mo>)</mo></mrow></mrow></mfrac></mrow></math><figcaption>Variance of β̂ⱼ expressed using VIFⱼ.</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̃</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><msup><mi>σ</mi><mn>2</mn></msup><msub><mi>SST</mi><mn>1</mn></msub></mfrac></mrow></math><figcaption>Variance of β̃₁ (biased β̂₁)</figcaption></figure></div><ul class="no-item-padding" style="margin-block: 0px;"><li>When β₂ = 0, β̃₁ and β̂₁ are both is unbiased and Var(β̃₁) &lt; Var(β̂₁) <ul class="no-item-padding" style="margin-block: 0px;"><li>In this case β̃₁ is preferable</li></ul></li><li>When β₂ ≠ 0, β̃₁ is biased, β̂₁ is unbiased and Var(β̃₁) &lt; Var(β̂₁) <ul class="no-item-padding" style="margin-block: 0px;"><li>Resolving this scenario is less obvious</li><li>However as the sample size grows <ul class="no-item-padding" style="margin-block: 0px;"><li>The bias in β̃₁ does not shrink, nor does it really follow any pattern</li><li>However both Var(β̃₁) and Var(β̂₁) will converge to zero</li><li>The size of error term will increase</li></ul></li></ul></li></ul></div></div></div><div class="widget-container document" id="test-widget-9" style="grid-column: span 2;"><style id="test-widget-9-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Estimating σ²: Standard Errors of the OLS Estimators</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C3 P94)</strong></span></div><div class="grid-responsive-row pre--grid-responsive-row" style="
-      --grid-responsive-row-slim-columns: 1fr;
-      --grid-responsive-row-mobile-columns: 1fr;
-      --grid-responsive-row-desktop-columns: auto auto;
-      
-    "><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><msub><mi>û</mi><mi>i</mi></msub></mtd><mtd><mo>=</mo></mtd><mtd><mrow><msub><mi>y</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>2</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub></mrow><mspace width="4px"></mspace><mo>.</mo></mrow></mtd></mtr><mtr columnalign=""><mtd columnalign=""><msup><mi>σ̂</mi><mn>2</mn></msup></mtd><mtd><mo>=</mo></mtd><mtd><mrow><mfrac><mrow><mo>(</mo><mrow><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mspace width="6px"></mspace><msup><msub><mi>û</mi><mi>i</mi></msub><mn>2</mn></msup></mrow><mo>)</mo></mrow><mrow><mi>n</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>k</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mn>1</mn></mrow></mfrac><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mfrac><mi>SSR</mi><mrow><mi>n</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mi>k</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mn>1</mn></mrow></mfrac><mspace width="4px"></mspace><mo>.</mo></mrow></mrow></mtd></mtr></mtable></math><figcaption>estimating unbiased standard of σ²</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mrow><mtext>Sd</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd><mover><mrow><msqrt><mrow><msup><mi>n</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow></mrow></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msup><mrow><mo>(</mo><mrow><msub><mi>x</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>x̄</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mrow><mover><mo>⏞</mo><mrow><mtext>standard deviation</mtext></mrow></mover></mover></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mrow><mtext>Se</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd><mfrac><mi>σ̂</mi><mrow><msqrt><mi>n</mi></msqrt><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mtext>Sd</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msqrt><mrow><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msup><msub><mi>R</mi><mi>j</mi></msub><mn>2</mn></msup></mrow></msqrt></mrow></mfrac></mtd></mtr></mtable></math><figcaption>
-      standard deviation and its relation <br>
-      to the unbiased standard error of σ²
-    </figcaption></figure></div><p>
-      These standard errors are only valid if there is
-      no presense of heteroskedasticity.
-    </p></div></div></div><div class="widget-container document" id="test-widget-10" style="grid-column: span 2;"><style id="test-widget-10-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="container pre--container"><h2>Efficiency of OLS: The Gauss-Markov Theorem</h2><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: reread textbook</p></div></div></div><div class="widget-container document" id="test-widget-11" style="grid-column: span 2;"><style id="test-widget-11-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h2>Other</h2><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Exogenous And Endogenous Variables</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>W3 M, / Class (Slide 13)</strong></span></div><p style="
-      color: var(--fg-white-on-blue);
-      background: var(--bg-blue);
-      padding: 8px
-    "><p><strong>NOTE</strong><ul class="no-item-padding" style="margin-block: 0px;"><li>Exogenous: <ul class="no-item-padding" style="margin-block: 0px;"><li>These are characterised by uncorrelatled variables</li><li>Where Z is the variable E(U|X0...Xn) = E(Z|X0...Xn) = 0</li></ul></li><li>Endogenous: <ul class="no-item-padding" style="margin-block: 0px;"><li>These are characterised by correlated variables E(U|X0...Xn) = 0</li><li>Where Z is the variable E(U|X0...Xn) = E(Z|X0...Xn) ≠ 0</li></ul></li></ul></p></p></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Endogenous Vs Exogenous</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>W3 M, / Class (Slide 13)</strong></span></div><p style="
-      color: var(--fg-white-on-blue);
-      background: var(--bg-blue);
-      padding: 8px
-    "><p><strong>NOTE</strong><ul class="no-item-padding" style="margin-block: 0px;"><li>Exogenous<ul class="no-item-padding" style="margin-block: 0px;"><li>These are characterised by uncorrelatled variables</li><li>Where Z is the variable E(U|X0...Xn) = E(Z|X0...Xn) = 0</li></ul></li><li>Endogenous<ul class="no-item-padding" style="margin-block: 0px;"><li>These are characterised by correlated variables E(U|X0...Xn) = 0</li><li>Where Z is the variable E(U|X0...Xn) = E(Z|X0...Xn) ≠ 0</li></ul></li></ul></p></p></div></div></div><div class="widget-container document" id="test-widget-12" style="grid-column: span 2;"><style id="test-widget-12-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h2>Beyond the Scope of all this</h2><p>
-    For my own sake I am want to document a few things.
-  </p><div class="c2 pre--c2"><div class="container pre--container"><h3>Logit Models</h3><p>You can <a href="https://www.youtube.com/watch?v=iQNRzHKjFw0" target="_blank">watch a video on this here</a>.</p><h4>Why its useful</h4><p>
-      It seems to be useful for modeling the probabiliy of a
-      categorical dependent variable. In this video includes
-      the odds of a car being sold.
-    </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>ln</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mfrac><msub><mi>P</mi><mi>i</mi></msub><mrow><mn>1</mn><mspace width="4px"></mspace><mo>−</mo><mspace width="4px"></mspace><msub><mi>P</mi><mi>i</mi></msub></mrow></mfrac><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>ε</mi><mi>i</mi></msub></mrow></mrow></math><figcaption>Example Logit Model</figcaption></figure></div><div class="container pre--container"><h3>Rnd-Eff Models for Longitudinal Data</h3><p>
-      You can <a href="https://www.youtube.com/watch?v=MOyjGnjAols" target="_blank">watch a video on this here</a>, and read
-      a paper on its applications <a href="https://www.jstor.org/stable/2529876" target="_blank">here</a>.
-    </p><h4>Why its useful</h4><p>
-      The example given in the video explains a scenario where patients in
-      a trial are unlikely to end up having their appointments scheduled for
-      the same time and this model helps control for this irregularity.
-    </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>y</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>b</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>ε</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></mrow></math><figcaption>Random Effects For Longitudinal Data</figcaption></figure></div></div></div></div><hr style="width: 100%; border-color: transparent;">"
+    </p><div class="grid-responsive-row pre--grid-responsive-row" style="--grid-responsive-row-slim-columns: 1fr; --grid-responsive-row-mobile-columns: 1fr; --grid-responsive-row-desktop-columns: auto auto;"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mfrac><msup><mi>σ</mi><mn>2</mn></msup><msub><mi>SST</mi><mi>j</mi></msub></mfrac><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>VIF</mi><mi>j</mi></msub></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><msup><mi>σ</mi><mn>2</mn></msup><mrow><msub><mi>SST</mi><mi>j</mi></msub><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msup><msub><mi>R</mi><mi>j</mi></msub><mn>2</mn></msup><mo>)</mo></mrow></mrow></mfrac></mrow></math><figcaption>Variance of β̂ⱼ expressed using VIFⱼ.</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>β̃</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><msup><mi>σ</mi><mn>2</mn></msup><msub><mi>SST</mi><mn>1</mn></msub></mfrac></mrow></math><figcaption>Variance of β̃₁ (biased β̂₁)</figcaption></figure></div><ul class="no-item-padding" style="margin-block: 0px;"><li>When β₂ = 0, β̃₁ and β̂₁ are both is unbiased and Var(β̃₁) &lt; Var(β̂₁) <ul class="no-item-padding" style="margin-block: 0px;"><li>In this case β̃₁ is preferable</li></ul></li><li>When β₂ ≠ 0, β̃₁ is biased, β̂₁ is unbiased and Var(β̃₁) &lt; Var(β̂₁) <ul class="no-item-padding" style="margin-block: 0px;"><li>Resolving this scenario is less obvious</li><li>However as the sample size grows <ul class="no-item-padding" style="margin-block: 0px;"><li>The bias in β̃₁ does not shrink, nor does it really follow any pattern</li><li>However both Var(β̃₁) and Var(β̂₁) will converge to zero</li><li>The size of error term will increase</li></ul></li></ul></li></ul></div></div>"
 `;

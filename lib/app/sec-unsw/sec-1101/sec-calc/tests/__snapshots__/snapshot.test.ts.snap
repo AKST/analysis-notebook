@@ -1,3 +1,5 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`app(unsw::1101::calc).snapshot > should match snapshots 1`] = `"<style id="test-styles"></style><div class="widget-container document" id="test-widget-0"><style id="test-widget-0-styles"></style><div class="container pre--container"><h1>Supply and Demand Curve Tool</h1></div></div><div class="widget-container canvas2d" id="test-widget-1"></div><div class="widget-container document" id="test-widget-2"><style id="test-widget-2-styles"></style><div class="container pre--container"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>TODO(Rendering)</strong>: show dead weight loss</p></div></div><hr style="width: 100%; border-color: transparent;">"`;
+exports[`app(unsw::1101::calc).widgets > header 1`] = `"<div class="container pre--container"><h1>Supply and Demand Curve Tool</h1></div>"`;
+
+exports[`app(unsw::1101::calc).widgets > stats 1`] = `"<div class="container pre--container"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>TODO(Rendering)</strong>: show dead weight loss</p></div>"`;

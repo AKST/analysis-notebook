@@ -1,22 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`app(unsw::2206::07.1).snapshot > should match snapshots 1`] = `
-"<style id="test-styles"></style><div class="widget-container document" id="test-widget-0" style="grid-column: span 2;"><style id="test-widget-0-styles"></style><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>More on Specification and Data Issues<br><small style="color: #aaaaff">ECON2206, W7, Lecture 1</small></h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><p>See here for resources relating to the lesson</p><ul class="no-item-padding" style="margin-block: 0px;"><li><a href="https://www.jstor.org/stable/2984219" target="_blank">Ramsey 1969, specification errors</a></li></ul></div></div></aside></div></div></div><div class="widget-container document" id="test-widget-1" style="grid-column: span 2;"><style id="test-widget-1-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Functional Form Misspecification</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P295)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>Examples of functional form mispecification:</p><ul class="no-item-padding" style="margin-block: 0px;"><li>Omitting independent Variables.</li><li>Log(y) as the dependent variable, when it should be y.</li></ul><p>
+exports[`app(unsw::2206::07.1).widgets > functionalFormMisspecification 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Functional Form Misspecification</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P295)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>Examples of functional form mispecification:</p><ul class="no-item-padding" style="margin-block: 0px;"><li>Omitting independent Variables.</li><li>Log(y) as the dependent variable, when it should be y.</li></ul><p>
           When the founctional form of a model has been mispecified we cannot
           obtain unbiased or consistent esimators for our coefficients.
         </p><h4>Testing for mispecification</h4><p>
@@ -26,22 +11,7 @@ exports[`app(unsw::2206::07.1).snapshot > should match snapshots 1`] = `
           it is limited to making comparison with between a model and
           its superset. This Provides no help when the dependent
           variable has been incorrectly logged.
-        </p><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>RESET as a General Test for Functional Form Misspecification</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P297)</strong></span></div><p>
+        </p><div style="display: grid; grid-template-columns: 1fr auto;"><h3>RESET as a General Test for Functional Form Misspecification</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P297)</strong></span></div><p>
           Narrowing the exact reason for a functional form mispecification
           can be difficult. The <strong>RESET test</strong> is one such tool at our
           disposal in approaching this problem. <strong>The general idea
@@ -102,22 +72,7 @@ exports[`app(unsw::2206::07.1).snapshot > should match snapshots 1`] = `
             Error Test</strong>, and it was originally designed by
             <a href="https://www.jstor.org/stable/2984219" target="_blank">Ramsey</a> published in his
             1969 paper.
-          </dd></dl><aside class="infobox"><h3 class="infobox-name">💡 ŷ² and ŷ³ as nonlinear functions</h3><div class="infobox-body"><div class="container"><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>ŷ</mi><mn>2</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mn>1</mn><mn>2</mn></msubsup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mn>2</mn><mn>2</mn></msubsup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mi>j</mi><mn>2</mn></msubsup></mrow></mrow></mrow></math><figcaption>ŷ² as a nonlinear function of xⱼ</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>ŷ</mi><mn>3</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mn>1</mn><mn>3</mn></msubsup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mn>2</mn><mn>3</mn></msubsup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mi>j</mi><mn>3</mn></msubsup></mrow></mrow></mrow></math><figcaption>ŷ³ as a nonlinear function of xⱼ</figcaption></figure></div></div></aside><dl><dt>df</dt><dd>Degrees of Freedom</dd></dl></div></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Tests against Nonnested Alternatives</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P298)</strong></span></div><p>
+          </dd></dl><aside class="infobox"><h3 class="infobox-name">💡 ŷ² and ŷ³ as nonlinear functions</h3><div class="infobox-body"><div class="container"><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>ŷ</mi><mn>2</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mn>1</mn><mn>2</mn></msubsup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mn>2</mn><mn>2</mn></msubsup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mi>j</mi><mn>2</mn></msubsup></mrow></mrow></mrow></math><figcaption>ŷ² as a nonlinear function of xⱼ</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>ŷ</mi><mn>3</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mn>1</mn><mn>3</mn></msubsup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mn>2</mn><mn>3</mn></msubsup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β̂</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mi>j</mi><mn>3</mn></msubsup></mrow></mrow></mrow></math><figcaption>ŷ³ as a nonlinear function of xⱼ</figcaption></figure></div></div></aside><dl><dt>df</dt><dd>Degrees of Freedom</dd></dl></div></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Tests against Nonnested Alternatives</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P298)</strong></span></div><p>
         What about when there's no overlap between two models
         you're testing? As in a nonnested model?
       </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mtd></mtr><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mtext>Log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mtext>Log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mn>2</mn></msub><mo>)</mo></mrow></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mtd></mtr></mtable></math><figcaption>Example of nonnested models</figcaption></figure><p>
@@ -143,499 +98,13 @@ exports[`app(unsw::2206::07.1).snapshot > should match snapshots 1`] = `
       </p><blockquote>
         Also note when there is a clear winner with the Davidson-Macinnon
         Test, it does not necessarily mean that model is correct.
-      </blockquote></div></div></div></div><div class="widget-container document" id="test-widget-2" style="grid-column: span 2;"><style id="test-widget-2-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Using Proxy Variables for Unobserved Explanatory Variables</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P299)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
-          Proxy variables are typically used in cases where measuring the desired
-          variable is not possible, but there is another variable that is a
-          highly correlated with (or at least is belived to be highly correlated
-          with it).
-        </p><blockquote>
-          The text I am reading from unforunately uses IQ as an example of a
-          substitute for measuring a vague concept like ability. I personally
-          don't think the concept of IQ is particularlly credible, but if you
-          see if used here just know it's not an endorsement by me or anything.
-        </blockquote><p>
-          In order that we produce unbias estimators we need to
-          at least make sure that the following hold.
-        </p><ol class="no-item-padding" style="margin-block: 0px;"><li>
-            Like with many other models we require for the error term to
-            not be correlated with any of our independent variables.
-          </li><li>
-            <strong>v</strong> in the hypothetical model for deriving
-            <strong>x₃*</strong> (shown below0 is not correlated with any of
-            the dependent variables either.
-          </li></ol></div><dl><dt>Proxy Variable</dt><dd>
-          This is when we substutiute a variable we cannot
-          measure for one that we can that we believe is
-          a good enough substitute.
-        </dd><dt>plug-in solution</dt><dd>
-          This when we pretend a proxy variable and the omitted
-          variable it replaces are the same things.
-        </dd></dl></div><div class="c2 pre--c2"><div class="container pre--container"><p>Stated as:</p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msubsup><mi>x</mi><mn>3</mn><mo>*</mo></msubsup><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mrow><msub><mi>x</mi><mn>1</mn></msub><mrow><msub><mi>x</mi><mn>2</mn></msub><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><msub><mi>x</mi><mn>3</mn></msub></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msubsup><mi>x</mi><mn>3</mn><mo>*</mo></msubsup><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><msub><mi>x</mi><mn>3</mn></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>3</mn></msub></mrow></mrow></mrow></math><figcaption>Proxy variable Assumptions</figcaption></figure><p>
-          If these above assumptions are violated we can expect
-          bias in our proxy variables. All said this is how we
-          understand the proxy variable to relate unobservable
-          variable.
-        </p></div><div style="--fontsize-math-m: 12px"><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mn>3</mn><mo>*</mo></msubsup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mtd></mtr><mtr><mtd columnalign="right"><msubsup><mi>x</mi><mn>3</mn><mo>*</mo></msubsup></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>δ</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>3</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>v</mi><mn>3</mn></msub></mrow></mtd></mtr><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mo>(</mo><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>δ</mi><mn>0</mn></msub></mrow><mo>)</mo></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>δ</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>3</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>v</mi><mn>3</mn></msub></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>α</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>α</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>3</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>e</mi></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mtext>where</mtext><mspace width="8px"></mspace><msub><mi>α</mi><mn>0</mn></msub></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mo>(</mo><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>δ</mi><mn>0</mn></msub></mrow><mo>)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mtext>and</mtext><mspace width="8px"></mspace><msub><mi>α</mi><mn>3</mn></msub></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>δ</mi><mn>3</mn></msub></mrow></mtd></mtr></mtable></math><figcaption>Proxy variable solution</figcaption></figure></div></div><div class="container pre--container"><h4>When the assumption is violated</h4><p>
-        Say our proxy variable relates to all our dependent
-        variables? Well this leads to multicollinearity, however
-        it still reduces the error variance if it removes the
-        removes the part explained by the unobservable variable
-        from the error. Secondarly the added multicollinearity is
-        a necessary evil to get an estimator with less bias of
-        all other variables.
-      </p><h4>Assumption Summary</h4><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr><mtd columnalign="right"><mrow><mi>𝔼</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msubsup><mi>x</mi><mi>j</mi><mo>*</mo></msubsup><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mrow><msub><mi>x</mi><mn>1</mn></msub><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mo>⋯</mo><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow></mrow><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mi>𝔼</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msubsup><mi>x</mi><mi>j</mi><mo>*</mo></msubsup><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><msub><mi>x</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="right"><mrow><mi>Covar</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>x</mi><mrow><mn>1</mn><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mo>⋯</mo><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mi>k</mi></mrow></msub><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mi>v</mi></mrow><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mi>Covar</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>x</mi><mi>j</mi></msub><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mi>v</mi></mrow><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr></mtable></math><figcaption>Summary of when we can use proxies</figcaption></figure><p>
-        In summary above is the rule for when you
-        can use a proxy variable.
-      </p></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Using Lagged Dependent Variables as Proxy Variables</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P303)</strong></span></div><blockquote>Using a lagged dependent variable in a cross-sectional equation increases the data requirements</blockquote><p>
-        In such cases, we can include, as a control, the value of the
-        dependent variable from an earlier time period. This is
-        especially useful for policy analysis. But it also provides a
-        simple way to account for historical factors that cause current
-        differences in the dependent variable that are difficult to
-        account for in other ways. <strong>Inertial effects</strong> are also
-        captured by putting in lags of y.
-      </p><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>A Different Slant on Multiple Regression</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P304)</strong></span></div><p>
-        Until now, we have specified the population model of interest
-        with an additive error. When we are unable to observe one of
-        those variables we condider a proxy variable. However a less
-        structured, more general approach to multiple regression is
-        to forego specifying models with unobservables. Rather, we
-        begin with the premise that we have access to a set of
-        observable explanatory variables.
-      </p><p>
-        The difference now is that we set our goals more modestly, we
-        are not longer trying to measure a nebalous crtieria. While we
-        may not be answering a question relating to an underlying
-        plantonic equation, we are answering a question of interest
-        relating to what we can measure.
-      </p><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Potential Outcomes and Proxy Variables</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P305)</strong></span></div><div class="c2 twoThree pre--c2 pre--two-three"><ul class="no-item-padding" style="margin-block: 0px;"><li>
-            The notion of proxy variables can be related to the
-            potential outcomes framework.
-          </li><li>
-            The notion of proxy variables can be related to the
-            potential outcomes framework
-          </li></ul><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr><mtd columnalign="right"><mrow><mi>y</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>μ</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>v</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mi>y</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>μ</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>v</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><msub><mi>τ</mi><mi>ate</mi></msub></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>μ</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>μ</mi><mn>0</mn></msub></mrow></mtd></mtr></mtable></math><figcaption>Counterfactual outcomes</figcaption></figure></div><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr><mtd columnalign="right"><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mrow><mi>v</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mrow><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mrow><mi>w</mi><mrow><mi>x</mi></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mrow><mi>v</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mrow><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mi>x</mi></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mo>(</mo><mi>x</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>β</mi><mn>0</mn></msub></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mrow><mi>v</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mrow><mi>w</mi><mrow><mi>x</mi></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mrow><mi>v</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mi>x</mi></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mo>(</mo><mi>x</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>β</mi><mn>1</mn></msub></mrow></mrow></mtd></mtr></mtable></math><figcaption>Conditional expectations of potential outcomes</figcaption></figure><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: reread and complete notes</p></div></div></div></div><div class="widget-container document" id="test-widget-3" style="grid-column: span 2;"><style id="test-widget-3-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Models with Random Slopes</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P306)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: This chapter was really confusing, I need to reread</p></div></div></div><div class="widget-container document" id="test-widget-4" style="grid-column: span 2;"><style id="test-widget-4-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Properties of OLS under Measurement Error</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P308)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="container pre--container"><p>
-        Measurement error generally occurs from slopy or misreported
-        information. Like when someone is filling out a complusorary
-        survey and they're pulling a number from memory (like regular
-        grocery spending).
-      </p><ul style="grid-gap: 32px" class="c2 no-item-padding"><li>
-          When we use an imprecise measure of an economic variable in a
-          regression model, then our model contains measurement error
-        </li><li>
-          OLS will be consistent under certain assumptions, but there are
-          others under which it is inconsistent. In some of these cases,
-          we can derive the size of the asymptotic bias.
-        </li></ul><h4>Differences with Proxy Variables</h4><p>
-        There are similar statistical structure to the omitted variable–proxy
-        discussed above. Obviously they are conceptually different when you
-        consider the origin of these errors, even so — <em>perhaps there's a temptation to
-        consider them close enough to each other that they can be treated
-        identically</em>?
-      </p><p>
-        This would be a mistake, <strong><strong>its worth stressing
-        <em>two</em> ways in which how the nature of these two things are
-        fundermentally different</strong></strong>:
-      </p><ol style="grid-gap: 32px" class="c2 no-item-padding"><li>
-          With <strong><strong>Proxy Variables</strong></strong>, we are looking for a
-          variable that is somehow associated with the unobserved variable.
-          With <strong><em>Measurement Error</em></strong>, the variable that we
-          do not observe has a well-defined, quantitative meaning (such as
-          a marginal tax rate or annual income), but our recorded measures
-          of it may contain error.
-        </li><li>
-          With <strong><em>Measurement Error</em></strong> the primary thing of
-          interst is  mismeasured independent variable. However with
-          <strong><strong>Proxy Variables</strong></strong>, the partial effect of the
-          omitted variable is rarely of central interest, as we are
-          usually more concerned with the effects of the other independent
-          variables. The goal of a <strong><strong>Proxy Variables</strong></strong> is
-          typically to control for the effect of the unobserved variable.
-        </li></ol><p>
-        In summary, <strong><em>one is a subsitute for what we like to
-        measure</em> <strong>the other is a poor measurment of what we would
-        like to measure</strong></strong>.
-      </p></div><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Measurement Error in the Dependent Variable</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P308)</strong></span></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><blockquote>y* is not measured instead we have y</blockquote><figure class="pre--horizontal-shadow"><math display="block"><mrow><msup><mi>y</mi><mo>*</mo></msup><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>j</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></math><figcaption>Measurement error in<br>Dependent Variable</figcaption></figure><p>
-          Measurement error in the dependent variable can cause biases in OLS
-          if it is systematically related to one or more of the explanatory
-          variables. If the measurement error is just a random reporting error
-          that is independent of the explanatory variables, as is often assumed,
-          then OLS is perfectly appropriate.
-        </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr><mtd columnalign="right"><mrow><mo>∵</mo><mspace width="8px"></mspace><msup><mi>y</mi><mo>*</mo></msup></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mi>y</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>e</mi><mn>0</mn></msub></mrow></mtd></mtr><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>j</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>e</mi><mn>0</mn></msub></mrow></mtd></mtr></mtable></math><figcaption>Measurement error in<br>Dependent Variable</figcaption></figure><p>
-          So one assumptions we would like to make is the <strong>measurement
-          error has zero mean</strong>, which would satisify the zero conditional mean
-          assumption for MLR. If this isn't the case we'd simply get an biased
-          estimator of the intercept (β₀). However assumption being incorrect
-          seems to rarely be a cause for concern. It allows us of more more
-          concern is the relationship between the measurement error (e₀) and
-          the explanatory variables (xⱼ).
-        </p><p>
-          When its the case that measurement error is uncorrelated with the
-          independent variables, we can rest assure that our OLS estimations
-          have good properties.
-        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>u</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>e</mi><mn>0</mn></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msubsup><mi>σ</mi><mi>u</mi><mn>2</mn></msubsup><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msubsup><mi>σ</mi><mn>0</mn><mn>2</mn></msubsup></mrow></mrow><mspace width="4px"></mspace><mo>&gt;</mo><mspace width="4px"></mspace><msubsup><mi>σ</mi><mi>u</mi><mn>2</mn></msubsup></mrow></math><figcaption>Error uncorrelated to residual assumption</figcaption></figure><p>
-          When e₀ and u are uncorrelated, we usually make this assumption,
-          which mostly means there is greater variance then when no error
-          occurs, and larger standard errors for our estimators. There's
-          nothing we can do about this other than collecting better data.
-        </p></div><div class="container pre--container"><dl><dt>Measurement error</dt><dd>
-            defined as the difference between the observed
-            value and the actual value
-          </dd></dl><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>e</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mi>y</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msup><mi>y</mi><mo>*</mo></msup></mrow></mrow></math><figcaption>Measurement error in<br>Dependent Variable</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>e</mi><mrow><mi>i</mi><mn>0</mn></mrow></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>y</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msubsup><mi>y</mi><mi>i</mi><mo>*</mo></msubsup></mrow></mrow></math><figcaption><span>Measurement error of Dependent</span><br><span>Variable from random draw</span></figcaption></figure><aside class="infobox"><h3 class="infobox-name">💡 On error zero mean assumption</h3><div class="infobox-body"><div class="container"><p>
-            As far as I can tell, there does not really seem
-            to be an evidence reinforcing this assumption other
-            than an appeal to concequences... I guess the text
-            is saying we don't need to worry about this usually
-            but I'm guessing its implied that we should use our
-            judgment when there's reason to think errors are
-            more likely to be over or under estimated.
-            Which I guess has to be an educated guess based on
-            the dependent variable.
-          </p></div></div></aside><dl><dt>Composite Error</dt><dd>
-            In measurement error, composite error
-            is a combination of the residual (<strong>u</strong>)
-            the error term (<strong>eⱼ</strong>) and the coefficent
-            (<strong>βⱼ</strong>) of the observed model as:
-            <br>
-            <br>
-            <strong>u - βⱼeⱼ</strong>
-          </dd><dt>Multiplicative measurement error</dt><dd>
-            This is when the measurement erorr is on
-            a dependent variable which is logarithmic.
-          </dd></dl><figure class="pre--horizontal-shadow"><math style="--fontsize-math-m: 14px" display="block"><mtable><mtr><mtd columnalign="right"><mrow><mtext>Log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mtext>Log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msup><mi>y</mi><mo>*</mo></msup><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>e</mi><mn>0</mn></msub></mrow></mtd></mtr><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msup><mi>y</mi><mo>*</mo></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>a</mi><mn>0</mn></msub></mrow></mtd></mtr><mtr><mtd columnalign="right"><msub><mi>a</mi><mn>0</mn></msub></mtd><mtd><mo>&gt;</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="right"><msub><mi>e</mi><mn>0</mn></msub></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mtext>Log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>a</mi><mn>0</mn></msub><mo>)</mo></mrow></mrow></mtd></mtr></mtable></math><figcaption>Multiplicative measurment error</figcaption></figure></div></div><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Measurement Error in an Explanatory Variable</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P310)</strong></span></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><blockquote>x* is not measured instead we have x</blockquote><p>
-          Measurement error in an explanatory variable has been considered
-          a much more important problem than measurement error in the
-          dependent variable. Lets start with this model where we annotate
-          the measurement error:
-        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mi>j</mi><mo>*</mo></msubsup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></math><figcaption>Measurement error in<br>Explanatory Variable</figcaption></figure><p>
-          We start by assuming it satisifies the first 4 Causs-Markov
-          assumptions, so OLS produced unbias consistent estimators of
-          our slope and intercept. Let eⱼ be the error between our
-          <strong>plantonic variable</strong> and the <strong>measured variable</strong>.
-          We also assume a mean measurement error of zero in the population.
-        </p><div class="c2 pre--c2"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mi>𝔼</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>e</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow></math><figcaption>Mean error<br>In population</figcaption></figure><figure class="pre--horizontal-shadow"><math style="--fontsize-math-m: 14px" display="block"><mtable><mtr columnalign="left right center left"><mtd columnalign="left"><mo>∵</mo></mtd><mtd columnalign="right"><mrow><mi>𝔼</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>e</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr><mtr columnalign="left right center left"><mtd columnalign="left"><mo>⇒</mo></mtd><mtd columnalign="right"><mrow><mi>𝔼</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>y</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mrow><msub><mi>x</mi><mi>j</mi></msub><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><msubsup><mi>x</mi><mi>j</mi><mo>*</mo></msubsup></mrow></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mi>𝔼</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>y</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><msub><mi>x</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow></mrow></mtd></mtr></mtable></math><figcaption>Implicaitons of Mean error</figcaption></figure></div><p>From here however there are 2 scenarios we need to consider:</p><ol class="no-item-padding" style="margin-block: 0px;"><li>
-            measurement error of zero correlates <strong>observed</strong> value
-          </li><li>
-            measurement error of zero correlates <strong>unobserved</strong> value
-          </li></ol><div class="c2 pre--c2"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>CoVar</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>e</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>x</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow></math><figcaption>E covariance with observed</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>CoVar</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>e</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><msubsup><mi>x</mi><mi>j</mi><mo>*</mo></msubsup><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow></math><figcaption>E covariance with unobserved</figcaption></figure></div></div><div class="container pre--container"><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>e</mi><mi>j</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mi>x</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msubsup><mi>x</mi><mi>j</mi><mo>*</mo></msubsup></mrow></mrow></math><figcaption>Measurement error in<br>Explanatory Variable</figcaption></figure><blockquote>
-          eⱼ can either be positive or negative.
-        </blockquote><dl><dt>Attenuation bias</dt><dd>
-            When the estimated OLS effect is attenuated,
-            in that the effect is smaller.
-          </dd><dt>CEV</dt><dd>
-            <strong>classical errors-in-variables</strong>, which is
-            the assumption that the measurement error is
-            uncorrelated with the unobserved explanatory variable.
-          </dd></dl></div></div><h4>When Covar(eⱼ, xⱼ) = 0</h4><div class="container pre--container"><p>When this assumptions hold, our model takes this form:</p><div class="c2 pre--c2"><figure class="pre--horizontal-shadow"><math style="--fontsize-math-m: 14px" display="block"><mtable><mtr columnalign="left right center left"><mtd columnalign="left"><mo>∵</mo></mtd><mtd columnalign="right"><mrow><mtext>CoVar</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>e</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>x</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr><mtr columnalign="left right center left"><mtd columnalign="left"><mo>⇒</mo></mtd><mtd columnalign="right"><mrow><mo>|</mo><mrow><mrow><mtext>CoVar</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>e</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><msubsup><mi>x</mi><mi>j</mi><mo>*</mo></msubsup><mo>)</mo></mrow></mrow></mrow><mo>|</mo></mrow></mtd><mtd columnalign="center"><mo>&gt;</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr></mtable><mtable><mtr columnalign="left right center left"><mtd columnalign="left"><mo>∧</mo></mtd><mtd columnalign="right"><mrow><mi>𝔼</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>e</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr><mtr columnalign="left right center left"><mtd columnalign="left"><mo>∧</mo></mtd><mtd columnalign="right"><msubsup><mi>x</mi><mi>j</mi><mo>*</mo></msubsup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>x</mi><mi>j</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>e</mi><mi>j</mi></msub></mrow></mtd></mtr></mtable></math><figcaption>Implicaitons of Error covariance</figcaption></figure><div style="--fontsize-math-m: 14px"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>j</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mo>(</mo><mi>u</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>e</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow></mrow></mrow></math><figcaption>Implications of measurement error assumptions</figcaption></figure></div></div><div class="c2 pre--c2"><div class="container pre--container"><p>What this means:</p><ul class="no-item-padding" style="margin-block: 0px;"><li>Estimator will be bias</li><li>But estimator will be consistent</li></ul></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mi>𝕍</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>u</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>e</mi><mi>j</mi></msub></mrow></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msubsup><mi>σ</mi><mi>u</mi><mn>2</mn></msubsup><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msubsup><mi>β</mi><mi>j</mi><mn>2</mn></msubsup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>σ</mi><msub><mi>e</mi><mi>j</mi></msub><mn>2</mn></msubsup></mrow></mrow></mrow></math><figcaption>Variance of error</figcaption></figure></div><p>
-        This is the best case as its a more desirable outcome.
-        Despite measurement increasing the error variance, it
-        does not affect any of the properties of OLS. Besides
-        a variance in β̂ⱼ than what we would otherwise get when
-        observing xⱼ* directly.
-      </p></div><h4>When Covar(eⱼ, xⱼ*) = 0</h4><div class="container pre--container"><div class="c2 pre--c2"><p>
-          Because the other assumption implies OLS has nice
-          properties it is of less concern. This assumption
-          suggests the measurement error is uncorrelated with
-          the unobserved explanatory variable. This implies:
-        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mrow><mtext>CoVar</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>e</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><msubsup><mi>x</mi><mi>j</mi><mo>*</mo></msubsup><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow><mspace width="4px"></mspace><mo>⇒</mo><mspace width="4px"></mspace><mrow><msub><mi>x</mi><mi>j</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msubsup><mi>x</mi><mi>j</mi><mo>*</mo></msubsup><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>e</mi><mi>j</mi></msub></mrow></mrow></mrow></math><figcaption>E covariance with unobserved</figcaption></figure></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>CoVar</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>e</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>x</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mi>𝔼</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>e</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mi>𝔼</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>e</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mi>j</mi><mo>*</mo></msubsup></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>𝔼</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msubsup><mi>e</mi><mi>j</mi><mn>2</mn></msubsup><mo>)</mo></mrow></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mn>0</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msubsup><mi>σ</mi><msub><mi>e</mi><mi>j</mi></msub><mn>2</mn></msubsup></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msubsup><mi>σ</mi><msub><mi>e</mi><mi>j</mi></msub><mn>2</mn></msubsup></mrow></math><figcaption>Variance under CEV assumption</figcaption></figure><div class="c2 pre--c2"><p>
-          Because u and xⱼ are uncorrelated, the covariance
-          between xⱼ and the composite error is:
-        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>Cov</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><mrow><mi>u</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>e</mi><mi>j</mi></msub></mrow></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mo>-</mo><msub><mi>β</mi><mi>j</mi></msub></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mtext>Cov</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>e</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mo>-</mo><msub><mi>β</mi><mi>j</mi></msub></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>σ</mi><msub><mi>e</mi><mi>j</mi></msub><mn>2</mn></msubsup></mrow></mrow></math><figcaption>Covar between xⱼ and composite error</figcaption></figure></div><p>
-        As a result OLS gives us a biased and inconsistent estimator:
-      </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr><mtd columnalign="right"><mrow><mi>plim</mi><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><mrow><mtext>Cov</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><mrow><mi>u</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>e</mi><mi>j</mi></msub></mrow></mrow><mo>)</mo></mrow></mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></mfrac></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mfrac><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>σ</mi><msub><mi>e</mi><mi>j</mi></msub><mn>2</mn></msubsup></mrow><mrow><msubsup><mi>σ</mi><msub><mi>x</mi><mi>j</mi></msub><mrow><mn>2</mn><mo>*</mo></mrow></msubsup><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msubsup><mi>σ</mi><msub><mi>e</mi><mi>j</mi></msub><mn>2</mn></msubsup></mrow></mfrac></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mfrac><msubsup><mi>σ</mi><msub><mi>e</mi><mi>j</mi></msub><mn>2</mn></msubsup><mrow><msubsup><mi>σ</mi><msub><mi>x</mi><mi>j</mi></msub><mrow><mn>2</mn><mo>*</mo></mrow></msubsup><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msubsup><mi>σ</mi><msub><mi>e</mi><mi>j</mi></msub><mn>2</mn></msubsup></mrow></mfrac><mo>)</mo></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mfrac><msubsup><mi>σ</mi><msub><mi>x</mi><mi>j</mi></msub><mrow><mn>2</mn><mo>*</mo></mrow></msubsup><mrow><msubsup><mi>σ</mi><msub><mi>x</mi><mi>j</mi></msub><mrow><mn>2</mn><mo>*</mo></mrow></msubsup><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msubsup><mi>σ</mi><msub><mi>e</mi><mi>j</mi></msub><mn>2</mn></msubsup></mrow></mfrac><mo>)</mo></mrow></mrow></mtd></mtr></mtable></math><figcaption>Probability limit under CEV</figcaption></figure><div class="c2 pre--c2"><p>
-          Given the above β̂ⱼ is always closer to zero than βⱼ which
-          gives us an <strong>attenuation bias</strong> due to <strong>CEV</strong>.
-          So on average estimated OLS effect will be attenuated. So
-          if βⱼ is positive, β̂ⱼ will tend to underestimate βⱼ.
-          Things get more complicated when we add more explanatory
-          variables, <strong>all our estimators will end up with
-          bias not just β̂ⱼ</strong>.
-        </p><div class="container pre--container"><math display="block"><mtable><mtr><mtd columnalign="right"><mtext>where</mtext></mtd><mtd columnalign="right"><mi>r</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mtext>the population error ...</mtext></mtd></mtr><mtr><mtd columnalign="right"><mtext>in</mtext></mtd><mtd columnalign="right"><msubsup><mi>x</mi><mi>j</mi><mi>*</mi></msubsup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>α</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>α</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>α</mi><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msubsup><mi>r</mi><mi>j</mi><mo>*</mo></msubsup></mrow></mtd></mtr></mtable></math><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mi>plim</mi><mrow><mo>(</mo><msub><mi>β̂</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mfrac><msubsup><mi>σ</mi><msub><mi>r</mi><mn>1</mn></msub><mrow><mn>2</mn><mo>*</mo></mrow></msubsup><mrow><msubsup><mi>σ</mi><msub><mi>r</mi><mn>1</mn></msub><mrow><mn>2</mn><mo>*</mo></mrow></msubsup><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msubsup><mi>σ</mi><msub><mi>e</mi><mn>1</mn></msub><mn>2</mn></msubsup></mrow></mfrac><mo>)</mo></mrow></mrow></mrow></math><figcaption>Simplified probability limit</figcaption></figure></div></div></div><h4>Word of Warning</h4><p>
-      Measurement error can be present in more than one explanatory
-      variable, or in some explanatory variables and the dependent
-      variable.
-    </p></div></div></div><div class="widget-container document" id="test-widget-5" style="grid-column: span 2;"><style id="test-widget-5-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Missing Data, Nonrandom Samples, and Outlying Observations</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P313)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Missing Data</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P313)</strong></span></div><p>
-          When data is missing at random, a common “solution” is to create
-          two new variables. For a unit i the first variable, say
-          <strong>Z<sub>ik</sub></strong>, is defined to be <strong>x<sub>ik</sub></strong>
-          when <strong>x<sub>ik</sub></strong> is observed, and zero otherwise.
-          The second variable is a “missing data indicator,” say
-          <strong>m<sub>ik</sub></strong>, which equals one when
-          <strong>x<sub>ik</sub></strong> is missing and equals zero when
-          <strong>x<sub>ik</sub></strong> is observed. It looks something like this:
-        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>y</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>α</mi><mn>0</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>Z</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>α</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>m</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></math><figcaption>Regression with missing data indicators</figcaption></figure><p>
-          This only works when data is missing completely at random (MCAR)
-          and there isn't some kind of condition that correlates with the
-          data as to why its missing. As a result MCAR is a fairly strong
-          assumption, and unforunately not something we can reasonably
-          count in reality.
-        </p><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Nonrandom Samples</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P315)</strong></span></div><h4>Exogenous Selection</h4><p>
-          When data isn't missing at random this is called, it doesn't
-          always led any kind of statistical problem, <strong>exogenous
-          sample selection</strong> is one such case where sample selection is
-          based on an independent variable. While this is not ideal, we
-          can still get unbiased and consistent estimators of the
-          parameters in the population model, using the nonrandom sample.
-        </p><p>
-          The reason why, is that the regression function is the same for
-          <strong>E(y|x₁,⋯,xₖ)</strong> any subset of the population described by
-          x₁, x₂, etc. Provided there is enough variation in the independent
-          variables in the subpopulation, selection on the basis of the
-          independent variables is not a serious problem, other than that it
-          results in smaller sample sizes.
-        </p><h4>Endogenous Selection</h4><p>
-          The situation is much different when selection is based
-          on the dependent variable (y), which is generally called
-          <strong>endogenous sample selection</strong>. If the sample is
-          based on whether the dependent variable is above or below a
-          given value, bias always occurs in OLS in estimating the
-          population model.
-        </p><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: reread to identify scenarios where this isn't an issue</p></div><dl><dt>complete cases estimator</dt><dd>
-           This is the term used to refere to an estimator that uses only
-           observations with a complete set of data on its dependent and
-           explanatory variables.
-        </dd><dt>MIM</dt><dd>missing indicator method</dd><dt>MCAR</dt><dd>
-          missing completely at random
-        </dd><dt>MAR</dt><dd>
-          missing at random, when data is only missing
-          based on a independent variable as opposed
-          to unobserved variables (u).
-        </dd><dt>Exogenous selection</dt><dd>
-          A violation of MCAR which doesn't lead to any
-          serious statisical problems, when sample selection is
-          based on the independent variables.
-        </dd><dt>Endogenous selection</dt><dd>
-          When sample selection is based on the dependent variable.
-        </dd><dt>stratified sampling</dt><dd>
-          The population is divided into nonoverlapping, exhaustive groups.
-        </dd><dt>Studentized residuals</dt><dd>
-          Obtained from the original OLS residuals by dividing them by an
-          estimate of their standard deviation (they rely on matrix algebra).
-        </dd></dl></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Outliers and Influential Observations</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P317)</strong></span></div><p>
-        Loosely speaking an observation is an influential observation if
-        dropping it from the analysis changes the key OLS estimates
-        by a practically “large” amount. The notion of an outlier is also a
-        bit vague, because it requires comparing values of the variables for
-        one observation with those for the remaining sample. Nevertheless, one
-        wants to be on the lookout for “unusual” observations because they can
-        greatly affect the OLS estimates.
-      </p><p>
-        OLS is susceptible to outlying observations because it minimizes the
-        sum of squared residuals: large residuals (positive or negative) receive
-        a lot of weight in the least squares minimization problem. If the
-        estimates change by a practically large amount when we slightly modify
-        our sample, we should be concerned.
-      </p><p>
-        Largely outlying observations can occur for two reasons.
-      </p><ol class="no-item-padding" style="margin-block: 0px;"><li>
-          One scenario is when a mistake has been made in entering the data.
-        </li><li>
-          Outliers can also arise when sampling from a small population if one
-          or several members of the population are very different in some
-          relevant aspect from the rest of the population. The decision to keep
-          or drop such observations in a regression analysis can be a difficult
-          one, and the statistical properties of the resulting estimators are
-          complicated.
-        </li></ol><p>
-        OLS results should be reported with and without outlying observations
-        in cases where one or several data points substantially change the
-        results.
-      </p><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: make sure I reread and make sure I haven't missed anything</p></div></div></div></div><div class="widget-container document" id="test-widget-6" style="grid-column: span 2;"><style id="test-widget-6-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Least Absolute Deviations Estimation</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C9 P321)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><blockquote>LAD estimators are justified only in large samples.</blockquote><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><figure class="pre--horizontal-shadow"><math display="block"><mrow><munder><mi>min</mi><mrow><msub><mi>b</mi><mn>0</mn></msub><mrow><msub><mi>b</mi><mn>1</mn></msub><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mo>⋯</mo><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><msub><mi>b</mi><mi>k</mi></msub></mrow></mrow></munder><mspace width="4px"></mspace><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow><mrow><mo>|</mo><mrow><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msub><mi>y</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>b</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>b</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>b</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub></mrow></mrow></mtd></mtd></mtr></mtable></mrow><mo>|</mo></mrow></mrow></mrow></mrow></math><figcaption>Least Absolute Deviations</figcaption></figure><p>
+      </blockquote></div></div></div>"
+`;
+
+exports[`app(unsw::2206::07.1).widgets > intro 1`] = `"<div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>More on Specification and Data Issues<br><small style="color: rgb(170, 170, 255);">ECON2206, W7, Lecture 1</small></h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><p>See here for resources relating to the lesson</p><ul class="no-item-padding" style="margin-block: 0px;"><li><a href="https://www.jstor.org/stable/2984219" target="_blank">Ramsey 1969, specification errors</a></li></ul></div></div></aside></div></div>"`;
+
+exports[`app(unsw::2206::07.1).widgets > leastAbsoluteDeviations 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Least Absolute Deviations Estimation</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P321)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><blockquote>LAD estimators are justified only in large samples.</blockquote><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><figure class="pre--horizontal-shadow"><math display="block"><mrow><munder><mi>min</mi><mrow><msub><mi>b</mi><mn>0</mn></msub><mrow><msub><mi>b</mi><mn>1</mn></msub><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mo>⋯</mo><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><msub><mi>b</mi><mi>k</mi></msub></mrow></mrow></munder><mspace width="4px"></mspace><mrow><munderover><mi>∑</mi><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mspace width="4px"></mspace><mrow><mrow><mo>|</mo><mrow><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msub><mi>y</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>b</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>b</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>b</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub></mrow></mrow></mtd></mtd></mtr></mtable></mrow><mo>|</mo></mrow></mrow></mrow></mrow></math><figcaption>Least Absolute Deviations</figcaption></figure><p>
            A different approach to guarding against outliers is to use
            an estimation method that is less sensitive to outliers than OLS,
            such as least absolute deviations (LAD). LAD estimates are not
@@ -682,5 +151,316 @@ exports[`app(unsw::2206::07.1).snapshot > should match snapshots 1`] = `
               <strong>quantile regression</strong>: which is used to estimate the
               effect of the xⱼ on different parts of the distribution
               not just the median (or mean).
-            </li></ul></div><figure class="pre--horizontal-shadow"><math style="--fontsize-math-m: 14px" display="block"><mtable><mtr columnalign="left right center left"><mtd columnalign="left"><mo>∵</mo></mtd><mtd columnalign="right"><mrow><mtext>log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>x</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>β</mi></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mtd></mtr><mtr columnalign="left right center left"><mtd columnalign="left"><mo>∧</mo></mtd><mtd columnalign="right"><mrow><mtext>Med</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>u</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mi>x</mi></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr><mtr columnalign="left right center left"><mtd columnalign="left"><mo>⇒</mo></mtd><mtd columnalign="right"><mrow><mtext>Med</mtext><mspace width="2px"></mspace><mrow><mo>[</mo><mrow><mrow><mtext>log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mi>x</mi></mrow><mo>]</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>x</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>β</mi></mrow></mrow></mtd></mtr><mtr columnalign="left right center left"><mtd columnalign="left"><mo>∧</mo></mtd><mtd columnalign="right"><mrow><mtext>Med</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>y</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mi>x</mi></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mtext>exp</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>x</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>β</mi></mrow></mrow><mo>)</mo></mrow></mrow></mtd></mtr></mtable></math><figcaption>LAD monotonic transformations</figcaption></figure></div></div></div></div></div><hr style="width: 100%; border-color: transparent;">"
+            </li></ul></div><figure class="pre--horizontal-shadow"><math style="--fontsize-math-m: 14px" display="block"><mtable><mtr columnalign="left right center left"><mtd columnalign="left"><mo>∵</mo></mtd><mtd columnalign="right"><mrow><mtext>log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>x</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>β</mi></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mtd></mtr><mtr columnalign="left right center left"><mtd columnalign="left"><mo>∧</mo></mtd><mtd columnalign="right"><mrow><mtext>Med</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>u</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mi>x</mi></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr><mtr columnalign="left right center left"><mtd columnalign="left"><mo>⇒</mo></mtd><mtd columnalign="right"><mrow><mtext>Med</mtext><mspace width="2px"></mspace><mrow><mo>[</mo><mrow><mrow><mtext>log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mi>x</mi></mrow><mo>]</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>x</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>β</mi></mrow></mrow></mtd></mtr><mtr columnalign="left right center left"><mtd columnalign="left"><mo>∧</mo></mtd><mtd columnalign="right"><mrow><mtext>Med</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>y</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mi>x</mi></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mtext>exp</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>x</mi><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mi>β</mi></mrow></mrow><mo>)</mo></mrow></mrow></mtd></mtr></mtable></math><figcaption>LAD monotonic transformations</figcaption></figure></div></div></div></div>"
+`;
+
+exports[`app(unsw::2206::07.1).widgets > missingDataAndOutliers 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Missing Data, Nonrandom Samples, and Outlying Observations</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P313)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Missing Data</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P313)</strong></span></div><p>
+          When data is missing at random, a common “solution” is to create
+          two new variables. For a unit i the first variable, say
+          <strong>Z<sub>ik</sub></strong>, is defined to be <strong>x<sub>ik</sub></strong>
+          when <strong>x<sub>ik</sub></strong> is observed, and zero otherwise.
+          The second variable is a “missing data indicator,” say
+          <strong>m<sub>ik</sub></strong>, which equals one when
+          <strong>x<sub>ik</sub></strong> is missing and equals zero when
+          <strong>x<sub>ik</sub></strong> is observed. It looks something like this:
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>y</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>α</mi><mn>0</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>Z</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>α</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>m</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></math><figcaption>Regression with missing data indicators</figcaption></figure><p>
+          This only works when data is missing completely at random (MCAR)
+          and there isn't some kind of condition that correlates with the
+          data as to why its missing. As a result MCAR is a fairly strong
+          assumption, and unforunately not something we can reasonably
+          count in reality.
+        </p><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Nonrandom Samples</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P315)</strong></span></div><h4>Exogenous Selection</h4><p>
+          When data isn't missing at random this is called, it doesn't
+          always led any kind of statistical problem, <strong>exogenous
+          sample selection</strong> is one such case where sample selection is
+          based on an independent variable. While this is not ideal, we
+          can still get unbiased and consistent estimators of the
+          parameters in the population model, using the nonrandom sample.
+        </p><p>
+          The reason why, is that the regression function is the same for
+          <strong>E(y|x₁,⋯,xₖ)</strong> any subset of the population described by
+          x₁, x₂, etc. Provided there is enough variation in the independent
+          variables in the subpopulation, selection on the basis of the
+          independent variables is not a serious problem, other than that it
+          results in smaller sample sizes.
+        </p><h4>Endogenous Selection</h4><p>
+          The situation is much different when selection is based
+          on the dependent variable (y), which is generally called
+          <strong>endogenous sample selection</strong>. If the sample is
+          based on whether the dependent variable is above or below a
+          given value, bias always occurs in OLS in estimating the
+          population model.
+        </p><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: reread to identify scenarios where this isn't an issue</p></div><dl><dt>complete cases estimator</dt><dd>
+           This is the term used to refere to an estimator that uses only
+           observations with a complete set of data on its dependent and
+           explanatory variables.
+        </dd><dt>MIM</dt><dd>missing indicator method</dd><dt>MCAR</dt><dd>
+          missing completely at random
+        </dd><dt>MAR</dt><dd>
+          missing at random, when data is only missing
+          based on a independent variable as opposed
+          to unobserved variables (u).
+        </dd><dt>Exogenous selection</dt><dd>
+          A violation of MCAR which doesn't lead to any
+          serious statisical problems, when sample selection is
+          based on the independent variables.
+        </dd><dt>Endogenous selection</dt><dd>
+          When sample selection is based on the dependent variable.
+        </dd><dt>stratified sampling</dt><dd>
+          The population is divided into nonoverlapping, exhaustive groups.
+        </dd><dt>Studentized residuals</dt><dd>
+          Obtained from the original OLS residuals by dividing them by an
+          estimate of their standard deviation (they rely on matrix algebra).
+        </dd></dl></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Outliers and Influential Observations</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P317)</strong></span></div><p>
+        Loosely speaking an observation is an influential observation if
+        dropping it from the analysis changes the key OLS estimates
+        by a practically “large” amount. The notion of an outlier is also a
+        bit vague, because it requires comparing values of the variables for
+        one observation with those for the remaining sample. Nevertheless, one
+        wants to be on the lookout for “unusual” observations because they can
+        greatly affect the OLS estimates.
+      </p><p>
+        OLS is susceptible to outlying observations because it minimizes the
+        sum of squared residuals: large residuals (positive or negative) receive
+        a lot of weight in the least squares minimization problem. If the
+        estimates change by a practically large amount when we slightly modify
+        our sample, we should be concerned.
+      </p><p>
+        Largely outlying observations can occur for two reasons.
+      </p><ol class="no-item-padding" style="margin-block: 0px;"><li>
+          One scenario is when a mistake has been made in entering the data.
+        </li><li>
+          Outliers can also arise when sampling from a small population if one
+          or several members of the population are very different in some
+          relevant aspect from the rest of the population. The decision to keep
+          or drop such observations in a regression analysis can be a difficult
+          one, and the statistical properties of the resulting estimators are
+          complicated.
+        </li></ol><p>
+        OLS results should be reported with and without outlying observations
+        in cases where one or several data points substantially change the
+        results.
+      </p><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: make sure I reread and make sure I haven't missed anything</p></div></div></div>"
+`;
+
+exports[`app(unsw::2206::07.1).widgets > modelsWithRandomSlopes 1`] = `"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Models with Random Slopes</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P306)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: This chapter was really confusing, I need to reread</p></div></div>"`;
+
+exports[`app(unsw::2206::07.1).widgets > olsUnderMeasurementError 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Properties of OLS under Measurement Error</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P308)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="container pre--container"><p>
+        Measurement error generally occurs from slopy or misreported
+        information. Like when someone is filling out a complusorary
+        survey and they're pulling a number from memory (like regular
+        grocery spending).
+      </p><ul class="c2 no-item-padding" style="margin-block: 0px;"><li>
+          When we use an imprecise measure of an economic variable in a
+          regression model, then our model contains measurement error
+        </li><li>
+          OLS will be consistent under certain assumptions, but there are
+          others under which it is inconsistent. In some of these cases,
+          we can derive the size of the asymptotic bias.
+        </li></ul><h4>Differences with Proxy Variables</h4><p>
+        There are similar statistical structure to the omitted variable–proxy
+        discussed above. Obviously they are conceptually different when you
+        consider the origin of these errors, even so — <em>perhaps there's a temptation to
+        consider them close enough to each other that they can be treated
+        identically</em>?
+      </p><p>
+        This would be a mistake, <strong><strong>its worth stressing
+        <em>two</em> ways in which how the nature of these two things are
+        fundermentally different</strong></strong>:
+      </p><ol class="c2 no-item-padding" style="margin-block: 0px;"><li>
+          With <strong><strong>Proxy Variables</strong></strong>, we are looking for a
+          variable that is somehow associated with the unobserved variable.
+          With <strong><em>Measurement Error</em></strong>, the variable that we
+          do not observe has a well-defined, quantitative meaning (such as
+          a marginal tax rate or annual income), but our recorded measures
+          of it may contain error.
+        </li><li>
+          With <strong><em>Measurement Error</em></strong> the primary thing of
+          interst is  mismeasured independent variable. However with
+          <strong><strong>Proxy Variables</strong></strong>, the partial effect of the
+          omitted variable is rarely of central interest, as we are
+          usually more concerned with the effects of the other independent
+          variables. The goal of a <strong><strong>Proxy Variables</strong></strong> is
+          typically to control for the effect of the unobserved variable.
+        </li></ol><p>
+        In summary, <strong><em>one is a subsitute for what we like to
+        measure</em> <strong>the other is a poor measurment of what we would
+        like to measure</strong></strong>.
+      </p></div><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Measurement Error in the Dependent Variable</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P308)</strong></span></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><blockquote>y* is not measured instead we have y</blockquote><figure class="pre--horizontal-shadow"><math display="block"><mrow><msup><mi>y</mi><mo>*</mo></msup><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>j</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></math><figcaption>Measurement error in<br>Dependent Variable</figcaption></figure><p>
+          Measurement error in the dependent variable can cause biases in OLS
+          if it is systematically related to one or more of the explanatory
+          variables. If the measurement error is just a random reporting error
+          that is independent of the explanatory variables, as is often assumed,
+          then OLS is perfectly appropriate.
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr><mtd columnalign="right"><mrow><mo>∵</mo><mspace width="8px"></mspace><msup><mi>y</mi><mo>*</mo></msup></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mi>y</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>e</mi><mn>0</mn></msub></mrow></mtd></mtr><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>j</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>e</mi><mn>0</mn></msub></mrow></mtd></mtr></mtable></math><figcaption>Measurement error in<br>Dependent Variable</figcaption></figure><p>
+          So one assumptions we would like to make is the <strong>measurement
+          error has zero mean</strong>, which would satisify the zero conditional mean
+          assumption for MLR. If this isn't the case we'd simply get an biased
+          estimator of the intercept (β₀). However assumption being incorrect
+          seems to rarely be a cause for concern. It allows us of more more
+          concern is the relationship between the measurement error (e₀) and
+          the explanatory variables (xⱼ).
+        </p><p>
+          When its the case that measurement error is uncorrelated with the
+          independent variables, we can rest assure that our OLS estimations
+          have good properties.
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>u</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>e</mi><mn>0</mn></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msubsup><mi>σ</mi><mi>u</mi><mn>2</mn></msubsup><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msubsup><mi>σ</mi><mn>0</mn><mn>2</mn></msubsup></mrow></mrow><mspace width="4px"></mspace><mo>&gt;</mo><mspace width="4px"></mspace><msubsup><mi>σ</mi><mi>u</mi><mn>2</mn></msubsup></mrow></math><figcaption>Error uncorrelated to residual assumption</figcaption></figure><p>
+          When e₀ and u are uncorrelated, we usually make this assumption,
+          which mostly means there is greater variance then when no error
+          occurs, and larger standard errors for our estimators. There's
+          nothing we can do about this other than collecting better data.
+        </p></div><div class="container pre--container"><dl><dt>Measurement error</dt><dd>
+            defined as the difference between the observed
+            value and the actual value
+          </dd></dl><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>e</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mi>y</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msup><mi>y</mi><mo>*</mo></msup></mrow></mrow></math><figcaption>Measurement error in<br>Dependent Variable</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>e</mi><mrow><mi>i</mi><mn>0</mn></mrow></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>y</mi><mi>i</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msubsup><mi>y</mi><mi>i</mi><mo>*</mo></msubsup></mrow></mrow></math><figcaption><span>Measurement error of Dependent</span><br><span>Variable from random draw</span></figcaption></figure><aside class="infobox"><h3 class="infobox-name">💡 On error zero mean assumption</h3><div class="infobox-body"><div class="container"><p>
+            As far as I can tell, there does not really seem
+            to be an evidence reinforcing this assumption other
+            than an appeal to concequences... I guess the text
+            is saying we don't need to worry about this usually
+            but I'm guessing its implied that we should use our
+            judgment when there's reason to think errors are
+            more likely to be over or under estimated.
+            Which I guess has to be an educated guess based on
+            the dependent variable.
+          </p></div></div></aside><dl><dt>Composite Error</dt><dd>
+            In measurement error, composite error
+            is a combination of the residual (<strong>u</strong>)
+            the error term (<strong>eⱼ</strong>) and the coefficent
+            (<strong>βⱼ</strong>) of the observed model as:
+            <br>
+            <br>
+            <strong>u - βⱼeⱼ</strong>
+          </dd><dt>Multiplicative measurement error</dt><dd>
+            This is when the measurement erorr is on
+            a dependent variable which is logarithmic.
+          </dd></dl><figure class="pre--horizontal-shadow"><math style="--fontsize-math-m: 14px" display="block"><mtable><mtr><mtd columnalign="right"><mrow><mtext>Log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mtext>Log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msup><mi>y</mi><mo>*</mo></msup><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>e</mi><mn>0</mn></msub></mrow></mtd></mtr><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msup><mi>y</mi><mo>*</mo></msup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>a</mi><mn>0</mn></msub></mrow></mtd></mtr><mtr><mtd columnalign="right"><msub><mi>a</mi><mn>0</mn></msub></mtd><mtd><mo>&gt;</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="right"><msub><mi>e</mi><mn>0</mn></msub></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mtext>Log</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>a</mi><mn>0</mn></msub><mo>)</mo></mrow></mrow></mtd></mtr></mtable></math><figcaption>Multiplicative measurment error</figcaption></figure></div></div><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Measurement Error in an Explanatory Variable</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P310)</strong></span></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><blockquote>x* is not measured instead we have x</blockquote><p>
+          Measurement error in an explanatory variable has been considered
+          a much more important problem than measurement error in the
+          dependent variable. Lets start with this model where we annotate
+          the measurement error:
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mi>j</mi><mo>*</mo></msubsup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mrow></math><figcaption>Measurement error in<br>Explanatory Variable</figcaption></figure><p>
+          We start by assuming it satisifies the first 4 Causs-Markov
+          assumptions, so OLS produced unbias consistent estimators of
+          our slope and intercept. Let eⱼ be the error between our
+          <strong>plantonic variable</strong> and the <strong>measured variable</strong>.
+          We also assume a mean measurement error of zero in the population.
+        </p><div class="c2 pre--c2"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mi>𝔼</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>e</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow></math><figcaption>Mean error<br>In population</figcaption></figure><figure class="pre--horizontal-shadow"><math style="--fontsize-math-m: 14px" display="block"><mtable><mtr columnalign="left right center left"><mtd columnalign="left"><mo>∵</mo></mtd><mtd columnalign="right"><mrow><mi>𝔼</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>e</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr><mtr columnalign="left right center left"><mtd columnalign="left"><mo>⇒</mo></mtd><mtd columnalign="right"><mrow><mi>𝔼</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>y</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mrow><msub><mi>x</mi><mi>j</mi></msub><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><msubsup><mi>x</mi><mi>j</mi><mo>*</mo></msubsup></mrow></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mi>𝔼</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>y</mi><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><msub><mi>x</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow></mrow></mtd></mtr></mtable></math><figcaption>Implicaitons of Mean error</figcaption></figure></div><p>From here however there are 2 scenarios we need to consider:</p><ol class="no-item-padding" style="margin-block: 0px;"><li>
+            measurement error of zero correlates <strong>observed</strong> value
+          </li><li>
+            measurement error of zero correlates <strong>unobserved</strong> value
+          </li></ol><div class="c2 pre--c2"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>CoVar</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>e</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>x</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow></math><figcaption>E covariance with observed</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>CoVar</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>e</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><msubsup><mi>x</mi><mi>j</mi><mo>*</mo></msubsup><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow></math><figcaption>E covariance with unobserved</figcaption></figure></div></div><div class="container pre--container"><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>e</mi><mi>j</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mi>x</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msubsup><mi>x</mi><mi>j</mi><mo>*</mo></msubsup></mrow></mrow></math><figcaption>Measurement error in<br>Explanatory Variable</figcaption></figure><blockquote>
+          eⱼ can either be positive or negative.
+        </blockquote><dl><dt>Attenuation bias</dt><dd>
+            When the estimated OLS effect is attenuated,
+            in that the effect is smaller.
+          </dd><dt>CEV</dt><dd>
+            <strong>classical errors-in-variables</strong>, which is
+            the assumption that the measurement error is
+            uncorrelated with the unobserved explanatory variable.
+          </dd></dl></div></div><h4>When Covar(eⱼ, xⱼ) = 0</h4><div class="container pre--container"><p>When this assumptions hold, our model takes this form:</p><div class="c2 pre--c2"><figure class="pre--horizontal-shadow"><math style="--fontsize-math-m: 14px" display="block"><mtable><mtr columnalign="left right center left"><mtd columnalign="left"><mo>∵</mo></mtd><mtd columnalign="right"><mrow><mtext>CoVar</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>e</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>x</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr><mtr columnalign="left right center left"><mtd columnalign="left"><mo>⇒</mo></mtd><mtd columnalign="right"><mrow><mo>|</mo><mrow><mrow><mtext>CoVar</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>e</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><msubsup><mi>x</mi><mi>j</mi><mo>*</mo></msubsup><mo>)</mo></mrow></mrow></mrow><mo>|</mo></mrow></mtd><mtd columnalign="center"><mo>&gt;</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr></mtable><mtable><mtr columnalign="left right center left"><mtd columnalign="left"><mo>∧</mo></mtd><mtd columnalign="right"><mrow><mi>𝔼</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>e</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr><mtr columnalign="left right center left"><mtd columnalign="left"><mo>∧</mo></mtd><mtd columnalign="right"><msubsup><mi>x</mi><mi>j</mi><mo>*</mo></msubsup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>x</mi><mi>j</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>e</mi><mi>j</mi></msub></mrow></mtd></mtr></mtable></math><figcaption>Implicaitons of Error covariance</figcaption></figure><div style="--fontsize-math-m: 14px;"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>y</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>j</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mo>(</mo><mi>u</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>e</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow></mrow></mrow></math><figcaption>Implications of measurement error assumptions</figcaption></figure></div></div><div class="c2 pre--c2"><div class="container pre--container"><p>What this means:</p><ul class="no-item-padding" style="margin-block: 0px;"><li>Estimator will be bias</li><li>But estimator will be consistent</li></ul></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mi>𝕍</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mi>u</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>e</mi><mi>j</mi></msub></mrow></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msubsup><mi>σ</mi><mi>u</mi><mn>2</mn></msubsup><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msubsup><mi>β</mi><mi>j</mi><mn>2</mn></msubsup><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>σ</mi><msub><mi>e</mi><mi>j</mi></msub><mn>2</mn></msubsup></mrow></mrow></mrow></math><figcaption>Variance of error</figcaption></figure></div><p>
+        This is the best case as its a more desirable outcome.
+        Despite measurement increasing the error variance, it
+        does not affect any of the properties of OLS. Besides
+        a variance in β̂ⱼ than what we would otherwise get when
+        observing xⱼ* directly.
+      </p></div><h4>When Covar(eⱼ, xⱼ*) = 0</h4><div class="container pre--container"><div class="c2 pre--c2"><p>
+          Because the other assumption implies OLS has nice
+          properties it is of less concern. This assumption
+          suggests the measurement error is uncorrelated with
+          the unobserved explanatory variable. This implies:
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mrow><mtext>CoVar</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>e</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><msubsup><mi>x</mi><mi>j</mi><mo>*</mo></msubsup><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mn>0</mn></mrow><mspace width="4px"></mspace><mo>⇒</mo><mspace width="4px"></mspace><mrow><msub><mi>x</mi><mi>j</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msubsup><mi>x</mi><mi>j</mi><mo>*</mo></msubsup><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>e</mi><mi>j</mi></msub></mrow></mrow></mrow></math><figcaption>E covariance with unobserved</figcaption></figure></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>CoVar</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>e</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>x</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mi>𝔼</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>e</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mi>𝔼</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>e</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mi>j</mi><mo>*</mo></msubsup></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>𝔼</mi><mspace width="2px"></mspace><mrow><mo>(</mo><msubsup><mi>e</mi><mi>j</mi><mn>2</mn></msubsup><mo>)</mo></mrow></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mn>0</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msubsup><mi>σ</mi><msub><mi>e</mi><mi>j</mi></msub><mn>2</mn></msubsup></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><msubsup><mi>σ</mi><msub><mi>e</mi><mi>j</mi></msub><mn>2</mn></msubsup></mrow></math><figcaption>Variance under CEV assumption</figcaption></figure><div class="c2 pre--c2"><p>
+          Because u and xⱼ are uncorrelated, the covariance
+          between xⱼ and the composite error is:
+        </p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>Cov</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><mrow><mi>u</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>e</mi><mi>j</mi></msub></mrow></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mo>-</mo><msub><mi>β</mi><mi>j</mi></msub></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mtext>Cov</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><msub><mi>e</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mo>-</mo><msub><mi>β</mi><mi>j</mi></msub></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>σ</mi><msub><mi>e</mi><mi>j</mi></msub><mn>2</mn></msubsup></mrow></mrow></math><figcaption>Covar between xⱼ and composite error</figcaption></figure></div><p>
+        As a result OLS gives us a biased and inconsistent estimator:
+      </p><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr><mtd columnalign="right"><mrow><mi>plim</mi><mrow><mo>(</mo><msub><mi>β̂</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mfrac><mrow><mtext>Cov</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mi>j</mi></msub><mo>,</mo><mspace width="4px"></mspace><mrow><mi>u</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>e</mi><mi>j</mi></msub></mrow></mrow><mo>)</mo></mrow></mrow><mrow><mtext>Var</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><msub><mi>x</mi><mi>j</mi></msub><mo>)</mo></mrow></mrow></mfrac></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mfrac><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>σ</mi><msub><mi>e</mi><mi>j</mi></msub><mn>2</mn></msubsup></mrow><mrow><msubsup><mi>σ</mi><msub><mi>x</mi><mi>j</mi></msub><mrow><mn>2</mn><mo>*</mo></mrow></msubsup><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msubsup><mi>σ</mi><msub><mi>e</mi><mi>j</mi></msub><mn>2</mn></msubsup></mrow></mfrac></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mfrac><msubsup><mi>σ</mi><msub><mi>e</mi><mi>j</mi></msub><mn>2</mn></msubsup><mrow><msubsup><mi>σ</mi><msub><mi>x</mi><mi>j</mi></msub><mrow><mn>2</mn><mo>*</mo></mrow></msubsup><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msubsup><mi>σ</mi><msub><mi>e</mi><mi>j</mi></msub><mn>2</mn></msubsup></mrow></mfrac><mo>)</mo></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mfrac><msubsup><mi>σ</mi><msub><mi>x</mi><mi>j</mi></msub><mrow><mn>2</mn><mo>*</mo></mrow></msubsup><mrow><msubsup><mi>σ</mi><msub><mi>x</mi><mi>j</mi></msub><mrow><mn>2</mn><mo>*</mo></mrow></msubsup><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msubsup><mi>σ</mi><msub><mi>e</mi><mi>j</mi></msub><mn>2</mn></msubsup></mrow></mfrac><mo>)</mo></mrow></mrow></mtd></mtr></mtable></math><figcaption>Probability limit under CEV</figcaption></figure><div class="c2 pre--c2"><p>
+          Given the above β̂ⱼ is always closer to zero than βⱼ which
+          gives us an <strong>attenuation bias</strong> due to <strong>CEV</strong>.
+          So on average estimated OLS effect will be attenuated. So
+          if βⱼ is positive, β̂ⱼ will tend to underestimate βⱼ.
+          Things get more complicated when we add more explanatory
+          variables, <strong>all our estimators will end up with
+          bias not just β̂ⱼ</strong>.
+        </p><div class="container pre--container"><math display="block"><mtable><mtr><mtd columnalign="right"><mtext>where</mtext></mtd><mtd columnalign="right"><mi>r</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mtext>the population error ...</mtext></mtd></mtr><mtr><mtd columnalign="right"><mtext>in</mtext></mtd><mtd columnalign="right"><msubsup><mi>x</mi><mi>j</mi><mi>*</mi></msubsup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>α</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>α</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>α</mi><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msubsup><mi>r</mi><mi>j</mi><mo>*</mo></msubsup></mrow></mtd></mtr></mtable></math><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mi>plim</mi><mrow><mo>(</mo><msub><mi>β̂</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mfrac><msubsup><mi>σ</mi><msub><mi>r</mi><mn>1</mn></msub><mrow><mn>2</mn><mo>*</mo></mrow></msubsup><mrow><msubsup><mi>σ</mi><msub><mi>r</mi><mn>1</mn></msub><mrow><mn>2</mn><mo>*</mo></mrow></msubsup><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msubsup><mi>σ</mi><msub><mi>e</mi><mn>1</mn></msub><mn>2</mn></msubsup></mrow></mfrac><mo>)</mo></mrow></mrow></mrow></math><figcaption>Simplified probability limit</figcaption></figure></div></div></div><h4>Word of Warning</h4><p>
+      Measurement error can be present in more than one explanatory
+      variable, or in some explanatory variables and the dependent
+      variable.
+    </p></div></div>"
+`;
+
+exports[`app(unsw::2206::07.1).widgets > usingProxyVariables 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Using Proxy Variables for Unobserved Explanatory Variables</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P299)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+          Proxy variables are typically used in cases where measuring the desired
+          variable is not possible, but there is another variable that is a
+          highly correlated with (or at least is belived to be highly correlated
+          with it).
+        </p><blockquote>
+          The text I am reading from unforunately uses IQ as an example of a
+          substitute for measuring a vague concept like ability. I personally
+          don't think the concept of IQ is particularlly credible, but if you
+          see if used here just know it's not an endorsement by me or anything.
+        </blockquote><p>
+          In order that we produce unbias estimators we need to
+          at least make sure that the following hold.
+        </p><ol class="no-item-padding" style="margin-block: 0px;"><li>
+            Like with many other models we require for the error term to
+            not be correlated with any of our independent variables.
+          </li><li>
+            <strong>v</strong> in the hypothetical model for deriving
+            <strong>x₃*</strong> (shown below0 is not correlated with any of
+            the dependent variables either.
+          </li></ol></div><dl><dt>Proxy Variable</dt><dd>
+          This is when we substutiute a variable we cannot
+          measure for one that we can that we believe is
+          a good enough substitute.
+        </dd><dt>plug-in solution</dt><dd>
+          This when we pretend a proxy variable and the omitted
+          variable it replaces are the same things.
+        </dd></dl></div><div class="c2 pre--c2"><div class="container pre--container"><p>Stated as:</p><figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msubsup><mi>x</mi><mn>3</mn><mo>*</mo></msubsup><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mrow><msub><mi>x</mi><mn>1</mn></msub><mrow><msub><mi>x</mi><mn>2</mn></msub><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><msub><mi>x</mi><mn>3</mn></msub></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msubsup><mi>x</mi><mn>3</mn><mo>*</mo></msubsup><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><msub><mi>x</mi><mn>3</mn></msub></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>3</mn></msub></mrow></mrow></mrow></math><figcaption>Proxy variable Assumptions</figcaption></figure><p>
+          If these above assumptions are violated we can expect
+          bias in our proxy variables. All said this is how we
+          understand the proxy variable to relate unobservable
+          variable.
+        </p></div><div style="--fontsize-math-m: 12px;"><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msubsup><mi>x</mi><mn>3</mn><mo>*</mo></msubsup></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi></mrow></mtd></mtr><mtr><mtd columnalign="right"><msubsup><mi>x</mi><mn>3</mn><mo>*</mo></msubsup></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>δ</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>3</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>v</mi><mn>3</mn></msub></mrow></mtd></mtr><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mo>(</mo><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>δ</mi><mn>0</mn></msub></mrow><mo>)</mo></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>δ</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>3</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>u</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>v</mi><mn>3</mn></msub></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>α</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>1</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>2</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>α</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mn>3</mn></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>e</mi></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mtext>where</mtext><mspace width="8px"></mspace><msub><mi>α</mi><mn>0</mn></msub></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mo>(</mo><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>δ</mi><mn>0</mn></msub></mrow><mo>)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mtext>and</mtext><mspace width="8px"></mspace><msub><mi>α</mi><mn>3</mn></msub></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>3</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>δ</mi><mn>3</mn></msub></mrow></mtd></mtr></mtable></math><figcaption>Proxy variable solution</figcaption></figure></div></div><div class="container pre--container"><h4>When the assumption is violated</h4><p>
+        Say our proxy variable relates to all our dependent
+        variables? Well this leads to multicollinearity, however
+        it still reduces the error variance if it removes the
+        removes the part explained by the unobservable variable
+        from the error. Secondarly the added multicollinearity is
+        a necessary evil to get an estimator with less bias of
+        all other variables.
+      </p><h4>Assumption Summary</h4><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr><mtd columnalign="right"><mrow><mi>𝔼</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msubsup><mi>x</mi><mi>j</mi><mo>*</mo></msubsup><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mrow><msub><mi>x</mi><mn>1</mn></msub><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mo>⋯</mo><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><msub><mi>x</mi><mi>k</mi></msub></mrow></mrow><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mi>𝔼</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msubsup><mi>x</mi><mi>j</mi><mo>*</mo></msubsup><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><msub><mi>x</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="right"><mrow><mi>Covar</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>x</mi><mrow><mn>1</mn><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mo>⋯</mo><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mi>k</mi></mrow></msub><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mi>v</mi></mrow><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mi>Covar</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>x</mi><mi>j</mi></msub><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mi>v</mi></mrow><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mn>0</mn></mtd></mtr></mtable></math><figcaption>Summary of when we can use proxies</figcaption></figure><p>
+        In summary above is the rule for when you
+        can use a proxy variable.
+      </p></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Using Lagged Dependent Variables as Proxy Variables</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P303)</strong></span></div><blockquote>Using a lagged dependent variable in a cross-sectional equation increases the data requirements</blockquote><p>
+        In such cases, we can include, as a control, the value of the
+        dependent variable from an earlier time period. This is
+        especially useful for policy analysis. But it also provides a
+        simple way to account for historical factors that cause current
+        differences in the dependent variable that are difficult to
+        account for in other ways. <strong>Inertial effects</strong> are also
+        captured by putting in lags of y.
+      </p><div style="display: grid; grid-template-columns: 1fr auto;"><h3>A Different Slant on Multiple Regression</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P304)</strong></span></div><p>
+        Until now, we have specified the population model of interest
+        with an additive error. When we are unable to observe one of
+        those variables we condider a proxy variable. However a less
+        structured, more general approach to multiple regression is
+        to forego specifying models with unobservables. Rather, we
+        begin with the premise that we have access to a set of
+        observable explanatory variables.
+      </p><p>
+        The difference now is that we set our goals more modestly, we
+        are not longer trying to measure a nebalous crtieria. While we
+        may not be answering a question relating to an underlying
+        plantonic equation, we are answering a question of interest
+        relating to what we can measure.
+      </p><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Potential Outcomes and Proxy Variables</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C9 P305)</strong></span></div><div class="c2 twoThree pre--c2 pre--two-three"><ul class="no-item-padding" style="margin-block: 0px;"><li>
+            The notion of proxy variables can be related to the
+            potential outcomes framework.
+          </li><li>
+            The notion of proxy variables can be related to the
+            potential outcomes framework
+          </li></ul><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr><mtd columnalign="right"><mrow><mi>y</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>μ</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>v</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mi>y</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>μ</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><mi>v</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><msub><mi>τ</mi><mi>ate</mi></msub></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>μ</mi><mn>1</mn></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>μ</mi><mn>0</mn></msub></mrow></mtd></mtr></mtable></math><figcaption>Counterfactual outcomes</figcaption></figure></div><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr><mtd columnalign="right"><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mrow><mi>v</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mrow><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mrow><mi>w</mi><mrow><mi>x</mi></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mrow><mi>v</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mrow><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mi>x</mi></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mo>(</mo><mi>x</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>β</mi><mn>0</mn></msub></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mrow><mi>v</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mrow><mi>w</mi><mrow><mi>x</mi></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><mrow><mi>v</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mi>x</mi></mrow><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mo>(</mo><mi>x</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mtext>E</mtext><mspace width="2px"></mspace><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>β</mi><mn>1</mn></msub></mrow></mrow></mtd></mtr></mtable></math><figcaption>Conditional expectations of potential outcomes</figcaption></figure><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: reread and complete notes</p></div></div></div>"
 `;

@@ -1,109 +1,12 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`app(unsw::2206::08.1).snapshot > should match snapshots 1`] = `
-"<style id="test-styles"></style><div class="widget-container document" id="test-widget-0" style="grid-column: span 2;"><style id="test-widget-0-styles"></style><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>Basic Regression Analysis with Time Series Data<br><small style="color: #aaaaff">ECON2206, W8, Lecture 1</small></h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li>Chapter 10 of the textbook.</li><li><a href="https://www.tylervigen.com/spurious-correlations" target="_blank">Spurious regressions</a></li></ul></div></div></aside></div></div></div><div class="widget-container document" id="test-widget-1" style="grid-column: span 2;"><style id="test-widget-1-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>The Nature of Time Series Data</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C10 P334)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
-          Time series data places heavy emphasis on the fact
-          it has a temporal ordering. While this fact should not
-          be surspring it is worth emphasising as it is the lense
-          in which we'll be revaluating the methodologies we've
-          learnt so far. We'll still have how tests, our estimators,
-          our statistics, etc. But this temporal ordering aspect
-          introduces so idiosyncrasies.
-        </p><hr><p>
-          Something else worth considering is the whole concept of
-          a random variable over time. How do we think about the
-          concept of randomness over a time series? In cross
-          sectional data we thought of this as a random draw,
-          which isn't immediately obvious how it translates
-          to what into time series data.
-        </p><ul class="no-item-padding" style="margin-block: 0px;"><li>
-            Generally, <strong>because the outcomes of our variables are
-            not foreknown, they are viewed as random variables</strong>.
-          </li><li>
-            One set over observations collected over a time series,
-            is one possible outcome, or realization, of the stochastic
-            process.
-          </li></ul></div><dl><dt>temporal ordering</dt><dd>Ordering over time</dd><dt>stochastic process</dt><dd>
-          Sometimes called a <strong>times series process</strong>, this
-          is a sequence of random variables indexed by time.
-        </dd><dt>Stochastic</dt><dd>A synonym for random</dd></dl></div><h3>Summary, Compared with Cross Sectional</h3><div class="c2 pre--c2"><div class="container pre--container"><h4>Cross Sectional Data</h4><p>
-          TODO. Observation are independent from each other.
-          Until now most of the questions we've asked relating
-          to our causation is what would have happened.
-          Counterfactuals in cross sectional here have been
-          like what would Y be if Xⱼ was blah.
-        </p></div><div class="container pre--container"><h4>Time series data</h4><p>
-          TODO.
-          Sample is one realised path. Due to serial correlation
-          one draw is expected to be influenced by a previous draw.
-          Counterfactuals in time series here are like, how would
-          Y evolve given X.
-        </p></div></div><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: fix summary, clarify what is randomw and what are counter factorals</p></div></div></div><div class="widget-container document" id="test-widget-2" style="grid-column: span 2;"><style id="test-widget-2-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Examples of Time Series Regression Models</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C10 P335)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Static Models</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C10 P336)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>y</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>t</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>t</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mi>k</mi></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>u</mi><mi>t</mi></msub></mrow></mrow></math><figcaption>Example of a static model</figcaption></figure><p>
+exports[`app(unsw::2206::08.1).widgets > examplesOfTimeSeriesModels 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Examples of Time Series Regression Models</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C10 P335)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Static Models</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C10 P336)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>y</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>t</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>t</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mi>k</mi></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>u</mi><mi>t</mi></msub></mrow></mrow></math><figcaption>Example of a static model</figcaption></figure><p>
           Above is an example of a static model, there is no
           reference to any other time period so any value of
           the explanatory variables are understood to have an
           immediate effect on the value of y.
-        </p><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Finite Distributed Lag Models</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C10 P336)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>y</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>α</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>0</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>t</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mrow><mi>t</mi><mo>-</mo><mn>1</mn></mrow><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mrow><mi>t</mi><mo>-</mo><mn>2</mn></mrow><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>u</mi><mi>t</mi></msub></mrow></mrow></math><figcaption>Example of a static model</figcaption></figure><p>
+        </p><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Finite Distributed Lag Models</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C10 P336)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>y</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>α</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>0</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>t</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mrow><mi>t</mi><mo>-</mo><mn>1</mn></mrow><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>δ</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mrow><mi>t</mi><mo>-</mo><mn>2</mn></mrow><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>u</mi><mi>t</mi></msub></mrow></mrow></math><figcaption>Example of a static model</figcaption></figure><p>
           Above is an example of a lagged model, their explanatory
           variables can consist of variables from 1 or more earlier
           periods. The variables from the current period do not
@@ -128,22 +31,7 @@ exports[`app(unsw::2206::08.1).snapshot > should match snapshots 1`] = `
           lags resulting in multicollinearity leading to
           difficulty in obtaining precise estimates of the
           different iterations of the δⱼ.
-        </p><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>A Convention about the Time Index</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C10 P338)</strong></span></div><p>
+        </p><div style="display: grid; grid-template-columns: 1fr auto;"><h3>A Convention about the Time Index</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C10 P338)</strong></span></div><p>
           When models have lagged explanatory variables, confusion can
           arise concerning the treatment of initial observations. The
           convention followed here will be that these are the initial
@@ -185,40 +73,14 @@ exports[`app(unsw::2206::08.1).snapshot > should match snapshots 1`] = `
             <br>
             <strong>x(δ₀ + δ₁ + δ₂)</strong>
 
-          </dd></dl></div></div></div></div></div><div class="widget-container document" id="test-widget-3" style="grid-column: span 2;"><style id="test-widget-3-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Finite Sample Properties of OLS under Classical Assumptions</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C10 P339)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><p>
+          </dd></dl></div></div></div></div>"
+`;
+
+exports[`app(unsw::2206::08.1).widgets > finiteSamplePropertiesOLS 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Finite Sample Properties of OLS under Classical Assumptions</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C10 P339)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><p>
       Here we'll go through the 6 assumptions
       needed to ensure unbiasness in OLS.
-    </p><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Unbiasedness of OLS</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C10 P339)</strong></span></div><p>Time series OLS is unbias under TS.1, TS.2 &amp; TS.3</p><h4>TS.1 Linear in Parameters</h4><div class="container pre--container"><figure class="pre--horizontal-shadow"><math style="--fontsize-math-m: 14px" display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mo>{</mo><mrow><mo>(</mo><msub><mi>x</mi><mrow><mi>t</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>1</mn></mrow></msub><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><msub><mi>x</mi><mrow><mi>t</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>2</mn></mrow></msub><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mo>⋯</mo><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><msub><mi>x</mi><mrow><mi>t</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mi>k</mi></mrow></msub><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><msub><mi>y</mi><mi>t</mi></msub><mo>)</mo></mrow><mo>:</mo><mspace width="8px"></mspace><mi>t</mi></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mn>1</mn><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mn>2</mn><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mo>⋯</mo><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mi>n</mi></mrow><mo>}</mo></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>y</mi><mi>t</mi></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>t</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>t</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>2</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>t</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mi>k</mi></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>u</mi><mi>t</mi></msub></mrow></mtd></mtr></mtable></math><figcaption>TS1: Linear in parameters</figcaption></figure><p>
+    </p><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Unbiasedness of OLS</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C10 P339)</strong></span></div><p>Time series OLS is unbias under TS.1, TS.2 &amp; TS.3</p><h4>TS.1 Linear in Parameters</h4><div class="container pre--container"><figure class="pre--horizontal-shadow"><math style="--fontsize-math-m: 14px" display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mrow><mo>{</mo><mrow><mo>(</mo><msub><mi>x</mi><mrow><mi>t</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>1</mn></mrow></msub><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><msub><mi>x</mi><mrow><mi>t</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>2</mn></mrow></msub><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mo>⋯</mo><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><msub><mi>x</mi><mrow><mi>t</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mi>k</mi></mrow></msub><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><msub><mi>y</mi><mi>t</mi></msub><mo>)</mo></mrow><mo>:</mo><mspace width="8px"></mspace><mi>t</mi></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mn>1</mn><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mn>2</mn><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mo>⋯</mo><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mi>n</mi></mrow><mo>}</mo></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msub><mi>y</mi><mi>t</mi></msub></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><msub><mi>β</mi><mn>0</mn></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>1</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>t</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>1</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mn>2</mn></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>t</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mn>2</mn></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mo>⋯</mo><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>k</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><msub><mi>x</mi><mrow><mi>t</mi><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mi>k</mi></mrow></msub></mrow><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>u</mi><mi>t</mi></msub></mrow></mtd></mtr></mtable></math><figcaption>TS1: Linear in parameters</figcaption></figure><p>
             This is more or less the same as MLR, but since we
             are specifying a linear model for time series data. We
             formalise it differently. For reference purpose:
@@ -288,22 +150,7 @@ exports[`app(unsw::2206::08.1).snapshot > should match snapshots 1`] = `
             Usage contruction of t &amp; F statistics are valid and have
             their respective distribution (t &amp; F distributions). CI's
             are also valid.
-          </p></div></div></aside></div></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>The Variances of the OLS Estimators and the Gauss-Markov Theorem</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C10 P342)</strong></span></div><div class="container pre--container"><h4>TS.4 Homoskedasticity</h4><blockquote>Variance of unobservables is constant over time</blockquote><div class="c2 pre--c2"><div class="container pre--container"><p>
+          </p></div></div></aside></div></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>The Variances of the OLS Estimators and the Gauss-Markov Theorem</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C10 P342)</strong></span></div><div class="container pre--container"><h4>TS.4 Homoskedasticity</h4><blockquote>Variance of unobservables is constant over time</blockquote><div class="c2 pre--c2"><div class="container pre--container"><p>
               This is similar to MLR.5, but like TS.3 being
               similar to MLR.4. Really what we are saying is
               the variance of our observable are constant over
@@ -331,22 +178,7 @@ exports[`app(unsw::2206::08.1).snapshot > should match snapshots 1`] = `
               series data, its actually the same theorum we use for cross
               sectional data. So no need to examine it to spot the difference
               its the same. But it warrants repeating.
-            </p></div><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right right center left"><mtd columnalign="right"><mtext>Let</mtext></mtd><mtd columnalign="right"><mrow><mi>𝕍</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>β̂</mi><mi>j</mi></msub><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mi>X</mi></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><msup><mi>σ</mi><mn>2</mn></msup><mrow><mo>[</mo><msub><mi>SST</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msubsup><mi>R</mi><mi>j</mi><mn>2</mn></msubsup><mo>)</mo></mrow><mo>]</mo></mrow></mfrac></mtd></mtr><mtr columnalign="right right center left"><mtd columnalign="right"><mtext>Where</mtext></mtd><mtd columnalign="right"><mi>j</mi></mtd><mtd columnalign="center"><mo>∈</mo></mtd><mtd columnalign="left"><mrow><mo>{</mo><mn>1</mn><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mo>…</mo><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mi>k</mi><mo>}</mo></mrow></mtd></mtr></mtable></math><figcaption>OLS Sampling Variance</figcaption></figure></div></div></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Inference under the Classical Linear Model Assumptions</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C10 P344)</strong></span></div><div class="c2 twoThree pre--c2 pre--two-three"><p>
+            </p></div><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right right center left"><mtd columnalign="right"><mtext>Let</mtext></mtd><mtd columnalign="right"><mrow><mi>𝕍</mi><mspace width="2px"></mspace><mrow><mo>(</mo><mrow><msub><mi>β̂</mi><mi>j</mi></msub><mspace width="2px"></mspace><mo>|</mo><mspace width="2px"></mspace><mi>X</mi></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><msup><mi>σ</mi><mn>2</mn></msup><mrow><mo>[</mo><msub><mi>SST</mi><mi>j</mi></msub><mspace width="1px"></mspace><mo>⁢</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msubsup><mi>R</mi><mi>j</mi><mn>2</mn></msubsup><mo>)</mo></mrow><mo>]</mo></mrow></mfrac></mtd></mtr><mtr columnalign="right right center left"><mtd columnalign="right"><mtext>Where</mtext></mtd><mtd columnalign="right"><mi>j</mi></mtd><mtd columnalign="center"><mo>∈</mo></mtd><mtd columnalign="left"><mrow><mo>{</mo><mn>1</mn><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mo>…</mo><mspace width="0px"></mspace><mrow><mo>,</mo><mspace width="2px"></mspace></mrow><mspace width="0px"></mspace><mi>k</mi><mo>}</mo></mrow></mtd></mtr></mtable></math><figcaption>OLS Sampling Variance</figcaption></figure></div></div></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Inference under the Classical Linear Model Assumptions</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C10 P344)</strong></span></div><div class="c2 twoThree pre--c2 pre--two-three"><p>
           Assumption TS.6 implies TS.3-5, and it is the strongest assumption.
           It implies independence and normality, our standar errors,
           t statisitics, F statistics, etc. Operate as they did under
@@ -355,22 +187,11 @@ exports[`app(unsw::2206::08.1).snapshot > should match snapshots 1`] = `
         </p><aside class="infobox"><h3 class="infobox-name">💡 TS.6 Normality</h3><div class="infobox-body"><div class="container"><p>
             The errors uₜ are independent of X and are independently and
             identically distributed as <strong>Normal(0, σ²)</strong>.
-          </p></div></div></aside></div></div></div></div></div><div class="widget-container document" id="test-widget-4" style="grid-column: span 2;"><style id="test-widget-4-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Functional Form, Dummy Variables, and Index Numbers</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C10 P345)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+          </p></div></div></aside></div></div></div></div>"
+`;
+
+exports[`app(unsw::2206::08.1).widgets > functionalFormDummyVariables 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Functional Form, Dummy Variables, and Index Numbers</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C10 P345)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
           All of what we learnt in terms of functional forms in MLR apply
           for time series regressions. However alot of emphasis is placed
           on the value on the log of either the dependent variable or
@@ -383,121 +204,54 @@ exports[`app(unsw::2206::08.1).snapshot > should match snapshots 1`] = `
           </dd><dt>long-run elasticity</dt><dd>
             In a log log FDL model this is just
             the <strong>long run propensity</strong>.
-          </dd></dl></div></div></div></div></div><div class="widget-container document" id="test-widget-5" style="grid-column: span 2;"><style id="test-widget-5-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Trends and Seasonality</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C10 P351)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p style="
-      color: var(--fg-white-on-blue);
-      background: var(--bg-blue);
-      padding: 8px
-    "><p><strong>NOTE</strong><ul class="no-item-padding" style="margin-block: 0px;"></ul></p></p><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Characterizing Trending Time Series</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C10 P351)</strong></span></div><p style="
-      color: var(--fg-white-on-blue);
-      background: var(--bg-blue);
-      padding: 8px
-    "><p><strong>NOTE</strong><ul class="no-item-padding" style="margin-block: 0px;"></ul></p></p><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Using Trending Variables in Regression Analysis</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C10 P354)</strong></span></div><p style="
-      color: var(--fg-white-on-blue);
-      background: var(--bg-blue);
-      padding: 8px
-    "><p><strong>NOTE</strong><ul class="no-item-padding" style="margin-block: 0px;"></ul></p></p><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>A Detrending Interpretation of Regressions with a Time Trend</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C10 P356)</strong></span></div><p style="
-      color: var(--fg-white-on-blue);
-      background: var(--bg-blue);
-      padding: 8px
-    "><p><strong>NOTE</strong><ul class="no-item-padding" style="margin-block: 0px;"></ul></p></p><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Computing R-Squared When the Dependent Variable Is Trending</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C10 P357)</strong></span></div><p style="
-      color: var(--fg-white-on-blue);
-      background: var(--bg-blue);
-      padding: 8px
-    "><p><strong>NOTE</strong><ul class="no-item-padding" style="margin-block: 0px;"></ul></p></p><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Seasonality</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C10 P358)</strong></span></div><p style="
-      color: var(--fg-white-on-blue);
-      background: var(--bg-blue);
-      padding: 8px
-    "><p><strong>NOTE</strong><ul class="no-item-padding" style="margin-block: 0px;"></ul></p></p></div><dl><dt>Time Trend</dt><dd>The tendency for data to follow a directional trend over time.</dd><dt>Exponential trend</dt><dd>A trend where a series grows protional to previous periods.</dd><dt>CAGR</dt><dd>constant average growth rate</dd><dt>growth rate</dt><dd>
+          </dd></dl></div></div></div></div>"
+`;
+
+exports[`app(unsw::2206::08.1).widgets > intro 1`] = `"<div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>Basic Regression Analysis with Time Series Data<br><small style="color: rgb(170, 170, 255);">ECON2206, W8, Lecture 1</small></h1></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li>Chapter 10 of the textbook.</li><li><a href="https://www.tylervigen.com/spurious-correlations" target="_blank">Spurious regressions</a></li></ul></div></div></aside></div></div>"`;
+
+exports[`app(unsw::2206::08.1).widgets > natureOfTimeSeriesData 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>The Nature of Time Series Data</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C10 P334)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+          Time series data places heavy emphasis on the fact
+          it has a temporal ordering. While this fact should not
+          be surspring it is worth emphasising as it is the lense
+          in which we'll be revaluating the methodologies we've
+          learnt so far. We'll still have how tests, our estimators,
+          our statistics, etc. But this temporal ordering aspect
+          introduces so idiosyncrasies.
+        </p><hr><p>
+          Something else worth considering is the whole concept of
+          a random variable over time. How do we think about the
+          concept of randomness over a time series? In cross
+          sectional data we thought of this as a random draw,
+          which isn't immediately obvious how it translates
+          to what into time series data.
+        </p><ul class="no-item-padding" style="margin-block: 0px;"><li>
+            Generally, <strong>because the outcomes of our variables are
+            not foreknown, they are viewed as random variables</strong>.
+          </li><li>
+            One set over observations collected over a time series,
+            is one possible outcome, or realization, of the stochastic
+            process.
+          </li></ul></div><dl><dt>temporal ordering</dt><dd>Ordering over time</dd><dt>stochastic process</dt><dd>
+          Sometimes called a <strong>times series process</strong>, this
+          is a sequence of random variables indexed by time.
+        </dd><dt>Stochastic</dt><dd>A synonym for random</dd></dl></div><h3>Summary, Compared with Cross Sectional</h3><div class="c2 pre--c2"><div class="container pre--container"><h4>Cross Sectional Data</h4><p>
+          TODO. Observation are independent from each other.
+          Until now most of the questions we've asked relating
+          to our causation is what would have happened.
+          Counterfactuals in cross sectional here have been
+          like what would Y be if Xⱼ was blah.
+        </p></div><div class="container pre--container"><h4>Time series data</h4><p>
+          TODO.
+          Sample is one realised path. Due to serial correlation
+          one draw is expected to be influenced by a previous draw.
+          Counterfactuals in time series here are like, how would
+          Y evolve given X.
+        </p></div></div><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: fix summary, clarify what is randomw and what are counter factorals</p></div></div>"
+`;
+
+exports[`app(unsw::2206::08.1).widgets > trendsAndSeasonality 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Trends and Seasonality</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C10 P351)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p style="color: var(--fg-white-on-blue); background: var(--bg-blue); padding: 8px;"><p><strong>NOTE</strong><ul class="no-item-padding" style="margin-block: 0px;"></ul></p></p><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Characterizing Trending Time Series</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C10 P351)</strong></span></div><p style="color: var(--fg-white-on-blue); background: var(--bg-blue); padding: 8px;"><p><strong>NOTE</strong><ul class="no-item-padding" style="margin-block: 0px;"></ul></p></p><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Using Trending Variables in Regression Analysis</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C10 P354)</strong></span></div><p style="color: var(--fg-white-on-blue); background: var(--bg-blue); padding: 8px;"><p><strong>NOTE</strong><ul class="no-item-padding" style="margin-block: 0px;"></ul></p></p><div style="display: grid; grid-template-columns: 1fr auto;"><h4>A Detrending Interpretation of Regressions with a Time Trend</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C10 P356)</strong></span></div><p style="color: var(--fg-white-on-blue); background: var(--bg-blue); padding: 8px;"><p><strong>NOTE</strong><ul class="no-item-padding" style="margin-block: 0px;"></ul></p></p><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Computing R-Squared When the Dependent Variable Is Trending</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C10 P357)</strong></span></div><p style="color: var(--fg-white-on-blue); background: var(--bg-blue); padding: 8px;"><p><strong>NOTE</strong><ul class="no-item-padding" style="margin-block: 0px;"></ul></p></p><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Seasonality</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C10 P358)</strong></span></div><p style="color: var(--fg-white-on-blue); background: var(--bg-blue); padding: 8px;"><p><strong>NOTE</strong><ul class="no-item-padding" style="margin-block: 0px;"></ul></p></p></div><dl><dt>Time Trend</dt><dd>The tendency for data to follow a directional trend over time.</dd><dt>Exponential trend</dt><dd>A trend where a series grows protional to previous periods.</dd><dt>CAGR</dt><dd>constant average growth rate</dd><dt>growth rate</dt><dd>
           <figure class="pre--horizontal-shadow"><math display="block"><mrow><mrow><mi>𝛥</mi><msub><mi>y</mi><mi>t</mi></msub></mrow><mspace width="4px"></mspace><mo>≈</mo><mspace width="4px"></mspace><mfrac><mrow><msub><mi>y</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>y</mi><mrow><mi>t</mi><mo>-</mo><mn>1</mn></mrow></msub></mrow><msub><mi>y</mi><mrow><mi>t</mi><mo>-</mo><mn>1</mn></mrow></msub></mfrac></mrow></math><figcaption>Growth Rate</figcaption></figure>
         </dd><dt>spurious regression problem</dt><dd>
           The challenge of finding a relationship between
@@ -507,5 +261,5 @@ exports[`app(unsw::2206::08.1).snapshot > should match snapshots 1`] = `
           The removal of a trend from a dataset.
         </dd><dt>Linear Detrended</dt><dd>
           Often annontated with <strong>Umlaut</strong> like so <strong>ÿ</strong>.
-        </dd><dt>Seasonality</dt><dd>Exhibting a trend over a period</dd><dt>Seasonally adjusted</dt><dd>The removal of seasonality</dd></dl></div></div></div></div><hr style="width: 100%; border-color: transparent;">"
+        </dd><dt>Seasonality</dt><dd>Exhibting a trend over a period</dd><dt>Seasonally adjusted</dt><dd>The removal of seasonality</dd></dl></div></div></div>"
 `;

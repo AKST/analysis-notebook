@@ -1,42 +1,135 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`app(unsw::2102::03.1).snapshot > should match snapshots 1`] = `
-"<style id="test-styles"></style><div class="widget-container document" id="test-widget-0" style="grid-column: span 2;"><style id="test-widget-0-styles"></style><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>Labour Markets<br><small style="color: #aaaaff">ECON2102, W3, Lecture 1</small></h1><p>
+exports[`app(unsw::2102::03.1).widgets > bathtubModel 1`] = `
+"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Bathtub Model</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C7 P189)</strong></span></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
+          The Bathtubs Model earns it name due to the nature
+          in which labour pours into the market (job finding),
+          and exits through the bottom of the drain (job seperation).
+          And the height of the water is representative of the
+          current stock of labour active in the work force.
+        </p><p>
+          The terms of the model are specified on the right.
+        </p></div><div class="container pre--container"><h4>Model Terms</h4><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>s</strong>: job seperation rate</li><li><strong>f</strong>: job finding rate</li><li><strong>L</strong>: Labour</li><li><strong>E</strong>: Employment</li><li><strong>U</strong>: Unemployment</li></ul></div></div><div class="grid-responsive-row pre--grid-responsive-row" style="--grid-responsive-row-slim-columns: 1fr; --grid-responsive-row-mobile-columns: 1fr; --grid-responsive-row-desktop-columns: auto auto;"><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>L̄</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>E</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>U</mi><mi>t</mi></msub></mrow></mrow></math><figcaption>Labour Force</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>∆U</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mi>s</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>E</mi><mi>t</mi></msub></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>f</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>U</mi><mi>t</mi></msub></mrow></mrow></mrow></math><figcaption>Labour Dynamics</figcaption></figure></div><div class="c2 pre--c2"><div class="container pre--container"><h4>Job Seperation Rate</h4><p>
+          This is the rate at which people leave or lose
+          their jobs. Empirically the job loss rate is
+          a realtively small number.
+        </p></div><div class="container pre--container"><h4>Job Finding Rate</h4><p>
+          The job finding rate is the rate at which
+          unemployed people find new work. This is
+          often a much larger number than the seperation
+          rate but note it is the portion of the population
+          drawn from currently unemployed people.
+        </p></div></div><h3>Solving the Model</h3><div class="grid-responsive-row pre--grid-responsive-row" style="--grid-responsive-row-slim-columns: 1fr; --grid-responsive-row-mobile-columns: 1fr; --grid-responsive-row-desktop-columns: auto auto;"><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mn>0</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mi>s</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>E</mi><mi>t</mi></msub></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>f</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>U</mi><mi>t</mi></msub></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mspace width="8px"></mspace></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mi>s</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mi>L</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>Y</mi><mi>t</mi></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>f</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>U</mi><mi>t</mi></msub></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mspace width="8px"></mspace></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mi>s</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mi>L</mi></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mrow><mo>(</mo><mi>f</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>s</mi><mo>)</mo></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>U</mi><mi>t</mi></msub></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msup><mi>U</mi><mi>*</mi></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mi>s</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mi>L</mi></mrow><mrow><mi>f</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>s</mi></mrow></mfrac></mtd></mtr></mtable></math><figcaption>Solve for unemployment</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msup><mi>u</mi><mi>*</mi></msup><mspace width="8px"></mspace><mo>≡</mo><mspace width="8px"></mspace><mfrac><msup><mi>U</mi><mi>*</mi></msup><mi>L</mi></mfrac><mspace width="8px"></mspace><mo>=</mo><mspace width="8px"></mspace><mfrac><mi>s</mi><mrow><mi>f</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>s</mi></mrow></mfrac></mrow></math><figcaption>Unemployment Rate</figcaption></figure></div><p>
+      Much like other dynamic models we've looked at so far
+      (like the Solow Swan), there's also a steady state.
+      As you reach the steady state the sum of sE and fU
+      should be zero, and we can use that to solve for the
+      steady state.
+    </p></div></div>"
+`;
+
+exports[`app(unsw::2102::03.1).widgets > economicGrowthAndIncomeInequality 1`] = `
+"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Economic Growth and Income Inequality</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C7 P203)</strong></span></div><p>
+    In recent decades it appears the top portion of the wealth distribution.
+    The allocation of those with college educations has implications for
+    global inequality.
+  </p><p>
+    Between 1980 and 2014 saw slower rough than the developed world, however
+    prior to this between 1946 adn 1980 the opposite is true. <strong>That said</strong>,
+    I'm not sure I'd entirely attribute this to education. There's alot we
+    don't know about the nature of economic growth. The fact Korean growth out
+    paced Filipino growth since WW2 is at odds with the suggestion education is
+    by any means a requirement, although it by no measns suggests its not a
+    contributing factor.
+  </p><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: show wealth distribution</p></div>"
+`;
+
+exports[`app(unsw::2102::03.1).widgets > header 1`] = `
+"<div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h1>Labour Markets<br><small style="color: rgb(170, 170, 255);">ECON2102, W3, Lecture 1</small></h1><p>
         The goal of this chapter is look at the labour market,
         and build a basic model for it.
-      </p></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li>Chapter 7 of the textbook</li></ul></div></div></aside></div></div></div><div class="widget-container document" id="test-widget-1" style="grid-column: span 2;"><style id="test-widget-1-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Introduction</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C7 P180)</strong></span></div><p>
+      </p></div><aside class="infobox"><h3 class="infobox-name">💡 Resources</h3><div class="infobox-body"><div class="container"><ul class="no-item-padding" style="margin-block: 0px;"><li>Chapter 7 of the textbook</li></ul></div></div></aside></div></div>"
+`;
+
+exports[`app(unsw::2102::03.1).widgets > intro 1`] = `
+"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Introduction</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C7 P180)</strong></span></div><p>
     This section covers the labour market in terms of the following:
-  </p><ul class="no-item-padding" style="margin-block: 0px;"><li>Different ways of measuring Unemployment</li><li>The Bathtub Model</li><li>Present Discounted Value</li></ul></div></div><div class="widget-container document" id="test-widget-2" style="grid-column: span 2;"><style id="test-widget-2-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h2>Employment</h2><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Employment Measurements</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C7 P181)</strong></span></div><p>Two of the ways employment can be measured include:</p><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>Employment-population Ratio</strong>:
+  </p><ul class="no-item-padding" style="margin-block: 0px;"><li>Different ways of measuring Unemployment</li><li>The Bathtub Model</li><li>Present Discounted Value</li></ul></div>"
+`;
+
+exports[`app(unsw::2102::03.1).widgets > labourMarketsAroundTheWorld 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><p style="color: var(--fg-white-on-blue); background: var(--bg-blue); padding: 8px;"><p><strong>NOTE (on Labour Markets around the world )</strong></p><ul class="no-item-padding" style="margin-block: 0px;"><li>
+      A substantial part of the explanation for why per capita GDP is lower
+      in Europe than in the United States is simply that Europeans work
+      fewer hours
+    </li></ul></p><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C7 P195)</strong></span></div></div>"
+`;
+
+exports[`app(unsw::2102::03.1).widgets > risingReturnToEducation 1`] = `
+"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Rising Return To Education</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C7 P197)</strong></span></div><p>
+          The returns to education is increase in returns over
+          a lifetime; usually in reference to a college education.
+          In the USA the premium income has gone from 50% in
+          1963 to about 10% in 2012. This preimum is responsible
+          in an increased up take in college education.
+        </p><p>
+          With a massive increase in college educated young people
+          a question arises... <strong>How is it that the wage of
+          college graduates is also growing</strong>? It isn't too complicate,
+          it's just the growth in demand for those with a college
+          education is greater then the growth in supply of people
+          with a college education.
+        </p></div><aside class="infobox"><h3 class="infobox-name">💡 Returns To Education</h3><div class="infobox-body"><div class="container"><p>You can read more here:</p><ul class="no-item-padding"><li><a href="https://openknowledge.worldbank.org/server/api/core/bitstreams/cb09c589-14c6-5675-8026-39333ff71532/content" target="_blank">World Bank</a></li><li><a href="https://www.sciencedirect.com/topics/social-sciences/return-to-education" target="_blank">Science Direct</a></li><li><a href="https://education.nsw.gov.au/content/dam/main-education/about-us/educational-data/cese/2016-measuring-economic-returns-to-post-school-education-in-australia.pdf" target="_blank">Education NSW</a></li></ul></div></div></aside></div><div class="c2 pre--c2"><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Skill-biased Technical Change</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C7 P199)</strong></span></div><p>
+          With the passage of time tools such as computers the
+          internet and all sorts of new technology has dispropotionately
+          improved the productivity of highly skilled workers.
+        </p></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h4>Globalisation</h4><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C7 P200)</strong></span></div><p>
+          Another explation for how the demand for those with a college
+          is globalisation. With opening up trade to the world, global
+          demand is added to local demand for these skills.
+        </p></div></div></div></div>"
+`;
+
+exports[`app(unsw::2102::03.1).widgets > supplyAndDemand 1`] = `
+"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Supply and Demand</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C7 P184)</strong></span></div><p>
+    This more or less works like the price and quantity
+    supply and demand chart from micro 1.
+  </p><div class="c2 pre--c2"><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>The Labour demand curve</strong><ul class="no-item-padding" style="margin-block: 0px;"><li>This curve is largely derived from a firms marginal product of labour (MPL).</li><li>The curve slopes downloads dur to the diminishing marginal product of labour</li></ul></li><li><strong>The Labour supply curve</strong><ul class="no-item-padding" style="margin-block: 0px;"><li>This curve is derived from price of leisure time.</li><li>It slope upwards the cost of spending an extra hour working cost more than the last</li></ul></li></ul><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>The X axis</strong><ul class="no-item-padding" style="margin-block: 0px;"><li>Units of labour provided by workers</li></ul></li><li><strong>The Y axis</strong><ul class="no-item-padding" style="margin-block: 0px;"><li>Units of wages offered by employers</li></ul></li><li><strong>Equilibrium</strong> this represents<ul class="no-item-padding" style="margin-block: 0px;"><li>The level of employment</li><li>The market wage</li></ul></li></ul></div><div class="c2 pre--c2"><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Reasons for change in supply</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C7 P185)</strong></span></div><p>
+        A government could impose a tax on income would decrease the supply of labour.
+      </p><ul class="no-item-padding" style="margin-block: 0px;"><li>
+          While the wage offered by the employer might be the same the take
+          home pay will be smaller. An income tax effectively acts as a wedge.
+        </li><li>
+          It should be expected that the introduction of an income
+          tax decreases the employmention-population-ratio.
+        </li><li>
+          The impact on the employment rate would not be immediately obvious.
+        </li></ul></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Reasons for change in demand</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C7 P186)</strong></span></div><p>
+        Many things can change labour demand, such as increase in
+        the cost of an input would likely decrease demand. Something
+        less obvious is the government making it harder to fire people.
+      </p><ul class="no-item-padding" style="margin-block: 0px;"><li>While during a recession firms will be less capable of laying off workers.</li><li>They are unlikely hire additional workers.</li></ul><p>
+        That said, companies are capable of managing workers out of their company,
+        through a demoralising performance improvement plans.
+      </p></div></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Wage Rigidity</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C7 P187)</strong></span></div><p>
+      Sometimes the labour demand curve can sharply shift down due to
+      an inability to offer a lower wage as labour demand, as a result
+      the number of available jobs significantly drops while the same
+      wage is maintained.
+      In <strong>The General Theory of Employment, Interest, and Money</strong>
+      John Maynard Kenes showed wage rigidities can lead to large
+      movements in employment.
+    </p><br><figure class="pre--horizontal-shadow" style="margin-inline: 16px;"><svg viewBox="0 0 400 120" width="100%"><rect y="96.875%" x="0.3571428571428572%" width="2.8571428571428577%" height="3.125%" fill="color-mix(in srgb, #ff3366 3.125%, cyan 96.875%)"></rect><rect y="93.75%" x="3.9285714285714284%" width="2.8571428571428577%" height="6.25%" fill="color-mix(in srgb, #ff3366 6.25%, cyan 93.75%)"></rect><rect y="90.625%" x="7.5%" width="2.8571428571428577%" height="9.375%" fill="color-mix(in srgb, #ff3366 9.375%, cyan 90.625%)"></rect><rect y="84.375%" x="11.071428571428571%" width="2.8571428571428577%" height="15.625%" fill="color-mix(in srgb, #ff3366 15.625%, cyan 84.375%)"></rect><rect y="78.125%" x="14.642857142857142%" width="2.8571428571428577%" height="21.875%" fill="color-mix(in srgb, #ff3366 21.875%, cyan 78.125%)"></rect><rect y="15.625%" x="18.214285714285715%" width="2.8571428571428577%" height="84.375%" fill="color-mix(in srgb, #ff3366 84.375%, cyan 15.625%)"></rect><rect y="50%" x="21.785714285714285%" width="2.8571428571428577%" height="50%" fill="color-mix(in srgb, #ff3366 50%, cyan 50%)"></rect><rect y="28.125%" x="25.357142857142858%" width="2.8571428571428577%" height="71.875%" fill="color-mix(in srgb, #ff3366 71.875%, cyan 28.125%)"></rect><rect y="12.5%" x="28.928571428571427%" width="2.8571428571428577%" height="87.5%" fill="color-mix(in srgb, #ff3366 87.5%, cyan 12.5%)"></rect><rect y="3.125%" x="32.5%" width="2.8571428571428577%" height="96.875%" fill="color-mix(in srgb, #ff3366 96.875%, cyan 3.125%)"></rect><rect y="0%" x="36.07142857142857%" width="2.8571428571428577%" height="100%" fill="color-mix(in srgb, #ff3366 100%, cyan 0%)"></rect><rect y="6.25%" x="39.64285714285714%" width="2.8571428571428577%" height="93.75%" fill="color-mix(in srgb, #ff3366 93.75%, cyan 6.25%)"></rect><rect y="15.625%" x="43.21428571428571%" width="2.8571428571428577%" height="84.375%" fill="color-mix(in srgb, #ff3366 84.375%, cyan 15.625%)"></rect><rect y="31.25%" x="46.785714285714285%" width="2.8571428571428577%" height="68.75%" fill="color-mix(in srgb, #ff3366 68.75%, cyan 31.25%)"></rect><rect y="43.75%" x="50.357142857142854%" width="2.8571428571428577%" height="56.25%" fill="color-mix(in srgb, #ff3366 56.25%, cyan 43.75%)"></rect><rect y="56.25%" x="53.92857142857142%" width="2.8571428571428577%" height="43.75%" fill="color-mix(in srgb, #ff3366 43.75%, cyan 56.25%)"></rect><rect y="65.625%" x="57.49999999999999%" width="2.8571428571428577%" height="34.375%" fill="color-mix(in srgb, #ff3366 34.375%, cyan 65.625%)"></rect><rect y="71.875%" x="61.07142857142856%" width="2.8571428571428577%" height="28.125%" fill="color-mix(in srgb, #ff3366 28.125%, cyan 71.875%)"></rect><rect y="78.125%" x="64.64285714285715%" width="2.8571428571428577%" height="21.875%" fill="color-mix(in srgb, #ff3366 21.875%, cyan 78.125%)"></rect><rect y="83.125%" x="68.21428571428572%" width="2.8571428571428577%" height="16.875%" fill="color-mix(in srgb, #ff3366 16.875%, cyan 83.125%)"></rect><rect y="86.25%" x="71.78571428571429%" width="2.8571428571428577%" height="13.750000000000002%" fill="color-mix(in srgb, #ff3366 13.750000000000002%, cyan 86.25%)"></rect><rect y="89.375%" x="75.35714285714286%" width="2.8571428571428577%" height="10.625%" fill="color-mix(in srgb, #ff3366 10.625%, cyan 89.375%)"></rect><rect y="91.875%" x="78.92857142857143%" width="2.8571428571428577%" height="8.125%" fill="color-mix(in srgb, #ff3366 8.125%, cyan 91.875%)"></rect><rect y="93.75%" x="82.5%" width="2.8571428571428577%" height="6.25%" fill="color-mix(in srgb, #ff3366 6.25%, cyan 93.75%)"></rect><rect y="95.625%" x="86.07142857142857%" width="2.8571428571428577%" height="4.375%" fill="color-mix(in srgb, #ff3366 4.375%, cyan 95.625%)"></rect><rect y="96.875%" x="89.64285714285715%" width="2.8571428571428577%" height="3.125%" fill="color-mix(in srgb, #ff3366 3.125%, cyan 96.875%)"></rect><rect y="98.125%" x="93.21428571428572%" width="2.8571428571428577%" height="1.875%" fill="color-mix(in srgb, #ff3366 1.875%, cyan 98.125%)"></rect><rect y="98.75%" x="96.78571428571429%" width="2.8571428571428577%" height="1.25%" fill="color-mix(in srgb, #ff3366 1.25%, cyan 98.75%)"></rect></svg><figcaption>Wage Rigidity Example</figcaption></figure></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Different kinds of unemployment</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C7 P189)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mtext>Actual Unemployment</mtext><mspace width="8px"></mspace><mo>=</mo><mspace width="8px"></mspace><munder><mrow><mtext>Frictional</mtext><mspace width="8px"></mspace><mo>+</mo><mspace width="8px"></mspace><mtext>Structural</mtext></mrow><munder><mo>⏟</mo><mrow style="; font-size: 12px; margin-top: 4px"><mtext>Natural</mtext></mrow></munder></munder><mspace width="8px"></mspace><mo>+</mo><mspace width="8px"></mspace><mtext>cyclical</mtext></mrow></math><figcaption>Components of Unemployment</figcaption></figure><div class="c2 pre--c2"><div class="container pre--container"><h4>Natural Rate of Unemployment</h4><p>This is the prevailing rate of employment outside of boom or recession.</p><h4>Cyclical unemployment</h4><p>This is difference in the natural rate and the actual rate of employment.</p></div><div class="container pre--container"><h4>Frictional Unemployment</h4><p>
+          This is the period during which employees are changing jobs.
+        </p><h4>Structural Unemployment</h4><p>
+          This is largely a result of a mismatch between
+          the skills of the people looking for work and the
+          skills employers are looking to hire.
+        </p></div></div></div></div>"
+`;
+
+exports[`app(unsw::2102::03.1).widgets > unemploymentRate 1`] = `
+"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><h2>Employment</h2><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Employment Measurements</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C7 P181)</strong></span></div><p>Two of the ways employment can be measured include:</p><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>Employment-population Ratio</strong>:
             the employed portion of the civilian population.
             For example in the US can see a large spike in
             this number since the 1960s with women entering
@@ -46,22 +139,7 @@ exports[`app(unsw::2102::03.1).snapshot > should match snapshots 1`] = `
             This is the fraction of the population that is unemployed.
             This only includes people looking for jobs not people who
             have stopped or never started looking.
-          </li></ul><figure class="pre--horizontal-shadow"><math display="block"><mrow><mtext>Unemployment Rate</mtext><mo>=</mo><mfrac><mtext>number of unemployed</mtext><mtext>size of labour force</mtext></mfrac></mrow></math><figcaption>The unemployment rate</figcaption></figure></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Dynamics of Labour Market</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C7 P183)</strong></span></div><p>
+          </li></ul><figure class="pre--horizontal-shadow"><math display="block"><mrow><mtext>Unemployment Rate</mtext><mo>=</mo><mfrac><mtext>number of unemployed</mtext><mtext>size of labour force</mtext></mfrac></mrow></math><figcaption>The unemployment rate</figcaption></figure></div><div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Dynamics of Labour Market</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C7 P183)</strong></span></div><p>
           Both <strong>job creation</strong> and <strong>job destruction</strong>
           can be generalised under the term <strong>gross flows</strong>.
           Breifly some important facts about the dynamics of the labour
@@ -93,238 +171,16 @@ exports[`app(unsw::2102::03.1).snapshot > should match snapshots 1`] = `
         parent.
       </dd><dt>Gross Flows</dt><dd>
         The Net sum of <strong>job creations</strong> and <strong>job destructions</strong>.
-      </dd></dl></div><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Summary</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C7 P184)</strong></span></div><p>
+      </dd></dl></div><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Summary</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C7 P184)</strong></span></div><p>
     From a policy perspective, balancing the roles of
     providing reasonable unemployment insurance and
     encouraging people to return to work is one of the
     important challenges relating to the labour market.
-  </p></div></div><div class="widget-container canvas2d" id="test-widget-3" style="grid-column: span 2;"></div><div class="widget-container document" id="test-widget-4" style="grid-column: span 2;"><style id="test-widget-4-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Supply and Demand</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C7 P184)</strong></span></div><p>
-    This more or less works like the price and quantity
-    supply and demand chart from micro 1.
-  </p><div class="c2 pre--c2"><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>The Labour demand curve</strong><ul class="no-item-padding" style="margin-block: 0px;"><li>This curve is largely derived from a firms marginal product of labour (MPL).</li><li>The curve slopes downloads dur to the diminishing marginal product of labour</li></ul></li><li><strong>The Labour supply curve</strong><ul class="no-item-padding" style="margin-block: 0px;"><li>This curve is derived from price of leisure time.</li><li>It slope upwards the cost of spending an extra hour working cost more than the last</li></ul></li></ul><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>The X axis</strong><ul class="no-item-padding" style="margin-block: 0px;"><li>Units of labour provided by workers</li></ul></li><li><strong>The Y axis</strong><ul class="no-item-padding" style="margin-block: 0px;"><li>Units of wages offered by employers</li></ul></li><li><strong>Equilibrium</strong> this represents<ul class="no-item-padding" style="margin-block: 0px;"><li>The level of employment</li><li>The market wage</li></ul></li></ul></div><div class="c2 pre--c2"><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Reasons for change in supply</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C7 P185)</strong></span></div><p>
-        A government could impose a tax on income would decrease the supply of labour.
-      </p><ul class="no-item-padding" style="margin-block: 0px;"><li>
-          While the wage offered by the employer might be the same the take
-          home pay will be smaller. An income tax effectively acts as a wedge.
-        </li><li>
-          It should be expected that the introduction of an income
-          tax decreases the employmention-population-ratio.
-        </li><li>
-          The impact on the employment rate would not be immediately obvious.
-        </li></ul></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Reasons for change in demand</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C7 P186)</strong></span></div><p>
-        Many things can change labour demand, such as increase in
-        the cost of an input would likely decrease demand. Something
-        less obvious is the government making it harder to fire people.
-      </p><ul class="no-item-padding" style="margin-block: 0px;"><li>While during a recession firms will be less capable of laying off workers.</li><li>They are unlikely hire additional workers.</li></ul><p>
-        That said, companies are capable of managing workers out of their company,
-        through a demoralising performance improvement plans.
-      </p></div></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Wage Rigidity</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C7 P187)</strong></span></div><p>
-      Sometimes the labour demand curve can sharply shift down due to
-      an inability to offer a lower wage as labour demand, as a result
-      the number of available jobs significantly drops while the same
-      wage is maintained.
-      In <strong>The General Theory of Employment, Interest, and Money</strong>
-      John Maynard Kenes showed wage rigidities can lead to large
-      movements in employment.
-    </p><br><figure style="margin-inline: 16px" class="pre--horizontal-shadow"><svg viewBox="0 0 400 120" width="100%"><rect y="96.875%" x="0.3571428571428572%" width="2.8571428571428577%" height="3.125%" fill="color-mix(in srgb, #ff3366 3.125%, cyan 96.875%)"></rect><rect y="93.75%" x="3.9285714285714284%" width="2.8571428571428577%" height="6.25%" fill="color-mix(in srgb, #ff3366 6.25%, cyan 93.75%)"></rect><rect y="90.625%" x="7.5%" width="2.8571428571428577%" height="9.375%" fill="color-mix(in srgb, #ff3366 9.375%, cyan 90.625%)"></rect><rect y="84.375%" x="11.071428571428571%" width="2.8571428571428577%" height="15.625%" fill="color-mix(in srgb, #ff3366 15.625%, cyan 84.375%)"></rect><rect y="78.125%" x="14.642857142857142%" width="2.8571428571428577%" height="21.875%" fill="color-mix(in srgb, #ff3366 21.875%, cyan 78.125%)"></rect><rect y="15.625%" x="18.214285714285715%" width="2.8571428571428577%" height="84.375%" fill="color-mix(in srgb, #ff3366 84.375%, cyan 15.625%)"></rect><rect y="50%" x="21.785714285714285%" width="2.8571428571428577%" height="50%" fill="color-mix(in srgb, #ff3366 50%, cyan 50%)"></rect><rect y="28.125%" x="25.357142857142858%" width="2.8571428571428577%" height="71.875%" fill="color-mix(in srgb, #ff3366 71.875%, cyan 28.125%)"></rect><rect y="12.5%" x="28.928571428571427%" width="2.8571428571428577%" height="87.5%" fill="color-mix(in srgb, #ff3366 87.5%, cyan 12.5%)"></rect><rect y="3.125%" x="32.5%" width="2.8571428571428577%" height="96.875%" fill="color-mix(in srgb, #ff3366 96.875%, cyan 3.125%)"></rect><rect y="0%" x="36.07142857142857%" width="2.8571428571428577%" height="100%" fill="color-mix(in srgb, #ff3366 100%, cyan 0%)"></rect><rect y="6.25%" x="39.64285714285714%" width="2.8571428571428577%" height="93.75%" fill="color-mix(in srgb, #ff3366 93.75%, cyan 6.25%)"></rect><rect y="15.625%" x="43.21428571428571%" width="2.8571428571428577%" height="84.375%" fill="color-mix(in srgb, #ff3366 84.375%, cyan 15.625%)"></rect><rect y="31.25%" x="46.785714285714285%" width="2.8571428571428577%" height="68.75%" fill="color-mix(in srgb, #ff3366 68.75%, cyan 31.25%)"></rect><rect y="43.75%" x="50.357142857142854%" width="2.8571428571428577%" height="56.25%" fill="color-mix(in srgb, #ff3366 56.25%, cyan 43.75%)"></rect><rect y="56.25%" x="53.92857142857142%" width="2.8571428571428577%" height="43.75%" fill="color-mix(in srgb, #ff3366 43.75%, cyan 56.25%)"></rect><rect y="65.625%" x="57.49999999999999%" width="2.8571428571428577%" height="34.375%" fill="color-mix(in srgb, #ff3366 34.375%, cyan 65.625%)"></rect><rect y="71.875%" x="61.07142857142856%" width="2.8571428571428577%" height="28.125%" fill="color-mix(in srgb, #ff3366 28.125%, cyan 71.875%)"></rect><rect y="78.125%" x="64.64285714285715%" width="2.8571428571428577%" height="21.875%" fill="color-mix(in srgb, #ff3366 21.875%, cyan 78.125%)"></rect><rect y="83.125%" x="68.21428571428572%" width="2.8571428571428577%" height="16.875%" fill="color-mix(in srgb, #ff3366 16.875%, cyan 83.125%)"></rect><rect y="86.25%" x="71.78571428571429%" width="2.8571428571428577%" height="13.750000000000002%" fill="color-mix(in srgb, #ff3366 13.750000000000002%, cyan 86.25%)"></rect><rect y="89.375%" x="75.35714285714286%" width="2.8571428571428577%" height="10.625%" fill="color-mix(in srgb, #ff3366 10.625%, cyan 89.375%)"></rect><rect y="91.875%" x="78.92857142857143%" width="2.8571428571428577%" height="8.125%" fill="color-mix(in srgb, #ff3366 8.125%, cyan 91.875%)"></rect><rect y="93.75%" x="82.5%" width="2.8571428571428577%" height="6.25%" fill="color-mix(in srgb, #ff3366 6.25%, cyan 93.75%)"></rect><rect y="95.625%" x="86.07142857142857%" width="2.8571428571428577%" height="4.375%" fill="color-mix(in srgb, #ff3366 4.375%, cyan 95.625%)"></rect><rect y="96.875%" x="89.64285714285715%" width="2.8571428571428577%" height="3.125%" fill="color-mix(in srgb, #ff3366 3.125%, cyan 96.875%)"></rect><rect y="98.125%" x="93.21428571428572%" width="2.8571428571428577%" height="1.875%" fill="color-mix(in srgb, #ff3366 1.875%, cyan 98.125%)"></rect><rect y="98.75%" x="96.78571428571429%" width="2.8571428571428577%" height="1.25%" fill="color-mix(in srgb, #ff3366 1.25%, cyan 98.75%)"></rect></svg><figcaption>Wage Rigidity Example</figcaption></figure></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Different kinds of unemployment</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C7 P189)</strong></span></div><figure class="pre--horizontal-shadow"><math display="block"><mrow><mtext>Actual Unemployment</mtext><mspace width="8px"></mspace><mo>=</mo><mspace width="8px"></mspace><munder><mrow><mtext>Frictional</mtext><mspace width="8px"></mspace><mo>+</mo><mspace width="8px"></mspace><mtext>Structural</mtext></mrow><munder><mo>⏟</mo><mrow style="; font-size: 12px; margin-top: 4px"><mtext>Natural</mtext></mrow></munder></munder><mspace width="8px"></mspace><mo>+</mo><mspace width="8px"></mspace><mtext>cyclical</mtext></mrow></math><figcaption>Components of Unemployment</figcaption></figure><div class="c2 pre--c2"><div class="container pre--container"><h4>Natural Rate of Unemployment</h4><p>This is the prevailing rate of employment outside of boom or recession.</p><h4>Cyclical unemployment</h4><p>This is difference in the natural rate and the actual rate of employment.</p></div><div class="container pre--container"><h4>Frictional Unemployment</h4><p>
-          This is the period during which employees are changing jobs.
-        </p><h4>Structural Unemployment</h4><p>
-          This is largely a result of a mismatch between
-          the skills of the people looking for work and the
-          skills employers are looking to hire.
-        </p></div></div></div></div></div><div class="widget-container document" id="test-widget-5" style="grid-column: span 2;"><style id="test-widget-5-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Bathtub Model</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C7 P189)</strong></span></div><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p>
-          The Bathtubs Model earns it name due to the nature
-          in which labour pours into the market (job finding),
-          and exits through the bottom of the drain (job seperation).
-          And the height of the water is representative of the
-          current stock of labour active in the work force.
-        </p><p>
-          The terms of the model are specified on the right.
-        </p></div><div class="container pre--container"><h4>Model Terms</h4><ul class="no-item-padding" style="margin-block: 0px;"><li><strong>s</strong>: job seperation rate</li><li><strong>f</strong>: job finding rate</li><li><strong>L</strong>: Labour</li><li><strong>E</strong>: Employment</li><li><strong>U</strong>: Unemployment</li></ul></div></div><div class="grid-responsive-row pre--grid-responsive-row" style="
-      --grid-responsive-row-slim-columns: 1fr;
-      --grid-responsive-row-mobile-columns: 1fr;
-      --grid-responsive-row-desktop-columns: auto auto;
-      
-    "><figure class="pre--horizontal-shadow"><math display="block"><mrow><mi>L̄</mi><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>E</mi><mi>t</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>U</mi><mi>t</mi></msub></mrow></mrow></math><figcaption>Labour Force</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msub><mi>∆U</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mrow><mi>s</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>E</mi><mi>t</mi></msub></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>f</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>U</mi><mi>t</mi></msub></mrow></mrow></mrow></math><figcaption>Labour Dynamics</figcaption></figure></div><div class="c2 pre--c2"><div class="container pre--container"><h4>Job Seperation Rate</h4><p>
-          This is the rate at which people leave or lose
-          their jobs. Empirically the job loss rate is
-          a realtively small number.
-        </p></div><div class="container pre--container"><h4>Job Finding Rate</h4><p>
-          The job finding rate is the rate at which
-          unemployed people find new work. This is
-          often a much larger number than the seperation
-          rate but note it is the portion of the population
-          drawn from currently unemployed people.
-        </p></div></div><h3>Solving the Model</h3><div class="grid-responsive-row pre--grid-responsive-row" style="
-      --grid-responsive-row-slim-columns: 1fr;
-      --grid-responsive-row-mobile-columns: 1fr;
-      --grid-responsive-row-desktop-columns: auto auto;
-      
-    "><figure class="pre--horizontal-shadow"><math display="block"><mtable><mtr columnalign="right center left"><mtd columnalign="right"><mn>0</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mi>s</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>E</mi><mi>t</mi></msub></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>f</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>U</mi><mi>t</mi></msub></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mspace width="8px"></mspace></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mi>s</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mrow><mo>(</mo><mi>L</mi><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msub><mi>Y</mi><mi>t</mi></msub><mo>)</mo></mrow></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mi>f</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>U</mi><mi>t</mi></msub></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><mspace width="8px"></mspace></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mrow><mi>s</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mi>L</mi></mrow><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mrow><mo>(</mo><mi>f</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>s</mi><mo>)</mo></mrow><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msub><mi>U</mi><mi>t</mi></msub></mrow></mrow></mtd></mtr><mtr columnalign="right center left"><mtd columnalign="right"><msup><mi>U</mi><mi>*</mi></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mi>s</mi><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mi>L</mi></mrow><mrow><mi>f</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>s</mi></mrow></mfrac></mtd></mtr></mtable></math><figcaption>Solve for unemployment</figcaption></figure><figure class="pre--horizontal-shadow"><math display="block"><mrow><msup><mi>u</mi><mi>*</mi></msup><mspace width="8px"></mspace><mo>≡</mo><mspace width="8px"></mspace><mfrac><msup><mi>U</mi><mi>*</mi></msup><mi>L</mi></mfrac><mspace width="8px"></mspace><mo>=</mo><mspace width="8px"></mspace><mfrac><mi>s</mi><mrow><mi>f</mi><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>s</mi></mrow></mfrac></mrow></math><figcaption>Unemployment Rate</figcaption></figure></div><p>
-      Much like other dynamic models we've looked at so far
-      (like the Solow Swan), there's also a steady state.
-      As you reach the steady state the sum of sE and fU
-      should be zero, and we can use that to solve for the
-      steady state.
-    </p></div></div></div><div class="widget-container document" id="test-widget-6" style="grid-column: span 2;"><style id="test-widget-6-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><p style="
-      color: var(--fg-white-on-blue);
-      background: var(--bg-blue);
-      padding: 8px
-    "><p><strong>NOTE (on Labour Markets around the world )</strong></p><ul class="no-item-padding" style="margin-block: 0px;"><li>
-      A substantial part of the explanation for why per capita GDP is lower
-      in Europe than in the United States is simply that Europeans work
-      fewer hours
-    </li></ul></p><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C7 P195)</strong></span></div></div></div><div class="widget-container document" id="test-widget-7" style="grid-column: span 2;"><style id="test-widget-7-styles"></style><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h2>Value of Human Capital</h2><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C7 P195)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Present Discounted Value</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C7 P196)</strong></span></div><div class="c2 twoThree pre--c2 pre--two-three"><p>
+  </p></div>"
+`;
+
+exports[`app(unsw::2102::03.1).widgets > valueOfHumanCapital 1`] = `
+"<div class="container pre--container"><div style="display: grid; grid-template-columns: 1fr auto;"><h2>Value of Human Capital</h2><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C7 P195)</strong></span></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><div style="display: grid; grid-template-columns: 1fr auto;"><h3>Present Discounted Value</h3><span style="display: grid; grid-auto-flow: column; align-items: center; max-height: 2em; line-height: 1; font-size: 10px; color: var(--fg-black-on-pink); background: var(--bg-pink); padding: 4px;"><strong>Book (C7 P196)</strong></span></div><div class="c2 twoThree pre--c2 pre--two-three"><p>
         <strong>Present discounted value</strong> is useful for calculating
         the current day value of future earnings. The example on the
         right is the general form for a single payment but you can
@@ -336,98 +192,5 @@ exports[`app(unsw::2102::03.1).snapshot > should match snapshots 1`] = `
         <strong>R</strong> is the expected rate of interest, and <strong>T</strong>
         is the time spent working. This is ignoring for future
         wage growth.
-      </p><figure class="pre--horizontal-shadow"><math style="font-size: 12px" display="block"><mrow><mtext>PDV</mtext><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mtext>Annual Salary</mtext><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mfrac><mrow><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msup><mrow><mo>(</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi></mrow></mfrac><mo>)</mo></mrow><mi>T</mi></msup></mrow><mrow><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mfrac><mn>1</mn><mrow><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi></mrow></mfrac></mrow></mfrac></mrow></mrow></math><figcaption>Present discounted value of salary</figcaption></figure></div></div></div></div><div class="widget-container document" id="test-widget-8" style="grid-column: span 2;"><style id="test-widget-8-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Rising Return To Education</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C7 P197)</strong></span></div><p>
-          The returns to education is increase in returns over
-          a lifetime; usually in reference to a college education.
-          In the USA the premium income has gone from 50% in
-          1963 to about 10% in 2012. This preimum is responsible
-          in an increased up take in college education.
-        </p><p>
-          With a massive increase in college educated young people
-          a question arises... <strong>How is it that the wage of
-          college graduates is also growing</strong>? It isn't too complicate,
-          it's just the growth in demand for those with a college
-          education is greater then the growth in supply of people
-          with a college education.
-        </p></div><aside class="infobox"><h3 class="infobox-name">💡 Returns To Education</h3><div class="infobox-body"><div class="container"><p>You can read more here:</p><ul class="no-item-padding"><li><a href="https://openknowledge.worldbank.org/server/api/core/bitstreams/cb09c589-14c6-5675-8026-39333ff71532/content" target="_blank">World Bank</a></li><li><a href="https://www.sciencedirect.com/topics/social-sciences/return-to-education" target="_blank">Science Direct</a></li><li><a href="https://education.nsw.gov.au/content/dam/main-education/about-us/educational-data/cese/2016-measuring-economic-returns-to-post-school-education-in-australia.pdf" target="_blank">Education NSW</a></li></ul></div></div></aside></div><div class="c2 pre--c2"><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Skill-biased Technical Change</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C7 P199)</strong></span></div><p>
-          With the passage of time tools such as computers the
-          internet and all sorts of new technology has dispropotionately
-          improved the productivity of highly skilled workers.
-        </p></div><div class="container pre--container"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h4>Globalisation</h4><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C7 P200)</strong></span></div><p>
-          Another explation for how the demand for those with a college
-          is globalisation. With opening up trade to the world, global
-          demand is added to local demand for these skills.
-        </p></div></div></div></div></div><div class="widget-container canvas2d" id="test-widget-9" style="grid-column: span 1;"></div><div class="widget-container canvas2d" id="test-widget-10" style="grid-column: span 1;"></div><div class="widget-container document" id="test-widget-11" style="grid-column: span 2;"><style id="test-widget-11-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><div style="
-      display: grid;
-      grid-template-columns: 1fr auto;
-      grid-gap: 8px;
-    "><h3>Economic Growth and Income Inequality</h3><span style="
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 0.5em;
-        align-items: center;
-        max-height: 2em;
-        line-height: 1;
-        font-size: 10px;
-        color: var(--fg-black-on-pink);
-        background: var(--bg-pink);
-        padding: 4px;
-      "><strong>Book (C7 P203)</strong></span></div><p>
-    In recent decades it appears the top portion of the wealth distribution.
-    The allocation of those with college educations has implications for
-    global inequality.
-  </p><p>
-    Between 1980 and 2014 saw slower rough than the developed world, however
-    prior to this between 1946 adn 1980 the opposite is true. <strong>That said</strong>,
-    I'm not sure I'd entirely attribute this to education. There's alot we
-    don't know about the nature of economic growth. The fact Korean growth out
-    paced Filipino growth since WW2 is at odds with the suggestion education is
-    by any means a requirement, although it by no measns suggests its not a
-    contributing factor.
-  </p><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: show wealth distribution</p></div></div><hr style="width: 100%; border-color: transparent;">"
+      </p><figure class="pre--horizontal-shadow"><math style="font-size: 12px" display="block"><mrow><mtext>PDV</mtext><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mtext>Annual Salary</mtext><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><mfrac><mrow><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><msup><mrow><mo>(</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi></mrow></mfrac><mo>)</mo></mrow><mi>T</mi></msup></mrow><mrow><mn>1</mn><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mfrac><mn>1</mn><mrow><mn>1</mn><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mi>R</mi></mrow></mfrac></mrow></mfrac></mrow></mrow></math><figcaption>Present discounted value of salary</figcaption></figure></div></div></div>"
 `;

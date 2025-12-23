@@ -1,7 +1,30 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`app(unsw::1101::07).snapshot > should match snapshots 1`] = `
-"<style id="test-styles"></style><div class="widget-container document" id="test-widget-0" style="grid-column: span 4;"><style id="test-widget-0-styles"></style><div class="container pre--container"><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h1>Market Power and Monopolies</h1><p>
+exports[`app(unsw::1101::07).widgets > costBenefitPrinciple 1`] = `
+"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><h2>Cost benefit Principle RE: Monopolies</h2><p>
+      While in perfect competition a firm will
+      produce up to the point at which <strong>Market Price ≥ Marginal Cost</strong> where
+      as monopolist will produce each unit up to the
+      point at which <strong>Marginal Revenue ≥ Marginal Cost</strong>.
+    </p></div>"
+`;
+
+exports[`app(unsw::1101::07).widgets > deadWeightLoss 1`] = `
+"<div class="container pre--container"><blockquote>
+      Note: there is an example on how to create a Average Total
+      Cost curve towards the end of section on supply curves.
+    </blockquote><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><h3>Dead Weight Loss</h3><p>
+        A consequence of the nature in how monopolies price is
+        the dead weight loss resulting from the fact there are
+        overall fewer units being produced by the monopoly.
+        A big part of this is due to a <strong>Revenue Trade off</strong>.
+        If they want to sell additional units they need to lower
+        their price for all consumers.
+      </p></div></div>"
+`;
+
+exports[`app(unsw::1101::07).widgets > header 1`] = `
+"<div class="container pre--container"><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><h1>Market Power and Monopolies</h1><p>
         In previous sections, we made certain assumptions about
         how the supply side of the market would behave. These
         assumptions described <strong>perfect competition</strong>.
@@ -26,7 +49,7 @@ exports[`app(unsw::1101::07).snapshot > should match snapshots 1`] = `
         no longer "<strong>Free entry and exit</strong>" which
         means new competition can no longer enter the market
         to challenge encumbants when they raise the price.
-      </p></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h2>Additional Vocab</h2><div class="c2 pre--c2"><dl><dt>Price-setter/marker</dt><dd><span>When a firm has the ability to set its own prices</span></dd><dt>Market Power</dt><dd><span>When a firm has the ability to be a price-setter</span></dd><dt>Monopoly</dt><dd><span>
+      </p></div><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><h2>Additional Vocab</h2><div class="c2 pre--c2"><dl><dt>Price-setter/marker</dt><dd><span>When a firm has the ability to set its own prices</span></dd><dt>Market Power</dt><dd><span>When a firm has the ability to be a price-setter</span></dd><dt>Monopoly</dt><dd><span>
             A market structure in which there is only one firm in the market.
             The demand curve the monopoly firm faces will be that of the
             entire market.
@@ -48,41 +71,11 @@ exports[`app(unsw::1101::07).snapshot > should match snapshots 1`] = `
           </p></div><div class="container pre--container"><h4>Natural Monopoly</h4><p>
              A monopoly that occurs because it experinces
              increasing returns to scale. (see <strong>average cost pricing</strong>).
-          </p></div></div></div></div></div><div class="widget-container document" id="test-widget-1" style="grid-column: span 4;"><style id="test-widget-1-styles"></style><div class="container pre--container"><p class="text-large" style="color: var(--fg-white-on-red); background: var(--bg-red); padding: 8px;"><strong>PLACEHOLDER</strong>: for "Market Power And Demand, Showing Supply and
-    Demand, as well as a firm curve in perfect
-    competition" graphic</p></div></div><div class="widget-container document" id="test-widget-2" style="grid-column: span 4;"><style id="test-widget-2-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h2>Sources of Market power</h2><p>
-      For the most part, monopolise are a result of
-      some kind of <strong>Barrier to entry</strong>
-      for producers to partipate in the market.
-    </p><div class="c2 pre--c2"><dl><dt>Control over scarce resource</dt><dd><span>oil, diamonds, trade routes</span></dd><dt>Government created barriers to entry</dt><dd><span>parents, copyright</span></dd></dl><dl><dt>Increasing returns to scale</dt><dd><span>economies of scale, such as utilties</span></dd><dt>Network economies</dt><dd><span>iMessage, Facebook</span></dd></dl></div></div></div><div class="widget-container document" id="test-widget-3" style="grid-column: span 4;"><style id="test-widget-3-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h2>Cost benefit Principle RE: Monopolies</h2><p>
-      While in perfect competition a firm will
-      produce up to the point at which <strong>Market Price ≥ Marginal Cost</strong> where
-      as monopolist will produce each unit up to the
-      point at which <strong>Marginal Revenue ≥ Marginal Cost</strong>.
-    </p></div></div><div class="widget-container document" id="test-widget-4" style="grid-column: span 4;"><style id="test-widget-4-styles"></style><div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h3>Monopoly, Profit Maximising</h3><p>
-          Unlike in perfect competition, where the supply side
-          is made up of many firms, in a monopoly it is a single
-          firm. The implications of this is, they can charge a
-          higher price without losing customers to competitors
-          charging their marginal cost as their sale price. For
-          that reason they will:
-        </p><ul class="no-item-padding" style="padding-left: 16px"><li class="text-medium"><p>Produce <strong>Qm where MR = MC</strong></p></li><li class="text-medium"><p>Price <strong>Pm along the demand curve at Qm</strong></p></li></ul><p>
-          To sell more units, the monopolists will need to lower
-          their price. They will lower (or raise) their price
-          until they're maximising their revenue. Again they are
-          only afforded this luxury because they are they entire
-          supply side of the market.
-        </p><math display="block"><mrow><mtext>Marginal Revenue</mtext><mo>=</mo><mfrac><mi>dTR</mi><mi>dQ</mi></mfrac></mrow></math></div><aside class="infobox"><h3 class="infobox-name">💡 Profit Maximisation</h3><div class="infobox-body"><div class="container"><div class="container pre--container"><p class="text-medium">Solve for marginal revenue</p><div class="container" style="font-size: 14px"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msub><mi>P</mi><mi>D</mi></msub><mo>=</mo><msub><mi>α</mi><mi>D</mi></msub><mo>-</mo><msub><mi>β</mi><mi>D</mi></msub><mi>Q</mi></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mi>TR</mi><mo>=</mo><mi>Q</mi><mo>·</mo><msub><mi>P</mi><mi>D</mi></msub></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mi>TR</mi><mo>=</mo><mi>Q</mi><mrow><mo>(</mo><msub><mi>α</mi><mi>D</mi></msub><mo>-</mo><msub><mi>β</mi><mi>D</mi></msub><mi>Q</mi><mo>)</mo></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mi>TR</mi><mo>=</mo><msub><mi>α</mi><mi>D</mi></msub><mi>Q</mi><mo>-</mo><msub><mi>β</mi><mi>D</mi></msub><msup><mi>Q</mi><mn>2</mn></msup></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mi>MR</mi><mo>=</mo><mfrac><mi>dTR</mi><mi>dQ</mi></mfrac><mo>=</mo><msub><mi>α</mi><mi>D</mi></msub><mo>-</mo><mn>2</mn><msub><mi>β</mi><mi>D</mi></msub><mi>Q</mi></mrow></mtd></mtd></mtr></mtable></math></div><p class="text-medium">Solve for profit Maximising Quantity</p><div class="container" style="font-size: 14px"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msub><mi>α</mi><mi>D</mi></msub><mo>-</mo><mn>2</mn><msub><mi>β</mi><mi>D</mi></msub><msub><mi>Q</mi><mi>m</mi></msub><mo>=</mo><msub><mi>α</mi><mi>S</mi></msub><mo>+</mo><msub><mi>β</mi><mi>S</mi></msub><msub><mi>Q</mi><mi>m</mi></msub></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msub><mi>α</mi><mi>D</mi></msub><mo>-</mo><msub><mi>α</mi><mi>S</mi></msub><mo>=</mo><msub><mi>Q</mi><mi>m</mi></msub><mrow><mo>(</mo><mn>2</mn><msub><mi>β</mi><mi>D</mi></msub><mo>+</mo><msub><mi>β</mi><mi>S</mi></msub><mo>)</mo></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msub><mi>Q</mi><mi>m</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>α</mi><mi>D</mi></msub><mo>-</mo><msub><mi>α</mi><mi>S</mi></msub></mrow><mrow><mn>2</mn><msub><mi>β</mi><mi>D</mi></msub><mo>+</mo><msub><mi>β</mi><mi>S</mi></msub></mrow></mfrac></mrow></mtd></mtd></mtr></mtable></math></div><p class="text-medium">Monopolist Price</p><div class="container" style="font-size: 14px"><math display="block"><mrow><msub><mi>P</mi><mi>m</mi></msub><mo>=</mo><msub><mi>α</mi><mi>S</mi></msub><mo>+</mo><msub><mi>β</mi><mi>S</mi></msub><msub><mi>Q</mi><mi>m</mi></msub></mrow></math></div></div></div></div></aside></div></div></div><div class="widget-container canvas2d" id="test-widget-5" style="grid-column: span 4;"></div><div class="widget-container document" id="test-widget-6" style="grid-column: span 4;"><style id="test-widget-6-styles"></style><div class="container pre--container"></div></div><div class="widget-container canvas2d" id="test-widget-7" style="grid-column: span 2;"></div><div class="widget-container canvas2d" id="test-widget-8" style="grid-column: span 2;"></div><div class="widget-container document" id="test-widget-9" style="grid-column: span 4;"><style id="test-widget-9-styles"></style><div class="container pre--container"><blockquote>
-      Note: there is an example on how to create a Average Total
-      Cost curve towards the end of section on supply curves.
-    </blockquote><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h3>Dead Weight Loss</h3><p>
-        A consequence of the nature in how monopolies price is
-        the dead weight loss resulting from the fact there are
-        overall fewer units being produced by the monopoly.
-        A big part of this is due to a <strong>Revenue Trade off</strong>.
-        If they want to sell additional units they need to lower
-        their price for all consumers.
-      </p></div></div></div><div class="widget-container document" id="test-widget-10" style="grid-column: span 4;"><style id="test-widget-10-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h1>Monopoly Regulation</h1><p>
+          </p></div></div></div></div>"
+`;
+
+exports[`app(unsw::1101::07).widgets > monopolyRegulation 1`] = `
+"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><h1>Monopoly Regulation</h1><p>
       Unlike perfect competition where government
       interferance creates deadweight loss. By default
       Monopolies have dead weight loss due to the nature
@@ -130,7 +123,19 @@ exports[`app(unsw::1101::07).snapshot > should match snapshots 1`] = `
       sense. While there is still dead weight loss with
       Average Cost pricing, it is less than there would be
       without intervention.
-    </p></div></div><div class="widget-container document" id="test-widget-11" style="grid-column: span 4;"><style id="test-widget-11-styles"></style><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash)"><h1>Price Discrimination</h1><p>
+    </p></div>"
+`;
+
+exports[`app(unsw::1101::07).widgets > originsOfMonopolies 1`] = `
+"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><h2>Sources of Market power</h2><p>
+      For the most part, monopolise are a result of
+      some kind of <strong>Barrier to entry</strong>
+      for producers to partipate in the market.
+    </p><div class="c2 pre--c2"><dl><dt>Control over scarce resource</dt><dd><span>oil, diamonds, trade routes</span></dd><dt>Government created barriers to entry</dt><dd><span>parents, copyright</span></dd></dl><dl><dt>Increasing returns to scale</dt><dd><span>economies of scale, such as utilties</span></dd><dt>Network economies</dt><dd><span>iMessage, Facebook</span></dd></dl></div></div>"
+`;
+
+exports[`app(unsw::1101::07).widgets > priceDiscrimination 1`] = `
+"<div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><h1>Price Discrimination</h1><p>
       Price discrimination is a pricing strategy
       in which firms with market power charge
       customers different prices for the same or
@@ -146,7 +151,7 @@ exports[`app(unsw::1101::07).snapshot > should match snapshots 1`] = `
       It's a situation in which the monopolist charges
       different prices depending on the quantity or the
       quality of products sold. Some examples:
-    </p><ul class="no-item-padding" style="padding-left: 16px"><li class="text-medium"><strong>Quantity</strong> — think bulk discounts, buy one get one deals</li><li class="text-medium"><strong>Quality</strong> — think economy vs business class, iPhone 10 vs iPhone SE</li></ul><p>SDPD tends to occur on a self selection basis.</p><h3>Third Degree Price Discrimination (TDPD)</h3><p>
+    </p><ul class="no-item-padding" style="padding-left: 16px;"><li class="text-medium"><strong>Quantity</strong> — think bulk discounts, buy one get one deals</li><li class="text-medium"><strong>Quality</strong> — think economy vs business class, iPhone 10 vs iPhone SE</li></ul><p>SDPD tends to occur on a self selection basis.</p><h3>Third Degree Price Discrimination (TDPD)</h3><p>
       Also like SDPD, TDPD occurs in the real world. Its a situation
       in which a monopolist charges customers different prices based
       on observable characteristic of the customer.
@@ -162,5 +167,22 @@ exports[`app(unsw::1101::07).snapshot > should match snapshots 1`] = `
       descrimination, and the those with the lowest williness
       to end up getting to afford the good. This is also the
       case when you have 3rd degree price discrimination.
-    </blockquote></div></div><div class="widget-container document" id="test-widget-12" style="grid-column: span 4;"><style id="test-widget-12-styles"></style><div class="container pre--container"></div></div><hr style="width: 100%; border-color: transparent;">"
+    </blockquote></div>"
+`;
+
+exports[`app(unsw::1101::07).widgets > profitMaximisingForMonopolies 1`] = `
+"<div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><h3>Monopoly, Profit Maximising</h3><p>
+          Unlike in perfect competition, where the supply side
+          is made up of many firms, in a monopoly it is a single
+          firm. The implications of this is, they can charge a
+          higher price without losing customers to competitors
+          charging their marginal cost as their sale price. For
+          that reason they will:
+        </p><ul class="no-item-padding" style="padding-left: 16px;"><li class="text-medium"><p>Produce <strong>Qm where MR = MC</strong></p></li><li class="text-medium"><p>Price <strong>Pm along the demand curve at Qm</strong></p></li></ul><p>
+          To sell more units, the monopolists will need to lower
+          their price. They will lower (or raise) their price
+          until they're maximising their revenue. Again they are
+          only afforded this luxury because they are they entire
+          supply side of the market.
+        </p><math display="block"><mrow><mtext>Marginal Revenue</mtext><mo>=</mo><mfrac><mi>dTR</mi><mi>dQ</mi></mfrac></mrow></math></div><aside class="infobox"><h3 class="infobox-name">💡 Profit Maximisation</h3><div class="infobox-body"><div class="container"><div class="container pre--container"><p class="text-medium">Solve for marginal revenue</p><div class="container" style="font-size: 14px;"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msub><mi>P</mi><mi>D</mi></msub><mo>=</mo><msub><mi>α</mi><mi>D</mi></msub><mo>-</mo><msub><mi>β</mi><mi>D</mi></msub><mi>Q</mi></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mi>TR</mi><mo>=</mo><mi>Q</mi><mo>·</mo><msub><mi>P</mi><mi>D</mi></msub></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mi>TR</mi><mo>=</mo><mi>Q</mi><mrow><mo>(</mo><msub><mi>α</mi><mi>D</mi></msub><mo>-</mo><msub><mi>β</mi><mi>D</mi></msub><mi>Q</mi><mo>)</mo></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mi>TR</mi><mo>=</mo><msub><mi>α</mi><mi>D</mi></msub><mi>Q</mi><mo>-</mo><msub><mi>β</mi><mi>D</mi></msub><msup><mi>Q</mi><mn>2</mn></msup></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mi>MR</mi><mo>=</mo><mfrac><mi>dTR</mi><mi>dQ</mi></mfrac><mo>=</mo><msub><mi>α</mi><mi>D</mi></msub><mo>-</mo><mn>2</mn><msub><mi>β</mi><mi>D</mi></msub><mi>Q</mi></mrow></mtd></mtd></mtr></mtable></math></div><p class="text-medium">Solve for profit Maximising Quantity</p><div class="container" style="font-size: 14px;"><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msub><mi>α</mi><mi>D</mi></msub><mo>-</mo><mn>2</mn><msub><mi>β</mi><mi>D</mi></msub><msub><mi>Q</mi><mi>m</mi></msub><mo>=</mo><msub><mi>α</mi><mi>S</mi></msub><mo>+</mo><msub><mi>β</mi><mi>S</mi></msub><msub><mi>Q</mi><mi>m</mi></msub></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msub><mi>α</mi><mi>D</mi></msub><mo>-</mo><msub><mi>α</mi><mi>S</mi></msub><mo>=</mo><msub><mi>Q</mi><mi>m</mi></msub><mrow><mo>(</mo><mn>2</mn><msub><mi>β</mi><mi>D</mi></msub><mo>+</mo><msub><mi>β</mi><mi>S</mi></msub><mo>)</mo></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msub><mi>Q</mi><mi>m</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>α</mi><mi>D</mi></msub><mo>-</mo><msub><mi>α</mi><mi>S</mi></msub></mrow><mrow><mn>2</mn><msub><mi>β</mi><mi>D</mi></msub><mo>+</mo><msub><mi>β</mi><mi>S</mi></msub></mrow></mfrac></mrow></mtd></mtd></mtr></mtable></math></div><p class="text-medium">Monopolist Price</p><div class="container" style="font-size: 14px;"><math display="block"><mrow><msub><mi>P</mi><mi>m</mi></msub><mo>=</mo><msub><mi>α</mi><mi>S</mi></msub><mo>+</mo><msub><mi>β</mi><mi>S</mi></msub><msub><mi>Q</mi><mi>m</mi></msub></mrow></math></div></div></div></div></aside></div></div>"
 `;
