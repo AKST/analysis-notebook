@@ -17,23 +17,49 @@ This is effectly a poor mans issue tracker.
 
 ### Internal API
 
-1. dom
-  1. [x] Unify `dom_app` and `dom_ui` APIs, currently underway.
-  2. [x] Post unifying changes
-  3. [ ] Clean up
-  4. The hardest part
-    - [ ] Support events.
-        - Alternatively maybe I can add an effect system where certain
-          attributes emit directives to perform events and the events
-          are performed after render (an example is a directive to
-          create a style tag with a media query or register an event)
-        - In typescript these types exist
-          - `HTMLElementEventMap`
-          - `HTMLMediaElementEventMap`
-          - `HTMLFormElementEventMap`
-          - `HTMLInputElementEventMap`
+1. DOM DSL Improvements
+   1. Dynamically Generate StyleSheet from input to `.css`
+      - Elements can also have styles relating to states
+        as well as media query constraints. It's almost
+        always better to put it in a style sheet, and
+        specify any dynamism in CSS variables. But what
+        if I don't want to do that?
 
-2. webgpu buffer memoryLayout
+   2. Event API.
+      - General Ideas
+        1. Idea one, encorporate it into the effect system.
+      - Useful information and partially solved Problems
+       - With handling typing, typescript has these types exist
+         - `HTMLElementEventMap`
+         - `HTMLMediaElementEventMap`
+         - `HTMLFormElementEventMap`
+         - `HTMLInputElementEventMap`
+
+2. Widget Isolation
+   - DESIGN
+     - Currently document widgets render into the parents TreeScope
+       (the light dom [if it was running there] or their respective
+       shadow dom [typically this is the user-content element]). But
+       I'd like for each widget to be placed in its own web component.
+
+     - Some design questions and considerations:
+       - For all Widgets
+         - (!) There SHOULD be a commmon style sheet.
+           - IMPLICATION there needs to be a for a widget to adopt it.
+
+       - For document Widgets
+         - (?) Is there value in a local css?
+         - (?) Is there value in a local event handler?
+
+   - ROADMAP
+     - Unify single/multi engine
+       - In practise this should a combination of
+         - making implict behaviour of a multi widget app not seen in
+           single widget apps explict via config.
+         - making implict behaviour of a single widget possible via config.
+
+
+3. webgpu buffer memoryLayout
   - Rewrite reading from GPU buffer
     - Current approach is probably wasteful
 
@@ -46,7 +72,7 @@ This is effectly a poor mans issue tracker.
   - Generate config for createPipeline
     - Generate pipeline buffer params
 
-3. Url State
+4. Url State
   - Need a generalised archetecture for representing this.
     - Something that encodes this information, generates
       short URL params while maintaining backwards compatibility.
@@ -56,7 +82,7 @@ This is effectly a poor mans issue tracker.
     - Within apps, last visible header
     - Within the chrome which tabs are visible.
 
-4. User content containment and moving into an iframe
+5. User content containment and moving into an iframe
   - Unordered changes
     - [ ] Each widget exist in a web component.
         - The main challenge here is sharing stylesheets.
@@ -185,7 +211,7 @@ benefit from using it. Its worth exploring.
 
 ### Is it possible to type CSS?
 
-Two options
+By this I mean, the css specified in js or in calls to `.css` in the dom dsl.
 
 - Type the strings
   - I'm not really sure how possible this is
@@ -228,6 +254,61 @@ I really want to accomplish.
      1. Some of these packages have been added to the default prelude but have
         no business being there. Their import should be removed, and possibly
 
+#### emphasis on runtime
+
+With the introduction of a build system (a work in progress at the
+time of writting this). Code in src will now have different assumption
+about the runtime they are in.
+
+- Most code at this stage is code written to run in the browser in
+  someone elses browser.
+- But Some code will be written to run on my machine of a build machine
+  I control. Maybe even on a server?
+- Some code will be written independently of either of it.
+
+Perhaps this fact should be reflected in an eventual directory structure
+
+##### Candidates
+
+I don't think a perfect of names exist, as I am trying to
+capture some abstract notion in them. But I'd also like for
+them to have similar length in terms of characters.
+
+- intern / extern / shared
+  - one thing I don't like about this is the suggestion that
+    code running in a browser is always public facing what if
+    its an internal tool? But the names are some what satisifying.
+
+  - meanings
+    - Intern refers to code running on my development machine or
+      a hypothetical build environment I control. In that way it
+      is internal, in the sense the environment the code is run
+      is internal.
+    - Extern refers to code running on an external environment
+      such as a users device.
+    - Shared code that runs in either environment.
+
+- home / away / both
+  - This nomanclature is interesting but it is also confusing
+    and possibly misinterpretable.
+
+- publ / priv / core
+  - This has similar problems of the last two, but it is fun
+    to use the word core.
+
+- caller / callee / (either|shared)
+  - This one focus on the inversion of control aspect, where
+    code on my server and code in the browser have a distiction
+    in terms of inversion of control.
+
+  - It is a bit abstract but it doesn't have this public internal
+    facing confusion.
+
+  - I guess not a problem at this stage but I wonder what it mean
+    if I had to start considering more than one environment or if
+    code run in a controlled environment became less controlled or
+    had some level of inversion of control like next.js does
+
 #### What would a better structure look like
 
 If I can't define this, maybe this is a grass is always greener thing.
@@ -255,6 +336,8 @@ If I can't define this, maybe this is a grass is always greener thing.
 
 ## Unsorted
 
+- Should I use `bun`?
+- look at moving all config files into `./config`
 - ui/navigator
   - new tabs
     - Formular Explorer

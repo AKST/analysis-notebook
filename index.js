@@ -28,8 +28,12 @@ const application = installApplication({
     document.querySelector('.main-content')
   ),
   initialApp: navCtrl.currentApp,
-  /** @ts-ignore - if theres no path theres a runtime error */
-  loadModule: path => import(path),
+  loadModule: path => {
+    /**
+     * @akst::bundle::dyn-import:path-constraint {./lib/app/(sec-[^/]+/)+index.js}
+     */
+    return import(path);
+  }
 });
 
 installResponsiveChrome({
