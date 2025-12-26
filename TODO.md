@@ -334,6 +334,10 @@ If I can't define this, maybe this is a grass is always greener thing.
 - I can't really benefit from this if browser support isn't there and its
   unclear when safari will support any of the useful stuff here.
 
+## Add Acute linting
+
+- Check if `import.meta.resolve` is used for images, wgsl and css.
+
 ## Unsorted
 
 - Should I use `bun`?
@@ -344,4 +348,3 @@ If I can't define this, maybe this is a grass is always greener thing.
     - Definition Explorer
 - Use Marquee effect in long titles.
 - Loader doesn't consistently appear for loading.
-- Fix tests for components

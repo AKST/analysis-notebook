@@ -134,7 +134,8 @@ the middle on main priorities this is considered.
 
      - In JS look for any instance of `import.meta.resolve` for
        static files, in many case it will be css, but it could also
-       be a shader or something else.
+       be a shader or something else. Point is make sure it is carried
+       over into
 
      - In HTML look for files that, have a comment that fits this
        general layout `<!-- akst::bundle::meta output-path="..." -->`.
@@ -183,13 +184,23 @@ was thinking maybe I could specify import paths like this
 loadModule: path => {
   /**
    * @akst::bundle::dyn-import:path-constraint {./lib/app/(sec-[^/]+/)+index.js}
+   * @akst::bundle::dyn-import:asset-name {app-[strip:sec-*\/][join:-]}
    */
   return import(path);
 },
 ```
 
-This would tell the bundler what individual uses of import
-in js can be statically narrow the bundle entry points down too.
+- `@akst::bundle::dyn-import:path-constraint {./lib/app/(sec-[^/]+/)+index.js}`
+  This would tell the bundler what individual uses of import
+  in js can be statically narrow the bundle entry points down too.
+- `@akst::bundle::dyn-import:asset-name {app-[strip:sec-][join:-]}`
+  This tells you how to format repeated matches of `(sec-[^/]+/)`
+  as part of the bundle name for a match like `sec-unsw` the syntax
+  `[strip:sec-*/]` basically would transform `sec-unsw/` into `unsw`,
+  and for more than one match `[join:-]` basically seperates them
+  with `-`. So the example above with that asset-name annontation
+  for the filename `lib/app/sec-unsw/sec-1101/sec-01/index.js`
+  you'd get something like `app-unsw-1101-01-[hash].js`
 
 ### Config File
 
