@@ -1,5 +1,5 @@
 import { beforeEach, expect, describe, it } from 'vitest';
-import { SharedStyleSheet } from '@base/platform/styles/shared_style_sheet.js';
+import { SharedStyleSheet } from '@base/platform/styles/shared-style-sheet.js';
 import { createTabLayoutElement } from '../create.js';
 
 describe('TabLayout.snapshot', () => {

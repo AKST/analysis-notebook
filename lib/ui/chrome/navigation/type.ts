@@ -1,4 +1,4 @@
-import { TocItem } from './table_of_contents/type.ts';
+import { TocItem } from './table-of-contents/type.ts';
 import { NavigationMenu } from './element.js';
 
 export type NavigationController = {

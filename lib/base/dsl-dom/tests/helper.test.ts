@@ -1,9 +1,9 @@
 import { expect, describe, it, beforeEach, vi } from 'vitest';
 import { makeHelper } from '../helper.js';
-import * as Meta from '../node_meta.js';
+import * as Meta from '../node-meta.js';
 import { node, meta } from '../render.js';
 
-describe('dsl_dom::helper', () => {
+describe('dsl-dom::helper', () => {
   const div = makeHelper({ of: ['html', 'div'] });
 
   it('unit', () => {

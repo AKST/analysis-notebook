@@ -14,7 +14,7 @@ global.PointerEvent = class PointerEvent extends Event {
  * We need to gradually refactor users of this to avoid
  * global dependencies like this.
  */
-vi.mock('@base/platform/styles/shared_style_sheet.js', () => ({
+vi.mock('@base/platform/styles/shared-style-sheet.js', () => ({
   SharedStyleSheet: class {
     constructor() {}
     install() {}

@@ -1,4 +1,4 @@
-import { SharedStyleSheet } from './lib/base/platform/styles/shared_style_sheet.js';
+import { SharedStyleSheet } from './lib/base/platform/styles/shared-style-sheet.js';
 import { installHeader } from './lib/ui/chrome/header/create.js';
 import { installNavigation } from './lib/ui/chrome/navigation/create.js';
 import { installApplication } from './lib/ui/chrome/application/create.js';

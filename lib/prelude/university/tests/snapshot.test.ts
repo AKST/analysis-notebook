@@ -1,7 +1,7 @@
 import { beforeEach, expect, describe, it } from 'vitest';
-import { render } from '@base/dsl_dom/render.js';
-import * as doc from '@base/dsl_dom/helper/html.js';
-import * as mathml from '@base/dsl_dom/helper/mathml.js';
+import { render } from '@base/dsl-dom/render.js';
+import * as doc from '@base/dsl-dom/helper/html.js';
+import * as mathml from '@base/dsl-dom/helper/mathml.js';
 import { fontsize, responsiveGridAutoRow } from '../layout.js';
 import { dashbox, note, noteOn, clsRef } from '../components.js';
 import { annotationUnder, annotationOver } from '../mathml.js';

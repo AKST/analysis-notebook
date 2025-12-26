@@ -1,11 +1,11 @@
 export {
   ProjectionConstraint,
   ViewportConstraints,
-} from '@base/canvas_2d/type.js';
-export { Renderer } from '@base/platform/canvas_2d/type.ts';
+} from '@base/canvas-2d/type.js';
+export { Renderer } from '@base/platform/canvas-2d/type.ts';
 // export { E } from '@base/dom_app/type.js';
-export { E as E2 } from '@base/dsl_dom/type.js';
-export { E } from '@base/dsl_dom/type.js';
+export { E as E2 } from '@base/dsl-dom/type.js';
+export { E } from '@base/dsl-dom/type.js';
 export {
   RemoteChildWidget as RemoteWidget,
   DocumentChildWidget as DocumentWidget,
@@ -20,5 +20,5 @@ export {
   MakeVariantKnob
 } from '@base/runtime/config/type.js';
 export { VectorOf, Vector, Matrix, Complex } from '@base/math/type';
-export { Vec2 } from '@base/geom_2d/type';
+export { Vec2 } from '@base/geom-2d/type';
 

@@ -1,4 +1,4 @@
-import { E } from '../../../dsl_dom/type.js';
+import { E } from '../../../dsl-dom/type.js';
 
 export type SendOrigin =
   | { kind: 'unknown' }
