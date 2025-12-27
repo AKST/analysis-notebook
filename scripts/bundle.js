@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
-import { build } from '../lib/cli/build/index.js';
+import { bundle } from '../lib/cli/bundle/index.js';
 
 const projectRoot = process.cwd();
 
 try {
-  await build(projectRoot);
+  await bundle(projectRoot);
 } catch (error) {
   const message = error instanceof Error ? error.message : String(error);
   console.error('Build failed:', message);

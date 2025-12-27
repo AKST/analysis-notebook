@@ -26,6 +26,7 @@
   "references": [
     { "path": "./lib/base" },
     { "path": "./lib/ui" },
-    { "path": "./lib/cli/build" }
+    { "path": "./lib/cli/build" },
+    { "path": "./lib/cli/bundle" }
   ]
 }
