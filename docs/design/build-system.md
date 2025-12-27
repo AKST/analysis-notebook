@@ -41,16 +41,22 @@ replaced (mostly in referencing html)
 
 ### Note on hash's
 
-- It may just be worth using UUIDs instead of hash, as hashes
-  require understanding the contents of the files.
-- Alternatively we generate hashes based on checksums at a very
-  early stage of the build.
+Some thoughts
+  - It may just be worth using UUIDs instead of hash, as hashes
+    require understanding the contents of the files.
+  - Alternatively we already know the files that will make up
+    the final bundle then we can generate hashes based on checksums
+    at a very early stage of the build, accumulate them for the bundle
+    - This doesn't feel like a smart idea if its replicating work
+      done by esbuild or something.
 
 I am inclined to go with UUIDs as I don't really understand how
 esbuild may determine a hash, but I wonder if I can specify the
 output path for a bundle with a premptively determined UUID.
 
 #### Decision on Hash vs UUIDs
+
+Upon further investigation.
 
 Use content-based hashes (SHA-256 truncated to 8 hex chars).
 Compute these in step 1 before any transformations. If esbuild's
@@ -78,17 +84,20 @@ importmaps but they do inherit the importmaps.
 Any condition that applies to `@akst::bundle::dyn-import:...`
 also applies to `@akst::bundle::worker:...`
 
+Please use this fact to avoid overly complicating the the logic
+for interpreting these.
+
 ### Implementation Details
 
 #### Location of Source code for implementation
 
 For the location for this logic for build system, I want a new
-directory called `./src/cli/build`, but ultimately there should
+directory called `./lib/cli/build`, but ultimately there should
 be a build script in `./scripts`. Currently there's a script called
 `./scripts/build.sh` just treat that name as a misnomer which
 can be called from minimal js with a hashbang in `./scripts/bundle.js`
 alternatively it could also be `./scripts/bundle.sh` If 90% of
-the logic exists in `./src/cli/build` (which it should).
+the logic exists in `./lib/cli/build` (which it should).
 
 ##### TSConfig
 

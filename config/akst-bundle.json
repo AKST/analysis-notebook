@@ -1,0 +1,26 @@
+{
+  "root": ".",
+  "entry": [
+    "index.html"
+  ],
+  "output": {
+    "dir": "out/bundle",
+    "intermediary-dir": "out/bundle-partial",
+    "assets": "__asset"
+  },
+  "source": [
+    "index.html",
+    "style.css",
+    "index.js",
+    "lib/**/*.{js,css,html}"
+  ],
+  "ignore": [
+    "node_modules/**",
+    "out/**",
+    "**/*.test.js",
+    "**/*.test.ts",
+    "lib/cli/**",
+    "**/*.snap",
+    "**/tests/**"
+  ]
+}

@@ -31,7 +31,8 @@ const application = installApplication({
   loadModule: path => {
     /**
      * @akst::bundle::dyn-import:path-constraint {./lib/app/(sec-[^/]+/)+index.js}
-     * @akst::bundle::dyn-import:asset-name {app-[strip:sec-*\/][join:-]}
+     * @akst::bundle::dyn-import:asset-name {app-[strip:sec-:/][join:-]}
+     * @akst::bundle::dyn-import:implict-bundle-generation
      */
     return import(path);
   }
