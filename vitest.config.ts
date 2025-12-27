@@ -2,6 +2,7 @@ import { defineConfig, Plugin } from 'vitest/config';
 import { fileURLToPath } from 'node:url';
 
 const aliases: Record<string, string> = {
+  '@assets/': './assets/',
   '@base/': './lib/base/',
   '@ui/': './lib/ui/',
   '@app/': './lib/app/',

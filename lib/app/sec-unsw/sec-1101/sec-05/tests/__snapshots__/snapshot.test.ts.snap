@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`app(unsw::1101::05).widgets > header 1`] = `
-"<div class="container pre--container"><h1>Government Intervention</h1><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p class="text-large">
+<div class="container pre--container"><h1>Government Intervention</h1><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><p class="text-large">
           Whenever governments intervenes in <strong>perfectly competitive</strong>
           markets, both producers and consumers are worse off. Note,
           <strong>perfectly competitive</strong> is an important qualitifier.
@@ -11,7 +11,7 @@ exports[`app(unsw::1101::05).widgets > header 1`] = `
           Regardless, before asserting policy reform in the form of market
           liberalisation it is worth examining is the market question
           <strong>perfectly competitive</strong>.
-        </p><details class="readmore"><summary>When markets are not perfectly competitive</summary><br><div class="container"><p><img src="./assets/econ/imperfect-markets.png" height="120" style="float: left; margin-right: 16px;">
+        </p><details class="readmore"><summary>When markets are not perfectly competitive</summary><br><div class="container"><p><img src="file://<PROJECT_ROOT>/lib/app/sec-unsw/sec-1101/sec-05/assets/econ/imperfect-markets.png" height="120" style="float: left; margin-right: 16px;">
         The moment any of the assumptions of perject competition
         are violated you no longer have perfect competition.
         Monopolies are one of the most apparent examples (explained
@@ -27,11 +27,11 @@ exports[`app(unsw::1101::05).widgets > header 1`] = `
       prefer it to be less effient. However most examples of this tend to
       be examples of markets with externalities (which is often the source
       a desire by the public for government intervention).
-    </p></div></div></aside></div></div>"
+    </p></div></div></aside></div></div>
 `;
 
 exports[`app(unsw::1101::05).widgets > priceControls 1`] = `
-"<div class="container pre--container"><h2>Price Controls, Anchors, and Limits</h2><p class="text-large">
+<div class="container pre--container"><h2>Price Controls, Anchors, and Limits</h2><p class="text-large">
       Firstly, before price ceilings and floors can have an
       impact they need to be binging. For price ceilings
       this means it is below the market price, and for floors
@@ -53,7 +53,7 @@ exports[`app(unsw::1101::05).widgets > priceControls 1`] = `
               There is also less incentive to take on debt to increase
               production capacity as the market price would make repaying
               difficult.
-            </p></div></details><details class="readmore"><summary>Consumer Implications</summary><br><div class="container"><p><img src="./assets/econ/survivorship-bias.png" height="120" style="float: left; margin-right: 16px;">
+            </p></div></details><details class="readmore"><summary>Consumer Implications</summary><br><div class="container"><p><img src="file://<PROJECT_ROOT>/lib/app/sec-unsw/sec-1101/sec-05/assets/econ/survivorship-bias.png" height="120" style="float: left; margin-right: 16px;">
               When a Price ceiling is binding, all the surplus
               under the equilibrium price and above the price ceiling
               that would have otherwise gone to the producer will go
@@ -77,7 +77,7 @@ exports[`app(unsw::1101::05).widgets > priceControls 1`] = `
               This is fairly similar to the consumer implications
               for price ceilings, in that there are fewer
               opportunities to sell.
-            </p></div></details></div></div><details class="readmore"><summary>Price Ceilings in NSW</summary><br><div class="container"><p><figure style="width: 165px; float: left; margin: 0px 16px 0px 0px;"><img src="./assets/econ/ipart-founder.png" height="161"><figcaption>"Tom Parry" IPART Founder</figcaption></figure>
+            </p></div></details></div></div><details class="readmore"><summary>Price Ceilings in NSW</summary><br><div class="container"><p><figure style="width: 165px; float: left; margin: 0px 16px 0px 0px;"><img src="file://<PROJECT_ROOT>/lib/app/sec-unsw/sec-1101/sec-05/assets/econ/ipart-founder.png" height="161"><figcaption>"Tom Parry" IPART Founder</figcaption></figure>
         In NSW, prices for some goods are regulated by IPART.
         This is for a number of things, such as council rates,
         Water rates, fares for services like Sydney Trains or
@@ -92,13 +92,13 @@ exports[`app(unsw::1101::05).widgets > priceControls 1`] = `
       we use the same term when refering to a reduction in overall surplus
       in a number of scenarios, including taxes, as well as any devations from
       equilibrium we see in imperfect markets such as monopolies.
-    </p></div>"
+    </p></div>
 `;
 
 exports[`app(unsw::1101::05).widgets > taxBurdenTable 1`] = `"<div class="container pre--container"><p class="text-large">Demand burden and Subsidy benefit are split identically</p><div class="c2 pre--c2"></div></div>"`;
 
 exports[`app(unsw::1101::05).widgets > taxesAndSubsidies 1`] = `
-"<div class="container pre--container"><hr><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h2>Unit Taxes and Subsidies</h2><p class="text-large">
+<div class="container pre--container"><hr><div class="c2 twoThree pre--c2 pre--two-three"><div class="container pre--container"><h2>Unit Taxes and Subsidies</h2><p class="text-large">
           Taxes and subsidies are kind of the same thing,
           in same way addition and subtract are the same thing
           but stress different directions. It's probably more
@@ -116,7 +116,7 @@ exports[`app(unsw::1101::05).widgets > taxesAndSubsidies 1`] = `
         Whereas here I haven't done that, I've instead placed a wedge
         between the surplus of the two curves.
         I guess I found this easier to show where dead weightloss is.
-      </p></div></details><details class="readmore"><summary>Taxes and Subsidy as Wedge</summary><br><div class="container"><p><img src="./assets/econ/tax-wedge.png" height="107" style="float: left; margin-right: 16px;">
+      </p></div></details><details class="readmore"><summary>Taxes and Subsidy as Wedge</summary><br><div class="container"><p><img src="file://<PROJECT_ROOT>/lib/app/sec-unsw/sec-1101/sec-05/assets/econ/tax-wedge.png" height="107" style="float: left; margin-right: 16px;">
         Taxes and subsidies being the same thing isn't just a metaphor for
         understanding taxes, but something significantly simplifies modeling
         taxes and subsides. For example, when computing equilibrium handling
@@ -168,5 +168,5 @@ exports[`app(unsw::1101::05).widgets > taxesAndSubsidies 1`] = `
           introduction of a tax. Inelastic markets (steep curves) lose
           fewer units than elasitic markets (flatter curves).
           They also generate more <strong>Government Revenue</strong>.
-        </p><h4>Computing the New Equilibrium</h4><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mover><mi>W</mi><mtext>Wedge</mtext></mover><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mtext>Taxes</mtext><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mtext>Subsidies</mtext></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msup><mi>Q</mi><mo>*</mo></msup><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><mrow><msub><mi>α</mi><mi>D</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mo>(</mo><msub><mi>α</mi><mi>S</mi></msub><mo>+</mo><mi>W</mi><mo>)</mo></mrow></mrow><mrow><msub><mi>β</mi><mi>S</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mi>D</mi></msub></mrow></mfrac></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msub><mi>P</mi><mi>S</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>α</mi><mi>S</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>S</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msup><mi>Q</mi><mo>*</mo></msup></mrow></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msub><mi>P</mi><mi>D</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>α</mi><mi>D</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>D</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msup><mi>Q</mi><mo>*</mo></msup></mrow></mrow></mrow></mtd></mtd></mtr></mtable></math></div></div></div>"
+        </p><h4>Computing the New Equilibrium</h4><math display="block"><mtable><mtr columnalign=""><mtd columnalign=""><mtd><mrow><mover><mi>W</mi><mtext>Wedge</mtext></mover><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><mtext>Taxes</mtext><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mtext>Subsidies</mtext></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msup><mi>Q</mi><mo>*</mo></msup><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mfrac><mrow><msub><mi>α</mi><mi>D</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><mo>(</mo><msub><mi>α</mi><mi>S</mi></msub><mo>+</mo><mi>W</mi><mo>)</mo></mrow></mrow><mrow><msub><mi>β</mi><mi>S</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><msub><mi>β</mi><mi>D</mi></msub></mrow></mfrac></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msub><mi>P</mi><mi>S</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>α</mi><mi>S</mi></msub><mspace width="4px"></mspace><mo>+</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>S</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msup><mi>Q</mi><mo>*</mo></msup></mrow></mrow></mrow></mtd></mtd></mtr><mtr columnalign=""><mtd columnalign=""><mtd><mrow><msub><mi>P</mi><mi>D</mi></msub><mspace width="4px"></mspace><mo>=</mo><mspace width="4px"></mspace><mrow><msub><mi>α</mi><mi>D</mi></msub><mspace width="4px"></mspace><mo>-</mo><mspace width="4px"></mspace><mrow><msub><mi>β</mi><mi>D</mi></msub><mspace width="1px"></mspace><mo>·</mo><mspace width="1px"></mspace><msup><mi>Q</mi><mo>*</mo></msup></mrow></mrow></mrow></mtd></mtd></mtr></mtable></math></div></div></div>
 `;

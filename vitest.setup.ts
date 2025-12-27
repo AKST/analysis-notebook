@@ -1,5 +1,20 @@
 // Vitest setup file
-import { vi } from 'vitest';
+import { vi, expect } from 'vitest';
+
+const projectRoot = process.cwd();
+
+function escapeRegex(str: string): string {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+expect.addSnapshotSerializer({
+  test: (val) => typeof val === 'string' && val.includes(projectRoot),
+  print: (val) => (
+    (typeof val === 'string')
+      ? val.replace(new RegExp(escapeRegex(projectRoot), 'g'), '<PROJECT_ROOT>')
+      : val.toString()
+  ),
+});
 
 // Add missing globals that components expect
 global.PointerEvent = class PointerEvent extends Event {

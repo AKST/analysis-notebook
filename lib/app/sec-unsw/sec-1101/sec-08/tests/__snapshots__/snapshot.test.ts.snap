@@ -17,7 +17,7 @@ exports[`app(unsw::1101::08).widgets > cartels 1`] = `
 `;
 
 exports[`app(unsw::1101::08).widgets > entryGame 1`] = `
-"<div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><h2>Existing Oligpolies in Australia</h2><p>
+<div class="container pre--container"><div class="c2 twoThree pre--c2 pre--two-three"><div class="container dashbox" style="padding: 16px; border: var(--border-white-dash);"><h2>Existing Oligpolies in Australia</h2><p>
           In Australia one example of oligipolies we encounter in our
           day to day itinerary and routines are Grocery chances such as
           Coles and Woolworths. The Oligolic nature of this industry is
@@ -31,7 +31,7 @@ exports[`app(unsw::1101::08).widgets > entryGame 1`] = `
           the dominant strategy of the encumbant is stay and
           dominant strategy of the entrant is "no entry" (often
           the result of entry fees).
-        </p></div><div class="container pre--container"><h4>Entry Game Example</h4><table class="diagram-table"><thead><tr><th colspan="2" rowspan="2"></th><th colspan="2"><font color="blue">Cottoncosts</font></th></tr><tr><th colspan="1"><font color="blue">Entry</font></th><th colspan="1"><font color="blue">No Entry</font></th></tr></thead><tbody><tr><th rowspan="2"><font color="green">Woolworths</font></th><th><font color="green">Stay</font></th><td><font color="green">8</font> / <font color="blue">-20</font></td><td><font color="green">10</font> / <font color="blue">0</font></td></tr><tr><th><font color="green">Exit</font></th><td><font color="green">0</font> / <font color="blue">-10</font></td><td><font color="green">0</font> / <font color="blue">0</font></td></tr></tbody></table><aside class="infobox"><h3 class="infobox-name">💡 2024-25 Supermarket Enquiry</h3><div class="infobox-body"><div class="container"><p class="text-medium"><img src="./assets/econ/supermarket-enquiry.png" height="100" style="float: left; margin-right: 8px;">
+        </p></div><div class="container pre--container"><h4>Entry Game Example</h4><table class="diagram-table"><thead><tr><th colspan="2" rowspan="2"></th><th colspan="2"><font color="blue">Cottoncosts</font></th></tr><tr><th colspan="1"><font color="blue">Entry</font></th><th colspan="1"><font color="blue">No Entry</font></th></tr></thead><tbody><tr><th rowspan="2"><font color="green">Woolworths</font></th><th><font color="green">Stay</font></th><td><font color="green">8</font> / <font color="blue">-20</font></td><td><font color="green">10</font> / <font color="blue">0</font></td></tr><tr><th><font color="green">Exit</font></th><td><font color="green">0</font> / <font color="blue">-10</font></td><td><font color="green">0</font> / <font color="blue">0</font></td></tr></tbody></table><aside class="infobox"><h3 class="infobox-name">💡 2024-25 Supermarket Enquiry</h3><div class="infobox-body"><div class="container"><p class="text-medium"><img src="file://<PROJECT_ROOT>/lib/app/sec-unsw/sec-1101/sec-08/assets/econ/supermarket-enquiry.png" height="100" style="float: left; margin-right: 8px;">
       During the 2024-25, the ACCC conducted an enquiry in the
       supermarket "duopoly" (as they are often called), one thing
       found during the enquiry they found was the Planning
@@ -51,7 +51,7 @@ exports[`app(unsw::1101::08).widgets > entryGame 1`] = `
         The Iterated Elimination of Dominated Strategies is
         solution concept that involves iteratively removing
         strategies that are not dominant.
-      </p></div></details></div><hr></div>"
+      </p></div></details></div><hr></div>
 `;
 
 exports[`app(unsw::1101::08).widgets > header 1`] = `

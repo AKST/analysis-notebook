@@ -4,11 +4,6 @@ This is effectly a poor mans issue tracker.
 
 ## Big Fish
 
-### Build System
-
-1. Look at settting up `esbuild` or `bun`.
-   - Main blocker is really just how to handle dynamism.
-
 ### Archetecture
 
 1. Run UI in iFrame
@@ -340,6 +335,7 @@ If I can't define this, maybe this is a grass is always greener thing.
 
 ## Unsorted
 
+- Make sure I better understand the build system.
 - Should I use `bun`?
 - look at moving all config files into `./config`
 - ui/navigator
