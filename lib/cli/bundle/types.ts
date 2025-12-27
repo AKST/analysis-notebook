@@ -20,6 +20,7 @@ export interface Config {
   outputDir: string;
   assetsDir: string;
   sourceFiles: string[];
+  sourcemap: boolean;
 }
 
 // ============================================================================
