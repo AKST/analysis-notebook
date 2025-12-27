@@ -23,6 +23,7 @@
     { "path": "./lib/base" },
     { "path": "./lib/ui" },
     { "path": "./lib/remote" },
+    { "path": "./lib/cli/build" },
     { "path": "./tsconfig.entry.json" }
   ]
 }

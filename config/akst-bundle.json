@@ -12,7 +12,8 @@
     "index.html",
     "style.css",
     "index.js",
-    "lib/**/*.{js,css,html}"
+    "lib/**/*.{js,css,html,wgsl}",
+    "assets/**/*.{png,gif,jpeg,jpg,svg}"
   ],
   "ignore": [
     "node_modules/**",

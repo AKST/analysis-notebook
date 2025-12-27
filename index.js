@@ -5,7 +5,7 @@ import { installApplication } from './lib/ui/chrome/application/create.js';
 import { installConfig } from './lib/ui/chrome/config/create.js';
 import { installResponsiveChrome } from './lib/ui/chrome/create.js';
 
-const scrollSheet = new SharedStyleSheet('./lib/ui/layout/scroll.css')
+const scrollSheet = new SharedStyleSheet(import.meta.resolve('./lib/ui/layout/scroll.css'));
 const urlQuery = new URLSearchParams(globalThis.location.search);
 
 const header = installHeader();

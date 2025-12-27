@@ -1,5 +1,5 @@
 @import './lib/ui/base/reset.css';
-@import './lib/ui/application/style-shared.css';
+@import './lib/ui/chrome/application/style-shared.css';
 
 :host {
   --multi-app-gridTemplateColumns: 1fr;

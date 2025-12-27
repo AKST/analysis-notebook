@@ -20,6 +20,7 @@
   }
 }
 
+/* TODO check if this works after bundling */
 .main-content,
 .user-content {
   display: grid;

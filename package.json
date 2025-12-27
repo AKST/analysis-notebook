@@ -7,6 +7,7 @@
   "scripts": {
     "typecheck": "./scripts/typecheck.sh",
     "build": "vite build",
+    "bundle": "node scripts/bundle.js",
     "test": "vitest run",
     "test:update-snaps": "vitest run -u",
     "test:watch": "vitest",

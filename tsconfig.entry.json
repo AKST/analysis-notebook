@@ -20,10 +20,12 @@
     "vitest.setup.ts"
   ],
   "include": [
-    "index.js"
+    "index.js",
+    "scripts/bundle.js"
   ],
   "references": [
     { "path": "./lib/base" },
-    { "path": "./lib/ui" }
+    { "path": "./lib/ui" },
+    { "path": "./lib/cli/build" }
   ]
 }
